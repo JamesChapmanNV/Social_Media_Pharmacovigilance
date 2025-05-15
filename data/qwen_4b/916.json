@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The user provided a content snippet: "Need this Wolves/Grizz series to go 7. This has been very entertaining bad basketball." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check if there's any mention of drugs, slang, or contexts related to drug abuse. The content talks about a basketball series between the Wolves and Grizz teams. The words "bad basketball" are used, but that's just a comment on the game's quality. There's no mention of drugs, medications, or any terms related to abuse or misuse. The user is discussing sports, not drugs. 
+
+The definitions say True includes mentions of illegal drugs in contexts of abuse, slang, or encouragement of misuse. False includes medical, educational, or preventative contexts. This content is purely about sports and entertainment, so it doesn't fit either category. Therefore, the correct label is False because there's no drug-related content here.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a basketball series and entertainment, with no mention of drugs, medical contexts, or drug-related terminology."
+}

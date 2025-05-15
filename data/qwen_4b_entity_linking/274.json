@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post about drug overdose, specifically opioids, and I need to identify any drug-related references. The task is to detect phrases that refer to illicit drugs, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "2) Drug overdose. Opioids affect your breathing. When you take too high a dose, it can slow down your breathing to the point that your body does not take in enough oxygen."
+
+Looking for keywords related to drugs. The main term here is "opioids." Now, checking the index terms list. There's an entry for "Codeine" which includes synonyms like "Lean," "Purple Drank," "Schoolboy." But the post mentions "opioids" in general. However, the index terms don't have a direct entry for "opioids" itself. Wait, looking through the list, the index terms include "Morphine," "Codeine," "Fentanyl," "Buprenorphine," "Carfentanil," etc. But "opioids" is a broader category. However, the index terms don't have a specific "Opioid" entry. 
+
+Wait, the example given in the problem includes "Codeine" as an index term, and the post mentions "lean" and "codeine" as synonyms. But in this case, the post says "opioids." Since "opioids" isn't listed as an index term, I need to check if any of the index terms under the broader category of opioids are covered. For example, "Codeine" is an opioid, but the post is talking about opioids in general. However, the task is to match phrases to the exact index terms. Since "opioids" isn't in the index terms, the correct index term would be "other." But wait, maybe "opioids" is considered a drug here. Let me check the index terms again.
+
+Looking through the list, there's no "Opioid" index term. The closest is "Codeine," "Morphine," "Fentanyl," etc. But the post uses the term "opioids" in general. Since the index terms don't include "opioids," the correct index term would be "other." However, the user's task is to detect any reference to an illicit drug. "Opioids" is a category that includes many drugs, but since the index terms don't have a specific entry for "opioids," the phrase "opioids" would be classified as "other." 
+
+But wait, the example given in the problem includes "Codeine" as an index term, and the post mentions "lean" and "codeine." So if the post mentions "opioids," which is a broader term, but not in the index terms, then "other" is the correct index term. However, maybe "opioids" is considered a drug here. But according to the index terms list, there's no "Opioid" entry. Therefore, the correct index term for "opioids" would be "other."
+
+Wait, but the post is talking about the effects of opioids, not specifically mentioning a particular drug. So the phrase "opioids" is a general term. The index terms don't have a specific entry for "opioids," so the correct index term is "other." Therefore, the matched phrase would be "opioids" with index_term "other."
+
+But I need to check if any of the index terms are subsets of opioids. For example, "Codeine" is an opioid, but the post is talking about opioids in general. So the phrase "opioids" is not a specific drug listed in the index terms, so it's "other." Therefore, the JSON array should have one entry with index_term "other" and matched_phrase "opioids."
+</think>
+
+[{"index_term": "other", "matched_phrase": "opioids"}]

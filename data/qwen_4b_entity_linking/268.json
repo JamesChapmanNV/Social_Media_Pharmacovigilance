@@ -1,0 +1,39 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post mentions "Snowbirds" and "Speedy on heroin arc." First, I need to check if these terms are in the provided index terms.
+
+Looking at the list, "Snowbirds" isn't listed. The index terms include things like Codeine, Amphetamine, Benzodiazepines, etc. "Snowbirds" might be a slang term for something else, but since it's not in the list, I should mark it as "other." 
+
+Next, "heroin arc" clearly refers to heroin. Heroin is listed in the index terms as a potent opioid. So "heroin" would map to "Heroin" as the index term. 
+
+Wait, the post says "Speedy on heroin arc." "Speedy" is a slang for amphetamine, right? In the example, "addy" was mapped to Amphetamine. So "Speedy" is likely another term for amphetamine. Checking the index terms, Amphetamine is listed with synonyms like Speed, Bennies, Adderall. So "Speedy" would be Amphetamine. 
+
+But wait, the user's post has "Speedy on heroin arc." So "Speedy" is part of the phrase. The exact phrase is "Speedy on heroin arc." So "Speedy" is the matched phrase. But the index term for Amphetamine is "Amphetamine," so that's a match. 
+
+So the phrases are "Snowbirds" (other), "heroin" (Heroin), and "Speedy" (Amphetamine). 
+
+Wait, but the post says "Speedy on heroin arc." The phrase "Speedy" is part of the sentence. So the matched phrase is "Speedy," which maps to Amphetamine. Then "heroin" is directly mentioned, so that's Heroin. "Snowbirds" is not in the list, so other. 
+
+So the JSON array should have three entries: "Snowbirds" as other, "heroin" as Heroin, and "Speedy" as Amphetamine. 
+
+Wait, but the example in the problem statement had "xans" as other because it wasn't in the list. So "Snowbirds" isn't in the index terms, so it's other. 
+
+So the final answer should be three entries. Let me check again. The post mentions "Snowbirds," "Speedy," and "heroin." 
+
+Yes, that's correct. So the JSON array would be:
+
+[
+  {"index_term": "other", "matched_phrase": "Snowbirds"},
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "Amphetamine", "matched_phrase": "Speedy"}
+]
+
+But wait, the user's post says "Speedy on heroin arc." The phrase "Speedy" is part of the sentence, but is it a slang term for Amphetamine? The index term for Amphetamine includes "Speed" as a synonym. So "Speedy" is likely a variant of "Speed," so it's Amphetamine. 
+
+Yes, that's correct. So the three entries are as above.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "Snowbirds"},
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "Amphetamine", "matched_phrase": "Speedy"}
+]

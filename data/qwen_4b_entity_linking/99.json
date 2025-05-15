@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I am Mexican and I'm not a drug dealer 👍". The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The sentence is straightforward: the person is stating their nationality and denying being a drug dealer. Now, I need to check if there are any words or phrases that refer to illicit drugs, synonyms, slang, or cultural references.
+
+Looking at the post, the key words are "Mexican" and "drug dealer". The term "drug dealer" is a reference to someone involved in selling drugs, which is related to drug trafficking. However, the index terms provided don't include "drug dealer" as a direct term. Let me check the list again.
+
+Looking through the index terms, there's "Codeine" with synonyms like "Lean" and "Purple Drank", "Amphetamine" with "Speed", "Bennies", "Adderall", etc. But "drug dealer" isn't listed. The example 3 shows that "xans" is categorized as "other" because it's not in the list. Similarly, "snow" and "white lines" in example 4 are "other".
+
+So, in this case, the post doesn't mention any specific drug names or slang. The only possible reference is "drug dealer", which isn't in the index terms. Therefore, according to the instructions, if the drug isn't in the list, use "other". 
+
+But wait, the task is to detect references to illicit drugs, not just the act of being a dealer. However, the post doesn't mention any drug names, slang, or related terms. The user is just stating their identity and denying involvement. So there are no matches here. 
+
+Therefore, the correct response is an empty array. But let me double-check. The post doesn't have any words that match the index terms. "Mexican" is a nationality, not a drug reference. "Drug dealer" is a role, but not a substance. Hence, no matches. The answer should be an empty JSON array.
+</think>
+
+[]

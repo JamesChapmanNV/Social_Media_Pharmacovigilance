@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "What if she got Rue high on morphine so she can sell her???????"
+
+First, I need to break down the key elements here. The mention of "Rue" might be a slang term. I know that "Rue" can sometimes be used as a slang for heroin, especially in certain contexts. Then there's "morphine," which is a controlled substance, definitely illegal in many places. The phrase "got Rue high" suggests using the drug, and "so she can sell her" implies that the person is using it for the purpose of selling, which is a form of abuse or misuse.
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse. The user is talking about getting high on morphine (a controlled substance) and using it to sell, which is promoting or enabling drug abuse. The question is hypothetical but the context is about using the drug for selling, which is a negative use. 
+
+The example given in the prompt includes similar cases where slang and context of abuse lead to True. The explanation here should note the use of slang ("Rue" as heroin), the mention of morphine, and the intent to sell, which is part of drug abuse. So the label should be True. The explanation needs to connect these elements to the definitions provided.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'Rue' (slang for heroin) and mentions morphine in a context implying drug use for selling, indicating abuse or misuse."
+}

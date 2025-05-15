@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I'll look at the post: " just get me some fuckin' morphine doc before I rip out your other eye. " 
+
+I need to check each word or phrase for possible drug references. The key words here are "morphine" and "doc". 
+
+Looking at the index terms, "Morphine" is listed as an index term. The phrase "morphine" directly matches the index term. The word "doc" could be slang for doctor, but in this context, it's part of "doc" as in "get me some doc", which might be a slang term. However, "doc" isn't listed in the index terms. The example given in the task shows that if a term isn't in the list, it's marked as "other". 
+
+So "morphine" is clearly a match for "Morphine". The word "doc" isn't listed, so it would be "other". But wait, the user's example 3 had "xans" which wasn't in the list and was marked as "other". Similarly, "doc" here isn't a drug term, so it's "other". 
+
+But wait, is "doc" a slang for a drug? Let me check the index terms again. The index terms include "Codeine" with synonyms like "lean", "purple drank", "schoolboy". "Morphine" is listed. "Doc" isn't in the list. So "doc" would be "other". 
+
+So the matched phrases are "morphine" under "Morphine", and "doc" under "other". 
+
+Wait, but the user's example 3 had "xans" which was "other". So in this case, "doc" is not a drug term, so it's "other". 
+
+Therefore, the JSON should have one entry for "morphine" and another for "doc" as "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "doc"}
+]

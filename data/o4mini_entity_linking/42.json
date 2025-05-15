@@ -1,0 +1,10 @@
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "4/20"},
+  {"index_term": "Marijuana", "matched_phrase": "#Potstocks"},
+  {"index_term": "Marijuana", "matched_phrase": "#fuel"},
+  {"index_term": "Marijuana", "matched_phrase": "#gas"},
+  {"index_term": "Marijuana", "matched_phrase": "#skunk"},
+  {"index_term": "Marijuana", "matched_phrase": "#slurricane"},
+  {"index_term": "Marijuana", "matched_phrase": "#Dutchberry"}
+]

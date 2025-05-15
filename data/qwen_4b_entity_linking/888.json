@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "He's clearly incapable. Perhaps it's the morphine from his pre- surgical bed?" I need to detect any drug references here.
+
+First, I'll scan the post for any terms that might refer to illicit drugs or substances. The word "morphine" is mentioned. Looking at the Index Terms list, Morphine is listed as an index term. The entry for Morphine says it's the prototypical opioid analgesic used for severe pain but prone to tolerance and dependence. So "morphine" directly maps to "Morphine" in the index terms.
+
+Are there any other phrases? The rest of the sentence doesn't mention any other drugs. "Pre-surgical bed" might imply that the morphine was administered before surgery, but the term "pre-surgical bed" isn't a slang or euphemism here. The key term is "morphine," which is explicitly listed. 
+
+I should check if there's any other possible term. The post doesn't mention any other drugs. The phrase "pre-surgical bed" is just context about where the morphine was given. So the only match is "morphine" under the index term "Morphine."
+
+No other terms like "codeine," "amphetamine," etc., are present. The example given in the problem where "xans" was considered "other" because it wasn't in the list, but here "morphine" is in the list. So the correct JSON should have one object with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

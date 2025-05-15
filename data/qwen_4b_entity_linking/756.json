@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post about opium, codeine, and morphine, and they want me to detect any drug-related references and link them to the correct index terms.
+
+First, I need to go through the post sentence by sentence. The first sentence says, "Opium is collected from the poppy plant and contains several compounds, most notably, codeine and morphine." Here, "codeine" and "morphine" are mentioned. Looking at the index terms, codeine is listed under "Codeine (Lean, Purple Drank, Schoolboy)" and morphine is under "Morphine (MS Contin, Miss Emma, Morph)". So both "codeine" and "morphine" should be matched to their respective index terms.
+
+The next part mentions "building blocks of several pharmaceutical opioids, even naloxone." Naloxone is an opioid antagonist, but checking the index terms, it's not listed. The closest might be "Naltrexone (Vivitrol, Revia)", but naloxone isn't explicitly in the list. Wait, the index term for naltrexone is listed, but the post mentions "naloxone" which is a different term. Since naloxone isn't in the index terms provided, it should be categorized as "other".
+
+So the matched phrases would be "codeine" and "morphine" with their respective index terms. Naloxone is not in the list, so it's "other". The rest of the post is about being smart and safe, which doesn't contain any drug references. Therefore, the JSON array should include two entries for codeine and morphine, and one for naloxone as other. Wait, but the example in the problem statement shows that if the drug isn't in the list, use "other". Let me check the index terms again. Naltrexone is listed, but naloxone is a different term. So yes, "naloxone" isn't in the index terms, so it's "other".
+
+So the final answer should have three entries: codeine, morphine, and naloxone as other. Wait, but the original post says "building blocks of several pharmaceutical opioids, even naloxone." So "naloxone" is mentioned. But in the index terms, "Naltrexone" is listed, but not "naloxone". So "naloxone" would be "other".
+
+Therefore, the correct JSON array would have two entries for codeine and morphine, and one for naloxone as other. Wait, but the example in the problem shows that "xans" is "other" even though it's a benzodiazepine. So in this case, "naloxone" isn't in the index terms, so it's "other".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "naloxone"}
+]

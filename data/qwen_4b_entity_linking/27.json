@@ -1,0 +1,37 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I need to read through the post carefully. The post says: "It didn't make me as sick as the Morphine ER and actually got paired with because of how sick I was getting. THC would let me eat and not feel as sick to my stomach. It was low dose like 2.5 but also helped some with pain. I actually would skip a few doses of harder stuff."
+
+Looking for drug terms. The first mention is "Morphine ER". Morphine is listed in the index terms under "Morphine (MS Contin, Miss Emma, Morph)". So "Morphine" is an index term. Then there's "THC". THC is in the list as "delta-9-THC-COOH (11-nor-9-carboxy-THC, THC-COOH)" and "Marijuana (Cannabis, Weed, Pot)". Since THC is a component of marijuana, and the post mentions using it, I should map "THC" to "Marijuana" or the specific THC metabolite. Wait, the index term for THC is "delta-9-THC-COOH" but the user might be referring to the actual substance. However, in the index terms, "Marijuana" is listed as a separate term. But the post says "THC would let me eat...", so maybe the index term is "Marijuana" because it's the illicit drug. Alternatively, the metabolite is listed, but the user is talking about the actual THC. Hmm, the index term for THC as a substance is "Marijuana", but the metabolite is delta-9-THC-COOH. However, the user is referring to THC, which is a component of marijuana. So maybe "Marijuana" is the correct index term here.
+
+Then there's "harder stuff". The context is that the user skips doses of "harder stuff", which could refer to more potent drugs. But the post doesn't specify what "harder stuff" is. However, since the user is comparing to morphine and THC, maybe "harder stuff" refers to other opioids or stronger drugs. But since "harder stuff" is not a direct term in the index list, it would be "other". However, the user might be referring to something else. Wait, the post mentions "Morphine" and "THC", and "harder stuff" could be other opioids like fentanyl or heroin, but since it's not specified, "harder stuff" is a slang term, so it's "other".
+
+So the detected phrases are "Morphine" and "THC". Let's check the index terms again. Morphine is in the list. THC is part of the "Marijuana" index term. But in the index terms, "Marijuana" is listed as a separate term. So "THC" would map to "Marijuana". However, the index term for THC metabolite is delta-9-THC-COOH, but the user is referring to the actual THC, not the metabolite. So the correct index term here is "Marijuana".
+
+Wait, but in the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "THC" is part of marijuana. Therefore, the matched phrase "THC" would map to "Marijuana".
+
+So the JSON array would have two entries: one for "Morphine" with "Morphine", and another for "Marijuana" with "THC". But wait, the post says "THC would let me eat...", so the actual substance is THC, which is a component of marijuana. However, the index term for THC is "delta-9-THC-COOH", but that's a metabolite. The user is referring to the active compound, so maybe "Marijuana" is the correct index term here. Alternatively, maybe "THC" is not in the index terms, but "Marijuana" is. So the correct mapping is "Marijuana" for "THC".
+
+But looking back at the index terms, "delta-9-THC-COOH" is listed as an index term. However, the user is referring to the actual THC, not the metabolite. The index terms are for specific substances or metabolites. So if the post mentions "THC", which is a component of marijuana, but the index term for the metabolite is delta-9-THC-COOH. However, the user is using "THC" as the substance, so maybe "Marijuana" is the correct index term. Alternatively, if "THC" is not in the list, then "other". Wait, the index terms include "Marijuana" as a separate term. So "THC" is part of marijuana, so the index term is "Marijuana".
+
+So the two matched phrases are "Morphine" and "THC". Therefore, the JSON array would be:
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "Marijuana", "matched_phrase": "THC"}
+]
+
+Wait, but the user wrote "THC would let me eat...", so "THC" is the substance. But in the index terms, "Marijuana" is listed as the index term. However, the index terms also have "delta-9-THC-COOH" as a separate term. But the user is referring to the active compound, not the metabolite. So the correct index term is "Marijuana". Alternatively, maybe "THC" is not in the list, so "other". Wait, the index terms include "delta-9-THC-COOH", but the user is using "THC", which is not listed as an index term. Therefore, "THC" would map to "other". But that's not correct because "THC" is part of marijuana. Wait, the index term for marijuana is "Marijuana", so if the user is referring to the substance, then "THC" is a component of marijuana, so the index term is "Marijuana". But the user is using "THC" as the term, so maybe "THC" is not in the index terms, so it's "other". But that's conflicting.
+
+Alternatively, the index term for delta-9-THC-COOH is listed, but the user is referring to the active THC, not the metabolite. Therefore, the correct index term is "Marijuana". But the user's phrase is "THC", which is a component of marijuana, so the index term is "Marijuana".
+
+But according to the index terms, "Marijuana" is listed as an index term. Therefore, "THC" is part of marijuana, so the correct index term is "Marijuana".
+
+So the two matches are "Morphine" and "Marijuana".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "Marijuana", "matched_phrase": "THC"}
+]

@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "Morphine will put you on your ass by force ngl. That's the shit they had me on when I broke my leg."
+
+First, I need to check if this mentions illegal or abused drugs. Morphine is a controlled substance, usually prescribed for pain. The user is talking about being on morphine after breaking a leg, which is a medical use. But the language here is a bit negative. "Put you on your ass by force" sounds like a negative experience. However, the context is a medical treatment for a broken leg. The phrase "that's the shit" might be slang, but it's in the context of a medical necessity. The user isn't promoting or glorifying the use, just describing their experience. The key is whether it's about abuse or misuse. Since it's a legitimate medical use, even if the user is complaining, it's not promoting abuse. So the label should be False. The explanation would mention the medical context and lack of promotion of misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses morphine use in a medical context (treating a broken leg) without promoting or glorifying abuse or misuse."
+}

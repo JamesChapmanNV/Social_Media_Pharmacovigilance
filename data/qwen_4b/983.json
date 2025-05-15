@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet: "She's gonna get her hooked on morphine now so she becomes dependant or sell her. It's bad." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False).
+
+First, I'll break down the content. The key terms here are "morphine" and "hooked." Morphine is a controlled substance, an opioid, which is illegal without a prescription. The phrase "get her hooked" is a common slang for becoming addicted. The sentence mentions "becomes dependant" which is another way of saying addiction. The last part says "It's bad," which might indicate a negative view of the situation.
+
+Now, according to the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse. Here, the content is talking about someone being hooked on morphine, leading to dependency or selling her (maybe her body or something else, but the key point is the drug use). The mention of dependency and the negative outcome ("It's bad") suggests that the content is about the misuse of morphine. 
+
+The example given in the prompt where "hooked" and "codeine" were considered True aligns with this. Even though the last part says "It's bad," the main focus is on the abuse of morphine, which is an illegal drug. The context here is about the negative consequences of using morphine, which fits under abuse or misuse. 
+
+I should check if there's any medical context, but the content doesn't mention any medical use. It's more about the negative effects of drug use. Therefore, this should be classified as True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions'morphine' and describes being 'hooked' and 'dependant,' indicating drug abuse and misuse with a negative connotation."
+}

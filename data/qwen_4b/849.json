@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is: "Oohhhhhh. Now suddenly focus shd be on a dealer but with SSR it was about his depression!!"
+
+First, I need to check if there's any mention of drugs, illegal substances, or abuse. The user mentioned "dealer" which could relate to drug dealing, but that's a bit vague. Then there's "SSR" which I think stands for Selective Serotonin Reuptake Inhibitor, a type of antidepressant. The context here is about someone's depression. 
+
+The key is to see if there's any indication of drug abuse or promotion. The mention of a dealer might be part of a narrative, but without more context, it's hard to tell. However, the part about SSRIs is related to medical treatment, not abuse. The exclamation marks and the "Oohhhhhh" might indicate some emotional reaction, but not necessarily drug use.
+
+Since there's no explicit mention of illegal drugs, abuse, or promotion of misuse, and the SSRIs are in a medical context, this seems more like a personal anecdote or a comment on mental health treatment. The dealer part could be a red herring or unrelated. So the classification should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references 'SSR' (likely referring to SSRIs, a class of antidepressants) in a medical context and mentions a 'dealer' in a vague, non-illlicit context without promoting or glorifying drug abuse."
+}

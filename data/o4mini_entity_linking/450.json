@@ -1,0 +1,6 @@
+[
+  {"index_term": "other", "matched_phrase": "Booze"},
+  {"index_term": "other", "matched_phrase": "alcohol"},
+  {"index_term": "Marijuana", "matched_phrase": "Kush"},
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

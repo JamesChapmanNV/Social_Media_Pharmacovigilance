@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Also funny because those people don't realize that someday, somewhere, they will meet the crack ship that becomes their real otp😂". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The key phrases here are "crack ship" and "real otp". 
+
+Looking at the index terms, "crack" is a slang term for cocaine. The index term for cocaine is "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the primary metabolite of cocaine. So "crack" would map to that index term.
+
+Next, "otp" is an acronym that stands for "other people's trash" or "other people's stuff", but in some contexts, it can be slang for opioids. However, looking at the index terms, there's no direct mention of "otp" as a drug term. The closest might be "Codeine" or "Oxycodone", but "otp" isn't listed. The example in the user's prompt had "xans" mapped to "other" because it wasn't a specific drug. So "otp" here is likely a slang term not directly listed, so it should be "other".
+
+Wait, but "otp" could also be a typo or a different slang. Let me check the index terms again. The index terms include "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". "Otp" isn't listed, so it's safer to use "other".
+
+So the matched phrases are "crack" and "otp". "Crack" maps to Benzoylecgonine, and "otp" maps to "other".
+</think>
+
+[
+  {"index_term": "Benzoylecgonine (BZE, Ecgonine benzoate)", "matched_phrase": "crack"},
+  {"index_term": "other", "matched_phrase": "otp"}
+]

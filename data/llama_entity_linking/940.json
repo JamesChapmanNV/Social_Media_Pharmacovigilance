@@ -1,0 +1,21 @@
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Cocaine", "matched_phrase": "cocaíne"},
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"},
+  {"index_term": "LSD", "matched_phrase": "lsd"},
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "Amphetamine", "matched_phrase": "adderall"},
+  {"index_term": "Amphetamine", "matched_phrase": "speed"},
+  {"index_term": "Phencyclidine", "matched_phrase": "pcp"},
+  {"index_term": "MDMA", "matched_phrase": "ecstasy"},
+  {"index_term": "Ketamine", "matched_phrase": "ketamine"},
+  {"index_term": "Alprazolam", "matched_phrase": "xanax"},
+  {"index_term": "Psilocybin", "matched_phrase": "shrooms"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Tramadol", "matched_phrase": "tramadol"},
+  {"index_term": "Buprenorphine", "matched_phrase": "ben-u-ron"},
+  {"index_term": "Diphenhydramine", "matched_phrase": "benadryl"},
+  {"index_term": "Paracetamol", "matched_phrase": "paracetamol"}
+]

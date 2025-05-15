@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Flinstones Chewable Morphine" and asks why it's not real. The task is to detect any drug references and link them to the appropriate index terms.
+
+First, I need to look for any slang, euphemisms, or synonyms for illicit drugs. The phrase "Flinstones Chewable Morphine" stands out. "Morphine" is a direct reference to the index term "Morphine". The Flinstones reference might be a play on words, but since "Morphine" is explicitly mentioned, that's the key term here. The "Chewable" part might indicate a form of administration, but the main drug is morphine. 
+
+Next, check if "Morphine" is in the index terms list. Yes, it's listed as "Morphine (MS Contin, Miss Emma, Morph)". So "Morphine" is the index term. The phrase "Flinstones Chewable Morphine" would be matched to "Morphine" because that's the drug mentioned. The rest of the post is about the world burning, which doesn't contain any other drug references. 
+
+I should make sure there are no other terms. Words like "real" or "Chewable" don't refer to drugs. The other parts of the sentence are just rhetorical questions and commentary, not drug references. So the only match is "Morphine" with the phrase "Flinstones Chewable Morphine". 
+
+Wait, but the example in the problem had "lean" linked to Codeine. Here, "Morphine" is directly mentioned, so that's straightforward. The answer should be an array with one object: index_term "Morphine" and matched_phrase "Flinstones Chewable Morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Flinstones Chewable Morphine"}
+]

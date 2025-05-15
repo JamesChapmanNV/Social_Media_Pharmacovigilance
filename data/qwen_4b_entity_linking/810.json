@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "birds in the trap sing brian mcknight, percocet and codeine please don't take my life". I need to detect any drug references here.
+
+First, I'll go through each word or phrase. "Birds in the trap sing brian mcknight" – that seems like a song reference, maybe a lyric. "Brian McKnight" is a singer, so probably not a drug term. Then "percocet" – that's a brand name for oxycodone, which is listed under Oxycodone in the index terms. So "percocet" should map to Oxycodone. Next, "codeine" is explicitly listed under Codeine. The rest of the sentence is a plea, so no other drug terms there. 
+
+Check if there are any other possible terms. "Trap" might be a slang, but I don't think it's listed. "Sing" is just a verb. So the matches are "percocet" and "codeine". 
+
+Now, linking them to the index terms. Percocet is Oxycodone, and codeine is Codeine. So the JSON array should have two entries. Make sure to use the exact phrases as they appear. No other terms here. The example in the problem shows that "addy" maps to Amphetamine, so similar logic here. No other drugs in the post. So the final answer should be the two entries.
+</think>
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "percocet"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

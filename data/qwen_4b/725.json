@@ -1,0 +1,14 @@
+<think>
+Okay, let's see. The user provided a content snippet: "What happens there if you get caught with cannabis?" I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang or euphemisms that indicate recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+The content here is asking about the consequences of being caught with cannabis. Cannabis is a drug, but the question is about legal repercussions, not about using it recreationally or promoting abuse. The user isn't discussing misuse, abuse, or promoting it. They're just asking about the legal outcome. So this is more of a legal question rather than promoting or discussing abuse. 
+
+The example given in the task had a similar structure where the content was about codeine and leaning, which was considered true because it implied abuse. But here, the question is about the legal consequences, which is a different context. The terms are drug-related, but the context is not about abuse or promotion. Therefore, it should be classified as False. The explanation would mention that it's a legal question, not promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content asks about legal consequences of cannabis possession, not promoting or discussing drug abuse or misuse."
+}

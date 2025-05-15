@@ -1,0 +1,30 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The post is: "gmgOFbPAeOfeIM - Hold the line, please promethazine without codeine street value As the overall Marine commander...". 
+
+First, I need to scan through the text for any terms that might refer to illicit drugs or substances. The user is asking for every word or phrase that's a slang, euphemism, synonym, or cultural reference related to drugs. 
+
+Looking at the post, the first part is "gmgOFbPAeOfeIM" which seems like a random string of letters, probably not relevant. Then, "Hold the line, please promethazine without codeine street value". 
+
+Breaking it down: "promethazine" is a drug. Let me check the index terms. Promethazine is listed under Diphenhydramine (Benadryl, Nytol) as a first-generation antihistamine with sedative effects. So "promethazine" would map to Diphenhydramine. 
+
+Next, "without codeine". Codeine is explicitly listed in the index terms under Codeine (Lean, Purple Drank, Schoolboy). So "codeine" is a direct match. 
+
+The phrase "street value" might be a reference to the value of the drug on the street, but "street value" itself isn't a drug name. However, the context here is that they're talking about promethazine without codeine, so "codeine" is the key term here. 
+
+So the detected phrases are "promethazine" and "codeine". 
+
+Now, mapping them to the index terms. Promethazine is under Diphenhydramine, and codeine is under Codeine. 
+
+Wait, but the user's example 3 had "xans" which wasn't on the list, so it was "other". But here, promethazine is in the list as Diphenhydramine, so that's a valid index term. Codeine is also in the list. 
+
+So the JSON should have two entries: one for Diphenhydramine with "promethazine", and another for Codeine with "codeine". 
+
+I need to make sure there are no other terms. The rest of the post is "As the overall Marine commander..." which doesn't seem relevant. 
+
+So the final answer should be two objects in the array.
+</think>
+
+[
+  {"index_term": "Diphenhydramine", "matched_phrase": "promethazine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

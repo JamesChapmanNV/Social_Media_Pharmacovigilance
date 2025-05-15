@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I want 3 things in life Bronte To be small and skinny To be able to make better music". The task is to detect any drug-related references and link them to the index terms.
+
+First, I'll go through each part of the post. The first sentence is "I want 3 things in life Bronte". "Bronte" is a name, likely referring to the author Charlotte Brontë, so that's not a drug term. 
+
+Next, "To be small and skinny". The words "small" and "skinny" are descriptive of body size but not drug-related terms. 
+
+Then, "To be able to make better music". "Music" is a general term, not a drug. 
+
+Looking at the index terms list, none of the terms match "Bronte", "small", "skinny", or "music". The example where "xans" was categorized as "other" because it wasn't listed. Since none of the phrases here are drug-related, all should be marked as "other".
+
+So the JSON array should have each phrase linked to "other". The user's examples show that if the phrase isn't in the list, it's "other". Therefore, the correct response is to list each phrase with "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "Bronte"}, {"index_term": "other", "matched_phrase": "small"}, {"index_term": "other", "matched_phrase": "skinny"}, {"index_term": "other", "matched_phrase": "music"}]

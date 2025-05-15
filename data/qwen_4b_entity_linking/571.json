@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "honestly I haven't experimented enough with weed to know. I do know morphine gives me less trouble than codeine." I need to detect any drug references and link them to the index terms.
+
+First, I'll go through the post word by word. The first part is "honestly I haven't experimented enough with weed to know." The word "weed" is mentioned here. Looking at the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "weed" should map to "Marijuana".
+
+Next part: "I do know morphine gives me less trouble than codeine." Here, "morphine" and "codeine" are both mentioned. Checking the index terms, "Morphine (MS Contin, Miss Emma, Morph)" is listed, so "morphine" maps to "Morphine". Similarly, "Codeine (Lean, Purple Drank, Schoolboy)" is in the list, so "codeine" maps to "Codeine".
+
+Now, I need to make sure there are no other phrases. The words "experimented", "trouble" don't refer to drugs. The post doesn't mention any other substances. So the matched phrases are "weed", "morphine", and "codeine".
+
+Wait, the example in the problem statement had "lean" mapped to codeine. But in this case, the user says "codeine" directly. So the exact phrases are "weed", "morphine", and "codeine". Each of these should be checked against the index terms. 
+
+Yes, "weed" is under marijuana, "morphine" under morphine, and "codeine" under codeine. So the JSON array should have three entries. Let me confirm that none of these are in the "other" category. Since they are all explicitly listed in the index terms, they should be correctly mapped. No need to use "other" here. 
+
+So the final answer should be three objects in the array, each with the correct index term and matched phrase.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "weed"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

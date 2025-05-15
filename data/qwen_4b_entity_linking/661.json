@@ -1,0 +1,55 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index term, and return a JSON array.
+
+First, I'll read through the post carefully: "Snakes start hissing heads go missing rest in piss to the ones im killing chief keef drilling codeine spilling 🐍⚔⚰☠💊". 
+
+Looking for possible drug references. The words "codeine" are explicitly mentioned. According to the index terms, "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". In the post, "codeine" is directly stated, so that's a clear match. 
+
+Now, checking other parts of the post. The phrase "chief keef" might be a reference to Chief Keef, a rapper known for his association with drug-related content, but "keef" is a slang term for cannabis. However, looking at the index terms, cannabis is listed as "Marijuana" under the index terms. Wait, the index terms include "Marijuana (Cannabis, Weed, Pot)" so "keef" might be a slang for cannabis. But the user's example 3 shows "xans" as "other" since it's not in the list. However, "keef" isn't listed in the index terms. Wait, the index terms include "Marijuana" as a separate term. But "keef" is a slang term for cannabis, so maybe it's considered under "Marijuana"? Wait, the index term for marijuana is listed as "Marijuana (Cannabis, Weed, Pot)", so if "keef" is a slang for cannabis, then "keef" would map to "Marijuana". However, the user's example 4 shows "snow" and "white lines" as "other" because they aren't in the list. But "keef" is a slang term for cannabis, which is in the list. Wait, but the index term for marijuana is "Marijuana", so if "keef" is a slang for cannabis, then "keef" would be mapped to "Marijuana". But I need to check if "keef" is in the index terms. Let me check the index terms again.
+
+Looking through the index terms, "Marijuana" is listed as a separate term. The other terms include "Cannabis" as a synonym, but the index term is "Marijuana". So "keef" is a slang for cannabis, which is under the index term "Marijuana". Therefore, "keef" would be mapped to "Marijuana". However, the user's example 3 has "xans" which is not in the list, so it's "other". But "keef" is a slang for cannabis, which is in the index terms. Therefore, "keef" should be mapped to "Marijuana". 
+
+But wait, the user's example 4 has "snow" and "white lines" as "other" because they are not in the list. However, "keef" is a slang for cannabis, which is in the index terms. So in this case, "keef" would be mapped to "Marijuana". 
+
+But the user's post has "chief keef". "Chief Keef" is a reference to a rapper, but "keef" is slang for cannabis. So "keef" is a drug reference. Therefore, "keef" should be mapped to "Marijuana". 
+
+But wait, the index term for marijuana is "Marijuana", so "keef" is a synonym for cannabis, which is under the index term "Marijuana". Therefore, "keef" should be mapped to "Marijuana". 
+
+But let me check the index terms again. The index term for marijuana is "Marijuana (Cannabis, Weed, Pot)", so any slang for cannabis would be under that. "Keef" is a slang term for cannabis, so "keef" should be mapped to "Marijuana". 
+
+However, the user's example 4 shows that "snow" is "other" because it's not in the list. But "keef" is a slang term for cannabis, which is in the list. Therefore, "keef" is a valid term. 
+
+So in the given post, "codeine" is directly mentioned, which maps to "Codeine". "keef" is a slang for cannabis, which maps to "Marijuana". 
+
+But wait, the user's example 3 has "xans" as "other" because it's not in the list. However, "xans" might refer to Xanax, which is a benzodiazepine. But in the index terms, "Bromazolam (XLI‑268, Fake Xanax)" is listed, but "Xanax" is not in the list. Wait, the index term for bromazolam is listed as "Bromazolam (XLI‑268, Fake Xanax)", so "Xanax" is a brand name, but the index term is "Bromazolam". However, the user's example 3 has "xans" as "other" because it's not in the list. So if "keef" is a slang for cannabis, which is in the list, then "keef" would be mapped to "Marijuana". 
+
+So in the given post, "codeine" is a direct match for "Codeine". "keef" is a slang for cannabis, so "Marijuana". 
+
+But wait, the user's example 4 has "snow" and "white lines" as "other" because they are not in the list. However, "keef" is a slang for cannabis, which is in the list. Therefore, "keef" is a valid term. 
+
+Therefore, the post has "codeine" and "keef". 
+
+But wait, the user's post is: "Snakes start hissing heads go missing rest in piss to the ones im killing chief keef drilling codeine spilling 🐍⚔⚰☠💊". 
+
+So "keef" is part of "chief keef", which is a reference to a rapper, but "keef" is slang for cannabis. Therefore, "keef" is a drug reference. 
+
+So the matched phrases are "codeine" and "keef". 
+
+Now, checking the index terms again. "Codeine" is in the list. "Marijuana" is in the list. Therefore, the JSON array should be:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Marijuana", "matched_phrase": "keef"}
+]
+
+Wait, but the user's example 3 has "xans" as "other" because it's not in the list. However, "keef" is a slang term for cannabis, which is in the list. Therefore, "keef" is mapped to "Marijuana". 
+
+But I need to make sure that "keef" is indeed a slang term for cannabis. Yes, "keef" is a slang term for cannabis. Therefore, it's mapped to "Marijuana". 
+
+So the final answer should include "codeine" and "keef".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Marijuana", "matched_phrase": "keef"}
+]

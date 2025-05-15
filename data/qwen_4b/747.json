@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet that says: "If you gon fw a drug dealer at least fw a nigga who sell coke not a nigga who sell weed to his bros." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I should break down the content. The mention of "drug dealer" and "sell coke" are key. "Coke" is a slang term for cocaine, which is an illegal drug. The phrase "sell coke" directly refers to the sale of a controlled substance. The context here seems to be about choosing between different types of drug dealers, implying that selling cocaine is better than selling weed to friends. 
+
+Now, checking the definitions. True includes content that mentions illegal drugs in the context of abuse or misuse, like using, buying, promoting. The content here is talking about selling drugs, which is promoting or encouraging drug dealing. Even though it's comparing coke to weed, the mention of selling drugs, especially cocaine, which is illegal, fits under the illicit category. 
+
+The example given in the prompt had similar language, like "hooked on codeine," which was classified as true. Here, the content is about associating with a drug dealer, which is related to drug abuse or misuse. The explanation should note that it mentions illegal drugs and promotes drug dealing. 
+
+So the label should be True. The explanation would mention the mention of cocaine (coke) and the context of selling drugs, which is promoting drug dealing.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'coke' (cocaine) and references 'drug dealer,' indicating promotion of illegal drug distribution and association with illicit drug activity."
+}

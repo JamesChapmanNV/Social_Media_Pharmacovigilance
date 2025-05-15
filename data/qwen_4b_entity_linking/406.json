@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully: "I was a big grunge guy in the 90s. I mean, I lived in the Pacific Northwest, so is anyone surprised? Anyway, I still love it but Eddie Veder's voice from back then really grates on me in a way it never did. It's like all the mumbling of Michael Stipe on heroin."
+
+Looking for any mentions of drugs or related terms. The key part here is "Michael Stipe on heroin." Michael Stipe is a musician, specifically from the band R.E.M. The phrase "on heroin" directly mentions heroin, which is an illicit drug. 
+
+Now, checking the index terms list. Heroin is listed under "Morphine" as the prototypical opioid analgesic. Wait, the index term for heroin isn't explicitly listed, but Morphine is. However, the user's example in the task description included "Codeine" for "lean" and "codeine," which are synonyms. So, in this case, "heroin" would map to "Morphine" since it's an opioid. 
+
+But wait, the index term list includes "Morphine (MS Contin, Miss Emma, Morph)" as the entry. Heroin is a different drug, but in the context of the index terms provided, there's no specific entry for heroin. However, the task says to use the index terms provided. Since heroin isn't listed, but the user's example in the task used "Codeine" for "lean" which is a synonym, maybe "heroin" would map to "Morphine" as it's an opioid. But wait, the index term for Morphine is listed, but heroin is a different drug. However, in the index terms, "Morphine" is the term. But the user's example for "lean" was mapped to Codeine. So, if the post mentions "heroin," even though it's not in the index terms, but the index term for Morphine is there, but heroin is a different drug. Wait, the index terms list includes "Morphine" as the entry. However, the task says to use the index term if the drug is in the list. Since heroin isn't in the list, but the user's example for "lean" was mapped to Codeine, which is a synonym. But in this case, "heroin" is not in the list. Wait, looking back at the index terms, the entry for Morphine is listed. Heroin is a different drug, but maybe the index term for Morphine is the closest. However, the user's example for "codeine" includes "lean" which is a slang term for codeine. So, if the post mentions "heroin," which is not in the index terms, then according to the task, if the drug is not in the list, use "other". Wait, the task says: "If the drug is *not* in the list, use 'other'". So, heroin isn't in the list. Let me check the index terms again. The index terms include "Morphine", "Codeine", "Heroin" is not listed. Wait, looking at the index terms list again: the entry for Morphine is there, but not for heroin. Therefore, "heroin" is not in the index terms, so it should be mapped to "other".
+
+But the user's example in the task had "codeine" mapped to "Codeine", which is in the list. So, in this case, the phrase "heroin" is not in the index terms, so the index term would be "other". Therefore, the matched phrase is "heroin", index term is "other".
+
+So the JSON array would have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+But wait, the user's example 3 had "xans" mapped to "other" because it's not in the list. Similarly, here, "heroin" is not in the index terms, so it's "other". Therefore, the correct answer is to map "heroin" to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

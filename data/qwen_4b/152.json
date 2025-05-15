@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is "ER doctor ruled out drug overdose in Floyd death - News". First, I need to determine if this is illicit or abusive drug-related. The key here is the context. The phrase "ruled out drug overdose" suggests that the medical professional is concluding that there was no drug overdose involved in the incident. The mention of "drug overdose" is a medical term, but the context is a news report about a death. The doctor's ruling is part of an investigation, not promoting or discussing drug use. The term "drug overdose" is used in a medical, investigative context, not in a way that encourages abuse or misuse. There's no mention of illegal drugs, slang, or promoting drug use. So, according to the definitions, this would fall under False because it's a medical context discussing a possible cause of death, not promoting or glorifying drug abuse. The explanation should note that it's a medical context and not promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a medical investigation into a death, using 'drug overdose' in a clinical context, not promoting or glorifying drug abuse."
+}

@@ -1,0 +1,8 @@
+[
+  {"index_term": "Cannabis", "matched_phrase": "Cannabis"},
+  {"index_term": "Cannabis", "matched_phrase": "weed"},
+  {"index_term": "Cannabis", "matched_phrase": "pot"},
+  {"index_term": "other", "matched_phrase": "laughing"},
+  {"index_term": "other", "matched_phrase": "smoking"},
+  {"index_term": "other", "matched_phrase": "connecting"}
+]

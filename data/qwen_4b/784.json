@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a social media content snippet and wants me to classify it as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "explain to me what kind of pain you feeling, you dont explain when it started happening, you don't explain nothing. So what Gogo Sifiso does i don't reply to the dm or message i will never crack my head over " my arm is sore". Let's reverse roles alittle bit. What will you do."
+
+First, I need to check if there's any mention of drugs, illegal substances, or any context related to abuse or misuse. The content seems to be a conversation where someone is talking about not explaining their pain and responding to a message from Gogo Sifiso. The mention of "Gogo Sifiso" might be a person's name, but I'm not sure. The phrase "crack my head over'my arm is sore'" could be a metaphor or a slang term. However, "crack my head" doesn't directly relate to drugs. The user is asking about pain and not explaining it, which seems more like a personal interaction rather than discussing drugs. There's no explicit mention of drugs, illegal substances, or any context of abuse. The terms used don't fit the definitions provided. The example given in the task had mentions of codeine and lean, which are drugs. Here, there's no such reference. The content is more about communication and pain, not drug-related activities. So the classification should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses communication about pain and personal interactions, with no mention of drugs, illegal substances, or drug-related abuse/misuse."
+}

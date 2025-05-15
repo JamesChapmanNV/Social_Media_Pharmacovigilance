@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this content. The user provided the text: "Had a super dope time at Locrate earlier today and got to see a lot of my buddies.... Now to get to my Benelyin with Codeine." 
+
+First, I need to identify any drug-related terms. "Dope" is a slang term that can mean something is good or exciting, but in the context of drugs, it's often used to refer to drug use. "Benelyin" might be a misspelling or slang for a drug. "Codeine" is an opioid, which is a controlled substance. The phrase "get to my Benelyin with Codeine" suggests using these substances. The context mentions a "super dope time," which could imply recreational drug use. The mention of Codeine specifically, which is an illicit drug when used without a prescription, points towards abuse. The overall tone seems to be about using drugs, which fits the True category. The example given in the task includes similar terms like "lean" and "codeine" as illicit. So, this content is likely classified as ILLICIT/ABUSIVE-DRUG-RELATED.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'dope' (slang for drug use) and mentions 'Codeine' (a controlled substance) in a context implying recreational use."
+}

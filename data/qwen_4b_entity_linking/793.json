@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "any Philly weedheads doin' anything tomorrow like Iunno smoking cannabis". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. "Philly weedheads" – "weedheads" is a slang term for people who use cannabis, so that's probably a reference to marijuana. Then "doin' anything tomorrow like Iunno smoking cannabis". The phrase "smoking cannabis" is pretty straightforward. 
+
+Looking at the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "cannabis" directly maps to that index term. "Weedheads" is a slang term for cannabis users, but the index term for marijuana is "Marijuana". However, the user's example 3 had "xans" which wasn't in the list, so it was marked as "other". But in this case, "weedheads" is a reference to marijuana use. Wait, but the index term is "Marijuana", so "weedheads" is a person, not the drug itself. But the task is to detect phrases that refer to the drug. So "smoking cannabis" is the drug, so that's a clear match. "Weedheads" is a slang term for people who use weed, but the index term is for the drug itself. However, the task says to detect phrases that refer to the illicit drug. So maybe "weedheads" is not a drug reference but a person. So the only direct reference here is "cannabis". 
+
+Wait, the example 3 had "xans" which is not in the list, so it was "other". But in this case, "cannabis" is in the list. So the matched phrase would be "cannabis" with index term "Marijuana". The "weedheads" is a reference to people using weed, but the task is to detect the drug. So the only match here is "cannabis". 
+
+So the JSON should be [{"index_term": "Marijuana", "matched_phrase": "cannabis"}]. 
+
+Wait, but the user's example 1 had "lean" and "codeine" both mapped to Codeine. So in this case, "cannabis" is directly in the index terms. So that's the only match. The rest of the words like "Philly weedheads" are not drug references, just people. "doin' anything" is not a drug term. "Iunno" is probably a typo for "I know" or something else, but not a drug. So the only match is "cannabis".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

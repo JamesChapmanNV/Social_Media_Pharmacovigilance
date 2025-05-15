@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this labeling problem. The user wants me to determine if the given social media post falls under category T (indicating drug use or related activities) or F (other cases). The post is: "Hundreds get card for clinical cannabis, even while it's not for sale in #Missouri nevertheless".
+
+First, I need to understand the key elements here. The main subject is "clinical cannabis". Clinical cannabis refers to cannabis used for medical purposes, which is different from recreational use. The post mentions that hundreds received a card for clinical cannabis, but it's not for sale in Missouri. The hashtag #Missouri is there, which might be relevant for context.
+
+Now, applying the label rules. T is for text that shows illicit or abusive drug use, including using, seeking, buying, selling, trafficking, or slang for drugs. F is for other cases like medical/policy discussions, news, discouraging use, or metaphors.
+
+The post is talking about clinical cannabis, which is medical use. The fact that it's not for sale in Missouri might be a point about policy or legal status. The mention of a card could be related to a medical marijuana program, which is a policy or news topic. There's no explicit mention of using, seeking, buying, selling, or slang for drugs. The focus is on the availability of a card for clinical use, which is a medical or policy discussion. Therefore, this seems like an F case. The user might be confused if they think "clinical cannabis" is slang, but in this context, it's referring to medical use. So the correct label should be F.
+</think>
+
+F

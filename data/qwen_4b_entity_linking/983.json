@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "She's gonna get her hooked on morphine now so she becomes dependant or sell her. It's bad." I need to detect any drug references here and link them to the correct index terms.
+
+First, I'll read through the post carefully. The key phrase here is "morphine." Looking at the index terms list, Morphine is listed as an index term. The exact match here is "morphine," so that's straightforward. The post mentions "get her hooked on morphine," which directly refers to the drug. 
+
+Next, I check if there are any other phrases. The word "dependant" is used, but that's a synonym for dependent, not a drug name. "Sell her" might refer to selling something, but not a drug. The rest of the sentence is about the consequences, not the drug itself. 
+
+So the only detected phrase is "morphine," which maps to the index term "Morphine." There's no mention of other drugs here. The example in the problem statement had "codeine" and "lean" linked, but in this case, it's just "morphine." 
+
+I need to make sure that "morphine" is in the index terms. Checking the list, yes, Morphine is listed as the index term. So the correct JSON array should have one object with index_term "Morphine" and matched_phrase "morphine."
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post in Hindi: "50 Kg Heroin, Rs 30 Lakh Cash Seized From Delhi's Shaheen Bagh". The task is to detect any drug-related references and map them to the appropriate index terms.
+
+First, I need to look for any words or phrases that refer to illicit drugs. The post mentions "Heroin" and "Cash". Heroin is a well-known opioid, so I check the index terms. Looking through the list, "Heroin (MS Contin, Miss Emma, Morph)" is listed. So "Heroin" maps directly to that index term.
+
+Next, "Cash" is mentioned. But cash itself isn't a drug. The index terms don't have a category for currency, so according to the instructions, if it's not a drug, it should be "other". However, in this context, "cash" might be part of the transaction involving drugs. But the task is to detect drug references. Since "cash" isn't a drug, it's "other". 
+
+Wait, but the example in the user's prompt had "snow" and "white lines" as "other" even though they might be slang. So in this case, "cash" is not a drug, so it's "other". 
+
+So the matched phrases are "Heroin" and "Cash". "Heroin" maps to the index term for heroin, and "Cash" is "other". 
+
+But wait, the user's example 4 had "snow" and "white lines" as other. So "cash" here would also be "other". 
+
+Therefore, the JSON array should have two entries: one for "Heroin" and one for "Cash" as "other".
+</think>
+
+[
+  {"index_term": "Heroin", "matched_phrase": "Heroin"},
+  {"index_term": "other", "matched_phrase": "Cash"}
+]

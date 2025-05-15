@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this content classification. The user provided a statement about cannabis and prisons. The key points here are the mention of cannabis in a negative context regarding incarceration. The content criticizes the incarceration of people for cannabis, which is a drug, but the focus is on the social issue of prisons rather than promoting or abusing drugs. The terms used are "evil," "hypocrisy," and "abolish," which are negative towards the system, not the drug itself. There's no mention of using, selling, or promoting cannabis. The context is about social justice, not drug abuse. So, according to the definitions, since it's discussing a medical or educational context? Wait, no, the example 2 was about pharmacology, which is educational. This is more about social policy. The definitions say False includes drug-related terms in different contexts. The content mentions cannabis, which is a drug, but the context is about incarceration, not misuse. The user is not promoting drug use but criticizing the system. So the label should be False because it's not about abuse or promotion. The explanation would note that the content discusses cannabis in the context of social justice, not misuse or promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses cannabis in the context of social justice and incarceration, not promoting or abusing drugs."
+}

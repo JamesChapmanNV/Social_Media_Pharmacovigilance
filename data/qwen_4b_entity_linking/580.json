@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I'll read the post carefully: "I'm on Ocean Drive sippin codeine with the top down, 20 grand on me and a glock 9" -21. The main phrases here are "sippin codeine" and "glock 9". 
+
+Looking at the Index Terms list, "codeine" is explicitly listed under the Codeine index term with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "codeine" directly matches the index term "Codeine". 
+
+Next, "glock 9" refers to a type of firearm, specifically a Glock 9mm pistol. The Index Terms don't include anything related to firearms, so according to the instructions, if the drug isn't listed, it should be "other". However, the user's task is to detect drug-related references. Since "glock 9" is a weapon, not a drug, it's not part of the drug list. But wait, the user's task is to detect drug references. The post mentions "codeine", which is a drug, and "glock 9" is a firearm. The firearm isn't listed in the Index Terms, so it should be "other". 
+
+But wait, the example in the prompt shows that "xans" was categorized as "other" because it wasn't a listed drug. Similarly, "snow" in example 4 was "other" even though it's cocaine, which isn't on the list. So "glock 9" is not a drug, so it's "other". 
+
+So the only drug reference here is "codeine", which maps to "Codeine". The rest of the phrases like "Ocean Drive", "top down", "20 grand" are context but not drug references. The "glock 9" is a weapon, so "other". 
+
+Wait, but the user's task is to detect every word or phrase that refers to an illicit drug or substance. The "glock 9" is a firearm, not a drug. So only "codeine" is a drug. Therefore, the JSON should have one entry for "codeine" and "codeine" as the matched phrase. The "glock 9" is not a drug, so it's not included. 
+
+Wait, but the example 3 had "xans" which was "other". So in this case, "glock 9" is not a drug, so it's "other". But the user's instruction says to detect drug-related references. So the only drug here is "codeine". 
+
+So the correct output is one entry: {"index_term": "Codeine", "matched_phrase": "codeine"}.
+
+But wait, the user's post says "sippin codeine". The exact phrase is "sippin codeine". The Index Term for Codeine includes "codeine" as a direct match. So "codeine" is the matched phrase. The "sippin" is part of the phrase, but the Index Term is for the drug name. So the matched phrase is "codeine". 
+
+So the JSON array should have one object with index_term "Codeine" and matched_phrase "codeine". The rest of the elements in the post are not drug references. Therefore, the correct answer is as above.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

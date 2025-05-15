@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet: "how much for my bday party at the codeine castle?". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang or euphemisms indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+The content mentions "codeine castle". Codeine is an opioid, which is a controlled substance. The term "codeine castle" might be a slang or a euphemism. The question is about the cost of a birthday party there. The phrase "codeine castle" could be a reference to a place associated with drug use, possibly implying recreational or abusive use. The question is about the cost, which might be a way to hint at a location linked to drug abuse. 
+
+But wait, is "codeine castle" a real place or a slang term? If it's a slang term, it might be a euphemism for a place where drugs are used. The mention of codeine, which is a controlled substance, and the context of a party could imply that the location is associated with drug use, possibly abuse. The user is asking about the cost, which might be part of promoting or discussing such a place. 
+
+So, according to the definitions, mentioning codeine (a drug) in a context that could imply recreational use or a place associated with drug abuse would fall under True. The question is about a party, which might be a euphemism for drug-related activities. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' a controlled substance, in a context that implies a location (castle) associated with recreational drug use or abuse."
+}

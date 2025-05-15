@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "He's got scissors on his left foot! This dude be doing some hard crack." I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll break down the content. The first sentence mentions "scissors on his left foot," which is a bit strange. Then "hard crack" is a slang term. I know "hard crack" is a slang for crack cocaine. So the second part clearly refers to a drug. The first part might be a metaphor or a reference to something else, but the mention of "hard crack" is a strong indicator. Since the content is using slang related to drug use, it falls under the True category. The explanation should note the slang term and its association with drug abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'hard crack' as slang for crack cocaine, indicating recreational drug use."
+}

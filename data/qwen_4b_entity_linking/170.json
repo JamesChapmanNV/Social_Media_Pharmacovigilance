@@ -1,0 +1,39 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "It's been two years and I'm still confused how Codeine Crazy didn't win a Grammy." I need to detect any drug-related references here.
+
+First, I'll scan the post for any words or phrases that might refer to illicit drugs. The main terms here are "Codeine" and "Crazy." Looking at the Index Terms list, Codeine is explicitly listed with synonyms like "Lean," "Purple Drank," "Schoolboy." The phrase "Codeine Crazy" might be a slang term or a play on words. 
+
+Wait, "Crazy" here could be part of a slang term. But in the Index Terms, there's no entry for "Crazy" directly. However, "Codeine" is listed, and "Crazy" might be part of a slang term related to Codeine. But the example given in the problem statement had "lean" and "codeine" as matches. In the example, "lean" is a slang for Codeine. 
+
+But in this post, "Codeine Crazy" is the phrase. The "Crazy" part might be a slang term for a drug effect, but since "Crazy" isn't listed in the Index Terms, maybe it's considered "other." However, the main term here is "Codeine," which is directly listed. So the phrase "Codeine Crazy" would have "Codeine" as the index term. But wait, the user's example had "lean" and "codeine" as separate entries. So if the phrase is "Codeine Crazy," does that count as a separate term? 
+
+Wait, the task says to detect every word or phrase that refers to an illicit drug. So "Codeine Crazy" is a phrase. But "Crazy" here might be a slang term for a drug effect, but since it's not in the Index Terms, maybe it's "other." However, the main part is "Codeine," which is in the list. So the matched phrase would be "Codeine Crazy," but the index term is "Codeine." But the example in the problem had "lean" and "codeine" as separate entries. So maybe "Codeine Crazy" is a phrase that refers to Codeine, so the index term is Codeine. 
+
+Alternatively, maybe "Crazy" is not a drug term, so only "Codeine" is matched. Let me check the Index Terms again. The Index Terms for Codeine include "Lean," "Purple Drank," "Schoolboy." But "Crazy" isn't listed. However, the phrase "Codeine Crazy" could be a slang term, but since "Crazy" isn't in the list, perhaps it's considered "other." But the main part is "Codeine," so maybe the matched phrase is "Codeine Crazy" with index term Codeine. 
+
+Wait, the example in the problem had "lean" and "codeine" as separate entries. So if the phrase is "Codeine Crazy," then "Codeine" is the index term, and "Crazy" is not a drug term. So the matched phrase would be "Codeine Crazy" with index term Codeine. But maybe the user is referring to "Crazy" as a slang term for a drug effect. However, since "Crazy" isn't in the list, it's better to check if "Codeine Crazy" is a recognized term. 
+
+Looking back at the Index Terms, the only entries for Codeine are the synonyms. "Crazy" isn't listed, so the phrase "Codeine Crazy" would be considered as "Codeine" as the index term, with the matched phrase being "Codeine Crazy." But the example in the problem had "lean" and "codeine" as separate entries. So in this case, the phrase "Codeine Crazy" would be matched to Codeine. However, the user might be using "Crazy" as a slang term, but since it's not in the list, perhaps it's considered "other." 
+
+But the main term here is "Codeine," which is in the list. So the correct approach is to match "Codeine" as the index term and "Codeine Crazy" as the matched phrase. However, maybe "Crazy" is part of a slang term that's not in the list, so the entire phrase is considered "other." But the example in the problem had "lean" and "codeine" as separate entries, so if the phrase is "Codeine Crazy," it's possible that "Crazy" is not a drug term, so the index term is Codeine, and the matched phrase is "Codeine Crazy." 
+
+Alternatively, maybe "Crazy" is a slang term for a drug effect, but since it's not in the list, it's considered "other." But the main term is "Codeine," so the index term would be Codeine, and the matched phrase is "Codeine Crazy." 
+
+I think the correct answer is that "Codeine" is the index term, and the matched phrase is "Codeine Crazy." But I need to check if "Crazy" is part of a recognized term. Since it's not in the list, maybe the entire phrase is considered as "Codeine Crazy" with index term Codeine. However, the example in the problem had "lean" and "codeine" as separate entries, so in this case, "Codeine Crazy" would be a single phrase, but "Codeine" is the index term. 
+
+Therefore, the correct JSON would be:
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine Crazy"}
+]
+But wait, the example had "lean" and "codeine" as separate entries. However, in the example, the post was "I got her hooked on that lean everyday she say she want codeine," which had "lean" and "codeine" as separate matches. So in this case, the phrase "Codeine Crazy" is a single phrase, but "Codeine" is the index term. But the problem says to detect every word or phrase that refers to an illicit drug. So "Codeine Crazy" is a phrase that refers to Codeine, so it's a single match. However, the example had two separate matches for "lean" and "codeine." So in this case, the correct answer would be the phrase "Codeine Crazy" matched to "Codeine." 
+
+But maybe "Crazy" is part of the slang term. However, since "Crazy" is not in the list, it's better to check if "Codeine Crazy" is a recognized term. Since it's not listed, but "Codeine" is, the index term is Codeine. Therefore, the correct JSON is:
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine Crazy"}
+]
+But the user's example had "lean" and "codeine" as separate entries. However, in that example, "lean" is a slang term for Codeine, and "codeine" is the direct term. So in this case, "Codeine Crazy" is a phrase that refers to Codeine, so it's one match. However, maybe "Crazy" is not a drug term, so the entire phrase is considered "other." But that's not the case. The main term is "Codeine," which is in the list. Therefore, the correct answer is to match "Codeine Crazy" to "Codeine."
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine Crazy"}
+]

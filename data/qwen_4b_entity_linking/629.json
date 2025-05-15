@@ -1,0 +1,44 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "And the heroin was no more than 6 years ago. Since it was 2015 when you were actively doing heroin and meth." I need to detect any drug references and map them to the correct index terms.
+
+First, I'll scan the post for any mentions of drugs. The words "heroin" and "meth" stand out. Looking at the index terms list, "Heroin" is listed as Morphine (MS Contin, Miss Emma, Morph). Wait, no, checking the list again: Morphine is the index term for the prototypical opioid. But heroin is a separate entry? Wait, looking back, the index terms include "Morphine" and "Heroin" isn't directly listed. Wait, let me check the list again.
+
+Looking at the index terms, "Heroin (MS Contin, Miss Emma, Morph)" is actually listed as the index term. Wait, no. Wait the index terms are listed as:
+
+Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence.
+
+Wait, but the actual index term for heroin isn't explicitly listed. Wait, looking at the list again, the index terms include "Heroin" as a separate entry? Wait, no. Let me check again.
+
+Looking through the list, the index terms include "Heroin" as a separate entry? Wait, no. Wait, the index terms list includes "Morphine" as the index term. But heroin is a different drug. Wait, but in the index terms, "Heroin" is not directly listed. Wait, the user provided the index terms, and I need to check if "heroin" is in the list. Let me check again.
+
+Looking through the list:
+
+- Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence.
+
+So "Heroin" is not listed as an index term. Wait, but the user's example 1 had "Codeine" as the index term for "lean" and "codeine". So in the index terms list, "Heroin" is not explicitly listed. Wait, but maybe the user's index terms list includes "Heroin" under another term? Wait, no. Wait, the index terms list includes "Heroin" as a separate entry? Let me check again.
+
+Wait, looking at the index terms list again, the first entry is 2,6-Xylidine, then 2-Amino-5-Chloropyridine, etc. Then later, there's "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic..." So "Heroin" is not directly listed as an index term. But in the example given, "Codeine" is mapped to "lean" and "codeine". So if "heroin" is not in the index terms list, then the correct index term would be "other".
+
+But wait, the user's index terms list includes "Heroin" as a separate entry? Wait, no. Wait, looking at the index terms list again, the entry for "Heroin" is not present. The entry for Morphine is there. So "Heroin" is not in the index terms list. Therefore, if the post mentions "heroin", it would map to "other" because it's not in the list.
+
+Wait, but in the example 1, "Codeine" is mapped to "lean" and "codeine". So "Codeine" is an index term. But "Heroin" isn't listed as an index term. Therefore, in the given post, "heroin" would be mapped to "other".
+
+But wait, maybe I'm missing something. Let me check again. The index terms list includes "Heroin" as a separate entry? Let me check again. The index terms list includes:
+
+- Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence.
+
+So "Heroin" is not listed as an index term. Therefore, "heroin" would be "other".
+
+But wait, in the index terms list, there's "6-Acetylmorphine (6-Monoacetylmorphine, 6-MAM) – An active intermediate metabolite formed almost immediately after heroin use." So the metabolite of heroin is 6-MAM. But the index term for 6-MAM is "6-Acetylmorphine", not heroin. Therefore, the term "heroin" is not directly in the index terms list. Therefore, the correct index term for "heroin" in the post would be "other".
+
+Similarly, "meth" is a slang for methamphetamine. Looking at the index terms, "Methamphetamine (Crystal Meth, Ice, Desoxyn) – A powerful stimulant drug with high addiction potential and neurotoxic effects when abused." So "meth" would map to "Methamphetamine".
+
+So in the post, the phrases "heroin" and "meth" are present. "Heroin" is not in the index terms list, so index term is "other". "Meth" is a slang for methamphetamine, which is in the index terms. So "meth" maps to "Methamphetamine".
+
+Therefore, the JSON array should have two entries: one for "heroin" as "other", and one for "meth" as "Methamphetamine".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"}
+]

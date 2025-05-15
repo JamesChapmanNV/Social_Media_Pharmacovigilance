@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "He'd get into a bad car accident and be like: No morphine needed. I'm a masochist." I need to detect any drug references here.
+
+First, I'll read through the post carefully. The key part is "No morphine needed." Morphine is listed in the index terms as an opioid analgesic. The phrase "morphine" is directly mentioned, so that's a clear match. The other part is "I'm a masochist," which is a metaphor for enduring pain, but not a drug reference. 
+
+Looking at the index terms, Morphine is listed with its synonyms like MS Contin, Miss Emma, Morph. The exact phrase here is "morphine," so the index term should be "Morphine." There's no other drug mentioned here. The rest of the sentence doesn't include any other terms from the list. 
+
+I should check if "masochist" is a slang for any drug, but based on the provided index terms, it's not. So the only match is "morphine." The answer should be a JSON array with one object: index_term "Morphine" and matched_phrase "morphine."
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

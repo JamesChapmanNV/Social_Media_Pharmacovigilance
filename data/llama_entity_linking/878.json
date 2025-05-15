@@ -1,0 +1,7 @@
+[
+  {"index_term": "other", "matched_phrase": "Registered Mobile Number"},
+  {"index_term": "other", "matched_phrase": "VIN"},
+  {"index_term": "other", "matched_phrase": "Vehicle identification number"},
+  {"index_term": "other", "matched_phrase": "Email Id"},
+  {"index_term": "other", "matched_phrase": "Dealer details"}
+]

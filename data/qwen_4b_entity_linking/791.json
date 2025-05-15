@@ -1,0 +1,23 @@
+<think>
+Okay, let's see. The user provided a post that says, "Joe wants another $33 billion to launder through Ukraine, at the same time the economy contracted 1.4% (probably worse, because they lie)." Then they add, "Great, now we know that Joe is smoking Hunter's crack."
+
+First, I need to check if there are any drug-related references in the post. The main content talks about money laundering, economy contraction, and mentions "Hunter's crack." 
+
+Looking at the Index Terms list, "Codeine" has synonyms like "Lean," "Purple Drank," and "Schoolboy." But the post mentions "Hunter's crack." Wait, "crack" is a slang term for cocaine. But in the Index Terms, cocaine's metabolite is "Benzoylecgonine (BZE, Ecgonine benzoate)." However, "crack" itself isn't listed as an index term. The example 4 shows that "snow" and "white lines" are marked as "other" because they aren't drug terms. 
+
+So, "Hunter's crack" would refer to cocaine. But checking the Index Terms, there's no direct entry for "crack" as a term. The only related term is "Cocaine" but it's not in the list. Wait, looking back, the Index Terms include "Benzoylecgonine" as the metabolite of cocaine. But the user's task is to detect phrases that refer to illicit drugs. Since "crack" is a slang term for cocaine, even if it's not explicitly listed, maybe it's considered under "other"?
+
+Wait, the example 3 has "xans" which is not in the list, so it's "other." Similarly, "Hunter's crack" is a reference to cocaine, which is an illicit drug. However, the Index Terms don't have a direct entry for "crack" as a term. The Index Terms do have "Cocaine" but it's not listed. Wait, looking at the Index Terms again, there's no "Cocaine" listed. Wait, no, the Index Terms list includes "Benzoylecgonine (BZE, Ecgonine benzoate)" as the metabolite of cocaine, but the actual drug name "Cocaine" isn't in the list. Wait, no, looking at the list again, the Index Terms include "Benzoylecgonine" as the metabolite, but the actual drug is cocaine. However, the user's task is to detect phrases that refer to illicit drugs. Since "crack" is a slang term for cocaine, but the Index Terms don't have "Cocaine" as an index term, maybe it's considered "other"?
+
+But wait, in the example 4, "snow" and "white lines" are marked as "other" because they aren't drug terms. So, if "crack" isn't listed in the Index Terms, then "Hunter's crack" would be "other." However, the user's instruction says to link to the Index Term if it's in the list, else "other." Since "crack" isn't in the list, it's "other."
+
+But wait, the Index Terms do have "Cocaine" as a drug? Wait, no, looking back, the Index Terms list includes "Benzoylecgonine (BZE, Ecgonine benzoate)" as the metabolite of cocaine. The actual drug name "Cocaine" is not in the list. So "crack" is a slang term for cocaine, but since the Index Terms don't have "Cocaine" as an index term, then "Hunter's crack" would be "other." Therefore, the matched phrase is "Hunter's crack" with index term "other."
+
+But wait, maybe "crack" is considered a drug reference. However, the Index Terms don't have "crack" as an entry. The example 3 shows that "xans" is "other" because it's not in the list. Therefore, "Hunter's crack" would be "other."
+
+So the JSON array would have one entry: {"index_term": "other", "matched_phrase": "Hunter's crack"}.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "Hunter's crack"}
+]

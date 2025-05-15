@@ -1,0 +1,11 @@
+```json
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "pot"},
+  {"index_term": "other", "matched_phrase": "fuel"},
+  {"index_term": "other", "matched_phrase": "gas"},
+  {"index_term": "other", "matched_phrase": "skunk"},
+  {"index_term": "other", "matched_phrase": "slurricane"},
+  {"index_term": "other", "matched_phrase": "Dutchberry"}
+]
+```

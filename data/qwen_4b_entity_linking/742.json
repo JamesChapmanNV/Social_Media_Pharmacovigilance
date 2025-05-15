@@ -1,0 +1,17 @@
+<think>
+Okay, let's see. The user provided a post that's a very emotional plea about an overdose. The task is to detect any drug-related references in the post and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post says: "When it's too late it's too late and you can't go back and undo the overdose. You can't save yourself. You can't bring yourself back to life and stay with the wife and little baby and every single person who loves you. It's irreversible. Why, why did you have to do it???"
+
+Looking for any words or phrases that might refer to illicit drugs. The key part here is "undo the overdose." Overdose is a consequence of drug use, but the post doesn't explicitly mention the drug itself. The user is talking about the aftermath of an overdose, not the drug name. 
+
+The index terms list includes drugs like Codeine, Amphetamine, Fentanyl, etc. But the post doesn't use any slang, euphemisms, or specific terms for drugs. The words "overdose" and "drug use" are mentioned, but the actual drug name isn't there. 
+
+The example given in the problem where "snow" was considered "other" because it's not a drug. Similarly, here, the post doesn't mention any specific drug names or slang. The only possible reference is "overdose," but that's a result, not the drug itself. 
+
+So, there are no direct mentions of drugs in the post. The user is talking about the consequences of drug use, but not the specific substance. Therefore, there are no matches to the index terms. 
+
+Hence, the correct response is to return an empty array since there are no detected phrases that refer to illicit drugs.
+</think>
+
+[]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Mix the codeine with the sprite and i pop me a xan bitch, i'm getting to the money i ain't changing my plan." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll break down the content. The words "codeine" and "xan" are mentioned. Codeine is a controlled substance, often associated with misuse. "Xan" is slang for Xanax, another prescription drug. The context here is mixing them with Sprite, which suggests recreational use. The phrase "pop me a xan" implies taking the drug, possibly in a way that's not prescribed. The mention of "getting to the money" might indicate a desire to continue using drugs despite the risks. 
+
+The tone seems supportive of this behavior, using slang and casual language. The user is talking about using these drugs, which are illegal or require a prescription. The context is about misuse, not medical use. So according to the definitions, this would fall under True because it's about using drugs in a way that's not medically appropriate, promoting or glorifying their abuse. 
+
+I should check if there's any medical context, but there's none here. The terms are used in a way that's encouraging the use, so the classification is True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and 'xan' (Xanax), and describes mixing them with Sprite, indicating recreational drug use and encouragement of misuse."
+}

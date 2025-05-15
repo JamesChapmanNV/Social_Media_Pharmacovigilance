@@ -1,0 +1,18 @@
+<think>
+Okay, let's see. The user provided a content snippet: "I just took a piss nd seen codeine commin out 😈". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll break down the content. The person is talking about taking a piss (urinating) and seeing codeine coming out. Codeine is a controlled substance, typically an opioid. The use of "commin out" might be a typo or slang for "coming out" as in urine. The emoji 😈 adds a sarcastic or mocking tone.
+
+Now, checking the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang or euphemisms indicating recreational use or abuse. The content here mentions codeine, which is a controlled drug. The context is about seeing it in urine, which could imply drug use. The emoji suggests a negative or mocking attitude, possibly indicating abuse or misuse. 
+
+But wait, is this just a casual mention or a sign of abuse? The person is talking about their own urine, which might be a way of indicating they've used codeine. However, codeine is sometimes found in over-the-counter medications, but the context here is about seeing it in urine, which could be a sign of recent use. The tone with the emoji might be mocking, which could be a form of glorifying or discussing abuse. 
+
+Alternatively, could this be a medical context? But the user is talking about seeing it in their own urine, which is more personal and possibly indicating drug use. The mention of codeine, which is a controlled substance, and the context of seeing it in urine could be a sign of abuse. The emoji adds a negative tone, possibly indicating that the person is being sarcastic or mocking the situation, which might be a form of glorifying the use. 
+
+So according to the definitions, this would fall under True because it mentions codeine (a controlled substance) in a context that might indicate abuse or misuse. The use of slang (commin out) and the emoji suggest a negative or mocking tone, which could be part of promoting or discussing abuse. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' a controlled substance, in a personal, self-referential context with a mocking emoji, suggesting potential drug use or abuse."
+}

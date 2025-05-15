@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the correct index term, and return a JSON array.
+
+First, I need to look at the provided post: "PC Alasdair FERRIE and PCSO Sherrie CRANSTONE attended Reading Crown Court last week for the sentencing of Edison ADEMAJ, who was imprisoned for 27 months for two cannabis factories spanning across two police forces. SGT WILLOUGHBY said' this reflects the hard work our PCSO's do".
+
+I need to scan through the text for any drug-related terms. The main words here are "cannabis". Checking the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "cannabis" would map to that index term. 
+
+Are there any other terms? The rest of the post talks about police officers, court proceedings, and sentences. There's no mention of specific drugs beyond "cannabis". The term "cannabis" is explicitly listed in the index terms under Marijuana. 
+
+So the only match here is "cannabis" linked to "Marijuana". The other parts of the sentence don't contain any other drug references. The example in the problem statement had "snow" and "white lines" as "other" because they aren't on the list, but here "cannabis" is directly in the list. 
+
+I need to make sure that "cannabis" is the exact phrase matched. The post says "two cannabis factories", so "cannabis" is the key term here. No slang or euphemisms are used here, just the direct term. 
+
+Therefore, the correct JSON array should have one object with index_term "Marijuana" and matched_phrase "cannabis".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

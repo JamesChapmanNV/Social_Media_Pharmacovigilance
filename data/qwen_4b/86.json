@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content classification. The user provided the content: "I just figured out my sister's friend has over 100k subscribers on YouTube wth". First, I need to determine if this is illicit/abusive-drug-related.
+
+Looking at the keywords: "subscribers on YouTube" and "wth" which is slang for "what the hell". The mention of YouTube subscribers is about social media presence, not drugs. There's no mention of drugs, illegal substances, or any context related to drug use, abuse, or promotion. The "wth" is just a colloquial expression, not a drug reference. The content seems to be about someone's online presence, not drug-related activities. 
+
+The definitions for True include mentions of illegal drugs in contexts of abuse, slang, or encouragement of misuse. Here, there's no such mention. The content is about YouTube subscribers, which is unrelated. Therefore, it should be classified as False. The explanation should note that there's no drug-related content, just a comment about YouTube subscribers.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses YouTube subscribers and uses 'wth' as slang, with no mention of drugs, abuse, or related contexts."
+}

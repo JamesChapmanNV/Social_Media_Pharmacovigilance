@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Bella Thorne in her alleged heroin addict era or Dasha." I need to check for any drug references here.
+
+First, I'll look for keywords related to illicit drugs. The phrase "heroin addict era" stands out. Heroin is a controlled substance, so that's a clear match. Now, checking the index terms, heroin is listed as an index term. The exact phrase here is "heroin addict era," but the index term is "Heroin." Wait, looking back at the index terms list, "Heroin" isn't explicitly listed. Let me check again.
+
+Looking through the index terms, I see "Morphine" and "Codeine," but not heroin. Wait, the index terms include "Heroin" as a separate entry? Let me check again. Wait, the user provided the list, and "Heroin" isn't listed. The closest is "Morphine (MS Contin, Miss Emma, Morph)" but that's morphine, not heroin. The index terms don't have "Heroin" as a specific term. Hmm, so if the drug isn't in the list, we use "other."
+
+Wait, the example in the user's prompt includes a case where "snow" and "white lines" are marked as "other" because cocaine isn't on the list. So if "heroin" isn't in the index terms, then the matched phrase "heroin" would be "other." But wait, let me check the index terms again. Let me scan through the list again.
+
+Looking through the index terms, I don't see "Heroin" listed. The closest is "Morphine," but that's a different drug. So "heroin" isn't in the list. Therefore, the phrase "heroin addict era" would map to "other." However, the user's example in Example #4 shows that "snow" and "white lines" are "other" because cocaine isn't on the list. So in this case, since heroin isn't in the index terms, the matched phrase "heroin" would be "other."
+
+But wait, the user's example for "codeine" includes "lean" and "codeine" as index terms. So "heroin" isn't in the list, so it's "other." Therefore, the matched phrase here is "heroin," which is not in the index terms, so index_term is "other." But the user's post says "heroin addict era." The exact phrase is "heroin," so the matched_phrase is "heroin," and index_term is "other."
+
+But wait, maybe the user made a mistake. Let me check the index terms again. Wait, the index terms include "Heroin" as a term? Let me check again. The index terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. So "heroin" is not in the list. Therefore, the correct index term is "other."
+
+So the output would be a JSON array with one object: index_term "other" and matched_phrase "heroin." But the user's example 3 has "xans" as "other," which is not in the list. So yes, in this case, "heroin" is not in the index terms, so it's "other." Therefore, the answer should be:
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]
+
+But wait, the user's post says "heroin addict era." The phrase "heroin" is the key term here. So the matched_phrase is "heroin," and since it's not in the list, it's "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

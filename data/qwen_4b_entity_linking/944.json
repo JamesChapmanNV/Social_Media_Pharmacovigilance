@@ -1,0 +1,35 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Flying J gas stations smells like bbq sauce and heroin". I need to identify any drug-related references here.
+
+First, I'll break down the post. The main parts are "Flying J gas stations", "smells like bbq sauce", and "heroin". The task is to detect any phrases that refer to illicit drugs or substances, using the given index terms.
+
+Looking at "heroin" directly. Heroin is listed in the index terms as an opioid analgesic, so that's a clear match. The index term for heroin is "Morphine" but wait, checking the list again. Wait, the index terms include "Morphine" and "Heroin" is listed as "Morphine (MS Contin, Miss Emma, Morph)"? Wait no, looking back, the index terms list "Morphine" as the index term, but heroin is a separate entry? Wait, no. Wait, the index terms list "Morphine" as the term, but heroin is not explicitly listed. Wait, let me check the index terms again.
+
+Looking at the list, "Morphine" is listed as an index term. Heroin is not directly listed. Wait, but in the example given, "Codeine" has synonyms like "lean" and "purple drank". So maybe "heroin" isn't in the index terms. Wait, the index terms list "Morphine" but not heroin. However, the user's task says to check if the drug is in the list. If not, use "other".
+
+So "heroin" is not in the index terms. Wait, but looking at the list again, is there an entry for heroin? Let me check again. The index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. So "heroin" is not in the list. Therefore, "heroin" would map to "other".
+
+But wait, the user's example 1 had "lean" and "codeine" both mapped to "Codeine". So "heroin" is not in the index terms, so it would be "other". But wait, is there an entry for heroin? Let me check again. The index terms list "Morphine" but not heroin. So "heroin" is not in the list, so it's "other".
+
+So the post has "heroin" which is not in the index terms, so that's "other". Then "bbq sauce" is not a drug, so that's "other". Wait, but the user's example 4 had "snow" and "white lines" as "other" because they aren't drugs. So in this case, "bbq sauce" is not a drug, so it's "other", and "heroin" is not in the index terms, so "other".
+
+Wait, but the task says to detect every word or phrase that refers to an illicit drug. So "heroin" is an illicit drug, but if it's not in the index terms, then it's "other". So in this case, the post has "heroin" which is an illicit drug but not in the index terms, so it's "other".
+
+So the matched phrases would be "heroin" as "other", and "bbq sauce" as "other". But wait, "bbq sauce" is not a drug. So the only drug reference is "heroin", which is not in the index terms. Therefore, the JSON array would have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+But wait, let me check the index terms again. Is there an entry for heroin? Let me scan through the list again. The index terms include "Morphine", "Codeine", "Amphetamine", "Oxycodone", etc. But heroin is not listed. Therefore, "heroin" is not in the index terms, so it's "other".
+
+So the answer should be:
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]
+
+But wait, the user's example 3 had "xans" which is not in the list, so it's "other". So "heroin" is not in the list, so it's "other".
+
+Therefore, the correct output is the JSON array with "heroin" mapped to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

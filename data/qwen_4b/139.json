@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is: "Straight to health center I go in the AM I need some codeine in my system 🍼". 
+
+First, I need to check if this is about illicit or abusive drug use. The user mentions going to a health center in the morning and needing codeine in their system. Codeine is an opioid, which is a controlled substance. The phrase "need some codeine in my system" could imply that the person is using it for a purpose that's not medical, maybe for recreational use. But wait, codeine is also used in some over-the-counter medications, but the context here is unclear.
+
+However, the mention of needing codeine in the system might suggest that they're using it without a prescription, which is illegal. The tone here is a bit ambiguous. The user is talking about going to a health center, which could be a red herring. But the key part is "need some codeine in my system." If they're using it without a valid reason, that could be abuse. Also, the use of codeine without a medical context might be considered misuse. 
+
+The example given in the task includes codeine in a context that's considered abusive. So even if it's a medical context, if it's not properly addressed, it might be considered illicit. But here, the user is saying they need it in their system, which might indicate that they're using it for non-medical purposes. Therefore, this would fall under ILLICIT/ABUSIVE-DRUG-RELATED. The explanation should mention the mention of codeine and the implication of misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a context that implies misuse or abuse, as the speaker states they 'need some codeine in my system' without clear medical justification."
+}

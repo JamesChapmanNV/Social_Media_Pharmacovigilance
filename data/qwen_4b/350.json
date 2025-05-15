@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is "Teenage drug dealer hid 58 wraps of heroin internally to outwit police." First, I need to check if this is illicit or abusive drug-related. The key terms here are "drug dealer" and "heroin." Heroin is an illegal drug, and the context is about hiding it, which suggests involvement in drug trafficking. The term "drug dealer" directly points to illegal activity. The mention of heroin, an illicit drug, and the action of hiding it implies misuse or abuse. The example given in the task includes similar cases where mentioning illegal drugs in the context of use or dealing is classified as True. So, this should be labeled True because it's about an illegal drug (heroin) and the person is a dealer, which is related to abuse or misuse. The explanation should mention the illegal drug and the context of dealing.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions heroin, an illegal drug, and describes a teenage drug dealer hiding it, indicating involvement in drug trafficking and abuse."
+}

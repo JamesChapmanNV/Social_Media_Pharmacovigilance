@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is about 50 kg of heroin and 30 lakh rupees seized from Delhi's Shaheen Bagh. The user wants to classify this as illicit/abusive-drug-related or not.
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. The content here is about heroin, which is an illegal drug. The context is about law enforcement seizing drugs, which is related to drug abuse and illegal trafficking. The mention of heroin and the amount seized clearly points to illicit activity. The example given in the task also includes similar cases, like the first example where codeine and lean were mentioned. So this should be classified as True. The explanation should note that heroin is an illegal drug and the context of seizure indicates abuse or trafficking.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions heroin, an illegal drug, and describes the seizure of a large quantity, indicating illicit drug trafficking and abuse."
+}

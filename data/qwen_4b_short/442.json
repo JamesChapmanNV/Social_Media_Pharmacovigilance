@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user wants me to label the given social media post as T or F based on the rules provided. The post is: "Expert witnesses debunk claims that George Floyd died from a drug overdose."
+
+First, I need to recall the label rules. T is for text that shows illicit or abusive drug use, including using, seeking, buying, selling, trafficking, or slang for drugs. F is for other cases like medical/policy discussion, news, discouraging use, or metaphor.
+
+The post mentions "drug overdose." Now, the key here is whether the post is discussing drug use itself or just talking about a medical or policy issue. The phrase "debunk claims that George Floyd died from a drug overdose" is about challenging a claim related to his death. The actual content here is about the medical cause of death, which is a topic that could be part of a policy discussion or news. However, the term "drug overdose" itself is a medical term. But the question is whether the post is showing drug use. 
+
+Wait, the label T is for text that shows drug use, not just the mention of a medical condition. So if the post is discussing the cause of death (which is a medical issue), then maybe it's F. However, if the post is using "drug overdose" as part of the discussion about the circumstances surrounding the death, which could be part of a policy or news discussion. 
+
+But the user's instruction says that F includes medical/policy discussion. So even though "drug overdose" is a medical term, the post is not about the use of drugs but about the cause of death. Therefore, the label would be F. Unless the post is implying that the overdose was due to drug use, but the post is about debunking the claim that he died from a drug overdose. So the post is not showing drug use but rather discussing a medical claim. Therefore, the answer should be F.
+</think>
+
+F

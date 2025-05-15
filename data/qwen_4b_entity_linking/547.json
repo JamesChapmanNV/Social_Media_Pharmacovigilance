@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Molly and codeine in my fanta, it's a lot of dreams in my fanta." I need to detect any drug references here.
+
+First, I'll break down the post. The words mentioned are "Molly," "codeine," and "fanta." Looking at the index terms, "Molly" is listed under MDMA. The index term for MDMA is "MDMA (Ecstasy, Molly, 3,4-methylenedioxymethamphetamine)." So "Molly" maps to MDMA.
+
+Next, "codeine" is directly listed in the index terms under "Codeine (Lean, Purple Drank, Schoolboy)." So that's a clear match. 
+
+Then there's "fanta." The user might be referring to a drink, but "fanta" isn't listed in the index terms. However, the post says "codeine in my fanta," which could be a slang way of saying "in my drink," but since "fanta" itself isn't a drug, it's probably not a match. The example in the instructions had "snow" and "white lines" as "other" because they weren't drugs. So "fanta" here is just a drink, so it's "other."
+
+Wait, but the user's example 3 had "xans" as "other" because it wasn't a listed term. So "fanta" isn't a drug, so it's "other." 
+
+So the matched phrases are "Molly" (MDMA) and "codeine" (Codeine). The "fanta" is not a drug term, so it's "other." But the user's instruction says to detect every word or phrase that refers to a drug. However, "fanta" is just a drink, so it's not a drug. Therefore, the correct matches are "Molly" and "codeine." 
+
+Wait, the post says "codeine in my fanta." So "codeine" is a drug, and "Molly" is another. The "fanta" is just the container, so not a drug. So the JSON should have two entries: one for Molly (MDMA) and one for codeine (Codeine). The "fanta" is not a drug term, so it's not included. 
+
+So the final answer should be two entries: {"index_term": "MDMA", "matched_phrase": "Molly"}, {"index_term": "Codeine", "matched_phrase": "codeine"}.
+</think>
+
+[
+  {"index_term": "MDMA", "matched_phrase": "Molly"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

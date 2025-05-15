@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is "I guess you can't just order morphine at the hospital." First, I need to determine if this is illicit or abusive drug-related.
+
+Morphine is a controlled substance, usually prescribed for pain management. The sentence is talking about the process of getting morphine at a hospital. The key here is the context. The user is discussing the hospital's process, which is a medical setting. There's no mention of abuse, misuse, or promotion. The phrase "you can't just order" might imply that it's regulated, which is normal for prescription drugs. Since it's in a medical context and not encouraging misuse, it's probably not illicit. The example given in the task where a pharmacology lecture was considered false because it's educational. Similarly, this is a general statement about hospital procedures, not promoting or discussing abuse. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses morphine in a general, medical context related to hospital procedures, not promoting or encouraging abuse."
+}

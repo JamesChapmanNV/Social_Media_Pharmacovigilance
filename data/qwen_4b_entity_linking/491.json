@@ -1,0 +1,25 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific task is to detect any words or phrases that refer to illicit drugs or substances, link them to the correct Index Term from the provided list, and return a JSON array.
+
+First, I need to look at the post: "Jigga once said '......fame is the worst drug known to man, It's stronger than heroin When you could look in the mirror like, There I am And still not see what you've become'". 
+
+I need to scan through the text for any mentions of drugs or substances. The key part here is the quote: "fame is the worst drug known to man, It's stronger than heroin". The phrase "fame" is being compared to a drug, specifically heroin. But wait, the Index Terms list includes "Heroin (MS Contin, Miss Emma, Morph)" but "fame" isn't listed as a drug. However, the user is asking for any references to drugs, even if they're metaphors or slang. But according to the instructions, I need to check if the phrase matches an Index Term. 
+
+In the example, "xans" was considered "other" because it wasn't listed. So here, "fame" is a metaphor for a drug, but since it's not in the Index Terms, it should be "other". However, the user might be testing if "heroin" is in the list. Let me check the Index Terms again. Yes, "Heroin (MS Contin, Miss Emma, Morph)" is listed. But the post says "fame is stronger than heroin". The word "heroin" is explicitly mentioned. So "heroin" is an Index Term. But in the quote, it's "heroin" as a direct reference. 
+
+Wait, the post says "It's stronger than heroin". The word "heroin" is present. So "heroin" is a direct reference. So the matched phrase would be "heroin", and the index term is "Heroin". But looking at the Index Terms list, "Heroin" is listed as an index term. So that's a match. 
+
+But wait, the user's example 1 had "lean" and "codeine" as matches. In the post, the user is comparing fame to heroin. So "heroin" is directly mentioned. Therefore, the matched phrase is "heroin", and the index term is "Heroin". 
+
+But the user's example 3 had "xans" which wasn't in the list, so it was "other". So in this case, "heroin" is in the list, so it should be matched. 
+
+So the JSON array should have one entry: {"index_term": "Heroin", "matched_phrase": "heroin"}.
+
+Wait, but the quote is in quotes, and the user's post has "......fame is the worst drug known to man, It's stronger than heroin". So the exact phrase is "heroin". So the matched_phrase is "heroin". 
+
+Therefore, the correct output is a single object with index_term "Heroin" and matched_phrase "heroin".
+</think>
+
+[
+  {"index_term": "Heroin", "matched_phrase": "heroin"}
+]

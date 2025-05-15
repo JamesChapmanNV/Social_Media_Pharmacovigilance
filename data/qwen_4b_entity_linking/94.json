@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post and wants me to detect any drug-related references, link them to the appropriate index terms, and return a JSON array.
+
+First, I need to read the post carefully: "Lol you need to write a book beef. You crack me up. Are you feeling better. Any word from the vettyman?" 
+
+Looking for any slang, euphemisms, or phrases that might refer to illicit drugs. Let's break it down word by word. 
+
+The first part is "Lol you need to write a book beef." The word "beef" here is likely a slang term. In internet slang, "beef" can mean a conflict or argument, but sometimes it's used in the context of drug use. Wait, but in the index terms, there's "Codeine" with synonyms like "Lean" and "Purple Drank," but "beef" isn't listed. However, looking at the example #3, "xans" was considered "other" because it wasn't in the list. So if "beef" isn't in the index terms, it would be "other."
+
+Next part: "You crack me up." That's just a casual expression, no drug reference. "Are you feeling better." Again, no drugs. "Any word from the vettyman?" "Vettyman" is a slang term for a vet, but not related to drugs. 
+
+So, the only possible term here is "beef." Checking the index terms again to confirm. The index terms include Codeine, Amphetamine, etc., but "beef" isn't listed. Therefore, "beef" would map to "other." 
+
+Wait, but maybe "beef" is a slang for something else? Let me check the index terms again. The index terms include "Codeine" with "Lean," "Purple Drank," "Schoolboy." "Beef" isn't there. Also, "vettyman" is a term for a vet, not a drug. 
+
+So the only possible match is "beef," which isn't in the list, so it's "other." Therefore, the JSON should have one entry with index_term "other" and matched_phrase "beef."
+</think>
+
+[{"index_term": "other", "matched_phrase": "beef"}]

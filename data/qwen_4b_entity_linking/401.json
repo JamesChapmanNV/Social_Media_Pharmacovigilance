@@ -1,0 +1,7 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Nothing much, there are just two protest groups outside." I need to check if there are any drug-related references here.
+
+First, I'll go through the post word by word. The words are "Nothing", "much", "there", "are", "just", "two", "protest", "groups", "outside". None of these words seem to relate to drugs. The index terms list includes various drugs and their slang, but none of the terms here match. "Protest groups" is a general term, not a drug reference. The example where "snow" was considered "other" because it's not a drug, so similarly, "protest groups" would fall under "other" if there's no specific drug term. But wait, the task is to detect any drug references. Since there are none here, the answer should be an empty array. But the example 3 had "xans" which wasn't in the list, so it was "other". But in this case, there are no matches. So the correct response is an empty JSON array. Let me confirm the index terms again. No terms related to protest or groups. So the answer is no matches.
+</think>
+
+[]

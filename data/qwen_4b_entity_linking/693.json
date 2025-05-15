@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "hi yes I just woke up from a codeine nap to this compliment ty Robbie". I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The key phrase here is "codeine nap". The task is to find every word or phrase that refers to an illicit drug or substance. The Index Terms list is provided, so I need to check if "codeine" is in there. Looking at the list, yes, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. 
+
+The phrase "codeine nap" directly mentions "codeine", which is an index term. The other part of the sentence is "this compliment ty Robbie", which doesn't seem related to drugs. So the only match here is "codeine". 
+
+I need to make sure there's no other slang or euphemism. "Nap" here might be a slang term, but in this context, it's part of "codeine nap", which is a direct reference to codeine. The Index Term for codeine includes "codeine" itself, so the matched_phrase should be "codeine". 
+
+No other terms in the post relate to drugs. The rest is just a compliment and a mention of Robbie, which isn't relevant. So the JSON array should have one object with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

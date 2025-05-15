@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "This church deals heroin. It literally has no Biblical right to say the Holy Spirit is there. They are also cowards and backbiters like the Hess/Dedmon family."
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Also, slang or cultural references indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+The content mentions "heroin," which is an illegal drug. The phrase "deals heroin" directly indicates the distribution or sale of an illicit drug. The rest of the text is about the church's actions and the speaker's opinion on their religious practices. However, the key part here is the mention of heroin. Even though the rest is about the church's conduct, the explicit mention of heroin in the context of dealing (which is illegal) would classify this as illicit. The other parts are about the church's behavior, but the drug reference is the main point here. So, the label should be True because it's directly mentioning the use of heroin, which is an illicit drug, and the context of dealing with it. The other parts are more about the church's actions but the drug reference is the critical factor here.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin' in the context of a church 'dealing' it, which directly references illegal drug distribution and abuse."
+}

@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Yes it's because they are nearing that crack! They can't risk hurting their players this weekend because Villarreal could hurt them in Spain if they lose any key players!1". I need to detect any drug references here.
+
+First, I'll scan the post for any terms that might refer to illicit drugs. The word "crack" stands out. Looking at the index terms, there's a list of substances. Let me check if "crack" is listed. 
+
+Looking through the index terms, I see "Crack" isn't explicitly listed. However, "Crack" is a slang term for crack cocaine, which is an illicit drug. Since the index terms don't have a direct entry for "crack", but the task says to use "other" if the drug isn't in the list. 
+
+Wait, let me double-check the index terms. The list includes "Methamphetamine (Crystal Meth, Ice, Desoxyn)", "Amphetamine (Speed, Bennies, Adderall)", "Codeine (Lean, Purple Drank, Schoolboy)", etc. But "crack" isn't listed. So according to the instructions, if the drug isn't in the list, use "other". 
+
+Therefore, "crack" here refers to crack cocaine, which is an illicit drug. Since it's not in the index terms, the index term should be "other". The matched phrase is "crack". 
+
+I need to make sure there are no other terms. The rest of the post talks about sports and players, so no other drug references. So the only match is "crack" with index term "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"}
+]

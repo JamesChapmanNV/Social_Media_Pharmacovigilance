@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "the one day i can catch up on some sleep my parents wake me at the crack of dawn to go hiking". I need to check for any drug-related references here.
+
+First, I'll go through each word and phrase. The post mentions "sleep", "parents", "hiking". None of these words are on the list of index terms related to drugs. "Sleep" is a general term, and "hiking" is an activity. There's no slang, euphemism, or synonym for drugs here. The example where "xans" was marked as "other" because it wasn't a specific drug term. Similarly, "snow" in example 4 was "other" because it wasn't a drug. 
+
+So, in this case, there are no phrases that match any of the index terms. The user's post is about sleep and hiking, which are unrelated to illicit drugs. Therefore, the correct response is to return an empty array since there are no matches. Wait, but the examples sometimes have "other" when the phrase isn't a specific drug. However, in this case, the post doesn't mention any drugs at all. The example 3 had "xans" which was "other" because it wasn't a specific term. But here, there's no mention of any drug terms. So the answer should be an empty array. Let me double-check the index terms. The index terms include things like Codeine, Amphetamine, etc. The post doesn't have any of those. So the correct output is an empty JSON array.
+</think>
+
+[]

@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "proud of jesse pinkman for getting over his heroin addiction". I need to detect any drug references here.
+
+First, I'll scan the post for any words that might refer to illicit drugs. The mention of "heroin" is straightforward. Heroin is listed in the index terms under "Morphine" as "MS Contin, Miss Emma, Morph". Wait, but heroin is a specific opioid. Let me check the index terms again. Looking through the list, "Morphine" includes "MS Contin, Miss Emma, Morph", but heroin isn't explicitly listed. However, the index term for heroin isn't present. Wait, the index terms include "Morphine" and "Codeine", but heroin is a separate opioid. Wait, in the index terms, "Morphine" is listed as the prototypical opioid, but heroin isn't directly mentioned. However, the user's task is to link to the index terms provided. Since heroin isn't in the list, I need to check if any of the index terms could cover it. 
+
+Wait, looking back, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)". Heroin isn't listed. But the user's instruction says if the drug is not in the list, use "other". So "heroin" would be "other". But wait, the example in the problem statement includes "heroin" in the post, but the example isn't given. Wait, in the example #4, "snow" and "white lines" are considered "other" because they aren't drugs. So in this case, "heroin" is a drug, but if it's not in the index terms, then it's "other". 
+
+Wait, looking at the index terms again, "Morphine" is listed, but heroin is a different drug. The index terms don't have a specific entry for heroin. Therefore, "heroin" would be "other". However, maybe there's a mistake here. Let me check again. The index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)", but heroin is not listed. So "heroin" is not in the index terms, so it should be "other". 
+
+But wait, the user's task is to detect any drug references. The phrase "heroin addiction" refers to heroin, which is an illicit drug. However, since heroin isn't in the index terms, the correct index term would be "other". Therefore, the matched phrase is "heroin", and the index term is "other". 
+
+So the output should be a JSON array with one object: {"index_term": "other", "matched_phrase": "heroin"}.
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

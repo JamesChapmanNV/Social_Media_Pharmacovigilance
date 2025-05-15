@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet: "I'm ready to go bro. My supervisor tryna crack jokes to lighten the mood about being at a meeting and they're all ass."
+
+First, I need to determine if this content is related to illicit or abusive drug use. The key here is to check for any mention of drugs, slang, or contexts that indicate abuse or misuse. 
+
+Looking at the content, the user is talking about their supervisor trying to lighten the mood with jokes during a meeting, and the jokes are "all ass." The term "ass" here is probably used colloquially, maybe as a slang term for something else, but in this context, it's part of a joke about the meeting. There's no mention of drugs, illegal substances, or any related terms. The conversation seems to be about workplace humor, not drug use.
+
+The definitions say that True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. False includes medical, educational, or preventative contexts. The content here doesn't mention any drugs at all. The term "ass" is a slang, but it's not related to drugs. The context is about a meeting and jokes, which is unrelated to drug abuse. 
+
+So the classification should be False because there's no drug-related content here. The explanation would note that there's no mention of drugs or drug-related terms, and the context is about workplace humor.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses workplace humor and does not mention drugs, slang, or contexts related to drug abuse or misuse."
+}

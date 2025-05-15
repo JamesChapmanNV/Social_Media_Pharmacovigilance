@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content classification. The user provided the content: "Hit her with no condom had to make her eat a plan b and im sippin on the codeine not brandy." 
+
+First, I need to parse the sentence. The key terms here are "plan b" and "codeine." Plan B is a medication used for emergency contraception, which is a medical context. However, the sentence also mentions "codeine," which is an opioid drug. The phrase "im sippin on the codeine not brandy" suggests the person is consuming codeine, possibly in a way that's not medically supervised.
+
+Now, considering the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse or misuse. The user is using codeine, which is a controlled substance. The phrase "sippin on" might imply recreational use. Also, the context of "hit her with no condom" and "make her eat a plan b" could be related to sexual activity and contraceptive measures, but the mention of codeine is the key here.
+
+The user is using codeine, which is a controlled substance, and the way it's phrased ("sippin on") might indicate misuse. Even though plan B is a medical term, the combination with codeine in a casual, possibly abusive context could lead to classifying it as illicit. The explanation should note the mention of codeine and the context of misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a casual, possibly abusive context ('sippin on') and implies recreational or non-medical use."
+}

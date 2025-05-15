@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "i'll send you some british ones like black tar heroin". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False). 
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. The content here uses "black tar heroin", which is a well-known illegal drug. The phrase "i'll send you some" suggests sharing or distributing, which is promoting or facilitating drug use. The mention of "british ones" might refer to a specific type or origin, but the key term is "black tar heroin", which is clearly an illicit drug.
+
+The user is using the drug's name directly, which is a strong indicator. Also, the context of sending it implies distribution, which is related to abuse or misuse. There's no mention of medical use or education here. The tone seems to be encouraging or facilitating drug use. So according to the definitions, this should be classified as True. The explanation should mention the direct mention of an illegal drug and the context of sharing or distributing.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'black tar heroin,' an illegal drug, and implies sharing or distributing it, indicating promotion or facilitation of drug abuse."
+}

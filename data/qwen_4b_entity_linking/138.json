@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references. First, I need to read through the post carefully.
+
+The post is: "Was gonna come on here & say pretty much that...where's everyone that said "drug overdose" & moved on? Where's the retractions? The apologies? The "oh, I now realize I may have been wrong"? Has anyone on this app seen it from anyone at all? Some People have no shame or decency."
+
+Looking for any mentions of drugs or related terms. The user is talking about people who mentioned "drug overdose" and moved on without retractions or apologies. The key here is to check if "drug overdose" is considered a drug reference. But according to the index terms provided, "drug overdose" isn't listed as a specific substance. The index terms include specific drugs like Codeine, Amphetamine, etc., but not the act of overdosing or the term "drug overdose" itself.
+
+The post also mentions "drug overdose" in quotes, but the task is to detect phrases that refer to illicit drugs or substances. Since "drug overdose" is a general term and not a specific substance listed in the index, it would fall under "other". However, I need to check if "drug" is part of a phrase that's in the list. But "drug" alone isn't an index term. The index terms are specific substances like Codeine, Amphetamine, etc. So "drug" here is a general term, not a specific drug. 
+
+The user is talking about people who mentioned "drug overdose" but didn't retract. The phrase "drug overdose" isn't a specific drug in the index, so it should be categorized as "other". However, the post doesn't mention any specific drug names or slang. The only possible mention is "drug overdose", which is a general term, not a specific substance. Therefore, the matched phrase would be "drug overdose" with index term "other".
+
+Wait, but the user is talking about people who said "drug overdose" and moved on. The term "drug overdose" is a general term, not a specific drug. So in the index terms, there's no entry for "drug overdose". Therefore, the correct index term here would be "other". 
+
+So the only phrase detected is "drug overdose", which maps to "other". But the user is not mentioning any specific drug names or slang. The post is about people discussing drug overdoses, but the actual drug names aren't present. Therefore, the answer should be an object with "drug overdose" under "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug overdose"}]

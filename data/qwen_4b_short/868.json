@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user provided a post that's part of a discussion about job roles and underwriting, mentioning things like "Professional - salary, Laborer - Hourly, rest are carveouts in their underwriting." Then there's a mention of "Salesperson is weird in prof as their typically commission-based (though B2B are less so)." The last part says "I agree with though, arms dealer. Create the conversation for changing their UI xD."
+
+So, the task is to label this post as T or F based on the rules given. The rules are: T if the text shows illicit or abusive drug use (using, seeking, buying, selling, trafficking, or slang for drugs). F otherwise, including medical/policy discussion, news, discouraging use, metaphor.
+
+Looking at the post, the main topics are about job classifications, underwriting, salespeople, and an arms dealer. The term "arms dealer" might be a red flag. But wait, is "arms dealer" considered slang for drugs? In some contexts, "arms dealer" refers to someone dealing in weapons, not drugs. However, in slang, sometimes "arms" can be used metaphorically or in other contexts. But the post is discussing job roles and underwriting, so "arms dealer" here is likely referring to a person in the business of selling weapons, not drugs. 
+
+The rest of the post talks about professions, salaries, and UI changes. There's no mention of drugs, drug use, or related terms. The only possible mention is "arms dealer," but that's in the context of a job role, not drug use. So according to the rules, since there's no explicit mention of drugs or drug-related terms, the label should be F. The user might be testing if "arms dealer" is considered a drug slang, but in standard usage, it's not. Therefore, the answer is F.
+</think>
+
+F

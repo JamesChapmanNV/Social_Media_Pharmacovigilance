@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Ninah is crazy 😭 y'all crack me up cause you're the complete opposite". I need to check for any drug-related references here.
+
+First, I'll go through each word and phrase. The post starts with "Ninah is crazy". "Crazy" is a slang term, but I need to check if it's associated with any drugs. From the index terms, I don't see "crazy" listed. Next, "y'all crack me up". "Crack me up" is an idiom meaning to amuse, not related to drugs. The phrase "complete opposite" is just a contrast, no drug references there. 
+
+Looking at the index terms, there's a list of drugs and their slang terms. The example given in the problem had "lean" and "codeine" linked. But in this post, there's no mention of any drug names, slang, or euphemisms. The words "crazy" and "crack me up" don't match any of the index terms. 
+
+So, since there are no detected drug references, each phrase should be categorized under "other". The user's example 3 shows that "xans" is "other" because it's not on the list. Similarly, here, all the phrases are non-drug related. Therefore, the output should have two entries with "other" and the matched phrases.
+</think>
+
+[{"index_term": "other", "matched_phrase": "crazy"}, {"index_term": "other", "matched_phrase": "crack me up"}]

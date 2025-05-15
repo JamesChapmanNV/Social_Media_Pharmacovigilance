@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "When the nurse asked me if I wanted the morphine it was as much as I could do to squeak 'yes please'... utter agony." I need to determine if this is illicit/abusive-drug-related.
+
+First, check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse or misuse. The content mentions morphine, which is an opioid, typically a prescription drug. The user is describing a medical situation where they're in pain and asked for morphine. The tone here is about experiencing pain and the drug's effect, not promoting or glorifying its use. There's no mention of abuse, misuse, or encouraging its use. The context is medical, related to a healthcare setting. The explanation given in the example about a pharmacology lecture was False because it was educational. Similarly, this seems to be a personal account of using a prescribed medication for pain relief, not promoting or abusing it. So the label should be False. The explanation would note that it's a medical context discussing pain management without promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a medical scenario involving prescribed morphine for pain relief, with no indication of abuse, promotion, or misuse."
+}

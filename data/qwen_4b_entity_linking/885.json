@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post about marijuana and heart disease, mentioning a supplement that might mitigate the risk. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs or substances. The post says "marijuana," which is listed in the index terms under "Marijuana (Cannabis, Weed, Pot)" as the most widely used illicit drug. So "marijuana" is a direct match here. 
+
+Next, the post mentions a "supplement" that might mitigate risk. The term "supplement" is generic and not specifically a drug listed in the index. The index terms include CBD, which is a non-intoxicating cannabinoid, but the post doesn't specify CBD. The word "supplement" alone isn't listed, so it would fall under "other." However, the user's example 4 shows that "snow" and "white lines" are marked as "other" even if they're not drugs. So "supplement" here is probably "other."
+
+Wait, but the post is about a supplement related to marijuana. The supplement isn't named, so it's not a specific drug. The index terms don't have an entry for supplements, so "supplement" would be "other." 
+
+So the only detected term is "marijuana," which maps to the index term "Marijuana." The rest of the post doesn't mention any other drugs or slang. The example 3 had "xans" which wasn't in the list, so "other." Here, "supplement" is not a drug, so "other." 
+
+Therefore, the JSON should have one entry for "marijuana" and another for "supplement" as "other." Wait, but the user's example 4 had "snow" and "white lines" as "other," so maybe "supplement" is also "other." But the post is about a supplement that's a mitigator. However, the supplement isn't specified, so it's not a drug. So the answer should be:
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"},
+  {"index_term": "other", "matched_phrase": "supplement"}
+]
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" even though they weren't drugs. So "supplement" here is not a drug, so "other." But the post is about a supplement related to marijuana. However, the supplement isn't a specific drug listed in the index. So yes, "supplement" would be "other." 
+
+But maybe the supplement is a CBD supplement? The index term for CBD is listed. But the post doesn't mention CBD specifically. It just says "a supplement." So unless the supplement is a known drug, it's "other." Therefore, the correct answer is the two entries as above.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"},
+  {"index_term": "other", "matched_phrase": "supplement"}
+]

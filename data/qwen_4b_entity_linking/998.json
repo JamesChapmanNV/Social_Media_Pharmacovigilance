@@ -1,0 +1,19 @@
+<think>
+Okay, let's see. The user provided a post: "Marvel need to base a super hero off of this Nigguh.. 'Captain Codeine'". I need to detect any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "Captain Codeine". The index terms list includes "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "Captain Codeine" directly uses "Codeine", so that's a match. The word "Nigguh" is probably a slang term, but I need to check if it's listed. Looking through the index terms, I don't see "Nigguh" listed. The example 3 shows "xans" as other because it's not in the list. So "Nigguh" would fall under "other". 
+
+Wait, but the task says to detect every word or phrase that refers to an illicit drug. "Nigguh" might be a slang for something else, but since it's not in the index terms, it's "other". The main term here is "Codeine" in "Captain Codeine". So the JSON should have one entry for "Codeine" with "Captain Codeine" as the matched phrase. Wait, but the example 1 had "lean" and "codeine" both mapped to Codeine. But in this case, the phrase is "Captain Codeine". The index term is Codeine, and the matched phrase is "Captain Codeine". But the index term list includes "Codeine (Lean, Purple Drank, Schoolboy)" so "Captain Codeine" is a reference to Codeine. So that's a valid match. The "Nigguh" is not a drug term, so it's "other". But the user's post is "Nigguh.. 'Captain Codeine'". So "Nigguh" is part of the text. But is "Nigguh" a drug reference? Maybe it's a slang for something else, but since it's not in the index terms, it's "other". So the output should have two entries: one for Codeine with "Captain Codeine" and another for "other" with "Nigguh". Wait, but the example 3 had "xans" as other. So in this case, "Nigguh" is not a drug term, so it's "other". But the user's post is "Captain Codeine" as a superhero name. So the main drug reference is "Codeine". Therefore, the JSON should have one entry for Codeine with "Captain Codeine" and "Nigguh" as other. But the user's instruction says to detect every word or phrase that refers to an illicit drug. So "Captain Codeine" is a reference to Codeine, which is in the list. "Nigguh" is not a drug term, so it's "other". Therefore, the output should be two entries: one for Codeine and one for other. Wait, but the example 1 had two entries for the same term. But in this case, "Captain Codeine" is the phrase. So the correct JSON would be:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Captain Codeine"},
+  {"index_term": "other", "matched_phrase": "Nigguh"}
+]
+
+But I need to check if "Nigguh" is a drug term. The index terms don't have it, so it's "other". The user's post is "Nigguh.. 'Captain Codeine'". So "Nigguh" is part of the text, but not a drug reference. Therefore, the answer should have two entries. However, maybe "Nigguh" is a slang term for something else. But according to the index terms provided, it's not listed. So it's "other".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Captain Codeine"},
+  {"index_term": "other", "matched_phrase": "Nigguh"}
+]

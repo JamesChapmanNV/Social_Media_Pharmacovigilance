@@ -1,0 +1,17 @@
+<think>
+Okay, let's see. The user wants me to label the given social media post as T or F based on the rules provided. The post is: "The addict died of a overdose, end of story".
+
+First, I need to check if this post shows illicit or abusive drug use. The rules mention that T includes text that shows using, seeking, buying, selling, trafficking, or slang for drugs. 
+
+The post mentions "addict" and "overdose". An addict implies someone who is using drugs, which is related to drug abuse. The term "overdose" is a direct result of drug use, especially opioids or other substances. So, the post is talking about a person who died from an overdose, which is a consequence of drug use. 
+
+But wait, the user's instruction says to label if the text shows drug use. The post doesn't explicitly mention the drug name, but "overdose" is a slang term that's associated with drug use. However, the label rules include "slang for drugs" as part of T. But in this case, the post is more about the outcome of drug use rather than the act of using. 
+
+Wait, the label rules say "using, seeking, buying, selling, trafficking, or slang for drugs". The term "overdose" is a slang term related to drug use. So, even though the post is about the result, the mention of overdose is a slang term for drug use. Therefore, this would be labeled T. 
+
+Alternatively, if the post is just reporting an event without directly mentioning the drug use, but the term "addict" and "overdose" are indicators. But the label rules are about the text showing drug use. Since the post is about an overdose, which is a result of drug use, it's still T. 
+
+So the answer should be T.
+</think>
+
+T

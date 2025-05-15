@@ -1,0 +1,5 @@
+[
+  {"index_term": "other", "matched_phrase": "Coffee"},
+  {"index_term": "other", "matched_phrase": "beer"},
+  {"index_term": "other", "matched_phrase": "Heroin"}
+]

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about finding a banking partner in the cannabis industry. My task is to check for any drug-related references and map them to the appropriate index terms.
+
+First, I'll read through the post carefully. The main content talks about banking solutions for the cannabis industry. The hashtags are #fincann, #fincanncorp, #bankingsolutions. There's no mention of any drugs or substances. The post is about financial services, not drug use or related terms.
+
+I need to make sure I don't miss any slang or euphemisms. Words like "cannabis" are mentioned, but according to the index terms, "Marijuana" is listed as a separate entry. However, the post is discussing banking for the cannabis industry, not using cannabis itself. The term "cannabis" here is a noun referring to the industry, not the drug. 
+
+Looking at the index terms, "Marijuana" is listed, but the post doesn't refer to using or promoting marijuana. It's about financial services. So, there are no drug references here. The hashtags are related to finance, not drugs. 
+
+Therefore, there are no matches. The answer should be an empty array. But wait, the example #4 had "snow" and "white lines" mapped to "other" because they weren't drug terms. But in this case, the post doesn't have any drug-related phrases. So the correct response is an empty JSON array.
+</think>
+
+[]

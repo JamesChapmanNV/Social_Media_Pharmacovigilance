@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Yeah fat Albert a.k.a. river and Al Sharpton the Coke dealer!!!" and wants me to detect any drug-related references.
+
+First, I need to go through the post word by word. The mention of "Coke" is a key term. Looking at the index terms, "Coke" is a slang for cocaine. The index term for cocaine is "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the primary metabolite of cocaine. So "Coke" here would map to that index term.
+
+Then there's "Al Sharpton the Coke dealer". Again, "Coke" is the same as before. Also, "dealer" refers to someone selling drugs, which is part of the context but the actual drug reference is "Coke".
+
+I need to check if there are any other terms. "Fat Albert" and "river" don't seem to be drug terms. The name "Al Sharpton" is a person's name, so not relevant. The exclamation marks are just punctuation.
+
+So the only matched phrase here is "Coke", which maps to the index term for Benzoylecgonine. The other terms don't refer to drugs listed in the index. Therefore, the JSON array should have one entry with "Coke" linked to "Benzoylecgonine".
+</think>
+
+[{"index_term": "Benzoylecgonine (BZE, Ecgonine benzoate)", "matched_phrase": "Coke"}]

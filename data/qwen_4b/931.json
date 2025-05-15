@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Oh damn man. I was being super serious." I need to determine if this is illicit/abusive-drug-related or not.
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting use. Also, slang or euphemisms related to drug use. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+The content here is "Oh damn man. I was being super serious." There's no mention of any drugs, slang, or terms related to drug use. The phrase "being super serious" could be a euphemism, but without any context linking it to drugs, it's just a general statement. There's no indication of drug abuse, promotion, or misuse. The user is just expressing a reaction, not discussing drugs. So according to the definitions, this doesn't fit into True. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content does not mention or imply drug use, abuse, or related terminology in any context."
+}

@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "420 cannabis festival: Weed prepares to host blowout 420 cannabis festival". I need to detect any drug-related references and map them to the index terms.
+
+First, I'll go through each word or phrase in the post. The first part is "420 cannabis festival". "Cannabis" is listed as an index term under "Marijuana (Cannabis, Weed, Pot)". So "cannabis" here would map to that index term. 
+
+Next, "Weed" is another term for marijuana, so that's also "Marijuana". Then "blowout" is a bit tricky. It's a verb meaning a party or celebration, but does it refer to a drug? Not directly. The post doesn't mention any specific drug names or slang. The other parts are "420" which is a reference to April 20th, a cannabis holiday, but not a drug itself. 
+
+Looking at the index terms, "Marijuana" is the only one that fits here. The other terms like "Weed" are synonyms for marijuana. So both "cannabis" and "Weed" in the post should be mapped to "Marijuana". 
+
+I need to check if there's any other possible drug reference. "Blowout" doesn't seem to relate to any illicit drugs. The rest of the post is just about a festival, so no other terms. 
+
+Therefore, the matched phrases are "cannabis" and "Weed", both under the "Marijuana" index term. The answer should be an array with two objects.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "Weed"}
+]

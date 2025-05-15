@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Police, fuck the police I where cocaine, sippin codeine it's the same thing". I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll break down the post sentence by sentence. The first part is "Police, fuck the police I where cocaine". The word "cocaine" is clearly a drug. Looking at the index terms, cocaine is not listed, so that would be "other". 
+
+Next, "sippin codeine it's the same thing". "Codeine" is explicitly mentioned. From the index terms, codeine is listed under "Codeine" with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" maps directly to Codeine. 
+
+Wait, the user mentioned "sippin" which is slang for "sipping", but the actual drug here is codeine. The phrase "it's the same thing" might be a reference to equating cocaine and codeine, but the exact terms are "cocaine" and "codeine". 
+
+So the detected phrases are "cocaine" and "codeine". "Cocaine" isn't in the index terms, so it's "other". "Codeine" is in the list, so it's mapped to Codeine. 
+
+I need to make sure there are no other terms. The rest of the post is about police and some swearing, which don't relate to drugs. So the JSON should have two entries: one for "cocaine" as other, and "codeine" as Codeine. Wait, but in the example, "xans" was mapped to other. So "cocaine" isn't in the index terms, so it's other. 
+
+So the correct output would be two objects: one with index_term "other" and matched_phrase "cocaine", and another with "Codeine" and "codeine".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "cocaine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

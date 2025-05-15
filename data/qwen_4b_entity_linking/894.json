@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post in Arabic, and I need to moderate it for drug-related references. First, I'll need to understand the content of the post. The user is talking about ARAK, which I know is a type of alcoholic drink, specifically a strong spirit popular in the Middle East. The post mentions that as a Muslim, one should fight against selling ARAK to non-Muslims or close the factory if they sell to Muslims. There's also a comparison between halal and haram food, implying that if someone consumes haram things, they can't compare halal items to haram ones.
+
+Now, the task is to detect any drug-related references. The main term here is ARAK. Let me check the Index Terms provided. Scanning through the list, I don't see ARAK listed. The closest might be something like "Alcohol" but that's not in the list either. The Index Terms include substances like codeine, amphetamine, methamphetamine, etc., but not ARAK. Since ARAK is an alcoholic drink, not an illicit drug, and it's not listed in the Index Terms, I should categorize it as "other". 
+
+The post doesn't mention any other drugs or substances. The rest of the text is about religious beliefs and food, not drugs. So the only possible match is ARAK, which isn't in the list, so it's "other". I need to make sure there's no slang or euphemism here. The user is referring to ARAK as a drink, not a drug. Therefore, the correct index term is "other" for the phrase "ARAK".
+</think>
+
+[{"index_term": "other", "matched_phrase": "ARAK"}]

@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the correct index terms, and return a JSON array.
+
+First, I need to look at the provided post: "If I'm a Juror, even if he 'ate too much drugs,' continuing to kneel on his neck caused his asphyxiation. Murder And if you [cops] heard an admission about doing too many drugs, you should be watching for signs of overdose. Not closing his airway. Murder"
+
+I need to scan for any drug-related terms. The first part mentions "ate too much drugs." The word "drugs" is a general term, but the index terms list specific drugs. However, "drugs" itself isn't listed, so according to the instructions, if the drug isn't in the list, use "other". But wait, the example 3 shows "xans" as "other" even though it's a benzodiazepine. So "drugs" would be "other".
+
+But wait, the user might be referring to a specific drug. However, in the post, it's "ate too much drugs" which is a general term. The index terms don't have a general term for drugs, so "other" is correct here.
+
+Then there's "doing too many drugs" again. Same as above. So both instances of "drugs" would be "other".
+
+But wait, the example 4 had "snow" and "white lines" as "other" even though they aren't drugs. So in this case, "drugs" is a general term not listed, so "other".
+
+So the matched phrases would be "drugs" and "drugs" again. Both linked to "other".
+
+Wait, but the user might be using "drugs" in a specific context. But according to the index terms, there's no general term for drugs. So the correct index term is "other".
+
+So the JSON array would have two entries: both "drugs" mapped to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drugs"},
+  {"index_term": "other", "matched_phrase": "drugs"}
+]

@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I overthink so much to where I offend myself at some point." I need to check for any drug-related references here.
+
+First, I'll go through each word and phrase. The post is about overthinking and self-offending. Words like "overthink," "offend," "self" don't seem related to drugs. The Index Terms list includes various drugs and their slang, but none of the terms here match. There's no mention of substances, slang, or any euphemisms for drugs. 
+
+Looking at the examples, sometimes "xans" was considered "other" because it wasn't a listed term. In this case, the post doesn't contain any phrases that align with the index terms. So, all the words here are unrelated to illicit drugs. Therefore, the correct response is to mark each phrase as "other" since there are no matches in the provided list.
+</think>
+
+[{"index_term": "other", "matched_phrase": "overthink"}, {"index_term": "other", "matched_phrase": "offend"}, {"index_term": "other", "matched_phrase": "self"}]

@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "And I'm sippin on that codeine not Brandy 😛". I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "codeine". Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "sippin on that codeine" directly refers to consuming codeine. The word "Brandy" is mentioned, but that's a common drink, not a drug. Since "codeine" is in the index terms, the matched phrase is "codeine". The index term is Codeine. There's no other drug mentioned here. So the JSON should have one object with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

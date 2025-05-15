@@ -1,0 +1,10 @@
+<think>
+Okay, let's see. The content is "i'm on ocean drive sippin codeine with the top down." I need to determine if this is illicit/abusive-drug-related.
+
+First, "codeine" is a controlled substance, so that's a red flag. The user is mentioning using codeine, which is illegal or restricted. The phrase "sippin" is slang for drinking, so they're consuming it. The context is recreational, since they're on Ocean Drive, which might be a place for socializing, and "top down" suggests they're enjoying the moment. There's no mention of medical use or education here. The tone seems casual and possibly approving. So according to the definitions, this would be True because it's about using codeine in a recreational context. The example given in the first example also had similar elements, so this should be classified as True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a recreational context ('sippin') with a casual, approving tone, indicating drug use."
+}

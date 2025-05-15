@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Codeine" and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to look at the post: "Codeine can be used as a positive control instead of histamine as it is a great activator of mast cells #GA2LENAllergySchool". The main word here is "Codeine". Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The post directly uses "Codeine", so that's a clear match. The hashtag #GA2LENAllergySchool might be related to allergy, but the main phrase is "Codeine". 
+
+Next, I need to check if there are any other phrases. The post doesn't mention any other drugs or slang terms. The rest of the sentence talks about histamine and mast cells, which are related to allergies, not drugs. So the only matched phrase is "Codeine". 
+
+Looking at the index terms, Codeine is explicitly listed, so the index term is "Codeine". The matched phrase is "Codeine". There's no need to use "other" here because Codeine is in the list. 
+
+I should make sure there's no other possible interpretation. The hashtag might be a brand or a specific term, but the user's task is to focus on the content of the post. Since "Codeine" is directly mentioned and is in the index terms, that's the only entry. 
+
+So the correct JSON array should have one object with index_term "Codeine" and matched_phrase "Codeine".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "Codeine"}]

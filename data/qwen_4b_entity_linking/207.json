@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "black tar heroin" and "time to dig into this." First, I need to check if "black tar heroin" is listed in the index terms. Looking through the list, I see that Benzoylecgonine (BZE, Ecgonine benzoate) is the primary metabolite of cocaine, but heroin isn't directly listed. However, the index terms include "Heroin (MS Contin, Miss Emma, Morph)" but wait, no, looking again, the index terms for heroin aren't explicitly listed. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin specifically. Wait, the user's post is about heroin, but the index terms don't have a direct entry for heroin. Let me check again.
+
+Looking through the index terms, there's no specific entry for heroin. The closest might be "Codeine (Lean, Purple Drank, Schoolboy)" but that's codeine, not heroin. The term "Heroin" isn't listed in the index terms. However, the index term for "Benzoylecgonine" is for cocaine. The user's post mentions "black tar heroin," which is a slang term for heroin. Since heroin isn't listed in the index terms, I should map it to "other." But wait, let me check again. The index terms include "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no, the entry for Morphine is listed. The user's post is about heroin, which is a different drug. So "black tar heroin" would be a reference to heroin, which isn't in the index terms, so the index term should be "other." Also, "time to dig into this" is just a phrase, not a drug reference. So the only detected phrase is "black tar heroin," which maps to "other." Therefore, the JSON array should have one entry with index_term "other" and matched_phrase "black tar heroin."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "black tar heroin"}
+]

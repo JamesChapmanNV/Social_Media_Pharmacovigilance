@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The content given is: "life you can't reject. capitalism injects a morphine called 'hope' as collateral for dreams." 
+
+First, I need to determine if this is illicit/abusive-drug-related. The user is asking me to classify it as True or False based on the definitions provided.
+
+Looking at the content, the key terms here are "morphine" and "hope." Morphine is a controlled substance, an opioid, which is illegal and associated with abuse. The phrase "injects a morphine called 'hope'" is a metaphor. The context is about capitalism and dreams, which is a metaphorical use of morphine. 
+
+Now, the definitions for True include mentions of illegal drugs in contexts of abuse or misuse. Even if it's a metaphor, the use of "morphine" directly relates to a drug. The phrase "injects a morphine" could be seen as a euphemism or a metaphor for something harmful, but the question is whether it's promoting or glorifying drug use. 
+
+However, the content is more about a social commentary on capitalism and hope, using morphine as a metaphor. The user is not explicitly talking about using or promoting the drug. The term "morphine" is used in a figurative sense, not in a context of abuse or misuse. The explanation in the example 1 mentions that "hooked" and "everyday" with an approving tone. Here, the tone is more critical, but the metaphor is about capitalism. 
+
+The challenge is whether the metaphor is considered a slang or euphemism for drug use. Since "morphine" is a real drug, but the context is metaphorical, it's not directly promoting abuse. The example 2 had a medical context, which was False. This is more of a metaphorical reference, not directly about drug use. 
+
+So, the label here would be False because it's using a drug term in a metaphorical, not abusive or promoting context. The explanation would note that it's a metaphorical use of "morphine" in a social commentary, not promoting abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content uses'morphine' metaphorically in a social commentary about capitalism and hope, not promoting or glorifying drug abuse."
+}

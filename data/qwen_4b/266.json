@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is "I say everything Triple Times 333..... — listening to Codeine Crazy [Prod. by TM-88]". First, I need to check if there's any mention of drugs in a context that's illicit or abusive. The term "Codeine" is mentioned here. Codeine is an opioid, which is a controlled substance. The phrase "listening to Codeine Crazy" suggests that the person is consuming or using codeine, possibly in a recreational context. The mention of "Triple Times" might be a slang or a reference to a song title. The user is referencing a song that includes the word "Codeine," which is a drug. The context here is about listening to music that's associated with codeine, which could imply recreational use. Since codeine is an illegal drug in many places, and the content is referencing its use, this would fall under illicit or abusive drug-related content. The example given in the first example had similar terms like "lean" and "codeine" with a supportive tone, which was classified as true. Here, even though it's a song title, the mention of codeine in the context of listening to it might imply usage. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'Codeine' in the context of a song title, which may imply recreational use or association with the drug."
+}

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Threads Soaked In Heroin Worth Rs 450 Crore Seized From Gujarat Port". I need to identify any drug-related references here.
+
+First, I'll scan the post for keywords. The main words are "Heroin". Checking the index terms, there's an entry for Morphine, which includes "MS Contin, Miss Emma, Morph". But heroin isn't directly listed. Wait, looking back at the index terms, "Heroin" isn't explicitly mentioned. The closest might be Morphine, but that's a different drug. However, the index term for Morphine includes "MS Contin, Miss Emma, Morph", but heroin is a separate substance. 
+
+Wait, the index terms list "Morphine" as a separate entry. Heroin isn't listed here. The user's task is to check if the phrase matches any index term. Since "Heroin" isn't in the list, I should use "other". But wait, maybe I'm missing something. Let me check again. The index terms include "6-Acetylmorphine (6-Monoacetylmorphine, 6-MAM) – An active intermediate metabolite formed almost immediately after heroin use." Wait, that's a metabolite of heroin. But the post mentions "Heroin" directly. However, the index term for 6-MAM is a metabolite, not the drug itself. The main entry for heroin isn't listed. 
+
+Looking at the list again, the index terms don't have a direct entry for Heroin. The closest is Morphine, but that's a different drug. So "Heroin" would fall under "other" because it's not listed. Therefore, the matched phrase is "Heroin", and the index term is "other". 
+
+So the JSON should have one object with index_term "other" and matched_phrase "Heroin".
+</think>
+
+[{"index_term": "other", "matched_phrase": "Heroin"}]

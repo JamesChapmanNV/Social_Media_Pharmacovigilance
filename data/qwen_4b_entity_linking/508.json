@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I'm in love with Mary Jane and codeine I don't love these hoesss". I need to detect any drug references here.
+
+First, I'll break down the post sentence by sentence. The first part is "I'm in love with Mary Jane". Mary Jane is a slang term for marijuana, right? Because "Mary Jane" is a common nickname for cannabis. So that's a reference to marijuana, which is listed under the index terms as "Marijuana (Cannabis, Weed, Pot)". So "Mary Jane" should map to "Marijuana".
+
+Next part: "and codeine". Codeine is explicitly listed in the index terms under "Codeine (Lean, Purple Drank, Schoolboy)". So "codeine" directly matches the index term "Codeine".
+
+Then, "I don't love these hoesss". "Hoesss" is likely a slang term. Looking at the index terms, I don't see "hoesss" listed. But "hoss" could be a variation of "hoss" which isn't in the list. Alternatively, maybe it's a misspelling or a different term. Since "hoesss" isn't directly listed, and there's no index term for that, it should be marked as "other". 
+
+So the matched phrases are "Mary Jane" and "codeine". "Mary Jane" maps to "Marijuana", and "codeine" maps to "Codeine". The rest of the words like "hoesss" don't have a corresponding index term, so they are "other". 
+
+Wait, the user's example 3 had "xans" which was "other". So in this case, "hoesss" is probably not a drug term, so it's "other". 
+
+So the JSON array should have two entries: one for "Marijuana" with "Mary Jane" and another for "Codeine" with "codeine". The "hoesss" part is "other" but since the user's example 3 didn't include it, maybe only the explicit drug terms are considered. Let me check the task again. 
+
+The task says to detect every word or phrase that refers to an illicit drug. "Mary Jane" is a slang for marijuana, which is listed. "Codeine" is directly listed. "Hoesss" is not in the list, so it's "other". But the user's example 3 had "xans" as "other". So in this case, the post has two matches: "Mary Jane" and "codeine". The rest is "other". 
+
+Wait, the user's example 4 had "snow" and "white lines" as "other", even though they weren't drugs. So in this case, the post has two drug references: "Mary Jane" and "codeine". The "hoesss" is not a drug term, so it's "other". But the user's instruction says to return only the matches. So the answer should include "Mary Jane" and "codeine" as matches, and "hoesss" as "other". But in the example 3, "xans" was "other", so maybe the "hoesss" here is also "other". 
+
+But the user's example 3 had "xans" which was "other" because it wasn't in the list. So "hoesss" is not in the list, so it's "other". However, the user's instruction says to return only the valid JSON array with matches. So the post has two phrases: "Mary Jane" (Marijuana) and "codeine" (Codeine). The "hoesss" is not a drug term, so it's not included. Wait, but the user's example 3 had "xans" as "other" even though it wasn't a drug. So maybe in this case, the "hoesss" is not a drug term, so it's "other", but the task is to detect drug references. 
+
+So the correct matches are "Mary Jane" (Marijuana) and "codeine" (Codeine). The rest is "other", but the user's example 3 shows that "xans" is "other", so maybe "hoesss" is "other". However, the task says to detect every word or phrase that refers to an illicit drug. So "hoesss" is not a drug term, so it's not included. Therefore, the answer should have two entries: "Mary Jane" and "codeine".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Mary Jane"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

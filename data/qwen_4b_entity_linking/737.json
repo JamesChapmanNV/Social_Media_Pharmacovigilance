@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the correct index term, and return a JSON array.
+
+First, I need to read the provided post carefully. The post says: "It's to encourage self-healing in a world where people are denied effective pain relief and forced to suffer everything from tooth extractions to bone metastases in the name of the drug war. PST is not a true tea or tisane, but a method of extracting morphine and codeine."
+
+Looking for drug references here. The first part talks about "drug war," which is a general term but not a specific drug. The second part mentions "PST" as a method of extracting morphine and codeine. So "morphine" and "codeine" are explicitly mentioned. 
+
+Now, checking the index terms. Morphine is listed under "Morphine (MS Contin, Miss Emma, Morph)" and codeine is under "Codeine (Lean, Purple Drank, Schoolboy)". So "morphine" and "codeine" would map directly to their respective index terms. 
+
+The phrase "PST" is mentioned, but the index terms don't have an entry for PST. The user's instruction says if the drug isn't in the list, use "other". Since PST isn't listed, it should be "other". However, the post says PST is a method of extracting morphine and codeine, so maybe "PST" is a reference to a substance related to morphine and codeine. But since PST isn't in the index terms, it's "other".
+
+Wait, but the user's task is to detect every word or phrase that refers to an illicit drug. The post mentions "morphine" and "codeine" directly, which are in the index terms. "PST" is a method of extraction, but not a drug itself. So the only matches are "morphine" and "codeine".
+
+So the JSON should have two entries: one for morphine and one for codeine. Let me check the example given. In example 1, "lean" and "codeine" are both mapped to Codeine. Similarly, here, "morphine" and "codeine" are direct matches. 
+
+Therefore, the correct output is two objects: index_term "Morphine" with "morphine" and index_term "Codeine" with "codeine". The rest of the post doesn't mention any other drugs. The "PST" is a method, not a drug, so it's not included. The "drug war" is a general term, not a specific drug. So the final answer should be the two entries.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

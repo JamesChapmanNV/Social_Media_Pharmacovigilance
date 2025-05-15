@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I'm sippin that lean, hurtin my splean but I'm sippin it clean, sippin codeine...." I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The word "lean" is mentioned. From the index terms, Codeine has aliases like "Lean" and "Purple Drank". So "lean" should map to Codeine. Then there's "codeine" directly, which is also under Codeine. 
+
+Next, "splean" might be a typo or slang. But in the context, it's likely referring to the spleen, which isn't a drug term. The phrase "hurtin my splean" is probably just describing the effect on the body, not a drug reference. "Sippin it clean" might mean drinking it pure, which is common with drugs like codeine. But "clean" here isn't a drug term, so it's probably just part of the description. 
+
+So the main matches are "lean" and "codeine", both under the Codeine index term. The rest of the words don't refer to drugs. The answer should be two entries in JSON format as specified.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

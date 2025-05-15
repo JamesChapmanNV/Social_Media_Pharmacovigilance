@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Even if he did die of a drug overdose." I need to detect any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The key part here is "drug overdose." But the problem is that "drug" is a general term and not specific to any listed index term. The Index Terms list includes specific drugs like Codeine, Amphetamine, etc., but "drug" itself isn't listed. 
+
+Wait, the task says to detect every word or phrase that refers to an illicit drug. So "drug" here is a general term. But according to the instructions, if the drug isn't in the list, use "other". Since "drug" isn't a specific term in the Index Terms, the matched phrase "drug" would map to "other". 
+
+But wait, maybe "overdose" is part of it. However, "overdose" is a consequence, not the drug itself. The post mentions "drug overdose," but the actual drug isn't specified. So the only phrase here is "drug," which isn't in the list. Therefore, the index term should be "other".
+
+So the correct JSON would be an array with one object: {"index_term": "other", "matched_phrase": "drug"}.
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug"}]

@@ -1,0 +1,44 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the correct Index Term, and return a JSON array.
+
+First, I need to look at the post: "The guy was hanged in Singapore because he was arrested with 42 grams of heroin. Here in Brazil, mega dealer André do Rap, arrested with tons of cocaine, was released by the Supreme court!"
+
+I need to scan each part of the post for any drug references. The first sentence mentions "heroin," which is definitely on the list. The Index Term for heroin is "Morphine" in the list. Wait, let me check the Index Terms again. Looking through the list, "Morphine" is listed as an index term. So "heroin" would map to "Morphine"?
+
+Wait, the Index Terms include "Heroin (MS Contin, Miss Emma, Morph)" but in the list provided, the exact term is "Morphine". Wait, no, looking back: the Index Terms list "Morphine (MS Contin, Miss Emma, Morph)" as a separate entry. Wait, no, let me check again. The user provided the list of Index Terms. Let me look for "Heroin" in the list. Wait, the Index Terms include "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no. Let me check the exact list:
+
+Looking at the Index Terms list, the entry for Morphine is: "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence."
+
+But heroin isn't listed as an index term. Wait, the user's list includes "Heroin" in the description? Wait, no. The user's list includes "Morphine" as an index term, but heroin is not explicitly listed. Wait, the user's list includes "Heroin" in the description? Let me check again.
+
+Looking through the list: The Index Terms include "Heroin" in the description? Let me check again. The user provided the list, and in the list, "Heroin" is not an index term. Wait, the user's list includes "Heroin" in the description? Let me check the exact entries.
+
+Looking through the list, the entry for "Morphine" is there. But heroin is not directly listed. However, the user's list includes "6-Acetylmorphine (6-Monoacetylmorphine, 6-MAM) – An active intermediate metabolite formed almost immediately after heroin use." So heroin is not directly an index term, but its metabolite is. But in the Index Terms list, is there an entry for heroin? Wait, the user's list includes "Heroin" as a term? Let me check again.
+
+Looking through the list, the Index Terms are listed as specific compounds. For example, "Morphine" is an index term, but "Heroin" is not. However, the user's example 1 has "codeine" mapped to "Codeine", and "lean" is a slang for codeine. So in the post, "heroin" is mentioned. Since heroin is not in the Index Terms list, but the metabolite 6-Acetylmorphine is, but that's a metabolite. However, the user's instruction says to use the Index Terms provided. Since "Heroin" is not listed as an index term, but the entry for "Morphine" is, but that's not the same as heroin.
+
+Wait, the user's list includes "Heroin" in the description? Let me check again. The user's list includes "Heroin" in the description? No, the user's list includes "Morphine" as an index term, but heroin is not directly listed. However, in the example given, "codeine" is mapped to "Codeine", and "lean" is a slang for codeine. So if "heroin" is mentioned in the post, but not in the index terms, then the correct index term would be "other".
+
+But wait, looking at the Index Terms list again, is there an entry for heroin? Let me check again. The user's list includes "Heroin" in the description? No, the Index Terms list includes "Morphine" and "Heroin" is not listed. Wait, the user's list includes "Heroin" in the description? Let me check again.
+
+Looking at the user's Index Terms list, there's an entry for "6-Acetylmorphine (6-Monoacetylmorphine, 6-MAM) – An active intermediate metabolite formed almost immediately after heroin use." But that's a metabolite, not the drug itself. So heroin is not an index term in the list. Therefore, "heroin" in the post would not have a matching index term, so it would be "other".
+
+Similarly, "cocaine" is mentioned in the post. Is "cocaine" listed as an index term? Looking through the list, the Index Term is "Benzoylecgonine (BZE, Ecgonine benzoate) – The primary metabolite of cocaine measured in urine drug testing." So "cocaine" is not an index term, but its metabolite is. Therefore, "cocaine" would be mapped to "other".
+
+So in the post, the words "heroin" and "cocaine" are mentioned. Since neither is directly listed as an index term, they should be mapped to "other".
+
+Wait, but the user's example 4 has "snow" and "white lines" mapped to "other" because they are not drugs. Similarly, in this case, "heroin" and "cocaine" are not in the index terms, so they should be "other".
+
+Therefore, the JSON array would have two entries: one for "heroin" and one for "cocaine", both mapped to "other".
+
+But wait, let me check again. The user's list includes "Heroin" as an index term? Let me check again. The user's list includes "Heroin (MS Contin, Miss Emma, Morph)"? No, looking at the list, the entry for Morphine is: "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence." So "Heroin" is not listed as an index term. Therefore, "heroin" is not in the index terms, so it's "other".
+
+Same for "cocaine". The index term for cocaine is "Benzoylecgonine (BZE, Ecgonine benzoate) – The primary metabolite of cocaine measured in urine drug testing." So the drug is cocaine, but the index term is its metabolite. Therefore, the drug name "cocaine" is not in the index terms, so it's "other".
+
+Therefore, the correct matches would be "heroin" and "cocaine" both mapped to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "cocaine"}
+]

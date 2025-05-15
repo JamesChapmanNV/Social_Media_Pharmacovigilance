@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "I can't quit that lean put a ring around codeine". 
+
+First, I need to break down the words. "Lean" is a slang term often used in drug contexts, particularly for cocaine. "Codeine" is an opioid, which is a controlled substance. The phrases "can't quit" and "put a ring around" suggest a habitual or ongoing use, which points to abuse.
+
+The user's examples show that using slang and mentioning specific drugs in a context that implies continued use or dependency is a red flag. The example with "lean" and "codeine" was marked as True because it's about ongoing use. Here, the same pattern is present. The mention of codeine specifically, which is an illegal drug in many places, and the reference to "lean" as a slang term for cocaine, both indicate abuse. The phrases "can't quit" and "put a ring around" are also indicative of addiction or misuse. 
+
+I need to make sure there's no medical context here. The content doesn't mention any treatment or education, so it's not in a healthcare setting. The tone is negative, showing struggle with addiction, which aligns with the True category. Therefore, the classification should be True with an explanation highlighting the slang terms and the context of continued use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'lean' (slang for cocaine) and 'codeine' in a context implying ongoing addiction and dependency."
+}

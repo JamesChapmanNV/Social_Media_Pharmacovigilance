@@ -1,0 +1,52 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Opium is the source of heroin, morphine, paregoric, and codeine." I need to identify any drug-related references here and map them to the correct index terms.
+
+First, I'll go through each word or phrase in the post. The first part is "Opium." Looking at the index terms, opium isn't listed directly, but it's mentioned as the source of heroin, morphine, codeine, and paregoric. However, the index terms for heroin, morphine, and codeine are all present. 
+
+Next, "heroin" is explicitly listed under Morphine. So "heroin" should map to "Morphine." Then "morphine" is directly listed as an index term. "Paregoric" isn't in the list, but it's a derivative of opium. Since it's not in the index terms, I should use "other." "Codeine" is explicitly listed under Codeine.
+
+The rest of the post talks about chronic use causing damage, but that's not a drug reference. The hashtags are also irrelevant. So the matched phrases are "heroin," "morphine," and "codeine." 
+
+Wait, the user's example shows that "lean" maps to codeine. But in this case, the post mentions "codeine" directly. So the correct index terms would be Morphine for heroin and morphine, and Codeine for codeine. Paregoric is not in the list, so it's "other." But the post doesn't mention paregoric as a phrase. Wait, the original post says "source of heroin, morphine, paregoric, and codeine." So the phrases are heroin, morphine, paregoric, codeine. 
+
+So "heroin" → Morphine, "morphine" → Morphine, "codeine" → Codeine. "Paregoric" is not in the index terms, so "other." But the user's example for "xans" was "other" because it wasn't listed. So in this case, the matched phrases would be heroin, morphine, codeine, and paregoric. But the index terms for heroin and morphine are both under Morphine. Wait, the index terms list Morphine as a separate entry. Wait, looking back:
+
+The index terms include "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence." So "heroin" is a different drug, but in the index terms, heroin isn't listed. Wait, the index terms have "Morphine" as a separate entry, but heroin isn't in the list. Wait, the index terms list "Morphine" as a separate term. But heroin is a different drug. Wait, the index terms for heroin: looking back, the list includes "Heroin (China White, Apache, Duragesic) – A synthetic opioid 50–100 times stronger than morphine that drives many overdose deaths." Wait, no, in the provided index terms, heroin is not listed. Wait, let me check again.
+
+Looking at the index terms list again:
+
+The index terms include "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence." But heroin isn't listed. Wait, but in the example given, "codeine" is mapped to "Codeine" and "lean" is also mapped to "Codeine." So in the post, "heroin" is mentioned. But in the index terms, is there an entry for heroin? Let me check again.
+
+Looking through the index terms list, I don't see "Heroin" listed. The closest is "Fentanyl (China White, Apache, Duragesic) – A synthetic opioid 50–100 times stronger than morphine that drives many overdose deaths." Wait, but "China White" is a nickname for fentanyl, not heroin. So "heroin" is not in the index terms. Therefore, "heroin" would be "other." But the user's example in Example 1 had "lean" and "codeine" both mapped to "Codeine." So in this case, the post mentions "heroin," which is not in the index terms, so "other." Wait, but the index terms include "Morphine," which is a different drug. So "heroin" is not in the list. Therefore, "heroin" would be "other."
+
+Wait, but the index terms list "Morphine" as a separate term. So "morphine" is in the list. So in the post, "morphine" is directly listed as an index term. "Heroin" is not in the list, so "other." "Codeine" is in the list. "Paregoric" is not in the list, so "other."
+
+So the matched phrases would be:
+
+- "heroin" → "other"
+- "morphine" → "Morphine"
+- "codeine" → "Codeine"
+- "paregoric" → "other"
+
+But the original post says "Opium is the source of heroin, morphine, paregoric, and codeine." So the phrases are "heroin," "morphine," "paregoric," "codeine."
+
+Therefore, the JSON array would have entries for "heroin" (other), "morphine" (Morphine), "codeine" (Codeine), and "paregoric" (other). However, the user's example in Example 3 had "xans" as "other" because it wasn't listed. So in this case, "heroin" and "paregoric" would be "other," while "morphine" and "codeine" are mapped to their respective terms.
+
+So the final answer should be:
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "paregoric"}
+]
+
+Wait, but the user's example in Example 1 had "lean" and "codeine" both mapped to Codeine. So in the post, "heroin" is not in the index terms, so it's "other." Similarly, "paregoric" is not in the list, so "other." So the correct matches are "morphine" → Morphine, "codeine" → Codeine, and the others are "other."
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "paregoric"}
+]

@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post is about legal cannabis demonstrators in Thailand. First, I need to check if there are any mentions of illicit drugs or substances.
+
+Looking at the post: "Legal cannabis demonstrators march... calling for the freedom to smoke weed without going to prison." The key terms here are "cannabis" and "weed." Now, checking the Index Terms list. Marijuana (Cannabis, Weed, Pot) is listed as an index term. So "cannabis" and "weed" both map to "Marijuana." 
+
+Wait, but the user specified that the Index Terms include marijuana. The post is about legal cannabis, but the task is to detect any references to illicit drugs. However, the Index Terms do list "Marijuana" as a term. But the note says that if the drug is not in the list, use "other." Wait, but "Marijuana" is in the list. Let me check again.
+
+Looking at the Index Terms: "Marijuana (Cannabis, Weed, Pot) – The most widely used illicit drug, containing psychoactive cannabinoids THC only." So "Marijuana" is explicitly listed. Therefore, "cannabis" and "weed" are synonyms for marijuana, which is in the list. So those should be mapped to "Marijuana."
+
+But wait, the post is about legal cannabis. However, the task is to detect any references to illicit drugs. But the Index Terms include marijuana as an illicit drug. So even if it's legal in the context, the term "cannabis" or "weed" is still considered an illicit drug here. The user's instruction says to detect every word or phrase that refers to an illicit drug or substance, regardless of context. So even if it's legal in the location, the term itself is on the list, so it's a match.
+
+So the matched phrases would be "cannabis" and "weed," both mapped to "Marijuana." The rest of the post doesn't mention any other drugs. The hashtags are #Thailand, #WhatsHappeningInThailand, #KE, which are not drug-related. So the final JSON should have two entries for "cannabis" and "weed" under "Marijuana."
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "weed"}
+]

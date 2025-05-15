@@ -1,0 +1,35 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the correct Index Term, and return a JSON array.
+
+First, I'll read through the post carefully. The post mentions "2 kilos of heroin" and "countless Nagaens each strapping three tablespoons on their inside thigh." The key terms here are "heroin" and "tablespoons." 
+
+Looking at the Index Terms list, "Heroin (MS Contin, Miss Emma, Morph)" is listed. So "heroin" directly maps to that index term. The mention of "tablespoons" is a bit trickier. The post says they're adding "three tablespoons" which might refer to a method of using heroin. However, "tablespoons" isn't explicitly listed in the Index Terms. But since the context is about heroin use, maybe "tablespoons" is part of the drug reference. Wait, but the Index Terms don't have an entry for "tablespoons" as a drug term. The example in the user's prompt had "xans" which wasn't in the list, so it was marked as "other." 
+
+So, "tablespoons" here is probably a slang or method of using heroin, but since it's not listed in the Index Terms, it should be "other." However, the main term here is "heroin," which is in the list. The "tablespoons" might be a way of referring to the drug's administration, but since it's not a direct drug name, it's safer to mark it as "other." 
+
+Wait, the user's example 3 had "xans" which was "other" because it wasn't in the list. So "tablespoons" isn't a drug term, so it's "other." But the main drug here is heroin, which is in the list. So the correct matches would be "heroin" mapped to its index term, and "tablespoons" as "other." 
+
+But wait, the post says "strapping three tablespoons on their inside thigh." That might be a reference to injecting or using heroin in some way. However, "tablespoons" isn't a drug term. The actual drug is heroin, so the only match is "heroin." The rest is context, but the user's instruction is to detect every word or phrase that refers to an illicit drug. So "heroin" is the only direct match here. "Tablespoons" is part of the method, but not a drug term. So the answer should have one entry for "heroin" and "tablespoons" as "other." 
+
+Wait, but the example 4 had "snow" and "white lines" as "other" even though they were not drugs. So in this case, "tablespoons" is not a drug, so it's "other." But the user's instruction says to detect phrases that refer to illicit drugs. So "tablespoons" here is part of the method of using heroin, but not the drug itself. Therefore, only "heroin" is the correct index term. 
+
+So the final answer should be one entry for "heroin" and "tablespoons" as "other." Wait, but the user's example 3 had "xans" as "other," which is not a drug. So "tablespoons" is not a drug, so it's "other." But the main drug is heroin. So the JSON array should have two entries: one for heroin and one for tablespoons. But wait, the user's example 4 had two entries for "snow" and "white lines" as "other." So in this case, "heroin" is the drug, and "tablespoons" is a phrase that's not a drug, so "other." 
+
+So the correct JSON would be:
+
+[
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "tablespoons"}
+]
+
+But wait, the post says "2 kilos of heroin possibly all added up by countless Nagaens each strapping three tablespoons on their inside thigh." The "tablespoons" is part of the method of using heroin. But the user's instruction is to detect any word or phrase that refers to an illicit drug. So "tablespoons" is not a drug, but the method. So only "heroin" is the drug. Therefore, the answer should have only one entry for heroin. 
+
+But the user's example 4 had "snow" and "white lines" as "other" even though they were not drugs. So maybe "tablespoons" is considered a phrase that refers to a drug-related activity, but not the drug itself. However, the user's instruction says to detect phrases that refer to an illicit drug. So "tablespoons" is not a drug, so it's "other." 
+
+Therefore, the correct answer is two entries: heroin and tablespoons as "other."
+</think>
+
+[
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "tablespoons"}
+]

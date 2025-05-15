@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this content. The user is asking about the story people tell themselves about why not to invest in the cannabis sector. Hmm, so they're talking about investing in cannabis. Now, I need to check if this is related to illicit or abusive drug use.
+
+First, cannabis is a drug, but the context here is investment. The user is discussing the cannabis industry, which is legal in many places now. The question is about the reasons someone might avoid investing, not about using or promoting cannabis. There's no mention of abuse, misuse, or illegal activities. The terms used are about investment and economic factors. So, even though cannabis is a drug, the content is in a financial context. The definitions say that False includes drug terms in unrelated contexts. So this should be classified as False because it's about investment, not drug abuse or promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses investment in the cannabis sector, which is a financial topic unrelated to drug abuse or illicit activity."
+}

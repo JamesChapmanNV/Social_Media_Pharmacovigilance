@@ -1,0 +1,10 @@
+<think>
+Okay, let's see. The user provided a content snippet: "Me at the hospital today: body go brrrrrrrrr them: morphine? morphine Me: body go br----". I need to classify this as ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I should check if there's any mention of illegal or abused drugs. The content mentions "morphine," which is a controlled substance. But the context here is a hospital setting where someone is being given morphine for a medical reason, like pain management. The user is describing their experience, not promoting or encouraging its use. The slang "body go brrrrrrrrr" might be a way to describe the effect of morphine, but the key is the context. Since it's in a hospital, it's a medical use. The example given in the task shows that if it's in a medical context, it's false. Also, there's no indication of abuse or promotion here. The conversation seems to be a casual exchange about a medical treatment. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references morphine in a hospital context, describing a medical treatment rather than promoting or glorifying drug abuse."
+}

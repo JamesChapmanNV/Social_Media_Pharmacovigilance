@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "for a start, i sold a whole case of codeine and promethazine, I'm bout to make this green". I need to detect any drug references here and link them to the correct index terms.
+
+First, I'll go through each word or phrase. The first mention is "codeine". Looking at the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" directly maps to Codeine. Then there's "promethazine". Checking the index terms, I see that Promethazine isn't listed. The closest might be Diphenhydramine (Benadryl, Nytol), but that's a different drug. Since Promethazine isn't in the list, I should mark it as "other". 
+
+The phrase "I'm bout to make this green" is a bit tricky. "Green" here might be slang for money or success, but not a drug. The user might be using "green" as a metaphor, so it's probably not a drug reference. So no match there.
+
+So the detected phrases are "codeine" and "promethazine". Codeine is directly listed, promethazine is not. Therefore, the JSON should have two entries: one for Codeine with "codeine", and another for "other" with "promethazine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "promethazine"}
+]

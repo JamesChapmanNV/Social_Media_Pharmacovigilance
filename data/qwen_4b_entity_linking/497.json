@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post mentions "cannabis lovers" and "Mary Jane." First, I need to check if "Mary Jane" is a slang term for cannabis. From the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. "Mary Jane" is a common nickname for marijuana, so that's a match. The other part is "cannabis," which is directly listed. So I need to detect both "cannabis" and "Mary Jane." 
+
+Looking at the index terms, "Marijuana" is the index term for cannabis. "Mary Jane" is a slang term, so it should map to "Marijuana." The post also mentions "NFT collectors," but that's not a drug reference. The rest of the text is about growing and trading, which doesn't involve drugs. So the only matches are "cannabis" and "Mary Jane." Both should be linked to "Marijuana." Let me make sure there's no other terms. The answer should be two entries in JSON format.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "Mary Jane"}
+]

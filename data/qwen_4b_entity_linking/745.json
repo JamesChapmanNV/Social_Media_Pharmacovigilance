@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post about the Clark County Commission discussing regulations on cannabis consumption lounges. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The main topic here is cannabis consumption lounges. The key term here is "cannabis." Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is exactly what's mentioned here. The phrase "cannabis consumption lounges" directly refers to marijuana, so "cannabis" is the matched phrase. Since it's listed in the index terms under Marijuana, the index term should be "Marijuana."
+
+I need to check if there are any other drug references. The post doesn't mention any other substances or slang terms. Words like "consumption lounges" are part of the regulation discussion but don't refer to illicit drugs. The term "cannabis" is the only one that maps to an index term. 
+
+No other terms like "codeine," "amphetamine," or others are present. So the only match is "cannabis" under the Marijuana index term. The answer should be a JSON array with that single entry.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

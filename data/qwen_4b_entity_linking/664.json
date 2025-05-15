@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about the Derek Chauvin trial, mentioning that if George Floyd hadn't been kneeled on, he might have died of an overdose. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs. The post says "died of an overdose." Overdose is a common term associated with drug use, but the challenge is to see if the specific drug is mentioned. However, the post doesn't explicitly name a drug. The phrase "overdose" itself is a general term and might not directly map to an index term unless there's a specific drug mentioned.
+
+Looking at the index terms, there's a list of drugs and their synonyms. The example given in the problem includes "Codeine" with terms like "lean" and "codeine." But in this case, the post doesn't mention any specific drug name. The only reference is "overdose," which isn't listed in the index terms. The index terms are specific to certain drugs, so "overdose" would fall under "other" since it's not a specific drug name but a general term indicating drug use.
+
+Wait, but the task says to detect every word or phrase that refers to an illicit drug. The word "overdose" could be considered a reference to drug use, but according to the index terms, it's not listed. The example in the problem where "snow" and "white lines" were marked as "other" because they aren't drugs. Similarly, "overdose" isn't a specific drug in the list, so it should be "other."
+
+So the matched phrase here is "overdose," and the index term is "other." The post doesn't mention any specific drug names, so there's only one match here. Therefore, the JSON array should have one object with index_term "other" and matched_phrase "overdose."
+</think>
+
+[{"index_term": "other", "matched_phrase": "overdose"}]

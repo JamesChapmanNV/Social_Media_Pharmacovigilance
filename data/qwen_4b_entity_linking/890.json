@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "morphine" and "China," and also talks about some slang terms. First, I need to check the Index Terms list to see if "morphine" is there. Looking through the list, yes, Morphine is listed as an index term. The post also says "they took off the market," which might refer to morphine being removed, but the key phrase here is "morphine."
+
+Next, the post mentions "China," but I don't think "China" is an index term. The Index Terms include "Fentanyl (China White, Apache, Duragesic)" where "China White" is a slang for fentanyl. However, the post says "morphine from China," so "China" here might be a reference to the country, but since "China White" is a specific term for fentanyl, and the post is about morphine, I need to check if "China" is linked to any drug. Since "China" isn't listed as an index term, it would fall under "other."
+
+Then, there's the part about "shit to make your dick hard, shit to make your dick soft." The word "shit" is used colloquially here, but in the context of drug references, "shit" might be a slang term. However, looking at the Index Terms, "shit" isn't listed. The example in the user's prompt shows that "xans" was considered "other," so "shit" here would also be "other."
+
+The phrase "that shit there's from Kenya" refers to a substance from Kenya. The Index Terms include "Ketamine (Special K, Keta, Ketalar)" but not Kenya. Also, "scurvy cure for silverback gorillas" is a metaphor, but the actual drug mentioned is "morphine," which is already accounted for. The part about "violently masturbate" is a description of the drug's effects, but not a direct reference to a specific term in the Index Terms. 
+
+So, the main detected phrase is "morphine," which maps to the index term "Morphine." The other mentions like "China" and "shit" are not in the Index Terms, so they should be "other." The user's example shows that "xans" was "other," so following that, "shit" and "China" would be "other." However, "China" is part of the fentanyl slang, but the post is about morphine, so "China" here is not a direct term from the Index Terms. Therefore, the correct matches are "morphine" and the other terms as "other."
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "China"},
+  {"index_term": "other", "matched_phrase": "shit"},
+  {"index_term": "other", "matched_phrase": "dick"},
+  {"index_term": "other", "matched_phrase": "shit"},
+  {"index_term": "other", "matched_phrase": "Kenya"},
+  {"index_term": "other", "matched_phrase": "scurvy"},
+  {"index_term": "other", "matched_phrase": "gorillas"},
+  {"index_term": "other", "matched_phrase": "masturbate"}
+]

@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I need to look at the provided post. The post mentions Purdue Pharma and OxyContin. Let me check the Index Terms list. OxyContin is an opioid, specifically oxycodone. Looking through the list, there's an entry for Oxycodone (OxyContin, Percocet, Hillbilly Heroin). So "OxyContin" would map to "Oxycodone".
+
+The post also mentions "Purdue Pharma" and "Purdue-Frederick" as a holding company. But those are just company names and not drug terms. The user's examples show that if the phrase isn't in the list, it's marked as "other". Since "Purdue Pharma" isn't listed as a drug term, those would be "other".
+
+Wait, but the example 3 had "xans" which wasn't in the list, so it was "other". Similarly, "Purdue Pharma" isn't a drug term, so those phrases should be "other".
+
+So the only drug-related term here is "OxyContin", which maps to "Oxycodone". The rest of the text doesn't mention any other drugs. The other parts are about company names and historical context, which aren't drug references. So the JSON should have one entry for "OxyContin" under Oxycodone. The rest are "other" for the company names.
+</think>
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "OxyContin"}
+]

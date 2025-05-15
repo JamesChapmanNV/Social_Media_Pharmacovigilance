@@ -1,0 +1,9 @@
+[
+  {"index_term": "CBD", "matched_phrase": "cannabis"},
+  {"index_term": "CBD", "matched_phrase": "cannabis products"},
+  {"index_term": "CBD", "matched_phrase": "cannabis community"},
+  {"index_term": "CBD", "matched_phrase": "cannabis industry"},
+  {"index_term": "CBD", "matched_phrase": "marijuana"},
+  {"index_term": "CBD", "matched_phrase": "marijuana industry"},
+  {"index_term": "CBD", "matched_phrase": "MMJ"}
+]

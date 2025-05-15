@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I'll look at the post: "Nigga i be in the studio flexin sippin codeine headed in the right direction 🚀". The key part here is "sippin codeine". The word "codeine" is directly listed in the Index Terms under the Codeine entry. The slang term "lean" is also mentioned as a synonym for codeine, but in this post, the phrase is "codeine", not "lean". However, the example given in the problem statement includes "lean" and "codeine" both as matches for the same index term. Wait, in the example, the post was "I got her hooked on that lean everyday she say she want codeine", and both "lean" and "codeine" were matched to Codeine. But in this current post, the user is saying "sippin codeine". So "codeine" is present. The other part is "flexin", which is slang for flexing, but not related to drugs. "Studio" and "headed in the right direction" are just context. 
+
+So the only detected phrase here is "codeine". Checking the Index Terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. But in this case, the exact phrase is "codeine", so it maps directly to Codeine. The example shows that even if the exact term is used, it's still matched. So the correct JSON should have one entry with index_term "Codeine" and matched_phrase "codeine". 
+
+Wait, but the user's post says "sippin codeine". The word "sippin" is slang for drinking, but the actual drug is "codeine". So the matched phrase is "codeine". The "sippin" is just the verb, not the drug itself. So the only match is "codeine". 
+
+Therefore, the output should be a JSON array with one object: {"index_term": "Codeine", "matched_phrase": "codeine"}.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

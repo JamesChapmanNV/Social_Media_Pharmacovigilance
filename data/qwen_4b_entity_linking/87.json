@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I need to look at the provided post. The post is: "#cannabiscommunity #marijuana #cannabis Markowitz Herbold PC Files Motion to Disqualify Susman Godfrey LLP  PORTLAND, Ore.--(BUSINESS WIRE)--Citing that "Susman Godfrey violated its duties to prospective clients", Markowitz has filed a..."
+
+Now, I need to scan through this text for any drug-related terms. The hashtags are #cannabiscommunity, #marijuana, and #cannabis. The index terms include "Marijuana (Cannabis, Weed, Pot)" which is listed as an illicit drug. So, the hashtags "marijuana" and "cannabis" would be matched to the index term "Marijuana". 
+
+But wait, the post also mentions "cannabis" in the body. The user's task is to detect every word or phrase that refers to an illicit drug. The index term for marijuana is "Marijuana", so both instances of "cannabis" and "marijuana" in the post should be matched to "Marijuana". 
+
+However, I need to check if "cannabis" is considered an illicit drug here. According to the index terms, "Marijuana" is listed as the most widely used illicit drug, containing psychoactive THC. So, even though cannabis is a plant, in this context, it's referring to marijuana, which is illicit. Therefore, both "marijuana" and "cannabis" in the post should be matched to "Marijuana".
+
+Looking at the example given in the problem statement, in Example 4, "snow" and "white lines" are considered "other" because they aren't on the list. But here, "marijuana" and "cannabis" are explicitly in the index terms. 
+
+So, the matched phrases would be "marijuana" and "cannabis", both linked to "Marijuana". The rest of the text doesn't mention any other drugs. The hashtags are part of the post, so they should be included. 
+
+I need to make sure that the exact phrases are matched. The post has "marijuana" and "cannabis" in the hashtags and in the text. The JSON array should list each occurrence. So the output should be two entries: one for "marijuana" and one for "cannabis", both under the index term "Marijuana".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

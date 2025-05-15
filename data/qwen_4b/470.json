@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "So first it was an overdose... now he tested positive for COVID. Seems like there's another agenda here."
+
+First, I need to check if there's any mention of illegal or abused drugs. The first part mentions an overdose, which could be related to drugs, but the second part talks about a COVID test. The user's example shows that if there's a mention of drugs in a medical context, it's False. But here, the overdose might be a red herring. The key is whether the content is promoting or glorifying drug use. The phrase "another agenda here" is vague, but the overdose could be a result of drug use. However, the content doesn't explicitly mention any drugs or their misuse. The mention of overdose is general. The user's example 1 had specific drug terms, while example 2 was educational. Here, there's no explicit mention of drugs, slang, or promotion. The explanation should focus on the lack of specific drug references and the context being about an overdose without explicit drug mention. So the label should be False because it's not promoting or glorifying drug abuse, just a general statement about an overdose and a possible unrelated issue.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content mentions an overdose but does not explicitly reference drugs, slang, or promote drug abuse; the context is ambiguous and unrelated to illicit drug use."
+}

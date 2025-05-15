@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this content classification. The user provided a specific example, so I need to analyze it carefully.
+
+The content talks about a drug smuggler in 1985 who threw 76 pounds of cocaine into a forest. A black bear named Pablo EskoBear found and ate all the cocaine, leading to a massive overdose and his death. 
+
+First, I need to check if this falls under the ILLICIT/ABUSIVE-DRUG-RELATED category. The key points here are the mention of cocaine, which is an illegal drug. The context is about a smuggler, which is related to illegal drug trafficking. The bear eating the cocaine and dying from an overdose is a real-world event, but the main focus is on the smuggling and the illegal activity. 
+
+The example given in the problem statement includes mentions of illegal drugs in the context of abuse or misuse. Here, the cocaine is being smuggled, which is illegal, and the bear's ingestion is an example of misuse. However, the story is more about the smuggling and the consequence of the drug being consumed, which could be seen as promoting or discussing the abuse. 
+
+But wait, the example in the problem's first example mentions "lean" and "codeine" and the tone is approving. In this case, the story is a historical event, but the mention of cocaine in the context of smuggling and the bear's death might be considered as discussing the abuse. However, the content isn't explicitly promoting drug use or encouraging it. It's more of a factual account of an event involving illegal drugs and their misuse. 
+
+But according to the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse. The story here is about a smuggler and the bear eating cocaine, which is a misuse scenario. So, even though it's a fictionalized story (the bear part is a real event?), the key is that it's discussing the illegal drug (cocaine) in a context of abuse (the bear's ingestion leading to death). 
+
+Therefore, the label should be True because it mentions an illegal drug (cocaine) in the context of abuse (the bear's overdose). However, the example given in the problem's first example had a more direct reference to drug use, while this is a more indirect scenario. But according to the definitions, any mention of illegal drugs in abuse context counts. 
+
+So the answer is True, as it involves illegal drugs (cocaine) and their misuse (bear eating it and dying).
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions cocaine, an illegal drug, and describes its misuse through a bear's fatal overdose, indicating abuse in a real-world context."
+}

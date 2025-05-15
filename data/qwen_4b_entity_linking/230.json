@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Codeine" and "prune juice." My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The sentence is: "Whomever coined the phrase:'Out of the frying pan and into the fire' was on Codeine & tried combatting its costive effects with prune juice." 
+
+Looking for drug references, the word "Codeine" is clearly mentioned. According to the index terms, Codeine is listed under the index term "Codeine," with synonyms like "Lean," "Purple Drank," and "Schoolboy." So "Codeine" directly maps to that index term.
+
+Next, the phrase "costive effects" might be a typo or a misspelling. The correct term is "constipating," which refers to the side effect of codeine causing constipation. However, the index terms don't list "constipating" as a drug term. Since the task is to detect drug references, "costive" here is likely referring to codeine's effect, but since it's not a drug name or slang, it might be considered "other." However, the user's example 3 shows that "xans" is "other" even though it's a drug. But in this case, the main drug is "Codeine," so the "costive" part is just a description of the drug's effect, not a drug reference itself. So the only drug reference here is "Codeine."
+
+Then, "prune juice" is mentioned. The index terms don't list prune juice as a drug. However, in the example 4, "snow" and "white lines" were marked as "other" even though they might be references to cocaine. Since prune juice is not a drug in the index terms, it would be "other." But the user's example 3 had "xans" as "other" even though it's a drug (benzodiazepine). However, in this case, the main drug is Codeine, and "prune juice" is a remedy for constipation caused by codeine. So the only drug reference is Codeine. The "prune juice" is not a drug, so it's "other."
+
+So the JSON array should have one entry for "Codeine" with "Codeine" as the matched phrase. The "prune juice" is not a drug, so it's "other" but the user's example 3 shows that even if it's a drug, like "xans" (which is a benzodiazepine), it's "other." Wait, but in example 3, the post was "Popped two xans before class." The index term for Bromazolam is listed, which is a designer benzodiazepine. But "xans" is not in the index terms, so it's "other." So in this case, "prune juice" is not a drug in the index terms, so it's "other." However, the user's instruction says to detect every word or phrase that refers to an illicit drug. "Prune juice" is not a drug, it's a remedy. So the only match is "Codeine."
+
+Therefore, the correct JSON array is [{"index_term": "Codeine", "matched_phrase": "Codeine"}]. But wait, the user's example 1 had "lean" and "codeine" both mapped to Codeine. So in this post, the phrase is "Codeine," so that's one entry. The rest is "prune juice," which is not a drug, so it's "other" but the user's instruction says to only include drug references. So the answer is only the "Codeine" entry.
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "Codeine"}]

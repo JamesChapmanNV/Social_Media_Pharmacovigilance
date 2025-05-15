@@ -1,0 +1,10 @@
+<think>
+Okay, let's see. The user provided a content snippet: "IM SERIOUS MOM, IM TELLING THE TRUTH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! [ huge voice crack there lmao ]". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check if there's any mention of drugs. The content is all caps, with a lot of exclamation marks and a voice crack. The key part is "IM SERIOUS MOM, IM TELLING THE TRUTH". There's no mention of any drugs here. The user might be expressing something serious, maybe about a situation, but there's no reference to drugs. The slang or euphemisms that might indicate drug use aren't present. The context doesn't involve abuse, misuse, or promotion of drugs. It's just someone being serious and truthful, possibly in a humorous or exaggerated way. Since there's no drug-related content, the correct classification should be False. The explanation would note the absence of drug mentions and the context of a serious statement without any drug references.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content expresses a serious statement without mentioning any drugs, slang, or contexts related to drug abuse or misuse."
+}

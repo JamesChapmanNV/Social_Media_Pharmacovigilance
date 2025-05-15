@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user provided a post about someone trying to stay sober and their dad's reaction to them wanting to use heroin. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to go through the post sentence by sentence. The first part mentions "heroin." Looking at the index terms, heroin is listed under "Morphine" as the prototypical opioid. Wait, no, actually, checking the index terms again: "Morphine (MS Contin, Miss Emma, Morph)" is the entry. But heroin isn't directly listed. Wait, the index terms include "Heroin" as a separate entry? Let me check again. Wait, no, looking at the list, "Morphine" is the entry. But heroin is a different drug. Wait, the index terms don't have a specific entry for heroin. Let me check again. The index terms list "Morphine" as the entry, but heroin isn't directly listed. However, the user's post mentions "heroin," so I need to check if there's an index term for it. Wait, looking back at the index terms, there's no specific entry for heroin. The closest is "Morphine," but heroin is a different drug. However, in the example given, "Codeine" is linked to "lean" and "codeine." So if the post mentions "heroin," and there's no specific index term for it, then according to the instructions, I should use "other." Wait, but the user's post says "heroin," which is an illicit drug. But the index terms don't have a specific entry for heroin. Let me check again. The index terms include "Morphine," but not heroin. So "heroin" would be "other."
+
+Wait, but in the example given, the user's post mentions "lean" and "codeine," which are both linked to Codeine. So in this case, the post has "heroin," which is not in the index terms, so it should be "other." So the matched phrase is "heroin," index term is "other."
+
+Then, the rest of the post doesn't mention any other drugs. The dad is an alcoholic, but that's not a drug reference. The other parts are about sobriety, working with dad, etc. So the only detected phrase is "heroin," which maps to "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

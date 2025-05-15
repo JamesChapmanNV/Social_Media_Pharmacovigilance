@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content here is about protests in Iran regarding land confiscation by the judiciary. The key points are the mention of protests and the context of land rights.
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to drug abuse. The content doesn't mention any drugs at all. The hashtags are #IranProtests, and the main topic is about villagers protesting a ruling that allows local officials to take their lands. 
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse. Since there's no drug-related term here, it's not applicable. The False category includes content that's about medical, educational, or preventative contexts. But this is about land protests, which is unrelated to drugs. 
+
+The explanation should state that there's no mention of drugs or drug-related terms, and the context is about land rights. So the label should be False. The explanation needs to be a single sentence pointing out the absence of drug-related content and the unrelated topic.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses political protests related to land rights in Iran, with no mention of drugs, drug abuse, or related terminology."
+}

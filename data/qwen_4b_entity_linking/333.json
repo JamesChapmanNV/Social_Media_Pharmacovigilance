@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "The International Cannabis Conversation - NEW SHOW - The International Cannabis Conversation is live on". The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The main phrase here is "The International Cannabis Conversation". The user is mentioning a show related to cannabis. Now, looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. The post is about a show discussing cannabis, so "cannabis" is likely the term here. 
+
+I need to check if "cannabis" is in the index terms. Yes, it's listed as "Marijuana (Cannabis, Weed, Pot)". So the matched phrase would be "cannabis" and the index term is "Marijuana". 
+
+Wait, the post says "The International Cannabis Conversation". The word "cannabis" is present here. The task is to detect every word or phrase that refers to an illicit drug. Since "cannabis" is explicitly mentioned and is listed in the index terms, it should be matched. 
+
+Are there any other terms? The rest of the post is about a show and "live on" which doesn't refer to any drug. So the only match is "cannabis". 
+
+Now, check if "cannabis" is in the index terms. Yes, under the "Marijuana" index term. So the JSON should have one entry with index_term "Marijuana" and matched_phrase "cannabis". 
+
+No other terms in the post. The example in the problem statement had "snow" and "white lines" as "other" because they aren't on the list. But here, "cannabis" is explicitly listed, so it's correct. 
+
+Therefore, the correct output is a JSON array with one object: {"index_term": "Marijuana", "matched_phrase": "cannabis"}.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

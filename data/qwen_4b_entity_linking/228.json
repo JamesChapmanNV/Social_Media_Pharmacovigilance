@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post in Hindi about a drug raid, specifically mentioning heroin. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look for any words or phrases that refer to illicit drugs. The post says "50 kg heroin" and "इंडो-अफगान गिरोह" which translates to "Indian-Afghan gang." The main term here is "heroin." Checking the index terms, heroin is listed as "Heroin (MS Contin, Miss Emma, Morph)" but wait, looking back at the index terms provided, the exact term for heroin is under "Morphine" with the note that Morphine is the prototypical opioid, but heroin isn't explicitly listed. Wait, let me check again.
+
+Looking at the index terms list, there's an entry for "Heroin (MS Contin, Miss Emma, Morph)" but actually, no. Wait, the user provided the index terms. Let me check again. The index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin specifically. However, in the example given, "Codeine" is linked to "lean" and "codeine." So, in the index terms, heroin isn't directly listed. Wait, the index terms list "Heroin" as a separate entry? Let me check again.
+
+Looking back at the index terms provided by the user, the entry for heroin is actually under "Morphine" as the prototypical opioid, but the user's index terms list "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no. Let me check again. The user's index terms include:
+
+"Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence."
+
+But heroin isn't directly listed. However, the user's example includes "Codeine" for "lean" and "codeine," so maybe heroin is not in the list. Wait, looking at the index terms again, there's an entry for "Heroin" as a separate term? No, the user's index terms don't have a direct entry for heroin. Wait, the user's index terms list "Morphine" and "Heroin" is not explicitly listed. Wait, looking at the index terms again, the user's list includes "Heroin (MS Contin, Miss Emma, Morph)"? No, the user's index terms list "Morphine" as the prototypical opioid, and "Heroin" is not listed. Wait, but in the example given in the problem statement, the user's example 1 has "Codeine" linked to "lean" and "codeine," which is correct. So, in the index terms, heroin is not listed. Therefore, if the post mentions heroin, which is not in the index terms, then it should be marked as "other."
+
+Wait, but the user's index terms do include "Heroin" in the description? Let me check again. The user's index terms list:
+
+"Heroin (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence."
+
+Wait, no, that's not correct. The actual index terms provided by the user don't have a separate entry for heroin. The entry for morphine is listed as "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence." So heroin is not in the index terms. Therefore, if the post mentions heroin, it would be "other."
+
+But in the example given, the user's example 1 has "Codeine" linked to "lean" and "codeine," which are both in the index terms. So in the current post, the phrase "heroin" is mentioned. Since heroin is not listed in the index terms, it should be categorized as "other." However, the user's index terms list "Morphine" but not heroin. Therefore, the correct index term for "heroin" would be "other."
+
+So the matched phrase is "heroin," and the index term is "other." The other part of the post is "इंडो-अफगान गिरोह" which translates to "Indian-Afghan gang," but that's a reference to the gang, not a drug. So that's not a drug reference. The main drug mentioned is heroin, which is not in the index terms, so it's "other." Therefore, the JSON array should have one entry with "heroin" as the matched phrase and "other" as the index term.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

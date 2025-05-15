@@ -1,0 +1,29 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references. The task is to find every word or phrase that refers to an illicit drug or substance, link them to the correct index term, and return a JSON array.
+
+First, I'll look at the post: "Do you know someone with a #cannabis #criminal #record? Help them get an automatic #expungement from the govt. MP agrees. Sign this petition now:"
+
+I need to check each part for drug mentions. The hashtags here are #cannabis, #criminal, #record, #expungement. The main focus is on cannabis. According to the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "cannabis" is a direct match for the index term "Marijuana".
+
+The other hashtags like #criminal, #record, #expungement don't relate to specific drugs. The user is talking about helping someone with a criminal record related to cannabis, but the terms here are not drug names. So those would be "other" since they aren't specific drug references.
+
+Wait, the post mentions "cannabis" in the hashtag. The index term for cannabis is "Marijuana". So the matched phrase is "#cannabis", but the index term is "Marijuana". However, the example shows that "codeine" is matched with "lean" and "codeine", so the exact text is used. But in the example, the hashtag wasn't used. Wait, the example 1 had "lean" and "codeine" as the matched phrases. So in this case, the hashtag is "#cannabis", which is a reference to cannabis. So the index term is "Marijuana".
+
+But the user's instruction says to detect every word or phrase that refers to an illicit drug. The hashtag is a term used in social media, but the actual phrase is "#cannabis". However, the index term for cannabis is "Marijuana". So the matched_phrase would be "#cannabis", and the index_term is "Marijuana".
+
+But wait, the example 3 had "xans" which was "other" because it's not a specific drug. So in this case, the hashtag is a reference to cannabis, which is on the list. So the index term is "Marijuana", and the matched_phrase is "#cannabis".
+
+But the user's example 1 had "lean" and "codeine" as the matched phrases. So the exact text is used. So in this case, the hashtag is the exact text. So the JSON should be:
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "#cannabis"}
+]
+
+But wait, the user's instruction says to detect every word or phrase that refers to an illicit drug. The hashtag is a reference to cannabis, which is an illicit drug. So that's the only match here. The other terms like #criminal, #record, #expungement are not drug-related, so they are "other". But the user's example 4 had "snow" and "white lines" as "other" because they aren't drugs. So in this case, the only drug-related term is "#cannabis", which maps to "Marijuana".
+
+So the final answer should be a JSON array with one object: index_term "Marijuana" and matched_phrase "#cannabis".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "#cannabis"}
+]

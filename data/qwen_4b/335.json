@@ -1,0 +1,38 @@
+<think>
+Okay, let's see. The user provided a content snippet that's part of a social media post. The task is to classify it as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False). 
+
+First, I need to check if the content mentions illegal drugs, RX, or OTC drugs in the context of abuse or misuse. The content says the person has been off heroin for 3 years and 3 months. Heroin is an illegal drug, so that's a key point. The mention of being "off heroin" indicates they were using it before and are now sober. 
+
+Next, the content talks about "turning my life around," which could imply a struggle with drug addiction. The use of heroin is clearly an illicit drug. The context here is about recovery, which is a common theme in drug abuse narratives. However, the user is not promoting or glorifying the use of drugs; instead, they're sharing their journey of overcoming addiction. 
+
+But wait, the definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. The post does mention heroin, which is illegal, and the person has been off it for a while. The tone seems to be about recovery, not promoting or using drugs. However, the mention of heroin itself is a red flag. 
+
+Wait, the example given in the task had a similar case where the user was talking about being hooked on codeine, which was classified as True. In this case, the user is talking about being off heroin, which is a drug. But the key is whether the content is promoting or glorifying the misuse. The user is sharing their personal experience of overcoming addiction, not promoting the use. 
+
+But the definitions for True include mentions of illegal drugs in the context of abuse or misuse. The fact that they were using heroin and are now off it might be considered as mentioning the drug in the context of abuse. However, the content is about recovery, not promoting or encouraging misuse. 
+
+Hmm, the example in the task where the user was "hooked on codeine" was classified as True because it's about abuse. In this case, the user is talking about being off heroin, which is a past misuse. But the content doesn't explicitly mention current use or promotion. It's more about recovery. 
+
+Wait, the definitions for True include "using, buying, promoting, etc." So if the content is about being off the drug, maybe it's not promoting. But the presence of the drug name (heroin) in the context of past abuse might still be considered as ILLICIT. 
+
+Alternatively, if the content is about recovery, maybe it's not promoting abuse. But the presence of the drug name might still be considered as related. 
+
+I think the key here is that the content mentions heroin, which is an illicit drug, and the user is talking about their past use. So according to the definitions, mentioning illegal drugs in the context of abuse (even if it's past) would be True. 
+
+But the example given in the task where the user was "hooked on codeine" was considered True. So in this case, the user is talking about being off heroin, but the mention of heroin is still an illicit drug. Therefore, the label should be True. 
+
+But wait, the user is not currently using it, but the content is about their past use. The definition says "mentions illegal, RX, or OTC drugs in the context of abuse or misuse (using, buying, promoting, etc.)". So if they mention the drug in the context of past use, does that count? The example in the task had "hooked on codeine" which is abuse. So in this case, the user is talking about being off heroin, which is a past misuse. 
+
+But the content is about their recovery, not promoting or encouraging. However, the presence of the drug name and the context of past use might still be considered as ILLICIT. 
+
+Alternatively, maybe the content is not promoting, but the mention of the drug is still relevant. So the label would be True. 
+
+But I need to check the definitions again. The True includes content that mentions illegal drugs in the context of abuse or misuse. The content here mentions heroin, which is an illegal drug, and the user was using it (past misuse). Therefore, the label should be True. 
+
+But the example in the task had a similar case where the user was "hooked on codeine" and it was classified as True. So in this case, the user is talking about being off heroin, but the mention of heroin is still an illicit drug. Therefore, the answer is True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'heroin,' an illegal drug, and references a past period of use ('3 yrs and 3 mos off heroin'), indicating abuse in the context of recovery."
+}

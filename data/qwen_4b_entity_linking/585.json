@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that's about discussing illegal drugs and the consequences of their use. My task is to detect any drug-related references in the post and link them to the appropriate index terms from the given list.
+
+First, I'll read through the post carefully: "Don't forget all those experimental and illegal drugs that people pay for and voluntarily put into their bodies every day. Then when thing go wrong or they overdose the tax payer pays, while the suppliers get rich! We can vote Governments in/out, nor drug dealers!" 
+
+Looking for any words or phrases that refer to illicit drugs. The first part mentions "experimental and illegal drugs." The word "experimental" might not be a direct drug name, but "illegal drugs" is a general term. However, the list of index terms includes specific drugs, so I need to check if any specific terms are mentioned here. 
+
+The post doesn't use any specific slang, euphemisms, or synonyms for the listed drugs. Words like "experimental" and "illegal drugs" are general terms. The index terms are specific to certain drugs, so "illegal drugs" as a phrase isn't listed. The example 3 shows that "xans" is "other" because it's not a specific term. Similarly, here, "experimental and illegal drugs" is a general statement, not a specific drug name. 
+
+So, the post doesn't mention any specific drug names or phrases that match the index terms. The user is talking about drugs in general, not specific ones. Therefore, there are no matches in the index terms provided. The answer should be an empty array since there are no specific drug references detected.
+</think>
+
+[]

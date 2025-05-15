@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The content is: "How high do you have To be to fall asleep while smoking crack??" 
+
+First, I need to determine if this is illicit or abusive drug-related. The user is asking about the effects of crack, specifically about how high someone needs to be to fall asleep. The mention of "crack" is a clear indicator of a drug, and the context is about its use. The phrase "how high do you have to be" suggests they're discussing the effects of the drug, which is recreational use. 
+
+The question is about the experience of using crack, which implies misuse or abuse. The user is asking for a level of intoxication, which is a sign of recreational drug use. There's no mention of medical or educational context here. The tone seems to be inquiring about the effects, which could be part of promoting or glorifying its use. 
+
+Comparing to the examples, the first example mentions "lean" and "codeine" with a supportive tone, which is True. This content is similar in that it's discussing the effects of a drug (crack) in a way that suggests use. The second example was about a pharmacology lecture, which is False. This isn't a medical context. 
+
+So the label should be True. The explanation should note the mention of crack and the context of using it to fall asleep, indicating abuse or misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'crack' and discusses its effects on sleep, implying recreational use or abuse."
+}

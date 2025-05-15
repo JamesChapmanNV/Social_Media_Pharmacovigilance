@@ -1,0 +1,7 @@
+[
+  {"index_term": "Cannabis", "matched_phrase": "illegal cannabis"},
+  {"index_term": "Cannabis", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "weed"},
+  {"index_term": "Marijuana", "matched_phrase": "pot"}
+]

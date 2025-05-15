@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Caddy shack >mr bean but do go on". I need to check for any drug-related references here.
+
+First, I'll break down the post. The words mentioned are "Caddy shack", "mr bean", and "do go on". Looking at the index terms list, I need to see if any of these phrases match a drug or substance.
+
+"Caddy shack" – Hmm, I'm not sure. Wait, "Caddy Shack" is a TV show, right? It's a comedy. Maybe "Caddy Shack" is a slang term? Let me check the index terms. The list includes terms like Codeine, Amphetamine, Benzodiazepines, etc. But "Caddy Shack" doesn't seem to be listed. The example given in the problem had "xans" which was "other" because it wasn't a known drug. Similarly, "snow" in example 4 was "other".
+
+"Mr. Bean" is a character from a TV show, so that's not a drug reference. "Do go on" is just a phrase meaning to continue or proceed. None of these terms are listed in the index terms provided. So, the answer should be "other" for both "Caddy shack" and "mr bean", but wait, the post has "Caddy shack > mr bean but do go on". The user might have meant that "Caddy shack" is a slang term. But according to the index terms, there's no entry for "Caddy shack". The closest might be "Codeine" with "lean" or "codeine", but "Caddy shack" isn't listed. So both phrases are not in the index terms, so they should be "other".
+
+Wait, but maybe "Caddy Shack" is a slang for something? Let me double-check the index terms again. The index terms include things like Codeine, Amphetamine, Benzodiazepines, etc. But "Caddy Shack" isn't listed. So, the answer would be "other" for both "Caddy shack" and "mr bean", but the post has three words: "Caddy shack", "mr bean", "do go on". Wait, the user's post is "Caddy shack >mr bean but do go on". So the phrases are "Caddy shack", "mr bean", and "do go on". The last part "do go on" is not a drug reference. So only "Caddy shack" and "mr bean" need to be checked. But neither are in the index terms. Therefore, both would be "other". However, the example 3 had "xans" which was "other". So the correct answer is two entries: "other" for "Caddy shack" and "other" for "mr bean". But the user's post has "Caddy shack >mr bean but do go on". So the matched phrases are "Caddy shack" and "mr bean". Both are not in the index terms, so they should be "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "Caddy shack"}, {"index_term": "other", "matched_phrase": "mr bean"}]

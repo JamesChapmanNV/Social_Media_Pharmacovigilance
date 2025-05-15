@@ -1,0 +1,7 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "drug overdose" and "opiates." First, I need to check if "opiates" is listed in the index terms. Looking through the list, there's "Morphine" and "Codeine" but no direct entry for "opiates." However, "Codeine" is listed with synonyms like "Lean" and "Purple Drank." The post also mentions "opiates" in general, which might not have a specific index term. Since "opiates" isn't explicitly listed, I should map it to "other." But wait, the example in the prompt had "snow" and "white lines" mapped to "other" even though they weren't drugs. So in this case, "opiates" is a general term, not a specific drug listed. Therefore, the correct index term would be "other." The phrase "drug overdose" is also mentioned, but "drug" is a general term, so that would be "other" as well. However, the user's example 4 shows that "snow" and "white lines" are mapped to "other" even if they're not drugs. But in the given post, "opiates" is a specific category. Wait, the index terms include "Codeine" and "Morphine," but "opiates" is a broader term. Since the index terms don't have "opiates," I should use "other." So the matched phrase is "opiates" with index term "other." Also, the post says "nobody ever dies from drug overdose," but "drug" is a general term, so that would be "other." However, the user's example 3 had "xans" as "other." So the correct answer here is "opiates" mapped to "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "opiates"}
+]

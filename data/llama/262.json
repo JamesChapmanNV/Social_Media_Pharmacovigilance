@@ -1,0 +1,55 @@
+### Example #3
+Content: Probably took a lot of drugs.
+{
+  "label": "True",
+  "explanation": "The content implies drug misuse, using the phrase 'took a lot of drugs'."
+}
+
+### Example #4
+Content: Methamphetamine
+{
+  "label": "True",
+  "explanation": "The content mentions a controlled substance, methamphetamine, in a general sense."
+}
+
+### Example #5
+Content: Morphine
+{
+  "label": "True",
+  "explanation": "The content mentions a controlled substance, morphine, which could be related to abuse or misuse."
+}
+
+### Example #6
+Content: I'm a nurse, I administer morphine to patients in pain.
+{
+  "label": "False",
+  "explanation": "The content mentions morphine in a medical context, administering it for pain relief."
+}
+
+### Example #7
+Content: Buprenorphine is a medication-assisted treatment for opioid addiction.
+{
+  "label": "False",
+  "explanation": "The content discusses medication-assisted treatment, a preventative and educational context."
+}
+
+### Example #8
+Content: I'm trying to quit my prescription pill addiction.
+{
+  "label": "True",
+  "explanation": "The content mentions prescription pill addiction, implying misuse or abuse of the medication."
+}
+
+### Example #9
+Content: I'm a pharmacist, I counsel patients on safe OTC medication use.
+{
+  "label": "False",
+  "explanation": "The content mentions OTC medication in a preventative and educational context."
+}
+
+### Example #10
+Content: This new study on fentanyl abuse is really concerning.
+{
+  "label": "True",
+  "explanation": "The content mentions fentanyl abuse, implying misuse or recreational use of the substance."
+}

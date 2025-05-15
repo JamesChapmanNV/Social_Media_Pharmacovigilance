@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Hydrocodone. More potent than codeine. Used in combination with anti collinergic homatropine yaaaaaaaas". I need to detect any drug references here and map them to the index terms.
+
+First, look for words or phrases that refer to illicit drugs or substances. The first word is "Hydrocodone". Checking the index terms, Hydrocodone is listed under "Hydrocodone (Vicodin, Norco, Vike) – A commonly prescribed semi-synthetic opioid painkiller frequently diverted for nonmedical use." So "Hydrocodone" maps to "Hydrocodone".
+
+Next, "codeine" is mentioned. In the index terms, Codeine is listed with synonyms like "Lean, Purple Drank, Schoolboy". So "codeine" directly maps to "Codeine".
+
+Then there's "anti collinergic homatropine". Homatropine is an anticholinergic drug, but I need to check if it's in the index terms. Looking through the list, Diphenhydramine (Benadryl, Nytol) is an antihistamine with sedative effects. However, "homatropine" isn't explicitly listed. The index terms don't have a specific entry for homatropine. Since it's not in the list, it should be marked as "other". But wait, the user's example 3 had "xans" as other. So even if it's a drug, if it's not in the index terms, it's "other". Therefore, "anti collinergic homatropine" would be "other".
+
+But wait, the post says "used in combination with anti collinergic homatropine". The key here is whether "homatropine" is considered a drug reference. Homatropine is a medication, but it's not listed in the index terms. The index terms include drugs like Diphenhydramine, but not Homatropine. So the phrase "anti collinergic homatropine" is a drug, but since it's not in the list, it's "other".
+
+So the matches are "Hydrocodone" and "codeine". The rest is "other" for homatropine. But the user's example 3 had "xans" as other, so even if it's a drug, if not in the list, it's other. So the answer should have two entries: Hydrocodone and Codeine. The homatropine part is other.
+</think>
+
+[
+  {"index_term": "Hydrocodone", "matched_phrase": "Hydrocodone"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "anti collinergic homatropine"}
+]

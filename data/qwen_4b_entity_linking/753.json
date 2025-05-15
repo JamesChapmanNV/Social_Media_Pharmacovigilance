@@ -1,0 +1,33 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I need to look at the provided post: "Who said drunk? Ok… You invite me into your home and while drinking water I choose to berate you and your family with a variety of slurs, name calling, threatening you, tell you heroin is good for your kids and parents and all the while you stand by me because, free speech."
+
+I need to scan through this text for any mentions of drugs. The key part here is "tell you heroin is good for your kids and parents." The word "heroin" is clearly an illicit drug. Checking the Index Terms list, heroin is listed as "Heroin (MS Contin, Miss Emma, Morph)" but wait, looking back, the Index Terms list includes "Morphine" and "Heroin" is not directly listed. Wait, let me check again.
+
+Looking at the Index Terms provided, there's an entry for "Heroin (MS Contin, Miss Emma, Morph)" but in the list, the actual term is "Morphine" and "Heroin" is not explicitly listed. Wait, no, the user provided the Index Terms, and in the list, "Heroin" is not directly listed. Wait, let me check again. The Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but not "Heroin". Wait, looking at the list again:
+
+The Index Terms include "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no. Wait, in the list provided, the entry for Morphine is "Morphine (MS Contin, Miss Emma, Morph)" and Heroin is not listed. Wait, but in the example given in the problem statement, the first example mentions "Codeine" and "lean", which is in the list. So, the Index Terms list includes "Codeine (Lean, Purple Drank, Schoolboy)".
+
+So, in the post, the phrase "heroin" is used. Now, checking the Index Terms, is "Heroin" listed? Let me check again. The Index Terms list includes:
+
+Looking through the list, there's an entry for "Morphine (MS Contin, Miss Emma, Morph)" but not Heroin. Wait, but the user might have made a mistake here. However, according to the given Index Terms, "Heroin" is not explicitly listed. Wait, but in the example given in the problem statement, the first example has "Codeine" and "lean", which is in the list. So, the user's Index Terms list includes "Codeine" as an index term. So, if the post mentions "heroin", but there's no entry for "Heroin" in the Index Terms, then we need to check if "Heroin" is in the list.
+
+Wait, looking again, the Index Terms list includes "Heroin (MS Contin, Miss Emma, Morph)"? No, that's not correct. Wait, the Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" and "Heroin" is not listed. Wait, but in the example given, the first example has "Codeine" and "lean", which is in the list. So, if the post mentions "heroin", but there's no entry for "Heroin" in the Index Terms, then according to the instructions, we should use "other".
+
+Wait, but looking at the Index Terms list again, there's an entry for "Heroin" as part of "Morphine"? No, the entry for Morphine is separate. Let me check again. The Index Terms list includes:
+
+"Morphine (MS Contin, Miss Emma, Morph)" – that's one entry. Then "Heroin" is not listed. Therefore, "heroin" is not in the Index Terms. Therefore, the matched phrase "heroin" should be linked to "other".
+
+Wait, but the user might have made a mistake here. However, according to the provided list, "Heroin" is not in the Index Terms. Therefore, the correct index term would be "other".
+
+So, in the post, the phrase "heroin" is mentioned. Since "heroin" is not in the Index Terms list, it should be categorized as "other".
+
+Therefore, the JSON array should have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+I need to make sure there are no other phrases. The rest of the post talks about "drinking water", "slurs", "name calling", etc., which don't refer to drugs. So the only match is "heroin".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I can't stay on your morphine Because it's making me itch (8)". I need to detect any drug references here.
+
+First, I'll look for words that might refer to illicit drugs or substances. The word "morphine" is directly mentioned. Checking the index terms, Morphine is listed as an index term. So "morphine" maps to "Morphine".
+
+Next, there's the part "(8)". The number 8 in parentheses might be a slang or a reference. But looking at the index terms, I don't see any entries that include the number 8 as part of a drug name. The closest is maybe something like 8OH-R-HHC or 8S-OH-R-HHC, but those are specific metabolites. However, the "(8)" here is probably not a drug term but a note or a number. Since it's not a drug name or slang, it should be categorized as "other".
+
+So the only matched phrase here is "morphine", which maps to "Morphine". The "(8)" is not a drug term, so it's "other". But wait, the user's example 3 had "xans" which was "other". Similarly, in example 4, "snow" was "other". So the number in parentheses here is likely not a drug term. Therefore, the only match is "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

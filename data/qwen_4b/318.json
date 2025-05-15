@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The content is "codeine crazy is one of my favorite future songs 🙌🏽". First, I need to determine if this is illicit or abusive drug-related. The user is a content moderator, so I have to check for any mention of drugs in a context that suggests abuse or misuse.
+
+The word "codeine" is a controlled substance, so that's a red flag. But the context here is that it's a song title. The user mentions "crazy" and "favorite future songs". The use of "crazy" might be a slang term, but in this case, it's part of the song title. However, the key point is whether the content is promoting or glorifying the use of codeine. 
+
+Since the content is about a song, it's more likely a cultural reference rather than promoting drug abuse. The user isn't discussing the misuse of codeine, just referencing a song. The emojis and the tone don't indicate any encouragement or support for drug use. Therefore, this doesn't fit the criteria for illicit/abusive drug-related content. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references 'codeine' in the context of a song title, not promoting or glorifying its misuse."
+}

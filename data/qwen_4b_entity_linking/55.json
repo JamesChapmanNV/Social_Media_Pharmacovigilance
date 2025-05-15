@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Listen to  - Kobe Codeine Ft.  (Prod. by ) by Dirty Rose Music Group #np #SoundCloud". I need to detect any drug-related references here.
+
+First, I'll scan the post for any words or phrases that might refer to illicit drugs. The key part here is "Kobe Codeine". Looking at the Index Terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "Kobe Codeine" seems to be a track title, but "Codeine" is explicitly mentioned here. Since "Codeine" is in the index term list, that's a direct match. The artist is "Dirty Rose Music Group", but that's not relevant here. The rest of the post includes hashtags like #np and #SoundCloud, which are unrelated. 
+
+So the only detected phrase is "Codeine" in "Kobe Codeine". According to the Index Terms, Codeine is an index term. Therefore, the JSON should have one object with index_term as "Codeine" and matched_phrase as "Codeine". The "Kobe" part is a name, so it's not a drug reference. The rest of the post doesn't have any other drug terms. So the answer should be a single entry.
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "Codeine"}]

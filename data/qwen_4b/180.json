@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content here is about a poker game where players keep their chips visible. The mention of "dealer" and "big chips" might be a bit confusing. Wait, in poker, a dealer is the person who deals the cards, not related to drugs. The terms "5K" and "25K" could refer to chip denominations, like $5,000 and $25,000 chips. The user is talking about keeping chips visible, which is a standard rule in poker to prevent cheating. There's no mention of drugs, illegal substances, or any context related to drug use. The example given in the task had terms like "lean" and "codeine," which are drug-related. Here, the content is purely about a poker game's rules. So, the answer should be False because there's no drug-related content. The explanation should note that the terms are related to poker chips and rules, not drugs.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses poker game rules and chip management, using terms like 'dealer,' 'chips,' and'stacks' in a gaming context unrelated to drug use or abuse."
+}

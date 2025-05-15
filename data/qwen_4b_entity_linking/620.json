@@ -1,0 +1,7 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I really don't feel good from the hospital last night they gave me morphine and it makes me feeling yucky right now." I need to detect any drug references here.
+
+First, I'll read through the post carefully. The key part is "they gave me morphine." Morphine is listed in the index terms under "Morphine" as the prototypical opioid analgesic. So "morphine" is a direct match. The rest of the post talks about feeling bad and being sick, but there's no other mention of drugs. The words "morphine" is the only one that refers to an illicit drug or a prescribed one. Since morphine is in the list, the index term is "Morphine". There's no other phrase here that matches any other index term. The other words like "hospital" or "yucky" aren't drug references. So the JSON should have one object with "Morphine" and "morphine" as the matched phrase.
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

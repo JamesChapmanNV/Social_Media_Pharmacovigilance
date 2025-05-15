@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "George Floyd died from a parmesan cheese overdose Nojustheese nocheese". I need to check for any drug-related references here.
+
+First, I'll look for words that might be slang or euphemisms for drugs. The first part mentions "parmesan cheese overdose". Parmesan cheese isn't a drug, but maybe there's a slang term here. Wait, "parmesan" isn't listed in the index terms. The user also wrote "Nojustheese nocheese" which seems like a misspelling or a typo. "Nojustheese" might be a misspelling of "no justice", but that's not a drug. "Nocheese" could be a misspelling of "no cheese", but again, not a drug.
+
+Looking through the index terms, I don't see any entries related to cheese or parmesan. The example where "snow" was considered "other" because it wasn't a drug. So "parmesan cheese" isn't a drug term here. The rest of the post doesn't have any other words that match the index terms. Therefore, there are no drug references in this post. The answer should be an empty array since there are no matches.
+</think>
+
+[]

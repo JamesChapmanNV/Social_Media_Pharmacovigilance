@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this. The user wants me to label the given social media post as T or F based on the rules provided. The post is in German, so I need to parse that first.
+
+Looking at the content: The post starts with "(6/7) Quellen: " which seems like a reference or citation. Then there's a list of authors and a journal title, "Cannabis, Cannabinoids, and Sleep: a Review of the Literature" from 2017. The date is "2017-11-27 Kurzbericht CAPRis," which might be a short report or a summary.
+
+The key here is to check if the text shows illicit or abusive drug use. The mention of cannabis and cannabinoids is part of a literature review. The authors are discussing the relationship between cannabis and sleep. There's no explicit mention of using, seeking, buying, selling, trafficking, or slang for drugs. Instead, it's a medical or academic discussion about the effects of cannabis on sleep. The sources are from a medical journal, so this is a medical/policy discussion. 
+
+Since the post is referencing a study and not discussing drug use itself, the label should be F. The user is asking for only T or F, no explanations. So the answer is F.
+</think>
+
+F

@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "i didn't know how much crack you have to smoke in order to say harry maguire was fantastic…" I need to identify any drug references here and map them to the correct index terms.
+
+First, I'll read through the post carefully. The key part here is "crack". Now, looking at the list of index terms, I need to check if "crack" is listed. Let me scan through the list. 
+
+Looking at the index terms, there's a section for "Methamphetamine (Crystal Meth, Ice, Desoxyn)" and "N,N-Dimethylpentylone () – A novel synthetic cathinone stimulant ("bath salt") producing amphetamine-like sympathomimetic effects." But "crack" isn't directly listed. Wait, "crack" is a slang term for cocaine, right? But in the index terms, "Benzoylecgonine (BZE, Ecgonine benzoate)" is the metabolite of cocaine. However, the index term for cocaine itself isn't listed. The index terms include "Marijuana (Cannabis, Weed, Pot)" and others, but not cocaine. 
+
+Wait, the user's instruction says to use the index terms provided. Let me check again. The index terms include "Benzoylecgonine" as the metabolite of cocaine, but the actual drug name isn't listed. However, in the example given, "snow" was mapped to "other" because it wasn't on the list. So if "crack" isn't explicitly listed in the index terms, then it should be "other". 
+
+But wait, is "crack" considered a drug here? The user is asking for any illicit drug references. "Crack" is a form of cocaine, which is an illicit drug. However, the index terms don't have a specific entry for cocaine. The only related term is "Benzoylecgonine", which is a metabolite, not the drug itself. Since the index terms don't list cocaine as an index term, then "crack" would fall under "other". 
+
+So the matched phrase is "crack", and the index term is "other". The user's example 4 shows that "snow" was "other" even though it's related to cocaine. Therefore, in this case, "crack" should be "other". 
+
+I need to make sure there's no other term. Let me check again. The index terms include "Methamphetamine" and "Crack" isn't listed. So the answer is "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"}
+]

@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect every word or phrase that refers to an illicit drug or substance, link them to the appropriate Index Term, and return a JSON array.
+
+First, I need to look at the provided post: "Again..... the doctor admitted that fentanyl, the drug he had in his system can suppress breathing. He also admitted that he didn't know he had foam coming out of his mouth at the scene and complained of respiratory distress before being restrained...both signs of a drug overdose."
+
+I'll start by breaking down the post sentence by sentence. The first part mentions "fentanyl" explicitly. Looking at the Index Terms, Fentanyl is listed under "Fentanyl (China White, Apache, Duragesic)" so that's a clear match. The phrase "fentanyl" directly maps to "Fentanyl".
+
+Next, the post talks about symptoms of a drug overdose: foam coming out of the mouth and respiratory distress. These are signs of overdose but aren't specific drug names. The user's instructions say to detect references to illicit drugs, so symptoms might not be directly linked unless they're associated with a specific drug. However, the mention of "foam coming out of his mouth" could be a sign of opioid overdose, but since the post specifically mentions fentanyl, which is an opioid, maybe "foam" is a symptom related to fentanyl. But according to the Index Terms, "foam" isn't listed. The example in the user's prompt where "snow" was considered "other" because it's not a drug. So "foam" and "respiratory distress" are symptoms, not direct drug references. Therefore, they might not be included unless there's a specific term. 
+
+Wait, the user's task is to detect phrases that refer to the drug itself, not the symptoms. The example given in Example 3 had "xans" which was "other" because it wasn't on the list. So in this case, "fentanyl" is directly listed, so that's a match. The other parts are symptoms, not drug names. So the only matched phrase here is "fentanyl".
+
+So the JSON should have one entry: index_term "Fentanyl" and matched_phrase "fentanyl".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]

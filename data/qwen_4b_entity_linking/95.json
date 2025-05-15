@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post given is about a video launch for a Limited Edition Black Falcon, mentioning it's sold out and not available from local dealers. The task is to detect any drug-related terms and link them to the index terms provided.
+
+First, I'll read through the post carefully. The main content is about a product launch, Falcon Friday, and mentions "Black Falcon" and "Black and White BD Falcon Juniors." There's no mention of any drugs or substances. The example provided in the problem statement includes phrases like "lean" and "codeine" which are linked to the index term "Codeine." However, in this post, there's no such terminology. 
+
+I need to check if there are any slang terms, euphemisms, or cultural references that might relate to drugs. The words "Falcon" could be a brand name or a reference to something else, but there's no indication here of drug use. The mention of "local dealer" might be a red herring, as it's about product availability, not drug sales. 
+
+Looking at the index terms list, none of the terms match the words in the post. The post doesn't contain any phrases that are synonyms, slang, or references to illicit drugs. The only possible mention is "Falcon," but that's a brand name for a product, not a drug. 
+
+Since there are no drug-related terms detected, the correct response would be to return an empty array. However, the examples show that even if there are no matches, the JSON array is returned with zero entries. The user's instruction says to return only the JSON array, so even if there are no matches, it's an empty array. 
+
+Therefore, the final answer is an empty JSON array as there are no drug references in the post.
+</think>
+
+[]

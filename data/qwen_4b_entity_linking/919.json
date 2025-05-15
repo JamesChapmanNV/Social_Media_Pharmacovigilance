@@ -1,0 +1,25 @@
+<think>
+Okay, let's tackle this query. The user provided a post about heroin-coated yarn being used to smuggle heroin into India. My task is to identify any drug-related references in the post and map them to the appropriate index terms from the given list.
+
+First, I'll read the post carefully: "'Heroin-coated yarn': How traffickers smuggled ₹450 cr worth heroin into India". The main phrase here is "heroin-coated yarn". The key term here is "heroin". Now, I need to check if "heroin" is listed in the index terms. 
+
+Looking through the list, there's an entry for Morphine (MS Contin, Miss Emma, Morph) and other opioids, but heroin isn't directly listed. However, the index term for Morphine is listed, but heroin is a different drug. Wait, the index terms include "Morphine" as a separate entry, but heroin isn't explicitly mentioned. However, the user's instruction says to use the index terms provided. Since heroin isn't in the list, I should check if there's a related term. 
+
+Wait, looking again, the index terms include "Morphine" and "Codeine", but heroin isn't listed. The example given in the problem shows that "codeine" is mapped to "Codeine" index term. But in this case, the post mentions "heroin", which isn't in the list. However, the index terms include "Morphine", but heroin is a separate drug. Wait, maybe I need to check if there's an index term that covers heroin. Let me check again.
+
+Looking through the index terms again, I don't see "heroin" listed. The closest might be "Morphine" but that's a different drug. The user's instruction says if the drug is not in the list, use "other". So in this case, since "heroin" isn't in the index terms, the matched phrase "heroin" should be mapped to "other".
+
+But wait, the post mentions "heroin-coated yarn". The main term here is "heroin", which is an opioid. However, the index term for Morphine is listed, but heroin isn't. So according to the instructions, since heroin isn't in the list, it should be "other". Therefore, the matched phrase "heroin" would be under "other".
+
+But wait, maybe I'm missing something. Let me check the index terms again. The index terms include "Morphine", "Codeine", "Amphetamine", "Oxycodone", "Hydrocodone", "Fentanyl", "Methadone", etc. Heroin isn't listed. Therefore, "heroin" would be "other".
+
+So the JSON array should have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+But wait, the post says "heroin-coated yarn". The phrase "heroin-coated" is part of the phrase. But the task is to detect every word or phrase that refers to an illicit drug. "Heroin" is the drug here. The "yarn" is just a method of smuggling, so it's not a drug reference. So the only matched phrase is "heroin".
+
+Therefore, the correct JSON is one object with index_term "other" and matched_phrase "heroin".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

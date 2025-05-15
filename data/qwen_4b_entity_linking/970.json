@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I've been sippin' on nothing but codeine the whole week 🍼🍇😻👅". I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll look for words or phrases that could refer to illicit drugs. The post mentions "codeine" directly. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine" is explicitly in the list, so that's a clear match. 
+
+Next, the user used "sippin' on nothing but codeine". "Sippin'" is slang for drinking, so "codeine" is the key term here. There's no other drug mentioned in the post. The emojis 🍼, 🍇, 😻, 🤗 don't refer to drugs, so they can be ignored. 
+
+I should check if there's any other possible term. The post doesn't mention any other substances. The index term for codeine includes "codeine" itself, so the matched_phrase is "codeine". The example given in the problem shows that "lean" and "codeine" both map to Codeine. But in this case, the post only has "codeine", so the JSON should have one entry with index_term "Codeine" and matched_phrase "codeine". 
+
+No other terms are present. The answer should be an array with that single object.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

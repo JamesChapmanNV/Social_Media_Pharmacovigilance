@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I need to read the post carefully: "Real talk I'm PISSED because as a Broke using medical cannabis I relish the sales at dispensaries 😭 (and they can't deliver in NH)". 
+
+Looking for keywords related to drugs. The main phrase here is "medical cannabis". Checking the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "medical cannabis" would map to that index term. 
+
+Are there any other terms? The user mentions "dispensaries", but that's a place, not a drug itself. The rest of the post talks about being upset about not being able to get it in NH, but no other drug references. 
+
+So the only match is "medical cannabis" which is under the Marijuana index term. The other words like "Broke" or "sales" don't relate to drugs. The example given in the problem had "xans" as "other" because it wasn't in the list, but here "cannabis" is explicitly listed. 
+
+Therefore, the correct JSON should have one entry with index_term "Marijuana" and matched_phrase "medical cannabis".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "medical cannabis"}
+]

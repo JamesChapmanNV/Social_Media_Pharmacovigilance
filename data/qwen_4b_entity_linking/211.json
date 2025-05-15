@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user provided a post that says "Overdose #9ToEternityWithEXO #9YearswithEXO #EXO". I need to check if there are any drug-related references here.
+
+First, the main text is "Overdose". The term "overdose" is a common term associated with drug use, but I need to check if it's listed in the index terms. Looking through the list, I don't see "overdose" as an index term. The index terms are specific to drugs like codeine, amphetamine, fentanyl, etc. "Overdose" is more of a consequence rather than a specific drug or substance. 
+
+Then there are the hashtags: #9ToEternityWithEXO, #9YearswithEXO, #EXO. These are all related to the K-pop group EXO. There's no mention of any drugs here. The hashtags are just references to the group and their fan culture. 
+
+So, the only possible mention is "Overdose", but since it's not in the index terms, it should be categorized as "other". However, I need to make sure. Let me double-check the index terms again. The list includes terms like "Codeine", "Amphetamine", "Fentanyl", "Methamphetamine", etc., but not "overdose". 
+
+Therefore, the matched phrase "Overdose" would map to "other" because it's not a specific drug or substance listed in the index terms. The hashtags are unrelated. So the JSON array should have one entry with "other" and "Overdose".
+</think>
+
+[{"index_term": "other", "matched_phrase": "Overdose"}]

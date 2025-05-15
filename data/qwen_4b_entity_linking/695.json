@@ -1,0 +1,33 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Put the crack pipe down and go to bed." I need to identify any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The phrase "crack pipe" stands out. Now, checking the index terms. The list includes "Crack" as a term, but wait, looking at the Index Terms provided, there's no direct mention of "crack" as a drug. Wait, the Index Terms list includes "Crack" as a term? Let me check again.
+
+Looking through the list: The Index Terms include "Crack" as a term? Wait, no. The Index Terms listed don't have "Crack" explicitly. Wait, the user's example had "lean" linked to Codeine. Let me check the Index Terms again. The Index Terms include "Codeine (Lean, Purple Drank, Schoolboy)" so "lean" is a slang for codeine. But "crack" isn't listed. However, "crack" is a slang for crack cocaine. But in the Index Terms provided, is there an entry for crack cocaine?
+
+Looking through the list: The Index Terms include "Benzoylecgonine (BZE, Ecgonine benzoate) – The primary metabolite of cocaine measured in urine drug testing." But that's about cocaine, not crack. Then there's "Cocaine (Cocaine)" but in the Index Terms, the entry for Cocaine is listed as "Marijuana (Cannabis, Weed, Pot) – The most widely used illicit drug, containing psychoactive cannabinoids THC only." Wait, no. Wait, looking again: the Index Terms list "Cocaine" as a separate entry? Let me check again.
+
+Wait, the user provided the Index Terms. Let me scan through them. The Index Terms include:
+
+- Amphetamine (Speed, Bennies, Adderall) – A central nervous system stimulant...
+- Benzoylecgonine (BZE, Ecgonine benzoate) – The primary metabolite of cocaine...
+- Cocaine (Cocaine) – Wait, no. Wait, the Index Terms list "Marijuana (Cannabis, Weed, Pot) – The most widely used illicit drug..." but cocaine is not listed as an index term. Wait, looking again, the Index Terms include "Benzoylecgonine" as a metabolite of cocaine, but the actual drug name "Cocaine" isn't listed as an index term. However, the user's example in Example 4 had "snow" and "white lines" as other, but in that case, the actual drug was cocaine, but it wasn't in the list. Wait, but in the Index Terms, "Benzoylecgonine" is a metabolite of cocaine, but the drug itself isn't listed. However, the user's example 4 had "snow" as other because the actual drug wasn't on the list. So, if the post mentions "crack," which is a form of cocaine, but the Index Terms don't have "Cocaine" as an index term, then "crack" would be "other."
+
+Wait, but the Index Terms do include "Cocaine" as a term? Let me check again. The user's Index Terms list:
+
+Looking through the list, the entry for Benzoylecgonine is a metabolite of cocaine. But the actual drug "Cocaine" isn't listed as an index term. The Index Terms list "Marijuana" as a separate entry. So, if the post mentions "crack," which is a form of cocaine, but since "Cocaine" isn't in the Index Terms, then "crack" would be "other."
+
+But wait, the user's example 4 had "snow" and "white lines" as other, even though they referred to cocaine. So in this case, "crack pipe" refers to crack cocaine, which is a form of cocaine. However, since "Cocaine" isn't listed as an index term, then "crack" would be "other."
+
+But wait, the Index Terms do have "Benzoylecgonine" as a metabolite of cocaine. However, the actual drug name "Cocaine" isn't listed as an index term. Therefore, if the post mentions "crack," which is a slang for cocaine, but since the index terms don't have "Cocaine" as an index term, then "crack" would be "other."
+
+But wait, the user's example 3 had "xans" as other because "xans" isn't listed. So in this case, "crack pipe" is a reference to crack cocaine. However, since "Cocaine" is not listed in the index terms, then "crack" would be "other." Therefore, the matched phrase "crack pipe" would be "other."
+
+Alternatively, maybe "crack" is a term in the index terms? Let me check again. The Index Terms list:
+
+Looking through all the entries, there's no entry for "Cocaine" as an index term. The only entry related to cocaine is Benzoylecgonine, which is a metabolite. Therefore, "crack" is not in the index terms. Hence, "crack pipe" would be "other."
+
+So the answer would be an object with index_term "other" and matched_phrase "crack pipe."
+</think>
+
+[{"index_term": "other", "matched_phrase": "crack pipe"}]

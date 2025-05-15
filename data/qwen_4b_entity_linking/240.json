@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post about a cousin who died from an overdose. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to read the post carefully. The post mentions "overdose" but doesn't explicitly name a drug. However, the instruction says to look for any slang, euphemisms, or synonyms for illicit drugs. The key here is that the post doesn't use any specific terms from the index list. The word "overdose" is a general term and not listed as an index term. The rest of the post talks about the cousin's talent as a tattoo artist, which is unrelated.
+
+I need to check if "overdose" is considered a drug reference here. The index terms are specific substances, not the act of overdosing. Since the post doesn't mention any specific drug names, slang terms, or euphemisms, there are no matches. Therefore, all detected phrases would fall under "other" if there were any, but in this case, there are none. So the correct response is an empty array.
+</think>
+
+[]

@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "Major food brands seek crackdown on marijuana-infused copycats - Cannabis Business Executive - Canna..."
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, or promotion. Also, slang or cultural references indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+The content here talks about food brands cracking down on marijuana-infused products. The term "marijuana" is a drug, but the context is about brands seeking to regulate or stop copycats. The article is from "Canna..." which might be a cannabis industry publication. The key here is whether this is promoting abuse or misuse. The mention of "crackdown on marijuana-infused copycats" suggests regulatory action, not promotion of use. It's about controlling the market, not encouraging use. So this is likely in the False category because it's discussing a regulatory issue, not abuse or promotion. The terms are in a business or regulatory context, not recreational or abusive. So the answer should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses regulatory action by food brands against marijuana-infused products, focusing on market control rather than promoting or glorifying drug misuse."
+}

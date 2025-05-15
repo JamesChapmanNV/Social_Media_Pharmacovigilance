@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "tw// drugs" and then talks about morphine being prescribed. The task is to detect any drug references and link them to the correct index terms.
+
+First, I need to look for any words or phrases that refer to illicit drugs or substances. The post starts with "tw// drugs". The "//" might be a typo or a formatting error, but "tw" could be a slang term. However, looking at the index terms, I don't see "tw" listed. So that might be "other".
+
+Next, the phrase "MORPHINE?? I CALL THIS LADY AND SHE GOES 'LET ME PRESCRIBE U A COUPLE TABLETS OF MORPHINE' LIKE OKAY UM THANKS???" Here, "morphine" is directly mentioned. Checking the index terms, Morphine is listed as an index term. So "morphine" should map to "Morphine".
+
+Also, the user says "prescribe u a couple tablets of morphine". The word "prescribe" might be part of the context, but the key term here is "morphine". Since "morphine" is in the list, that's a direct match.
+
+Now, checking if there are any other terms. The user mentions "tw// drugs" which might be a slang for something else, but since it's not in the index terms, it's "other". However, "tw" could be a typo for "two" or another term. But given the context, it's more likely a slang or typo, so "other" is appropriate here.
+
+So the matched phrases are "tw// drugs" (other) and "morphine" (Morphine). But wait, the user might have meant "tw" as in "two", but that's not a drug term. Alternatively, "tw" could be a slang for something else, but since it's not in the index list, it's "other".
+
+Therefore, the JSON should have two entries: one for "tw// drugs" as "other" and "morphine" as "Morphine".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "tw// drugs"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

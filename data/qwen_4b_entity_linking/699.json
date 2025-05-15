@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Moving from cough medicine to tablets with codeine in. Fingers crossed this blooming cough will soon be gone." I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The key phrase here is "codeine in." The index terms list includes "Codeine" with synonyms like "Lean," "Purple Drank," "Schoolboy." The post mentions "codeine" directly, so that's a clear match. The term "codeine" is in the index term list, so the index_term should be "Codeine" and the matched_phrase is "codeine."
+
+Looking at the rest of the post: "cough medicine" is mentioned. But the index terms don't have a specific entry for cough medicine. However, the user is moving to tablets with codeine, which is a drug. The cough medicine might be a red herring, but the main drug here is codeine. The phrase "codeine in" refers to the presence of codeine in the tablets. 
+
+I don't see any other terms here. The other parts like "Moving from cough medicine to tablets" don't reference any other drugs. The only detected phrase is "codeine." So the JSON array should have one object with index_term "Codeine" and matched_phrase "codeine."
+
+Wait, the example 1 had "lean" and "codeine" both mapped to Codeine. But in this case, the post only mentions "codeine." So the answer should be one entry. Let me double-check the index terms. Yes, "Codeine" is listed with synonyms, but the exact phrase here is "codeine." So the correct match is {"index_term": "Codeine", "matched_phrase": "codeine"}.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

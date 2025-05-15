@@ -1,0 +1,25 @@
+<think>
+Okay, let's see. The user provided a post that says: "we need racial justice. Support healing for Black communities and provide funding from cannabis tax revenue towards our communities for healing justice." I need to check this for any drug-related references.
+
+First, I'll go through each part of the post. The first sentence is about racial justice, which doesn't mention any drugs. The second part talks about supporting healing and funding from cannabis tax revenue. Now, cannabis is mentioned here. Looking at the index terms, marijuana is listed as "Marijuana (Cannabis, Weed, Pot)" which is an illicit drug. But wait, the post mentions "cannabis tax revenue." However, the task is to detect references to illicit drugs. Cannabis is listed as an index term, so "cannabis" would map to "Marijuana." But the user's example 4 had "snow" and "white lines" as "other" because they weren't on the list. However, in this case, "cannabis" is explicitly in the index terms. 
+
+Wait, the index term for cannabis is "Marijuana (Cannabis, Weed, Pot)" so "cannabis" would be mapped to "Marijuana." But the post is talking about funding from cannabis tax revenue. The phrase "cannabis tax revenue" refers to the tax on cannabis, which is legal in some places, but the task is about detecting illicit drug references. However, the index term includes "Marijuana" as an illicit drug. But the user's example 4 had "snow" and "white lines" as "other" because they weren't on the list. But here, "cannabis" is on the list. 
+
+Wait, the index terms include "Marijuana (Cannabis, Weed, Pot)" as an illicit drug. So "cannabis" would be mapped to "Marijuana." However, the post is using "cannabis" in the context of tax revenue, which might be legal in some jurisdictions. But according to the task, we need to detect any references to illicit drugs. However, the index term for marijuana is listed as an illicit drug. So "cannabis" would be mapped to "Marijuana." But the user's example 3 had "xans" as "other" because it wasn't on the list. Wait, in example 3, "xans" wasn't a listed term, so it was "other." But in this case, "cannabis" is in the index terms. So the phrase "cannabis" would be matched to "Marijuana."
+
+But wait, the task says to detect every word or phrase that refers to an illicit drug. If "cannabis" is listed as an index term, then it's an illicit drug. However, in some contexts, cannabis might be legal. But according to the index terms, "Marijuana" is listed as an illicit drug. So the post mentions "cannabis," which is part of the index term. Therefore, "cannabis" should be mapped to "Marijuana."
+
+But the user's example 4 had "snow" and "white lines" as "other" because they weren't on the list. However, in this case, "cannabis" is on the list, so it's "Marijuana." Therefore, the matched phrase would be "cannabis" with index term "Marijuana."
+
+But wait, the post is talking about funding from cannabis tax revenue. Is cannabis considered an illicit drug here? The index term says "Marijuana (Cannabis, Weed, Pot)" is the most widely used illicit drug. So even if it's legal in some places, the index term lists it as illicit. Therefore, the phrase "cannabis" would be mapped to "Marijuana."
+
+So the JSON array would have one entry: {"index_term": "Marijuana", "matched_phrase": "cannabis"}.
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" because they weren't on the list. However, in this case, "cannabis" is on the list. Therefore, the correct mapping is "Marijuana" for "cannabis."
+
+So the final answer is a JSON array with one object: {"index_term": "Marijuana", "matched_phrase": "cannabis"}.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

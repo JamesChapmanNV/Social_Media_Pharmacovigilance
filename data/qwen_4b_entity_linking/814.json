@@ -1,0 +1,25 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "thanks. I've taken a night nurse! Just one, not two. Codeine hates me so I try to avoid it". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The first part is "thanks." – that's just a greeting, no drugs there. Then "I've taken a night nurse!" – "night nurse" might be a slang term. Wait, looking at the index terms, there's "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". But "night nurse" isn't listed. However, maybe "night nurse" is a slang for something else? Wait, maybe it's a typo or a misheard term. Alternatively, maybe "night nurse" refers to a drug? Let me check the index terms again. Hmm, no, "night nurse" isn't in the list. The next part is "Just one, not two." – that's probably referring to taking one dose, not two. Then "Codeine hates me so I try to avoid it." Here, "Codeine" is explicitly mentioned. According to the index terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". But in this case, the phrase is "Codeine", which directly matches the index term. So the matched phrase here is "Codeine". 
+
+Wait, but the user's post says "Codeine hates me", which is a metaphor, but the actual drug name is "Codeine". So the detected phrase is "Codeine", which maps to the index term "Codeine". The other part, "night nurse", isn't a drug term in the list, so it would be "other". But wait, maybe "night nurse" is a slang for something else. Let me check the index terms again. The index terms include "Codeine" with synonyms, but "night nurse" isn't listed. So "night nurse" would be "other". But the example in the problem statement had "xans" as "other" because it wasn't in the list. So in this case, "night nurse" is not a drug term, so it's "other". However, the user's post says "taken a night nurse" – maybe "night nurse" is a slang for a drug? But according to the index terms, there's no such term. Therefore, "night nurse" would be "other". 
+
+Wait, but the user's post is "taken a night nurse". Maybe "night nurse" is a typo for "night shift nurse", but that's not a drug. Alternatively, maybe "night nurse" is a slang term for a drug. But according to the provided index terms, there's no such entry. Therefore, "night nurse" would be "other". However, the user's post is "I've taken a night nurse". So "night nurse" is the phrase. So the two matches would be "Codeine" and "night nurse" as "other". But wait, the example in the problem statement had "xans" as "other" because it wasn't in the list. So in this case, "night nurse" is not a drug term, so it's "other". But the user's post is "I've taken a night nurse". So the matched phrase is "night nurse", which is not in the index terms, so index_term is "other". 
+
+But wait, maybe "night nurse" is a slang for a drug? Let me check the index terms again. The index terms include "Codeine" with synonyms, but nothing about "night nurse". So "night nurse" is not a drug term. Therefore, the only drug term here is "Codeine". The rest is "night nurse" which is "other". 
+
+But wait, the user says "taken a night nurse". Maybe "night nurse" is a slang for a drug. But according to the index terms, there's no such entry. So the answer would be one entry for "Codeine" and one for "night nurse" as "other". But the example in the problem statement had "xans" as "other". So in this case, the post has two phrases: "Codeine" and "night nurse". Therefore, the JSON array would have two entries: one for "Codeine" and one for "night nurse" as "other". However, the user's post says "I've taken a night nurse". Is "night nurse" a drug? Maybe not. So the correct answer is:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"},
+  {"index_term": "other", "matched_phrase": "night nurse"}
+]
+
+But wait, the user's post says "taken a night nurse". But "night nurse" is not a drug. So the only drug term is "Codeine". The rest is "night nurse", which is "other". Therefore, the answer is one entry for Codeine and one for other. However, the example in the problem statement had "xans" as "other", so that's correct. Therefore, the final answer should include both.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"},
+  {"index_term": "other", "matched_phrase": "night nurse"}
+]

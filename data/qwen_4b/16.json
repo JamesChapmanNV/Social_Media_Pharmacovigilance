@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is about a new 'fraud squad' cracking down on criminals who steal taxpayer money. I need to determine if this is illicit/abusive-drug-related.
+
+First, check if there's any mention of drugs. The content talks about fraud and stealing money, not drugs. The term 'fraud squad' is related to crime prevention, not drug abuse. There's no slang, euphemisms, or references to drugs. The context is entirely about financial crimes, not drug-related issues. Since there's no mention of drugs or anything related to drug abuse, it should be classified as False. The explanation should note that the content is about fraud and doesn't involve drugs.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a fraud squad addressing financial crime, with no mention of drugs, drug abuse, or related terminology."
+}

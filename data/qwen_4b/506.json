@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user provided a content example: "I was going for drug dealer 🤣🤣🤣 but 🤷🏽‍♀️". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting. Also, slang or references to recreational use. False is when it's medical, educational, or discouraging.
+
+The content here uses "drug dealer" which is a slang term. The user is making a joke about being "going for" a drug dealer, which might imply some form of association or reference to drug-related activities. The emojis add a humorous tone, but the mention of "drug dealer" is a direct reference to someone involved in drug dealing, which is illegal. Even though it's in a joking context, the term itself is associated with illicit drug activities. 
+
+However, the user might be using it in a non-literal way, like a joke or a meme. But according to the definitions, any mention of illegal drugs in the context of abuse or misuse, even if it's a joke, could still be considered illicit. The key is whether it's promoting or glorifying misuse. Since the user is joking about being a drug dealer, it might not be directly promoting abuse, but the term itself is associated with illegal activities. 
+
+Wait, the example given in the task has "lean" and "codeine" which are drugs, and the explanation says it's True because of the context. So in this case, the term "drug dealer" is a direct reference to someone involved in selling drugs, which is illegal. Even if it's a joke, the mention of a drug dealer is a clear indicator of illicit activity. So the label should be True. The explanation would be that the content refers to a drug dealer, which is associated with illicit drug activities.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'drug dealer,' a term directly associated with illicit drug activities and illegal drug dealing."
+}

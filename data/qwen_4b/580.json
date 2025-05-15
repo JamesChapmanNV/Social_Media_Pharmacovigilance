@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I'm on Ocean Drive sippin codeine with the top down, 20 grand on me and a glock 9" -21. I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying drug misuse.
+
+The content mentions "codeine," which is an opioid. The phrase "sippin codeine" is a slang term, "sippin" meaning drinking. The context here is someone on Ocean Drive, with a lot of money (20 grand) and a glock 9 (a type of gun). The tone seems to be describing a scene that's possibly related to drug use, maybe in a recreational or abusive context. The mention of codeine is in a way that suggests it's being used, possibly in a manner that's not medical. The presence of a gun and money might indicate a criminal or illicit activity. The user is probably describing a situation that's associated with drug abuse, maybe even glorifying it. The use of slang like "sippin" and the context of being on a street (Ocean Drive) could be cultural references. So, based on the definitions, this would fall under True. The explanation should note the mention of codeine, the slang, and the context implying abuse or misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and uses'sippin' (slang for drinking), which indicates recreational drug use in an explicit, potentially abusive context."
+}

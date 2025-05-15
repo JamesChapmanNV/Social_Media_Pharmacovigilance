@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user provided a post about Port 45 Recovery and Medication-Assisted Treatment (MAT). My task is to detect any drug-related references in the post and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions "Addiction treatment for Ohio" and explains MAT. The content talks about using medication to treat substance use disorders and sustain recovery. But I need to check if there are any specific drug terms mentioned here.
+
+Looking at the text: "Medication-Assisted Treatment (MAT)" is mentioned. But the term "MAT" is an acronym and not a specific drug name. The post doesn't mention any specific drugs like opioids, benzodiazepines, or other illicit substances. It's more about the treatment approach rather than specific substances.
+
+The example given in the task shows that if a term isn't in the index list, it's labeled as "other". Since the post doesn't mention any drug names or slang, there are no matches. The mention of "Addiction treatment" is general and not a specific drug reference. Therefore, there are no phrases that refer to illicit drugs here. So the JSON array should be empty.
+</think>
+
+[]

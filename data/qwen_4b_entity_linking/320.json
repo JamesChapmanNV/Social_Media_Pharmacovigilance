@@ -1,0 +1,37 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "When a girl has Codeine snaps at night then snaps of her kids soccer game in the morning, it's like wtf.. Parenting 101 or..?🤔😂 #PoorKids". 
+
+Looking for words or phrases that refer to illicit drugs. The first thing I notice is "Codeine" which is explicitly listed in the index terms. The phrase "Codeine" is directly mentioned, so that's a clear match. 
+
+Now, the word "snaps" is used twice. The first "snaps" is in the context of "has Codeine snaps at night". The second "snaps" is "snaps of her kids soccer game". The term "snaps" here is likely a slang term for drug use, specifically codeine. The index term for codeine includes "Lean", "Purple Drank", "Schoolboy", but "snaps" isn't listed. However, the user's example 1 shows that "lean" and "codeine" are both matched. Wait, but in the example, "lean" is a slang for codeine. However, in the given post, "snaps" is used. But the index terms don't have "snaps" listed. 
+
+Wait, the index term for codeine includes "Lean", "Purple Drank", "Schoolboy". The user's example 1 had "lean" and "codeine" as matches. So in this case, "snaps" might be a slang term for codeine. But according to the index terms, "snaps" isn't listed. However, the user's example 3 had "xans" which is not in the list, so it was marked as "other". But in the example 1, "lean" is a slang term for codeine, so it's matched. 
+
+But the problem here is whether "snaps" is a recognized slang term. The index terms don't list "snaps" as a term for codeine. However, in the context of the post, "snaps" is used in the context of codeine use. The user might be using "snaps" as a slang term for codeine. But according to the index terms, the only terms for codeine are "Lean", "Purple Drank", "Schoolboy". Therefore, "snaps" is not in the list, so it should be marked as "other". 
+
+Wait, but the user's example 1 had "lean" and "codeine" as matches. So if "snaps" is a slang term for codeine, but not in the index terms, then it should be "other". However, the user might be using "snaps" as a slang term. But according to the index terms, the only terms for codeine are the ones listed. Therefore, "snaps" is not in the index terms, so it's "other". 
+
+But the user's post says "has Codeine snaps". The "snaps" here could be a slang term for codeine, but since it's not in the index terms, it's "other". However, the first part of the post mentions "Codeine", which is directly in the index terms. So the first match is "Codeine" for "Codeine". The second "snaps" is not in the index terms, so "other". 
+
+Wait, but the user's example 3 had "xans" as "other". So in this case, "snaps" would be "other". However, the user might be using "snaps" as a slang term for codeine. But according to the index terms, "snaps" isn't listed. Therefore, the correct approach is to match "Codeine" for "Codeine", and "snaps" as "other". 
+
+But the user's example 1 had "lean" and "codeine" as matches. So in that case, "lean" is a slang term for codeine. But in the current post, "snaps" is not a listed term, so it's "other". 
+
+So the JSON array would have one entry for "Codeine" with "Codeine", and another for "other" with "snaps". But wait, the user's example 1 had two entries: "lean" and "codeine". So in the current post, "Codeine" is directly mentioned, so that's one match. The "snaps" is not in the index terms, so it's "other". 
+
+Therefore, the correct output is:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"},
+  {"index_term": "other", "matched_phrase": "snaps"}
+]
+
+But wait, the user's example 1 had "lean" and "codeine" both as matches. But in the current post, "snaps" is not in the index terms, so it's "other". However, the user might be using "snaps" as a slang term for codeine. But according to the index terms, it's not listed. Therefore, the answer is correct as above.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"},
+  {"index_term": "other", "matched_phrase": "snaps"}
+]

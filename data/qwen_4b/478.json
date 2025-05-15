@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "mum's accusing me of stealing an entire box of codeine hahahaha that shit's gross no ty".
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse, using slang or encouraging misuse. False includes medical, educational, or preventative contexts.
+
+Looking at the content, the user mentions stealing a box of codeine. Codeine is a controlled substance, so that's a drug. The context here is someone being accused of stealing it, which could imply misuse or abuse. The tone is humorous ("hahahaha") but the act of stealing codeine suggests it's being used in a way that's not legal or proper. The phrase "that shit's gross" might indicate a negative reaction, but the key point is the stealing aspect. 
+
+Is there any indication of promotion or encouragement of misuse? The user is talking about being accused, which might be a situation where the drug is being used improperly. Codeine is an OTC drug, but in this case, stealing it implies it's being used in a way that's not authorized. The mention of stealing could be a sign of abuse or misuse. 
+
+The example given in the prompt where someone is "hooked on that lean" and "codeine" was classified as True because of the context of abuse. Similarly, here, the act of stealing codeine is a form of misuse. The user is not discussing medical use but rather the illegal act of taking someone else's medication. 
+
+So, based on the definitions, this should be classified as True because it involves the misuse of a controlled substance (codeine) through theft, which is a form of abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in the context of theft, implying misuse or abuse of a controlled substance."
+}

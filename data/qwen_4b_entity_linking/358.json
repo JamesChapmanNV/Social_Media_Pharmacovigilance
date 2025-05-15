@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I'll look at the post: "Yeah, I probably smoke too much....[[|:-D Please like and share! Meme archive: #meme #memes #memes2022 #MemistryonFB #PNWMemist #memesdaily #dankmemes #funnymemes #marijuana #weed #legalizeit"
+
+The main content here is the user talking about smoking too much, followed by a series of hashtags. The hashtags include #marijuana and #weed, which are explicitly mentioned in the Index Terms under "Marijuana (Cannabis, Weed, Pot)" and "CBD (Cannabidiol, Epidiolex)". However, the user is referring to "smoke" and the hashtags #marijuana and #weed. 
+
+Looking at the Index Terms, "Marijuana" is listed as a separate entry. The phrase "smoke" itself isn't directly listed, but "marijuana" and "weed" are. The user's mention of "smoke" could be a slang term for using marijuana, but since "smoke" isn't in the Index Terms, it would fall under "other". However, the hashtags #marijuana and #weed are explicitly listed. 
+
+Wait, the user says "smoke too much", which could be referring to smoking marijuana. But the Index Terms for Marijuana are under "Marijuana (Cannabis, Weed, Pot)". The phrase "smoke" is not in the list, but "marijuana" and "weed" are. However, the user is using "smoke" as a verb here. But the task is to detect phrases that refer to the drug. Since "smoke" is a verb, but the actual drug is "marijuana" or "weed". 
+
+In the post, the user says "smoke too much", which is a reference to using marijuana. But the exact phrases that refer to the drug are "marijuana" and "weed". The hashtags include #marijuana and #weed. So the matched phrases would be "marijuana" and "weed". 
+
+But the user's text says "smoke too much", which is a verb. However, the Index Terms don't list "smoke" as a term. The Index Term for marijuana is "Marijuana (Cannabis, Weed, Pot)", so the phrases "marijuana" and "weed" are in the list. The hashtags are part of the post, so "marijuana" and "weed" are present. 
+
+So the matched phrases would be "marijuana" and "weed", both under the index term "Marijuana". The "smoke" part is a verb, but the actual drug is "marijuana" or "weed". Therefore, the JSON array should include "marijuana" and "weed" as matched phrases under the index term "Marijuana".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"},
+  {"index_term": "Marijuana", "matched_phrase": "weed"}
+]

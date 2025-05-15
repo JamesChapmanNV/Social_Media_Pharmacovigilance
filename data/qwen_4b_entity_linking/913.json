@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "So Candlestick were the owners? That is news to me! Get off the heroin pal!" I need to identify any drug-related references here.
+
+First, I'll read through the post carefully. The first part is about Candlestick being owners, which doesn't seem related to drugs. The second part is "That is news to me! Get off the heroin pal!" The key phrase here is "heroin". 
+
+Looking at the Index Terms list, heroin is listed as a term under "Heroin (MS Contin, Miss Emma, Morph)" but wait, actually, checking the list again, the Index Terms include "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no, looking back, the Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but not heroin specifically. Wait, let me check again.
+
+Looking at the Index Terms provided, there's an entry for "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no. Let me check again. The user provided a list of Index Terms. Let me scan through them. 
+
+Wait, the Index Terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, in the example given, "codeine" has synonyms like "lean" and "purple drank". But heroin isn't explicitly listed. However, in the Index Terms, "Heroin" isn't directly listed. Wait, looking again:
+
+The Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, the user's example #1 has "codeine" with "lean" and "codeine". So, in the given post, the phrase is "heroin". Since heroin isn't directly listed in the Index Terms, but the user's example includes "codeine" with "lean" and "codeine", perhaps "heroin" would map to "other" since it's not in the list. Wait, but wait, looking back, the Index Terms list includes "Heroin" as a separate entry? Let me check again.
+
+Wait, looking at the Index Terms list, the entry for "Heroin" is not present. The entry for "Morphine" is there, but not heroin. However, in the example given in the problem statement, the user's example 1 has "codeine" with "lean" and "codeine", which are both in the list. So, if "heroin" is not in the list, then it should be mapped to "other".
+
+But wait, the user's example 4 has "snow" and "white lines" as "other" because cocaine isn't on the list. So in this case, "heroin" isn't in the Index Terms list, so it should be "other". However, I need to check if "heroin" is actually in the Index Terms. Let me check again.
+
+Looking at the Index Terms list again:
+
+The list includes "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no. The entry for Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph)". Heroin isn't listed. Therefore, "heroin" is not in the Index Terms. Therefore, the matched phrase "heroin" should be mapped to "other".
+
+So the post has "heroin", which is not in the Index Terms, so the index term is "other". Therefore, the JSON array should have one object with index_term "other" and matched_phrase "heroin".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

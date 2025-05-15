@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Presumably, because he died of a drug overdose." I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The key phrase is "drug overdose." Now, I need to check if "drug overdose" is a recognized term in the index list. Looking at the index terms, there's a list of specific drugs and their slang terms. However, "drug overdose" itself isn't listed as an index term. The index terms are specific drugs or metabolites, not the general term "drug overdose."
+
+The task is to detect every word or phrase that refers to an illicit drug or substance. "Drug overdose" is a general term, not a specific drug. The user's examples show that if the term isn't in the list, it's categorized as "other." For instance, in Example 3, "xans" was "other" because it wasn't a specific term listed. Similarly, in Example 4, "snow" and "white lines" were "other" even though they might relate to drugs.
+
+So, in this case, "drug overdose" isn't a specific drug or substance listed in the index terms. Therefore, it should be categorized under "other." There are no specific drug names or slang terms here that match the index list. The phrase "drug overdose" is too general and not listed, so the correct index term is "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug overdose"}]

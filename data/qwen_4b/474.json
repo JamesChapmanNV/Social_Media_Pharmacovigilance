@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this classification. The content is: "I'm not a rapper I'm a drug dealer that raps". The user says "Man took these lines too serious". 
+
+First, I need to check if this is illicit or abusive drug-related. The key here is the mention of being a "drug dealer". That's a clear reference to dealing drugs, which is illegal. The person is identifying themselves as a drug dealer, which directly relates to the distribution or sale of illegal drugs. Even though there's a mention of rapping, the main point is the drug dealing aspect. The second part about taking the lines too seriously might indicate that the content is promoting or glorifying drug dealing, which is a form of abuse or misuse. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse, misuse, or promoting. Here, being a drug dealer is directly related to illegal activities. The explanation should note the mention of drug dealing and the context of promoting such a role. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly identifies the speaker as a 'drug dealer,' directly referencing illegal drug distribution and promoting a role associated with drug abuse."
+}

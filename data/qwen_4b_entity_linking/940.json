@@ -1,0 +1,97 @@
+<think>
+Okay, let's tackle this query. The user provided a post with a list of drug-related terms and wants me to detect each phrase, link them to the correct index term, or mark as "other" if not found. 
+
+First, I need to go through each word or phrase in the post. The post is: "Crack fentanyl heroin codeine cocaíne marijuana lsd meth adderall speed pcp ecstasy ketamine xanax shrooms morphine tramadol Ben-u-ron benadryl paracetamol My favs <3"
+
+I'll start by listing each term and checking the index terms provided. 
+
+"Crack" – Not in the list, so "other". But wait, "crack" is a slang for cocaine, but the index term for cocaine is "Benzoylecgonine (BZE, Ecgonine benzoate)" which is a metabolite of cocaine. However, the index terms listed don't have a direct term for "crack" itself. So "crack" would be "other".
+
+"fentanyl" – Yes, index term is "Fentanyl (China White, Apache, Duragesic)".
+
+"heroin" – The index term for heroin isn't listed. The closest is "Morphine (MS Contin, Miss Emma, Morph)" but heroin is a different drug. So "other".
+
+"codeine" – Directly listed under "Codeine (Lean, Purple Drank, Schoolboy)".
+
+"cocaíne" – The index term is "Benzoylecgonine (BZE, Ecgonine benzoate)".
+
+"marijuana" – Directly listed as "Marijuana (Cannabis, Weed, Pot)".
+
+"lsd" – Directly listed as "LSD (Acid, Lucy, Delysid)".
+
+"meth" – This is slang for methamphetamine. The index term is "Methamphetamine (Crystal Meth, Ice, Desoxyn)".
+
+"adderall" – This is Amphetamine, which is listed under "Amphetamine (Speed, Bennies, Adderall)".
+
+"speed" – Same as amphetamine, so "Amphetamine".
+
+"pcp" – Phencyclidine, which is listed under "Phencyclidine (PCP, Angel Dust, Sherm)".
+
+"ecstasy" – MDMA, which is listed under "MDMA (Ecstasy, Molly, 3,4-methylenedioxymethamphetamine)".
+
+"ketamine" – Directly listed under "Ketamine (Special K, Keta, Ketalar)".
+
+"xanax" – Bromazolam is listed, but xanax is alprazolam. However, the index term for alprazolam is "α-Hydroxyalprazolam (α-OH-alprazolam)". But in the index terms, "Bromazolam (XLI-268, Fake Xanax)" is a designer benzodiazepine. However, the user's post says "xanax", which is a brand name for alprazolam. The index term for alprazolam is "α-Hydroxyalprazolam", but the exact term for xanax isn't listed. Wait, looking back, the index term for bromazolam is listed, but xanax is a different drug. However, the index term for alprazolam is "α-Hydroxyalprazolam". But in the index terms provided, the exact term for xanax isn't present. Wait, the index term for alprazolam is "α-Hydroxyalprazolam (α-OH-alprazolam)" which is a metabolite. But the original drug is alprazolam. However, the index terms don't have a direct entry for "alprazolam" but have "α-Hydroxyalprazolam". So maybe "xanax" would be "other" because the index term for xanax (alprazolam) isn't listed as a separate term. Wait, the index term for alprazolam is under "α-Hydroxyalprazolam", but the actual drug is alprazolam. However, the index terms list "α-Hydroxyalprazolam" as a metabolite. But the user's post is using "xanax", which is a brand name for alprazolam. Since the index terms don't have a direct entry for alprazolam, but have the metabolite, maybe "xanax" would be "other". Alternatively, perhaps "xanax" is considered under "other" because the index term for alprazolam isn't listed. Wait, looking at the index terms, there's "Lorazepam (Ativan)" which is a benzodiazepine. But "xanax" is alprazolam, which is a different drug. So "xanax" would be "other".
+
+"shrooms" – Refers to psilocybin, which is listed under "Psilocybin (4-PO-DMT)". So "shrooms" would be "Psilocybin".
+
+"morphine" – The index term is "Morphine (MS Contin, Miss Emma, Morph)".
+
+"tramadol" – The index term is "Oxazepam (Serax)"? No, wait. Tramadol is listed as "O‑Desmethyltramadol (O‑DSMT)" which is a metabolite. But the index term for tramadol itself isn't listed. However, the index term for "tramadol" isn't present, so "tramadol" would be "other".
+
+"Ben-u-ron" – This is likely "Benadryl", which is listed under "Diphenhydramine (Benadryl, Nytol)". So "Ben-u-ron" is "Benadryl".
+
+"benadryl" – Same as above.
+
+"paracetamol" – This is acetaminophen, which is an OTC drug. The index terms don't have a specific term for it, so "other".
+
+Now, compiling all these:
+
+Crack → other
+fentanyl → Fentanyl
+heroin → other
+codeine → Codeine
+cocaíne → Benzoylecgonine
+marijuana → Marijuana
+lsd → LSD
+meth → Methamphetamine
+adderall → Amphetamine
+speed → Amphetamine
+pcp → Phencyclidine
+ecstasy → MDMA
+ketamine → Ketamine
+xanax → other (since alprazolam isn't listed as an index term)
+shrooms → Psilocybin
+morphine → Morphine
+tramadol → other
+Ben-u-ron → Benadryl
+benadryl → Benadryl
+paracetamol → other
+
+Wait, but "xanax" is a brand name for alprazolam. The index term for alprazolam is "α-Hydroxyalprazolam (α-OH-alprazolam)", which is a metabolite. So the original drug is alprazolam, but the index term doesn't have it. So "xanax" would be "other".
+
+Similarly, "tramadol" is not listed in the index terms. The index term for tramadol is "O‑Desmethyltramadol (O‑DSMT)", which is a metabolite. So "tramadol" would be "other".
+
+So the final list would include all these matches.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Benzoylecgonine", "matched_phrase": "cocaíne"},
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"},
+  {"index_term": "LSD", "matched_phrase": "lsd"},
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "Amphetamine", "matched_phrase": "adderall"},
+  {"index_term": "Amphetamine", "matched_phrase": "speed"},
+  {"index_term": "Phencyclidine", "matched_phrase": "pcp"},
+  {"index_term": "MDMA", "matched_phrase": "ecstasy"},
+  {"index_term": "Ketamine", "matched_phrase": "ketamine"},
+  {"index_term": "Psilocybin", "matched_phrase": "shrooms"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Diphenhydramine", "matched_phrase": "Ben-u-ron"},
+  {"index_term": "Diphenhydramine", "matched_phrase": "benadryl"},
+  {"index_term": "other", "matched_phrase": "xanax"},
+  {"index_term": "other", "matched_phrase": "tramadol"},
+  {"index_term": "other", "matched_phrase": "crack"}
+]

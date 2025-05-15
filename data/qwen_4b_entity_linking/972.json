@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Codeine and some moutain dew you never see what i go through." I need to identify any drug references here.
+
+First, I'll split the sentence into words. "Codeine" is clearly listed in the index terms under Codeine. So that's one match. Then there's "moutain dew." Wait, "mountain dew" is a brand name of a soda. But the user wrote "moutain" which is a typo for "mountain." However, the task is to check for drug references. Mountain Dew isn't a drug, so that would be "other." 
+
+But wait, the example in the prompt had "snow" and "white lines" as "other" even though they weren't drugs. So "mountain dew" isn't a drug, so it's "other." The phrase "you never see what i go through" is just context, not a drug reference. 
+
+So the only drug reference here is "codeine," which maps to the index term "Codeine." The other part is "mountain dew," which isn't a drug, so "other." But the user's example 3 had "xans" as "other," so same logic applies here. 
+
+Wait, the post says "moutain dew" which is a typo. But the exact text is "moutain dew." However, the index terms don't list anything related to mountain dew. So even if it's a typo, the matched phrase is "moutain dew," which isn't a drug. So the only match is "codeine." 
+
+Therefore, the JSON array should have one entry for "Codeine" with "codeine" and another for "other" with "moutain dew." But wait, the user's example 3 had "xans" as "other," so even if it's a slang term not in the list, it's "other." So here, "moutain dew" is not a drug, so "other." 
+
+So the correct output is two entries: codeine and other for mountain dew.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "moutain dew"}
+]

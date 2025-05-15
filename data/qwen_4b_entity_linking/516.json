@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I need to look at the post: "Democratic U.S. Senate candidate Thomas McDermott Jr. smokes marijuana in a new campaign ad in which he calls for the legalization of cannabis at both the federal level and in Indiana."
+
+The key words here are "marijuana" and "cannabis." According to the Index Terms provided, "Marijuana (Cannabis, Weed, Pot)" is listed as an index term. So both "marijuana" and "cannabis" should map to that term. 
+
+I need to check if there are any other terms. The post doesn't mention any other drugs or substances. The words "smokes" and "campaign ad" are context but not drug references. The mention of legalization is part of the context but not a drug name. 
+
+So the detected phrases are "marijuana" and "cannabis," both under the index term "Marijuana (Cannabis, Weed, Pot)." Since they are both in the list, they should be matched correctly. There's no need to use "other" here because they are explicitly listed. 
+
+I should structure the JSON array with each match. The example shows that each entry is an object with index_term and matched_phrase. So the correct output would have two entries for "marijuana" and "cannabis" both linked to the Marijuana index term.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "marijuana"}, {"index_term": "Marijuana", "matched_phrase": "cannabis"}]

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Yoooo!!!! I just had sweetgreen for the first time and omfg😭😭😩😩🔥🔥🔥 that damn crispy rice bowl is crack". I need to detect any drug-related references here.
+
+First, I'll scan the post for any slang, euphemisms, or terms that might refer to illicit drugs. The mention of "sweetgreen" is a restaurant chain, so that's probably not a drug. Then there's "crispy rice bowl" which is a food item. The exclamation "that damn crispy rice bowl is crack" is the key part here. "Crack" is a slang term for crack cocaine. 
+
+Looking at the Index Terms list, "Crack" isn't explicitly listed, but I need to check if it's covered under any term. The Index Terms include "Codeine" with synonyms like "Lean" and "Purple Drank", but "Crack" isn't directly listed. However, the example in the problem statement had "snow" and "white lines" as "other" because they weren't on the list. Since "crack" isn't in the Index Terms, it should be categorized as "other". 
+
+Wait, but the user's example 4 had "snow" and "white lines" as "other" even though they weren't drugs. So in this case, "crack" isn't listed, so it's "other". The phrase "crispy rice bowl is crack" is using "crack" as a slang term for cocaine. Therefore, the matched phrase is "crack" and the index term is "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"}
+]

@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Hawaii and other states discussing psychedelic reform and cannabis in medicine. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The main points are about Hawaii, Colorado, and Maryland discussing psychedelic reform and cannabis in medicine. The hashtags are #medicine and #cannabis. 
+
+Now, I need to check if any words in the post refer to illicit drugs or substances. The post mentions "psychedelic reform" and "cannabis." Looking at the index terms, "Cannabis" is listed as an index term. However, the post is talking about reform and medical use, not illicit drug use. The index term for Cannabis is "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. But the context here is about medical use, so maybe it's not considered illicit. Wait, the task says to detect references to illicit drugs or substances, including those used recreationally or promoted. However, the index term for Cannabis is listed as the most widely used illicit drug. But the post is discussing reform and medical use, not necessarily illicit use. 
+
+But the problem is that the post mentions "cannabis" in the context of modern medicine. The index term for Cannabis is "Marijuana (Cannabis, Weed, Pot)" which is an illicit drug. However, the post is about legal reform and medical use, so maybe it's not an illicit reference. But according to the task, I need to detect any references to illicit drugs, even if they're in a legal context. Wait, the task says: "Detect every word or phrase (slang, euphemism, synonym, cultural references) that refers to an illicit drug or substance." So if the post is talking about cannabis in a legal or medical context, does that count as a reference to an illicit drug? The index term for Cannabis is listed as an illicit drug. But the post is about reform and medical use, which might be legal in some states. However, the index term is still Cannabis, so maybe the phrase "cannabis" here is a reference to the illicit drug. But the user's example 4 had "snow" and "white lines" as other, even though they weren't drugs. So in this case, the post mentions "cannabis" which is in the index terms as an illicit drug. Therefore, I need to link "cannabis" to the index term "Marijuana (Cannabis, Weed, Pot)".
+
+Wait, but the post is about reform and medical use. However, the task is to detect any reference to an illicit drug, regardless of context. So even if it's in a legal or medical context, if the term is in the index terms, it's considered. Therefore, "cannabis" here would be linked to the index term "Marijuana". 
+
+But the post also mentions "psychedelic reform". The index term for LSD is listed, but "psychedelic" is a general term. However, the post doesn't mention specific drugs like LSD, so that's not a match. The hashtags are #medicine and #cannabis. So "cannabis" is the key term here. 
+
+So the only detected phrase is "cannabis", which maps to the index term "Marijuana (Cannabis, Weed, Pot)". Therefore, the JSON array should have one object with index_term as "Marijuana" and matched_phrase as "cannabis".
+</think>
+
+[{"index_term": "Marijuana (Cannabis, Weed, Pot)", "matched_phrase": "cannabis"}]

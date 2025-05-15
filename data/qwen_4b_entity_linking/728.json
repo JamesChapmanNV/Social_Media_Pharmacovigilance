@@ -1,0 +1,35 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Mac & Cheese doesn`t contain many vitamins, so it`s important you always eat a bunch of it..... Ask GenieNansea DogWalker Podcast Cannabis 101 Budtender Trainer #applepodcasts #spotifypodcast #cannabis #cannabiseducation #cannabisindustry". 
+
+First, I need to scan through the post for any drug-related references. The main content here is about Mac & Cheese and vitamins, which seems unrelated. Then there's a mention of a podcast titled "GenieNansea DogWalker Podcast" and topics like "Cannabis 101", "Budtender Trainer", and various hashtags related to cannabis education and the industry.
+
+Looking at the index terms provided, I need to check if any of these terms match. The cannabis-related terms are listed, like "Marijuana (Cannabis, Weed, Pot)" and "CBD (Cannabidiol, Epidiolex)". However, the post mentions "Cannabis 101" and "cannabis industry", which are educational topics. The hashtags include #cannabis, #cannabiseducation, etc. But the actual content doesn't mention any illicit drugs or substances. The term "cannabis" here is part of the podcast title and hashtags, which are related to the industry, not necessarily drug use. 
+
+The index term for cannabis is listed as "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. However, the post is talking about a podcast about cannabis education, not promoting or using it. The user's task is to detect any references to illicit drugs, including those that might be slang or euphemisms. But in this case, the mention of cannabis is in the context of education and industry, not as a drug reference. 
+
+The hashtags are #cannabis, #cannabiseducation, which are related to the industry and education, not illicit use. The podcast title is "GenieNansea DogWalker Podcast" which seems to be a podcast about dog walking, but the tags are about cannabis. The post doesn't mention any drug use, selling, or promoting. Therefore, there's no direct reference to an illicit drug here. 
+
+The only possible mention is "Cannabis" in the podcast title and hashtags, but according to the index terms, "Marijuana" is the term for cannabis as an illicit drug. However, the context here is educational, not promoting or using. The user's task is to detect any references that refer to illicit drugs. Since the post is about a podcast discussing cannabis education, it's more about the industry rather than drug use. Therefore, the correct index term would be "Marijuana" if the term "cannabis" is considered a drug reference. But the post doesn't explicitly mention using or promoting cannabis as a drug. 
+
+Wait, the index term for cannabis is "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. However, the post is about a podcast that's educational on cannabis, so it's not about drug use. The user's task is to detect any references to illicit drugs. Since the post is about a podcast that's part of the cannabis industry, maybe it's not considered a drug reference. However, the term "cannabis" is listed as an index term. But in the example given, the user had a post with "xans" which was "other" because it wasn't a specific drug. 
+
+In this case, the post mentions "Cannabis 101" and the hashtag #cannabis. The index term for cannabis is "Marijuana", so if the post is referring to cannabis as a drug, then "Marijuana" would be the index term. However, the context here is educational, not promoting drug use. But according to the task, we need to detect any mention of the drug, regardless of context. 
+
+Wait, the task says to detect every word or phrase that refers to an illicit drug or substance. The post mentions "Cannabis" in the context of a podcast and hashtags. The index term for cannabis is "Marijuana", so "cannabis" would map to "Marijuana". But is the post promoting or referring to cannabis as a drug? The post is about a podcast that's educational on cannabis, so it's not necessarily promoting drug use. However, the task is to detect any references, not whether they are positive or negative. 
+
+But according to the index terms, "Marijuana" is listed as an index term. Therefore, the phrase "cannabis" in the post would map to "Marijuana". However, the post is about a podcast that's part of the cannabis industry, not necessarily about drug use. But the user's task is to detect any references, so even if it's part of the industry, it's still a reference. 
+
+Alternatively, maybe the post is not referring to the drug but the industry. But according to the index terms, "Marijuana" is the term for cannabis as an illicit drug. Therefore, the correct index term would be "Marijuana" for the phrase "cannabis". However, the example in the user's prompt shows that in Example #4, "snow" and "white lines" were mapped to "other" because they weren't on the list. 
+
+Wait, the index terms include "Marijuana (Cannabis, Weed, Pot)" as the term for cannabis. So if the post mentions "cannabis", it should be mapped to "Marijuana". However, the post is about a podcast that's educational on cannabis, not necessarily promoting drug use. But the task is to detect any references, not whether they are positive or negative. 
+
+So, the answer would be that the phrase "cannabis" is mapped to "Marijuana". But the post also has hashtags like #cannabis, which is part of the index term. Therefore, the correct JSON would include "cannabis" as the matched phrase with index term "Marijuana". 
+
+But wait, the example in Example #3 had "xans" which was "other" because it wasn't a specific drug. However, in this case, "cannabis" is explicitly listed in the index terms. Therefore, the correct mapping is "Marijuana" for "cannabis". 
+
+So the final answer would be an array with one object: {"index_term": "Marijuana", "matched_phrase": "cannabis"}.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

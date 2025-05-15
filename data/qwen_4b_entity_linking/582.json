@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "Friday's seizure is the third such haul in two weeks. A container was filled with yarn, but an examination showed that the threads were laced with a heroin derivative."
+
+Looking for keywords related to drugs. The first part mentions "seizure," which might be a typo or slang for something else, but I don't see a direct drug reference there. The second part says "heroin derivative." Heroin is listed in the index terms under "Morphine" as "MS Contin, Miss Emma, Morph." Wait, but heroin itself isn't in the list. Let me check the index terms again.
+
+Looking at the index terms, "Heroin" isn't listed. The closest is "Morphine," which is the prototypical opioid. However, the post mentions a "heroin derivative." Since heroin isn't in the index terms, but the derivative might be related to morphine. However, the index term for morphine is "Morphine," and the post specifically says "heroin derivative." Since heroin isn't in the list, but the derivative could be a metabolite or related substance. Wait, the index term for 6-Acetylmorphine (6-MAM) is under "6-Acetylmorphine (6-Monoacetylmorphine, 6-MAM)" which is a metabolite of heroin. But the post says "heroin derivative," which might not be exactly a term in the list. However, the user's instruction says if the drug is not in the list, use "other." 
+
+Wait, the index terms include "Morphine" as the index term. But the post mentions a heroin derivative. Since heroin isn't in the list, but the derivative could be a metabolite. However, the exact term "heroin" isn't listed, so the matched phrase is "heroin derivative," which is not in the index terms. Therefore, according to the instructions, it should be "other." But wait, maybe the heroin derivative is a specific term in the list. Let me check again.
+
+Looking through the index terms, there's "6-Acetylmorphine (6-Monoacetylmorphine, 6-MAM)" which is a metabolite of heroin. But the post says "heroin derivative," which is a bit different. The term "heroin derivative" isn't exactly listed, so the correct index term would be "other." Therefore, the matched phrase "heroin derivative" would map to "other."
+
+So the only detected phrase here is "heroin derivative," which is not in the index terms, so index_term is "other." Therefore, the JSON array should have one entry with "other" and "heroin derivative."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin derivative"}
+]

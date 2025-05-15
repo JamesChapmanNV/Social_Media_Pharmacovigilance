@@ -1,0 +1,39 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "I bet it was Imitrex (unless they just gave you morphine). Yeah, migraines are the worst! I'm lucky that I hardly ever get them any more-- maybe once a year-- but when I was a teenager, once a month."
+
+Looking for any mentions of drugs or substances. The first part mentions "Immitrex" and "morphine." Let me check the index terms. 
+
+Immitrex is a brand name for sumatriptan, which is a medication used for migraines. The index terms list "Morphine" as an entry. So "Immitrex" isn't listed in the index terms, so it should be "other." Similarly, "morphine" is in the list as an index term. 
+
+So the phrases here are "Immitrex" and "morphine." 
+
+"Immitrex" is not in the index terms, so index_term is "other." "Morphine" is listed, so index_term is "Morphine."
+
+Wait, the user's example 3 had "xans" which wasn't in the list, so it was "other." Similarly, here, "Immitrex" isn't in the list, so it's "other." 
+
+So the JSON should have two entries: one for "Immitrex" as other, and "morphine" as Morphine. 
+
+Wait, but the post says "Immitrex (unless they just gave you morphine)." So the user is talking about two drugs: Imitrex and morphine. 
+
+So the matched phrases are "Immitrex" and "morphine." 
+
+Check the index terms again. "Morphine" is present. "Immitrex" isn't listed, so "other." 
+
+So the correct JSON would be:
+
+[
+  {"index_term": "other", "matched_phrase": "Immitrex"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]
+
+But wait, the user's example 3 had "xans" which was "other," and the post here has "Immitrex" and "morphine." So that's correct. 
+
+I need to make sure that "Immitrex" is not in the index terms. Looking through the list, the index terms include "Morphine" but not "Immitrex." Therefore, "Immitrex" is "other," and "morphine" is "Morphine."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "Immitrex"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

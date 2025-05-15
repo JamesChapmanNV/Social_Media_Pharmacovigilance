@@ -1,0 +1,18 @@
+<think>
+Okay, let's see. The content is: "Anyone near Moreno Valley area and wants a job rolling cannabis products please hit me up! Full time and maybe even overtime. AM and PM shifts!" 
+
+First, I need to determine if this is illicit or abuse-related. The key terms here are "cannabis products" and the mention of a job involving rolling them. The location is Moreno Valley, which I know is a place where cannabis is legal for recreational use in California. But the question is about whether the content is promoting or encouraging drug abuse.
+
+The user is offering a job to roll cannabis products. Rolling cannabis is part of the production process, which is legal in California. However, the context here is about employment. The content doesn't explicitly mention using or distributing cannabis for recreational purposes. It's more about manufacturing, which is allowed under the state's laws. But wait, the user is asking for people to roll cannabis products, which could be part of a legal business. However, the content might be considered promoting the use of cannabis in a way that's not explicitly illegal. But the task is to check for abuse or misuse. 
+
+But wait, the definition says True includes mentions of illegal, RX, or OTC drugs in the context of abuse. Here, cannabis is legal in California, so maybe it's not illegal. However, the job is in rolling cannabis products, which could be part of a legal business. However, the user is asking for people to roll cannabis, which might be considered promoting the use of cannabis. But the definition includes using slang or cultural references that signal recreational use. The term "rolling" is a common term for making cannabis products, which is part of the legal industry. 
+
+But the problem is whether this is considered promoting abuse. If the job is in a legal context, then it's not abuse. However, the content is about offering a job in a specific area. The key is whether the content is encouraging or glorifying drug misuse. Since the job is in a legal industry, maybe it's not. But the user is asking for people to roll cannabis, which is part of the production process. So the content might be about a legal business, not abuse. However, the location is in a place where cannabis is legal, so the job is legal. Therefore, this content is not about abuse. So the label should be False. 
+
+Wait, but the example given in the task includes something like "codeine" which is a controlled substance. In this case, cannabis is legal in California, so the content is not about illegal drugs. Therefore, the answer would be False. The explanation would be that the content mentions cannabis in a legal business context, not promoting abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a job in the cannabis industry in a legal context, not promoting drug abuse or misuse."
+}

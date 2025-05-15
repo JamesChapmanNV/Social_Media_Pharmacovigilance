@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I just took a piss and saw codeine coming out." I need to detect any drug references here.
+
+First, I'll read through the post carefully. The key part is "codeine coming out." The Index Terms list includes "Codeine" with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine" is directly listed under Codeine. The user is mentioning codeine in the context of urine, which is a common way to refer to drug use. 
+
+I should check if "codeine" is in the list. Yes, it's listed under Codeine. The matched phrase is "codeine." There's no other slang or euphemism here. The rest of the sentence is about urinating, which is just context. No other terms are present. So the only match is "codeine" under the Codeine index term. The answer should be a JSON array with that single entry.
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

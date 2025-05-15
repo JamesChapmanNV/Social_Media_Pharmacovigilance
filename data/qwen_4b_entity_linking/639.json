@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Fentanyl overdose did him in." My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to check if "Fentanyl" is in the list of index terms. Looking through the list, yes, there's an entry for Fentanyl under the index terms. The description says it's a synthetic opioid 50–100 times stronger than morphine, which matches the context here. The phrase "Fentanyl overdose" directly refers to the drug, so the matched phrase is "Fentanyl." 
+
+Next, I need to make sure there are no other terms. The rest of the sentence talks about the cause of death but doesn't mention any other drugs. The word "overdose" is a bit tricky, but since the main term is Fentanyl, and the index term for Fentanyl includes overdose-related contexts, it's safe to include "Fentanyl" as the index term. 
+
+I should check if "overdose" itself is a term in the list, but looking at the index terms, there's no entry for "overdose." The index terms are specific to the substances listed. Therefore, "overdose" would fall under "other" if it's not a specific term. However, in this case, the main drug is Fentanyl, so the correct index term is Fentanyl. 
+
+No other drugs are mentioned in the post. The phrase "did him in" is a common euphemism for dying from an overdose, but the actual drug is Fentanyl. So the only match is Fentanyl. 
+
+Therefore, the JSON array should have one object with index_term "Fentanyl" and matched_phrase "Fentanyl."
+</think>
+
+[{"index_term": "Fentanyl", "matched_phrase": "Fentanyl"}]

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "🇺🇸 Thanks Chloe1⃣1⃣, of the follow Crack!!! Soccer ⚽️🤙🏼". I need to identify any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "Crack". Now, checking the index terms, I see that "Crack" is not listed. The index terms include things like Codeine, Amphetamine, Methamphetamine, etc. But "Crack" is a slang term for cocaine, which is a drug. However, in the provided index terms, cocaine's metabolite is Benzoylecgonine (BZE), but "Crack" itself isn't listed. 
+
+Wait, the task says to link each detected phrase to the index term. If the drug isn't in the list, use "other". Since "Crack" is a slang for cocaine, but cocaine isn't listed as an index term here. Wait, looking back at the index terms, the only mention of cocaine is Benzoylecgonine, which is the metabolite. The actual drug cocaine isn't listed. So "Crack" would be "other" because it's not in the index terms. 
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" because they weren't drug terms. Similarly, "Crack" here is a drug, but since it's not in the index terms, it should be "other". So the matched phrase is "Crack", index term "other".
+
+So the output should be a JSON array with one object: {"index_term": "other", "matched_phrase": "Crack"}.
+</think>
+
+[{"index_term": "other", "matched_phrase": "Crack"}]

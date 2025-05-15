@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I'm tryna overdose on her booty. sniff the butt crack." I need to detect any drug-related references here.
+
+First, I'll look for slang, euphemisms, or phrases that might refer to illicit drugs. The words "overdose" and "sniff" are strong indicators. "Booty" and "butt crack" are slang for something else, but in this context, "sniff" is a common method of drug use, especially for inhalants. 
+
+Looking at the index terms, "sniff" isn't directly listed, but "overdose" might relate to opioids or other drugs. However, the main action here is "sniff," which is associated with inhalant drugs. But none of the index terms specifically mention inhalants. Wait, the index terms include things like "Amphetamine," "Ketamine," "Methamphetamine," etc. But "sniff" could be linked to drugs like amphetamines or other stimulants. However, "booty" isn't a drug term. 
+
+Wait, maybe "booty" is a slang term for something else. But in this context, the user is talking about sniffing something. "Sniff" is a method of using drugs, but the actual drug isn't named. However, the index terms don't have a general term for inhalants. The closest might be "other" since "sniff" isn't directly listed. But the example 3 shows "xans" is "other" if not in the list. 
+
+Alternatively, maybe "booty" is a euphemism. But I don't see "booty" in the index terms. The user is trying to overdose on "her booty," which might be a metaphor, but "sniff the butt crack" is a method of drug use. However, the actual drug isn't named. So, the phrases "overdose" and "sniff" might not have a direct index term. 
+
+Wait, the index terms include "Amphetamine" with slang like "Speed," "Bennies," "Adderall." But "sniff" is more associated with inhalants like amphetamines, but the index terms don't have a specific entry for "sniff." However, "sniff" could be linked to "Amphetamine" if it's a method of use. But the problem is that the index terms are specific. 
+
+Alternatively, "booty" might be a euphemism for something else, but I don't think it's a drug term. So, the only possible match is "sniff," but since it's not in the index terms, it would be "other." But the user is using "sniff" as a method, not the drug itself. 
+
+Wait, the task is to detect phrases that refer to an illicit drug or substance. "Sniff" is a method, not the drug. So maybe there's no match here. However, the example 3 had "xans" as "other" because it's not in the list. So if "booty" isn't a drug term, and "sniff" isn't a drug term, then the answer would be "other" for both phrases. 
+
+But the user is trying to overdose on "booty," which might be a slang term. But I don't see "booty" in the index terms. So the matched phrases would be "overdose" and "sniff," but neither are in the index terms. However, "overdose" is a general term, not a specific drug. Therefore, both phrases would be categorized as "other." 
+
+Wait, but the example 4 had "snow" and "white lines" as "other" because they aren't drugs. So in this case, "booty" and "sniff" are not drugs, so they should be "other." However, "sniff" is a method of using drugs, but the actual drug isn't named. So the answer would be two entries with "other" for "booty" and "sniff." But wait, the user is using "sniff the butt crack," which is a method of using drugs. But the actual drug isn't specified. So, the detected phrases are "overdose" and "sniff," but since they are not in the index terms, they are "other." 
+
+But the example 3 had "xans" as "other" because it's not in the list. So the answer here would be two entries with "other" for "booty" and "sniff." But maybe "sniff" is a method, but the actual drug is not specified. Therefore, the correct answer is "other" for both phrases.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "booty"},
+  {"index_term": "other", "matched_phrase": "sniff"}
+]

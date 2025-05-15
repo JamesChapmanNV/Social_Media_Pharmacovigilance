@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Codeine Scene" and "BBC Live Version by Seafret". My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to check if "Codeine" is in the list of index terms. Looking at the list, yes, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "Codeine Scene" directly mentions "Codeine", so that's a clear match. The index term here is "Codeine", and the matched phrase is "Codeine Scene". 
+
+Next, the rest of the post is "#NowPlaying Angel of Small Death and the Codeine Scene - BBC Live Version by Seafret ♫". There's no other mention of drugs here. The other parts are about a song title and a live version, which don't reference any other drugs. 
+
+I should make sure there are no other possible matches. Words like "Scene" or "BBC" don't relate to drugs. The example given in the problem statement had "lean" and "codeine" both matching Codeine. Here, "Codeine Scene" is the only phrase that fits. 
+
+So the correct JSON array should have one object with index_term "Codeine" and matched_phrase "Codeine Scene". No other terms are applicable here. The answer should be straightforward.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine Scene"}
+]

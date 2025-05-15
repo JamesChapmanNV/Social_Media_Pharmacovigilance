@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "if you wanna touch the spot my cups got codeine in it and mine be straight mud i po more lean in it". 
+
+First, I need to parse the sentence. The user mentions "codeine" which is a controlled substance, so that's a red flag. Then there's "lean" which is slang for crack cocaine. The phrase "i po more lean" uses "po" as a slang term for "poison" or "use" drugs. The mention of "mud" could refer to methamphetamine, another illicit drug.
+
+The context here seems to be about using drugs. The person is talking about having codeine in their cups and using lean (crack cocaine) in it. The tone seems to be about consumption, possibly in a way that's promoting or glorifying drug use. The use of slang and the mention of specific drugs in a context that implies usage rather than medical or educational purposes points towards illicit drug-related content. 
+
+I should check if there's any medical or educational context, but the sentence doesn't mention treatment or education. Instead, it's about personal drug use. The terms "hooked", "everyday", and "po" in the example given by the user were indicators of abuse. Similarly, here, the content is about using codeine and lean, which are both illicit drugs. 
+
+So the label should be True. The explanation should mention the specific drugs mentioned, the slang terms, and the context of use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and 'lean' (slang for crack cocaine), and uses 'po' (slang for drug use) in a context implying recreational drug consumption."
+}

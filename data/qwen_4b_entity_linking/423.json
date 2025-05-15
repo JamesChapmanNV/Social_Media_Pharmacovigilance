@@ -1,0 +1,33 @@
+<think>
+Okay, let's see. The user provided a post: "this is you if you were a hillbilly American". I need to check if there are any drug-related references here.
+
+First, I'll go through the post word by word. The words are "this", "is", "you", "if", "you", "were", "a", "hillbilly", "American". 
+
+Looking at the index terms, I remember that "Oxycodone" has a synonym "Hillbilly Heroin". The post mentions "hillbilly American", which might be a slang reference. But wait, "Hillbilly Heroin" is a term for Oxycodone. However, the post says "hillbilly American", not "hillbilly heroin". But maybe "hillbilly" here is part of a slang term. 
+
+Wait, the example given in the task has "Hillbilly Heroin" as a synonym for Oxycodone. So if the post uses "hillbilly", even if it's not exactly matching, maybe it's a reference. But the exact phrase in the index terms is "Hillbilly Heroin". The post says "hillbilly American". Hmm, that's not an exact match. But maybe "hillbilly" is part of a slang term here. 
+
+Alternatively, could "American" be part of a drug reference? I don't think so. The index terms don't have "American" as a drug term. 
+
+Wait, the user's example 3 had "xans" which was "other" because it wasn't on the list. So if "hillbilly" isn't exactly listed, but maybe part of a term, but in the index terms, "Oxycodone" has "Hillbilly Heroin". So "hillbilly" alone might not be a direct match. Unless the phrase "hillbilly American" is a slang for something. 
+
+But the post is "hillbilly American", which is a phrase. The index term for Oxycodone includes "Hillbilly Heroin". So "hillbilly" is part of that. But "American" isn't in the index terms. So maybe "hillbilly" is the part that's a reference. But the index term is "Oxycodone", and the matched phrase would be "hillbilly". But the example 2 had "addy" which is Amphetamine, and it was matched as "Amphetamine". 
+
+So in this case, "hillbilly" might be part of a slang term. But the index term for Oxycodone is "Oxycodone", and the matched phrase would be "hillbilly". But is "hillbilly" considered a drug reference here? The index term for Oxycodone includes "Hillbilly Heroin", so "hillbilly" is a slang term for Oxycodone. Therefore, the phrase "hillbilly American" might be using "hillbilly" as a slang for Oxycodone. 
+
+But the post is "this is you if you were a hillbilly American". The phrase "hillbilly American" is a metaphor, but "hillbilly" is a slang term for Oxycodone. So the matched phrase would be "hillbilly", and the index term is "Oxycodone". 
+
+Wait, but the index term for Oxycodone is "Oxycodone", and the matched phrase is "hillbilly". But in the example 1, "lean" is matched to Codeine. So if "hillbilly" is a slang term for Oxycodone, then the index term would be "Oxycodone" and the matched phrase is "hillbilly". 
+
+But I need to check if "hillbilly" is in the index terms. Looking back at the index terms, under Oxycodone, the synonyms include "Hillbilly Heroin". So "hillbilly" is part of that. Therefore, "hillbilly" is a slang term for Oxycodone. Therefore, in the post, "hillbilly" is a reference to Oxycodone. 
+
+So the matched phrase is "hillbilly", index term "Oxycodone". But the post says "hillbilly American", so maybe "hillbilly" is the part that's a reference. Therefore, the JSON should have {"index_term": "Oxycodone", "matched_phrase": "hillbilly"}.
+
+But wait, the user's example 2 had "addy" matched to Amphetamine. So "addy" is a slang term for Amphetamine. Similarly, "hillbilly" is a slang term for Oxycodone. Therefore, the answer should be that "hillbilly" is matched to Oxycodone. 
+
+So the final answer is a JSON array with one object: {"index_term": "Oxycodone", "matched_phrase": "hillbilly"}.
+</think>
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "hillbilly"}
+]

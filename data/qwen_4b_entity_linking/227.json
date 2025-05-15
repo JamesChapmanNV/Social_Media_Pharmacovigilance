@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Have any of you guys actually drank codeine and sprite?" I need to detect any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs. The phrase "codeine" is directly mentioned. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" maps to Codeine. 
+
+Next, "sprite" is a brand of soda. The index terms don't list any substances related to Sprite, so that would be "other". But wait, is there any slang or euphemism for something else? The example in the prompt had "snow" and "white lines" as other, so maybe "sprite" here is just a regular drink. 
+
+So the detected phrases are "codeine" and "sprite". "Codeine" is clearly in the index term list. "Sprite" isn't listed, so it's "other". 
+
+Wait, the user's task is to detect every word or phrase that refers to an illicit drug. "Sprite" is a drink, not a drug. So only "codeine" is a drug reference here. The example 3 had "xans" as other because it's not listed. So in this case, "codeine" is a match, and "sprite" is not. 
+
+So the JSON should have one entry for codeine. Let me double-check the index terms. Yes, Codeine is listed. So the answer is [{"index_term": "Codeine", "matched_phrase": "codeine"}].
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "crack" and "self." First, I need to check if "crack" is listed in the index terms. Looking through the list, I see "Crack" isn't explicitly mentioned. The closest might be "Benzoylecgonine (BZE, Ecgonine benzoate)" which is a metabolite of cocaine, but "crack" itself isn't in the index terms. However, the example in the prompt shows that "snow" and "white lines" are categorized as "other" even if they're not drugs. Since "crack" is a form of cocaine, but not listed, I should mark it as "other." 
+
+Next, "self" might be a slang term. But looking at the index terms, there's no entry for "self." The example with "xans" was "other," so "self" would also be "other." The post also has "MV," "YOONGI," and other terms, but those don't relate to drugs. So the only matches are "crack" and "self," both as "other." Let me confirm the index terms again. Yes, "crack" isn't listed, so the correct index term is "other" for both instances.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"},
+  {"index_term": "other", "matched_phrase": "self"}
+]

@@ -1,0 +1,25 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "just found out cheese addiction is very real because cheese has morphine like compounds wtf". I need to detect any drug-related references here.
+
+First, I'll scan the post for any words or phrases that might refer to illicit drugs. The main phrases here are "cheese addiction" and "morphine like compounds". 
+
+Looking at the index terms list, "morphine" is listed as an index term. The phrase "morphine like compounds" could be a reference to morphine, but I need to check if there's a specific term for that. However, in the index terms, "Morphine" is listed, and "morphine like compounds" might be considered as referring to morphine. But wait, the user's post says "cheese has morphine like compounds". Since "morphine" is in the list, but the actual substance here is not a drug, but rather a metaphor. However, the task is to detect any references to illicit drugs. The phrase "morphine like compounds" could be a euphemism or slang for a drug. But according to the index terms, "morphine" is listed, so "morphine like compounds" might be linked to "Morphine". However, the problem is that the post is talking about cheese having morphine-like compounds, which is not an actual drug. But the task is to detect any references to drugs, even if it's a metaphor. But the index terms don't have a term for "morphine-like compounds", so maybe "morphine" is the closest. Alternatively, if "morphine like compounds" is not directly listed, then it would be "other". 
+
+Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" so the phrase "morphine like compounds" would be a reference to morphine. But the post is saying cheese has those compounds. However, the task is to detect any mention of drugs, even if it's a metaphor. But the index terms don't have an entry for "morphine-like compounds", so the correct index term would be "Morphine" if the phrase is a reference. However, the user might be using "morphine like compounds" as a metaphor, but according to the instructions, we need to link it to the index term if possible. Since "morphine" is in the list, even if it's a metaphor, the matched phrase would be "morphine like compounds" linked to "Morphine". But I'm not sure. Alternatively, maybe "morphine like compounds" is not directly listed, so it's "other". 
+
+Wait, the example in the problem: in example 3, the phrase "xans" is linked to "other" because it's not in the list. Similarly, if "morphine like compounds" isn't in the index terms, then it would be "other". But "morphine" is in the index terms. However, the phrase here is "morphine like compounds", which is not exactly the same as the index term. The index term is "Morphine", so the phrase "morphine like compounds" is not a direct match. Therefore, since it's not an exact term, it would be "other". 
+
+So the detected phrase is "morphine like compounds", which is not directly listed in the index terms, so the index term would be "other". But wait, the index term for morphine is listed, but the phrase is not the exact term. The task says to link each detected phrase to its matching index term. If the phrase is a synonym or slang, but not exactly the index term, then maybe it's "other". 
+
+Alternatively, if "morphine like compounds" is a reference to morphine, but not exactly the term, then maybe it's "Morphine". But according to the example in the problem, "xans" is "other" because it's not in the list. So in this case, "morphine like compounds" is not an exact term in the list, so it's "other". 
+
+Therefore, the matched phrase is "morphine like compounds" with index term "other". 
+
+Wait, but the user is saying that cheese has morphine-like compounds. The actual drug is morphine, but the post is using a metaphor. However, the task is to detect any reference to drugs. So even if it's a metaphor, if it's referring to a drug, it should be linked. But the index terms don't have a term for "morphine like compounds", so the correct index term would be "Morphine" if the phrase is a reference to morphine. But the problem is that the phrase is not exactly the index term. 
+
+Alternatively, maybe "morphine like compounds" is a slang term for a drug, but since it's not in the list, it's "other". 
+
+In the example 3, "xans" is not in the list, so it's "other". So similarly, "morphine like compounds" is not in the list, so it's "other". Therefore, the answer would be one object with index_term "other" and matched_phrase "morphine like compounds".
+</think>
+
+[{"index_term": "other", "matched_phrase": "morphine like compounds"}]

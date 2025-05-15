@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is about the opioid crisis, mentioning morphine and oxys (which I think is oxycontin). The user provided examples where mentioning drugs in a context of abuse or misuse is labeled True, while medical or educational contexts are False.
+
+Looking at the content: it talks about the years before the opioid crisis, stepdad having morphine and oxys in the bathroom. It mentions "horrifying," "dead kids," "people fried for life," and "preventable tragedy." The tone seems negative and critical of the situation, not promoting or encouraging drug use. It's more about the consequences of drug abuse rather than promoting or using drugs. 
+
+The key here is whether the content is glorifying or encouraging drug misuse. Since it's discussing the negative outcomes and the crisis, it's more about the harm caused by drug abuse, not promoting it. So, the context is about the consequences of drug misuse, which falls under the False category because it's not promoting or encouraging abuse. The mention of drugs is in a context of harm and tragedy, not misuse or abuse in a positive way. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses the opioid crisis and its tragic consequences, focusing on harm and prevention rather than promoting or glorifying drug abuse."
+}

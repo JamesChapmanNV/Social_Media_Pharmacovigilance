@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The user provided a content snippet: "And your entire argument hinges on weather or not he died by overdose. But since two separate autopsies said he didn't then that idea falls flat on its face." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting use. Also, slang or euphemisms related to drug use. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+The content here talks about someone dying by overdose, but the autopsies said he didn't. The key here is that the content is discussing a medical issue (overdose) but in a context of debate about the cause of death. The term "overdose" is a medical term related to drug use, but the content isn't promoting or glorifying drug use. It's discussing a medical determination. The user is arguing about the cause of death, but the mention of overdose is part of a medical discussion, not promoting or encouraging drug use. There's no mention of illegal drugs, slang, or abuse. The context is about a medical conclusion, not misuse or abuse. So according to the definitions, this should be classified as False because it's discussing a medical issue in a non-promoting context. The explanation should note that the content discusses a medical determination without promoting drug abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a medical determination regarding cause of death, using 'overdose' as a medical term without promoting or glorifying drug abuse."
+}

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Heroin. It almost killed me once - motherfucker won't get me again! 😬" and wants me to detect any drug references and link them to the index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs. The first word is "Heroin." Looking at the index terms, there's an entry for Morphine, which includes "MS Contin, Miss Emma, Morph." But wait, Heroin isn't directly listed. Let me check the list again. Oh, there's a separate entry for Heroin? Wait, no. Let me look again. The index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not Heroin. Wait, the user's example included "Codeine" with "lean" and "codeine," so maybe Heroin isn't directly listed. But the index terms don't have a specific entry for Heroin. Let me check again. The list includes "Morphine" but not Heroin. However, Heroin is a type of opioid, and the index term for Morphine is listed. But Heroin is a different drug. Wait, looking at the index terms, there's a line for "Morphine" but not Heroin. However, in the example given, "Codeine" is linked to "lean" and "codeine." So, if "Heroin" isn't in the index terms, then it would be "other." But wait, let me check again. The index terms list "Morphine" as a separate entry. Heroin is a different drug. So "Heroin" isn't in the list. Therefore, the matched phrase "Heroin" would be "other." But wait, the user's example in Example 1 had "lean" and "codeine" both linked to Codeine. So in this case, the phrase "Heroin" isn't in the index terms, so it should be "other." But wait, the index terms include "Morphine," but Heroin is a different drug. However, maybe the user expects that "Heroin" is considered under the index term for Morphine? No, because Morphine is a different drug. So "Heroin" is not in the list, so the index term would be "other." 
+
+Wait, but looking at the index terms again, there's an entry for "Morphine," but Heroin is not listed. So "Heroin" would be "other." However, in the example given in the problem statement, the user's example 1 had "lean" and "codeine" both linked to Codeine. So "Heroin" is not in the index terms, so it's "other." Therefore, the correct response would be {"index_term": "other", "matched_phrase": "Heroin"}.
+
+But wait, maybe I'm missing something. Let me check the index terms again. The index terms include "Morphine," but not Heroin. So "Heroin" is not in the list. Therefore, the answer is "other." The other part of the post is "It almost killed me once - motherfucker won't get me again!" which is just commentary, so no other drug references. Therefore, the only match is "Heroin" which is "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "Heroin"}
+]

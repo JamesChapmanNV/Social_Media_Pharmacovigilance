@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet that's about a case involving heroin smuggling. The content mentions "smuggling 42g of heroin" and talks about the legal consequences, including execution and appeals. The question is whether this is illicit/abusive-drug-related.
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. False includes medical, educational, or preventative contexts. The content here is discussing a specific case where someone was smuggling heroin, which is illegal. The mention of heroin is a controlled substance, and the context is about smuggling and legal repercussions. The user is questioning the government's response, which might imply criticism of drug laws. However, the main point is the act of smuggling, which is illegal. The content doesn't promote or glorify drug use but rather reports on a criminal case. However, the presence of heroin (an illegal drug) in the context of smuggling would fall under illicit drug-related content. The explanation should note that heroin is mentioned in the context of smuggling, which is illegal. So the label would be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions heroin, an illegal drug, in the context of smuggling and legal consequences, indicating illicit drug-related activity."
+}

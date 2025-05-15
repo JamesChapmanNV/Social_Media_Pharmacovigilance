@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms from the given list, and return a JSON array.
+
+First, I'll look at the post: "If Rue didn't get out Laurie was going to traffic her assuming she didn't when Rue was out on morphine #EuphoriaHBO". The main phrases here are "morphine" and "traffic". 
+
+Looking at the Index Terms list, "Morphine" is listed as an index term. The phrase "morphine" is directly mentioned, so that's a clear match. 
+
+Now, "traffic" is a bit trickier. In the context of the sentence, "traffic her" might be a slang term. But in the Index Terms, there's no entry for "traffic" as a drug reference. The closest might be "Methamphetamine" or "Amphetamine", but "traffic" isn't listed. The example provided in the problem statement had "xans" which was categorized as "other" because it wasn't in the list. So, "traffic" here is likely a slang term not listed, so it should be "other".
+
+Wait, but I need to check if "traffic" is a known slang for a drug. From the Index Terms, I don't see "traffic" listed. The term "traffic" in the context of the sentence could be a verb meaning to harm or abuse someone, but in drug slang, "traffic" might refer to something else. However, based on the provided list, there's no Index Term for "traffic". Therefore, it should be categorized as "other".
+
+So the matched phrases are "morphine" and "traffic". "Morphine" maps to the index term "Morphine", and "traffic" maps to "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "traffic"}
+]

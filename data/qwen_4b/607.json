@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The content is "Overdose @ 2104 Mac Arthur Rd 3 FD units responding. 3 PD units responding." So first, I need to determine if this is illicit/abusive-drug-related.
+
+Looking at the keywords: "Overdose" is a strong indicator of drug-related issues. The location and the responding units (FD and PD) suggest an emergency situation. But does the content itself mention drugs or their abuse? The phrase "overdose" can be associated with drug overdoses, but the content doesn't explicitly name any drugs. However, the context of an overdose is typically linked to drug use. 
+
+The definitions say that True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Here, the mention of overdose implies that someone may have used drugs in a way that led to an overdose, which is a misuse. Even though it's not explicitly stating the drug, the context of an overdose is a clear indicator of drug-related abuse. 
+
+The example given in the prompt where "overdose" was part of the content was classified as True. So following that logic, this content would be classified as True because it's related to a drug overdose incident, which is a form of drug abuse or misuse. The response units are there to handle the situation, which is a direct consequence of drug misuse. 
+
+Therefore, the label should be True with an explanation about the overdose indicating drug abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The mention of 'overdose' indicates a drug-related emergency, implying misuse or abuse of substances."
+}

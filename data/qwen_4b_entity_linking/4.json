@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the correct index terms, and return a JSON array.
+
+First, I need to look at the post: "When that codeine had u knocked all day, now ur fever finally breaks and u can't go to sleep!! 😔🙁". 
+
+Looking for words or phrases that refer to illicit drugs or substances. The word "codeine" is clearly listed in the index terms under Codeine. The post mentions "codeine" directly. Also, the phrase "knocked all day" might be a slang reference. Wait, in the example given, "lean" was linked to codeine. But in this case, the phrase is "codeine had u knocked". The word "knocked" here might be a slang term for the effects of codeine, but I need to check if "knocked" is a recognized slang in the index terms. However, looking at the index terms, "knocked" isn't listed. The index terms include "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "knocked all day" might be a colloquial way to describe the effects of codeine, but since "knocked" isn't an index term, I should check if "codeine" is the only match here. 
+
+Wait, the user's task is to detect every word or phrase that refers to an illicit drug. The word "codeine" is explicitly mentioned, so that's a direct match. The rest of the sentence talks about the effects of codeine (knocked all day, fever breaking, can't sleep). But "knocked" here is more about the effect rather than the drug itself. So the only direct match is "codeine". 
+
+Looking back at the example, in example 1, "lean" and "codeine" were both matched. But in this case, the post only has "codeine" as the direct term. The phrase "knocked" isn't in the index terms, so it's not a match. Therefore, the only matched phrase is "codeine", which maps to the index term "Codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

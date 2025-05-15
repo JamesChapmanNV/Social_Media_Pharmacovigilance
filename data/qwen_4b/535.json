@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "IF YOUR A CRACKHEAD! AND SMOKING CRACK. YOU AINT SLEEPING."
+
+First, I need to recall the definitions provided. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Also, slang or terms that indicate recreational use or abuse. False includes medical, educational, or preventative contexts.
+
+Looking at the content, the words "crackhead" and "crack" are used. "Crackhead" is a slang term that's derogatory and refers to someone who uses crack cocaine, which is an illegal drug. The phrase "smoking crack" directly mentions the drug. The second part, "you aint sleeping," might be a consequence of using crack, which is a known effect. 
+
+The tone here seems to be negative, possibly mocking or condemning someone who uses crack. However, the user's task is to check if it's related to illicit drug abuse. The content mentions the drug (crack) and its use (smoking), and the context is about someone who is a crackhead. Even though the tone is negative, the key point is that it's directly referencing the drug and its use, which fits under the True category. 
+
+I should check if there's any possible that it's not. For example, if it was a metaphor or something else. But "crackhead" and "smoking crack" are clear references to drug use. The explanation should mention the use of slang and the mention of the drug in a context that implies abuse. So the label is True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses the term 'crackhead' and'smoking crack,' directly referencing illicit drug use and implying abuse through derogatory language and association with negative consequences."
+}

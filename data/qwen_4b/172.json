@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet: "Bruh if he was dyin of an overdose what was the cop even gonna do lmao". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll break down the content. The phrase "dyin of an overdose" directly mentions an overdose, which is related to drug use. The mention of a cop (police) responding to an overdose scenario might be a reference to the legal or medical response to drug-related emergencies. But the key here is the context.
+
+The user is using "Bruh" which is a slang term often used to express frustration or disbelief, maybe in a humorous or ironic way. The question is hypothetical, asking what the cop would do if someone is dying from an overdose. This could be a commentary on the system's response to drug overdoses, possibly implying that the system isn't doing enough. However, the content doesn't explicitly promote or glorify drug use. It's more of a rhetorical question about the consequences of drug overdoses and the legal response.
+
+Looking at the definitions: True includes content that mentions illegal drugs in the context of abuse, misuse, or promotes it. False includes medical, educational, or preventative contexts. The content here is not promoting drug use. It's discussing a scenario that's related to drug overdoses but not in a way that encourages or glorifies the abuse. The mention of overdose is a serious issue, but the content isn't about using drugs, buying them, or promoting their misuse. It's more about the aftermath or the system's response. 
+
+So, the explanation would be that while it mentions overdose, it's not promoting or glorifying drug abuse. Therefore, it's False. The key is whether the content is encouraging or glorifying drug use. Since the content is a hypothetical question about the consequences, not about using drugs, it's not illicit or abusive drug-related.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a hypothetical overdose scenario but does not promote, glorify, or discuss drug abuse directly."
+}

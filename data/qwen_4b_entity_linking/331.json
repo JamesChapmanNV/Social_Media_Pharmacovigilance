@@ -1,0 +1,37 @@
+<think>
+Okay, let's tackle this query. The user is asking about the arrival of fentanyl, meth, and heroin in Ohio in 2021. First, I need to check if any of the words in the post refer to illicit drugs. The post mentions "fentanyl," "meth," and "heroin." 
+
+Looking at the Index Terms list, Fentanyl is explicitly listed as an index term. Methamphetamine is also listed under "Methamphetamine (Crystal Meth, Ice, Desoxyn)." Heroin is listed under "Morphine (MS Contin, Miss Emma, Morph)" but wait, the Index Terms for heroin aren't directly listed. Wait, the Index Terms include "Morphine" but not "Heroin" specifically. However, in the example given, "codeine" has synonyms like "lean" and "purple drank." So maybe "heroin" isn't in the list, but "Morphine" is. But heroin is a different drug. Wait, the Index Terms list includes "Morphine" as a separate entry. However, heroin is a different substance. Wait, the user is asking about heroin, but the Index Terms don't have a specific entry for heroin. The closest is "Morphine," but heroin is a different drug. So in the Index Terms list, "Heroin" isn't listed. Therefore, any mention of heroin would be "other."
+
+So in the post, "fentanyl" is directly in the list as an index term. "Meth" refers to methamphetamine, which is in the list. "Heroin" is not in the list, so it would be "other." 
+
+Wait, the Index Terms for Morphine include "MS Contin, Miss Emma, Morph," but heroin is a different drug. The user is asking about heroin, which is not listed in the Index Terms. Therefore, "heroin" would map to "other." 
+
+So the matched phrases are "fentanyl," "meth," and "heroin." 
+
+Fentanyl maps to "Fentanyl," meth maps to "Methamphetamine," and heroin maps to "other." 
+
+So the JSON array should have three entries. Let me check again. The user's post is: "So he's saying that fentanyl just hit Ohio in 2021? Wow. Did meth just get there also? What about heroin?" 
+
+So the words are "fentanyl," "meth," and "heroin." 
+
+Fentanyl is in the list. Meth is in the list as Methamphetamine. Heroin is not in the list, so "other." 
+
+Therefore, the correct JSON entries are:
+
+{"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+{"index_term": "Methamphetamine", "matched_phrase": "meth"},
+{"index_term": "other", "matched_phrase": "heroin"}
+
+I need to make sure that "meth" is correctly mapped to Methamphetamine. Yes, because the Index Terms list includes "Methamphetamine (Crystal Meth, Ice, Desoxyn)." So "meth" is a synonym here. 
+
+Heroin is not in the Index Terms, so "other." 
+
+So the final answer should be these three entries.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

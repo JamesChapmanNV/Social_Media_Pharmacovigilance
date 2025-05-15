@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "Now I'm on ocean drive sippin codeine w/the top down 20grand on me, lotta jewelry n a glock 9".
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promotion, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+Looking at the content: "sippin codeine" – "sippin" is slang for drinking, so using codeine in that way. Codeine is an opioid, which is a controlled substance. The phrase "on ocean drive" might be a reference to a location or a cultural reference, but the key part is "sippin codeine". The mention of "20grand on me, lotta jewelry n a glock 9" seems to describe the person's lifestyle, possibly implying they have money and maybe are involved in something illegal, but the main point is the use of codeine.
+
+The context here is recreational use of codeine, which is an illicit drug. The user is talking about consuming codeine, which is a controlled substance, and the tone seems to be about having it and being in a certain environment. There's no mention of medical use or education. The slang "sippin" and the mention of codeine in a casual, possibly abusive context fit the True category. The other parts about money and jewelry might be red herrings, but the key is the drug use. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a casual, slang context ('sippin') and describes a lifestyle implying recreational drug use."
+}

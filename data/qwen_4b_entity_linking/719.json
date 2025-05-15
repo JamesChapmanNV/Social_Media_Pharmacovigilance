@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "New Music! Dwelly ft. Yung Spyda in 'Codeine Chill'!" and wants me to detect any drug-related references.
+
+First, I need to look for words or phrases that might refer to illicit drugs. The key here is to check against the list of Index Terms provided. The post mentions "Codeine Chill" as the song title. 
+
+Looking at the Index Terms, "Codeine" is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "Codeine Chill" directly uses "Codeine", so that's a match. The index term for Codeine is "Codeine", and the matched phrase is "Codeine". The song title is "Codeine Chill", so "Codeine" is part of the phrase. 
+
+Wait, the user's example 1 had "lean" and "codeine" both matching to Codeine. So in this case, the phrase is "Codeine Chill", so the matched_phrase would be "Codeine". The "Chill" part might be part of the song title but not a drug reference. So the only match here is "Codeine" in the song title. 
+
+I need to make sure that "Codeine" is in the Index Terms. Yes, it is. So the JSON array should have one object with index_term "Codeine" and matched_phrase "Codeine". 
+
+No other words in the post seem to refer to drugs. The rest is about a music release, so no other matches. Therefore, the correct output is the single entry for "Codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

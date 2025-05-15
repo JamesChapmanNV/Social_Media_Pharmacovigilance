@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content provided is: "Went to 3 of my regular kedai arak to buy...no stock. On a very long waiting list."
+
+First, I need to understand what "kedai arak" refers to. "Kedai" is a Malay word meaning shop, and "arak" is a type of traditional Indonesian alcohol, often associated with local consumption. The user went to three shops to buy arak but couldn't get any stock and had to wait a long time.
+
+Now, applying the definitions. The key here is to check if the content mentions illegal drugs, RX, OTC, or if it's about abuse, misuse, promotion, etc. Arak is a legal alcoholic beverage in many places, including Indonesia. The content is about trying to buy arak, which is a common drink, and the fact that there's no stock and a long waiting list. There's no mention of illegal drugs, abuse, or promotion. The context is about purchasing a regular drink, not anything related to drug misuse or illegal activity. The terms used are related to a legitimate product, not anything illicit. So, the classification should be False. The explanation would note that arak is a legal alcohol, and the content is about purchasing it without any indication of abuse or illegal use.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to 'arak,' a legal traditional alcohol, and discusses purchasing it without any indication of drug abuse, illegal activity, or promotion of misuse."
+}

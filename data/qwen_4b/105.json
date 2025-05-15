@@ -1,0 +1,24 @@
+<think>
+Okay, let's see. The user provided a content example: "Accidentally taken too much codeine at work and I actually feel off my face 😂". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. The content here mentions codeine, which is an OTC drug. The person accidentally took too much, which is a misuse. The reaction "feel off my face" might be a euphemism for being high or having adverse effects. The tone is a bit humorous with a 😂, but the key point is the accidental overdose. 
+
+But wait, the example is about accidental ingestion, not promoting or encouraging abuse. The definition says True includes abuse or misuse. Accidentally taking too much is a misuse. However, the context is accidental, not intentional. The example given in the problem might be tricky. 
+
+Looking at the example 1, they mentioned 'lean' and 'codeine' with an approving tone. Here, the person is talking about an accident. The explanation needs to be based on whether it's promoting, using, buying, etc. The content here is about an accident, not promoting or encouraging misuse. So maybe it's not True. But codeine is an OTC drug, and taking too much is misuse. However, the context is accidental, not intentional. 
+
+The definitions for True include "using, buying, promoting, etc." So accidental use might still be considered misuse. But the example in the problem might be a case where the user is talking about an accident, not promoting. The explanation should focus on the context. The user is not promoting or encouraging drug use, but rather describing an accident. So maybe it's False. 
+
+Wait, the definition says "mentions illegal, RX, or OTC drugs in the context of abuse or misuse (using, buying, promoting, etc.)". So if the person is talking about taking too much, that's misuse. But the context here is accidental. However, the example in the problem might be considered as misuse. So the label would be True. But the example in the problem is a case of accidental overdose, which is a misuse. But the user is not promoting it. 
+
+Hmm, the example given in the problem might be tricky. The key is whether the content is about abuse or misuse. The user accidentally took too much codeine, which is a misuse. So according to the definitions, it's True. But the explanation would need to mention that the content mentions codeine in the context of misuse (taking too much). However, the example in the problem might be considered as a misuse, so the label would be True. 
+
+Alternatively, maybe the context is not promoting, but the act of taking too much is misuse. So the answer is True. But I need to check the definitions again. The True includes "using, buying, promoting, etc." So if the person is using the drug in a way that's misuse (taking too much), even accidentally, it's considered True. Therefore, the label should be True. The explanation would be that the content mentions codeine in the context of misuse (taking too much). 
+
+But wait, the example in the problem is accidental. The user is not promoting, but the act of taking too much is misuse. So according to the definitions, it's True. Therefore, the answer is True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions codeine in the context of misuse (taking too much) and describes a negative physiological reaction ('feel off my face')."
+}

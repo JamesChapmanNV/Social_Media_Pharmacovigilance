@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The user provided a content snippet: "Uhh lemme get a Caesar salad please with croutons and codeine dressing...and uhh a diet codeine... Codeine diet 😂😂👌👌". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting. Also slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse. False includes medical, educational, preventative contexts, or drug terms in unrelated contexts.
+
+Looking at the content: the person is ordering a Caesar salad with codeine dressing and diet codeine. The mention of codeine is in a food context, but codeine is an opioid, which is a controlled substance. However, the user is using it in a humorous way, maybe as a joke or slang. The use of "diet codeine" might be a play on words, like "diet" as in a diet soda, but codeine is a drug. However, the context here is ordering food, so it's not about misuse. The tone is humorous with emojis, which might indicate it's not promoting abuse. But the mention of codeine is a drug. Wait, but is it in a medical context? No, it's in a food context. The user is not promoting or encouraging misuse, just making a joke. So maybe this is not illicit. But codeine is a controlled substance, so using it in a food context might be considered. However, the key is whether it's in the context of abuse or misuse. Since the user is ordering it as part of a salad, it's not promoting abuse. The explanation in the example 1 had "hooked" and "everyday" with approving tone. Here, the tone is humorous, not approving. So maybe this is not illicit. But the mention of codeine is a drug. However, the context is not abuse. So the answer might be False. But I need to check if the use of codeine in the salad is considered. Maybe the user is using codeine as a slang term for something else, but in the example, "lean" and "codeine" were considered. But here, the user is using codeine in a food context, which is not related to abuse. So the answer is False. The explanation would be that the content mentions codeine in a food context, not promoting abuse or misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content mentions 'codeine' in a humorous, non-problematic context of ordering food, not promoting or glorifying drug misuse."
+}

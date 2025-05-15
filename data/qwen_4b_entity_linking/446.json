@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that mentions "heroin." My task is to detect any drug references and link them to the appropriate index terms.
+
+First, I need to check if "heroin" is in the list of index terms. Looking through the list, there's an entry for Morphine, but heroin isn't directly listed. However, the index term for Morphine includes aliases like "MS Contin, Miss Emma, Morph." But the post specifically says "heroin," which isn't listed. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, in the example given, "codeine" has aliases like "lean," "purple drank," and "schoolboy." So, if "heroin" isn't in the index terms, I should use "other."
+
+Wait, but the user's instruction says to use the index terms provided. Let me check again. The index terms include "Morphine" but not heroin. So "heroin" isn't listed. Therefore, the correct index term would be "other." 
+
+So the matched phrase is "heroin," and the index term is "other." The post also mentions "gas station" and "buy our stuff," but those aren't drugs. The main drug reference here is "heroin," which isn't in the index terms, so it's "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "The addict died of a overdose, end of story." I need to identify any drug-related references here.
+
+First, I'll look for words or phrases that could refer to illicit drugs. The post mentions "overdose," which is a common term related to drug use, but I need to check if it's listed in the index terms. The index terms include opioids like morphine, fentanyl, etc., but "overdose" itself isn't a specific drug. However, the context here is that the person died from an overdose, which implies drug use. But according to the task, I need to match phrases to index terms. Since "overdose" isn't a specific drug listed, maybe it's "other." Wait, but maybe "overdose" is considered a drug-related term here. Let me check the index terms again. The index terms are specific substances, not general terms like overdose. So "overdose" would fall under "other" because it's not a specific drug listed. 
+
+Wait, but the user's example 3 had "xans" which wasn't in the list, so it was "other." Similarly, "overdose" isn't a specific drug, so it's "other." The phrase "overdose" is a result of drug use, but the task is to detect references to drugs, not the consequence. However, the post says "died of a overdose," which is a result of drug use. But according to the instructions, I need to detect words that refer to the drug itself. Since "overdose" is not a drug name, but a consequence, maybe it's not matched. Wait, but maybe "overdose" is considered a drug-related term here. However, in the index terms, there's no "overdose" listed. So the correct index term would be "other." 
+
+Alternatively, maybe "overdose" is not a phrase that refers to a drug, but the act of overdosing. But the task says to detect references to illicit drugs. So "overdose" isn't a drug, but the consequence. Therefore, the matched phrase would be "overdose" with index term "other." 
+
+But wait, in the example 4, "snow" and "white lines" were considered "other" even though they might be slang. So in this case, "overdose" is not a drug, so it's "other." Therefore, the output should have one entry: {"index_term": "other", "matched_phrase": "overdose"}.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "overdose"}
+]

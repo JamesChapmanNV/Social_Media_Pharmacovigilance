@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully: "Wow. Morphine is the most powerful pain med I've received post surgery. I don't want/need anything stronger. I'm blessed to not have to live w/ chronic or acute pain to function. It has to be rough juggling pain w/ addictive drugs."
+
+Looking for any mentions of drugs or substances. The first thing I notice is "Morphine." Checking the index terms, Morphine is listed as an index term. The phrase "Morphine" is directly mentioned here. So that's a clear match. The index term is "Morphine" and the matched phrase is "Morphine."
+
+Are there any other terms? The rest of the post talks about pain management, not using or referring to other drugs. Words like "addictive drugs" are mentioned, but "addictive drugs" isn't a specific term in the index list. The index terms are specific to certain drugs. Since "addictive drugs" is a general term and not listed, it would fall under "other." But wait, the task says to detect every word or phrase that refers to an illicit drug. The user is talking about morphine, which is a prescribed opioid, but the index term for Morphine is listed. The phrase "addictive drugs" is a general term, but the index terms don't have a general category. However, the instruction says if the drug is not in the list, use "other." Since "addictive drugs" isn't a specific drug in the list, it would be "other." But the user is not using a specific term here, just referring to morphine. The rest of the post doesn't mention any other drugs. So the only match is "Morphine."
+
+Wait, the post says "addictive drugs" but that's not a specific drug. The index terms don't have a general term for that. So "addictive drugs" would be "other." But the user is talking about morphine, which is in the list. So the only matched phrase is "Morphine." The rest is just general talk about pain and addiction. So the JSON array should have one entry for "Morphine" and "Morphine" as the matched phrase. The other part about "addictive drugs" is not a specific term in the index, so it's "other," but the user didn't use a specific term. Wait, the task says to detect every word or phrase that refers to an illicit drug. The phrase "addictive drugs" is a general term, but not a specific drug. So it's not in the index terms, so it would be "other." But the user is not using a specific term here. The post says "addictive drugs" but that's not a specific drug. So the only match is "Morphine." The rest is just talking about the drug's addictive nature, not referring to a specific substance. Therefore, the correct output is one entry for Morphine.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]

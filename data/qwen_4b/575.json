@@ -1,0 +1,10 @@
+<think>
+Okay, let's see. The content is asking if I would recommend a patient with Morphine and Gabapentin toxicity for CT and MRI. First, I need to determine if this is related to illicit or abusive drug use.
+
+Morphine is a controlled substance, typically used medically for pain, but in this case, the patient has toxicity from it. Gabapentin is an OTC medication used for seizures and nerve pain. The question is about toxicity, which is a medical concern. The context here is a medical or educational discussion about handling toxicity, not promoting or encouraging misuse. The user is asking for a recommendation regarding diagnostic tests, which is part of medical treatment. There's no mention of abuse, promotion, or recreational use. The terms are used in a medical context, so according to the definitions, this would be False. The explanation should note the medical context and lack of promotion of misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses medical toxicity management, not promoting or glorifying drug abuse."
+}

@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this content classification. The user provided a query about content related to drug trafficking. The content is: "NDLEA nabs five with 4,580KG of codeine, Tramadol: Kunle Falayi A haul of codeine and Tramadol hidden in warehouses…". 
+
+First, I need to determine if this is illicit/abusive-drug-related. The definitions say that True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. False includes medical, educational, or preventative contexts.
+
+Looking at the content, it's about the NDLEA (Nigerian Drug Law Enforcement Agency) arresting people with large quantities of codeine and tramadol. These are controlled substances, and the context here is law enforcement seizing drugs. The content is reporting on a drug trafficking incident, not promoting or encouraging their use. 
+
+The key points here are the mention of codeine and tramadol, which are illegal drugs, but the context is about law enforcement action, not abuse or misuse. The terms used are in a news report, not in a way that glorifies or promotes drug use. There's no indication of recreational use, encouragement, or abuse. 
+
+So, according to the definitions, since the content is about the seizure of illegal drugs in a law enforcement context, it's not promoting or encouraging abuse. Therefore, it should be classified as False. The explanation should mention the context of law enforcement seizing drugs, not promoting or encouraging abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content reports on law enforcement seizing illegal drugs (codeine, tramadol) in a trafficking context, not promoting or encouraging abuse."
+}

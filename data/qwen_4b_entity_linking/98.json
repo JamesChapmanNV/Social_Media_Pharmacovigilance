@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "EXCLUSIVE: Enveric Offers Investors Rare Exposure To Both Cannabis And Psychedelic Industries". The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any mentions of drugs, slang, or terms that could refer to illicit substances. The post mentions "Cannabis" and "psychedelic industries". Looking at the index terms, "Marijuana" is listed as an index term, which is a synonym for cannabis. Then, "LSD" is a psychedelic drug, and "Psilocybin" is another psychedelic compound. However, the post doesn't explicitly mention LSD or psilocybin. It refers to "psychedelic industries" generally, which could include various substances, but the index terms don't have a general term for all psychedelics. 
+
+Wait, the index terms include "LSD" and "Psilocybin" as separate entries. But the post doesn't mention specific names like LSD or psilocybin. It's more general. However, the task is to detect every word or phrase that refers to an illicit drug. "Cannabis" is explicitly listed as "Marijuana" in the index terms, so "Cannabis" would map to "Marijuana". 
+
+The term "psychedelic" is a category, but the index terms have specific entries like LSD and Psilocybin. Since the post doesn't use the exact terms, maybe "psychedelic" is too broad. However, the example in the problem statement includes "magic mushrooms" which is Psilocybin. But in this case, the post doesn't mention specific drugs. So "psychedelic industries" might not be a direct match. 
+
+Wait, the index terms don't have a general term for psychedelic drugs. The closest would be "LSD" and "Psilocybin", but the post doesn't mention those. Therefore, "psychedelic" might not be a direct match. However, the post is about industries, not specific drugs. So maybe "Cannabis" is the only direct match here. 
+
+So, the detected phrases would be "Cannabis" and "psychedelic". But "psychedelic" is not an index term. The index terms include "LSD" and "Psilocybin", but the post doesn't mention those. Therefore, "psychedelic" would be "other" because it's a general term not directly listed. 
+
+Wait, the index terms include "Marijuana" for cannabis. So "Cannabis" is a synonym, so that's a match. "Psychedelic" is a general term, but the index terms don't have a general term for all psychedelics. So "psychedelic" would map to "other". 
+
+But the user's example 4 shows that "snow" and "white lines" are "other" even though they're not drugs. So in this case, "Cannabis" is a direct match to "Marijuana", and "psychedelic" is not a specific drug, so "other". 
+
+Therefore, the JSON array should have one entry for "Cannabis" as "Marijuana" and "psychedelic" as "other".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+  {"index_term": "other", "matched_phrase": "psychedelic"}
+]

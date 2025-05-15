@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content. The user provided a statement about colleagues prioritizing taxpayer money for welfare expansions, including things like free heroin needles. The task is to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I need to check if there's any mention of illegal or abused drugs. The content specifically mentions "free heroin needles." Heroin is an illicit drug, and providing needles for it would be related to drug abuse. The context here is about expanding welfare programs to include such things, which could be seen as promoting or enabling drug use. 
+
+The example given in the task includes mentions of codeine and lean, which are drugs, and the explanation notes the approving tone. In this case, the content is discussing a policy that provides heroin needles, which is directly related to drug abuse. Even though the main topic is welfare, the mention of heroin needles is a clear indicator of illicit drug-related content. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. Here, the content is talking about providing heroin needles, which is part of drug abuse. The mention of "free heroin needles" directly points to an illicit drug and its distribution, which is promoting misuse. Therefore, this should be classified as True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'heroin needles,' which directly references illicit drug distribution and abuse, indicating promotion of drug misuse."
+}

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about the George Floyd case and mentions a fentanyl overdose confirmed by autopsy. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs. The post mentions "fentanyl overdose." Looking at the index terms, there's an entry for Fentanyl with synonyms like China White, Apache, Duragesic. So "fentanyl" directly maps to the Fentanyl index term. 
+
+Next, the post says "confirmed by autopsy." The term "autopsy" isn't a drug term, so I don't need to include that. The rest of the post talks about the George Floyd case, body cam video, and police training officer. There's no other mention of drugs or substances. 
+
+I should check if there are any other possible terms. The phrase "dealer who supplied it the" might be a fragment, but "dealer" isn't a drug name. The word "supplied" is part of the context but not a drug reference. 
+
+So the only drug reference here is "fentanyl," which is in the index terms. Therefore, the JSON array should have one entry with index_term "Fentanyl" and matched_phrase "fentanyl."
+</think>
+
+[{"index_term": "Fentanyl", "matched_phrase": "fentanyl"}]

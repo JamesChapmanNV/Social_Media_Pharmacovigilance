@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to look at the post: "I'm such a crack the window open to let a cool breeze in, keep the ceiling fan on, leave the door ajar ventilation girly🥰🥰🥰". 
+
+Hmm, the main phrases here are "crack the window open", "cool breeze", "ceiling fan", "door ajar", and "ventilation". The user is talking about opening windows and doors for ventilation. Now, I need to check if any of these phrases are slang or euphemisms for drugs. 
+
+Looking at the index terms list, I see that "crack" is mentioned in the context of codeine as "Lean" and "Purple Drank". But in this sentence, "crack" is part of "crack the window", which is a literal action, not a drug reference. The other terms like "ventilation" don't match any index terms. 
+
+The user might be using "crack" metaphorically, but according to the index terms, "crack" isn't listed as a drug term. The index terms for codeine include "lean" and "codeine", but "crack" isn't there. So, "crack" here is likely not a drug reference. 
+
+The rest of the words like "window", "breeze", "fan", "door", "ventilation" are all related to opening windows for air, not drugs. None of these phrases are in the index terms. 
+
+So, there are no drug-related references in this post. Therefore, all matched phrases should be categorized under "other". But wait, the example 3 shows "xans" as "other". So, even if the phrase isn't a direct match, if it's not in the index terms, it's "other". 
+
+In this case, the phrases are "crack the window", "cool breeze", "ceiling fan", "door ajar", "ventilation". None of these are in the index terms. So, each of these would be "other". But the user's post has "crack" in the phrase. Wait, but "crack" is part of "crack the window", which is not a drug term. The index terms don't have "crack" as a drug. So, the answer should be that none of the phrases are drug-related, hence all "other".
+
+Wait, but the user's example 4 had "snow" and "white lines" as "other" even though they weren't drugs. So, in this case, the phrases are not drug-related, so they should be "other". Therefore, the JSON array would have each of these phrases as "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "crack"}, {"index_term": "other", "matched_phrase": "window"}, {"index_term": "other", "matched_phrase": "breeze"}, {"index_term": "other", "matched_phrase": "ceiling"}, {"index_term": "other", "matched_phrase": "fan"}, {"index_term": "other", "matched_phrase": "door"}, {"index_term": "other", "matched_phrase": "ajar"}, {"index_term": "other", "matched_phrase": "ventilation"}]

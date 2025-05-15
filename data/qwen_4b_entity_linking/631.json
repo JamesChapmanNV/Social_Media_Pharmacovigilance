@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post about someone in recovery from an inguinal hernia surgery and mentions that morphine is "good shit." My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any slang, euphemisms, or synonyms for illicit drugs. The post says "Morphine is good shit." Morphine is a known opioid, and in the index terms, Morphine is listed as an index term. The phrase "good shit" is a colloquial way of saying something is good or effective, but in this context, it's referring to morphine. Since morphine is explicitly listed in the index terms, I should map "morphine" to the index term "Morphine." 
+
+I should check if there are any other phrases. The rest of the post talks about surgery and staying overnight, which doesn't mention any other drugs. The word "shit" here is part of the slang, but the actual drug is morphine. So the only match is "morphine" linked to the index term "Morphine."
+
+Wait, the example in the problem statement had "lean" linked to codeine. So in this case, "morphine" is directly listed, so the index term is "Morphine." The phrase "good shit" is the slang, but the actual drug is "morphine." So the matched phrase is "morphine," and the index term is "Morphine." 
+
+I need to make sure there's no other term. The post doesn't mention any other drugs. So the JSON array should have one entry: {"index_term": "Morphine", "matched_phrase": "morphine"}.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

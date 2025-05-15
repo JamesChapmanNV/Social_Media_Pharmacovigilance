@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "GODDAMNIT SHE GIVIN HA MORPHINE IT'S OVER FORREAL DIS TIME". I need to detect any drug references here.
+
+First, I'll look for words that might refer to illicit drugs. The post has "morphine" which is listed in the index terms. Morphine is a prototypical opioid analgesic, so that's a direct match. The phrase "GIVIN HA MORPHINE" – "ha" could be slang, but the main term here is "morphine". 
+
+Checking the index terms, Morphine is listed with the term "Morphine (MS Contin, Miss Emma, Morph)". So "morphine" directly maps to "Morphine". There's no other drug mentioned here. The rest of the text is expletives and maybe "ha" which isn't a drug term. So the only match is "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

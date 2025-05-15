@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet where someone talks about their experience with sobriety, working with their dad who's an alcoholic, and a moment when they considered using heroin. The dad reacts negatively. 
+
+First, I need to check if this content is classified as ILLICIT/ABUSIVE-DRUG-RELATED. The definitions say that True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Also, slang or references to recreational use.
+
+In this content, the person mentions "heroin" directly. Heroin is an illegal drug, and the context here is someone considering using it. The dad's reaction is negative, which might indicate that the person is trying to stay sober. However, the content includes a direct mention of heroin, which is an illicit drug. The person's thought about using it could be seen as a reference to drug abuse. 
+
+But wait, the person is in recovery, so maybe the content is about the struggle with addiction. However, the key point is whether the content promotes or glorifies drug use. The mention of heroin is explicit, and the context is a moment of temptation. The dad's reaction is a deterrent, but the content itself includes the mention of heroin, which is an illicit drug. 
+
+So according to the definitions, mentioning illegal drugs in the context of abuse or misuse would be True. Even though the person is trying to stay sober, the explicit mention of heroin (an illegal drug) in the context of considering its use would fall under ILLICIT/ABUSIVE-DRUG-RELATED. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin,' an illicit drug, in the context of a person considering its use, which reflects drug abuse or misuse."
+}

@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this. The user is asking me to label a social media post related to drug abuse. The post is: "I took some cough medicine on Friday codeine knocked me out all day". The rules are T if it shows illicit or abusive drug use (using, seeking, buying, selling, trafficking, or slang for drugs), otherwise F.
+
+First, I need to parse the sentence. The person mentions taking cough medicine, which might be a red herring. But then they mention codeine. Codeine is an opioid, often used in cough medicines, but if it's in a cough medicine, is that considered illicit? Wait, codeine is a controlled substance. In some places, it's classified as a Schedule II drug, which is a controlled substance. However, if it's in a cough syrup, it's sometimes considered a prescription drug. But the user is saying they took it, which might be without a prescription, implying abuse.
+
+But the key here is whether the use is considered illicit or abusive. If the person is using codeine in a way that's not prescribed, that could be abuse. However, codeine is also used in over-the-counter cough medicines. The post doesn't specify if it's a prescription or OTC. But the fact that they mention "cough medicine" and then codeine, which is a component of some cough medicines, might be a case of using a substance that's intended for medical use but in a way that's considered abuse. However, the label is T if it's showing illicit or abusive use. 
+
+Alternatively, maybe the person is referring to codeine as a slang term. But codeine is a drug, so if they're taking it, that's using. The key is whether it's considered illicit. Since codeine is a controlled substance, even if it's in a cough medicine, using it without a prescription could be considered abuse. But the label might be more about whether it's explicitly about drug use. The post says "I took some cough medicine on Friday codeine knocked me out all day". The mention of codeine is key here. Since codeine is a drug, and the person is using it, that would be T. Even if it's in a cough medicine, if they're taking it in a way that's not prescribed, it's abuse. So the label should be T.
+</think>
+
+T

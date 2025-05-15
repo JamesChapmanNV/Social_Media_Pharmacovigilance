@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user is moderating social media posts related to drug abuse. The task is to label each post as T or F based on specific rules. The rules are: T if the text shows illicit or abusive drug use (using, seeking, buying, selling, trafficking, or slang for drugs). F otherwise, like medical/policy discussion, news, discouraging use, or metaphor.
+
+The post in question is: "My high school rival is addicted to heroin so he's lazy and can't get a job where I was more successful. As a meth addict I just can't keep a job where I was more successful. What a fukkin loser right?"
+
+First, I need to check if there's any mention of drug use, seeking, buying, selling, trafficking, or slang. The user mentions "addicted to heroin" and "meth addict". Both heroin and meth are illicit drugs. The term "addicted" indicates use, and "meth addict" directly refers to using methamphetamine. The slang "fukkin" is a variation of "fucking", which is not a drug term but is profanity. However, the main points here are the mention of heroin and meth addiction, which are drug use. 
+
+The rest of the post talks about the consequences of addiction (being lazy, not getting a job), which is related to drug use but not the act of using itself. The key here is whether the text shows the act of using or being addicted. Since "addicted to heroin" and "meth addict" are explicit mentions of drug use, this would fall under T. The other parts are just discussing the effects, but the presence of the drug names and the term "addict" makes it a T. The profanity is not a drug term, so it doesn't affect the label. Therefore, the correct label should be T.
+</think>
+
+T

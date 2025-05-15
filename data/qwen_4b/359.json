@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this classification. The content is: "So I took medicine with codeine so I wouldn't cough all night and a breathing treatment. My statement is this: don't mix uppers & downers."
+
+First, I need to check if this is about illicit or abusive drug use. The user mentions codeine, which is an opioid. They took medicine with codeine for coughing, which is a medical use. But then they add a warning about not mixing uppers and downers. 
+
+Wait, codeine is sometimes in over-the-counter medications, but the key here is the context. The user is talking about using codeine in a medical context (to suppress coughing) and then giving a caution about mixing drugs. The statement "don't mix uppers & downers" is a warning, which is discouraging misuse. 
+
+The definition for False includes content that mentions drugs in a medical, educational, or preventative context. Here, the user is discussing a medical use of codeine but also cautioning against mixing substances. The main point is the warning, which is against misuse. So this seems like a False case because it's not promoting abuse but rather cautioning against it. The mention of codeine is in a medical context, and the warning is about safe use. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses medical use of codeine for cough suppression and includes a cautionary statement about drug interactions, not promoting abuse or misuse."
+}

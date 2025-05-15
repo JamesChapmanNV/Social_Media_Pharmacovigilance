@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Demi Lovato talking about Survivor's Guilt after DMX's overdose. My task is to check for any drug-related references and map them to the correct index terms.
+
+First, I'll read through the post carefully. The post mentions "DMX Overdose." DMX is a rapper known for his music, but the key here is "overdose." However, the index terms list includes drugs like fentanyl, heroin, cocaine, etc., but not necessarily names of people. Wait, the task is to detect words or phrases that refer to illicit drugs or substances. So "DMX" is a person's name, not a drug. The overdose itself is a consequence, but the post doesn't mention any specific drug name. 
+
+Looking at the index terms, there's a list of substances like codeine, amphetamine, methamphetamine, etc. The post doesn't use any of those terms. The phrase "Survivor's Guilt" is a psychological term, not a drug. The mention of "DMX" is a person, not a drug. So there are no drug references here. 
+
+Therefore, there are no matches. The answer should be an empty array. But wait, the examples show that even if there's no match, it's okay to return an empty array. The user's example 3 had "xans" which wasn't in the list, so it was marked as "other". But in this case, there are no drug terms at all. So the correct response is an empty JSON array.
+</think>
+
+[]

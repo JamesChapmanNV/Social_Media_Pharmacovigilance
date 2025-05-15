@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I want 3 things in life. To be small and skinny. To be able to make better music." The task is to determine if this is illicit/abusive-drug-related.
+
+First, I need to check if there's any mention of drugs, either directly or through slang. The content talks about wanting to be small and skinny, which might be a euphemism for drug use. But wait, "small and skinny" is a common phrase for someone who's thin, not necessarily related to drugs. The second part is about making better music, which is unrelated. There's no mention of any drugs, slang terms, or contexts that suggest abuse or misuse. The example given in the task had "lean" and "codeine" which are drug-related, but here there's no such terms. The user also mentioned that False includes drug terms in unrelated contexts. Since there's no drug reference here, the answer should be False. The explanation should note that there's no mention of drugs or drug-related terms.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content expresses personal goals unrelated to drug use, with no mention of drugs, slang, or contexts suggesting abuse or misuse."
+}

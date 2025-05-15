@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Innovation drives shift in cannabis product demand, especially around 4/20". I need to check for any drug-related references here.
+
+First, I'll scan the post for keywords. The main terms are "cannabis" and "4/20". Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is listed as an illicit drug. So "cannabis" here would map to that index term. 
+
+Next, "4/20" is a cultural reference to cannabis use, often associated with the drug. But wait, the index terms don't have a specific entry for "4/20". The closest is "Marijuana" under the cannabis entry. Since "4/20" is a slang or cultural reference to cannabis, it should be linked to "Marijuana". 
+
+However, the task says to check if the drug is in the list. Since "Marijuana" is in the list, "4/20" is a reference to it. So both "cannabis" and "4/20" would map to "Marijuana". 
+
+Wait, but the example in the prompt shows that "snow" and "white lines" in example 4 are marked as "other" because they aren't directly drug terms. But "cannabis" is explicitly listed. So "cannabis" is a direct match. "4/20" is a cultural reference but still refers to cannabis, so it's a valid match. 
+
+Therefore, the matched phrases are "cannabis" and "4/20", both under "Marijuana". But wait, the index term for marijuana is "Marijuana (Cannabis, Weed, Pot)", so the index_term should be "Marijuana". 
+
+So the JSON array should have two entries: one for "cannabis" and one for "4/20", both with index_term "Marijuana".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "4/20"}
+]

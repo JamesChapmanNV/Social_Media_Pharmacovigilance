@@ -1,0 +1,55 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term from the provided list, and return a JSON array.
+
+First, I need to read the post carefully: "Which is why (and I will NOT retract this) so many in the care homes HAD to die. They died to kick start Project Fear. The evidence is now coming out that many many of them were being fed a combination of Midazolam and Morphine. The same sort of treatment used in Gosport 'deaths'"
+
+Looking for drug-related terms. Let's break it down. The post mentions "Midazolam" and "Morphine". 
+
+Checking the Index Terms list. Midazolam is listed as "Nordiazepam (Desmethyldiazepam, Nordazepam)"? Wait, no. Let me check again. Wait, the Index Terms include "Midazolam (XLI‑268, Fake Xanax)"? No, looking back, the Index Terms list includes "Midazolam (XLI‑268, Fake Xanax)"? Wait, no. Let me check the exact list.
+
+Looking at the Index Terms:
+
+- Midazolam (XLI-268, Fake Xanax) – A designer benzodiazepine sold illicitly that mimics the sedative effects of alprazolam.
+
+Wait, no. Wait, the Index Terms list says:
+
+"Benzoylecgonine (BZE, Ecgonine benzoate) – The primary metabolite of cocaine measured in urine drug testing."
+
+Then later:
+
+"Midazolam (XLI-268, Fake Xanax) – A designer benzodiazepine sold illicitly that mimics the sedative effects of alprazolam."
+
+Wait, no, looking at the actual list provided:
+
+Wait, in the Index Terms, there's a line:
+
+"Midazolam (XLI‑268, Fake Xanax) – A designer benzodiazepine sold illicitly that mimics the sedative effects of alprazolam."
+
+Yes. So Midazolam is listed as an Index Term. But wait, the user's task says to detect every word or phrase that refers to an illicit drug or substance. So Midazolam is a prescription drug, but in the list, it's listed as a designer benzodiazepine sold illicitly. So Midazolam would be an Index Term here.
+
+Then Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence."
+
+So "Morphine" is an Index Term.
+
+So in the post, "Midazolam" and "Morphine" are both in the Index Terms. Therefore, each of these phrases should be matched to their respective Index Terms.
+
+So the JSON array would have two entries: one for Midazolam and one for Morphine.
+
+Wait, but the post says "Midazolam and Morphine" as a combination. So both words are present. So the matched phrases are "Midazolam" and "Morphine", each linked to their respective Index Terms.
+
+So the output should be:
+
+[
+  {"index_term": "Midazolam", "matched_phrase": "Midazolam"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]
+
+But wait, let me check the Index Terms again. The user provided the list, so I need to confirm that Midazolam is in the list. Yes, the Index Terms include "Midazolam (XLI-268, Fake Xanax) – A designer benzodiazepine sold illicitly that mimics the sedative effects of alprazolam." So Midazolam is an Index Term. Similarly, Morphine is listed as an Index Term.
+
+Therefore, the correct JSON array would include both "Midazolam" and "Morphine" as the matched phrases, each with their respective index terms.
+</think>
+
+[
+  {"index_term": "Midazolam", "matched_phrase": "Midazolam"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]

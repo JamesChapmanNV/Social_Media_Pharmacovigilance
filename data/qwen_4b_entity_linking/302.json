@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "THIS is LITERALLY my favorite song and will forever be 😩💕💕 forget my other favs Codeine Crazy permanent 😂💜". I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The main phrase here is "Codeine Crazy". The user is talking about a song called "Codeine Crazy". Now, looking at the Index Terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "Codeine Crazy" might be a song title, but I need to check if "Codeine" is a drug reference here. 
+
+In the example given, "lean" was matched to Codeine. So if the song title is "Codeine Crazy", the word "Codeine" is directly listed under the Codeine index term. Even though it's a song title, the presence of "Codeine" as a word in the post would still be considered a drug reference. The user is mentioning the song, but the term "Codeine" itself is a drug. 
+
+So, the matched phrase here is "Codeine", and the index term is Codeine. The rest of the post doesn't have any other drug references. The emojis and other words like "favorite song" don't relate to drugs. Therefore, the only match is "Codeine" in the phrase "Codeine Crazy".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

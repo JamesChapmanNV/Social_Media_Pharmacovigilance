@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "yuuuung lean in the club for some morphine (morphine)". I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll break down the post word by word. "yuuuung" is probably a slang for "youthful" or maybe a typo, but in the context of drugs, "lean" is a known slang for codeine. The user mentioned "lean" in the example, so that's a clear hit. Then "in the club" is just a location, not a drug. "for some morphine" directly mentions "morphine", which is listed as an index term. The parentheses repeat "morphine", so that's another instance. 
+
+Now, checking the index terms. "Codeine" has synonyms like "lean", so "lean" maps to Codeine. "Morphine" is directly listed as an index term. The other words don't refer to drugs. So the JSON should have two entries: one for "lean" as Codeine and "morphine" as Morphine. I need to make sure the exact phrases are matched. The user's example shows that "lean" is mapped to Codeine, and "morphine" is a direct term. So the answer should be two objects in the array.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

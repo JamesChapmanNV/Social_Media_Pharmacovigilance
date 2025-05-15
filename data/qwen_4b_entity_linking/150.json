@@ -1,0 +1,31 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "I've had a terrible day, but I managed to insert a Trainspotting heroin joke into a game preview, so I call that a win. Now I'm going to order a takeaway, get lightly drunk with my best mate and enjoy three days off after a tough week. ✌🏻"
+
+Looking for any mentions of drugs or related terms. The first part mentions "Trainspotting heroin joke." Trainspotting is a movie known for its drug-related content, specifically heroin. The phrase "heroin joke" directly refers to heroin. 
+
+Next, check if "heroin" is in the index terms. Scanning through the list, yes, Morphine is listed, but heroin isn't explicitly there. Wait, looking again, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, the example given in the problem includes "Codeine" with "lean" and "codeine," so maybe heroin isn't directly listed. But in the index terms, "Morphine" is there, and heroin is a type of opioid. However, the exact term for heroin isn't in the list. Wait, the index terms list "Morphine" but not heroin. But in the example, "Codeine" is linked to "lean" and "codeine," which are synonyms. So if the post mentions "heroin," even if it's not in the index terms, perhaps we need to check if there's a related term. 
+
+Wait, the index terms include "Morphine," but heroin is a different drug. However, the user's instruction says if the drug is not in the list, use "other." So since "heroin" isn't in the index terms, it would be "other." But wait, the example in the problem has "Codeine" linked to "lean," which is a slang term. So "heroin" is not in the index terms, so it should be "other." 
+
+But wait, the index terms list "Morphine" as an index term. However, heroin is a different drug. The index terms don't have "heroin" listed. So the matched phrase "heroin" would map to "other." 
+
+But wait, the user's instruction says to link to the index term if it's present. If the drug is not in the list, use "other." So "heroin" isn't in the list, so it's "other." 
+
+But the user's example 1 has "lean" and "codeine" both mapped to "Codeine." So in this case, the phrase "heroin" is not in the index terms, so it's "other." 
+
+Therefore, the detected phrase is "heroin," which maps to "other." 
+
+The rest of the post mentions "get lightly drunk," which is alcohol, but alcohol isn't listed in the index terms. However, the task is only to detect drug-related references. "Drunk" is not a drug, so it's not included. 
+
+So the only detected phrase is "heroin," which maps to "other." 
+
+Wait, but the user's example 3 has "xans" mapped to "other" because it's not in the list. So "heroin" is not in the index terms, so it's "other." 
+
+So the JSON array should have one object: {"index_term": "other", "matched_phrase": "heroin"}.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

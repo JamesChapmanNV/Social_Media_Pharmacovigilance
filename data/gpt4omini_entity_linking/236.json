@@ -1,0 +1,11 @@
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "other", "matched_phrase": "opioid"},
+  {"index_term": "other", "matched_phrase": "overdose"},
+  {"index_term": "other", "matched_phrase": "street drug"},
+  {"index_term": "other", "matched_phrase": "self-medication"},
+  {"index_term": "other", "matched_phrase": "mental health issues"},
+  {"index_term": "other", "matched_phrase": "PTSD"},
+  {"index_term": "other", "matched_phrase": "amateur medics"},
+  {"index_term": "other", "matched_phrase": "amateur paranedics"}
+]

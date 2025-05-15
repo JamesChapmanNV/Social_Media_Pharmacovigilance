@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this content. The user is talking about getting morphine and Valium during angioplasty surgery. They mention they've had seven procedures and that it wasn't just for the drugs, but it does feel good.
+
+First, I need to check if this is about drug abuse or misuse. Morphine is an opioid, usually used medically for pain. Valium is a benzodiazepine, also used for anxiety or pain. The context here is a medical procedure, so they're discussing medications used during surgery. The user is explaining their experience with the drugs in a medical setting, not promoting or glorifying their use. They mention they're not using them for recreational purposes, just as part of the procedure. There's no indication of abuse or misuse here. The terms are used in a medical context, so according to the definitions, this would be False. The explanation should note the medical context and lack of promotion of misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses medically prescribed drugs (morphine, Valium) during a surgical procedure in a factual, non-abusive context."
+}

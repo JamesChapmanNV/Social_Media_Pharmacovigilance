@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references. First, I need to read through the post carefully.
+
+The post says: "Every time one of my tweets gets even mildly popular (100+ likes) it's an incredibly stressful experience. I've watched friends crack under the strain 😥. So now I deliberately try not to get a lot of attention, here or on any other social media platform."
+
+Looking for any slang, euphemisms, or terms that might refer to illicit drugs. The main content here is about social media popularity causing stress. The user mentions friends "cracking under the strain," which could be metaphorical, but I need to check if there's any drug reference.
+
+Looking at the index terms list, there's a lot of drug names and slang. But in this post, the words used are "popular," "likes," "stressful," "crack," "strain," "attention." None of these directly match the index terms. "Crack" could refer to cocaine, but in the context of "crack under the strain," it's more likely a metaphor for breaking down under pressure. The index term for cocaine is Benzoylecgonine, but "crack" isn't listed as a slang term here. The example given in the problem had "xans" as "other" because it wasn't in the list. Similarly, "crack" here isn't a direct match for any index term. 
+
+So, there are no drug-related phrases in this post. All the terms are related to social media stress and personal experience, not drug references. Therefore, the correct response is to return an empty array since no matches were found.
+</think>
+
+[]

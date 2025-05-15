@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this content classification. The user provided a specific example, so I need to follow the guidelines carefully.
+
+First, the content is about someone's uncle's girlfriend who died from a painful, slow death with high morphine levels. The speaker is worried about their grandma going through the same thing. 
+
+I need to check if this mentions illegal or abusive drug use. The key terms here are "morphine." Morphine is a controlled substance, typically used medically for pain. However, the context here is about a prolonged, painful death despite high morphine use. The user is expressing fear about their grandma's potential fate. 
+
+The content doesn't promote, encourage, or glorify drug use. Instead, it's a personal account of a tragic death related to morphine use. The mention of morphine is in a medical context, discussing the consequences of its use in a terminal case. There's no indication of abuse or misuse being encouraged or discussed in a way that's illicit. 
+
+The example given in the task's false category was a pharmacology lecture on buprenorphine for addiction treatment. Similarly, this content is about a medical use of morphine but in a tragic scenario, not promoting or abusing it. The user is not encouraging drug use but rather expressing fear about a possible medical outcome. 
+
+So, the classification should be False because it's discussing morphine in a medical context, not promoting or glorifying its misuse. The explanation should note that the content describes a medical use of morphine in a terminal case without promoting abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a medical use of morphine in a terminal care context, not promoting or glorifying drug abuse."
+}

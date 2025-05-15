@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content example where it's mentioned that King George V was euthanized by his doctor using a lethal dose of morphine and cocaine, as claimed in a documentary. I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I should recall the definitions. True includes content that mentions illegal, RX, or OTC drugs in the context of abuse or misuse, uses slang, or encourages drug misuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+The content here is about a historical event. The drugs mentioned are morphine and cocaine. Morphine is an opioid, which is a controlled substance, and cocaine is a stimulant, also a controlled drug. However, the context is about euthanasia, which is a medical procedure. The documentary's claim is about the method used, but the key is whether the content is promoting or glorifying drug abuse.
+
+But wait, the user's example says the content is about a historical event. The drugs are used in a medical context (euthanasia), not for abuse or misuse. The explanation should focus on the context. The example given in the task might have a different scenario, but here, the content is about a historical case, not promoting drug use. So, the drugs are mentioned in a medical or historical context, not for abuse. Therefore, it's more likely to be False. However, the user's example in the problem statement might have different nuances. Let me check the definitions again.
+
+The definitions for True include abuse or misuse. If the content is about the use of drugs in a medical context, even if they are controlled substances, it's not considered illicit unless it's promoting abuse. Since the content is about a historical event, not promoting or encouraging misuse, it's False. The drugs are mentioned in a historical context, not as a recommendation or encouragement for abuse. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses historical medical use of morphine and cocaine in a documentary context, not promoting or glorifying drug abuse."
+}

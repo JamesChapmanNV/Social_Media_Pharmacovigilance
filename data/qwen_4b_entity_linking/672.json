@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post about grieving from a drug overdose and wants me to detect any drug-related references. First, I need to go through the post carefully.
+
+The post says: "I lost my brother Jeffrey to a drug overdose." The key phrase here is "drug overdose." Now, looking at the Index Terms list, I need to check if "drug overdose" is directly listed. Scanning through the list, I don't see "overdose" as an exact term. However, the Index Terms include various drugs like Codeine, Amphetamine, Fentanyl, etc. But the post mentions "drug overdose" generally, not a specific drug. 
+
+Wait, the task is to detect every word or phrase that refers to an illicit drug or substance. "Drug overdose" is a general term, but since the Index Terms don't have a specific entry for "overdose," I should check if any of the listed drugs are implied here. However, the post doesn't name a specific drug, just "drug." The Index Terms include "other" as a fallback. 
+
+Looking at the example where "snow" was labeled as "other" because it's not a drug, the same logic applies here. The phrase "drug overdose" is not a specific drug name but refers to the act of overdosing on drugs. Since the Index Terms don't have a term for "overdose," the correct index term would be "other." 
+
+But wait, the user might be referring to a specific drug that's not listed. However, the post doesn't mention any specific drug names. The only mention is "drug overdose," which is a general term. Therefore, the correct index term here is "other." 
+
+So the matched phrase is "drug overdose" and the index term is "other." But the example in the problem statement had "snow" and "white lines" as "other," so that's consistent. Therefore, the answer should be an object with index_term "other" and matched_phrase "drug overdose."
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug overdose"}]

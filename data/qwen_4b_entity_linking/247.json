@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Get your today!!! Sharing is caring🌱🌿🙏 Cannabis Review Journal". I need to detect any drug-related references here.
+
+First, I'll scan the text for any slang, euphemisms, or terms that might refer to illicit drugs. The post mentions "today" but that's probably not a drug term. Then there's "Cannabis Review Journal" which is a reference to cannabis. Looking at the index terms, "Marijuana" is listed as a term for cannabis. The phrase "Cannabis Review Journal" is a bit long, but "cannabis" is explicitly mentioned. However, the user's task is to detect every word or phrase that refers to an illicit drug. Since "cannabis" is listed under the index term "Marijuana", I should check if "cannabis" is part of the post. 
+
+Wait, the post says "Cannabis Review Journal". The word "cannabis" is part of the phrase. But the index term for cannabis is "Marijuana". However, the index terms list "Marijuana (Cannabis, Weed, Pot)" so "cannabis" is a synonym for marijuana. Therefore, "cannabis" would map to "Marijuana" as the index term. But the user's example 3 had "xans" which wasn't in the list, so it was "other". However, in this case, "cannabis" is explicitly in the index terms. 
+
+But the post is "Cannabis Review Journal". The phrase "Cannabis" is part of the text. So the matched phrase would be "Cannabis", and the index term is "Marijuana". However, the user's example 4 had "snow" and "white lines" as "other" because they weren't in the list. But in this case, "cannabis" is in the index terms. So the correct index term would be "Marijuana".
+
+Wait, but the post is "Cannabis Review Journal". The exact phrase is "Cannabis", which is a synonym for marijuana. So the matched phrase is "Cannabis", and the index term is "Marijuana". Therefore, the output should be one object with index_term "Marijuana" and matched_phrase "Cannabis".
+
+But wait, the user's example 1 had "lean" and "codeine" both mapped to Codeine. So in this case, the phrase "Cannabis" is the matched phrase, and the index term is "Marijuana". So the JSON array would have one entry. Let me check the index terms again. Yes, "Marijuana" is listed as an index term with synonyms cannabis, weed, pot. So "Cannabis" is a valid match here. Therefore, the correct output is {"index_term": "Marijuana", "matched_phrase": "Cannabis"}.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"}
+]

@@ -1,0 +1,37 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post provided is: "Yes- totally with you. Managing pain since March has taken its toll on all of us. I'm starting to imagine what a 'Long COVID blow out party' might look like? Zero gravity recliners, classical music, pain killers & morphine."
+
+First, I need to scan the post for any mentions of illicit drugs or substances. The key words here are "pain killers" and "morphine." Let me check the index terms.
+
+Looking at the list, "Morphine" is listed as an index term. The phrase "morphine" is directly mentioned. Then "pain killers" is a bit broader. The index terms include "Oxycodone" (OxyContin, etc.), "Hydrocodone" (Vicodin), "Hydromorphone," "Codeine," "Amphetamine," etc. But "pain killers" is a general term. However, in the context of the post, it's likely referring to opioids like morphine, codeine, or oxycodone. But since "pain killers" isn't explicitly listed, I need to check if any of the index terms match. 
+
+Wait, the index terms include "Morphine" and "Codeine," but "pain killers" is a general term. However, the user instructions say to link each detected phrase to its matching index term. If the phrase isn't exactly a term in the list, use "other." 
+
+In the post, "morphine" is directly mentioned, so that's a clear match. "Pain killers" is a general term, but maybe in the context, it's referring to opioids. However, since "pain killers" isn't an exact term in the index list, I should check if any of the index terms are synonyms. For example, "Oxycodone" is a painkiller, but the phrase here is "pain killers" plural. Since "pain killers" isn't in the list, it would be "other." 
+
+Wait, but the example 3 had "xans" which is not in the list, so it was "other." Similarly, "pain killers" isn't listed, so that would be "other." However, maybe "pain killers" is considered as a slang for opioids. But according to the index terms, "Morphine" is listed, but "pain killers" isn't. So "pain killers" would be "other."
+
+Wait, but the user might have intended that "pain killers" could be referring to opioids like morphine, codeine, etc. However, the task says to link to the exact index term. Since "pain killers" isn't an exact term in the list, it should be "other."
+
+So the detected phrases are "morphine" and "pain killers." "Morphine" is in the list, so that's one. "Pain killers" is not, so "other." Therefore, the JSON would have two entries: one for morphine and one for other. But wait, the example 3 had "xans" as other. So in this case, "pain killers" would be "other."
+
+Wait, but maybe "pain killers" is a slang for opioids. However, the index terms don't have a specific term for "pain killers," so according to the instructions, if the drug is not in the list, use "other." Therefore, "pain killers" is "other." 
+
+So the final answer would be:
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "pain killers"}
+]
+
+But wait, the user might have intended that "pain killers" refers to opioids. However, the index terms don't have a specific term for that. So according to the instructions, it's "other."
+
+Alternatively, maybe "pain killers" could be linked to "Oxycodone" or "Hydrocodone," but since the phrase is general, it's safer to use "other."
+
+So the answer is as above.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "pain killers"}
+]

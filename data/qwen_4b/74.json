@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this classification. The content is a comparison that normalizes intravenous drug use, comparing it to socially acceptable things like coffee and beer. It mentions heroin use by a kid in school and says it's tough to swallow as acceptable. The user is asking if this is illicit/abusive-drug-related.
+
+First, I need to check the definitions. True includes content that mentions illegal drugs in the context of abuse, misuse, or promotes it. The example given in the prompt uses "hooked" and "codeine" with an approving tone, which is why it's labeled True. 
+
+In this case, the content is talking about heroin, which is illegal. The comparison to socially acceptable things like coffee and beer is trying to justify drug use as normal. The mention of intravenous drug use specifically points to abuse. The tone is encouraging normalization, which aligns with promoting misuse. 
+
+The explanation should note that the content glorifies heroin use by comparing it to acceptable activities and justifies it as normal, which fits the True category. The key points are the mention of heroin (illegal), the context of abuse (intravenous), and the encouragement to normalize it. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content glorifies intravenous heroin use by comparing it to socially acceptable activities and justifies its normalization, promoting drug abuse."
+}

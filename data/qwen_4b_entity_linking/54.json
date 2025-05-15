@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "CHERRY liquid morphine" and talks about it tasting like vomit. The task is to detect any drug references and link them to the appropriate index terms.
+
+First, I need to go through the post sentence by sentence. The first part says "Tw// drugs? Medicine? Pain killers? Vomit/gaging." The words "drugs," "medicine," "pain killers," and "vomit" are mentioned. But "vomit" is a symptom, not a drug itself. The main focus here is on "morphine."
+
+Next, the post mentions "CHERRY liquid morphine" and describes the taste as like vomit. The key term here is "morphine." Looking at the index terms, Morphine is listed as an index term. The phrase "morphine" is directly mentioned, so that's a clear match. The term "CHERRY liquid morphine" is the exact phrase, but the index term is "Morphine." However, the example given in the problem shows that "codeine" is linked to "lean" and "codeine," so the exact phrase is used. Wait, but in the example, the matched phrase is "lean" and "codeine," which are the actual terms. So in this case, "morphine" is the matched phrase, and the index term is "Morphine."
+
+But wait, the user's post says "CHERRY liquid morphine." The exact phrase is "CHERRY liquid morphine," but the index term is "Morphine." However, the example in the problem shows that "lean" is linked to "Codeine," which is a slang term. So the matched_phrase should be the exact text from the post, even if it's a slang or a different term. However, in the index terms, "Morphine" is listed as the index term. So "morphine" in the post would map to "Morphine." The "CHERRY liquid" part is just describing the morphine, but the actual drug term is "morphine."
+
+So the matched_phrase is "morphine," and the index_term is "Morphine." The rest of the post talks about vomiting, which isn't a drug, so that's not a match. The other parts like "drugs," "medicine," "pain killers" are general terms, not specific drug references. Therefore, the only match here is "morphine" under "Morphine."
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

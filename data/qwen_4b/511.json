@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet that needs classification as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content mentions "heroin" and some other terms like "MPK" and "HAHK." 
+
+First, I need to check if there's any mention of illegal drugs in the context of abuse or misuse. The content says "people loved the heroin more," which directly references heroin, an illegal drug. The mention of heroin in this context seems to be about its popularity or use, which could imply abuse or recreational use.
+
+However, the rest of the content seems to be about some other topics, like MPK and HAHK, which might be unrelated. But the key here is the mention of heroin. The user's example 1 included "lean" and "codeine" as indicators. Similarly, here, heroin is a drug, and the context is about people loving it, which could be seen as promoting or glorifying its use. 
+
+But wait, the user's example 2 was about a pharmacology lecture discussing buprenorphine for addiction treatment, which was classified as false because it's educational. So, if the content is discussing a drug in a medical context, it's false. But here, the mention of heroin is in a context that seems to be talking about its popularity, which might be more about abuse. 
+
+So, the content includes the term "heroin," which is an illicit drug. The phrase "people loved the heroin more" suggests a positive or approving attitude towards its use, which could be considered promoting or glorifying drug use. Therefore, this should be classified as True. 
+
+But I need to make sure there's no other context that might make it false. The rest of the content seems to be about some other topics, but the presence of heroin and the context around it (people loving it) makes it a drug-related abuse context. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin,' an illicit drug, and references its popularity in a context that implies acceptance or promotion of its use."
+}

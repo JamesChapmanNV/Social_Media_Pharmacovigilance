@@ -1,0 +1,32 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I'm on them beans, alcohol, booku loud, and that codeine." I need to identify any drug references here and map them to the correct index terms.
+
+First, I'll break down each phrase. "Them beans" – I'm not sure what that refers to. "Beans" could be a slang term, but I don't see it listed in the index terms. Maybe it's a typo or a regional term. But since it's not in the list, I'll mark it as "other".
+
+Next, "alcohol" is a common substance, but it's not listed as an illicit drug in the index terms. The task says to check for illicit drugs, so alcohol might be considered a non-illicit substance. However, the example 4 mentions "white lines" as other, so maybe anything not explicitly listed is "other". So "alcohol" would be "other".
+
+Then "booku loud". "Booku" might be a slang term. Let me check the index terms. Hmm, "booku" isn't listed. "Loud" could be a slang for something else, but again, not in the list. So both "booku" and "loud" would be "other".
+
+Finally, "that codeine" is directly mentioned. Codeine is listed under the index term "Codeine", so that's a clear match.
+
+So the only valid match here is "codeine". The other terms are either not in the list or not drugs. So the JSON should have one entry for "codeine" and the rest as "other" if they are drug references. Wait, but the task says to detect every word or phrase that refers to an illicit drug. "Alcohol" is a legal substance, so it's not an illicit drug. "Beans" and "booku loud" are not in the list, so they are "other". But the example 3 shows "xans" as "other" even though it's a drug. So I think the correct approach is to check if the phrase is in the index terms. If not, use "other".
+
+So the final answer should have one entry for "codeine" and the rest as "other" for the other phrases. But wait, the user's post has "beans", "alcohol", "booku loud", and "codeine". Let me check each:
+
+- "beans": Not in the index terms. So "other".
+- "alcohol": Not listed as an illicit drug. So "other".
+- "booku loud": Not in the list. "other".
+- "codeine": Direct match. So "Codeine".
+
+So the JSON array would have one entry for codeine and the rest as other. But the example 3 shows "xans" as other. So the answer is:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+But wait, the user's post says "them beans" – maybe "beans" is slang for something else? Let me check the index terms again. The index terms include "Codeine", "Amphetamine", etc. "Beans" isn't listed. So "beans" is "other". Similarly, "booku loud" is not in the list. So the only valid match is "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

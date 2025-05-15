@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user provided a content example: "going to do another itzy album review bc listening to them is like shooting up morphine". I need to classify this as either True or False based on the given definitions.
+
+First, I need to check if there's any mention of illegal or abusive drug use. The content mentions "shooting up morphine". Morphine is a controlled substance, typically used medically but also associated with abuse. The phrase "shooting up" is a slang term for injecting drugs, which is a clear indicator of drug abuse. 
+
+The context here is comparing listening to an album to injecting morphine, which is a strong metaphor suggesting that the music is as addictive or harmful as morphine. This seems like a glorification of drug use, even if it's not directly promoting the drug. The user is using a euphemism or slang to describe the experience, which falls under the True category as per the definitions.
+
+The example also includes "itzy album review", which is a normal activity, but the comparison to morphine is the key part. Since the content is using drug-related terms in a context that implies abuse or misuse, it should be classified as True. The explanation needs to mention the slang and the implication of drug abuse.
+</think>
+
+{"label": "True", "explanation": "The content uses'shooting up morphine' as a metaphor for drug abuse, implying recreational or harmful use of a controlled substance."}

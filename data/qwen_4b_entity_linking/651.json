@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user provided a post that says: "Simply allocating additional funding via grant programs into the current educational and legacy treatment programs has not led to a decrease in overdose deaths." And then mentions a new report on addiction treatment by respected colleagues.
+
+First, I need to check if there are any drug-related references in this post. The task is to detect any words or phrases that refer to illicit drugs, including slang, euphemisms, synonyms, or cultural references. Then link each to the appropriate Index Term from the given list. If it's not on the list, use "other".
+
+Looking at the post: The main content is about funding for addiction treatment and overdose deaths. The keywords here are "addiction treatment" and "overdose deaths". But the Index Terms list includes terms like Amphetamine, Codeine, Fentanyl, etc. However, "addiction treatment" is a general term and not a specific drug. "Overdose deaths" is a result of drug use but not a specific drug name.
+
+The post doesn't mention any specific drugs by name or slang. Words like "grant programs", "educational", "legacy treatment programs" are related to treatment but not drugs. The hashtag #addiction treatment is a general term. There's no mention of any specific substances like codeine, amphetamine, fentanyl, etc. 
+
+So, there are no direct references to illicit drugs in the post. The mention of "overdose deaths" is a consequence, but not a drug name. Therefore, there are no matches to the Index Terms. Hence, the correct response would be an empty array since there are no detected phrases that refer to illicit drugs.
+</think>
+
+[]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content. The user provided the sentence: "And the heroin was no more than 6 years ago. Since it was 2015 when you were actively doing heroin and meth." 
+
+First, I need to determine if this is illicit/abusive-drug-related. The key words here are "heroin" and "meth," which are both illegal drugs. The mention of "actively doing heroin and meth" suggests that the person was using these drugs, which is a form of abuse. The context seems to be talking about past drug use, but the terms used are directly related to illicit substances. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. Even though the sentence is referring to past use, the fact that it's mentioning specific illegal drugs and the action of "doing" them (using) fits the criteria for illicit drug-related content. There's no mention of medical use or educational context here. The tone seems to be discussing past drug use, which could be part of a conversation about addiction or recovery, but the key point is the explicit mention of illegal drugs and their use.
+
+So, based on the definitions, this should be classified as True because it mentions illegal drugs (heroin, meth) in the context of their use, which is abuse or misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions illegal drugs (heroin, meth) and references their active use, indicating abuse or misuse."
+}

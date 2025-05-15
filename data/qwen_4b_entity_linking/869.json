@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says "Retweet selected by the" and wants me to detect any drug-related references. First, I need to check each word or phrase in the post against the list of index terms.
+
+Looking at the post: "Retweet selected by the". The words here are "Retweet", "selected", "by", "the". None of these words seem to match any of the index terms listed. The index terms include specific drugs like Codeine, Amphetamine, LSD, etc., but "Retweet" is a social media action, "selected" is a verb, and "by the" is a prepositional phrase. There's no slang, euphemism, or synonym for a drug here. 
+
+The example given in the problem where "xans" was considered "other" because it wasn't a listed term. Similarly, "Retweet" isn't a drug term. So, the correct response would be to mark all phrases as "other" since none of them refer to illicit drugs listed in the index terms. 
+
+Wait, but the user's instruction says to link each detected phrase to the index term. Since there are no detected phrases here, the output should be an empty array. But the examples show that even if there's no match, you have to list them as "other". However, in this case, there are no matches at all. The post doesn't contain any drug-related terms. So the JSON array should be empty. Let me confirm the examples again. 
+
+In Example 3, "xans" wasn't a listed term, so it was "other". But the post here has no terms. So the correct output is an empty array. But the user's instruction says to return only the valid JSON array. So if there are no matches, the array is empty. Therefore, the answer is an empty list.
+</think>
+
+[]

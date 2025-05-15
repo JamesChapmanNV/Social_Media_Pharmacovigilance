@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content classification. The user provided a statement about a general surgeon's explanation regarding morphine use post-surgery. The key here is to determine if this content is related to illicit or abusive drug use.
+
+First, I need to check the context. The content mentions morphine, which is a controlled substance, but the explanation is about its medical use in a surgical setting. The surgeon is discussing titration for pain management and withdrawal, which is part of medical treatment. There's no mention of abuse, misuse, or promotion of drug use. The tone is educational and clinical, focusing on proper administration and recovery. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. Here, morphine is used medically, not for abuse. The terms are in a medical context, so it's not promoting misuse. The explanation is about treatment, not encouragement or glorification of drug use. Therefore, this should be classified as False. The explanation should highlight the medical context and lack of promotion of abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses medical use of morphine in a surgical context, focusing on pain management and withdrawal protocols, with no indication of abuse or promotion of drug misuse."
+}

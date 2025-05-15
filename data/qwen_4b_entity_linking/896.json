@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Oh yea I did Beerus and arak cause i remembered the event existed so why not". I need to check for any drug-related references here.
+
+First, I'll look at the words "Beerus" and "arak". "Beerus" isn't on the index terms list. Let me check the list again. The index terms include things like Codeine, Amphetamine, Benzodiazepines, etc. "Beerus" doesn't seem to be a drug term here. Maybe it's a reference to a character from a show, like the Dragon Ball character Beerus? That's probably a cultural reference, not a drug.
+
+Next, "arak". Arak is a type of spirit, a strong alcoholic drink, often associated with the Middle East. The index terms don't list arak as a drug. The example in the task mentions that if the drug isn't in the list, use "other". Since arak is an alcohol, but not listed as an illicit drug in the index terms, it would fall under "other".
+
+So, both "Beerus" and "arak" are not in the index terms. Therefore, each should be mapped to "other". The task says to return a JSON array with each match. The post has two phrases: "Beerus" and "arak". Both are not in the index terms, so both get "other" as the index term.
+
+I need to make sure there are no other terms. The rest of the post is about remembering an event and why not, which doesn't mention any drugs. So the final answer should have two entries, both with "other" and the respective phrases.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "Beerus"},
+  {"index_term": "other", "matched_phrase": "arak"}
+]

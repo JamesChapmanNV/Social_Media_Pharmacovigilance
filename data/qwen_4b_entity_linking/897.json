@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Went to 3 of my regular kedai arak to buy...no stock. On a very long waiting list." I need to detect any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs or substances. The post mentions "kedai arak." Kedai is a Malaysian term for a shop, and arak is a traditional alcoholic drink, often made from palm sugar and fermented. It's a local beverage, not an illicit drug. The user is talking about buying arak but there's no stock, so they're waiting. 
+
+Now, checking the index terms. The list includes drugs like codeine, amphetamine, benzodiazepines, etc. But arak isn't listed as an illicit drug. The example where "snow" was considered "other" because it's not a drug. Similarly, "arak" here is a regular drink, not a drug. So the matched phrase would be "arak," but since it's not in the index terms, it should be "other." 
+
+Wait, but the user is buying arak, which is a drink. The task is to detect drug references. Since arak is a legal drink, even though it's strong, it's not an illicit drug. So the correct index term here is "other." But the post doesn't mention any drug use, just buying a drink. So there are no drug references here. Therefore, the output should be an empty array. 
+
+Wait, but the user might be implying something else. But according to the instructions, only detect if it's a slang, euphemism, etc. Since arak is a known drink, not a drug, even if it's strong, it's not on the list. So the answer is no matches. Hence, the JSON array is empty.
+</think>
+
+[]

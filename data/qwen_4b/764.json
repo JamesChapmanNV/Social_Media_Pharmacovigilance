@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "im making a heartstopper on crack video and im just laughing at myself like an idiot😭😭". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False).
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting. Also, slang or cultural references indicating recreational use or abuse. The example given in the prompt mentions "lean" and "codeine" as examples. 
+
+In the content, "crack" is a slang term for a type of cocaine, which is an illegal drug. The phrase "heartstopper" might be a slang term, but in this context, it's used in a video, which could imply that the person is making content about using crack. The tone here is humorous ("laughing at myself like an idiot"), but the key point is the mention of "crack," which is a controlled substance and illegal. 
+
+The user is creating a video about using crack, which is promoting or glorifying drug use. Even if the person is laughing at themselves, the act of making a video about using crack is still related to abuse or misuse. So according to the definitions, this would be classified as True. The explanation should mention the mention of crack and the context of creating content about it, which could be seen as promoting or glorifying drug use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'crack,' a controlled substance, and implies creating content about drug use, which aligns with promoting or glorifying abuse."
+}

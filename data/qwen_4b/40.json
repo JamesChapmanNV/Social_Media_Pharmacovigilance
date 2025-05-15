@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is a personal statement about losing a father to midazolam and morphine in Scotland in 2020. The user is in the angry stage of grief and finds it hard.
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, or promoting use. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+The content mentions midazolam and morphine. Both are medications. Midazolam is a benzodiazepine, sometimes used in medical settings, but it's also a controlled substance. Morphine is an opioid, used for pain relief. However, the context here is about the person's father dying from these drugs. The user is expressing grief and anger, not promoting or discussing abuse. There's no mention of using, buying, promoting, or glorifying drug use. The terms are used in a medical context (death from medication), not in a way that suggests misuse or abuse. The user is not encouraging or glorifying drug use but rather sharing a personal tragedy. Therefore, this should be classified as False because it's a personal account of a medical death, not promoting or discussing drug abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a personal tragedy involving medical medications (midazolam, morphine) in a context of grief, not promoting, abusing, or glorifying drug use."
+}

@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Keep up the pressure. They are starting to crack". I need to check if there are any drug-related references here.
+
+First, I'll go through each word and phrase. The post is pretty straightforward. "Keep up the pressure" could be a metaphor, maybe related to stress or effort. "They are starting to crack" might mean something is breaking down, but not sure if that's a drug reference.
+
+Looking at the index terms list, I need to see if any of the phrases match. The terms include things like Codeine, Amphetamine, Benzodiazepines, etc. The words here are "pressure" and "crack". 
+
+"Crack" could refer to crack cocaine, but in the index terms, crack cocaine isn't listed. The term "crack" isn't directly listed, but maybe "crack" as in "crack cocaine" would be under "other" since it's not in the index. However, the post doesn't explicitly mention "crack cocaine" or any other drug names. 
+
+The phrase "keep up the pressure" might be a slang term, but I don't see it listed in the index terms. The example given in the problem had "xans" which was categorized as "other" because it wasn't a specific drug term. Similarly, "pressure" here isn't a drug term. 
+
+So, there are no direct matches to the index terms. Therefore, the correct response would be to mark both phrases as "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "pressure"}, {"index_term": "other", "matched_phrase": "crack"}]

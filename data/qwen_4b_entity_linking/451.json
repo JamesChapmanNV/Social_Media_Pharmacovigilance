@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index terms, and return a JSON array.
+
+First, I need to look at the post: "Demand is crazy high. That plus chip shortage. Every dealer I called had around 100 on their waitlist and said they get about 20-25 delivered a month."
+
+Looking for drug-related terms. The words here are "Demand," "crazy high," "chip shortage," "dealer," "waitlist," "delivered." 
+
+Now, checking the index terms. The key here is to see if any of these phrases match the listed index terms. "Demand" isn't a drug term. "Crazy high" could be slang, but looking at the index terms, "Amphetamine" has synonyms like "Speed," "Bennies," "Adderall." But "crazy high" is more general. "Chip shortage" doesn't relate. "Dealer" is a term for someone selling drugs, but not a drug itself. "Waitlist" and "delivered" are about supply, not the drugs themselves.
+
+Wait, the user is talking about dealers and their stock. The mention of "waitlist" and "delivered" might relate to the supply chain of drugs, but the actual drugs mentioned here are not explicitly named. The post doesn't use any specific drug terms like codeine, amphetamine, etc. So, the phrases here don't directly match any index terms. 
+
+In the examples, "xans" was considered "other" because it wasn't a listed term. Similarly, "snow" in example 4 was "other." So, in this case, the post doesn't mention any specific drugs. The terms like "dealer" and "waitlist" are related to the drug trade but not the drugs themselves. Therefore, there are no matches to the index terms. 
+
+So the answer should be an empty array. But wait, the user's example 3 had "xans" as "other." So if the post doesn't mention any drug names, then all phrases are "other." But the post doesn't have any drug names. The words "dealer" and "waitlist" are not drugs. Therefore, the correct response is an empty array. But according to the instructions, if there are no matches, should I return an empty array? The examples show that when there are no matches, like in example 3, it's possible. However, in example 4, there were two "other" entries. 
+
+Wait, the user's example 3: "Popped two xans before class." The answer was "other" because "xans" wasn't a listed term. So in this case, the post doesn't mention any drug terms. Therefore, the correct response is an empty array. But the user's instruction says to return only the JSON array with matches. If there are no matches, then the array is empty. 
+
+So the answer here is an empty array. But let me double-check. The post talks about dealers, waitlists, and deliveries, but not specific drugs. So no phrases match the index terms. Therefore, the JSON array is empty.
+</think>
+
+[]

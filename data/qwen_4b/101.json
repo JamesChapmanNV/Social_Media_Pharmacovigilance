@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided some content that needs classification as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is:
+
+"overdose is legitimently a medical emergency. where is the source for this "Convicted felon who held a gun to the stomach of a pregnant woman for drug money" claim? loss of life no matter how shitty is not in consequential"
+
+First, I need to check each part. The first sentence talks about overdose being a medical emergency. That's a medical context, so that's probably False. The second part is asking for a source of a claim about a convicted felon using a gun for drug money. That seems like a specific claim, but the user is asking for the source, not promoting drug use. The last part mentions loss of life not being consequential, which might be a bit vague, but not directly related to drug abuse.
+
+Looking at the definitions, True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. False includes medical, educational, or preventative contexts. The content here doesn't mention any drugs in a way that suggests abuse or promotion. The mention of drug money is part of a claim, but the user is asking for the source, not endorsing the action. So the classification should be False. The explanation would note that the content is about a specific claim and medical emergency, not promoting drug use.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a specific claim about a criminal act related to drug money and mentions overdose as a medical emergency, but does not promote, glorify, or explicitly reference drug abuse or misuse."
+}

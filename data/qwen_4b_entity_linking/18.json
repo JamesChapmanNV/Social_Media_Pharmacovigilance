@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the correct Index Term, and return a JSON array.
+
+First, I'll read the post carefully: "When I were growing up all we had for brekkie was an intravenous injection of morphine, and had only a penguin in the Gobi to look forward to for supper!" 
+
+Looking for drug references here. The first part mentions "intravenous injection of morphine." Morphine is listed in the Index Terms under "Morphine" as the prototypical opioid. So "morphine" is a direct match. 
+
+Next, the phrase "had only a penguin in the Gobi to look forward to for supper!" The "penguin in the Gobi" is a bit cryptic. Wait, maybe that's a reference to something else. But looking at the Index Terms, there's "Xylazine" which is a veterinary sedative found as a street drug adulterant. However, "penguin" doesn't directly relate to any drug term here. The Gobi is a desert, but maybe it's a metaphor. However, the user's instruction says to check for slang, euphemisms, etc. Since "penguin" isn't listed in the Index Terms, and there's no direct drug reference here, it's probably "other" for that phrase. 
+
+So the only drug reference here is "morphine," which maps to the Index Term "Morphine." The rest of the post doesn't mention any other drugs. The "penguin" part is likely a metaphor or unrelated, so it's marked as "other."
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

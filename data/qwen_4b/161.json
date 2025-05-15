@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is about the legalization of cannabis in New York and California. It mentions that legalization led to 75% of mom & pop pot growers being out of business in CA. The key here is to determine if this is promoting or discussing drug abuse.
+
+First, the mention of cannabis legalization is a political or economic discussion. The text talks about the impact of legalization on growers, which is about the business side, not about misuse or abuse. There's no mention of recreational use, promoting drugs, or encouraging abuse. The terms used are about the economic effects of legalization, not about drug use. So, it's in a legal or economic context, not promoting drug abuse. Therefore, the classification should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses the economic impact of cannabis legalization, not promoting or glorifying drug abuse or misuse."
+}

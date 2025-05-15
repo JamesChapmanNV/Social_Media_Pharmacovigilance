@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "ambien," "valium," and "codeine." My task is to detect any drug references and link them to the appropriate index terms.
+
+First, I'll go through each word or phrase in the post. "Ambien" is a brand name for zolpidem, which is listed in the index terms under Zolpidem. So that's one match. Then "valium" refers to bromazolam, which is a designer benzodiazepine listed as Bromazolam. Lastly, "codeine" is explicitly listed under Codeine. 
+
+I need to check if there are any other terms. The rest of the post doesn't mention any other drugs. The phrases "generations later" and "rubs cobwebs from eyes" are just context and don't relate to drugs. So the three matches are Ambien, Valium, and Codeine. Each of these maps directly to their respective index terms. No need to use "other" here since all are explicitly listed. Let me make sure I'm not missing any synonyms or slang. The example shows that "xans" would be "other" if not listed, but here the terms are all in the list. So the JSON array should have three entries.
+</think>
+
+[
+  {"index_term": "Zolpidem", "matched_phrase": "ambien"},
+  {"index_term": "Bromazolam", "matched_phrase": "valium"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

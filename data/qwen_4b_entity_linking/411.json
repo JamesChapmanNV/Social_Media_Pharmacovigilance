@@ -1,0 +1,42 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post provided is: "Raven literally groomed and beats zainy, bought him his phone and goes through all his messages and tells him what to tweet like statements about fake rape allegations. Go do what you do best and shoot up heroin and take another ahegao selfie, egirl."
+
+First, I need to identify any words or phrases that refer to illicit drugs or substances. Let's break down the post sentence by sentence.
+
+The first part talks about Raven grooming and beating Zainy, buying him a phone, and monitoring his messages. This seems like a description of abusive behavior, but no drug references here.
+
+The second part is the key part: "Go do what you do best and shoot up heroin and take another ahegao selfie, egirl." 
+
+"Shoot up heroin" is a clear reference to heroin, which is an illicit opioid. So "heroin" is a direct match. 
+
+Next, "ahegao" is a term I need to check. From the index terms, I don't see "ahegao" listed. However, looking at the list, there's a mention of "MDMA" (Ecstasy, Molly) and other substances. But "ahegao" is a slang term for a type of drug, specifically a synthetic cannabinoid or a drug that's been used in some contexts. Wait, looking at the index terms, there's "delta-8-THC-COOH" and "delta-9-THC-COOH", but not ahegao. Alternatively, "ahegao" might be a misspelling or a variant of "ahegao", which is a term used in some online communities for a specific drug. However, in the provided index terms, there's no exact match. So according to the instructions, if the drug isn't in the list, use "other". 
+
+But wait, the user might have a specific term in mind. Let me check the index terms again. The index terms include "MDMB-4en-PINACA butanoic acid" as a metabolite of MDMB-4en-PINACA, which is a synthetic cannabinoid. However, "ahegao" isn't listed. So "ahegao" would be "other". 
+
+So the matched phrases are "heroin" and "ahegao". 
+
+Now, checking the index terms for "heroin": looking through the list, "Morphine" is listed, but "heroin" is not directly listed. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but heroin isn't explicitly listed. However, in the example given, "Codeine" is linked to "lean" and "codeine". So for heroin, since it's not in the index terms, it would be "other"? Wait, but the index terms include "Fentanyl (China White, Apache, Duragesic)" and "Methadone (Dolophine, Methadose, Done)", but heroin isn't listed. However, the example in the problem statement includes "Codeine" as an index term, and "lean" is a slang for codeine. So if "heroin" isn't in the index terms, then it should be "other". 
+
+But wait, looking back at the index terms, there's "Heroin (MS Contin, Miss Emma, Morph)"? Wait no, the index terms list "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, in the example given, "Codeine" is linked to "lean" and "codeine". So if "heroin" isn't in the index terms, then it would be "other". 
+
+But wait, the user's instruction says to link each detected phrase to its matching index term. If the drug is not in the list, use "other". So "heroin" is not in the index terms, so it would be "other". However, looking back, the index terms do have "Morphine", but heroin is a different drug. So "heroin" would be "other".
+
+Wait, but in the example given, "Codeine" is linked to "lean" and "codeine". So if "heroin" is not in the index terms, then "heroin" would be "other". However, in the index terms, there's "Methadone" and "Fentanyl", but not heroin. So "heroin" would be "other".
+
+So the matched phrases are "heroin" and "ahegao". Both would be "other" because they are not in the index terms. But wait, let me check again. The index terms include "Heroin" in the list? Let me check the index terms again.
+
+Looking at the index terms list: the first entry is "2,6-Xylidine", then "2-Amino-5-Chloropyridine", then "2-Fluoro-2-Oxo PCE (CanKet, 2F-NENDCK, 2-FXE)", and so on. Scrolling through, I don't see "heroin" listed. The closest is "Morphine" and "Fentanyl". So "heroin" is not in the list. Therefore, "heroin" would be "other". 
+
+Similarly, "ahegao" is not in the index terms, so that's also "other".
+
+Wait, but the user's example 3 has "xans" which is not in the index terms, so it's "other". So in this case, "heroin" and "ahegao" would both be "other".
+
+But wait, maybe "ahegao" is a misspelling of "ahegao" which is a slang term for a specific drug. Let me think. Ahegao is a term used in some contexts for a synthetic drug, but according to the index terms, there's no entry for it. Therefore, it's "other".
+
+So the final answer would be two entries: "heroin" and "ahegao", both mapped to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "ahegao"}
+]

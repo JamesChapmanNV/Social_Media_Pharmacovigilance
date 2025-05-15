@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this content classification. The user provided a specific example, so I need to follow the guidelines carefully.
+
+The content is: "When I were growing up all we had for brekkie was an intravenous injection of morphine, and had only a penguin in the Gobi to look forward to for supper!"
+
+First, I need to check if this mentions illegal, RX, or OTC drugs in the context of abuse or misuse. The mention of "morphine" is a controlled substance, which is illegal. However, the context here is about childhood experiences, describing a past event where morphine was used in an intravenous injection. The phrase "intravenous injection of morphine" could be part of a medical or historical context, but the mention of "brekkie" (breakfast) and the absurdity of having a penguin in the Gobi for supper suggests a humorous or exaggerated narrative. 
+
+The key here is whether the content is promoting, encouraging, or glorifying drug use. The sentence seems more like a hyperbolic or satirical statement rather than promoting abuse. The use of "intravenous injection" might imply a medical setting, but the context of "all we had for brekkie" and the mention of a penguin in the Gobi (which is a real place but not a typical food) adds a surreal element. 
+
+The definitions state that True includes content that mentions illegal drugs in the context of abuse or misuse. However, if the context is not promoting or glorifying, but just a narrative, it might be False. The user's example 1 had "hooked" and "everyday" with an approving tone, which was True. But here, the tone seems more like a joke or a strange story, not necessarily promoting drug use. 
+
+So, the explanation should note that while morphine is a controlled substance, the context is not promoting abuse. The mention of "intravenous injection" might be part of a medical context, but the overall tone is more humorous or surreal, not encouraging misuse. Therefore, the label would be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references morphine in a historical/narrative context, not promoting abuse, and uses hyperbolic language rather than glorifying drug use."
+}

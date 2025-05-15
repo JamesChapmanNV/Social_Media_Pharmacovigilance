@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about someone winning a WSOP bracelet, and I need to check for any drug-related references.
+
+First, I'll read through the post carefully. The post mentions a 36-year-old dealer winning a gold bracelet in a poker event. The key words here are "dealer" and "WSOP," but I don't see any terms related to drugs. The example given in the problem had phrases like "lean" and "codeine" linked to Codeine. But in this post, there's no mention of any drugs or slang terms. 
+
+I need to make sure I'm not missing any hidden references. Words like "dealer" could sometimes be slang, but in this context, it's referring to a poker dealer, not a drug dealer. The hashtag #WSOP is about a poker tournament, so that's unrelated. 
+
+Looking at the index terms provided, none of the drug names or synonyms are present here. The post doesn't mention any substances, metabolites, or terms like "codeine," "amphetamine," "cocaine," etc. 
+
+So, there are no matches. The answer should be an empty array since there are no drug-related phrases detected. The user's example 3 had "xans" which was marked as "other," but here, there's no such term. Therefore, the correct response is an empty JSON array.
+</think>
+
+[]

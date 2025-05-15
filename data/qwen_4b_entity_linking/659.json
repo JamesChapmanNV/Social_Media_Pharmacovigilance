@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index term, and return a JSON array.
+
+First, I'll read the provided post carefully: "Two Merseyside men have been charged after police seized drugs worth nearly £4 million. 31 kilos of heroin and 10 kilos of cocaine were seized during raids after a van was stopped in Huyton. Gareth Purcell (65) of Liverpool and Gareth Hooton (34) of Huyton are due in court today."
+
+Looking for drug references. The first thing I notice is "heroin" and "cocaine" in the sentence. Checking the index terms, both are listed. Heroin is under "Morphine" as the prototypical opioid. Cocaine is listed as "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. So "heroin" maps to "Morphine" and "cocaine" maps to "Benzoylecgonine".
+
+I need to make sure there are no other terms. The rest of the post mentions charges, police, seizures, but no other drug terms. The words "drugs" is general, but the specific drugs mentioned are heroin and cocaine. The JSON should have two entries: one for each drug with their respective index terms. No other terms are present, so the answer should be straightforward.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "heroin"},
+  {"index_term": "Benzoylecgonine", "matched_phrase": "cocaine"}
+]

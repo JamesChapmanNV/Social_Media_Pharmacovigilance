@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I'm sippin that lean, hurtin my splean but I'm sippin it clean, sippin codeine...." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False).
+
+First, I'll break down the content. The words "lean" and "codeine" are mentioned. "Lean" is slang for a type of crack cocaine, which is an illicit drug. "Codeine" is an opioid, often used in medications but also a controlled substance. The phrases "sippin that lean" and "sippin codeine" suggest consumption of these substances. The mention of "hurtin my splean" (probably a typo for "spleen") indicates possible health effects from using the drug. The phrase "sippin it clean" might imply using the drug in a way that's not medically supervised, which could be a sign of abuse.
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse, using slang or euphemisms. The content here uses slang ("lean") and mentions codeine, which is an illicit drug. The context seems to be about using these substances, possibly in a recreational or abusive way. The mention of health effects like hurting the spleen suggests misuse. The tone seems to be approving or descriptive of the use, which fits the True category. 
+
+The example given in the prompt where "lean" and "codeine" were mentioned as True aligns with this. The other example was about a pharmacology lecture, which is educational and thus False. Here, the content is about personal use and possible abuse, so it's more likely to be classified as True. There's no mention of medical use or educational context here. The terms are used in a way that suggests recreational use, which is abusive. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses slang ('lean') and mentions codeine, indicating recreational drug use and potential abuse with health-related consequences."
+}

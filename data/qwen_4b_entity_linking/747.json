@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions drug dealers selling coke and weed. My task is to identify any drug-related references and map them to the correct index terms from the given list.
+
+First, I'll look at the post: "If you gon fw a drug dealer at least fw a nigga who sell coke not a nigga who sell weed to his bros". The key phrases here are "coke" and "weed". 
+
+Now, checking the index terms. "Coke" is a slang term for cocaine, which is listed as Benzoylecgonine (BZE, Ecgonine benzoate) in the index terms. However, looking at the list, cocaine's index term is actually "Benzoylecgonine". But wait, in the example given, "codeine" maps to "Codeine", so "coke" should map to "Benzoylecgonine". 
+
+Then "weed" is a common slang for marijuana, which is listed as "Marijuana (Cannabis, Weed, Pot)". So "weed" would map to "Marijuana".
+
+But wait, the user's example 4 mentions "snow" and "white lines" as "other" because they aren't on the list. However, in this case, "coke" and "weed" are explicitly listed. So "coke" is Benzoylecgonine, and "weed" is Marijuana. 
+
+So the JSON should have two entries: one for "Benzoylecgonine" with "coke" and another for "Marijuana" with "weed". 
+
+I need to make sure that the exact phrases are matched. The post uses "coke" and "weed", which are exact matches. So the correct index terms are Benzoylecgonine and Marijuana. 
+
+Therefore, the output should be two objects in the array.
+</think>
+
+[
+  {"index_term": "Benzoylecgonine", "matched_phrase": "coke"},
+  {"index_term": "Marijuana", "matched_phrase": "weed"}
+]

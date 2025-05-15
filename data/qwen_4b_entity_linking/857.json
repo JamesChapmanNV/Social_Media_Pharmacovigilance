@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user is asking for help with a post about a dealer waiting for a front passenger occupant sensor for their Aviator. The task is to detect any drug-related references in the post and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post says: "can you help my dealer out? They have been waiting over a MONTH for a front passenger occupant sensor for my Aviator. It's getting old not being able to use my front passenger seat."
+
+Looking for any slang, euphemisms, or terms that might refer to illicit drugs. The words here are "dealer," "front passenger occupant sensor," "Aviator," and "front passenger seat." 
+
+Now, checking the list of index terms. The term "dealer" could be a reference to a drug dealer, but in this context, it's more likely referring to a car dealer or someone selling a vehicle. The phrase "front passenger occupant sensor" seems technical, related to car parts. There's no mention of any drugs or substances here. 
+
+The user might be confused, but the post is about a car part issue, not drug-related. The word "dealer" could be a red herring, but without any other terms matching the index list, there's nothing to link here. 
+
+So, there are no drug references in this post. The answer should be an empty array since no matches were found.
+</think>
+
+[]

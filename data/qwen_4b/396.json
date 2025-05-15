@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Hit her with no condom.. Had to make her eat a plan B.. And I'm sippin on that codeine not brandy." I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll break down the content. The mention of "plan B" usually refers to emergency contraception, which is a medical context. But here, it's used in a scenario where someone is forced to take it, which might indicate a situation of abuse. However, the main focus here is on "codeine." Codeine is an opioid, and the phrase "sippin on that codeine not brandy" suggests consumption of codeine, which is a controlled substance. 
+
+Now, considering the definitions: True includes mentions of illegal, RX, or OTC drugs in contexts of abuse or misuse. The use of codeine here is in a way that implies it's being consumed, possibly in a non-medical or recreational context. The mention of "sippin" (sipping) might indicate ingestion, which could be part of drug use. Also, the overall tone seems to describe a situation where someone is being forced into actions, which might relate to abuse. However, the key here is whether the content is promoting or glorifying the misuse of drugs. 
+
+But wait, the user is using "plan B" in a context that might be related to sexual activity without protection, which could be a form of abuse. However, the main drug here is codeine. The phrase "not brandy" might be a slang or euphemism, but codeine is a controlled substance. 
+
+The content mentions codeine in a way that's not in a medical context. The person is "sippin on that codeine," which could imply recreational use. Also, the mention of "plan B" might be a red herring, but the codeine part is the key. Since codeine is an opioid, and the content is about using it, that would fall under illicit or abusive use. 
+
+So the label should be True because it mentions codeine (a controlled substance) in a context that implies misuse. The explanation should note the mention of codeine and the context of use. The "plan B" part might be a separate issue, but the main drug here is codeine, which is a controlled substance. Therefore, the classification is True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' a controlled substance, in a context implying recreational use ('sippin on that codeine')."
+}

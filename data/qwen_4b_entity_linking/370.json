@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "vol. 11 actiq diaries, d-day here come the drugs (fentanyl & methadone)". I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll go through the post word by word. The phrase starts with "vol. 11 actiq diaries" – "actiq" might be a typo or a brand name. Wait, looking at the index terms, there's "Actiq" listed as a product, but in the index terms provided, I don't see "Actiq" mentioned. Wait, checking the list again: the index terms include "Fentanyl (China White, Apache, Duragesic)" and "Methadone (Dolophine, Methadose, Done)". So "fentanyl" and "methadone" are directly listed. 
+
+In the post, the user writes "(fentanyl & methadone)". So "fentanyl" and "methadone" are explicitly mentioned. According to the index terms, both are listed as separate index terms. So "fentanyl" maps to "Fentanyl" and "methadone" maps to "Methadone". 
+
+Now, checking if there are any other phrases. "actiq" might be a misspelling of "Actiq", which is a brand name for a fentanyl patch. But in the index terms, "Fentanyl" is listed, and "Actiq" isn't in the list. However, since "fentanyl" is in the list, and the user wrote "fentanyl & methadone", those are the key terms. The "actiq" part might be a brand name, but since it's not in the index terms, it would be "other". But wait, the user's post has "(fentanyl & methadone)" in parentheses, so the main drugs here are fentanyl and methadone. The "actiq diaries" part might be a reference to a series or a product, but "actiq" isn't in the index terms. However, since the user is mentioning "fentanyl" and "methadone" directly, those are the ones to map. 
+
+So the matched phrases would be "fentanyl" and "methadone", each mapping to their respective index terms. The "actiq" part is not in the index terms, so it would be "other". But wait, the user's post is "d-day here come the drugs (fentanyl & methadone)". The parentheses are indicating the drugs mentioned. So the main phrases are "fentanyl" and "methadone". The rest of the text is "vol. 11 actiq diaries, d-day here come the drugs". "actiq" is a brand name for a fentanyl product, but since "fentanyl" is already listed, maybe "actiq" is considered part of the fentanyl reference. However, the index terms don't have "Actiq" as a separate term. So "actiq" would be "other". But the user is explicitly stating "fentanyl & methadone", so those are the two main terms. 
+
+So the correct JSON array should have two entries: one for "Fentanyl" with "fentanyl" and another for "Methadone" with "methadone". The "actiq" is not in the index terms, so it would be "other". But wait, the user's post is "d-day here come the drugs (fentanyl & methadone)". The parentheses are part of the text, so the phrases "fentanyl" and "methadone" are directly mentioned. Therefore, those are the two matches. The "actiq" is part of the title "actiq diaries", but since "actiq" isn't in the index terms, it's "other". However, the user is mentioning "fentanyl & methadone" in parentheses, so those are the key terms. 
+
+Wait, the task says to detect every word or phrase that refers to an illicit drug. "Actiq" is a brand name for a fentanyl product, but since the index terms don't list "Actiq", it would be "other". But the user is using "fentanyl" directly, which is in the index terms. So the correct matches are "fentanyl" and "methadone".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "Methadone", "matched_phrase": "methadone"}
+]

@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this content. The user mentioned "morphine should make you feel high" and "get spaced out." Morphine is a controlled substance, typically used medically for pain, but here it's being referenced in a way that suggests recreational use. The mention of feeling high and spaced out points to drug abuse. Also, the context of someone being sick and the suggestion to get strong cigars might imply using drugs for euphoria. The tone seems supportive of using morphine for recreational purposes, which is abusive. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions morphine in a context implying recreational use ('feel high','spaced out') and suggests obtaining drugs for euphoric effects, indicating abuse or misuse."
+}

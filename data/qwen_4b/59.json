@@ -1,0 +1,18 @@
+<think>
+Okay, let's see. The user provided a content snippet that's a bit long. The task is to determine if it's illicit/abusive-drug-related. 
+
+First, I need to parse the content. The user mentions taking ER morphine since 1993 and IR morphine now. They talk about not switching to oxy for trauma or surgery, and not using Soma or Ativan for certain situations. Morphine is a controlled substance, so that's a key point. The mention of specific medications like morphine, oxy, Soma, Ativan, and Loritab elixir are all prescription drugs. 
+
+Now, the context here is about the user's long-term use of morphine and their resistance to switching to other medications. The tone seems to be about personal medical history and preference. The user is not promoting or glorifying drug use, but rather discussing their own medical history. 
+
+The definitions say that True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. However, in this case, the user is talking about their own medication use, not promoting or encouraging misuse. The content is about their personal experience with medications, not about using them in a way that's illegal or abusive. 
+
+The terms like "ER morphine" and "IR morphine" are medical terms related to dosage forms, not slang or euphemisms. The mention of not switching to other drugs might indicate a preference or habit, but not necessarily abuse. There's no indication of encouraging or glorifying misuse. 
+
+So, the content is about the user's medical history and medication use, which falls under the False category because it's not promoting abuse or misuse. The drugs mentioned are in a medical context, even though they are controlled substances. The user is not advocating for their use beyond what's medically appropriate.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses personal medical history and medication use (morphine, Soma, Ativan) in a factual, non-promotional context without indicating abuse, misuse, or encouragement of drug use."
+}

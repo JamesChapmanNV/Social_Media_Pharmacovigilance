@@ -1,0 +1,26 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I need to read the provided post carefully. The post is: "It's the 1994 Crime Bill turned into Medical Policy. It's gross, the same party is handing out heroin needles, and helping a cartel price insulin out of the market."
+
+Looking for drug-related terms. The first part mentions the 1994 Crime Bill, which is a policy, but not a drug itself. The second part says "handing out heroin needles." Heroin is an illicit drug, so "heroin" is a direct reference. Then "price insulin out of the market." Insulin is a medical drug, but here it's being priced out by a cartel. However, insulin isn't listed in the index terms. The index terms include things like heroin, codeine, fentanyl, etc. So "insulin" isn't in the list, so it would be "other."
+
+Wait, but the user's task is to detect any references to illicit drugs or substances. Insulin is a prescription medication, but if a cartel is pricing it out, maybe that's a reference to drug-related activities. But according to the index terms, insulin isn't listed. The index terms include things like "Benzoylecgonine (BZE, Ecgonine benzoate) – The primary metabolite of cocaine measured in urine drug testing." But insulin isn't there. So "insulin" would be "other."
+
+So in the post, the phrases are "heroin needles" and "price insulin out of the market." "Heroin" is a direct term. "Needles" here refers to syringes used for injecting heroin, which is part of the drug use context. However, the index terms don't have "needles" as a term. Wait, the index terms are for the actual drugs or their metabolites. So "heroin" is in the list as an index term. The phrase "heroin needles" would have "heroin" as the matched phrase. "Needles" is a tool, not a drug, so it's not in the index terms. So only "heroin" is a match here.
+
+Then "price insulin out of the market." Insulin is a prescription drug, but not an illicit drug. The index terms don't list insulin, so that would be "other." However, the user's task is to detect any references to illicit drugs. Since insulin is a medical drug, not an illicit one, even if it's being manipulated by a cartel, it's not in the index terms. So "insulin" would be "other."
+
+So the JSON array should have one entry for "heroin" and one for "insulin" as "other." But wait, the user's example 4 shows that "snow" and "white lines" are "other" even though they might not be drugs. So in this case, "heroin" is a direct match, and "insulin" is not in the index terms, so "other."
+
+Wait, but the index terms include "Methadone (Dolophine, Methadose, Done)" and "Morphine (MS Contin, Miss Emma, Morph)" but not insulin. So "insulin" is not in the list, so it's "other."
+
+Therefore, the matched phrases are "heroin" and "insulin." But the user's example 3 shows "xans" is "other" even though it's a drug. So in this case, "heroin" is an index term, and "insulin" is "other."
+
+So the final answer should be two entries: one for "heroin" and one for "insulin" as "other."
+</think>
+
+[
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "insulin"}
+]

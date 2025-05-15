@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I'll read through the post carefully. The post says: "Up, after fuck all sleep, because my left foot is being an absolute bastard again. Fuck you, left foot! Give me codeine, or give me death. ☠"
+
+Looking for drug-related terms. The phrase "Give me codeine" is straightforward. "Codeine" is listed in the Index Terms under Codeine. So that's a clear match. The other parts of the post mention "fuck all sleep" and "left foot," which don't seem related to drugs. The exclamation "Give me codeine, or give me death" is a strong statement, but the key term here is "codeine." 
+
+I need to check if there are any other terms. The word "codeine" is explicitly mentioned. Are there any slang terms or synonyms? The example given in the problem includes "lean" as a slang for codeine. However, in this post, the term used is "codeine" directly. So the matched phrase would be "codeine," and the index term is Codeine. 
+
+The rest of the post doesn't mention any other drugs. The other parts are about sleep deprivation and a foot, which are not drug-related. So the only match is "codeine." 
+
+I need to make sure that "codeine" is in the Index Terms. Checking the list, yes, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" maps directly to Codeine. 
+
+No other terms in the post are drug-related. The response should be an array with one object: index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

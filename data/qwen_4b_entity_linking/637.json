@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "It's gonna fuck me up if Isbell plays Codeine and Alabama Pines next Thursday." I need to identify any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "Codeine" directly. According to the index terms, Codeine is listed with synonyms like "Lean," "Purple Drank," "Schoolboy." The phrase "Codeine" is explicitly listed, so that's a clear match.
+
+Then there's "Alabama Pines." I need to check if that's a slang term for a drug. Looking through the index terms, I don't see "Alabama Pines" listed. The closest might be "delta-8-THC-COOH" or other cannabinoids, but "Alabama Pines" isn't in the list. Since it's not a recognized term in the provided index, it should be categorized as "other."
+
+So the matched phrases are "Codeine" and "Alabama Pines." The first is directly under Codeine, the second is "other." The JSON array should list these two entries.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"},
+  {"index_term": "other", "matched_phrase": "Alabama Pines"}
+]

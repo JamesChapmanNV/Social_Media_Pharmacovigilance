@@ -1,0 +1,5 @@
+[
+  {"index_term": "CBD", "matched_phrase": "CANNABIS"},
+  {"index_term": "CBD", "matched_phrase": "Hemp"},
+  {"index_term": "CBD", "matched_phrase": "CANNABIS HEMP"}
+]

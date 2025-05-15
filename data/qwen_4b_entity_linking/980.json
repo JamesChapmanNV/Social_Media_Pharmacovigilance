@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "the nursing student in  and I came out real quick when that lady couldn't properly inject morphine😳💉". I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The main words here are "nursing student", "in", "came out real quick", "lady", "couldn't properly inject morphine". The key part is "morphine". Looking at the index terms, Morphine is listed as an index term. The phrase "morphine" is directly mentioned, so that's a clear match. The other parts of the sentence don't seem to reference any other drugs. The emoji and the injection context might be relevant, but the actual drug mentioned is morphine. There's no slang or euphemism here, just the direct term. So the only match should be "morphine" under the index term "Morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

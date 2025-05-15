@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Pot Dealer" and references selling guns and ripping people off. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look for any words or phrases that could refer to illicit drugs. The post says "Pot Dealer," which is a slang term for someone dealing marijuana. "Pot" is a common slang for marijuana, which is listed under the index terms as "Marijuana (Cannabis, Weed, Pot)." So "Pot" here would map to "Marijuana."
+
+Next, the post mentions "selling guns and ripping people off." The words "guns" and "ripping people off" are not drug-related, so they don't need to be included. The only drug reference here is "Pot," which is explicitly listed in the index terms. 
+
+The rest of the post talks about money and karma, which are not related to drugs. There's no mention of other drugs or substances. So the only matched phrase is "Pot," which corresponds to "Marijuana." 
+
+I should check if there are any other possible terms. The user also mentioned "former Pot Dealer," but "dealer" is just a role, not a drug name. So the only valid match is "Pot" under Marijuana. 
+
+No other terms in the post relate to the index list. Therefore, the JSON array should have one object with index_term "Marijuana" and matched_phrase "Pot."
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Pot"}
+]

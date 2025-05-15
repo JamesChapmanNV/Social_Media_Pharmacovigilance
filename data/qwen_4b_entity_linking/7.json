@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index term, and return a JSON array.
+
+First, I need to read the provided post carefully. The post mentions "Floyd's death" and discusses possible causes, including "stronger heart conditions" and "drug overdose." The user is asking to identify any drug-related terms here.
+
+Looking at the post: "drug overdose as a potential cause." The word "drug" is mentioned, but the specific substance isn't named. However, the index terms list includes "other" for substances not in the list. Since "drug overdose" is a general term and not a specific substance listed in the index terms, I should map it to "other."
+
+Wait, but maybe "drug" here is part of a phrase. The exact phrase is "drug overdose." The index terms don't have an entry for "overdose" specifically. The closest might be "other" since it's not a specific drug listed. The example 3 shows "xans" as "other" because it's not a specific term. Similarly, "drug overdose" isn't a specific drug in the list, so it should be "other."
+
+So the matched phrase is "drug overdose," which maps to "other." The rest of the post doesn't mention any specific drugs. The other parts talk about heart conditions and lack of oxygen, which aren't drug-related. Therefore, the only match is "drug overdose" under "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drug overdose"}
+]

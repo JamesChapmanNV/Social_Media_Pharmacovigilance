@@ -1,0 +1,7 @@
+[
+  {"index_term": "Methadone", "matched_phrase": "methadone"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "Zanax"},
+  {"index_term": "other", "matched_phrase": "Viagra"},
+  {"index_term": "other", "matched_phrase": "Diflucan"}
+]

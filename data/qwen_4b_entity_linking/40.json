@@ -1,0 +1,36 @@
+<think>
+Okay, let's tackle this query. The user provided a post about losing their dad to midazolam and morphine. I need to check for any drug references here.
+
+First, I'll go through the post sentence by sentence. The first part says "I lost my dad to midazolam and morphine in Scotland May 2020..." So the words "midazolam" and "morphine" are mentioned. 
+
+Looking at the index terms, midazolam is listed under Nordiazepam as a metabolite of diazepam. Wait, no, let me check again. Wait, the index terms include "Midazolam" as part of the list? Wait, looking back at the Index Terms list, I see "Midazolam (XLI‑268, Fake Xanax)" is listed. Wait, no, actually, the Index Terms list includes "Midazolam (XLI‑268, Fake Xanax)" as a separate entry. Wait, no, looking again, the Index Terms list includes "Midazolam (XLI‑268, Fake Xanax)" as a separate entry. Wait, no, actually, in the provided list, "Bromazolam (XLI‑268, Fake Xanax)" is listed, but Midazolam is not directly listed. Wait, let me check again.
+
+Wait, the Index Terms list includes "Midazolam (XLI‑268, Fake Xanax)"? Let me check the list again. No, looking at the list, the entry for Bromazolam is listed as "Bromazolam (XLI‑268, Fake Xanax)". Then, Midazolam isn't directly listed. Wait, but in the Index Terms, there's "Nordiazepam (Desmethyldiazepam, Nordazepam)" and "Naltrexone (Vivitrol, Revia)", but Midazolam is not in the list. Wait, but the user's post mentions "midazolam" and "morphine". 
+
+Looking at the Index Terms, "Midazolam" is not listed as an index term. The closest is "Nordiazepam" which is a metabolite of diazepam, but midazolam itself isn't listed. However, the Index Terms list includes "Midazolam (XLI‑268, Fake Xanax)"? Wait, no, looking back, the list includes "Bromazolam (XLI‑268, Fake Xanax)" but not Midazolam. Wait, maybe I made a mistake here. Let me check again. 
+
+Wait, the Index Terms list includes "Midazolam" as part of the list? Let me check again. The user provided the Index Terms list. Let me scan through:
+
+Looking at the list, under "Index Terms", there's an entry for "Midazolam (XLI‑268, Fake Xanax)"? No, actually, the entry for Bromazolam is "Bromazolam (XLI‑268, Fake Xanax)", and then later, "Nordiazepam (Desmethyldiazepam, Nordazepam)". So Midazolam is not directly listed. However, the Index Terms list includes "Midazolam" as a separate entry? Wait, no, in the provided list, "Midazolam" is not present. Wait, the user's Index Terms list includes "Midazolam (XLI‑268, Fake Xanax)"? Wait, no, looking at the list again, the entry for "Bromazolam (XLI‑268, Fake Xanax)" is there, but not Midazolam. 
+
+Wait, but in the Index Terms, there's an entry for "Midazolam (XLI‑268, Fake Xanax)"? No, that's not correct. The user's Index Terms list includes "Bromazolam (XLI‑268, Fake Xanax)" but not Midazolam. So "Midazolam" is not in the list. Then, "morphine" is listed as "Morphine (MS Contin, Miss Emma, Morph)" in the Index Terms. 
+
+So in the post, "midazolam" is mentioned. Since Midazolam is not in the list of index terms, it would be categorized as "other". However, wait, the Index Terms list includes "Midazolam (XLI‑268, Fake Xanax)"? Wait, maybe I'm missing that. Let me check again. 
+
+Looking at the Index Terms list again, the entry for "Midazolam" is not present. The entry for "Bromazolam" is listed as "Bromazolam (XLI‑268, Fake Xanax)". So Midazolam is not in the list. Therefore, "midazolam" would be "other". 
+
+Then, "morphine" is in the list as "Morphine (MS Contin, Miss Emma, Morph)", so that's a valid index term. 
+
+So the post has "midazolam" and "morphine". "Morphine" is in the list, so that's a match. "Midazolam" is not in the list, so it's "other". 
+
+Therefore, the JSON array should include "morphine" for "morphine" and "other" for "midazolam". 
+
+Wait, but the user's example 3 had "xans" which is not in the list, so it's "other". So in this case, "midazolam" is not in the list, so it's "other", and "morphine" is in the list. 
+
+So the correct output would be two entries: one for "morphine" and one for "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "midazolam"}
+]

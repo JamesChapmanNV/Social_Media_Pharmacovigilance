@@ -1,0 +1,5 @@
+[
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "Crack", "matched_phrase": "Crack"},
+  {"index_term": "Methamphetamine", "matched_phrase": "Meth"}
+]

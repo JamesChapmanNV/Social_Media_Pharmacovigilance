@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific post here is about the ACLU challenging Nevada's treatment of cannabis as a controlled substance. The hashtags are #cannabisculture, #cannabiscommunity, etc.
+
+First, I need to check if there are any mentions of illicit drugs or substances in the post. The main text says "cannabis" and the hashtags are all related to cannabis. Looking at the Index Terms provided, "Marijuana (Cannabis, Weed, Pot)" is listed. So "cannabis" would map to that index term. 
+
+But wait, the post is about cannabis being treated as a controlled substance. The user's task is to detect any references to illicit drugs. However, cannabis is a controlled substance in many places, but the Index Terms list "Marijuana" as a non-intoxicating cannabinoid? Wait, no, the Index Terms say "Marijuana (Cannabis, Weed, Pot) – The most widely used illicit drug, containing psychoactive cannabinoids THC only." So even though it's a controlled substance, in the context of the Index Terms, it's considered an illicit drug here. 
+
+So the phrase "cannabis" in the post would be matched to "Marijuana" as the index term. The hashtags are #cannabisculture, etc., but those are just topics, not drug references. The post doesn't mention any specific drugs beyond cannabis. So the only match is "cannabis" under the Marijuana index term. 
+
+Wait, but the example in the problem statement had a post about cannabis and the answer included "Marijuana" for "cannabis". So in this case, the post mentions "cannabis" in the context of being a controlled substance, but according to the Index Terms, it's listed as an illicit drug. Therefore, the correct match is "Marijuana" for "cannabis". 
+
+So the JSON array should have one object: index_term "Marijuana" and matched_phrase "cannabis". The rest of the post doesn't mention any other drugs. The hashtags are not drug references but topics. So the answer is just that one entry.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

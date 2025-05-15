@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "New article: Georgia Governor Appoints New Cannabis Commission Chair -". My task is to detect any drug-related references in this post and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions a new article about Georgia's governor appointing a new chair for a Cannabis Commission. The key words here are "Cannabis Commission". Now, I need to check if "Cannabis" is listed in the index terms. Looking at the list, yes, "Marijuana (Cannabis, Weed, Pot)" is an index term. However, the post doesn't mention any specific drug names or slang. It's about a commission related to cannabis, which is a plant, not an illicit drug. The index term for marijuana is listed, but the post doesn't refer to cannabis as an illicit drug. It's more about regulation. 
+
+Wait, but the user's task is to detect any references to illicit drugs. The term "Cannabis" in the post is part of a commission name. The index term for marijuana is listed, but the post doesn't use any slang or euphemism for illicit drugs. The word "Cannabis" here is part of the official name of the commission, not a reference to using or promoting an illicit drug. The example provided in the problem statement includes "codeine" and "lean" which are direct terms. In this case, "Cannabis" is a legal term here, so it's not an illicit drug reference. 
+
+Therefore, there are no drug-related references in the post that match the index terms. The only possible mention is "Cannabis", but since the index term is for marijuana, which is a controlled substance but not an illicit drug in this context. The post is about a commission, not about drug use. So the answer should be an empty array. 
+
+Wait, but the index term for marijuana is listed as "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. However, the post is about a commission, not about using or promoting it. The user's task is to detect references to illicit drugs, not just the name of a commission. So unless the post is explicitly talking about using cannabis, which it isn't, there's no match. Therefore, the correct response is an empty array.
+</think>
+
+[]

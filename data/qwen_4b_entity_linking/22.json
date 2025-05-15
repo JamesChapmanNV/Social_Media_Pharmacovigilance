@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "someone buy me cough syrup with codeine and promethazine in it yuuuurt". I need to detect any drug references here and link them to the index terms.
+
+First, I'll break down the post. The main phrases are "codeine" and "promethazine". Let's check the index terms. Codeine is listed under the index term "Codeine" with synonyms like "Lean", "Purple Drank", etc. So "codeine" directly maps to Codeine.
+
+Next, "promethazine". Looking through the index terms, I don't see promethazine listed. The closest might be Diphenhydramine (Benadryl, Nytol), but that's a different drug. Promethazine is an antihistamine, sometimes used in cough syrups, but it's not in the provided index terms. Since it's not listed, I should mark it as "other".
+
+The rest of the post is "buy me cough syrup" and "yuuuurt", which are just context and not drug terms. So the matches are "codeine" and "promethazine". 
+
+Wait, let me double-check the index terms again. The index terms include "Diphenhydramine (Benadryl, Nytol)" as an antihistamine, but promethazine is a different compound. The index terms don't have promethazine, so it's "other". 
+
+So the JSON should have two entries: codeine and other for promethazine.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "promethazine"}
+]

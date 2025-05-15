@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Switzerland launching a cannabis sale pilot and mentions Malta legalizing cannabis. The task is to detect any drug-related references and map them to the correct index terms.
+
+First, I need to scan the post for any terms that could refer to illicit drugs or substances. The post mentions "cannabis" and "recreational use." Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. The term "cannabis" is explicitly listed here. The post also mentions "recreational use," but that's a general term and not a specific drug name. The other part about Malta legalizing cannabis is just context, not a drug reference. 
+
+I need to check if "cannabis" is in the index terms. Yes, it is under the index term "Marijuana (Cannabis, Weed, Pot)." The post uses "cannabis" in the context of sale and recreational use, so that's a direct match. There are no other terms in the post that refer to drugs. The example in the problem statement shows that "cannabis" is mapped to "Marijuana," so that's the correct index term here. 
+
+No other phrases in the post are drug-related. The rest is about legalizing and attitudes, which don't refer to specific substances. So the only match is "cannabis" under the Marijuana index term. The answer should be a JSON array with that single entry.
+</think>
+
+[{"index_term": "Marijuana (Cannabis, Weed, Pot)", "matched_phrase": "cannabis"}]

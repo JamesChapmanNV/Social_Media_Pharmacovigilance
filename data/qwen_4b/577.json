@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content provided is: "many say Silicon Valley drug culture revolves around stimulants and weed but I only ever seem to hear programmers talk about codeine".
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, or promotion. Also, slang or cultural references indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+Looking at the content: the user is talking about "drug culture" in Silicon Valley, mentioning stimulants and weed. Then they say they hear programmers talking about codeine. Codeine is an opioid, which is a controlled substance. But the context here is cultural references. The user is discussing what's part of the culture, not necessarily promoting abuse. However, codeine is a drug that can be misused. The mention of "drug culture" might imply that it's about recreational use. But the user is not explicitly saying they use it or promoting it. They're just stating what they observe. 
+
+Wait, but the example given in the task had "hooked on that lean everyday she say she want codeine" which was classified as True because it mentioned codeine and the context was abuse. Here, the content is about cultural references. The key is whether it's promoting abuse or misuse. The user is talking about what's part of the culture, not necessarily encouraging use. However, codeine is a controlled substance, and if it's part of a drug culture, that might be considered as relating to abuse. But the example 1 had codeine and was True. But in example 2, discussing buprenorphine in a medical context was False.
+
+In this case, the content is discussing drug culture, which could be seen as referring to recreational use. The mention of codeine is a drug that's often associated with abuse. However, the user is not explicitly promoting it, just talking about what's part of the culture. But the question is whether it's ILLICIT/ABUSIVE-DRUG-RELATED. The definition includes using slang or cultural references that signal recreational drug use. So if "drug culture" is considered as indicating that, then maybe it's True. But the user is not explicitly mentioning abuse, just the culture. However, the example 1 had "hooked" and "codeine" which was True. So maybe this is similar. The mention of codeine in a cultural context could be considered as related to abuse. Therefore, the label would be True. The explanation would be that the content references codeine in a cultural context, which may imply recreational use or abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references 'codeine' in a cultural context, which may imply recreational use or abuse within a drug culture discussion."
+}

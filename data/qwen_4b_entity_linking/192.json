@@ -1,0 +1,44 @@
+<think>
+Okay, let's tackle this query. The user provided a post about cannabis products and wants me to detect any drug-related references. The task is to find every word or phrase that refers to an illicit drug or substance, link them to the correct Index Term, and return a JSON array.
+
+First, I'll read the post carefully: "Products labeled 'rosin-enhanced' aren't true live rosin... they're made with a combo of frozen cannabis AND dried trim. But Wana Spectrum gummies are made entirely from frozen plant matter, preserving ALL the active cannabinoids and terpenes in their living state!"
+
+Looking for drug-related terms. The main words here are "rosin-enhanced," "frozen cannabis," "dried trim," "cannabis," "cannabinoids," "terpenes." 
+
+Now, checking the Index Terms. The list includes "Marijuana (Cannabis, Weed, Pot)" which covers cannabis. "Cannabinoids" are mentioned, but the Index Terms don't have a specific entry for cannabinoids. The closest might be "Marijuana" since it's a cannabis product. "Terpenes" are natural compounds in cannabis, but again, not a specific Index Term. 
+
+The phrase "rosin-enhanced" – rosin is a resin from pine trees, but in this context, it's referring to cannabis rosin, which is a concentrate. However, the Index Terms don't have a specific entry for rosin. The term "rosin" isn't listed, so it would fall under "other." 
+
+"Frozen cannabis" and "dried trim" are parts of cannabis, so "Marijuana" is the Index Term. "Cannabinoids" and "terpenes" are components of cannabis but not specific drugs. Since they're part of the cannabis plant, they might still be under "Marijuana" as the primary term. 
+
+Looking at the example where "snow" was "other" because it's not a drug. Similarly, "rosin" isn't listed, so "other." The main drug here is cannabis, so "Marijuana" for "cannabis." 
+
+So the matches would be "cannabis" under Marijuana, and "rosin" as other. But wait, the post mentions "rosin-enhanced" as a product. Since rosin isn't on the list, it's "other." The other terms like "cannabinoids" and "terpenes" are part of cannabis, so they might be under "Marijuana" as well. However, the Index Terms don't have a specific entry for cannabinoids, so maybe only "cannabis" is the term here. 
+
+Wait, the user's task is to detect any reference to an illicit drug. The post is about cannabis products, which is listed as "Marijuana" in the Index Terms. So "cannabis" would be the term. "Rosin" isn't in the list, so "other." The rest are parts of the plant, so maybe only "cannabis" is the relevant term here. 
+
+So the JSON would have "Marijuana" for "cannabis" and "other" for "rosin." But the post says "rosin-enhanced" isn't true live rosin, but made with frozen cannabis and dried trim. So "rosin" here is a product, but not on the list. Therefore, the matches are "cannabis" and "rosin." 
+
+Wait, but the user's task is to detect any drug-related references. "Cannabis" is listed as an Index Term, so that's a match. "Rosin" is not in the list, so "other." The rest of the terms like "frozen plant matter" are part of cannabis, so maybe not. The answer would be:
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "other", "matched_phrase": "rosin"}
+]
+
+But wait, "rosin" is part of the product name. The post says "rosin-enhanced" isn't true live rosin, but made with frozen cannabis. So "rosin" here is a term used in the product description, but since it's not in the Index Terms, it's "other." 
+
+So the final answer should include "cannabis" under Marijuana and "rosin" as other. However, the user might consider "rosin" as a cannabis product, but since it's not listed, it's "other." The other terms like "dried trim" are part of cannabis, so they would be under "Marijuana." But the post says "frozen cannabis AND dried trim," so "cannabis" is the main term. 
+
+So the correct JSON would be:
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "other", "matched_phrase": "rosin"}
+]
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "other", "matched_phrase": "rosin"}
+]

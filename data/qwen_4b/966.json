@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content classification. The user provided the content: "Bankroll Bird - Codeine & Adderall" with some emojis and a hashtag #RIPPrince. I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll check the keywords. The title mentions "Codeine" and "Adderall." Both are prescription medications. Codeine is an opioid, and Adderall is a stimulant. But the context here is a song title, "Bankroll Bird," which might be a reference to a song or a music track. The hashtags include #RIPPrince, which is about the late musician Prince, so maybe the song is related to that.
+
+Now, the definitions say that True includes mentions of illegal or prescription drugs in the context of abuse or misuse. But if the content is just mentioning the drugs as part of a song title without indicating abuse, promotion, or misuse, it might not be illicit. However, the song title could be a cultural reference that implies drug use. But the user's example 1 had "lean" and "codeine" with a supportive tone, which was classified as True. Here, the drugs are listed in the title, but without explicit context of abuse or promotion. However, the hashtag #RIPPrince might relate to a song that's about drug use. But without more context, it's tricky. Wait, the example given in the task includes a song title with drugs and the label is True. So maybe in this case, the mention of Codeine and Adderall in the song title is considered as using slang or cultural references that signal recreational use. However, the user also mentioned that False includes drug-related terms in different contexts. But the song title might be a reference to a song that's about drug use. But the user's example 1 had a supportive tone, which was True. Here, the content is just the song title with the drugs listed. The explanation would need to say that the mention of codeine and adderall in the song title implies recreational use. But I need to check if the song is known for that. Alternatively, maybe the song is about drug use. However, without knowing the song's content, the classification is based on the presence of the drugs in the title. The user's example 1 had "lean" and "codeine" in the content, which was True. So here, the same logic applies. The drugs are mentioned in the title, which could be a cultural reference. So the label would be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'Codeine' and 'Adderall' in a song title, which may imply recreational drug use or cultural references to drug abuse."
+}

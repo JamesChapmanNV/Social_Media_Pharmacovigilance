@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post provided is about Cann-ID® and their solution combining NFTs, COAs, marketing, and limited edition art. The main focus here is on cannabis testing COAs through their software.
+
+First, I need to check if there are any mentions of illicit drugs or substances. The post mentions "Cannabis" and "COAs" (Certificate of Analysis). Looking at the Index Terms, "Marijuana" is listed as a term for cannabis. However, the post is talking about a solution for cannabis testing, not necessarily referring to using cannabis illicitly. The term "Cannabis" here is likely referring to the legal cannabis industry, not the illicit drug. 
+
+But wait, the user's task is to detect any references to illicit drugs. The Index Terms include "Marijuana (Cannabis, Weed, Pot)" as the most widely used illicit drug. However, in this context, the post is about a legitimate cannabis industry solution. The term "Cannabis" in the post is part of a product name and not referring to using it illicitly. 
+
+So, the phrase "Cannabis" here is part of the product name and not a slang or euphemism for an illicit drug. Therefore, it's not a drug reference. The other terms like NFTs, COAs, marketing, etc., are not related to drugs. 
+
+The user's example 3 shows that "xans" is considered "other" because it's not a listed term. Similarly, in this case, "Cannabis" is part of the product name and not a slang term. Therefore, there are no drug references in this post. 
+
+So the correct response is an empty array since there are no matches. But wait, the Index Terms do have "Marijuana" as a term. However, the post is about a legal cannabis industry solution, not about using marijuana illicitly. The term "Cannabis" here is not a slang for an illicit drug but a legal product. Therefore, it's not a match. 
+
+Therefore, the JSON array should be empty.
+</think>
+
+[]

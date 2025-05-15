@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Oohhhhhh. Now suddenly focus shd be on a dealer but with SSR it was about his depression!!" I need to check for any drug-related references here.
+
+First, I'll go through the post word by word. The start is "Oohhhhhh." which is just an exclamation, probably not relevant. Then "Now suddenly focus shd be on a dealer..." The word "dealer" might refer to someone selling drugs, but the index terms don't have a specific term for "dealer". The example 3 shows "xans" is "other", so maybe "dealer" is also "other" unless there's a specific term. 
+
+Next part: "but with SSR it was about his depression!!" "SSR" could stand for Selective Serotonin Reuptake Inhibitor, which is a type of antidepressant. However, the index terms don't list SSR as a drug. The example 3 had "xans" as other, so maybe "SSR" here is a medication but not on the list. Wait, looking at the index terms, there's no entry for SSR. The closest might be something like "other" because it's not a listed drug. 
+
+So, the post mentions "dealer" and "SSR". Neither of these are directly listed in the index terms. "Dealer" is a person, not a drug. "SSR" is a class of medications, but not specifically listed. Therefore, both should be categorized under "other". 
+
+Wait, but the task is to detect phrases that refer to illicit drugs or substances. "Dealer" is a person, not a drug. "SSR" is a medication, but not an illicit drug. So both would be "other". 
+
+So the JSON array should have two entries, both with index_term "other" and matched phrases "dealer" and "SSR".
+</think>
+
+[{"index_term": "other", "matched_phrase": "dealer"}, {"index_term": "other", "matched_phrase": "SSR"}]

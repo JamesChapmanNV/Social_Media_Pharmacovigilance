@@ -1,0 +1,35 @@
+<think>
+Okay, let's tackle this query. The user provided a post about careers in cannabis, specifically mentioning Cannabis Legalization and an interview with Joshua Cartagenova of Calyx Staffing. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The main keywords here are "Cannabis Legalization" and "Cannabis". The index terms include "Marijuana" which is listed as a non-intoxicating cannabinoid, but wait, the note says marijuana contains psychoactive THC. However, in the index terms, "Marijuana" is listed as an illicit drug. The post is talking about careers in the cannabis industry, which is legal in some places, but the term "cannabis" itself is listed under the index term "Marijuana". 
+
+But wait, the index term for marijuana is listed as "Marijuana (Cannabis, Weed, Pot) – The most widely used illicit drug, containing psychoactive cannabinoids THC only." So even though the post is about careers in a legal context, the term "cannabis" is still considered an illicit drug here. However, the user's task is to detect any references to illicit drugs, regardless of context. But the post is about careers in the cannabis industry, which might be legal in some regions. However, the index term for marijuana is listed as an illicit drug. So "cannabis" would map to "Marijuana".
+
+But wait, the post says "Cannabis Legalization = More Career Opportunities". The term "Cannabis" here is part of the topic, but the index term is "Marijuana". However, the user's task is to detect any references to illicit drugs. Since the post is discussing the legalization of cannabis, but the term "cannabis" is still considered an illicit drug in the index terms. Therefore, "cannabis" would be mapped to "Marijuana".
+
+But wait, the index term for Marijuana is listed as an illicit drug. So even if it's legal in some places, the term "cannabis" is still considered an illicit drug here. Therefore, the phrase "Cannabis Legalization" would have "Cannabis" as the matched phrase, which maps to "Marijuana".
+
+But the post is about careers in the cannabis industry, which might be legal. However, the task is to detect any references to illicit drugs, regardless of context. So even if it's legal, the term "cannabis" is in the index term as an illicit drug. Therefore, the matched phrase "Cannabis" would be linked to "Marijuana".
+
+Wait, but the index term for Marijuana is listed as an illicit drug. So in this case, the post is discussing the legalization of cannabis, but the term "cannabis" is still considered an illicit drug in the index terms. Therefore, the correct index term would be "Marijuana".
+
+But wait, the index term for Marijuana is listed as "Marijuana (Cannabis, Weed, Pot) – The most widely used illicit drug..." So even if it's legal in some places, the term "cannabis" is considered an illicit drug here. Therefore, the matched phrase "Cannabis" would be linked to "Marijuana".
+
+But the post is about careers in the cannabis industry. However, the task is to detect drug-related references. The term "Cannabis" is in the index term as an illicit drug. So the answer would include "Marijuana" as the index term for "Cannabis".
+
+But wait, the user's example 4 shows that "snow" and "white lines" are mapped to "other" because they're not on the list. So if "Cannabis" is on the list as "Marijuana", then it should be mapped. Therefore, the post has "Cannabis" in the title, which is part of the index term "Marijuana".
+
+So the matched phrase is "Cannabis", index term is "Marijuana".
+
+But wait, the post says "Cannabis Legalization". The term "Cannabis" is part of the phrase. So the matched phrase would be "Cannabis", and the index term is "Marijuana".
+
+But the post is about careers in the cannabis industry. However, the task is to detect any references to illicit drugs, regardless of context. Therefore, "Cannabis" is considered an illicit drug here, so it's mapped to "Marijuana".
+
+Therefore, the correct JSON array would have one entry: {"index_term": "Marijuana", "matched_phrase": "Cannabis"}.
+
+But wait, the post also mentions "Cannabis Legalization". The term "Legalization" is not a drug reference, so it's not included. Only "Cannabis" is the drug term here. So the answer should be one entry.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"}
+]

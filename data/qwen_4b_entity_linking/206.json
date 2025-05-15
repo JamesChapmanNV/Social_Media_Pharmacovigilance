@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I just took a piss nd seen codeine commin out 😈". I need to detect any drug references here.
+
+First, I'll look for words that might refer to illicit drugs. The phrase "codeine" is directly mentioned. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" maps directly to Codeine. 
+
+Then there's "commin out". Wait, "commin" is probably a typo for "coming out". So "codeine commin out" would mean codeine is coming out, which refers to drug use. But "commin" isn't a standard term. However, the key part here is "codeine", which is explicitly in the index terms. The rest of the phrase might be slang or a typo, but the main detected phrase is "codeine". 
+
+I need to make sure there's no other term. The user might have meant "codeine coming out" as in urine, which is a common way to refer to drug use. But the exact phrase here is "codeine commin out". Since "codeine" is in the list, that's the only match. The rest of the words like "piss" (urine) and "commin" (maybe "coming") are not in the index terms. So the only match is "codeine". 
+
+Therefore, the JSON should have one object with index_term "Codeine" and matched_phrase "codeine". The "commin" part isn't a recognized term here, so it's not included. The user's example in Example #1 had "lean" and "codeine" both mapped. But in this case, only "codeine" is present. The "commin" is probably a typo or slang, but since it's not in the index terms, it's not included. So the correct output is the single entry for codeine.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

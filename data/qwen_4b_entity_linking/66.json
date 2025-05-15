@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Codeine Boy Da BeatDealer" and "Codeine... Free Download". My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to check the post for any words or phrases that could refer to illicit drugs. The term "Codeine" is explicitly mentioned here. Looking at the index terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The post has "Codeine" in the title and in the download text. 
+
+So, "Codeine" directly maps to the index term "Codeine". The phrase "Codeine Boy" might be a reference to the drug, but "Boy" here is likely part of a name or a nickname, not a drug term. The rest of the post mentions "BeatDealer" and "Free Download", which don't relate to drugs. 
+
+I should make sure there are no other terms. The word "Codeine" is present twice in the post. The first instance is "Codeine Boy", but "Boy" isn't a drug term. The second is "Codeine... Free Download", where "Codeine" is the key term. 
+
+Since "Codeine" is in the index terms, both instances of "Codeine" in the post should be matched. The other parts of the post don't mention any other drugs. Therefore, the correct JSON array should have two entries for "Codeine" with the matched phrases "Codeine" and "Codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"},
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

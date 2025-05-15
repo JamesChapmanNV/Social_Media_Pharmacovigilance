@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet that says: "Yes ppl will try to take drugs to get High and break the barrier it happens a lot then they overdose but yes drug addiction it's a big struggle and even with the help of that drug u still will crave it & try to get high." 
+
+First, I need to determine if this is illicit/abusive-drug-related. The definitions mention that True includes content that mentions illegal drugs in the context of abuse or misuse, uses slang, or encourages misuse. The content here talks about people trying drugs to get high, which is a form of recreational use. It also mentions overdose and addiction, which are consequences of drug abuse.
+
+The terms "try to take drugs to get High" and "crave it & try to get high" clearly indicate the misuse of drugs. The mention of overdose and addiction further supports that this is about abuse. The content isn't in a medical context but rather discussing the negative outcomes of drug use. So according to the definitions, this should be classified as True. The explanation should note the mention of drug use for getting high and the consequences, which align with abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content discusses drug use for recreational purposes ('get High'), mentions overdose and addiction, and describes cravings and misuse, indicating abuse or misuse of drugs."
+}

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Well I just found my new favorite drug. Morphine. This shit is amazing." I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll go through the post word by word. The first mention is "Morphine." Looking at the index terms, there's an entry for Morphine (MS Contin, Miss Emma, Morph). So "Morphine" directly maps to that index term. The phrase "This shit is amazing" is more of a colloquial expression, but "shit" here is just slang for something bad, not a drug. So no need to include that. 
+
+Next, check if there are any other terms. The post only mentions Morphine once. The index term for Morphine is listed, so the matched phrase is "Morphine." No other words in the post refer to drugs. The example given in the problem had "codeine" and "lean" mapped, but here it's just "Morphine." 
+
+Wait, the user's example 1 had "lean" mapped to Codeine. So in this case, "Morphine" is the exact term, so the index_term is "Morphine" and matched_phrase is "Morphine." 
+
+I need to make sure that "Morphine" is in the index terms. Yes, the index terms list Morphine as the prototypical opioid analgesic. So the correct JSON array would have one object with index_term "Morphine" and matched_phrase "Morphine."
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "Morphine"}]

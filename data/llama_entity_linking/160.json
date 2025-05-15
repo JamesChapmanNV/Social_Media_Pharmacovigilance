@@ -1,0 +1,6 @@
+[
+  {"index_term": "Oxycodone", "matched_phrase": "Oxy"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "Hydrocodone", "matched_phrase": "Norco"},
+  {"index_term": "Ibuprofen", "matched_phrase": "Ibuptofen"}
+]

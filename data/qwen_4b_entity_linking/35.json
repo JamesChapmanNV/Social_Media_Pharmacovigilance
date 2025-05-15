@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "going to do another itzy album review bc listening to them is like shooting up morphine". I need to detect any drug-related references here.
+
+First, I'll break down the sentence. The key parts are "itzy album review" and "listening to them is like shooting up morphine". The phrase "shooting up morphine" is a clear reference to intravenous drug use. Morphine is listed in the index terms as an opioid analgesic. So "shooting up morphine" would map to "Morphine". 
+
+Next, "itzy" is a slang term for a K-pop group, so that's not a drug reference. The rest of the sentence is about an album review, which is unrelated. 
+
+I should check if there are any other possible terms. The phrase "like shooting up morphine" is a metaphor for the intense effect of morphine, which is a known drug. Since "morphine" is in the index list, that's the term to use. There's no other drug mentioned here. 
+
+So the only matched phrase is "shooting up morphine", which links to "Morphine". The other parts of the sentence don't contain any other drug references. I need to make sure that "shooting up" is part of the matched phrase. The exact text is "shooting up morphine", so that's the matched_phrase. 
+
+No other terms in the post relate to drugs. The answer should be a JSON array with one object for "Morphine" and the matched phrase.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "shooting up morphine"}
+]

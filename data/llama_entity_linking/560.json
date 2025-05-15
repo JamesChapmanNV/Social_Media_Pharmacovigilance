@@ -1,0 +1,9 @@
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "Paregoric", "matched_phrase": "paregoric"},
+  {"index_term": "other", "matched_phrase": "opium"},
+  {"index_term": "other", "matched_phrase": "chronic use"},
+  {"index_term": "other", "matched_phrase": "physiological damage"}
+]

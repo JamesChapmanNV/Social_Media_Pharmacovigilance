@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this. The user wants me to label the given social media post as T or F based on specific rules. The post is a bit jumbled, so I need to parse through it carefully.
+
+First, the key is to look for any mention of illicit or abusive drug use. The labels are T if there's text showing use, seeking, buying, selling, trafficking, or slang for drugs. Otherwise, it's F.
+
+Looking at the post: "To be wifed up and allowed to be a spoloed brat huh kim mesun how we ran district for how long Rev Mac come show his shoes brings HIS GUN TOTONG KIDS AND AL FLOWERS COMES WITH THE CRACK HEAD 20 A DAY TEAM FOR A BUMP TO HELP FACILITATE THEFT"
+
+Breaking it down. The first part seems like a conversation, maybe about being a brat or something. Then "Rev Mac" could be a person's name. Then "brings HIS GUN TOTONG KIDS" – "TONG" might be a typo for "TONG" as in a gang, but not sure. Then "AL FLOWERS" – maybe a name? Then "COMES WITH THE CRACK HEAD 20 A DAY TEAM FOR A BUMP TO HELP FACILITATE THEFT".
+
+Wait, "CRACK HEAD" is a direct slang term for someone using crack cocaine. That's definitely a drug-related term. Also, "20 A DAY TEAM" might refer to a group or team, but the key part here is "CRACK HEAD". Also, "FACILITATE THEFT" – that's about theft, but the presence of "CRACK HEAD" is a clear indicator of drug use. 
+
+So even though the rest of the post is unclear, the mention of "CRACK HEAD" is a strong T. The other parts might be unrelated, but the presence of that term is enough to label it as T. The user instructions say to return only T or F, so the answer should be T.
+</think>
+
+T

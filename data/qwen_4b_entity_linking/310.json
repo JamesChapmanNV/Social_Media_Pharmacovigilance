@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "crack epidemic" and "Fentanyl is the new crack." I need to identify any drug references here.
+
+First, "crack" is a slang term for cocaine, which is an illicit drug. Looking at the index terms, cocaine's metabolite is Benzoylecgonine (BZE), but the term "crack" itself isn't listed. However, the post mentions "crack epidemic," which refers to cocaine. Since "crack" isn't directly in the index terms, I should check if there's a term that covers it. The index term for cocaine is Benzoylecgonine, but the user might be referring to the drug itself. Wait, the index terms list "Marijuana" as Cannabis, and "Cocaine" isn't explicitly listed. Wait, looking back, the index terms don't have a direct entry for "crack" but "Cocaine" is listed as Benzoylecgonine. However, in the example, "snow" was marked as "other" even though it's cocaine. So maybe "crack" here is considered as "other" since it's not a direct term in the index. Wait, the index terms include "Cocaine" as Benzoylecgonine. Wait, no, looking at the index terms, the entry for cocaine is Benzoylecgonine. But the term "crack" is a slang for cocaine. So in the post, "crack" is a reference to cocaine. However, the index term for cocaine is Benzoylecgonine. But the user's example had "snow" as "other" even though it's cocaine. So maybe "crack" isn't in the index terms, so it's "other". But wait, the index term for cocaine is Benzoylecgonine. So if the post says "crack", which is a slang for cocaine, but the index term is Benzoylecgonine, then "crack" would map to that. Wait, but the example in the problem statement had "snow" as "other" even though it's cocaine. So maybe the index terms don't include "crack" as a term, so it's "other". Alternatively, maybe "crack" is considered as a term for cocaine. But in the index terms, the entry for cocaine is Benzoylecgonine. So "crack" is a slang term, but the index term is for the metabolite, not the slang. So perhaps "crack" would be "other" because it's not a direct term in the index. Wait, but the user's example had "snow" as "other" even though it's cocaine. So maybe "crack" is also "other". Then, the post also mentions "Fentanyl is the new crack." Fentanyl is in the index terms as Fentanyl. So "Fentanyl" is a direct term. So the post has "crack" (which is cocaine, but not in the index terms) and "Fentanyl". So "crack" would be "other", and "Fentanyl" is "Fentanyl". So the JSON should have two entries: one for "crack" as "other" and "Fentanyl" as "Fentanyl". Wait, but the user's example 4 had "snow" as "other", which is cocaine. So "crack" would be "other" as well. So the answer would be:
+
+[
+  {"index_term": "other", "matched_phrase": "crack"},
+  {"index_term": "Fentanyl", "matched_phrase": "Fentanyl"}
+]
+
+But wait, the user's example 4 had "snow" as "other", which is cocaine, but in the index terms, the entry for cocaine is Benzoylecgonine. However, the example says "snow" is "other". So the system is considering any slang term not directly in the index as "other". Therefore, "crack" is a slang term for cocaine, which is not in the index terms, so it's "other". Then "Fentanyl" is directly in the index terms. So the correct answer would have "crack" as "other" and "Fentanyl" as "Fentanyl".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"},
+  {"index_term": "Fentanyl", "matched_phrase": "Fentanyl"}
+]

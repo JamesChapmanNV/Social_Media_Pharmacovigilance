@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "omg I'm on sm codeine atm BC of my pain that my excuse I'm off it". I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll read through the post carefully. The key words here are "sm codeine". "Codeine" is clearly listed in the index terms under "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "sm" is likely a typo or slang for "some" or "small amount". But since the main term here is "codeine", I need to check if "sm" is considered a slang term. However, in the index terms, "codeine" is listed with those synonyms, so "sm" might not be a specific term here. But the user wrote "sm codeine", so the main phrase is "codeine". 
+
+Looking at the example 1, "lean" and "codeine" both map to Codeine. In this case, the post mentions "codeine" directly. The "sm" might be part of the phrase, but since "sm" isn't listed in the index terms, it's probably not a drug reference. So the only match here is "codeine". 
+
+Wait, but the user wrote "sm codeine". Is "sm" a slang for a drug? Let me check the index terms again. The index terms include "Codeine" with synonyms like "Lean", but "sm" isn't listed. So "sm" is probably not a drug term here. Therefore, the only matched phrase is "codeine". 
+
+So the JSON should have one entry: index_term "Codeine" and matched_phrase "codeine". The "sm" is part of the phrase but not a recognized term in the list, so it's not included. The user might have meant "some codeine", but the exact phrase is "sm codeine". However, since "sm" isn't a drug term, only "codeine" is matched. 
+
+Therefore, the correct output is the single entry for "codeine".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

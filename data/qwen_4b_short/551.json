@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user wants me to label the given social media post as T or F based on the rules provided. The post is about heroin, explaining it's an alkaloid from morphine, its effects, addictiveness, and potency.
+
+First, I need to check if the post mentions drug use, seeking, buying, selling, trafficking, or slang. The post uses the term "heroin," which is a drug. It also mentions "analgesic" and "stimulating effects," which are related to drug properties. The text states it's "very addictive" and "more potent than morphine," which are characteristics of drug use. However, the post doesn't mention any specific actions like using, seeking, buying, selling, or trafficking. It's more of an educational description about the drug's properties. 
+
+But wait, the rules say T if the text shows illicit or abusive drug use. The post is explaining heroin's effects and addictiveness, which are aspects of drug use. However, the user might be considering whether the post is discussing the drug in a way that indicates use. The term "heroina" in the hashtag might be a typo for "heroin," but even so, the content is about the drug's properties. 
+
+The label rules include "slang for drugs" as T. The post doesn't use slang, but it does mention the drug's name. However, the main content is about the drug's effects, which could be considered as discussing drug use. But the rules also include "using, seeking, buying, selling, trafficking, or slang for drugs." The post doesn't mention any of these actions, just the properties. So maybe it's F because it's a medical or educational discussion. However, the presence of the drug's name and its effects might be considered as T. 
+
+Wait, the instruction says "text shows illicit or abusive drug use." If the post is explaining the drug's properties, is that considered showing use? Or is it just discussing the drug? The example given in the rules includes medical/policy discussion as F. So if the post is explaining the drug's effects, it's F. But if it's talking about using it, then T. The post here is explaining heroin's properties, so it's F. Therefore, the label should be F.
+</think>
+
+F

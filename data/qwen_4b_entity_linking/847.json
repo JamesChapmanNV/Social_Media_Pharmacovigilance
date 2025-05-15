@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index term, and return a JSON array.
+
+First, I need to read the provided post carefully. The post is about the Federal Reserve and the financial system, mentioning things like "multiple dealer system," "bids/asks," "Tsy," and references to March 2020. 
+
+I should check each word or phrase in the post to see if it's a slang, euphemism, or any other form of referring to a drug. Let's break it down sentence by sentence.
+
+The first sentence: "Unlike the multiple dealer system with whatever bids/asks which depend on the specific dealer's current situation." The words here are "dealer system," "bids/asks," "specific dealer." None of these seem to be drug-related terms. "Dealer" might be a stretch, but in the context of financial markets, it's about trading, not drugs. So probably not a drug reference here.
+
+Next part: "The Fed could in theory outbid everyone for unlimited Tsy but this would kill the financial system due to scarcity on other ends(happened in March 2020)". Here, "Fed" refers to the Federal Reserve, "Tsy" is likely Treasury securities. "Outbid" is a financial term. "Scarcity on other ends" is vague but not related to drugs. The mention of March 2020 is a date, not a drug. 
+
+Looking through the entire post again, there's no mention of any drugs, slang terms, or phrases that match the index terms provided. The example given in the problem statement had "lean" and "codeine" which are in the index terms. But in this post, there's nothing that matches any of the listed index terms. 
+
+So, the answer should be an empty array because there are no drug-related references detected. The user's example 3 shows that if a phrase doesn't match any index term, it's labeled as "other," but in this case, there are no matches at all. Therefore, the correct response is an empty JSON array.
+</think>
+
+[]

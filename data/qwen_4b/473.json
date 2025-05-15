@@ -1,0 +1,10 @@
+<think>
+Okay, let's see. The user provided a content snippet about a comic dealer in Glasgow. The content mentions the name of the business, address, phone number, and social media handles. There are hashtags related to comics, DC, Marvel, etc. The task is to determine if this content is illicit/abusive-drug-related.
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to drug abuse. The content talks about a comic dealer selling comics, which are related to comic books. The hashtags are about comics, not drugs. There's no mention of any drugs, slang, or contexts that suggest abuse or misuse. The example given in the task had mentions of codeine and lean, which are drugs, but here it's entirely about comics. So the answer should be False because there's no drug-related content. The explanation should note that the content is about a comic dealer with no drug references.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content promotes a comic book dealer with no mention of drugs, drug-related terms, or contexts of abuse/misuse."
+}

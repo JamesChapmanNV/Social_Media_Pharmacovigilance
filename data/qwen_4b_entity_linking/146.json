@@ -1,0 +1,9 @@
+<think>
+Okay, let's see. The user provided a post: "Games have to cater to everyone is the most retarded take I have ever seen." I need to check if there are any drug-related references here.
+
+First, I'll go through each word and phrase. The post talks about games catering to everyone and calls it a "retarded take." The words here are "games," "cater," "everyone," "retarded," "take," "ever," "seen." None of these words seem to relate to drugs. The term "retarded" is a slang term, but it's not a drug reference. The index terms listed include things like Codeine, Amphetamine, LSD, etc. There's no mention of any drug names or slang here. 
+
+I should check if "retarded" is considered a drug reference. But according to the index terms provided, "retarded" isn't listed. The example given in the task where "xans" was considered "other" because it wasn't a specific drug. Similarly, "retarded" isn't a drug term here. So, there are no matches. Therefore, the output should be an empty array or maybe "other" if there's a slang, but since it's not a drug term, it's "other" only if the phrase is a slang for a drug. But "retarded" isn't a drug. So the correct answer is no matches. Wait, but the user's instruction says to link each detected phrase to an index term. Since there are no drug references here, the JSON array should be empty. But the examples show that when there's no match, it's "other". Wait, in example 3, "xans" was "other". But in this case, the post doesn't have any drug-related phrases. So the correct answer is an empty array. But the user's examples show that when there's no match, the JSON is empty. So the answer is an empty array.
+</think>
+
+[]

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I need to read the post carefully: "It gets confusing which lie to believe. Make cannabis legal to help the suffering, but do nothing to accomplish. Been almost 2 years since failed elections promises."
+
+Looking for any mentions of drugs or related terms. The first part talks about "cannabis" being legal. Checking the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "cannabis" here is a direct match. The rest of the post discusses political promises and elections, which don't mention any drugs. There's no other slang, euphemisms, or synonyms for illicit drugs here. 
+
+So the only match is "cannabis" under the index term "Marijuana". The other parts of the post don't reference any other drugs. I need to make sure there's no other hidden references. Words like "lie" or "suffering" aren't drug terms. The answer should only include the cannabis mention. 
+
+Double-checking the index terms again to confirm. Yes, "Marijuana" is the correct index term for cannabis. No other terms apply here. So the JSON array should have one object with "Marijuana" and "cannabis" as the matched phrase.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

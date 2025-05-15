@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Morphine will put you on your ass by force ngl. That's the shit they had me on when I broke my leg." I need to detect any drug references and map them to the correct index terms.
+
+First, I'll read through the post carefully. The first part says "Morphine will put you on your ass by force." The word "Morphine" is directly listed in the index terms under "Morphine (MS Contin, Miss Emma, Morph)" so that's a clear match. The phrase "the shit they had me on" refers to the medication prescribed, which in this case is morphine. 
+
+Next, I check if there are any other terms. The rest of the post is about breaking a leg, which isn't a drug reference. The term "shit" here is slang for a drug, but according to the index terms, "shit" isn't listed. The example in the prompt shows that if a term isn't in the list, it's labeled as "other". However, in this case, "Morphine" is explicitly listed, so that's the only match.
+
+Wait, the user mentioned "the shit they had me on" – "shit" could be slang for a drug, but since "shit" isn't in the index terms, I need to check if "Morphine" is the only term. The index term for Morphine includes synonyms like "MS Contin", "Miss Emma", "Morph". The post uses "Morphine", which is directly listed. So the matched phrase is "Morphine", and the index term is "Morphine".
+
+No other phrases in the post refer to drugs. The rest is about a broken leg, which isn't a drug. So the only entry should be Morphine. The example where "xans" was "other" because it wasn't listed, but here "Morphine" is directly listed. Therefore, the correct JSON array should have one object with index_term "Morphine" and matched_phrase "Morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's see. The user provided a content snippet that needs classification as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "update from my dad who went to see her at the hospital apparently she's as stubborn with death as she was living which made me laugh in this shit time but they upped her morphine as they expect she's gojng to pass tonight/tomorrow morning 😔"
+
+First, I need to check if this mentions illegal drugs, RX, OTC, or if it's about abuse. The word here is "morphine." Morphine is a controlled substance, typically used in medical settings for pain management. The context here is a hospital, and the person is discussing their relative's treatment. The content mentions increasing the morphine dosage because she's expected to pass. 
+
+The key points here are the medical context. The user is talking about a hospital setting, a patient's condition, and the medical treatment (morphine for pain). There's no indication of abuse, misuse, or promotion. The tone is about a family member's situation, not encouraging or glorifying drug use. The mention of morphine is in a medical context, so according to the definitions, False includes mentions in medical contexts, especially if it's educational or preventative. Since the content is about a patient's treatment, not promoting or abusing drugs, it should be classified as False.
+
+I should make sure there's no slang or euphemism here. The terms used are straightforward, and the context is a hospital. The explanation should note the medical context and the lack of promotion or abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses morphine administration in a hospital setting for a patient's medical care, not promoting or glorifying drug misuse."
+}

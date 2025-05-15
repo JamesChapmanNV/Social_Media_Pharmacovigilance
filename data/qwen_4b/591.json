@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The content is "Nigerian drug dealer sentenced to 10 years imprisonment in India." I need to determine if this is illicit/abusive-drug-related.
+
+First, the definition says True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. The content here is about a drug dealer being sentenced. That's a legal consequence for distributing drugs, which is illegal. The term "drug dealer" directly relates to the distribution of illicit drugs. The sentence is about a legal punishment, which is part of the illicit drug context. 
+
+But wait, the example given in the task had a similar case where the content was about a drug dealer being sentenced. The example's label was True. So in that case, the explanation was that the content mentions a drug dealer and the legal consequence. So this seems to fit the True category. The key here is that the content is about a person involved in drug trafficking, which is illegal. Therefore, the label should be True because it's related to the illicit drug trade.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content refers to a 'drug dealer' and a legal sentence for drug-related crime, indicating illicit drug activity."
+}

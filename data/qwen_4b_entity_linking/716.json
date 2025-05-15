@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about someone partnering with an organization to advocate for cannabis decriminalization. The task is to detect any drug-related references in the post and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions "cannabis" and "drug policy." The key here is to check if "cannabis" is listed in the index terms. Looking at the index terms list, "Marijuana (Cannabis, Weed, Pot)" is explicitly listed. So "cannabis" would map to that index term. 
+
+Next, the phrase "failed drug policy" is mentioned. However, "drug policy" is a general term and not a specific drug name. The index terms don't include "drug policy" as a specific substance, so that would fall under "other." But the user's task is to detect references to illicit drugs or substances. Since "drug policy" is a policy-related term, not a specific drug, it's not a match. The only explicit mention is "cannabis," which is in the list. 
+
+The rest of the post doesn't mention any other drugs or slang terms. The user's example 3 shows that "xans" is considered "other" if not in the list. Here, "cannabis" is in the list, so it's a valid match. The other terms like "drug policy" are not specific drugs, so they don't get matched. 
+
+Therefore, the only matched phrase is "cannabis" under the index term "Marijuana (Cannabis, Weed, Pot)." The rest of the post doesn't contain any other drug references that need to be flagged. So the JSON array should include one entry for "cannabis."
+</think>
+
+[{"index_term": "Marijuana (Cannabis, Weed, Pot)", "matched_phrase": "cannabis"}]

@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Actiq, the fentalyl lollipop was clearly developed with rappers in mind." I need to identify any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "Actiq" and "fentalyl lollipop." Let me check the index terms.
+
+Looking at the list, "Fentanyl" is listed under index terms with synonyms like China White, Apache, Duragesic. "Fentalyl" sounds like a misspelling or slang for fentanyl. "Actiq" is a brand name for a fentanyl product. So "fentalyl" is likely a slang term for fentanyl. 
+
+The index term for fentanyl is "Fentanyl (China White, Apache, Duragesic)." So "fentalyl" would map to that. "Actiq" is a registered trademark, but since it's a product containing fentanyl, it's considered a drug reference. However, the index term list includes "Fentanyl" as the index term, so "Actiq" would be matched to Fentanyl as well. 
+
+Wait, the task says to detect every word or phrase that refers to an illicit drug. "Actiq" is a prescription medication, but since it's a fentanyl product, it's still a drug reference. However, the index terms don't have "Actiq" specifically. So the correct index term would be "Fentanyl" for both "Actiq" and "fentalyl lollipop." 
+
+So the matched phrases are "Actiq" and "fentalyl." Both should be linked to "Fentanyl." Let me confirm. The index term for fentanyl includes "China White, Apache, Duragesic," but "fentalyl" is a variation. Since "fentalyl" is a slang or misspelling, it's still under fentanyl. 
+
+Therefore, the JSON array should have two entries: one for "Actiq" and one for "fentalyl lollipop." Wait, the exact phrase is "fentalyl lollipop." But the index term is Fentanyl. So the matched_phrase is "fentalyl lollipop," and index_term is Fentanyl. 
+
+But the example in the problem shows that "lean" is mapped to Codeine. So even if the phrase is a longer phrase, like "fentalyl lollipop," it's still matched to the index term. So the answer would be two entries: "Actiq" and "fentalyl lollipop" both under Fentanyl.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentalyl lollipop"}
+]

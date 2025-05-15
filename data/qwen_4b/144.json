@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content classification. The user provided a tweet about an NBA game stream. The content mentions a sports event, specifically the Memphis Grizzlies vs Minnesota Timberwolves game. The hashtags include #NBAPlayoffs, #Grizzlies, and #RaisedByWolves. There's a link to stream the game.
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to abuse. The content doesn't mention any drugs, medications, or terms related to drug use. The keywords here are "NBA Game," "stream," "Playoffs," and team names. The hashtags are related to sports and the team's name, which is a cultural reference but not drug-related.
+
+The definitions say that True is when there's mention of illegal drugs in abuse context, slang, or encouragement of misuse. False includes medical, educational, or preventative contexts. The content here is purely about a sports event, no drugs mentioned. So it's definitely not related to illicit drugs. The explanation should note that there's no mention of drugs or related terms, just a sports event. Therefore, the label is False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content promotes a sports event with no mention of drugs, medical contexts, or drug-related terminology."
+}

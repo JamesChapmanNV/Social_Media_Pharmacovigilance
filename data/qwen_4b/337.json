@@ -1,0 +1,8 @@
+<think>
+Okay, let's see. The user provided a content snippet that needs classification as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The example given is about sports, specifically the Playoffs and a football match. The content talks about the team's performance, their will to win, set pieces, and mentions they deserve a crack at the PL. There's no mention of drugs, slang, or anything related to drug use. The hashtags are #Playoffs and #UTB, which are related to sports. The explanation in the example mentions that there's no drug-related content. So, applying the same logic here, the content is about sports and doesn't mention any drugs. Therefore, the label should be False. The explanation would note that the content is about sports and doesn't involve drug-related terms or contexts.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses sports performance and team dynamics without mentioning drugs, slang, or drug-related contexts."
+}

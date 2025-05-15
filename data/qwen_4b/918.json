@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The content is: "Keith Richards is literally freebasing heroin right now and he will outlive you." 
+
+First, I need to determine if this is illicit or abusive drug-related. The user mentioned that True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. The example given in the task includes slang and references to drug use with an approving tone.
+
+In this case, the sentence mentions "freebasing heroin," which is a method of using heroin, and it's stated as a current activity by Keith Richards, a well-known figure. The phrase "literally" here is probably emphasizing the reality of his actions. The statement also includes a threat ("he will outlive you"), which could be a hyperbolic way to express that he's doing something dangerous. 
+
+The key points here are the explicit mention of heroin (an illegal drug) and the act of freebasing, which is a form of drug abuse. The context is about someone engaging in illegal drug use, which fits the True category. There's no mention of medical use or educational context here. The tone seems to be about the person's current drug use, which is promoting or glorifying the abuse of heroin. 
+
+So the label should be True. The explanation should mention the explicit mention of heroin and freebasing, which are associated with drug abuse, and the context of someone engaging in such activity.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'freebasing heroin,' an illegal drug use method, and implies ongoing abuse with a hyperbolic statement about the individual's actions."
+}

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Sask. Health Authority encourages companies to bring in drug-overdose training". My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The main subject here is the Sask. Health Authority encouraging companies to provide drug-overdose training. The key phrase here is "drug-overdose training". Now, I need to check if "drug-overdose" refers to a specific illicit drug or substance listed in the index terms.
+
+Looking at the index terms, there's a list of various drugs and their synonyms. However, "drug-overdose" isn't a specific drug name but a general term referring to overdose incidents. The index terms are specific to substances like codeine, amphetamine, fentanyl, etc. Since "drug-overdose" isn't a direct synonym for any of the listed index terms, it's likely categorized under "other".
+
+Wait, but maybe "drug-overdose" could be linked to a specific drug if it's a euphemism. However, in this context, it's more about training related to overdose prevention rather than referencing a specific drug. The post doesn't mention any specific drug names or slang. The only possible term is "drug-overdose", which isn't listed in the index terms. Therefore, the correct index term here would be "other".
+
+So, the matched phrase is "drug-overdose training", but since "drug-overdose" isn't a specific substance, it's classified as "other". The JSON should have one object with index_term "other" and matched_phrase "drug-overdose training".
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug-overdose training"}]

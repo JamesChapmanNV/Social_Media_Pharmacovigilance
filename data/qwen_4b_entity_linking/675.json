@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "Regarding yesterday's tweet concerning an overdose of female influences in my life 😎👌 Here's proof I too can be gawwjuss #DUND #RockyHorror". 
+
+Looking for any slang, euphemisms, or phrases that might refer to illicit drugs. The main challenge here is that the post seems to be a metaphorical or humorous reference. Let's break it down.
+
+The first part mentions "overdose of female influences". The word "overdose" is a strong indicator, but it's used metaphorically here, not literally. Then "gawwjuss" – that's a possible slang. Let me check the index terms. 
+
+Looking through the list, "gawwjuss" doesn't match any exact term. But wait, "gawwjuss" might be a misspelling or variant of "gawwjuice" or "gawwjuice", but that's not in the list. Alternatively, "gawwjuss" could be a slang term for something else. However, none of the index terms match that exact phrase. 
+
+The hashtags #DUND and #RockyHorror. "DUND" isn't in the index terms. "Rocky Horror" is a movie, but not related to drugs. The user might be referencing the movie's themes, but not actual drugs. 
+
+The phrase "overdose of female influences" is metaphorical. The user is using "overdose" as a metaphor for excessive influence, not a drug overdose. So "overdose" here is not a drug reference. 
+
+Looking again, the only possible drug-related term is "gawwjuss", but it's not in the index terms. So the matched phrase would be "gawwjuss" with index_term "other". 
+
+Wait, but the example 3 had "xans" which wasn't in the list, so it was "other". Similarly, here, "gawwjuss" isn't in the index terms, so it's "other". 
+
+So the only detected phrase is "gawwjuss", which maps to "other". The rest of the post doesn't have any drug references. Therefore, the JSON array should have one entry with "other" and "gawwjuss".
+</think>
+
+[{"index_term": "other", "matched_phrase": "gawwjuss"}]

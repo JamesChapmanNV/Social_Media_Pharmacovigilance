@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The content is about a Cowboys player getting suspended for drinking "purple drank," which includes cough syrup and codeine. First, I need to determine if this is illicit or abuse-related.
+
+The key terms here are "opiate mix" and "purple drank." Purple drank is a slang term for a drink made with codeine and other ingredients, often associated with drug abuse. The mention of codeine specifically is a controlled substance, and combining it with cough syrup (which often contains codeine) is illegal. The context is about a suspension due to misuse, so it's promoting or discussing the abuse of drugs. 
+
+The example given in the task mentions "lean" and "codeine" as indicators. Here, "purple drank" is a slang term that's clearly related to drug use. The content is reporting on an incident where the player was suspended for using a substance that's linked to drug abuse. So, this fits under the True category because it's about the misuse of drugs, specifically codeine, in a recreational or abusive context. The explanation should note the slang term and the mention of codeine, indicating abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references 'purple drank' (a slang term for a drug cocktail involving codeine) and mentions opiate use, indicating abuse or misuse of controlled substances."
+}

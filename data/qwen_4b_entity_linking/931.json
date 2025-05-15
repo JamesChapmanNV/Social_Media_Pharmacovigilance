@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Oh damn man. I was being super serious." I need to check if there are any drug-related references here.
+
+First, I'll go through each word and phrase. The post has "Oh damn man." which is just casual speech, not a drug reference. Then "I was being super serious." The key part here is "super serious." Now, I need to check if "super serious" is a slang or euphemism for a drug. 
+
+Looking at the index terms, I remember that some drugs have slang terms. For example, "lean" is codeine, and "codeine" is directly listed. But "super serious" doesn't match any of the listed terms. The example given in the problem where "xans" was considered "other" because it wasn't a specific drug. Similarly, "super serious" isn't a known drug term here. 
+
+I should check if "super serious" could be a euphemism for something else. But based on the index terms provided, there's no entry for that. The closest might be "serious" in some contexts, but it's not listed. So, the answer should be "other" for "super serious." 
+
+Wait, the user's example 3 had "xans" as other. So if the phrase isn't directly matching any drug term, it's "other." Since "super serious" isn't a known drug slang here, it's "other." So the JSON should have one entry with index_term "other" and matched_phrase "super serious."
+</think>
+
+[{"index_term": "other", "matched_phrase": "super serious"}]

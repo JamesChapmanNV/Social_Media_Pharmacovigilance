@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully: "I appreciate the update, though it's distressing to know she's so uncomfortable. When we went through it Ativan was given every hour and morphine every three. This was round the clock. Very emotional but absolutely necessary."
+
+Looking for drug-related terms. The first mention is "Ativan." Checking the index terms, Lorazepam is listed as Ativan. So "Ativan" maps to "Lorazepam." Then there's "morphine." The index term for morphine is "Morphine." The post mentions "morphine every three," so that's a direct match. 
+
+I need to make sure there are no other terms. The rest of the post talks about medical treatment, but no other drugs are mentioned. "Ativan" and "morphine" are the only ones. 
+
+So the JSON should have two entries: one for Ativan (Lorazepam) and one for morphine (Morphine). No other terms are present, so "other" isn't needed here. Let me double-check the index terms to confirm. Yes, Lorazepam is listed, and Morphine is also there. 
+
+No slang or euphemisms here. The terms are straightforward. The answer should be the two objects as specified.
+</think>
+
+[
+  {"index_term": "Lorazepam", "matched_phrase": "Ativan"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

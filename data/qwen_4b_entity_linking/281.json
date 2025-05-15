@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I'll read the post carefully: "They say scrap NASS that provide checks for executive recklessness but give PMB special power, too much codeine is dangerous to reasoning." 
+
+Looking for drug-related terms. The word "codeine" is mentioned here. Now, checking the Index Terms list. Codeine is listed under "Codeine (Lean, Purple Drank, Schoolboy)" as an index term. So "codeine" directly maps to Codeine. 
+
+Are there any other terms? The rest of the post talks about NASS, PMB, which don't seem to be drugs. The phrase "too much codeine is dangerous to reasoning" clearly refers to codeine. There's no mention of other drugs like amphetamine, cocaine, etc. 
+
+So the only matched phrase is "codeine" under Codeine. The other parts of the sentence are about political entities and their powers, which aren't drug-related. Therefore, the JSON array should have one entry: {"index_term": "Codeine", "matched_phrase": "codeine"}.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

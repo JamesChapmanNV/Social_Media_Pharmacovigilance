@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "And I am in! Merch Hat with the rare cannabis outfit, perfect for tomorrow." I need to check for any drug-related references here.
+
+First, I'll go through the post word by word. The first part is "And I am in!" which seems like a statement of agreement, not related to drugs. Then "Merch Hat with the rare cannabis outfit..." Here, "cannabis" is mentioned. Looking at the index terms, marijuana (Cannabis) is listed as an illicit drug. So "cannabis" would map to "Marijuana" in the index terms. The rest of the sentence is about a merch hat and an outfit, which doesn't include any other drug references. 
+
+I need to make sure there's no slang or euphemism here. "Cannabis" is directly listed, so it's a clear match. The other words like "Merch Hat," "rare," "outfit," and "perfect for tomorrow" don't relate to drugs. So the only match is "cannabis" under Marijuana. 
+
+Wait, the example in the user's prompt had "snow" and "white lines" as "other" because they weren't on the list. But here, "cannabis" is explicitly in the list. So the correct index term is "Marijuana." 
+
+No other phrases here. The answer should be a JSON array with one object: index_term "Marijuana" and matched_phrase "cannabis".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

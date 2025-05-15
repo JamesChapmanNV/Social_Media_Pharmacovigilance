@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "He maybe needs morphine for a few days. It's easier to control pain if you bring down properly for a few days and then use normal pain relief. It's like a fire, get it under control then it's easier to manage (this is what my pain doctor tells me)."
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, or promoting use. Also, slang or euphemisms related to drug use. False includes medical, educational, or preventative contexts, discouraging misuse.
+
+Looking at the content, the mention of "morphine" is a controlled substance (RX drug). But the context here is about managing pain with a doctor's advice. The user is talking about using morphine as part of a treatment plan, under medical supervision. The analogy to a fire is about controlling pain, which is a medical context. There's no indication of abuse, promotion, or misuse. The person is following their doctor's advice, which is a preventative or medical context. The terms are used in a therapeutic way, not for recreational or harmful purposes. So this should be classified as False. The explanation should note the medical context and proper use under a doctor's guidance.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses morphine use in a medical context for pain management under a doctor's guidance, not promoting abuse or misuse."
+}

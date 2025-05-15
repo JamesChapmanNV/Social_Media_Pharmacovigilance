@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False). The content is: "If playing football was drugs i would hv been taking overdose 😭🙏💔 God knows".
+
+First, I need to understand the context. The user is using a metaphor here. They're comparing playing football to drugs, suggesting that if football were a drug, they would have taken an overdose. The emotional expressions like 😭, 🙏, and 💔 indicate strong feelings, possibly frustration or regret.
+
+Now, applying the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Also, slang or euphemisms related to drug use. False includes medical, educational, or preventative contexts.
+
+The content uses "drugs" but in a metaphorical sense. The person isn't talking about actual drug use or abuse. They're expressing a hypothetical scenario where football is compared to a drug, leading to an overdose. There's no explicit mention of illegal drugs, and the tone is more about emotional reaction rather than promoting or glorifying drug use. The terms "overdose" might be a red flag, but in this case, it's part of the metaphor. The user isn't encouraging drug use; they're expressing a hypothetical scenario. Therefore, this doesn't fit the criteria for True. The explanation should note the metaphorical use and lack of promotion or abuse context.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content uses metaphorical language comparing football to drugs, expressing hypothetical emotional distress, not promoting or glorifying drug abuse."
+}

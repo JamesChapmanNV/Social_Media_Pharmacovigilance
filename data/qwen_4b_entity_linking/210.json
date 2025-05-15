@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Watched's new video on YouTube, and the next video afterwards was 'what happens when you overdose' 😂😅 Errrbody know." I need to check for any drug-related references here.
+
+First, I'll read through the post carefully. The main content is about watching a YouTube video and the next video being about overdose. The user also mentions "Errrbody know" which is probably a typo for "Everybody knows" or something similar. 
+
+Looking for any slang, euphemisms, or terms that might refer to illicit drugs. The key phrases here are "what happens when you overdose." But overdose is a general term and not specifically a drug name. The post doesn't mention any specific drug names or slang terms. The mention of "overdose" is a consequence of drug use, but the actual drug isn't named here. 
+
+The index terms list includes terms like Codeine, Amphetamine, LSD, etc. The post doesn't use any of those specific terms. The phrase "overdose" isn't listed as an index term. The example where "snow" was considered "other" because it's not a drug. Similarly, "overdose" here is a general term, not a specific drug. 
+
+So, there are no direct references to illicit drugs in the post. The user might be referring to a video about overdose in general, not a specific drug. Therefore, there are no matches to the index terms. The answer should be an empty array since no drug-related phrases are detected.
+</think>
+
+[]

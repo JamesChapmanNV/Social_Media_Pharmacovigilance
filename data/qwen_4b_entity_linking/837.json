@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "The new   is every bit as beautiful as I'd hoped it would be. Sounding like a John Martyn, Codeine & Red House Painters mash-up."
+
+Looking for any mentions of drugs or substances. The first part talks about a new "thing" but doesn't specify. The second part mentions "Codeine & Red House Painters." Wait, Codeine is listed in the index terms as an index term. The phrase here is "Codeine," which is directly mentioned. 
+
+So, the matched phrase is "Codeine," and the index term is "Codeine." There's no other drug reference here. The rest of the post is about music, so no other terms. 
+
+I need to make sure that "Codeine" is correctly mapped. Checking the index terms list, Codeine is indeed listed with synonyms like Lean and Purple Drank. But in the post, it's just "Codeine," so the exact match is "Codeine." 
+
+No other phrases here. The answer should be a single object in the JSON array.
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "Codeine"}]

@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Nothing helps me put the kids to sleep like a spoonful of Chloroform and Morphine!" I need to detect any drug references here.
+
+First, I'll go through each word. "Chloroform" is a substance, but I need to check if it's listed in the index terms. Looking at the list, there's no direct mention of Chloroform. However, the index terms include "Morphine" as a term. So "Morphine" is definitely in the list. 
+
+Next, "Morphine" is listed under the index term "Morphine". The phrase "Morphine" is a direct match. 
+
+Now, "Chloroform" isn't listed in the index terms. The closest might be "other" since it's not a specific drug listed. But wait, the index terms include "Codeine" with synonyms like "lean" and "purple drank", but Chloroform isn't mentioned. So "Chloroform" should be categorized as "other".
+
+So the matched phrases are "Morphine" under "Morphine" and "Chloroform" under "other". Let me double-check the index terms again to make sure. Yep, no Chloroform listed. So the JSON should have two entries: one for Morphine and one for Chloroform as other.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "other", "matched_phrase": "Chloroform"}
+]

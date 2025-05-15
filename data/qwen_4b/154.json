@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The content is about Demi Lovato talking about "Survivor's Guilt" after DMX's overdose. First, I need to determine if this is illicit or abusive drug-related.
+
+DMX is a rapper known for his drug use and overdose. The mention of his overdose is a tragic event, but the context here is about survivor's guilt, which is an emotional response. The content isn't promoting or encouraging drug use. It's more about the aftermath of a drug-related incident. 
+
+The key here is whether the content is about abuse, misuse, or promotion. Since it's discussing a past event and the emotional impact, not encouraging or glorifying drug use, it falls under the False category. The terms used are related to a drug overdose but in a context of tragedy, not abuse or misuse. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a tragic overdose incident in a personal reflection context, not promoting or glorifying drug abuse."
+}

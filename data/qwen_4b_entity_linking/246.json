@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances and link them to the appropriate Index Term from the provided list. If the term isn't in the list, I should use "other".
+
+First, I need to look at the given post: "A3: Lack of affordable treatment + punitive policies result in severe illness, job loss, and racial disparities in outcomes. Overdose deaths are at their highest ever + the pandemic is exacerbating treatment shortages #WellnessWed". 
+
+I'll start by reading through the post carefully. The main points here are about the consequences of lack of treatment and punitive policies, overdose deaths, and pandemic effects on treatment. The hashtags include #WellnessWed, which seems unrelated to drugs. 
+
+Now, I need to check for any drug references. The post mentions "overdose deaths" but doesn't specify which drug. However, the context is about opioid-related issues since overdose deaths are often linked to opioids. But the Index Terms don't include a general term for opioids. The Index Terms list specific drugs like Codeine, Fentanyl, Morphine, etc. 
+
+Looking at the text again, there's no direct mention of any specific drug names or slang. The words "overdose" and "treatment" are general terms. The hashtag #WellnessWed is not related. So, there are no explicit drug references here. 
+
+The user's examples show that even if a term is not in the list, it's marked as "other". But in this case, there are no terms that match any Index Term. The post is discussing the consequences of drug use and overdose but doesn't name any specific drug. Therefore, there are no matches to the Index Terms provided. 
+
+So the correct response is an empty array because there are no detected phrases that match any Index Term. The user's examples show that if there are no matches, the array is empty. For instance, Example 3 has "xans" which isn't in the list, so it's marked as "other". But in this case, there are no terms to match, so the array should be empty.
+</think>
+
+[]

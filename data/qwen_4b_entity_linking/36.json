@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Cannabis is the real life saver in the United States, not capitalism that makes people want to suicide more severely." I need to detect any drug-related references here.
+
+First, I'll scan the post for keywords. The word "cannabis" is mentioned. Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is a listed index term. So "cannabis" here should map to "Marijuana".
+
+Next, the post mentions "capitalism" and "suicide". But those aren't drugs. The user's task is to detect drug references. "Suicide" isn't a drug, so that's not a match. "Capitalism" is a political term, not a drug. So the only match here is "cannabis".
+
+I need to check if "cannabis" is in the index terms. Yes, under the "Marijuana" entry. So the matched phrase is "cannabis" and the index term is "Marijuana". There are no other drug references here. The rest of the post is about political views, which don't relate to drugs. So the JSON array should have one entry: {"index_term": "Marijuana", "matched_phrase": "cannabis"}.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

@@ -1,0 +1,37 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "im sorry to say this, i was devastated about it too. Its heroine, not heroin :(".
+
+First, I need to identify any drug-related references. The main phrases here are "heroine" and "heroin". Looking at the index terms, there's an entry for Morphine, which includes aliases like MS Contin, Miss Emma, Morph. But wait, the user mentioned "heroine" and "heroin". 
+
+Wait, the index terms list Morphine as "Morphine (MS Contin, Miss Emma, Morph)" and there's also a term for Heroin. Let me check the list again. Oh, the index terms include "Morphine" and "Heroin" isn't listed. Wait, looking at the list, the entry for Morphine is there, but Heroin isn't explicitly listed. However, the user wrote "heroin" and "heroine". 
+
+Wait, the index terms include "Morphine" and "Heroin" isn't in the list. But in the example given, "codeine" has aliases like "lean" and "purple drank". So, if "heroin" isn't in the index terms, then it would be "other". But wait, the user wrote "heroine" and "heroin". Let me check the index terms again. 
+
+Looking at the index terms, there's "Morphine" and "Heroin" is not listed. However, the term "Heroin" isn't present. The index terms list "Morphine" and "Heroin" is not in the list. So "heroin" would be "other". But wait, the user wrote "heroine" and "heroin". Wait, "heroine" is a different term. But in the index terms, the only related term is Morphine. However, "heroin" is a different drug. 
+
+Wait, the index terms list "Morphine" as the index term. But "heroin" is a different drug. However, in the index terms, there's no entry for Heroin. So "heroin" would be "other". But the user wrote "heroine" and "heroin". 
+
+Wait, the user's post says "Its heroine, not heroin". So "heroine" is a possible reference. But "heroine" is a term that's not in the index terms. The index terms have "Morphine" and "Heroin" isn't listed. So "heroine" would be "other". However, maybe "heroine" is a slang for morphine? But according to the index terms, "Morphine" is the term. But "heroin" is a different drug. 
+
+Wait, the user is saying "heroine, not heroin". So they might be using "heroine" as a term for morphine. But in the index terms, "Morphine" is listed, but "heroin" isn't. So if "heroine" is a term for morphine, then it would be "Morphine". But I need to check if "heroine" is a slang for morphine. Alternatively, maybe the user is confused between heroin and morphine. 
+
+But according to the index terms, "Morphine" is the term, and "Heroin" is not listed. So if the post mentions "heroine", that's not in the index terms, so it would be "other". However, "heroin" is not in the index terms either. Wait, the index terms list "Morphine" and "Heroin" is not present. So both "heroine" and "heroin" would be "other". 
+
+But wait, the user wrote "Its heroine, not heroin". So they are clarifying that it's heroine (maybe a typo for heroin?), but the correct term is heroin. However, the index terms don't have "heroin". So in this case, both "heroine" and "heroin" would be "other". 
+
+But wait, looking back at the index terms, is there an entry for heroin? Let me check again. The index terms list "Morphine" and "Heroin" is not in the list. The term "Heroin" is not present. Therefore, both "heroin" and "heroine" would be "other". 
+
+But wait, the user is saying "heroine, not heroin", which might be a typo. But the actual drug they are referring to is heroin. However, since "heroin" is not in the index terms, it would be "other". 
+
+But maybe the user is referring to morphine. But "heroine" is a term for morphine? No, "heroin" is a different drug. So in this case, the correct index term would be "Morphine" if "heroine" is a slang for morphine. However, according to the index terms, "Morphine" is the term. But the user wrote "heroine", which is not in the index terms. Therefore, the matched phrase "heroine" would be "other". 
+
+But the user is saying "Its heroine, not heroin". So they are trying to clarify that it's not heroin. But the actual drug is heroin. However, since the index terms don't list heroin, it would be "other". 
+
+Therefore, the detected phrases are "heroine" and "heroin", both of which are not in the index terms, so both would be "other". But wait, maybe "heroin" is in the index terms. Let me check again. 
+
+Looking at the index terms list: the only entry for opioids is Morphine, Codeine, Fentanyl, etc. But "Heroin" is not listed. So "heroin" is not in the index terms. Therefore, both "heroin" and "heroine" would be "other". 
+
+But the user might have made a mistake, but according to the given index terms, "heroin" is not listed. Therefore, the correct answer would be both phrases as "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroine"}, {"index_term": "other", "matched_phrase": "heroin"}]

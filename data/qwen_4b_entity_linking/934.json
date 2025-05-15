@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I'm not sure, but I've read that quitting cigarettes is harder than quitting heroin." I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The main words are "cigarettes" and "heroin." Looking at the index terms, "heroin" is listed under Morphine, which is an opioid. So "heroin" would map to "Morphine" as the index term. 
+
+Now, "cigarettes" – the index terms don't have a direct entry for cigarettes. The closest might be "other" since cigarettes are not listed as an illicit drug in the provided index. The example 4 shows that "snow" and "white lines" are marked as other, so similarly, "cigarettes" here would be "other."
+
+Wait, but wait. Are cigarettes considered here? The task says to detect illicit drugs. Cigarettes usually contain nicotine, which is a controlled substance, but in the index terms, nicotine isn't listed. The index terms include drugs like heroin, morphine, etc., but not nicotine. So "cigarettes" would be "other" because it's not a direct match. 
+
+So the matched phrases are "heroin" and "cigarettes." Heroin maps to Morphine, and cigarettes map to other. So the JSON array should have two entries: one for heroin (Morphine) and one for cigarettes (other). 
+
+Let me double-check the index terms. The index terms include "Morphine" as the index term for heroin. So "heroin" is correctly mapped. "Cigarettes" aren't listed, so "other." 
+
+Therefore, the correct output is two objects: one with index_term "Morphine" and matched_phrase "heroin", and another with "other" and "cigarettes".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "cigarettes"}
+]

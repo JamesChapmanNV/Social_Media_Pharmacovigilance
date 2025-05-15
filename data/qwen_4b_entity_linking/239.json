@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about an NBA game and asked to detect any drug-related references. First, I need to go through the post carefully.
+
+The post is: "Link to watch NBA Game: Dallas Mavericks vs Utah Jazz stream in tweet below: Live NBA Streams Playoffs 2022 games #NBA #NBAPlayoffs #DALvsUTA CLICK ====v ;"
+
+Looking at the text, there's a mention of an NBA game, some hashtags like #NBA, #NBAPlayoffs, and #DALvsUTA. The user is sharing a link to stream the game. Now, I need to check if any of these terms are drug-related references based on the provided index terms.
+
+Looking at the index terms list, I see entries for drugs like Codeine, Amphetamine, Benzodiazepines, etc. But the post doesn't mention any drug names, slang, or phrases related to illicit drugs. The hashtags are related to sports and events, not drugs. The word "CLICK" is part of a link, but that's not a drug reference. There's no mention of any substance, slang, or euphemism for drugs here.
+
+So, the task is to check if there are any matches. Since there are none, the response should be an empty array. The example where "snow" was considered "other" because it's not a drug, but in this case, all the terms are related to sports and not drugs. Therefore, no index terms are matched, and the correct response is an empty JSON array.
+</think>
+
+[]

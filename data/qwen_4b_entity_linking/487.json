@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post about morphine and benzodiazepines in end-of-life treatment. My task is to detect any drug references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The key phrases here are "morphine" and "benzodiazepines". Looking at the index terms list, Morphine is listed under "Morphine (MS Contin, Miss Emma, Morph)" as the prototypical opioid. So "morphine" directly maps to that index term.
+
+Next, "benzodiazepines" are a category. The index terms include several benzodiazepines like lorazepam, diazepam, etc. However, the post doesn't specify a particular benzodiazepine name. Since the term "benzodiazepines" is a general category and not a specific drug listed as an index term, I need to check if "benzodiazepines" itself is an index term. Looking at the list, the index terms include specific drugs like lorazepam, clonazepam, but not the general term "benzodiazepines". Therefore, according to the instructions, if the drug isn't in the list, use "other". 
+
+Wait, but the index terms do have entries for benzodiazepines as specific drugs. However, the post uses the general term "benzodiazepines", not a specific one. The example given in the problem where "xans" were not in the list and thus marked as "other" applies here. Since "benzodiazepines" isn't a specific index term listed, even though they are a class of drugs, the correct index term would be "other".
+
+So, the matched phrases are "morphine" and "benzodiazepines". Morphine maps to "Morphine", and "benzodiazepines" maps to "other" because it's a general term not listed as a specific index term. 
+
+I need to make sure there are no other terms. The rest of the post talks about medical dosing and doesn't mention any other drugs. So the final JSON should have two entries: one for morphine and one for benzodiazepines as "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "benzodiazepines"}
+]

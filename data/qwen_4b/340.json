@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "did baekho lace bamsae with crack its so addicting 😭😭".
+
+First, I need to understand the context. Baekho and Bamsae are Korean terms, but I'm not sure about their exact meanings. However, the key part here is "lace with crack" and "its so addicting". Crack is a slang term for crack cocaine, which is an illegal drug. The phrase "so addicting" suggests a positive or approving attitude towards the drug's use.
+
+Now, checking the definitions. True includes mentions of illegal drugs in the context of abuse or misuse, using slang, or glorifying misuse. The content here directly mentions "crack", which is illegal, and uses "addicting" to describe it, which implies encouragement or normalization of its use. The emojis like 😭😭 add an emotional tone, possibly indicating a negative reaction, but the key is the mention of the drug and the context of its use being addictive. 
+
+The example given in the prompt where "lean" and "codeine" were mentioned as True is similar. Here, the content is promoting or describing the use of crack in a way that's associated with addiction. Even if the person is expressing a negative emotion, the mention of the drug and its addictive nature fits the True category. 
+
+I should also consider if there's any other context. The user might be referring to a viral trend or a meme, but the content itself mentions the drug and its addictive nature. Therefore, the classification should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'crack' (a controlled substance) and describes it as 'addicting,' indicating promotion or glorification of drug misuse."
+}

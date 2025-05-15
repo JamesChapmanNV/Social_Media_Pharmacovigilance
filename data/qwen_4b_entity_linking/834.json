@@ -1,0 +1,54 @@
+<think>
+Okay, let's tackle this query. The user provided a post about the CDC's definition of opiates and opioids. The task is to detect any drug-related references and link them to the index terms.
+
+First, I'll read through the post carefully. The post mentions "opiates" and lists examples like heroin, morphine, and codeine. Then it talks about opioids being all substances that interact with opioid receptors. The user says "Her usage is correct." 
+
+Now, I need to check if any of the words in the post refer to illicit drugs or substances. The key terms here are "opiates" and the specific examples given: heroin, morphine, codeine. 
+
+Looking at the index terms list, Codeine is listed under "Codeine (Lean, Purple Drank, Schoolboy)" as an index term. Heroin and morphine are also in the list under Morphine and Codeine. Wait, the index terms include Morphine as a separate entry. Let me check:
+
+Yes, "Morphine (MS Contin, Miss Emma, Morph)" is an index term. Heroin is not directly listed, but the post mentions it as an example of opiate. However, the index terms don't have a specific entry for heroin. Wait, looking back at the index terms list, the only entries for opioids are Codeine, Morphine, Fentanyl, etc. Heroin isn't listed as an index term. But the post is talking about heroin as an example of opiate. However, the task is to match the detected phrases to the index terms. Since heroin isn't in the list, it would fall under "other". But wait, the user's post says "opiates are specifically natural-origin opioids such as heroin, morphine and codeine". So heroin is mentioned here. But the index terms don't have a specific entry for heroin. So "heroin" would map to "other" since it's not in the list. But wait, the index terms list includes "Morphine" and "Codeine" as separate entries. Heroin isn't listed. So the phrases "heroin", "morphine", "codeine" would be checked. 
+
+In the post, the user says "opiates are specifically natural-origin opioids such as heroin, morphine and codeine". So the words "heroin", "morphine", "codeine" are mentioned. 
+
+Now, checking the index terms:
+
+- Codeine is listed as an index term with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" would map to Codeine.
+
+- Morphine is listed as an index term. So "morphine" would map to Morphine.
+
+- Heroin is not listed in the index terms. So "heroin" would map to "other".
+
+But the post says "Her usage is correct." So the user is talking about someone using heroin, but the index terms don't have heroin. Therefore, "heroin" would be "other".
+
+So the detected phrases are "heroin", "morphine", "codeine". 
+
+But wait, the post says "opiates are specifically natural-origin opioids such as heroin, morphine and codeine". So the three words are heroin, morphine, codeine. 
+
+So the JSON array would have:
+
+For "heroin": index_term is "other" because it's not in the list.
+
+For "morphine": index_term is "Morphine".
+
+For "codeine": index_term is "Codeine".
+
+So the output should be three entries. However, the example given in the problem shows that in Example #1, "lean" and "codeine" are both mapped to Codeine. So in this case, "heroin" would be "other", "morphine" to Morphine, and "codeine" to Codeine.
+
+But wait, the post says "opiates are specifically natural-origin opioids such as heroin, morphine and codeine". So the three words are heroin, morphine, codeine. 
+
+So the JSON array would be:
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+But wait, the user's post is talking about the CDC's definition. The user is not using the drugs, but explaining them. The task is to detect any references to illicit drugs. Since heroin is an illicit drug, but it's not in the index terms. So "heroin" would be "other". The other two are in the index terms. So that's the correct mapping.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

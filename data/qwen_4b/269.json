@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The user provided a content snippet: "If u can't bring nothing to the table i don't want nothing with you ✌". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check if there are any drug-related terms here. The content uses phrases like "nothing to the table" and "nothing with you", which are metaphors about social interactions, not drugs. There's no mention of drugs, slang, or anything related to abuse or misuse. The emojis and the tone seem to be about relationships or communication, not drug use. 
+
+According to the definitions, True would be if there's mention of illegal drugs, slang, or encouragement of misuse. Here, there's no such thing. The content is about social exclusion, not drugs. So it should be False. The explanation should note that there's no drug-related content, just social interaction metaphors.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content uses metaphorical language about social interactions, not drug-related terms or contexts."
+}

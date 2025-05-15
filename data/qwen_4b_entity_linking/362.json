@@ -1,0 +1,64 @@
+<think>
+Okay, let's tackle this. The user provided a post that's asking about drug use, specifically mentioning heroin, opioids, fentanyl, and crack. My job is to detect any drug-related references and link them to the correct index terms.
+
+First, I'll go through the post sentence by sentence. The first part is "Seriously? You mess up more than Biden?" That's just a rhetorical question, no drugs mentioned here. Then the next part: "To mess up as much as you say is it because of heavy drug use? What's your drug of choice, heroin, opioids, fentanyl, crack?" Here, the words "heroin," "opiates," "fentanyl," and "crack" are mentioned. 
+
+Looking at the index terms list, "Heroin" is listed under Morphine as "MS Contin, Miss Emma, Morph." Wait, no, actually, checking the index terms again: Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph)" and then "Heroin" isn't directly listed. Wait, the index terms include "Morphine" and "Codeine," but heroin isn't explicitly in the list. Wait, looking back: the index terms list includes "Heroin" as "Morphine (MS Contin, Miss Emma, Morph)"? No, actually, no. Let me check again.
+
+Looking at the index terms, "Morphine" is listed as "Morphine (MS Contin, Miss Emma, Morph)" and "Heroin" is not directly listed. Wait, but the index terms include "Heroin" as a separate entry? Wait, no. Wait, the user provided the list of index terms. Let me check again. 
+
+Looking through the list, the index terms include "Morphine" and "Codeine," but "Heroin" is not explicitly listed. Wait, but in the index terms, "Morphine" is listed, and "Heroin" is a different drug. However, the index terms list includes "Morphine" and "Codeine," but "Heroin" is not directly listed. Wait, but the user might have a mistake here. Wait, the index terms list includes "Morphine" and "Codeine," but "Heroin" is not explicitly in the list. However, in the example given, "Codeine" is linked to "lean" and "codeine." So, in the post, the user is mentioning "heroin," "opiates," "fentanyl," and "crack."
+
+Now, checking the index terms again. The index terms include "Fentanyl (China White, Apache, Duragesic)" and "Methadone (Dolophine, Methadose, Done)" and "Morphine (MS Contin, Miss Emma, Morph)" and "Heroin" is not directly listed. Wait, but "Heroin" is a drug, but in the index terms, is there an entry for it? Let me check again. The index terms list includes "Morphine" and "Codeine," but "Heroin" is not in the list. However, "Heroin" is a drug, but perhaps it's not in the index terms. Wait, looking at the index terms again, the entry for "Morphine" is listed, but "Heroin" is not. However, "Heroin" is a separate drug. Wait, but in the index terms, is there a term for heroin? Let me check again.
+
+Looking at the index terms list, the entry for "Morphine" is listed, and "Heroin" is not. However, the user's post mentions "heroin," "opiates," "fentanyl," and "crack." So, "heroin" is not in the index terms. Wait, but in the index terms, "Morphine" is listed, and "Heroin" is not. However, the index terms include "Opioids" as a category? No, looking at the list, there's no "Opioids" as a term. Wait, the index terms are specific compounds. So, "Heroin" is not listed, but "Morphine" is. However, "Heroin" is a different drug. But according to the index terms provided, "Heroin" is not listed. Therefore, if the post mentions "heroin," it would be "other" since it's not in the index terms. Similarly, "opiates" is a general term, but the index terms don't have a specific term for that. Wait, but "opiates" is a category, but the index terms list specific drugs. So "opiates" would be "other." 
+
+Wait, but the user's post says "opiates," which is a general term for drugs like morphine, codeine, etc. However, in the index terms, "Codeine" is listed, and "Morphine" is listed. But "opiates" is not a specific term in the index list. Therefore, if the post mentions "opiates," it would be "other." 
+
+So, the post mentions "heroin," "opiates," "fentanyl," and "crack." Let's check each:
+
+- "Heroin" is not in the index terms, so "other."
+- "Opiates" is not a specific term in the index terms, so "other."
+- "Fentanyl" is in the index terms as "Fentanyl (China White, Apache, Duragesic)" so index term is "Fentanyl."
+- "Crack" is not in the index terms. Wait, "Crack" is a form of cocaine, but in the index terms, "Benzoylecgonine (BZE, Ecgonine benzoate)" is the metabolite of cocaine. But "Crack" is not listed. So "crack" would be "other."
+
+So, the matched phrases would be:
+
+- "heroin" → other
+- "opiates" → other
+- "fentanyl" → Fentanyl
+- "crack" → other
+
+But wait, the user's post says "What's your drug of choice, heroin, opioids, fentanyl, crack?" So the words are "heroin," "opiates," "fentanyl," "crack."
+
+So, "heroin" is not in the index terms, so "other." "Opiates" is a general term, not a specific index term, so "other." "Fentanyl" is in the index terms. "Crack" is not in the index terms. So the JSON array would have entries for "heroin," "opiates," "fentanyl," and "crack" as "other" except for "fentanyl."
+
+Wait, but the user's post says "opiates" as a term. The index terms don't have "opiates" as a term. So "opiates" would be "other."
+
+Therefore, the correct matches would be:
+
+- "heroin" → other
+- "opiates" → other
+- "fentanyl" → Fentanyl
+- "crack" → other
+
+So the JSON array would be:
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "opiates"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "other", "matched_phrase": "crack"}
+]
+
+But wait, the user's post says "opiates" as a noun. However, in the index terms, "Morphine" is listed, and "Codeine" is listed. But "opiates" is a general term, so it's not in the index terms. Therefore, "opiates" is "other."
+
+So the final answer should include these four entries. However, the user's post is asking about the drug of choice, so the words "heroin," "opiates," "fentanyl," "crack" are the phrases. So each of these would be matched to their respective index terms. But "opiates" is not in the list, so "other." "Fentanyl" is in the list. "Heroin" and "crack" are not in the list, so "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "opiates"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "other", "matched_phrase": "crack"}
+]

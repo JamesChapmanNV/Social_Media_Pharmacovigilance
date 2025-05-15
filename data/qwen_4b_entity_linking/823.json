@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Cannula's are my worst enemy. These are from the nurses spending almost 2 hours, while I was unconscious from morphine, trying to put a cannula in me!" 
+
+First, I need to identify any drug-related references in the post. The main words here are "cannula" and "morphine". 
+
+Looking at the Index Terms list, "Morphine" is listed as an opioid analgesic. The phrase "unconscious from morphine" clearly refers to the drug morphine. So "morphine" is a direct match under the index term "Morphine".
+
+Next, "cannula" is a medical device, a tube used for administering medication or drawing blood. The post mentions "cannula" in the context of nurses trying to insert one, but there's no slang or euphemism here. The term "cannula" itself isn't listed in the Index Terms as a drug or substance. Therefore, it should be categorized under "other".
+
+So the detected phrases are "morphine" and "cannula". The first is linked to Morphine, the second to other. The example in the problem statement shows that "xans" is considered other, so similarly, "cannula" here is not a drug term but a medical device. 
+
+I need to make sure there are no other hidden references. The post doesn't mention any other drugs or slang terms. The user is talking about a medical procedure and the drug morphine. So the only match is morphine. The cannula is just a device, not a drug. 
+
+Therefore, the JSON array should have one entry for "morphine" and another for "cannula" as "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "cannula"}
+]

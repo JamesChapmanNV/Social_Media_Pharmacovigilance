@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user provided a post: "Covidien launches generic version of Actiq- Yahoo/AP Wed, 03/03/10 - 12:00 pm". I need to check if there are any drug-related references here.
+
+First, I'll look for any words or phrases that might refer to illicit drugs or substances. The post mentions "Covidien" and "Actiq". I know that Actiq is a brand name for a medication containing fentanyl, which is a synthetic opioid. However, the Index Terms list includes "Fentanyl" as an index term. But wait, the post is talking about a generic version of Actiq. So "Actiq" is a prescription drug, not an illicit substance. 
+
+Looking at the Index Terms, Fentanyl is listed under its own entry. But the post is about a generic version, which would still be a prescription drug. The task is to detect references to illicit drugs, RX, OTC, or recreational drugs. Since Actiq is a prescription drug (RX) for pain management, but the user is asking about illicit drugs. However, the task says to include illegal, RX, OTC, or recreational drugs. So maybe "Actiq" is an RX drug, but is it considered here? Wait, the example in the task includes "Amphetamine" for "addy", which is a prescription drug (Adderall). So maybe RX drugs are included if they're mentioned in the context of use, even if they're prescription.
+
+But in this case, the post is about a company launching a generic version of Actiq. Actiq is a brand name for a fentanyl patch. So "Actiq" would be a prescription drug, but the post is not mentioning its use, just its launch. So maybe there's no illicit drug reference here. The words "Covidien" is a company name, not a drug. "Generic version of Actiq" would be a prescription drug. So the post is about a pharmaceutical company launching a generic drug, not about using or referring to an illicit substance. Therefore, there are no matches in this post. So the JSON array should be empty.
+</think>
+
+[]

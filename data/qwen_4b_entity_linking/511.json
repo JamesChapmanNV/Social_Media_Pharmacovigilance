@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index terms, and return a JSON array.
+
+First, I need to look at the provided post: "According to HAHK is original and MPK has 5 cr footfalls. Salman said I didnt got credit because people loved the heroin more but I doubt it but incase of HAHK there is no doubt that salman khans contribution was close to 0. 1.MPK 3.3 cr ffs... Saajan 2cr ffs".
+
+I need to scan through this text for any drug references. Let's break it down. The first part talks about HAHK and MPK, which might be acronyms or names. Then there's a mention of "heroin". Heroin is an opioid, and looking at the index terms, "Heroin" is listed as Morphine (MS Contin, Miss Emma, Morph) but wait, the index terms don't have a direct entry for heroin. Wait, checking the index terms again: Morphine is listed, but heroin isn't explicitly mentioned. However, the index term for Morphine includes "MS Contin, Miss Emma, Morph", but heroin is a separate drug. Wait, in the index terms, "Morphine" is the term, but heroin is not listed. However, in the example given, "Codeine" is linked to "lean" and "codeine". So, if the post mentions "heroin", I need to check if it's in the index terms. Looking back, the index terms include "Heroin" as part of Morphine? No, the index terms list "Morphine" but not heroin. Wait, the index terms don't have a specific entry for heroin. Let me check again. The index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, in the example given, "Codeine" is linked to "lean" and "codeine", which are in the index terms. So, if the post mentions "heroin", since it's not in the index terms, it should be categorized as "other".
+
+In the given post, the phrase "people loved the heroin more" is present. "Heroin" is a drug, but it's not in the index terms. Therefore, the matched phrase "heroin" should be linked to "other". 
+
+Other parts of the post mention "MPK" and "HAHK", which are not in the index terms. The user might be referring to some terms or acronyms, but since they aren't listed in the index terms, they should be marked as "other". However, the post also has "cr footfalls" and "cr ffs", where "cr" could be an abbreviation. But "cr" is not a drug term here. The user might be using "cr" as a slang for "crore" (a unit of currency in India), but that's not a drug. So those would be "other".
+
+So, the only drug reference here is "heroin", which is not in the index terms. Therefore, the JSON array should have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+Wait, but the index terms include "Morphine", but heroin is a different drug. The index terms don't have a specific entry for heroin. Therefore, "heroin" is not in the list, so it's "other". The rest of the terms like "MPK", "HAHK", "cr" are not drugs, so they are "other". But the user's post only mentions "heroin" as a drug. So the correct output is one entry for "heroin".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

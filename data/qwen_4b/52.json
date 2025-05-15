@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is about witnessing a DMX overdose and learning about his mentor tricking him into smoking weed laced with crack at 14.
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Also, slang or references to recreational use. False includes medical, educational, or preventative contexts.
+
+The content mentions "weed laced with crack" and "overdose." Weed is a slang term for marijuana, which is illegal in many places. Lacing it with crack (cocaine) is definitely illegal. The context here is about a past event where someone was tricked into using these drugs, leading to an overdose. The user is sharing a personal experience of witnessing this, which could imply that the content is about drug abuse. However, the tone seems to be more about a tragic event rather than promoting or encouraging drug use. The mention of the mentor tricking him might be more about the consequences of drug abuse rather than promoting it. 
+
+But the key here is whether the content is glorifying or encouraging misuse. The example given in the task includes "hooked" and "everyday" with an approving tone. In this case, the user is describing a negative outcome (overdose) and the mentor's trickery. The explanation mentions the effect, which is negative. So, the content is about a real-life drug abuse incident, but is it promoting it? The user is not promoting the use but rather sharing a story about a tragic event. 
+
+However, the mention of "weed laced with crack" could be considered as referring to drug abuse. The fact that the user is discussing a past event where someone was tricked into using drugs might be considered as part of the abuse context. But the user is not encouraging or promoting it; they are just recounting an incident. 
+
+Wait, the definitions for True include "using, buying, promoting, etc." So if the content is about someone being tricked into using drugs, is that considered abuse? The user is not promoting it, but the content is about drug abuse. However, the key is whether the content is about abuse or misuse. The example given in the task where someone is "hooked on codeine" is considered True because it's about abuse. Similarly, here, the content is about someone being tricked into using drugs, which is a form of abuse. 
+
+But the user's reaction is "Again mane 🙄" which might indicate a negative reaction. The overall tone is about a tragic event. But the presence of drug-related terms in the context of abuse would still make it True. 
+
+So the answer would be True because the content mentions drug abuse (weed and crack) in a context of being tricked into using them, leading to an overdose. Even though the user is not promoting it, the content is about drug abuse. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references drug abuse (weed laced with crack) and a traumatic event involving drug misuse, indicating a context of illicit drug use and its consequences."
+}

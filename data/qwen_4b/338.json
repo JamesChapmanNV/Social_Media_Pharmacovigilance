@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The content is: "Source? Cuz everything I read says he had a heart attack because of an overdose. Which means the overdose killed him." 
+
+First, I need to determine if this is illicit/abusive-drug-related. The user is talking about an overdose leading to a heart attack and death. The key here is the context. The mention of an overdose is a serious medical issue, but the question is whether it's promoting or glorifying drug use.
+
+The content doesn't mention any specific drugs, just refers to an overdose in general. The user is seeking a source for information, not promoting drug use. The explanation is about the cause of death, which is a medical context. There's no indication of encouraging or glorifying drug abuse. The terms used are related to a medical event, not misuse or abuse. So, this should be classified as False because it's discussing a medical consequence of overdose, not promoting or encouraging drug use.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a medical consequence of overdose (heart attack) in a factual, non-promotional context without encouraging or glorifying drug abuse."
+}

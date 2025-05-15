@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "23 Feat. Chasin' Dreams - Codeine [RGF Productions Submitted] -". My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look for words or phrases that could refer to illicit drugs. The post mentions "Codeine" directly. Checking the index terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "Codeine" is explicitly in the post, so that's a clear match. The index term for Codeine is "Codeine", so the matched phrase is "Codeine".
+
+Are there any other terms? The rest of the post is about a song title and a production company, which doesn't include any other drug references. The word "Feat." is just a musical term, and "Chasin' Dreams" is a title, not a drug. The brackets and hyphen are just part of the metadata. So no other terms to match here.
+
+Therefore, the only match is "Codeine" with the phrase "Codeine".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "Codeine"}]

@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "People shoot meth and heroin in front of their kids so why not". I need to identify any drug references here.
+
+First, I'll break down the sentence. The key terms are "meth" and "heroin". Looking at the index terms list, Methamphetamine is listed under "Methamphetamine (Crystal Meth, Ice, Desoxyn)" as an index term. So "meth" would map to Methamphetamine. Then "heroin" is directly listed as an index term under "Heroin (MS Contin, Miss Emma, Morph)".
+
+Wait, the example given in the problem had "lean" mapped to Codeine. So in this case, "meth" is a slang for Methamphetamine, which is in the list. "Heroin" is also a direct match. The phrase "shoot" here is a slang for injecting drugs, but the task is to detect the drug names, not the method. So the matched phrases are "meth" and "heroin", which correspond to their index terms. 
+
+I need to check if there are any other terms. The rest of the sentence is "in front of their kids so why not", which doesn't contain any other drug references. So the JSON should have two entries: one for meth and one for heroin. Both are in the index terms list. No need to use "other" here. 
+
+So the final answer should be two objects in the array, each with the correct index term and matched phrase.
+</think>
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "Heroin", "matched_phrase": "heroin"}
+]

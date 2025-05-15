@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet about a women's march and mentions the Cleveland Plain Dealer. The task is to determine if this content is illicit/abusive-drug-related.
+
+First, I need to check if there's any mention of drugs, illegal substances, or related terms. The content talks about a women's rights march, which is unrelated to drugs. There's no mention of any drugs, slang, or contexts related to abuse or misuse. The example given in the task had mentions of codeine and lean, which are drug-related. Here, the content is about a political event, so it's in a different context. 
+
+The definitions say that True includes content that mentions illegal drugs in contexts of abuse, misuse, or promotion. False includes medical, educational, or preventative contexts. Since this content is about a women's march, it's not related to drugs. There's no indication of drug use, promotion, or abuse here. Therefore, the label should be False. The explanation should note that the content is about a women's rights event with no drug-related terms or context.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a women's rights march and media coverage, with no mention of drugs, drug-related terms, or contexts of abuse/misuse."
+}

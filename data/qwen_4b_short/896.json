@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this label. The user is moderating social media posts related to drug abuse. The task is to determine if the given post falls under category T (text shows illicit or abusive drug use) or F (all other cases).
+
+The post is: "Oh yea I did Beerus and arak cause i remembered the event existed so why not". First, I need to parse the words here. "Beerus" and "arak" are the key terms. 
+
+Beerus is a name, possibly a person or a reference. But wait, "Beerus" could be a misspelling or a slang term. Alternatively, "Beerus" might be a reference to a character from a video game or a fictional context. However, "arak" is a real thing. Arak is a type of spirit, often associated with Middle Eastern cultures. It's a strong alcohol, sometimes used in traditional settings. But is it considered an illicit drug? Well, arak is an alcoholic drink, not a drug. However, in some contexts, especially in certain regions, arak might be associated with illegal activities, but that's more about the context of its use rather than the substance itself.
+
+The user is talking about "using" Beerus and arak. The phrase "I did Beerus and arak" could be a reference to consuming these substances. But if Beerus is a person, maybe they're referring to something else. Alternatively, if Beerus is a misspelling of "beer" or another term, but that's not clear. However, "arak" is a drink, so if the person is referring to consuming arak, that's a drink, not a drug. Unless arak is being used in a context of abuse, but the post doesn't mention that. The user says they did it because they remembered the event existed, so maybe they're talking about a ritual or a tradition. 
+
+The key here is whether the text shows illicit or abusive drug use. Since arak is an alcoholic drink, not a drug, and Beerus is unclear but not a drug, the post might be F. However, if "Beerus" is a slang term for a drug, then it would be T. But I don't recognize Beerus as a slang term. The user might be using "Beerus" as a name, so it's not a drug. Therefore, the post is about consuming a drink (arak) and possibly a person's name, which doesn't indicate drug use. So the label would be F.
+</think>
+
+F

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content classification. The user provided a specific example, so I need to follow the guidelines closely.
+
+First, the content mentions "heroin" which is an illegal drug. The context here is about people using heroin, describing it in a way that seems to glorify or normalize its use. The phrases like "hooked," "everyday," and the mention of "strapping three tablespoons on their inside thigh" suggest abuse or misuse. The tone seems to be approving, as it says "Who wouldn't?" and describes the act in a way that might be encouraging. 
+
+The definitions say that True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. The example given in the user's prompt also includes similar elements. The explanation should note the specific drugs mentioned and the context of their use. 
+
+I need to make sure not to include any extra text beyond the JSON. The key points here are the explicit mention of heroin, the description of its use (strapping on the thigh), and the tone that seems to support or glorify the behavior. So the label should be True with an explanation that covers these points.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions heroin and describes its use in a manner that implies normalization and encouragement of abuse through detailed, approving descriptions of its distribution and consumption."
+}

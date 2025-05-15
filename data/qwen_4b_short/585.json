@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this labeling task. The user wants me to determine if the given social media post falls under category T (text shows illicit or abusive drug use) or F (other cases). 
+
+First, I need to understand the content of the post. The post mentions "experimental and illegal drugs" that people "pay for and voluntarily put into their bodies." It also talks about the consequences when things go wrong or they overdose, leading to tax payers covering the costs while suppliers profit. The last part says, "We can vote Governments in/out, nor drug dealers!" 
+
+Now, applying the label rules. The key here is to check if the text directly refers to drug use, seeking, buying, selling, trafficking, or slang for drugs. 
+
+The first part clearly mentions "illegal drugs" and "voluntarily put into their bodies," which points to drug use. The mention of "suppliers get rich" refers to selling drugs. The phrase "drug dealers" is explicitly mentioned. 
+
+Even though the post is critical of the system and mentions tax payers, the core elements here are the illegal drugs, their use, and the suppliers. The mention of "experimental drugs" might be a bit ambiguous, but since they are labeled as illegal, it's still under T. 
+
+The user also specified to return only T or F, no explanations. So, after analyzing the content, the post definitely falls under T because it talks about drug use, buying, and selling, which are all part of the T category.
+</think>
+
+T

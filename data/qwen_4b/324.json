@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I just took a piss and I seen codeine coming out." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse.
+
+The content mentions "codeine," which is an opioid, and the user says they "seen codeine coming out" after taking a piss. That sounds like they're talking about using drugs, possibly in a way that's not medical. The phrase "seen codeine coming out" could be a slang or euphemism for drug use. 
+
+But wait, codeine is an OTC drug in some places, but here it's being mentioned in a context that seems like personal use. The user is describing a personal experience, which might be a slang way of saying they used codeine. Also, the mention of "seen codeine coming out" could be a euphemism for using drugs, possibly indicating abuse. 
+
+The example given in the prompt where "lean" and "codeine" were mentioned as True, so similar here. The user is talking about using codeine, which is a controlled substance. Even if it's OTC, the context here is about using it, which could be abuse. 
+
+So the label should be True. The explanation would note that codeine is mentioned in a context that suggests personal use, possibly abuse, using slang or euphemism.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a context suggesting personal use, possibly abuse, using a slang or euphemistic phrasing."
+}

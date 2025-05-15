@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Ex heroin addict here and I endorse this message. Also makes me think back to my counselors in rehab who were both 23 year old women who just graduated college with ZERO real life addiction experience 🤯🤯". 
+
+First, I need to determine if this is illicit/abusive-drug-related. The key points here are the mention of being an ex-heroin addict and endorsing a message. The first part directly references heroin, which is an illegal drug. The second part talks about counselors in rehab, but the main focus is on the speaker's past drug use.
+
+The term "endorse" here might be tricky. If the message being endorsed is about drug use, then it could be promoting abuse. However, the user hasn't specified what message is being endorsed. But the context given is the speaker's personal experience. However, the mention of being an ex-heroin addict and the tone of the message might imply that the speaker is advocating for something related to drug use, possibly in a negative or positive light. 
+
+But the example given in the task says that if someone mentions illegal drugs in the context of abuse or misuse, it's True. The user is an ex-addict, which is a personal experience, but the act of endorsing a message could be related to promoting drug use. However, the second part about counselors in rehab might be a dig at the counselors' lack of experience, which is unrelated to drug abuse. 
+
+Wait, the content is about the speaker's past and their thoughts on counselors. The key is whether the content is promoting or glorifying drug misuse. The first part says "ex heroin addict here and I endorse this message." If the message is about drug use, then it's promoting abuse. But the user hasn't provided the message being endorsed. However, the context is that the speaker is an ex-addict, so maybe the message is about recovery or something else. 
+
+But the problem is that the content itself mentions being an ex-heroin addict, which is a drug-related term. The act of endorsing a message could be in the context of promoting drug use, but without more info, the presence of the term "heroin" and the mention of being an addict might be considered as relating to drug abuse. 
+
+In the example given, the first example mentions "lean" and "codeine" and the tone is approving, so it's classified as True. Here, the user is an ex-addict and mentions endorsing a message. The fact that they are an ex-addict and the mention of heroin (which is illegal) might be considered as relating to drug abuse. 
+
+So the label would be True because it mentions an illegal drug (heroin) and the context of being an addict, which is related to abuse. The endorsement part is a bit ambiguous, but the presence of heroin and the context of being an addict would make it True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'heroin,' an illegal drug, and references personal addiction experience, indicating potential promotion or glorification of drug abuse."
+}

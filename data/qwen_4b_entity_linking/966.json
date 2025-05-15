@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post: "Bankroll Bird - Codeine & Adderall" along with some emojis and a hashtag. My task is to detect any drug references and link them to the appropriate index terms.
+
+First, I'll look at the post. The main phrase here is "Codeine & Adderall". I need to check each part. 
+
+Starting with "Codeine". Looking at the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "Codeine" directly maps to the index term "Codeine".
+
+Next is "Adderall". According to the index terms, Amphetamine is listed with aliases like Speed, Bennies, Adderall. So "Adderall" is a synonym for Amphetamine. Therefore, the index term here should be "Amphetamine".
+
+I need to make sure there are no other phrases. The rest of the post includes emojis and a hashtag, which don't relate to drugs. The hashtag #RIPPrince is just a tribute and not a drug reference. 
+
+So the two matched phrases are "Codeine" and "Adderall", which correspond to "Codeine" and "Amphetamine" respectively. No other terms are present. The answer should be an array with these two entries.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"},
+  {"index_term": "Amphetamine", "matched_phrase": "Adderall"}
+]

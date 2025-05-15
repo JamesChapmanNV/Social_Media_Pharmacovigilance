@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific post here is: "The ppl at NICE poromoting nps in all its ugliness. Hey  -no opioid crisis-". 
+
+First, I need to identify any drug-related terms. The user provided a list of index terms, so I should check each phrase against that list.
+
+Looking at the post, "NICE" might be an acronym. Wait, NICE could stand for "New Industrial Chemicals" or something else, but in the context of drugs, maybe it's a typo or slang. However, the user mentioned that if the drug isn't in the list, use "other". 
+
+Next, "nps" – that's likely "new psychoactive substances" (NPS), which are drugs not yet controlled. But according to the index terms, there's no direct entry for NPS. However, the index term "other" is used when the drug isn't listed. So "nps" would map to "other".
+
+Then, "opioid crisis" is mentioned. The index terms include "Opioid" as a category, but looking at the list, the exact term for opioids is "Codeine", "Morphine", "Fentanyl", etc. However, "opioid crisis" is a general term, not a specific drug. The index terms don't have an "Opioid" entry, so "opioid crisis" would be "other".
+
+Wait, checking the index terms again. The list includes "Codeine", "Morphine", "Fentanyl", "Buprenorphine", "Carfentanil", etc. But there's no general "Opioid" term. So "opioid crisis" is a reference to opioids, but since it's not a specific drug name, it's "other".
+
+So the phrases here are "nps" and "opioid crisis". Both are not directly listed in the index terms, so they should be "other". The user's example 3 shows "xans" as "other", so that's similar.
+
+Therefore, the JSON array should have two entries: "nps" and "opioid crisis", both mapped to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "nps"},
+  {"index_term": "other", "matched_phrase": "opioid crisis"}
+]

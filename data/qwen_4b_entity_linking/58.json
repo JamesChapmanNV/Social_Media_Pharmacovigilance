@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post about 4/20 and cannabis events in Rochester. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any mentions of drugs, slang, or euphemisms. The post mentions "cannabis industry" and "celebrate the holiday." The holiday is 4/20, which is commonly associated with cannabis culture. However, the index terms list "Marijuana" as an entry. The phrase "cannabis industry" is a direct reference to marijuana, so that's a match. The word "cannabis" is in the index term list under "Marijuana." 
+
+But wait, the user's example 3 shows that "xans" is considered "other" because it's not in the list. However, "cannabis" is explicitly listed as an index term. So "cannabis" should be mapped to "Marijuana." The post also mentions "New York's cannabis industry," so "cannabis" is the key term here. 
+
+Are there any other terms? The post doesn't mention any other drugs or slang. The rest is about events and the holiday. So the only match is "cannabis" under "Marijuana." 
+
+I need to make sure that "cannabis" is in the index terms. Checking the list: yes, "Marijuana (Cannabis, Weed, Pot)" is listed. So the matched phrase is "cannabis," and the index term is "Marijuana." 
+
+No other terms are present. The answer should be a JSON array with one object: index_term "Marijuana" and matched_phrase "cannabis."
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

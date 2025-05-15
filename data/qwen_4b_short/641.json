@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user wants me to label the given social media post as T or F based on the rules provided. The post is in English and mentions "NDLEA nabs five with 4,580KG of codeine, Tramadol." The label rules say T is for text that shows illicit or abusive drug use, including using, seeking, buying, selling, trafficking, or slang for drugs. F is for other cases like medical/policy discussion, news, discouraging use, or metaphor.
+
+First, I need to parse the post. The main subject here is the NDLEA (Nigerian Drug Law Enforcement Agency) arresting five people with 4,580KG of codeine and Tramadol. The key terms here are codeine and Tramadol. Both are drugs. Codeine is an opioid, and Tramadol is a synthetic opioid used for pain relief. However, they can be classified as controlled substances and are often associated with abuse or trafficking.
+
+The post is reporting on a law enforcement action, which is a news event. The mention of "nabs five" indicates that the individuals were arrested, which is related to drug trafficking. The quantity is 4,580KG, which is a large amount, suggesting it's a significant trafficking operation. 
+
+Now, applying the label rules. The question is whether this post is T or F. The rules for T include drug use, trafficking, selling, etc. The post is about the seizure of drugs, which is part of trafficking. So the text is showing drug trafficking, which is a T. However, the post is a news report, but the content itself is about the seizure of drugs, which is a criminal activity. The label rules don't differentiate between news and other categories as long as it's about drug use. 
+
+Wait, the rules say F includes medical/policy discussion, news, discouraging use, metaphor. So if the post is news about drug trafficking, is that considered T or F? The key is whether the text shows drug use. The post is reporting on the seizure of drugs, which is part of the drug trafficking. So the text is about the trafficking of drugs, which is T. Therefore, the label should be T.
+</think>
+
+T

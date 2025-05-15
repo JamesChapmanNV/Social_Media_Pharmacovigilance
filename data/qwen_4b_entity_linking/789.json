@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "Nothing wrong with the headline. You assumed some stupid shit & doing this embarrassing ass backpedal routine instead of researching & learning his blunt was laced. By someone he trusted. You saw 'rapper', 'overdose' & a black man & just...tweeted honestly tbh!🙂"
+
+Looking for words or phrases that could refer to illicit drugs. The key terms here are "rapper," "overdose," and "blunt." 
+
+Now, checking the index terms. "Rapper" isn't listed as a drug term. "Overdose" is a general term but not specifically a drug name. "Blunt" is a slang term for a cannabis joint, which is a drug. However, looking at the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "blunt" would fall under marijuana. But wait, the example 3 had "xans" which wasn't in the list, so it was "other." But "blunt" is a cannabis product, so it should be "Marijuana."
+
+Wait, but the post says "his blunt was laced." "Laced" might imply adding something else, but the main term here is "blunt," which is a cannabis product. So "blunt" is a reference to marijuana. So the matched phrase is "blunt" and the index term is "Marijuana."
+
+But let me check the index terms again. The index term for marijuana is listed as "Marijuana (Cannabis, Weed, Pot)." So "blunt" is a slang term for a cannabis joint, so it's under marijuana. However, the user's example 4 had "snow" and "white lines" as other because they aren't drugs. But "blunt" is a drug reference. So in this case, "blunt" should be linked to "Marijuana."
+
+But wait, the post mentions "rapper," which is a person, not a drug. "Overdose" is a general term, not a specific drug. So the only drug reference here is "blunt," which is marijuana. Therefore, the JSON should have one entry: {"index_term": "Marijuana", "matched_phrase": "blunt"}.
+
+Wait, but the user's example 3 had "xans" which was "other" because it wasn't in the list. But "blunt" is a drug, so it should be linked to marijuana. So the answer should be that one entry. Let me confirm again. The index terms include "Marijuana," so "blunt" is a reference to marijuana. So the correct JSON is the one entry with "Marijuana" and "blunt".
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "blunt"}]

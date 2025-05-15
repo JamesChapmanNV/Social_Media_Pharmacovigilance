@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "And he keeps arguing the hypothetical scenario that George Floyd would've died of an overdose if he was at home." I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The main sentence is about a hypothetical scenario where George Floyd would have died of an overdose if he was at home. The key term here is "overdose." Now, I need to check if "overdose" is a drug-related term that's in the index list.
+
+Looking at the index terms, there's no direct entry for "overdose." The closest might be terms related to opioids or other drugs, but "overdose" itself isn't listed. The index terms include specific drugs like Codeine, Fentanyl, Morphine, etc., but not the general term "overdose." 
+
+However, the context here is about an overdose, which is a result of drug use. But according to the task, I need to match phrases to index terms. Since "overdose" isn't an index term, the correct category would be "other." 
+
+Wait, but maybe "overdose" is considered a drug-related term here. However, the instructions specify that if the drug isn't in the list, use "other." Since "overdose" isn't an index term, even though it's related to drug use, it should be classified as "other." 
+
+So the matched phrase is "overdose," and the index term is "other." There are no other drug terms in the post. The rest of the sentence doesn't mention any specific drugs. Therefore, the correct JSON array should have one entry with "other" and "overdose."
+</think>
+
+[{"index_term": "other", "matched_phrase": "overdose"}]

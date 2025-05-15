@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "What happens there if you get caught with cannabis?" I need to detect any drug references and link them to the index terms.
+
+First, I'll scan the post for any mentions of drugs. The word "cannabis" is clearly in there. Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)". So "cannabis" should map to that index term. 
+
+Now, checking if there are any other phrases. The rest of the sentence is about consequences of getting caught, which doesn't include any other drug terms. The phrase "get caught with cannabis" refers to possessing cannabis, which is listed. 
+
+I need to make sure there's no slang or alternative terms. The post uses "cannabis" directly, which is listed. No other terms like "weed" or "pot" are used here. So the only match is "cannabis" under the Marijuana index term. 
+
+No other drugs are mentioned. The answer should be a single object in the JSON array.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

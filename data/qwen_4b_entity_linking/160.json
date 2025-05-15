@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully: "I don't know what your condition is, but Oxy is not a good long-term pain med. And 10mg wouldn't get rid of a headache.... for me. You can ask about Morphine, Norco, Even high doses of Ibuptofen work better than Oxy. Work with your PCP. ✝️❤️🌷"
+
+Looking for drug names or slang. The first mention is "Oxy" which is likely Oxycodone, which is listed under Oxycodone in the index terms. Then "Morphine" is directly listed. "Norco" is a brand name for Hydrocodone, which is also in the list. "Ibuptofen" – wait, that's not in the index terms. Let me check the list again. The index terms include Oxycodone, Morphine, Hydrocodone. Ibuptofen isn't listed. So that would be "other". 
+
+So the matched phrases are "Oxy", "Morphine", "Norco", and "Ibuptofen". Now, mapping each to the index terms. Oxy is Oxycodone, Morphine is Morphine, Norco is Hydrocodone. Ibuptofen is not in the list, so "other". 
+
+Wait, the user's example 3 had "xans" mapped to "other". So in this case, "Ibuptofen" is not a known drug in the list, so it's "other". 
+
+So the JSON array should have entries for each of these. Let me make sure I didn't miss any other terms. The rest of the post is about medical advice, but no other drugs mentioned. So the answer should be four entries: Oxy (Oxycodone), Morphine, Norco (Hydrocodone), and Ibuptofen (other).
+</think>
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "Oxy"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "Hydrocodone", "matched_phrase": "Norco"},
+  {"index_term": "other", "matched_phrase": "Ibuptofen"}
+]

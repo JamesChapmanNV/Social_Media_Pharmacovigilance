@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The content is: "But yeah codeine = dizzy too so.... not much help really, sorry." 
+
+First, I need to determine if this is illicit or abuse-related. The mention of codeine is a drug, but the context here is someone saying that codeine causes dizziness and isn't very helpful. The tone seems negative, like they're talking about the side effects. 
+
+Looking at the definitions, True includes mentions of illegal or OTC drugs in the context of abuse or misuse. But here, the person is discussing the side effects, not promoting or using it. The explanation is about the negative effects, so it's more of a negative experience rather than encouraging abuse. 
+
+Also, the user is apologizing, which might indicate they're not promoting it. The key here is whether there's any indication of misuse or promotion. Since it's just a personal account of side effects without any encouragement or glorification, it's more likely False. 
+
+So the label should be False because it's discussing a drug's side effect in a negative light, not promoting or abusing it.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses codeine's side effect (dizziness) in a negative, personal context without promoting or glorifying its misuse."
+}

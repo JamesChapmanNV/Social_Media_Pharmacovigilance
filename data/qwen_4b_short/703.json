@@ -1,0 +1,9 @@
+<think>
+Okay, let's see. The user is asking me to label a social media post related to drug abuse. The post is: "I take pride in the fact that I never sold fake codeine to anyone". The label rules are T if it's about illicit or abusive drug use (using, seeking, buying, selling, trafficking, or slang), otherwise F.
+
+First, I need to parse the sentence. The person is talking about not selling fake codeine. Codeine is a controlled substance, often used in medications, but it's also a controlled drug. Selling fake codeine would be trafficking or selling drugs. The key here is whether the post is indicating actual drug use or trafficking. The person is saying they never sold fake codeine. So, the act of selling codeine, even if it's fake, is part of drug trafficking. The term "fake codeine" might be a way to refer to counterfeit or illicitly produced codeine, which is still a controlled substance. 
+
+So, the post is about selling drugs (codeine), which falls under the T category. Even though they're saying they never did it, the fact that they mention selling codeine (which is a drug) would still be a T. The label should be T because it's related to drug trafficking. The other cases are F, which would be things like medical discussions, news, or discouraging use. Since this is about selling drugs, it's T.
+</think>
+
+T

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The content is: "Right here👇would add Soul Food… 😂the crack comment tho🤣🤣". I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll break down the elements. The user mentions "Soul Food" and then a "crack comment". "Crack" is a slang term for crack cocaine, which is an illicit drug. The mention of "crack" directly points to a drug. The context here seems like a social media comment, possibly in a humorous or dismissive tone, but the key part is the mention of "crack". 
+
+The definitions say that True includes mentions of illegal drugs in contexts of abuse or misuse. Even if the comment is in a joking manner, the presence of the drug name "crack" is enough. The user is referencing a comment about crack, which is a controlled substance. The use of "crack" in the content is a clear indicator of illicit drug reference. 
+
+The other part about Soul Food is unrelated, but the mention of crack is enough to classify this as True. The explanation should note the use of "crack" as a slang term indicating illicit drug use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The mention of 'crack' directly references an illicit drug, indicating recreational or abusive use through slang."
+}

@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully. The post mentions "4/20," which is a reference to April 20th, a day associated with cannabis culture. Then it talks about Hitler's birthday, which is a historical reference, but not a drug. The user's mother's birthday and father's passing are personal events. The part about "the biggest day in the Cannabis Culture" clearly points to cannabis. The phrase "weed can wait" is a common slang for marijuana.
+
+Looking at the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. The words "weed" and "cannabis" are synonyms for marijuana. The post uses "weed" explicitly. "Cannabis" is also mentioned in the context of the culture. So, I need to check if "weed" and "cannabis" are in the index terms. Yes, "Marijuana" is the index term for Cannabis, Weed, Pot. 
+
+The other parts of the post don't mention any other drugs. Words like "Hitler's birthday" are not drug-related. The rest are personal or cultural references. So the only matches are "weed" and "cannabis." 
+
+Wait, the user's post says "the biggest day in the Cannabis Culture." The word "Cannabis" is used here. So both "weed" and "cannabis" are present. The index term for both is "Marijuana." 
+
+I should check if there are any other possible terms. The post doesn't mention any other drugs. So the JSON array should have two entries: "Marijuana" for "weed" and "cannabis." 
+
+No other terms like "Codeine" or "Amphetamine" are present. The example in the problem statement shows that "lean" is linked to Codeine, but here, the terms are "weed" and "cannabis," which map to the Marijuana index term. 
+
+So the final answer should be two objects in the JSON array, each with index_term as "Marijuana" and matched_phrase as "weed" and "cannabis."
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "weed"},
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"}
+]

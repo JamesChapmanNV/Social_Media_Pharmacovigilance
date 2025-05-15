@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content. The user provided a statement about Floyd's blood concentration and overdose. The key points here are about habitual users needing higher dosages to get high and the autopsies not citing overdose as the cause of death.
+
+First, I need to check if there's any mention of illegal drugs, abuse, or promotion. The content talks about "habitual users" and higher dosages to get high, which sounds like drug abuse. The mention of "concentration in Floyd's blood" might be referring to drug levels, but the context is about overdose not being the cause. However, the part about needing higher dosages to get high is a clear indicator of drug misuse or abuse. 
+
+The example given in the task includes content that mentions drug abuse, so this seems similar. The explanation should note the reference to habitual users and higher dosages, which points to abuse. Even though the autopsies didn't find overdose, the context of needing higher doses to get high is a sign of abuse. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references 'habitual users' requiring higher dosages to 'get high,' indicating drug abuse and misuse."
+}

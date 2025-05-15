@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I take pride in the fact that I never sold fake codeine to anyone". I need to detect any drug references here.
+
+First, I'll go through the post word by word. The key words here are "codeine" and "fake codeine". Looking at the Index Terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "fake codeine" might refer to counterfeit or illicitly made codeine, which would still fall under the Codeine index term. 
+
+Wait, the task says to check for any references to illicit drugs, including selling them. The post mentions selling fake codeine, which is illegal. So "codeine" is directly listed under the Codeine index term. "Fake codeine" is a phrase that's a variation, but since "codeine" is already in the list, I should map "fake codeine" to Codeine as well. 
+
+But wait, the example in the problem shows that "lean" is mapped to Codeine. So "codeine" is a direct match. "Fake codeine" might not be an exact phrase in the Index Terms, but since "codeine" is in the list, the phrase "fake codeine" is still referring to codeine. So both "codeine" and "fake codeine" would be under Codeine. 
+
+But wait, the user's instruction says to link each detected phrase to its matching Index Term. The Index Terms include "Codeine" which covers synonyms. So "codeine" is a direct match. "Fake codeine" is a phrase that's not in the list, but since it's referring to codeine, which is in the list, it should be mapped to Codeine. However, the example in the problem shows that "lean" is mapped to Codeine, and "codeine" is also mapped. So "fake codeine" is a variation, but since it's still codeine, it should be included. 
+
+But wait, the problem says to detect every word or phrase that refers to an illicit drug. "Fake codeine" might be a slang term for something else, but in the context of the Index Terms, codeine is already listed. So even if it's "fake", it's still codeine. Therefore, both "codeine" and "fake codeine" would be matched to Codeine. 
+
+But looking at the example #3, where "xans" is not in the list, it's mapped to "other". So "fake codeine" is a phrase that refers to codeine, which is in the list. Therefore, both "codeine" and "fake codeine" should be mapped to Codeine. 
+
+So the JSON array would have two entries: one for "codeine" and another for "fake codeine", both under Codeine. But wait, the example #1 has "lean" and "codeine" both mapped to Codeine. So in this case, "fake codeine" is a phrase that refers to codeine, so it's a match. 
+
+Therefore, the correct output is two entries: {"index_term": "Codeine", "matched_phrase": "codeine"} and {"index_term": "Codeine", "matched_phrase": "fake codeine"}.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "fake codeine"}
+]

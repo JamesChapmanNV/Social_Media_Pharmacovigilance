@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "but i don't want clothes from mountain dew i just want soda to pour my codeine in". I need to detect any drug-related references here.
+
+First, I'll go through each part of the post. The first sentence is "but i don't want clothes from mountain dew". "Mountain Dew" is a brand of soda, so that's probably not a drug reference. The second part is "i just want soda to pour my codeine in". Here, "soda" is mentioned, but the key part is "codeine". 
+
+Looking at the index terms, "Codeine" is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "codeine" is directly listed under Codeine. The user is saying they want to pour codeine into soda, which is a direct reference to the drug. 
+
+I need to check if "soda" is a drug term. But according to the index terms, "soda" isn't listed as a drug. The example in the prompt had "snow" and "white lines" as "other" because they weren't drug terms. So "soda" here is just a regular word. The main phrase here is "codeine", which maps to the index term "Codeine". 
+
+So the only matched phrase is "codeine". The rest of the post doesn't have any other drug references. The "mountain dew" is a brand, not a drug. Therefore, the JSON array should have one entry with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

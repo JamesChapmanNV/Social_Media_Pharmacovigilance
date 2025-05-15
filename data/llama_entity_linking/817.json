@@ -1,0 +1,5 @@
+[
+  {"index_term": "Hydrocodone", "matched_phrase": "Hydrocodone"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "anti collinergic homatropine"}
+]

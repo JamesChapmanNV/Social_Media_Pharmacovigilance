@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "that fucking drug dealer didnt have the right shit AND out me in handcuffs fuck you". I need to identify any drug-related references here.
+
+First, I'll go through each word and phrase. The phrase "the right shit" is a common slang for drugs. Looking at the index terms, "shit" isn't listed, so it would fall under "other". Then there's "drug dealer", which is a reference to someone selling drugs, but the task is to find specific drug names or terms. Since "drug dealer" isn't an index term, that's probably "other" as well. The rest of the sentence is about being handcuffed, which isn't related to drugs. So the only possible match is "shit", which maps to "other". Wait, but maybe "shit" is a euphemism for a drug? Let me check the index terms again. The list includes terms like "Codeine", "Amphetamine", etc., but "shit" isn't listed. So yes, "other" is correct here. So the only match is "shit" under "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "shit"}
+]

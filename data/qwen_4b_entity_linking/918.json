@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Keith Richards is literally freebasing heroin right now and he will outlive you." I need to detect any drug references and link them to the index terms.
+
+First, I'll read through the post carefully. The key phrases here are "freebasing heroin." Freebasing refers to the process of using a drug in its purest form, usually without a binder, which is a method of using heroin. The index term for heroin is "Morphine" in the list, but wait, looking back, the index terms include "Morphine" as the prototypical opioid. However, the post specifically mentions heroin. Wait, checking the index terms again: the list includes "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, the example given in the task includes "Codeine" for "lean" and "codeine," which are synonyms. So, if heroin isn't explicitly listed, but the user is referring to it, I need to check if there's an index term that covers heroin. 
+
+Looking through the index terms again: "Heroin" isn't listed, but "Morphine" is. However, heroin is a different drug. Wait, the index terms list "Morphine" as a separate entry. But heroin is a different opioid. Wait, the index terms might not have a specific entry for heroin. However, in the example given, "Codeine" is linked to "lean" and "codeine," which are synonyms. So if the post mentions heroin, but there's no specific index term for heroin, then according to the instructions, I should use "other." But wait, let me check the index terms again. 
+
+Looking at the index terms list: "Heroin" is not listed. The closest is "Morphine," but that's a different drug. The user is referring to "heroin," which is an opioid. However, since the index terms don't have a specific entry for heroin, the correct index term would be "other." But wait, maybe I'm missing something. Let me check again. The index terms include "Morphine," "Oxycodone," "Hydrocodone," "Fentanyl," etc., but not heroin. Therefore, "heroin" isn't in the list, so the index term should be "other." 
+
+So the matched phrase is "heroin," which is not in the index terms, so index_term is "other." But wait, the example in the task where the user mentioned "snow" and "white lines" were linked to "other" because they weren't drugs. So in this case, "heroin" is a drug, but since it's not in the index terms, it's "other." 
+
+Wait, but the user might have intended "heroin" to be linked to "Morphine," but that's incorrect. The index terms list "Morphine" as a separate entry, but heroin is a different drug. Therefore, the correct index term here is "other." 
+
+Therefore, the JSON array should have one entry with index_term "other" and matched_phrase "heroin." The other part of the sentence is "freebasing," which is a method of using drugs, but the actual drug is heroin. So the main phrase is "heroin," which maps to "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

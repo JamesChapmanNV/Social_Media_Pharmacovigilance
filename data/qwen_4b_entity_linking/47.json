@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "The BOTDF album is underrated. I actually like some of the remixes on there and Is it Scary, Ghosts & Morphine are 👌🏾". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The first part talks about an album, BOTDF. I'm not sure what that stands for, but it's not a drug term. Then "underrated" is just an adjective. "I actually like some of the remixes on there" – remixes are music, so no drugs there. 
+
+Next, "Is it Scary, Ghosts & Morphine are 👌🏾". The phrase "Morphine" is mentioned here. Looking at the index terms, Morphine is listed as an opioid analgesic. So "Morphine" would map to the index term "Morphine". The other parts like "Is it Scary, Ghosts" are likely song titles or album names, so they don't refer to drugs. The emoji 👌 is just a reaction, not a drug term. 
+
+So the only drug-related phrase here is "Morphine". Checking the index terms, Morphine is indeed listed. There's no other drug terms in the post. The rest are music-related or generic terms. Therefore, the correct JSON should have one entry with index_term "Morphine" and matched_phrase "Morphine".
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "Morphine"}]

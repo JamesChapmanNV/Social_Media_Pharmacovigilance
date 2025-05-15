@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "i always wonder why people put codeine up their ass."
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse would be True. False includes medical, educational, preventative contexts, or drug terms in unrelated contexts.
+
+The content here uses "codeine," which is an OTC drug, but the phrase "put codeine up their ass" is a slang or euphemism. The phrase "put up their ass" is a common slang for using drugs, especially in a recreational context. The user is questioning why people do this, which might imply a negative or critical view, but the act itself is about drug use. The key here is whether it's promoting or glorifying misuse. The sentence is more of a comment on why people engage in such behavior, but the mention of codeine in that context could be seen as related to drug abuse. However, the user is not explicitly promoting it, just questioning it. But the phrase "put codeine up their ass" is a clear slang for drug use. So according to the definitions, this would be True because it's using slang that signals recreational drug use. The explanation should note the slang and the context of drug use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The phrase 'put codeine up their ass' is a slang expression indicating recreational drug use, signaling abuse or misuse of codeine."
+}

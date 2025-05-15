@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The user provided a content snippet that says: "They gave him morphine, and he slept for ten minutes. Then did think they gave him anything. And kept asking. He got the first around 5pm something and he just got the second dose. Hope to know soon." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promotion, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. False includes medical, educational, preventative contexts, or drug terms in unrelated contexts.
+
+Looking at the content, the key term is "morphine." Morphine is an opioid, which is a controlled substance. The user mentions that the person was given morphine, slept for ten minutes, and received two doses. The tone seems to be a report of medical treatment, not promoting or glorifying the use. The person is asking about the dosing, which is a medical context. There's no mention of abuse, misuse, or encouragement of drug use. The terms are used in a medical scenario, so it's likely part of a healthcare discussion. The explanation should note that it's a medical context, not promoting or misusing drugs. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes medical administration of morphine in a healthcare context, not promoting or glorifying drug abuse."
+}

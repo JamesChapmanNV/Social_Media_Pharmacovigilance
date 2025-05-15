@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Yusef Khan Gorji and Arak, Iran. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions Yusef Khan Gorji, an Iranian military leader, and Arak, a city in central Iran. It talks about him leaving Tbilisi after a conflict with Russian Empress Catherine the Great. There's no mention of any drugs, substances, or slang related to illicit drugs here. The keywords are "Georgian of the day," "Yusef Khan Gorji," "Iranian military leader," "Arak," "Tbilisi," and historical figures. 
+
+I need to check if any of these terms are slang or euphemisms for drugs. "Georgian of the day" might be a reference to a person, not a drug. The names mentioned don't correspond to any drug terms in the provided index list. The city names and historical context don't relate to drugs either. 
+
+Looking at the example given, the user provided a post with "lean" and "codeine" which were linked. But in this case, there's no such terminology. The post is purely historical and geographical. Therefore, there are no drug references here. 
+
+The answer should be an empty array since there are no matches. But according to the instructions, if there are no matches, should I include "other"? Wait, the task says to link each detected phrase to the index term, and if not in the list, use "other". But if there are no detected phrases, then the array is empty. 
+
+So the correct response is an empty JSON array. The user's examples show that when there are no matches, the array is empty. For instance, example 3 has "xans" which is not in the list, so it's "other", but in this case, there are no phrases to detect. Hence, the output should be an empty list.
+</think>
+
+[]

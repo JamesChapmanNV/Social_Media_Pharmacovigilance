@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Kept her in. Excruciating pain after eating. Gave her more codeine. IV fluids. Review in the morning. Just home xxx". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang or euphemisms indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+Looking at the content: The user mentions "codeine" which is an OTC drug. The context here is about managing "excruciating pain after eating," which sounds like a medical situation. They mention giving "more codeine" and IV fluids, which are medical treatments. The phrase "kept her in" might refer to hospitalization. The overall tone seems to be about treating pain, not promoting or abusing drugs. There's no indication of recreational use, promotion, or abuse. The mention of codeine is in a medical context, so it's likely part of a treatment plan. Therefore, this should be classified as False because it's in a medical, preventative context, not promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes medical treatment for pain using codeine in a clinical context, not promoting or glorifying drug abuse."
+}

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "We Went Outside to Touch Grass, What Happens Next Might Shock You!!! (HEROIN???)". I need to detect any drug-related references here.
+
+First, I'll break down the post. The main part is "We Went Outside to Touch Grass..." which is a metaphor, but the parenthetical "(HEROIN???" is a clear mention of heroin. Now, checking the index terms, heroin is listed as "Morphine (MS Contin, Miss Emma, Morph)" but wait, heroin isn't directly listed. Wait, looking back at the index terms, the entry for Morphine includes "Miss Emma" as a slang, but heroin isn't explicitly listed. However, the user's task is to link to the index term if it's present. Let me check again.
+
+Looking through the index terms, the entry for "Morphine" includes "MS Contin, Miss Emma, Morph" as synonyms. But heroin isn't directly listed. However, the user's example 1 had "lean" linked to codeine, which is a slang. So in this case, "HEROIN" is the phrase. Since heroin isn't in the index terms, the correct index term would be "other". Wait, but wait, the index terms include "Morphine" but not heroin. However, the user's example 4 had "snow" and "white lines" as other because they aren't drugs. So in this case, "HEROIN" is a drug, but if it's not in the list, it's "other". 
+
+But wait, the index terms list "Morphine" as a term, but heroin is a different drug. However, the user's task is to check if the drug is in the list. Since heroin isn't listed, the index term would be "other". Therefore, the matched phrase "HEROIN" would map to "other". 
+
+So the JSON array should have one entry with index_term "other" and matched_phrase "HEROIN".
+</think>
+
+[{"index_term": "other", "matched_phrase": "HEROIN"}]

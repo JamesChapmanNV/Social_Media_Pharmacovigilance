@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "I can't stay on your morphine 'Cause it's making me itch (8)". 
+
+First, I need to recall the definitions provided. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse would also be True. False includes medical, educational, preventative contexts, or drug terms in unrelated contexts.
+
+Looking at the content: "morphine" is a controlled substance, an opioid. The user is saying they can't stay on it because it's making them itch. The phrase "can't stay on your morphine" might imply that the person is dependent or experiencing side effects. But is this about abuse or misuse? The user is talking about the negative effect of morphine (itching), which could be a side effect. However, the context here is the user's personal experience with morphine. 
+
+But wait, is the user expressing a problem with using morphine, which is a prescribed drug? If they're saying they can't stay on it because of side effects, that might be a medical context. However, the user might be implying that they are dependent or misusing it. Alternatively, the mention of "itch" could be a side effect of morphine, which is a known adverse reaction. 
+
+But the key here is whether the content is promoting or glorifying drug use. The user is not promoting morphine use; they're talking about a negative side effect. However, the phrase "can't stay on your morphine" might suggest that they are dependent, which could be a form of misuse. But is that enough to classify as illicit/abusive? 
+
+Alternatively, maybe the user is expressing a problem with using a prescribed drug, which is a medical context. The content doesn't mention abuse, promoting, or encouragement. It's more about a personal experience with a side effect. Therefore, this might fall under False because it's not promoting or glorifying drug misuse. 
+
+But wait, morphine is a controlled substance, so mentioning it could be a red flag. However, the context is about the user's experience with it, not promoting or encouraging its use. The explanation would need to note that it's a personal experience with a side effect, not abuse or promotion. So the label would be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a personal experience with morphine's side effects, not promoting or glorifying drug misuse."
+}

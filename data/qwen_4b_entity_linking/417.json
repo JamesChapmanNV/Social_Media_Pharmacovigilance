@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Can you do a list of the WRs Lamar gonna be throwin to wit that 'wall'". I need to check for any drug-related references here.
+
+First, I'll break down the post. The main words are "WRs", "Lamar", "throwin", "wall". The user is asking for a list of WRs (which I think stands for Wide Receivers in sports, but maybe it's slang here). The phrase "throwin to wit that 'wall'" might be a reference to something else. 
+
+Looking at the index terms provided, I need to see if any of the terms match. The term "wall" isn't listed as a drug. "WRs" could be an abbreviation, but none of the index terms mention WRs as a drug. "Lamar" is a name, not a drug. "Throwin" is a verb, but not a drug. The phrase "to wit that 'wall'" might be a slang reference, but "wall" isn't in the index terms. 
+
+Since none of the words in the post match any of the listed index terms for drugs, the correct response would be to mark each matched phrase as "other". The user might be using "wall" as a slang term, but since it's not in the list, it's categorized as "other". 
+
+So the JSON array should have each phrase from the post linked to "other". The post has "WRs", "Lamar", "throwin", and "wall". Each of these isn't a drug term, so they all go under "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "WRs"}, {"index_term": "other", "matched_phrase": "Lamar"}, {"index_term": "other", "matched_phrase": "throwin"}, {"index_term": "other", "matched_phrase": "wall"}]

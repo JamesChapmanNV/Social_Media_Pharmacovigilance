@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "George Floyd had almost 4 times the lethal amount of overdose in him of fentanyl." I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll read through the post carefully. The key phrase here is "fentanyl." Looking at the index terms list, there's an entry for Fentanyl with synonyms like China White, Apache, Duragesic. So "fentanyl" directly maps to the index term "Fentanyl." 
+
+The rest of the sentence talks about the lethal amount and overdose, but those are just descriptions. The actual drug mentioned is fentanyl. There's no other slang or euphemism here. The post doesn't mention any other drugs. 
+
+I should check if "overdose" is considered a drug reference. But according to the task, we only need to detect the words or phrases that refer to the drug itself. "Overdose" is a consequence, not the drug name. So it's not included. 
+
+So the only match is "fentanyl" under the Fentanyl index term. The example in the problem statement had "lean" mapping to Codeine, so similar logic applies here. The answer should be a JSON array with one object: index_term "Fentanyl" and matched_phrase "fentanyl".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]

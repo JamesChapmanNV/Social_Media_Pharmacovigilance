@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Pour codeine on her 😋💦, It taste like Tahitian 🤘🏾😈". I need to detect any drug references here and link them to the index terms.
+
+First, I'll look for any words or phrases that could refer to illicit drugs. The first part is "Pour codeine on her". The word "codeine" is directly listed in the index terms under Codeine. So that's a clear match. The index term is Codeine, and the matched phrase is "codeine".
+
+Next, the second part is "It taste like Tahitian". The word "Tahitian" here is probably a slang or a reference. But looking at the index terms, I don't see any that match "Tahitian". The closest might be "CBD" or other terms, but "Tahitian" isn't listed. So I should mark this as "other". However, I need to check if "Tahitian" is a slang for a drug. Wait, sometimes "Tahitian" could refer to a type of drug, but in the given index terms, there's no entry for it. The example 3 shows that "xans" is "other", so similar logic applies here. So "Tahitian" would be "other".
+
+But wait, maybe "Tahitian" is a reference to something else. Let me check the index terms again. The index terms include things like "Codeine", "Amphetamine", "CBD", etc. "Tahitian" isn't listed, so it's "other". Therefore, the matched phrases are "codeine" and "Tahitian", with the latter being "other".
+
+So the JSON array should have two entries: one for "codeine" and another for "Tahitian" as "other".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "Tahitian"}
+]

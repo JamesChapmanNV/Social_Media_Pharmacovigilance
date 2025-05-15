@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Codeine crazy, codeine crazy All this motherfucking money got me going codeine crazy". The task is to detect any drug references and link them to the appropriate index terms.
+
+First, I need to scan the post for any mentions of drugs or related terms. The word "codeine" is clearly in there. Looking at the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The post uses "codeine" directly, so that's a match. The phrase "codeine crazy" is a slang expression, but since "codeine" is explicitly mentioned, it's still a direct match. 
+
+Next, check if there are any other terms. The rest of the post talks about money and being "crazy," but there's no other drug reference. The phrase "motherfucking money" is just slang for money, not a drug. So the only matches are the instances of "codeine". 
+
+Now, check the index term list again to confirm. Codeine's index term is correct. The other terms like "lean" are also under Codeine, but the post doesn't use "lean" here. So the correct matches are "codeine" each time it's mentioned. 
+
+The example given in the problem shows that "lean" and "codeine" both map to Codeine. In this case, the post uses "codeine" twice, so each occurrence should be listed. The output should be an array with two objects, each with index_term as Codeine and matched_phrase as codeine. 
+
+No other terms in the post are drug-related. The rest is just context about money and being crazy, which isn't a drug reference. So the final answer should have two entries for "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

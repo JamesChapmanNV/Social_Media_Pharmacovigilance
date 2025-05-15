@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is about the person's stress from getting popular on social media and mentioning friends cracking under the strain. 
+
+First, I need to check if there's any mention of drugs. The content talks about "crack under the strain," but "crack" here is a slang term for cannabis, right? Wait, but the user is talking about stress from social media attention, not drug use. The mention of "crack" might be a metaphor for breaking under pressure, not actual drug use. 
+
+Looking at the definitions, True includes mentions of illegal drugs in contexts of abuse or misuse. The content doesn't mention any specific drugs or their abuse. The "crack" here is likely a metaphor, not referring to the drug. The explanation part is about stress from popularity, not drug-related activities. 
+
+So the content is about social media stress and friends' reactions, not drug use. Therefore, it's not related to illicit drugs. The answer should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses stress from social media attention and friends' reactions, with 'crack' used metaphorically, not referring to drug use or abuse."
+}

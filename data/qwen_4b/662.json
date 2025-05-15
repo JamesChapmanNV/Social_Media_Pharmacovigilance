@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content classification. The user provided a tweet about the Indian Coast Guard and ATS capturing a Pakistani ship with heroin. The key here is to determine if this content is illicit or abusive drug-related.
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. False includes medical, educational, or preventative contexts. The example given in the task mentions that if the content is about capturing drugs, it's part of law enforcement, which is a legal action. 
+
+The content here talks about capturing a ship with heroin, which is an illegal drug. However, the context is about law enforcement action, not promoting or encouraging drug use. The mention of heroin is in the context of seizure, not abuse or misuse. The user is reporting a law enforcement activity, not discussing drug use. 
+
+So according to the definitions, since it's about capturing drugs as part of a legal operation, it's not promoting or glorifying drug abuse. Therefore, the label should be False. The explanation should mention the context of law enforcement and seizure of drugs, not abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a law enforcement operation seizing heroin, which is a legal action against drug trafficking, not promoting or glorifying drug abuse."
+}

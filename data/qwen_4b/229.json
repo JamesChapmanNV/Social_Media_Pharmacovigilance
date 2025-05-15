@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content classification. The user provided a message about someone who had surgery and was given Norco because they were allergic to Morphine. They mention getting a prescription from CVS Pharmacy at Target on the Katy Freeway.
+
+First, I need to check if this content is related to illicit or abusive drug use. The drugs mentioned here are Norco and Morphine. Norco is a brand name for oxycodone, which is an opioid. But the context here is medical: the person had surgery, was in pain, and needed medication. They were allergic to Morphine, so Norco was prescribed. The mention of a pharmacy and a prescription suggests a legitimate medical use.
+
+The key is whether the content is promoting, encouraging, or discussing abuse. The user is talking about their own medical treatment, not using drugs recreationally or promoting their use. The terms "prescription," "allergic," and "hospital" indicate a medical context. There's no slang, euphemism, or glorification of drug use here. 
+
+So, according to the definitions, False includes content that mentions drugs in a medical, educational, or preventative context. This is a medical situation, so it's False. The explanation should note that the content is about medical treatment, not abuse or promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a medical treatment scenario involving prescribed opioids (Norco/Morphine) for post-surgery pain management, not abuse or promotion of illicit drug use."
+}

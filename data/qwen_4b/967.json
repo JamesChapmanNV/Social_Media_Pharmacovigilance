@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet: "Pour my codeine into a bigger hot New Orleans cream and sugar." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I should check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting use. Also, slang or euphemisms that indicate recreational use. The example given in the first example mentions "lean" and "codeine" with a supportive tone, which is why it's True.
+
+In this content, "codeine" is mentioned. Codeine is an opioid, which is a controlled substance, so that's a red flag. The phrase "pour my codeine into a bigger hot New Orleans cream and sugar" seems like a recipe or a way of mixing codeine with something else. The mention of codeine in a context that suggests consumption, possibly in a way that's not medical, could indicate abuse. The "New Orleans cream and sugar" might be a slang term or a reference to a specific method of consumption, but the key part is the codeine. 
+
+Also, the use of "pour my codeine" might imply that the person is using it in a non-medical way, perhaps mixing it with other substances. The phrase "bigger hot" could be a euphemism or slang for something else, but the presence of codeine is enough to flag this as illicit. 
+
+The example given in the first example had "hooked" and "everyday" which indicated approval, but here, the action of pouring codeine into something else might be a way of using it, which is abusive. So, the label here should be True. The explanation would mention the mention of codeine and the context of mixing it, which suggests misuse or abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' an illicit opioid, and describes a method of mixing it with other substances, indicating potential abuse or misuse."
+}

@@ -1,0 +1,13 @@
+[
+  {"index_term": "CBD", "matched_phrase": "cannabis"},
+  {"index_term": "delta‑9‑THC‑COOH", "matched_phrase": "cannabis"},
+  {"index_term": "delta‑8‑THC‑COOH", "matched_phrase": "cannabis"},
+  {"index_term": "CBD", "matched_phrase": "CBD"},
+  {"index_term": "delta‑9‑THC‑COOH", "matched_phrase": "THC"},
+  {"index_term": "delta‑8‑THC‑COOH", "matched_phrase": "delta‑8‑THC"},
+  {"index_term": "delta‑9‑THC‑COOH", "matched_phrase": "delta‑9‑THC"},
+  {"index_term": "CBD", "matched_phrase": "cannabis product"},
+  {"index_term": "delta‑9‑THC‑COOH", "matched_phrase": "cannabis product"},
+  {"index_term": "delta‑8‑THC‑COOH", "matched_phrase": "cannabis product"},
+  {"index_term": "other", "matched_phrase": "4/20"}
+]

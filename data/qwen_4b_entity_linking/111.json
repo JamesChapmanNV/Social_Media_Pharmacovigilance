@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Love 3 am migraines. They are the best. Never wanted to get sick from pain before, which is nice. Codeine is awesome though." I need to detect any drug-related references here.
+
+First, I'll go through each word and phrase. The first part talks about migraines at 3 AM, which doesn't seem related to drugs. Then the user says "Codeine is awesome though." Codeine is explicitly listed in the index terms under "Codeine" with synonyms like Lean, Purple Drank, Schoolboy. The word "codeine" is directly mentioned here. 
+
+So the matched phrase is "codeine" and the index term is Codeine. There's no other slang or euphemism here. The rest of the post is about migraines and not mentioning any other drugs. So the only entry should be codeine. Let me check the index terms again to confirm. Yes, Codeine is listed with those synonyms. The user didn't use any other terms, so the answer should be just that one entry.
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

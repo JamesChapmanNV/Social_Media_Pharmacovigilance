@@ -1,0 +1,33 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post provided is: "#NCB found someone's #son but why would is surprised as #wife is a full high all time and #dealer big fish 🎣 and #NCB staff 🤳 with celebrity".
+
+First, I need to go through each part of the post and check for any terms that refer to illicit drugs or substances. Let me break it down.
+
+The first part is "#NCB found someone's #son but why would is surprised as #wife is a full high all time". The hashtag #wife is followed by "a full high all time". The word "high" here is a common slang term for being under the influence of drugs, especially marijuana. But wait, the index terms don't include "high" directly. Let me check the list again. Looking through the index terms, "high" isn't listed. The closest might be "Marijuana" which is listed, but "high" is a general term. However, in the context of the post, "full high all time" likely refers to being under the influence of drugs, possibly marijuana. But since "high" isn't an exact match in the index terms, maybe it's categorized as "other". But wait, the example 3 had "xans" which was "other" because it wasn't in the list. However, "high" might be a slang term for a drug, but in the index terms, "Marijuana" is listed, but "high" isn't. So perhaps "high" here is considered "other".
+
+Next, the hashtag #dealer big fish 🎣. "Dealer" is a term for someone selling drugs, but the index terms don't have a specific term for "dealer". However, the task says to detect phrases that refer to illicit drugs. "Dealer" is more of a person, not the drug itself. So maybe that's not a match. The emoji 🎣 is a fish, which is unrelated.
+
+Then, #NCB staff 🤳 with celebrity. "NCB" might be an acronym, but not sure. The emoji 🤳 is a person holding hands, which is unrelated. "Celebrity" is just a term for a famous person, not a drug.
+
+So the only possible drug-related term here is "full high all time". But "high" isn't in the index terms. The index term for marijuana is listed, but "high" is a general term. However, in the example 4, "snow" and "white lines" were considered "other" even though they might refer to drugs. So maybe "high" here is considered "other" because it's not an exact match in the index terms. Alternatively, if "high" is part of a phrase that refers to a specific drug, but in this case, it's not clear. The post says "wife is a full high all time", which could imply she's under the influence of drugs, but without a specific term, it's not in the index list. Therefore, "high" would be "other".
+
+Wait, but the index term for marijuana is "Marijuana (Cannabis, Weed, Pot)", so if "high" is a slang for marijuana, but "high" isn't listed. However, the user's task is to detect every word or phrase that refers to an illicit drug. So if "high" is a slang term for a drug, but not in the index, then it's "other". But maybe "high" is not a drug itself, but a state. However, in the context of the post, "full high all time" is likely referring to being under the influence of drugs, so the term "high" is a slang for drug use. Since "high" is not in the index terms, it would be "other". 
+
+So the only matched phrase here is "high", which is "other". But wait, the post has "full high all time". The exact phrase is "full high all time". But the index terms don't have "high", so that would be "other". 
+
+But the user's example 3 had "xans" which was "other" because it wasn't in the list. So in this case, "high" is not in the index terms, so it's "other". 
+
+But maybe "high" is part of a phrase that refers to a specific drug. For example, if the context is marijuana, but "high" isn't in the index terms. The index term for marijuana is "Marijuana", so if the phrase was "marijuana high", that would be "Marijuana". But here it's "high" alone. So I think it's "other".
+
+Therefore, the only match is "high" as "other". But wait, the post has "full high all time". The exact phrase is "full high all time". But the index terms don't have "high", so the matched phrase is "high", which is "other". 
+
+So the JSON array would be [{"index_term": "other", "matched_phrase": "high"}]. 
+
+Wait, but the user's example 4 had "snow" and "white lines" as "other" even though they might be drug-related. So in this case, "high" is not in the index terms, so it's "other". 
+
+But maybe "high" is not a drug but a state. However, the task is to detect any reference to drugs. So if "high" is a slang term for a drug, but not in the list, then it's "other". 
+
+Therefore, the answer would be one entry with "other" and "high".
+</think>
+
+[{"index_term": "other", "matched_phrase": "high"}]

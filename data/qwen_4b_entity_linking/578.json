@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "ON HEROIN ALLERGY DEATHS, THEY DO NOT MEAN TO KILL YOU, THEY DO NOT SEE YOU. JF". I need to detect any drug-related references here.
+
+First, I'll look for any words or phrases that might refer to illicit drugs or substances. The post mentions "HEROIN". According to the index terms, Morphine is listed, and Heroin is a prototypical opioid. Wait, the index term for Morphine is listed, but Heroin isn't directly in the list. Let me check again. The index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not Heroin. However, Heroin is a form of opioid, and the index term for Codeine includes "Lean, Purple Drank, Schoolboy", but that's for codeine. 
+
+Wait, the index term for Morphine is listed, but Heroin is a different drug. However, in the list, there's no specific entry for Heroin. The closest might be Morphine, but that's not accurate. Alternatively, the user's instruction says if the drug isn't in the list, use "other". So since Heroin isn't in the index terms, the correct index term would be "other".
+
+But wait, let me double-check the index terms. The index terms include "Morphine" but not Heroin. So "HEROIN" in the post would map to "other" because it's not listed. However, the user might be referring to Heroin as an opioid, but since it's not in the list, we have to use "other". 
+
+So the matched phrase is "HEROIN", and the index term is "other". The rest of the post doesn't have any other drug references. The phrase "ALLERGY DEATHS" might be a reference to heroin overdose, but "allergy" here is probably not a drug term. So the only match is "HEROIN" which maps to "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "HEROIN"}]

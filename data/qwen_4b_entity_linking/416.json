@@ -1,0 +1,29 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions heroin and meth. First, I need to check the index terms to see if these substances are listed.
+
+Looking at the index terms, "Morphine (MS Contin, Miss Emma, Morph)" is listed, but heroin is a different substance. Wait, the index term for heroin isn't explicitly listed. Let me check again. Oh, there's "Heroin (MS Contin, Miss Emma, Morph)"? No, actually, the index terms include "Morphine" but not heroin. Wait, the user mentioned heroin. Hmm. Wait, looking back, the index terms include "Morphine" but not heroin. However, the example given in the problem includes "Codeine" with "lean" and "codeine". So, in the index terms, heroin isn't directly listed. But wait, the index terms list "Morphine" as a separate entry. Heroin is a different drug, but maybe the system considers it under "Morphine"? Or is it not listed? Wait, the index terms don't have "Heroin" as an entry. So, if the post mentions heroin, since it's not in the index terms, I should map it to "other". 
+
+Then, the post also mentions "meth". Checking the index terms, "Methamphetamine (Crystal Meth, Ice, Desoxyn)" is listed. So "meth" would map to "Methamphetamine". 
+
+So the phrases "heroin" and "meth" are in the post. "Heroin" isn't in the index terms, so index_term is "other". "Meth" is in the index terms as "Methamphetamine". 
+
+Wait, but the user wrote "meth addict". So the phrase is "meth". So the matched_phrase is "meth", and index_term is "Methamphetamine". 
+
+So the JSON array should have two entries: one for "heroin" as "other", and one for "meth" as "Methamphetamine". 
+
+Wait, but the example 3 had "xans" which is not in the list, so it was "other". Similarly, "heroin" isn't in the index terms, so it's "other". 
+
+So the correct output would be:
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]
+
+But wait, the user's post says "heroin" and "meth". Let me check again. The index terms include "Methamphetamine", so "meth" is correct. Heroin isn't listed, so "other". So that's the answer.
+</think>
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

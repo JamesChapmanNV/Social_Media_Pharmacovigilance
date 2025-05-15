@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is about U.S. new vehicle sales dropping 26% in September due to chip shortages and supply issues. The user wants me to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to drug abuse. The content talks about vehicle sales, chip shortages, and supply chain problems. There's no mention of drugs, opioids, codeine, or any slang related to drug use. The example given in the task had mentions of codeine and lean, which are drugs. But here, the topic is entirely about cars and supply chain issues. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. Since there's no drug-related term here, it's definitely not related. The explanation should note that there's no drug mention or context of abuse. 
+
+So the label should be False, and the explanation would state that the content is about vehicle sales and supply chain issues, not drug-related.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses vehicle sales and supply chain disruptions, with no mention of drugs, drug abuse, or related terminology."
+}

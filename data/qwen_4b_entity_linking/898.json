@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post about wines and family, with some hashtags. My task is to check if there are any drug-related references here.
+
+First, I'll read through the post again: "Proud to have Arak Wardy and Domaine Wardy wines at the stunning.lb way to go cousins. #domainewardy #arakwardy #littlereed #family #arak #distilledspirits #drinkresponsibly #cheers"
+
+Looking for any slang, euphemisms, or terms that might refer to illicit drugs. The main words here are "Arak Wardy," "Domaine Wardy," "wines," "distilled spirits," and the hashtags. 
+
+Arak is a type of spirit, typically a strong alcoholic drink, but I need to check if it's listed in the index terms. Looking at the list, there's no mention of Arak as a drug. The index terms include things like Codeine, Amphetamine, Methamphetamine, etc. Arak is a distilled spirit, so it's probably a legitimate alcohol, not a drug. 
+
+The hashtags #arakwardy and #domainewardy are brand names, so they don't refer to drugs. The other terms like "wines," "distilled spirits," "drinkresponsibly" are all related to alcohol consumption, not illicit drugs. 
+
+I don't see any phrases that match the index terms for drugs. The post is about wine and family, so there's no mention of any drug use, promotion, or related terms. Therefore, all the matched phrases here are either legitimate alcohol terms or brand names, not drug references. 
+
+So, the answer should be an empty array since there are no drug-related terms detected.
+</think>
+
+[]

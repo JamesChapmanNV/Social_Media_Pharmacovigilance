@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "morphine" and "lean" in the context of drug use. First, I need to check if these terms are listed in the index terms provided.
+
+Looking at the index terms, "Morphine" is listed as the prototypical opioid analgesic. The post mentions "morphine" directly, so that's a clear match. Then, "lean" is listed under Codeine as a slang term. The user also mentions "lean" in the context of using it, so that should be matched to Codeine. The rest of the post talks about feeling levitating, which might be a euphoric effect of morphine or codeine, but the task is to detect the drug references, not the effects. So the key phrases here are "morphine" and "lean". Both are correctly mapped to their respective index terms. No other terms in the post are drug-related. So the JSON array should include both matches.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "lean"}
+]

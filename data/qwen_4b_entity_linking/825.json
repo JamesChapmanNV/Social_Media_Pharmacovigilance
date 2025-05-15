@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I'll read through the post carefully. The post says: "He maybe needs morphine for a few days. It's easier to control pain if you bring down properly for a few days and then use normal pain relief. It's like a fire, get it under control then it's easier to manage (this is what my pain doctor tells me)."
+
+Looking for any mentions of drugs or substances. The first mention is "morphine." Checking the index terms, Morphine is listed as an index term. So "morphine" would map to "Morphine." 
+
+Next, the post mentions "normal pain relief." But "normal pain relief" is a general term. The index terms include various pain relievers like codeine, hydrocodone, oxycodone, etc. However, "normal pain relief" isn't a specific drug name or slang. The user's example 3 shows that "xans" maps to "other" because it's not in the list. So "normal pain relief" is probably not a specific drug here, so it would be "other." 
+
+Wait, but maybe "normal pain relief" could refer to something like acetaminophen or ibuprofen, which aren't in the index terms. Since the index terms don't include OTC drugs like ibuprofen, those would be "other." So "normal pain relief" is a general term, not a specific drug, so "other."
+
+Are there any other terms? The rest of the post is metaphorical, comparing pain control to a fire. No other drug references. 
+
+So the only detected phrase is "morphine," which maps to "Morphine." The rest is general terms. So the JSON array should have one entry for "morphine."
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

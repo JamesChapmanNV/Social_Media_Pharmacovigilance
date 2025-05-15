@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "If playing football was drugs i would hv been taking overdose" and wants me to detect any drug-related references.
+
+First, I need to go through the post and check for any words or phrases that might refer to illicit drugs, slang, or euphemisms. The post is a bit abstract, using "if playing football was drugs" as a metaphor. The key part here is "drugs" itself. But wait, the task is to detect specific terms from the index list. 
+
+Looking at the index terms, "drugs" isn't listed as a specific term. The example in the problem shows that "xans" was categorized as "other" because it's not a specific drug. So, in this case, the word "drugs" is a general term and not a specific index term. Therefore, it should be classified under "other". 
+
+The user also mentioned "overdose" in the post. But "overdose" is a general term and not a specific drug. The index terms include specific drugs like fentanyl, codeine, etc., but not the word "overdose". So, "overdose" would also be "other".
+
+So the matched phrases here are "drugs" and "overdose", both of which are general terms not found in the index list. Therefore, both should be categorized as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drugs"},
+  {"index_term": "other", "matched_phrase": "overdose"}
+]

@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. The post given is in German, so first I need to translate it to understand the context.
+
+The post says: "(6/7) Quellen: Babson KA, Sottile J, Morabito D. Cannabis, Cannabinoids, and Sleep: a Review of the Literature. Curr Psychiatry Rep. 2017 Apr;19(4):23. doi: 10.1007/s11920-017-0775-9. PMID: 2834931 **2017-11-27 Kurzbericht CAPRis,"
+
+Looking at this, it seems like a citation for a research paper about cannabis and sleep. The key terms here are "Cannabis" and "Cannabinoids". Checking the index terms list, "Marijuana (Cannabis, Weed, Pot)" is listed. So "Cannabis" would map to that index term. The rest of the text is references and dates, which don't mention any drugs. The user's task is to detect any drug references, so "Cannabis" is the only one here. The other terms like "Quellen" (sources), "doi", "PMID" are not drug references. So the correct match is "Marijuana" for "Cannabis". The answer should be a JSON array with that entry.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"}
+]

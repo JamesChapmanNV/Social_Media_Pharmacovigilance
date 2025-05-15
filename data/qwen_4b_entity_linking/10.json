@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully. The post says: "And they're no longer saying X passed from an OD. The sister and fam said he got the vaccine and had a heart attack😩 I didn't feel it was OD related. Reports no longer include overdose. Still sucks🥲"
+
+Looking for any mentions of drugs or related terms. The first part mentions "OD" which stands for overdose. But in the index terms, there's no entry for "overdose" itself. The closest might be "Fentanyl" or "Oxycodone" but those are specific drugs. However, "OD" is a slang term for overdose, which isn't listed in the index terms. The example 4 shows that if a term isn't in the list, it's marked as "other". 
+
+Then there's "vaccine" and "heart attack". The user mentions the sister and family said he got the vaccine and had a heart attack. "Vaccine" isn't a drug, so that's probably not relevant. "Heart attack" is a medical condition but not a drug. 
+
+Looking through the index terms again, none of them relate to heart attacks or vaccines. The only possible mention is "OD" which isn't in the list. So, the only possible match here is "OD" but since it's not in the index terms, it should be "other". 
+
+Wait, but the user is talking about reports no longer including overdose. The term "overdose" is a condition, not a drug. The index terms include drugs like fentanyl, codeine, amphetamine, etc., but not the term "overdose". So, in this case, the only possible phrase is "OD", which isn't in the list, so it's "other".
+
+Are there any other terms? "X passed from an OD" – "X" is a placeholder, not a drug. "Vaccine" is not a drug. "Heart attack" is a medical issue. So, the only possible match is "OD", which is not in the index terms. Therefore, the JSON array should have one entry with "other" and "OD".
+
+Wait, but in the example 4, "snow" and "white lines" were marked as "other" even though they aren't drugs. So, following that, "OD" here would be "other". 
+
+So the final answer is an array with one object: index_term "other" and matched_phrase "OD".
+</think>
+
+[{"index_term": "other", "matched_phrase": "OD"}]

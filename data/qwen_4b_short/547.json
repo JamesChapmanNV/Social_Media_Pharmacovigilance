@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this. The user is asking to label a social media post related to drug abuse. The post is: "Molly and codeine in my fanta, it's a lot of dreams in my fanta". The rules are T if it shows illicit or abusive drug use (using, seeking, buying, selling, trafficking, or slang for drugs), otherwise F.
+
+First, I need to parse the content. The mention of "Molly" is a slang term for Molly, which is a brand name for a drug, typically ecstasy or methamphetamine. Codeine is an opioid, which is a controlled substance. Both are illicit drugs. The phrase "in my fanta" suggests that the person is consuming these substances in a drink, which is a form of using drugs. 
+
+The second part, "it's a lot of dreams in my fanta", might be a metaphor, but given the context of the first part, it's likely referring to the effects of the drugs. However, the key here is whether the post is showing actual drug use. Since Molly and codeine are both drugs, and the person is talking about putting them in their drink, that's a clear indication of using illicit drugs. 
+
+I need to check if there's any possibility of it being a metaphor. But "Molly" is a known slang term, and codeine is a drug. The phrase "a lot of dreams" could be a metaphor for the effects, but the presence of the drugs in the drink is a direct reference to drug use. Therefore, the label should be T.
+</think>
+
+T

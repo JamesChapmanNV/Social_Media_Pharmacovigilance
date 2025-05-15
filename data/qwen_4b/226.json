@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The content is: "If it's codeine I've got a shedload. But you can't have it." 
+
+First, I need to determine if this is illicit or abusive drug-related. The user mentioned codeine, which is a controlled substance. The phrase "shedload" is a slang term that suggests having a lot of something, which in this context likely refers to codeine. The second part, "you can't have it," might imply that the speaker is keeping the codeine, possibly in a way that's not legal.
+
+Looking at the definitions, True includes mentions of illegal or OTC drugs in the context of abuse or misuse. The use of "shedload" is a euphemism that indicates possession in a way that might be considered misuse. Also, the tone seems to be about having a lot of codeine, which could be associated with abuse. 
+
+The example given in the prompt where "lean" and "codeine" were mentioned as illicit because of the context of being hooked. Here, even though it's not explicitly about using or promoting, the possession of codeine in a large amount ("shedload") could be seen as misuse. Also, the phrase "you can't have it" might suggest that the speaker is hoarding it, which could be a sign of abuse.
+
+But wait, is codeine considered an illegal drug here? Codeine is a controlled substance in many places, so mentioning it could be a red flag. The user is talking about having a lot of codeine, which might be a sign of abuse or misuse. The explanation should mention the slang term and the context of possession. 
+
+So the label would be True because it's using slang and mentions codeine in a context that suggests misuse. The explanation should note the slang and the implication of having a lot of codeine, which is associated with abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses'shedload' as slang indicating excessive possession of codeine, which implies misuse or abuse of a controlled substance."
+}

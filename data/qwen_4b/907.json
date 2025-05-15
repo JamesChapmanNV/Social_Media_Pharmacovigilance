@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is "Side effects of Actiq - by Dr Pandula Siribaddana - Helium". First, I need to determine if this is about illicit or abusive drug use.
+
+Actiq is a brand name for buprenorphine, which is a medication used in opioid addiction treatment. The mention of side effects in a medical context, especially by a doctor (Dr. Pandula) and a platform like Helium (which might be a medical or educational site), suggests it's part of a health education topic. The user is asking about side effects, which is a medical or preventative context. There's no indication of promoting, using, or glorifying drug misuse here. The content is educational and discouraging, as it's discussing the side effects of a medication used to treat addiction. So, according to the definitions, this should be classified as False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses side effects of a medication (Actiq) in a medical context, not promoting or glorifying drug misuse."
+}

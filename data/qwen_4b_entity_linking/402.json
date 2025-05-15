@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "They actually did it. Those butchers managed to crack the code. MECH. Link: Transformers: Prime | S02 E08 | FULL Episode | Animation -Transformers Official". The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The main text is about someone cracking a code, mentioning "butchers" and a link to a Transformers episode. The word "code" is used here, but I need to check if it's related to drugs. Looking at the index terms, "Codeine" has synonyms like "lean" and "purple drank", but "code" alone isn't listed. The example given in the problem had "codeine" and "lean" as matches, but here "code" is just the word. 
+
+Wait, the index term for Codeine includes "Codeine" as a direct match. However, the post uses "code" without any context suggesting it's a drug. The word "code" in this context is likely referring to a code as in a cipher or secret code, not the drug. The user might be using "code" as a slang term, but according to the index terms, "code" isn't listed under any drug. The example in the problem had "codeine" and "lean" as matches, but here "code" isn't in the list. 
+
+Looking at the index terms again, the only mention of "code" is under Codeine as a slang term. But the post's "code" is not in the slang terms listed. The example in the problem had "codeine" and "lean", but here "code" is different. So, "code" isn't a drug term here. The rest of the post is about Transformers, which is unrelated. 
+
+The user also included "MECH." which might be a typo or abbreviation, but that's not a drug term. The link is to a Transformers episode, which is irrelevant. Therefore, there are no drug-related phrases in the post. The only possible candidate is "code", but since it's not listed in the index terms, it should be marked as "other". However, the example in the problem had "codeine" and "lean" as matches, but "code" isn't in the index terms. Wait, in the example, the post was "I got her hooked on that lean everyday she say she want codeine", so "lean" and "codeine" are both in the index terms. But in this case, the word "code" is not in the index terms. 
+
+So, the correct approach is to check if "code" is in the index terms. Looking back, the index terms for Codeine include "Codeine" as a direct term, but "code" isn't listed. Therefore, "code" here is not a drug term. The user might have intended "code" as a slang term, but according to the provided index terms, it's not. So the answer should be "other" for "code". 
+
+Wait, but the example in the problem had "codeine" and "lean" as matches. So if "code" is not in the index terms, then it's "other". Therefore, the post has "code" which is not a drug term, so it's "other". But the user might have made a typo, but according to the instructions, we have to strictly follow the index terms. So the answer is "other" for "code".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "code"}
+]

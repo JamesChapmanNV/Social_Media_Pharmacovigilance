@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "fentanyl" and "drugs" in the context of a legal case. My task is to identify any drug-related references and map them to the correct index terms from the given list.
+
+First, I'll read through the post carefully. The key phrases here are "fentanyl" and "drugs". The user is talking about someone who sold drugs to Floyd and the possibility of a fentanyl overdose leading to death. 
+
+Looking at the Index Terms, "Fentanyl" is listed with several synonyms like China White, Apache, Duragesic. The exact term here is "fentanyl", which directly matches the index term. So "fentanyl" should be mapped to "Fentanyl".
+
+Next, the word "drugs" is mentioned. However, "drugs" is a general term and not specifically listed in the index terms. The instruction says if the drug isn't in the list, use "other". Since "drugs" is a broad term and not a specific substance listed, it should be categorized as "other".
+
+Wait, but the post mentions "sold drugs to Floyd". The term "drugs" here is part of a sentence about selling, but the actual drug in question is fentanyl. However, the task is to detect every word or phrase that refers to an illicit drug. The word "drugs" itself is a general term, but in the context, it's referring to the specific drug mentioned, which is fentanyl. However, since "drugs" isn't an exact term in the index list, it would fall under "other".
+
+So the matched phrases would be "fentanyl" mapped to "Fentanyl" and "drugs" mapped to "other". Let me double-check the index terms. The list includes "Fentanyl" as an index term, so that's correct. The word "drugs" isn't listed, so "other" is appropriate.
+
+Therefore, the JSON array should have two entries: one for "fentanyl" and one for "drugs" as "other".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "other", "matched_phrase": "drugs"}
+]

@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I need to look at the provided post: "The Standard sat down this week with the head of SF's Office of Cannabis to discuss 4/20 celebrations, equity in the cannabis industry and the city's changing policies and attitudes on legal weed."
+
+I need to scan through the text for any mentions of drugs or substances. The key terms here are "Cannabis" and "legal weed." Looking at the Index Terms list, "Marijuana (Cannabis, Weed, Pot)" is listed. So "Cannabis" and "legal weed" would map to that index term. However, the post mentions "legal weed," which is a term used for cannabis, but since the Index Term is "Marijuana," I need to check if "legal weed" is considered a synonym here. The Index Terms list includes "Marijuana" as a term, and "legal weed" is a common term for cannabis, so it should be included.
+
+Wait, but the user's instruction says to use the exact Index Terms. The Index Term for cannabis is "Marijuana (Cannabis, Weed, Pot)." So "Cannabis" is directly in the Index Term. The post has "Cannabis" and "legal weed." "Legal weed" is a term used for cannabis, but is it listed in the Index Terms? The Index Terms list includes "Marijuana" as the term, but "legal weed" isn't explicitly listed. However, since the Index Term is "Marijuana," and "legal weed" is a synonym for cannabis, it should be mapped to "Marijuana." But the user's example 4 shows that "snow" and "white lines" are mapped to "other" even though they aren't drugs. Wait, in example 4, the post mentions "snow" and "white lines," which are not drugs, so they are marked as "other." But in this case, "legal weed" is a term for cannabis, which is listed under the Index Term "Marijuana." Therefore, "legal weed" should be mapped to "Marijuana."
+
+But wait, the user's instruction says to link each detected phrase to its matching Index Term. So "Cannabis" is directly in the Index Term, so that's a match. "Legal weed" is a term for cannabis, so it's also a match. Therefore, both "Cannabis" and "legal weed" should be mapped to "Marijuana."
+
+Wait, but the Index Term is "Marijuana (Cannabis, Weed, Pot)" so "Cannabis" is part of the Index Term. The post has "Cannabis" and "legal weed." So "Cannabis" is a direct match. "Legal weed" is a synonym for cannabis, so it should also be mapped to "Marijuana."
+
+Therefore, the matched phrases would be "Cannabis" and "legal weed," both under "Marijuana." However, the user's example 3 shows that "xans" is mapped to "other" because it's not in the list. But "Cannabis" is in the list, so "Cannabis" is a valid index term. "Legal weed" is a term for cannabis, so it's also a valid index term. So the JSON array should have two entries: one for "Cannabis" and one for "legal weed," both with index term "Marijuana."
+
+Wait, but looking at the Index Terms, the entry for Marijuana is "Marijuana (Cannabis, Weed, Pot)." So "Cannabis" is part of the Index Term. Therefore, "Cannabis" is a direct match. "Legal weed" is a term that refers to cannabis, so it's also a match. Therefore, both phrases should be mapped to "Marijuana."
+
+So the final answer would be two entries: one for "Cannabis" and one for "legal weed," both under "Marijuana." However, the user's example 1 shows that "lean" and "codeine" are both mapped to "Codeine." So in this case, the post has "Cannabis" and "legal weed," so they should both be mapped to "Marijuana."
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "legal weed"}
+]

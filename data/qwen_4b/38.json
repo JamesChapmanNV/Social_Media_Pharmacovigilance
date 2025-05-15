@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content. The user is asking to classify the given text as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "But please don't feel sorry for me please, I am strong and as long as I have pain meds I can make it through most of the day. I'm on enough morphine to kill a animal; but I do not want to complain about & don't you dare feel sorry for me please. 💋love, NormaJean I am a strong."
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse.
+
+The content mentions "pain meds" and "morphine." Morphine is an opioid, which is a controlled substance. The user says they're on enough morphine to kill an animal, which is a strong statement indicating high dosage. The tone is defensive, not wanting others to feel sorry, and they're emphasizing their strength despite the medication. The use of "morphine" is in a context that suggests dependency or abuse. The phrase "I'm on enough morphine to kill a animal" is a clear indicator of misuse. Also, the mention of pain meds could be related to prescription drugs, which are often abused. The user is not in a medical context but rather expressing a dependency, which aligns with abuse. The "💋" emoji might be a slang or cultural reference, but in this case, it's more about the content's context. So, this would fall under True because it's about drug misuse and dependency, not a medical or educational context.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions morphine in a context implying dependency and high dosage, with a defensive tone that suggests abuse or misuse of prescription drugs."
+}

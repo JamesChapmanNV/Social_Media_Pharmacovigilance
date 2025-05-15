@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "got a cute lil pendant necklace i can store 2 pills of morphine inside sick".
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang or cultural references indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+Looking at the content: The user mentions a pendant necklace that can store 2 pills of morphine. Morphine is an opioid, which is a controlled substance. The phrase "store 2 pills" suggests possession or intent to use. The word "sick" here might be slang, but in this context, it's more likely expressing something like "cool" or "amazing", but could also be a slang term related to drug use. However, the key part is the mention of morphine and the necklace being used to store pills. This seems like a reference to drug possession or misuse, possibly in a way that's promoting or discussing the storage of controlled substances. The user might be implying that they have access to morphine, which is a controlled drug, and the necklace is a way to carry it. This could be seen as promoting the misuse or abuse of morphine, even if the user isn't explicitly saying they're using it. The "sick" could be a slang term, but without more context, it's hard to say. However, the main point is the mention of morphine and the storage method, which is a direct reference to drug abuse or possession. Therefore, this would fall under True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions morphine (a controlled substance) and describes a method to store pills, implying potential misuse or possession of illicit drugs."
+}

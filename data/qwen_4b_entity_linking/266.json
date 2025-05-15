@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I say everything Triple Times 333..... — listening to Codeine Crazy [Prod. by TM-88]". I need to detect any drug-related references here.
+
+First, I'll scan the text for any words or phrases that might relate to illicit drugs. The post mentions "Codeine Crazy" in the title. Looking at the Index Terms, "Codeine" is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "Codeine Crazy" directly references codeine, so that's a match. The number "333" might be a slang or a reference, but I don't see it listed in the Index Terms. The rest of the text is about listening to a song, so no other drug terms there. The word "Triple" might be part of a slang, but I don't think it's in the list. So the only match here is "Codeine" with the phrase "Codeine Crazy". The rest of the words like "Triple Times" and "333" don't correspond to any drug terms in the provided list, so they should be marked as "other".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine Crazy"}
+]

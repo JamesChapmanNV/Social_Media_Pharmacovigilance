@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Semantic error, wyel needs s2 its too short, heroin webseries cuz it ended in a cliffhanger". I need to detect any drug-related references here.
+
+First, I'll go through each word and phrase. The first part is about a semantic error and a web series. "Wyel" might be a typo or a name, but not a drug. "S2" could be a reference to a season or something else, but not a drug. 
+
+Then there's "heroin webseries". Heroin is definitely an opioid and is listed in the index terms. The term "heroin" is directly mentioned here. The rest of the sentence talks about the web series ending in a cliffhanger, which isn't related to drugs. 
+
+So the only detected phrase here is "heroin". Checking the index terms, heroin is listed as "Morphine (MS Contin, Miss Emma, Morph)" but wait, heroin isn't exactly in the list. Wait, looking back at the index terms, the entry for Morphine is separate. Heroin isn't explicitly listed. Wait, let me check again. 
+
+Looking at the index terms, the entry for "Morphine" is listed, but heroin isn't directly listed. However, the index terms include "Heroin" as a separate entry? Wait no, in the provided list, the index terms don't have "Heroin" explicitly. Let me check again. 
+
+Looking through the list: The index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)". There's no direct entry for "Heroin". However, the index term for "Morphine" is listed, but heroin is a different drug. Wait, but in the index terms, "Heroin" isn't present. So if the post mentions "heroin", which is not in the index terms, then it should be categorized as "other". 
+
+Wait, but the example given in the problem statement includes "Codeine" for "lean" and "codeine". So if the post has "heroin", which isn't in the index terms, then the index_term should be "other". 
+
+But wait, looking back at the index terms, the entry for "Morphine" is there, but heroin is a different drug. The index terms don't have "Heroin" as an index term. Therefore, "heroin" in the post would be "other". 
+
+But wait, maybe I'm missing something. Let me check again. The index terms list "Morphine" as an index term, but heroin is a different drug. The user's task is to check if the drug is in the list. Since "heroin" isn't listed in the index terms, it should be "other". 
+
+So the matched phrase is "heroin", and the index_term is "other". Therefore, the output should be one object with index_term "other" and matched_phrase "heroin".
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

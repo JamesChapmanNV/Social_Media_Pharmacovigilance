@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this content: "I'm on the codeine moving like a dead body #nofr". First, I need to determine if this is illicit or abuse-related. The user mentions "codeine", which is a controlled substance. The phrase "moving like a dead body" might be a slang reference to the effects of codeine, possibly indicating misuse or abuse. The hashtag #nofr could be a typo or slang, but the key part is the mention of codeine and the effect described. Since codeine is an opioid and the context suggests use leading to a severe effect, this might be abuse. However, I need to check if there's any educational or medical context. The example given in the task had a similar case where mentioning codeine in a context of being hooked was classified as true. Here, the user is talking about being on codeine and the physical effect, which could imply misuse. The hashtag might be a social media trend, but the main point is the drug use. So, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and describes a severe physical effect ('moving like a dead body'), indicating potential misuse or abuse of a controlled substance."
+}

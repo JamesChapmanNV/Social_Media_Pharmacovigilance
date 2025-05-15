@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "codeine help me stop feeling ~ take me away from the pain". I need to identify any drug references here.
+
+First, I'll look for words that match the index terms. The post has "codeine" explicitly. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" directly maps to Codeine. The phrase "help me stop feeling ~ take me away from the pain" is more about the effect of codeine, but the actual drug name is "codeine". There's no other term here. The rest of the text is metaphorical, but no other drugs are mentioned. So the only match is "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

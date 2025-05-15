@@ -1,0 +1,12 @@
+[
+  {"index_term": "CBD", "matched_phrase": "cannabis"},
+  {"index_term": "CBD", "matched_phrase": "Artizen cannabis"},
+  {"index_term": "other", "matched_phrase": "PVSP"},
+  {"index_term": "other", "matched_phrase": "Potstocks"},
+  {"index_term": "other", "matched_phrase": "Love"},
+  {"index_term": "other", "matched_phrase": "fuel"},
+  {"index_term": "other", "matched_phrase": "gas"},
+  {"index_term": "other", "matched_phrase": "skunk"},
+  {"index_term": "other", "matched_phrase": "slurricane"},
+  {"index_term": "other", "matched_phrase": "Dutchberry"}
+]

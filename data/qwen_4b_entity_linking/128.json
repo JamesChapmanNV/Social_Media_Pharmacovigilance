@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "When you realize you're the only person in your generation Who uses codeine for what it's actually for." I need to detect any drug references here.
+
+First, I'll read through the post carefully. The key phrase here is "codeine." Looking at the Index Terms list, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The post mentions "codeine" directly, so that's a clear match. The phrase "for what it's actually for" might be a bit ambiguous, but since codeine is explicitly mentioned, it's a direct reference. There's no other slang or euphemism here. The rest of the sentence is about being the only person using it, which doesn't add any other drug terms. So the only match is "codeine" under the Codeine index term. I should check if there's any other possible term, but I don't see any. The answer should be a JSON array with one object: index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

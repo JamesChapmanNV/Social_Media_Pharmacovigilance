@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Girl me too. I'm about to get so damn morphine cuz I can't take it anymore". I need to detect any drug references here.
+
+First, I'll go through each word. The phrase "so damn morphine" stands out. Morphine is listed in the index terms as an opioid analgesic. The user is saying they're about to get morphine because they can't take it anymore. So "morphine" is a direct match. 
+
+Looking at the index terms, "Morphine" is listed with several synonyms like MS Contin, Miss Emma, Morph. So "morphine" maps to "Morphine" as the index term. There's no other slang or euphemism here. The rest of the sentence doesn't mention any other drugs. "Girl me too" is just conversational, no drug reference. "Cuz I can't take it anymore" refers to the morphine, but the actual drug term is "morphine". 
+
+So the only matched phrase is "morphine" under the index term "Morphine". No other terms are present. I need to make sure there's no other possible terms. For example, "cuz" is slang but not a drug. "Get so damn" is just intensifying. So the JSON should have one object with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

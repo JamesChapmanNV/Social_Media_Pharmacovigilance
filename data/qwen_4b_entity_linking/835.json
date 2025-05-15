@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Yep morphine is going to send them on a trip right to there death. That's bs. 😡😡😡😡". I need to detect any drug references and link them to the index terms.
+
+First, I'll scan the post for any words or phrases that might refer to illicit drugs. The word "morphine" is mentioned. Looking at the index terms, Morphine is listed as an index term. The phrase "send them on a trip right to there death" is a bit colloquial, but "trip" here is likely referring to the effects of morphine, which is an opioid. The user is using "morphine" directly, so that's a clear match. 
+
+Next, check if there are any other terms. The rest of the post is "That's bs. 😡😡😡😡" which is just a statement and not a drug reference. So the only match is "morphine". 
+
+Looking at the index terms, Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence." So the matched phrase is "morphine" and the index term is "Morphine". 
+
+No other terms in the post. The user might be using "trip" metaphorically, but the actual drug term is "morphine". So the JSON should have one entry with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

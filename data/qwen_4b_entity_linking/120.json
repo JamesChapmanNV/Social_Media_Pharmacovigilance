@@ -1,0 +1,35 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I need to look at the post: "Snake start hissing\nHeads go missing\nRest in piss to the ones I'm killing\nChief Keef drilling\nCodeine spilling...". 
+
+Breaking it down line by line. The first line, "Snake start hissing"—"snake" could be a slang term, but I don't see a direct drug reference here. Maybe "hissing" is a metaphor, but not sure. Next line: "Heads go missing". "Heads" might be a slang for something else, but not a drug. 
+
+Third line: "Rest in piss to the ones I'm killing". "Piss" here is likely a slang term. Wait, in some contexts, "piss" can be a slang for a drug, like "piss" as in "piss water" which is a term for something else, but I need to check the index terms. Looking at the list, there's "Codeine" with synonyms like "lean", "purple drank", "schoolboy". But "piss" isn't listed. Wait, "piss" might be a slang for a drug, but according to the index terms, maybe not. Let me check again. The index terms include "Codeine", "Amphetamine", "Methamphetamine", etc., but "piss" isn't listed. So maybe "piss" here is not a drug reference. 
+
+Fourth line: "Chief Keef drilling". "Chief Keef" is a slang term for a drug dealer, maybe referring to a person, not the drug itself. "Drilling" could be a verb, but not a drug term. 
+
+Last line: "Codeine spilling...". "Codeine" is explicitly listed in the index terms under "Codeine" with synonyms like "lean", "purple drank", "schoolboy". So "codeine" is a direct match. 
+
+So the only explicit mention is "codeine spilling", which would map to "Codeine" as the index term. The other lines don't seem to reference any drugs listed in the index. "Piss" might be a stretch, but since it's not in the index terms, it would be "other". Wait, but the user's example 3 had "xans" which was "other" because it wasn't in the list. So if "piss" isn't in the index terms, then it's "other". But I need to check if "piss" is a slang for a drug. 
+
+Looking through the index terms again, there's "Xylazine" which is a veterinary sedative used as a street drug adulterant. But "piss" isn't listed. So "piss" here is probably not a drug term. Therefore, the only match is "codeine". 
+
+Wait, but "codeine spilling" is a direct match. So the JSON should have one entry for "codeine" with "spilling"? Wait, the matched_phrase should be the exact text. The post says "Codeine spilling...", so the matched_phrase is "Codeine spilling". But the index term is "Codeine". Wait, but the example 1 had "lean" and "codeine" as separate entries. So if the phrase is "Codeine spilling", then the matched_phrase is "Codeine spilling", but the index term is "Codeine". 
+
+Wait, but the index terms are for the drug names. So if the phrase is "codeine", then it's "Codeine". If the phrase is "spilling codeine", but in the post it's "Codeine spilling". But the exact phrase is "Codeine spilling". However, the index term is "Codeine", so the matched_phrase is "Codeine spilling". But maybe the user expects that "spilling" is part of the phrase. However, the task is to detect every word or phrase that refers to a drug. So "Codeine spilling" is the phrase, but the index term is "Codeine". So the JSON would have one entry: {"index_term": "Codeine", "matched_phrase": "Codeine spilling"}.
+
+But wait, the example 1 had "lean" and "codeine" as separate entries. So if the phrase is "Codeine spilling", it's one entry. But maybe the user wants to split into "Codeine" and "spilling"? But "spilling" isn't a drug term. So the only match is "Codeine spilling", but that's not a direct term. Wait, but the task is to detect every word or phrase that refers to a drug. So if "Codeine spilling" is a phrase where "Codeine" is the drug, then the matched_phrase is "Codeine spilling". But maybe the user is looking for the exact drug term. However, the example 1 had "lean" and "codeine" as separate entries, which are synonyms. So in the post, "Codeine spilling" is a phrase where "Codeine" is the drug. So the matched_phrase is "Codeine spilling", but the index term is "Codeine". 
+
+Alternatively, maybe "spilling" is part of the slang. But according to the index terms, "Codeine" is listed with synonyms like "lean", "purple drank", "schoolboy". So "Codeine spilling" is a phrase where "Codeine" is the drug. Therefore, the correct entry is {"index_term": "Codeine", "matched_phrase": "Codeine spilling"}.
+
+But wait, the example 1 had "lean" and "codeine" as separate entries. So in that case, if the post has "lean" and "codeine", they are both matched. So in this case, "Codeine spilling" is a phrase that includes "Codeine", so the matched_phrase is the entire phrase. However, maybe the user wants to split into "Codeine" and "spilling", but "spilling" is not a drug term. Therefore, the correct answer is one entry for "Codeine" with the phrase "Codeine spilling".
+
+But I need to check if "spilling" is a slang term. Since it's not in the index terms, it's not a drug term. Therefore, the only match is "Codeine" in the phrase "Codeine spilling". So the JSON array would have one object: {"index_term": "Codeine", "matched_phrase": "Codeine spilling"}.
+
+But wait, the user's example 1 had "lean" and "codeine" as separate entries. So if the post has "codeine" as a word, it's matched. So in this case, "Codeine spilling" is the phrase, but the drug is "Codeine", so the matched_phrase is "Codeine spilling". But maybe the user wants to split into "Codeine" and "spilling", but "spilling" is not a drug. Therefore, the correct answer is one entry for "Codeine" with the phrase "Codeine spilling".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine spilling"}
+]

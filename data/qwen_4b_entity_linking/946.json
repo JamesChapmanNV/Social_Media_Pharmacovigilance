@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "imyt but im gg to sleep now 😭 gn". I need to detect any drug-related references here.
+
+First, I'll look at each word. "imyt" – that's probably a typo or slang. Looking at the index terms, "Imyt" isn't listed. Wait, maybe it's "im" or "I'm"? But the user wrote "imyt". Hmm. Maybe it's a misspelling of "I'm" or something else. Let me check the index terms again. The index terms include things like "Amphetamine (Speed, Bennies, Adderall)" and "Codeine (Lean, Purple Drank, Schoolboy)". But "imyt" doesn't match any of those.
+
+Next, "gg" is a common slang for "good game" or "glad to get". But in the context of the post, the user is saying they're "gg to sleep now". "GG" isn't a drug term. Then "sleep" is just a normal word. The emojis are just expressions, not drug references. 
+
+Looking at the example where "xans" was considered "other" because it wasn't a listed term. Similarly, "imyt" and "gg" don't match any index terms. So, the answer would be "other" for both phrases. But wait, the user's post has "imyt" and "gg". Are there any possible drug terms here? Let me double-check the index terms again. 
+
+Looking through the list, "Codeine" has "lean", "codeine", etc. "Amphetamine" has "Speed, Bennies, Adderall". "Adderall" is a drug, but "addy" was in example 2. The user's post has "imyt" and "gg". "Imyt" isn't in the list. "GG" isn't a drug term. So both phrases would be "other". 
+
+Therefore, the JSON should have two entries with "other" and the matched phrases "imyt" and "gg".
+</think>
+
+[{"index_term": "other", "matched_phrase": "imyt"}, {"index_term": "other", "matched_phrase": "gg"}]

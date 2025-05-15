@@ -1,0 +1,26 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "This reminds me of my patient berating me about her morphine that I couldn't give for another 8 hours then continued to try to get me to buy her detox tea and pills 🙄"
+
+Looking for words or phrases that refer to illicit drugs or substances. The key terms here are "morphine" and "detox tea and pills". 
+
+Checking the index terms list. Morphine is listed under "Morphine (MS Contin, Miss Emma, Morph)" so that's a direct match. 
+
+Now, "detox tea and pills" – the term "detox" might be a euphemism for something related to drug use. However, "detox tea" isn't explicitly listed in the index terms. The index terms include "detox" in the context of methadone (EDDP) but that's a metabolite. "Detox tea" could be a slang term for something else, but since it's not in the list, I should mark it as "other". 
+
+Wait, the user's example 3 had "xans" which was "other" because it wasn't in the list. Similarly, "detox tea" isn't a specific drug listed, so it's "other". 
+
+So the matched phrases are "morphine" and "detox tea and pills". The first is Codeine? Wait no, Morphine is a separate index term. Wait, looking back at the index terms, Morphine is listed as a separate entry. So "morphine" maps to "Morphine". 
+
+But wait, the example 1 had "lean" and "codeine" both mapping to Codeine. So in this case, "morphine" is directly in the index terms. So the first match is "Morphine" for "morphine". 
+
+Then "detox tea and pills" – the "detox" part is not a drug, but "tea and pills" could be referring to something else. However, the user might be referring to detox products, but since there's no specific term for that in the index, it's "other". 
+
+So the JSON array would have two entries: one for "morphine" and another for "detox tea and pills" as "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "detox tea and pills"}
+]

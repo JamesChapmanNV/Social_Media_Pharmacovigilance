@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post about people trying drugs to get high and the struggles of addiction. My task is to detect any drug-related references and map them to the correct index terms.
+
+First, I'll read through the post carefully. The post mentions "drugs" in general, but I need to check if any specific terms are listed in the index terms. The key phrases here are "take drugs to get High" and "drug addiction". 
+
+Looking at the index terms, "drug" itself isn't listed, but the term "other" is used when the drug isn't in the list. The post uses "drugs" as a general term, so I need to check if any specific slang or terms are present. The words "High" might be a reference to drugs, but "High" isn't in the index terms. 
+
+The phrase "drug addiction" is mentioned, but again, "drug" is a general term. The example 3 shows that "xans" is mapped to "other" because it's not a specific term. Similarly, here, "drugs" and "drug" are general terms not listed in the index terms. 
+
+So, the detected phrases would be "drugs" and "drug", both of which aren't specific enough. Therefore, they should be categorized under "other". 
+
+I need to make sure there are no other specific terms. The post doesn't mention any specific drugs like codeine, amphetamine, etc. So the answer should have two entries, both under "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "drugs"}, {"index_term": "other", "matched_phrase": "drug"}]

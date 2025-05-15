@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is: "I refuse to cancel a year because of another celebrity drug overdose 😂". First, I need to determine if this is illicit or abusive drug-related. The user is talking about a celebrity drug overdose. The key here is the context. The statement is about a celebrity's overdose, which is a negative event. The user is expressing a dismissive attitude towards it, using a laughing emoji. 
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse, using slang, or encouraging it. False includes medical, educational, or preventative contexts. Here, the content is not promoting or glorifying drug use. It's a reaction to a negative event (overdose), not discussing the drug use itself. The mention of "drug overdose" is in a negative, not abusive context. The user isn't encouraging or promoting drug use. So this should be classified as False. The explanation would note that it's a reaction to a negative event, not promoting or discussing drug abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a celebrity's drug overdose in a dismissive context, not promoting or discussing drug abuse or misuse."
+}

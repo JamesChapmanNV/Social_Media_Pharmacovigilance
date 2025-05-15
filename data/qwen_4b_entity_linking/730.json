@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "drug overdose." My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs. The post says "die of suicide or drug overdose." The key term here is "drug overdose." Now, I need to check if "drug overdose" is in the list of index terms. Looking through the list, the index terms are specific substances like Codeine, Amphetamine, etc. "Drug overdose" isn't a direct index term listed. The closest might be "other" since it's not a specific drug. 
+
+Wait, but the instruction says to check if the drug is in the list. Since "drug overdose" is a general term and not a specific substance listed, I should map it to "other." The example 4 shows that "snow" and "white lines" are mapped to "other" even though they might relate to drugs. So, in this case, "drug overdose" is a general term, not a specific drug, so it's "other."
+
+But wait, is there any index term that could relate to overdose? The index terms are specific drugs. For example, Fentanyl, Morphine, etc. But "overdose" itself isn't an index term. The example 3 had "xans" which isn't a specific term, so it was "other." Therefore, "drug overdose" here is a general term, so the index term should be "other."
+
+So the matched phrase is "drug overdose," and the index term is "other." The JSON array should have one object with those terms.
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug overdose"}]

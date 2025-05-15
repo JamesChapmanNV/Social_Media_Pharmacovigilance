@@ -1,0 +1,45 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I need to look at the provided post: "That said Whites have legitimate issues like their sky high male suicide rate only matched by Native American men. Poor White women die younger than poor Black women. Opioids and meth are eating away their communities like the crack epidemic did to Blacks. White issues exist."
+
+I need to scan through this text for any mentions of drugs or substances. The key part here is "Opioids and meth are eating away their communities..." So, "opiates" and "meth" are mentioned. 
+
+Looking at the Index Terms list, "Opioids" are not explicitly listed, but "Codeine" is listed with synonyms like "Lean" and "Purple Drank". However, "opiates" is a broader term. Wait, the Index Terms include "Morphine" and "Codeine", but "opiates" might not be a direct match. However, the user's example in Example #1 had "lean" and "codeine" both linked to Codeine. So maybe "opiates" here would be considered under "Codeine" or another term?
+
+Wait, looking at the Index Terms again, "Codeine" is listed as an index term. But "opiates" is a general term. However, in the Index Terms, there's no direct entry for "opiates". The closest might be "Morphine" or "Codeine", but the user's instruction says if the drug is not in the list, use "other". 
+
+Wait, the Index Terms include "Morphine" and "Codeine", but "opiates" is a category. However, in the given list, "Opioids" are not a direct index term. Wait, looking back, the Index Terms include "Codeine", "Morphine", "Fentanyl", "Methadone", etc. But "Opioids" as a general term isn't listed. So if the post mentions "opiates", which is a broader term, but not exactly listed, then according to the instructions, if the drug is not in the list, use "other". 
+
+Wait, but the user's example 1 had "lean" and "codeine" both linked to Codeine. So "opiates" is a general term. However, in the Index Terms, "Codeine" is a specific drug. But "opiates" is a category. However, the Index Terms don't have "opiates" as an index term. Therefore, if the post mentions "opiates", it would be "other" because it's not in the list. 
+
+Wait, but the user's example 1 had "lean" which is a slang for Codeine, so that's linked to Codeine. Similarly, "meth" is a slang for methamphetamine, which is listed under "Methamphetamine" in the Index Terms. So "meth" would be linked to "Methamphetamine". 
+
+So in the given post, "meth" is mentioned. Looking at the Index Terms, "Methamphetamine" is listed. So "meth" would map to "Methamphetamine". 
+
+Then "opiates" is mentioned. Since "opiates" is a general term, but the Index Terms don't have "opiates" as an index term. However, the Index Terms do include "Codeine", "Morphine", "Fentanyl", etc. So "opiates" is a broader term. But the user's instruction says if the drug is not in the list, use "other". Therefore, "opiates" would be "other". 
+
+Wait, but maybe "opiates" is considered as a category that includes Codeine, Morphine, etc. But according to the given Index Terms, "Codeine" is an index term. However, the user's example 3 had "xans" which is not in the list, so it was "other". Therefore, if the phrase is "opiates", which is not in the list, then it's "other". 
+
+So in the post, the phrases "opiates" and "meth" are present. "Meth" is a slang for Methamphetamine, which is in the Index Terms. So "meth" maps to "Methamphetamine". "Opiates" is not in the list, so it's "other". 
+
+Therefore, the JSON array should have two entries: one for "meth" as "Methamphetamine", and "opiates" as "other". 
+
+Wait, but the user's example 4 had "snow" and "white lines" as "other" because they are not drugs. So in this case, "opiates" is a drug term, but not in the list. So "other". 
+
+So the final answer would be:
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "other", "matched_phrase": "opiates"}
+]
+
+But wait, the user's post says "Opioids and meth are eating away their communities..." So "opiates" is a term. But the Index Terms don't have "opiates". Therefore, "opiates" is "other". 
+
+Yes, that's correct. So the answer should include "meth" as Methamphetamine and "opiates" as other.
+</think>
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "other", "matched_phrase": "opiates"}
+]

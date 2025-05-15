@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions several song titles: "Codeine Crazy," "Kno The Meaning," "Perky's Calling," and "Purple Reign." The task is to identify any drug-related references in the post and map them to the appropriate index terms.
+
+First, I need to check each phrase in the post. The first song title is "Codeine Crazy." The word "Codeine" is explicitly listed in the index terms under Codeine. So "Codeine" in "Codeine Crazy" would map to the Codeine index term. 
+
+Next, "Kno The Meaning." The word "Kno" could be a slang term. Looking at the index terms, there's no direct match for "Kno," so it would fall under "other." The rest of the phrase "The Meaning" doesn't seem to relate to drugs, so that's probably "other" as well.
+
+Then "Perky's Calling." "Perky" might be a slang term, but again, there's no index term for that. So "Perky" would be "other." 
+
+Lastly, "Purple Reign." The term "Purple Drank" is listed under Codeine in the index terms. "Purple Reign" might be a reference to "Purple Drank," so "Purple" here could be part of that slang. However, the exact phrase "Purple Reign" isn't listed, but since "Purple Drank" is under Codeine, maybe "Purple" in "Purple Reign" is part of that. But wait, the index term is "Codeine" for "Purple Drank" and "Lean." So "Purple" might be part of that. However, the exact phrase "Purple Reign" isn't in the list, but since "Purple" is part of the slang for Codeine, maybe it's still mapped to Codeine. Alternatively, if "Purple Reign" is a song title not directly related, it might be "other." But the example given in the problem had "Purple Drank" mapped to Codeine, so "Purple" in "Purple Reign" might be considered as part of that. However, the exact phrase "Purple Reign" isn't listed, so maybe it's "other." Wait, the user's example had "lean" and "codeine" as separate entries. So if the phrase is "Purple Reign," and "Purple" is part of the slang for Codeine (as in "Purple Drank"), then maybe "Purple" is part of that. But the exact phrase "Purple Reign" isn't in the index terms. So perhaps "Purple Reign" is considered "other" because it's not a direct term. Alternatively, if "Purple" is part of the slang, then maybe "Purple" is mapped to Codeine. But the index terms are for the exact phrases. Wait, the index terms include "Purple Drank" and "Lean" under Codeine. So "Purple" in "Purple Reign" might not be a direct match. Therefore, "Purple Reign" would be "other." 
+
+So the detected phrases would be "Codeine" in "Codeine Crazy" and "Purple" in "Purple Reign" (but maybe not). Wait, the user's example had "lean" and "codeine" as separate entries. So if the phrase is "Codeine Crazy," then "Codeine" is the term. For "Purple Reign," if "Purple" is part of the slang, but the exact term isn't listed, then it's "other." Alternatively, if "Purple Reign" is a song title that's a reference to Codeine, but since it's not in the index terms, it's "other." 
+
+So the correct matches would be "Codeine" for "Codeine Crazy" and "Codeine" for "Purple Reign" if "Purple" is part of the slang. But according to the index terms, "Purple Drank" is under Codeine, so "Purple" is part of that. However, "Purple Reign" is a different phrase. The exact phrase "Purple Reign" isn't in the index terms, so it would be "other." Therefore, the only direct match is "Codeine" in "Codeine Crazy," and the rest would be "other." 
+
+Wait, but the user's example had "Purple Drank" as a synonym for Codeine. So "Purple" in "Purple Reign" might be part of that. But the exact phrase is "Purple Reign," not "Purple Drank." So unless "Purple Reign" is a slang term for Codeine, which it's not, it's "other." Therefore, the only match is "Codeine" for "Codeine Crazy." The other phrases are "Kno The Meaning" (other), "Perky's Calling" (other), and "Purple Reign" (other). 
+
+So the final answer would be one entry for "Codeine" and "Codeine Crazy," and the rest as "other."
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine Crazy"}
+]

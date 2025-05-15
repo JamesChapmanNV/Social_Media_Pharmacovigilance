@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "When the nurse asked me if I wanted the morphine it was as much as I could do to squeak 'yes please'... utter agony." 
+
+Looking for words or phrases that refer to illicit drugs or substances. The key term here is "morphine." Checking the index terms list, Morphine is listed as an index term. The phrase "morphine" is directly mentioned. There's no slang or euphemism here, just the direct term. 
+
+I need to make sure there's no other hidden references. The rest of the sentence talks about the nurse, the request for morphine, and the agony, which is a typical context for morphine use. No other terms like "codeine," "amphetamine," or others are present. 
+
+So the matched phrase is "morphine," which maps to the index term "Morphine." No other terms are present. The answer should be a single JSON object with index_term as Morphine and matched_phrase as morphine.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

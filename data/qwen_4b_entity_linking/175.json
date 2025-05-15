@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says, "Revenge isekai's are dumb as shit. If I wanted to get revenge on a kingdom I'd just invent crack." I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The first part is about "isekai," which is a Japanese term related to fantasy stories, so that's not a drug. Then "dumb as shit" is just slang, not a drug. 
+
+The second sentence is the key part: "If I wanted to get revenge on a kingdom I'd just invent crack." The word "crack" here is likely referring to crack cocaine. Now, checking the index terms, I see that "Crack" isn't listed explicitly. Wait, looking at the index terms again, there's "Methamphetamine (Crystal Meth, Ice, Desoxyn)" and "Crack" isn't mentioned. But in the example 4, "snow" and "white lines" were marked as "other" even though they aren't drugs. 
+
+Wait, the index terms list "Crack" as a drug? Let me check again. No, the index terms don't have "Crack" listed. The closest is "Methamphetamine" and "Cocaine (BZE, Ecgonine benzoate)" but "crack" is a form of cocaine. However, in the index terms, "Cocaine" is listed, but "crack" isn't. However, in the example 4, "snow" was marked as "other" even though it's not a drug. So if "crack" isn't in the index terms, it should be "other". 
+
+Wait, the index terms include "Cocaine (BZE, Ecgonine benzoate)" but not "crack". However, crack is a form of cocaine. But the index terms might not have it. Let me check the list again. The index terms for cocaine are "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite. But "crack" itself isn't listed. So in this case, the phrase "crack" would be "other" because it's not in the index terms. 
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" even though they aren't drugs. So "crack" here is a drug, but if it's not in the index terms, then it's "other". However, maybe "crack" is considered a form of cocaine, but since the index term for cocaine is "Benzoylecgonine", which is the metabolite, not the drug itself. So "crack" isn't listed, so the index term would be "other".
+
+So the matched phrase is "crack", and the index term is "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"}
+]

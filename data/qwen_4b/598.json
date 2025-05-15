@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I had my gall bladder removed in '07. There was a post-op mix up resulting in the nurses administering too much morphine and it was fucking fantastic." 
+
+First, I need to determine if this is illicit or abusive drug-related. The key here is to check if the content mentions illegal drugs, RX, OTC, or if it's about misuse, abuse, promotion, etc.
+
+The content mentions morphine. Morphine is a controlled substance, typically used for pain relief, especially in medical settings. The user is talking about a post-op mix-up where too much morphine was administered. The reaction is "it was fucking fantastic," which sounds like a positive experience. However, the context is a medical error. 
+
+But wait, is morphine considered an illicit drug here? Morphine is a prescription drug (RX), so in the context of a medical mistake, it's not about abuse or misuse. The user is describing an accident, not promoting or using it for recreational purposes. The tone is about a negative event (mix-up) but the reaction is positive. However, the main point is that it's a medical error, not drug abuse. 
+
+The definitions say that True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. Here, the morphine was administered in error, but the user isn't promoting or using it for abuse. The explanation is about a medical mistake, not encouraging or glorifying misuse. So the label should be False. The explanation would note that it's a medical error, not promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a medical error involving morphine administration during surgery, not promoting or glorifying drug misuse."
+}

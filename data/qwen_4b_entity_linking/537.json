@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "johnny rocketfingers" and "crack." First, I need to check if these terms are listed in the index terms provided.
+
+Looking at the index terms, "crack" is listed under "other" because it's not explicitly named in the list. Wait, no, actually, checking the list again: the index terms include "Methamphetamine (Crystal Meth, Ice, Desoxyn)" and "Crack" isn't listed. Wait, the index terms don't have a specific entry for crack. The closest is "Methamphetamine" and "Crack" isn't listed. So according to the instructions, if the drug isn't in the list, use "other." 
+
+So "crack" would map to "other." Then "johnny rocketfingers" is a reference to a person, but the user might be using it as a slang term. However, the index terms don't have a specific term for that. The example in the problem statement had "xans" which was "other," so "johnny rocketfingers" isn't a drug term listed, so it should be "other." 
+
+Wait, but the user is talking about buying crack. So "crack" is the drug here. But in the index terms, "crack" isn't listed. The index terms have "Methamphetamine," "Amphetamine," "Cocaine," etc., but not "Crack." So "crack" would be "other." 
+
+So the matched phrases are "crack" and "johnny rocketfingers." Both would be "other" because "crack" isn't in the index terms, and "johnny rocketfingers" is a person's name, not a drug term. Wait, but maybe "johnny rocketfingers" is a slang term for something? The example in the problem had "xans" as "other," which isn't in the list. So unless "johnny rocketfingers" is a known slang term for a drug, which I don't think it is, then it's "other."
+
+So the answer should be two entries: "crack" as "other" and "johnny rocketfingers" as "other." But wait, the user says "buy them back for 44 billion dollars so he can use that money to buy himself some crack." So "crack" is the drug here. Since "crack" isn't in the index terms, it's "other." The other phrase is "johnny rocketfingers," which is a person's name, so it's not a drug term, so "other." 
+
+Therefore, the JSON array should have two entries, both with index_term "other" and matched phrases "crack" and "johnny rocketfingers."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"},
+  {"index_term": "other", "matched_phrase": "johnny rocketfingers"}
+]

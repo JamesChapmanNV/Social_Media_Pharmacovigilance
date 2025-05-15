@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet about a cousin who died from an overdose and mentions he was a talented tattoo artist. I need to determine if this is illicit/abusive-drug-related.
+
+First, the content mentions an overdose, which is directly related to drug abuse. The phrase "died from an overdose" clearly indicates drug-related harm. The context here is a personal tragedy, but the mention of overdose is a strong indicator of drug misuse. 
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse. Even though the content is about a death due to overdose, it's still related to drug abuse. The example given in the prompt where overdose is mentioned would be classified as True because it's about the consequences of drug use. 
+
+The other part about the tattoo artist is unrelated to drugs, but the overdose part is enough to classify it as True. The explanation should note the overdose and the context of drug abuse leading to death. So the label is True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'overdose,' which directly indicates drug-related abuse or misuse in a fatal context."
+}

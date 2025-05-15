@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "Booze? Lol.. Me I nor be alcohol person o. I don't take neither do I buy it for anyone. Kush, Codeine.. I'm Game."
+
+First, I need to check if there's any mention of illegal or abused drugs. The user mentioned "Kush" and "Codeine." Kush is a slang term for cannabis, which is illegal in many places. Codeine is an opioid, which is also a controlled substance. The phrase "I'm Game" might imply a willingness to use these substances, but I need to see the context.
+
+Looking at the rest of the content: the person is saying they don't take or buy alcohol, which is a different topic. Then they mention Kush and Codeine. The use of "Kush" as a slang term for cannabis is a clear indicator of drug use. Codeine is a controlled substance, so mentioning it could be related to abuse. The tone here seems to be personal, not promoting or encouraging misuse, but the mention of specific drugs might still fall under the category of illicit drug-related content.
+
+Wait, the definitions say that True includes mentions of illegal drugs in the context of abuse or misuse. The user is talking about using Kush and Codeine, which are both drugs that can be abused. Even if they're not promoting it, the mention of these substances in a personal context could still be considered illicit. Also, "I'm Game" might imply a willingness to use them, which could be seen as encouragement. But I need to be careful. The example given in the prompt had "hooked" and "everyday" which were supportive, so maybe this is similar. However, the user is not explicitly promoting but mentioning their own use. But the definition includes any mention in the context of abuse or misuse. So even if it's personal, if the drugs are illegal or controlled, it's True. So the answer would be True because they mention codeine and kush, which are illicit drugs, and the context implies use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'Kush' (cannabis) and 'Codeine,' both illicit drugs, and implies personal use with a tone of acceptance ('I'm Game')."
+}

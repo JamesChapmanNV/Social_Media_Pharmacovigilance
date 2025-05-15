@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content provided is about college football players in the Big 12 conference. The user mentions that the content is comparing these players to All-Big 12 players and says they aren't program changers.
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to drug abuse. The content talks about sports, specifically football players, their performance, and their status in the league. There's no mention of drugs, opioids, codeine, or any slang related to drug use. The terms used are about sports, transfers, and team performance. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. Since there's no drug-related terminology here, it's not fitting into the True category. The example given in the task had drug terms like 'lean' and 'codeine', which are related to drugs. Here, the content is entirely about sports and player evaluation, so it's unrelated to drug abuse or illegal substances.
+
+Therefore, the correct classification should be False because there's no drug-related content. The explanation should highlight the absence of drug terms and the context being sports-related.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses college football players and their performance in the Big 12 conference, with no mention of drugs, drug-related terms, or contexts related to abuse or misuse."
+}

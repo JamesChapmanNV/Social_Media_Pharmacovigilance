@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "What if she got Rue high on morphine so she can sell her???????" I need to identify any drug references here.
+
+First, I'll look for words or phrases that could refer to illicit drugs. The post mentions "Rue high on morphine." "Rue" might be a slang term here. Let me check the index terms. Wait, "Rue" isn't listed, but maybe it's a misspelling or a slang for something else. However, the main term here is "morphine." 
+
+Looking at the index terms, Morphine is listed as an index term. The phrase "morphine" is directly mentioned. So "morphine" would map to "Morphine" in the index. The other part is "Rue high." Since "Rue" isn't in the list, but "high" is a common term for drug use. However, the index terms don't have a general "high" term, so "Rue" would be "other" unless it's a known slang. But according to the index terms, "Rue" isn't listed. So "Rue" would be "other," but the main drug here is morphine. 
+
+Wait, the user's example 3 had "xans" which was "other" because it wasn't in the list. So "Rue" isn't a known drug term here, so "Rue" would be "other." But the main drug is morphine. So the matched phrase would be "morphine" under "Morphine." The "Rue" part is probably a misspelling or a name, not a drug term. So the only detected phrase is "morphine," which maps to "Morphine." 
+
+So the JSON should have one entry: index_term "Morphine" and matched_phrase "morphine." The "Rue" is not a drug term here, so it's not included. The user's example 4 had "snow" and "white lines" as other, but in this case, "Rue" isn't a drug. So the correct answer is just the morphine.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this. The user wants me to label each part of the post as T or F based on the given rules. The main thing is to check if the text shows illicit or abusive drug use, including slang, using, seeking, buying, selling, trafficking, etc. If not, then it's F.
+
+Looking at the post, the user has a list of topics with some symbols. The first part is "#CrimesAgainstHumanity" which is a hashtag. Then under USA, they have "Healthcare✖️", "Cannabis to Eat✖️", "Wages✖️", "Climate Action✖️", "Regime Change Wars✔️", "Fossil Subsidy✔️", "#TaxCuts✔️", "Every law passed is for Industrial Complex✔️", "State Rights✔️", "Marijuana Prohibition of #Food ✔️", "Workers vs Oligarchy ✔️".
+
+The symbols are either ✖️ or ✔️. The labels T or F are for the text that's in the post. Wait, but the user is asking to label the entire post, but the example shows that each line might have a label. Wait, the original instruction says to return only T or F, no additional text. So maybe the entire post is considered as a single label? Or each line?
+
+But the example in the problem shows that the user provided a post and wants a label. The post includes multiple items, but the labels are either T or F for the entire post. Wait, the problem says: "Label rules T – text shows illicit or abusive drug use... Return only T or F, no additional text, reasoning, or explanation."
+
+So the entire post is to be labeled as T or F. Let me check the content. The post includes terms like "Cannabis to Eat", "Marijuana Prohibition of #Food". The user is talking about cannabis and marijuana, which are drugs. But the context here is about policies, laws, and social issues. The key is whether the text shows drug use, seeking, buying, selling, trafficking, or slang.
+
+"Cannabis to Eat" could be referring to the use of cannabis, but in the context of a political statement, it's more about policy. Similarly, "Marijuana Prohibition of #Food" is about prohibition, not necessarily use. However, the term "Marijuana" is a drug, but the post is discussing prohibition, not use. The hashtag #CrimesAgainstHumanity might be a metaphor, but the main point is that the user is discussing policies related to cannabis. 
+
+The label rules say that T is when the text shows drug use. If the text is discussing policies, laws, or prohibition, that's F unless it's explicitly about using, seeking, buying, etc. In this case, the post is talking about cannabis and marijuana in the context of prohibition, not using them. So the answer would be F. But wait, the user might be using "Cannabis to Eat" as a metaphor. However, the rules are strict: if the text shows drug use, then T. Otherwise, F. Since the post is discussing policies and laws, not the actual use of drugs, it's F.
+</think>
+
+F

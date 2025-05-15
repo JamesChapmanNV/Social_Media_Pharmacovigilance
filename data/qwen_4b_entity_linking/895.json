@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I need to read the post carefully: "PAS only concerned on the name itself, they the one loudly asked for arak ban in malaysia but now so damn quiet like a mice". 
+
+Looking for any words or phrases that could refer to illicit drugs. The main words here are "arak" and "mice". 
+
+Now, checking the index terms. "Arak" is a type of spirit, but I need to check if it's listed. Looking through the index terms, I don't see "arak" listed. The closest might be "other" since it's not in the provided list. 
+
+Then "mice" – that's a slang term for methamphetamine, right? Wait, in the index terms, there's "Methamphetamine" with synonyms like "Crystal Meth, Ice, Desoxyn". But "mice" isn't listed. However, "mice" is a slang term for meth. But since it's not in the index terms, I should mark it as "other". 
+
+Wait, but the example 3 had "xans" which wasn't in the list, so it was "other". Similarly, "mice" here isn't in the index terms, so it's "other". 
+
+So the detected phrases are "arak" and "mice". Both are not in the index terms, so both should be "other". 
+
+But wait, maybe "arak" is a drug? Let me check again. Arak is a type of spirit, but in some contexts, it's a slang for a drug. However, according to the index terms provided, there's no mention of arak. So it's "other". 
+
+So the JSON array would have two entries: "arak" and "mice" both as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "arak"},
+  {"index_term": "other", "matched_phrase": "mice"}
+]

@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The content here is "LOL, at  says on Brokerage - 'Wiggy Makes Money - No1 Else!'". Hmm, first, I need to figure out what "Wiggy" refers to. Maybe it's a slang term or a nickname. The user is asking if this is related to illicit or abusive drugs.
+
+Looking at the example given, the first example mentions "lean" and "codeine," which are drugs, and the explanation was about abuse. The second example was about a pharmacology lecture, which is educational and thus not illicit.
+
+In this case, the content is about a brokerage and mentions "Wiggy Makes Money - No1 Else!" The term "Wiggy" isn't a drug term I recognize. It could be a brand name, a person's name, or a slang term. But the context here is a brokerage, so it's about making money. The phrase "Makes Money - No1 Else!" is positive and about financial success. There's no mention of drugs, illegal activities, or anything related to abuse. The user might be referring to a stock or investment, but without more context, it's hard to say. However, the key is that there's no indication of drug-related content here. The terms used are financial, not related to drugs. So the classification should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a financial context (brokerage, making money) with no mention of drugs, abuse, or illicit activities."
+}

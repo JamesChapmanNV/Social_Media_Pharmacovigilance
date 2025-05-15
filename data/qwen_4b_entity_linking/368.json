@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post provided is about a trial and overdose, but I need to check for any drug mentions.
+
+First, I'll read through the post carefully. The user mentions "overdose," which is a key term. But the Index Terms list includes specific drugs. The post doesn't use any slang or specific drug names. Words like "overdose" are general and not listed as index terms. The example in the prompt shows that "overdose" isn't an index term, so it would fall under "other." However, the user's task is to detect phrases that refer to illicit drugs. Since the post doesn't mention any specific drug names or slang, there are no matches. 
+
+Wait, the example 4 had "snow" and "white lines" as other because they aren't drugs. Similarly, "overdose" here is a general term, not a specific drug. So the correct response is an empty array. But I need to make sure I'm not missing any hidden references. The post talks about a trial and testimony, but no drug names. So the answer should be an empty JSON array.
+</think>
+
+[]

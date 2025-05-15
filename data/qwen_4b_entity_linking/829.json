@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions morphine, marijuana, and a hunting knife. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll look at each word or phrase in the post. The first mention is "morphine." Checking the index terms, Morphine is listed as an index term. So "morphine" should map to "Morphine."
+
+Next, "marijuana" is mentioned. The index terms include "Marijuana (Cannabis, Weed, Pot)" so "marijuana" directly maps to "Marijuana."
+
+The hunting knife isn't a drug, so it's probably "other." But the user's examples show that non-drug terms like "snow" and "white lines" are marked as "other." However, the post says "a large hunting knife," which is an object, not a drug. So "hunting knife" would be "other."
+
+Wait, but the task is to detect drug references. The knife isn't a drug, so it's not part of the matches. The user's examples include "xans" as "other" because it's not a listed term. Similarly, "snow" in example 4 is "other" even though it's not a drug. So in this case, the post has two drug terms: morphine and marijuana. The hunting knife is just an object, so not part of the matches.
+
+So the JSON should have two entries: one for "morphine" and one for "marijuana." Both are in the index terms. The knife is not a drug reference, so it's excluded. The answer should be an array with those two entries.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"}
+]

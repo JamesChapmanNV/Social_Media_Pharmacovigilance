@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Woonsocket denies clinical #cannabis dispensary, in latest snag for growth". The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any mentions of drugs, slang, or terms that could refer to illicit substances. The post mentions "#cannabis". Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. Since the post is about a cannabis dispensary, the hashtag #cannabis directly refers to marijuana. 
+
+Now, check if "cannabis" is in the index terms. Yes, under the index term "Marijuana (Cannabis, Weed, Pot)". So the matched phrase is "#cannabis" and the index term is "Marijuana". 
+
+Are there any other terms? The rest of the post talks about a city denying a clinical dispensary and a snag for growth. No other drug references there. So the only match is the hashtag #cannabis. 
+
+Wait, but the example in the user's prompt had "snow" and "white lines" as "other" because they aren't on the list. But here, #cannabis is explicitly listed. So the correct index term is "Marijuana". 
+
+Therefore, the JSON array should have one object with index_term "Marijuana" and matched_phrase "#cannabis".
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "#cannabis"}]

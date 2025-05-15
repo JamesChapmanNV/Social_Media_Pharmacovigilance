@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is about police trying to get an AK-47 out of a 10-year-old's hands during an overdose investigation. First, I need to check if there's any mention of drugs in the context of abuse or misuse. The AK-47 is a weapon, not a drug. The overdose part might relate to drugs, but the main focus here is on the weapon and the chaotic investigation. The mention of overdose could imply drug use, but the key point is the weapon. Since the content is about a weapon and the investigation, it's more about illegal weapons than drug abuse. So the label should be False because it's not about drug misuse or promotion. The explanation should note that the content involves a weapon and overdose investigation, not drug abuse or promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content involves a weapon (AK-47) and overdose investigation, not drug abuse, promotion, or misuse."
+}

@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet that needs classification as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The example given in the prompt shows that if there's mention of drugs in a context of abuse or misuse, it's True. So first, I need to parse the content carefully.
+
+The content says: "Raven literally groomed and beats zainy, bought him his phone and goes through all his messages and tells him what to tweet like statements about fake rape allegations. Go do what you do best and shoot up heroin and take another ahegao selfie, egirl."
+
+Breaking it down, the first part talks about someone (Raven) grooming and beating Zainy, buying his phone, and monitoring his messages. Then the second part is a command: "Go do what you do best and shoot up heroin and take another ahegao selfie, egirl." 
+
+The key phrases here are "shoot up heroin" and "ahegao selfie." "Shoot up heroin" is a direct reference to using heroin, which is an illicit drug. "Ahegao" is a slang term often associated with drug use, particularly in online contexts, sometimes linked to methamphetamine or other drugs. The command to "do what you do best" implies encouragement or glorification of drug use. The use of "egirl" might be a reference to a subculture that's associated with certain drug use, but the main point is the explicit mention of heroin and ahegao. 
+
+The context here is not medical or educational. The content is promoting or encouraging the use of heroin, which is an illegal drug. The mention of ahegao, while a bit more niche, is still a slang term that's linked to drug use. The overall tone is supportive of drug abuse, which fits the definition of True. 
+
+I should check if there's any possible that this is a different context. But the explicit mention of heroin and the command to "shoot up" clearly points to abuse. Also, the "ahegao selfie" is a cultural reference that's associated with drug use, so that's another indicator. Therefore, the classification should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin' and 'ahegao' (a slang term associated with drug use), and encourages drug abuse through direct commands."
+}

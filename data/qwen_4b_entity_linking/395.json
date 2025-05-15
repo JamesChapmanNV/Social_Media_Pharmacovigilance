@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post in Hindi and wants me to detect any drug-related references and map them to the correct index terms.
+
+First, I need to understand the post. The user says, "Thanks Geet I'm fine now kal overdose ho gya tha bs isliye...or kuch cheeze effect kr ri thi mujhe now I'm fine...n thanku jo vi tumne kaha M yd rakhunga n isliye tumse hi suru kr rha hu if achha lage to accept kr lenga friend 🤝"
+
+Translating this, it seems like the person is thanking someone (Geet) and mentions that they had an overdose the day before (kal overdose ho gya tha). They also mention that some things were affecting them, but now they're fine. The user is asking for help and friendship.
+
+Now, looking for drug-related terms. The key phrase here is "overdose ho gya tha" which translates to "overdose happened." The term "overdose" is a clear indicator of drug use. However, the Index Terms list doesn't have an exact match for "overdose." The closest might be "other" since "overdose" isn't listed. 
+
+Another part is "kuch cheeze effect kr ri thi mujhe" which means "some things were affecting me." But "kuch cheeze" is vague and doesn't directly refer to a specific drug. The user might be referring to drugs, but without specific terms like "codeine," "amphetamine," etc., it's not clear. 
+
+Looking at the Index Terms, "Codeine" has synonyms like "lean," "purple drank," "schoolboy," but the post doesn't use those. The term "overdose" isn't in the list, so it would fall under "other." 
+
+So, the only match here is "overdose," which maps to "other." The rest of the text doesn't have specific drug terms. Therefore, the JSON array should include one entry for "overdose" under "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "overdose"}]

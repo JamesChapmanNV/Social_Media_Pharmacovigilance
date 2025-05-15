@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is: "I bet it was Imitrex (unless they just gave you morphine). Yeah, migraines are the worst! I'm lucky that I hardly ever get them any more-- maybe once a year-- but when I was a teenager, once a month."
+
+First, I need to check if there's any mention of illegal or abused drugs. The user mentions Imitrex and morphine. Imitrex is a medication for migraines, and morphine is an opioid. But the context here is about migraines and personal experience with them. The user is talking about their own medical history, not promoting or abusing these drugs. They're discussing their own use of medication for a medical condition. There's no indication of misuse, promotion, or glorification. The terms are used in a medical context, even though morphine is a controlled substance. Since the content is about personal health and not encouraging or promoting drug use, it's not illicit. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses migraines and medication use in a personal health context, not promoting or glorifying drug misuse."
+}

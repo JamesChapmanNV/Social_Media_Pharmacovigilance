@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "Right? Fentanyl has been in the US for decades. It's prescribed a lot, including CHILDREN w/ cancer. It's called Actiq, this moron should know what he's talking about."
+
+Looking for drug terms. The first mention is "fentanyl". Checking the index terms, there's an entry for Fentanyl with synonyms like China White, Apache, Duragesic. So "fentanyl" directly maps to "Fentanyl" as the index term.
+
+Next, "Actiq" is mentioned. The index term for Fentanyl includes "Actiq" as a prescribed name. So "Actiq" should also be linked to Fentanyl.
+
+The rest of the post talks about fentanyl being prescribed to children with cancer, which is a medical context, but the terms "fentanyl" and "Actiq" are the only drug references here. The other parts are about prescription use and a comment on someone's knowledge, but no other drugs are mentioned.
+
+So the matched phrases are "fentanyl" and "Actiq", both under the Fentanyl index term. I need to make sure there's no other terms. The user's example shows that even if a drug is in the list, even if it's a prescription name, it's still categorized under the correct index term. Since Actiq is a prescribed form of fentanyl, it's correctly mapped here.
+
+No other terms like "children" or "cancer" are drug names. The rest is context, not a drug reference. So the JSON should have two entries: "fentanyl" and "Actiq" both under Fentanyl.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"}
+]

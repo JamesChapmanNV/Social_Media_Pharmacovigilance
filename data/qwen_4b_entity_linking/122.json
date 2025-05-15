@@ -1,0 +1,43 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post and wants me to detect any drug references, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "Yo out here drinking promethazine like its codeine 😂😂😂😂 thinking he's getting high lol I'm so geeked rn". The key phrases here are "promethazine" and "codeine". 
+
+Looking at the index terms, Promethazine is listed under Diphenhydramine (Benadryl, Nytol) as a first-generation antihistamine sometimes misused. So "promethazine" should map to Diphenhydramine. 
+
+Then, "codeine" is explicitly listed under Codeine (Lean, Purple Drank, Schoolboy). The user mentions "drinking promethazine like its codeine", which might be a slang reference. But the actual phrase here is "codeine", so that's a direct match. 
+
+Wait, the post says "drinking promethazine like its codeine". The phrase "codeine" is present, so that's a direct match. However, "promethazine" is a different drug, but the user is comparing it to codeine. But according to the task, I need to detect every word or phrase that refers to an illicit drug. Promethazine is a drug, but is it considered illicit here? The index term for promethazine is Diphenhydramine, which is a first-gen antihistamine. However, the user is using it like codeine, but the actual phrase is "promethazine", which is listed under Diphenhydramine. So "promethazine" should be mapped to Diphenhydramine. 
+
+But wait, the example 3 had "xans" which wasn't in the list, so it was "other". So if "promethazine" is in the list as Diphenhydramine, then that's a match. However, the user is using it in a way similar to codeine, but the actual term is "promethazine", which is a different drug. But according to the index terms, Promethazine is under Diphenhydramine. So the correct mapping is Diphenhydramine for "promethazine". 
+
+But wait, looking at the index terms again: Diphenhydramine is listed as Benadryl, Nytol. Promethazine is a different drug, but in the index terms, it's not explicitly listed. Wait, no, the index terms include Diphenhydramine (Benadryl, Nytol), but Promethazine isn't listed. Wait, the index terms list Diphenhydramine, but Promethazine is a separate drug. However, the user is using "promethazine" which is a drug. But in the index terms, is there an entry for Promethazine? Let me check again.
+
+Looking at the index terms list: The entry for Diphenhydramine is listed as "Diphenhydramine (Benadryl, Nytol) – A first‑generation antihistamine with sedative and anticholinergic effects that is sometimes misused at high doses." Promethazine is not listed in the index terms. However, the user is using "promethazine" which is a drug. But since it's not in the index terms, it should be "other". Wait, but the user is comparing it to codeine. However, the task is to detect every word or phrase that refers to an illicit drug. So "promethazine" is a drug, but if it's not in the index terms, then it's "other". But wait, the index terms include "Diphenhydramine", which is a different drug. Promethazine is a different drug. So "promethazine" is not in the index terms, so it would be "other". But the user is using it like codeine, but the actual term is "promethazine". 
+
+Wait, the example 3 had "xans" which is not in the list, so it's "other". So in this case, "promethazine" is not in the index terms, so it's "other". However, the user is using "promethazine" which is a drug. But according to the index terms, the only entry for antihistamines is Diphenhydramine. So "promethazine" is not in the list, so it's "other". 
+
+But the user is using "promethazine" as a substitute for codeine. However, the task is to detect the actual drug terms. So "promethazine" is a drug, but not in the index terms, so it's "other". But wait, the index terms list "Diphenhydramine" (Benadryl, Nytol) as a first-gen antihistamine. Promethazine is a different drug, but maybe it's considered a related term. However, the index terms don't have an entry for promethazine. Therefore, "promethazine" is not in the list, so it's "other". 
+
+But the user is using "codeine" which is in the list. So the correct matches are "codeine" and "promethazine" (if it's in the list). Wait, but "promethazine" is not in the index terms. Wait, looking back at the index terms, the entry for Diphenhydramine is listed, but Promethazine is not. So "promethazine" would be "other". 
+
+But the user is using "promethazine" as a drug. However, since it's not in the index terms, it's "other". Therefore, the matched phrases are "codeine" (index term Codeine) and "promethazine" (index term other). 
+
+Wait, but the user says "drinking promethazine like its codeine". The phrase "codeine" is directly in the index terms. So the first match is "codeine" with index term Codeine. The second phrase is "promethazine", which is not in the index terms, so it's "other". 
+
+But wait, the index terms do not include Promethazine. Therefore, the correct JSON would be:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "promethazine"}
+]
+
+But the user also said "drinking promethazine like its codeine". So "promethazine" is a drug, but not in the list. So the answer is as above. However, the example 3 had "xans" which is not in the list, so "other". So in this case, "promethazine" is not in the index terms, so it's "other". 
+
+Therefore, the correct output is two entries: codeine and promethazine as other.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "promethazine"}
+]

@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is: "but muh heritage" meanwhile they're out in a double-wide shooting up heroin and losing teeth from meth. but hey at least they have their heritage right?
+
+First, I need to check if this is illicit or abusive drug-related. The user mentioned using slang, euphemisms, or cultural references that signal recreational drug use or abuse. The phrase "shooting up heroin" is pretty explicit. "Shooting up" is a common slang term for injecting drugs, and heroin is definitely an illicit drug. Also, "losing teeth from meth" refers to methamphetamine use, which is also illegal. The mention of these drugs in the context of abuse is clear. The "muh heritage" part might be a cultural reference, but the rest of the sentence is about drug abuse. The tone seems to be describing someone's drug use, which is abusive. So the label should be True. The explanation should mention the explicit mention of heroin and meth use in the context of abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions heroin and methamphetamine use in the context of abuse, including'shooting up' and 'losing teeth' which indicate recreational or illicit drug misuse."
+}

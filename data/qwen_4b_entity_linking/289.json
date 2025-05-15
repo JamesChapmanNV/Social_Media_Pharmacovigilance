@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Put codeine on a salad" from Two Chains, called the most ignant lyric of 2016. I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The phrase "codeine" is explicitly mentioned. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" directly maps to Codeine. The rest of the sentence is "on a salad," which doesn't seem to refer to a drug. The user mentioned "Two Chains" and "ignant," but those are likely references to the song or context, not drugs. There's no other drug term here. So the only match is "codeine" under Codeine. No other terms are present. The answer should be a JSON array with that single entry.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

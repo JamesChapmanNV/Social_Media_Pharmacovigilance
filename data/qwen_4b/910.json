@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "So much hard tea talk on the timeline today so naturally it was time to crack this open."
+
+First, I need to parse the terms here. "Hard tea" is a slang term for heroin. "Crack this open" could be a reference to using crack cocaine. The phrase "hard tea talk" might be referring to discussions about heroin, and "crack this open" is a euphemistic way to mention using crack. The context seems to be about drug use, specifically heroin and crack, which are both illicit drugs. The use of slang and the implication of using these drugs would fall under the definitions provided. The example given in the prompt where "lean" and "codeine" were considered illicit because they relate to drug abuse. Similarly, "hard tea" is a known slang for heroin, and "crack" is a form of cocaine. The phrase "crack this open" is a common euphemism for using crack. So this content is promoting or discussing the use of illicit drugs, which would classify it as True. The explanation should mention the slang terms and the context of drug use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'hard tea' (slang for heroin) and 'crack this open' (euphemism for crack cocaine use), indicating recreational drug abuse."
+}

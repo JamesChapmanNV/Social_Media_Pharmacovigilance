@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user provided a social media post and wants me to label it as T or F based on the rules given. The rules are: T if the text shows illicit or abusive drug use (using, seeking, buying, selling, trafficking, or slang for drugs). F otherwise.
+
+Looking at the post: The user mentions "heroin" in the sentence "people loved the heroin more". Heroin is a controlled substance, an illicit drug. So that's a clear mention of a drug. The rest of the post talks about HAHK, MPK, footfalls, Salman Khan's contribution, etc. But the key part here is "heroin". 
+
+The label rules say that any mention of drug use, slang, or related terms should be T. Since heroin is a drug, even if it's in a metaphorical or discussion context, the presence of the drug name itself would trigger the T label. The other parts of the post don't mention drugs, so the main point here is the mention of heroin. 
+
+Therefore, the correct label should be T.
+</think>
+
+T

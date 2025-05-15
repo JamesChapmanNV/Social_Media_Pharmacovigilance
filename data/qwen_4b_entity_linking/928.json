@@ -1,0 +1,30 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index terms, and return a JSON array.
+
+First, I'll look at the post: "if u buy drawls at the thrift you a nasty ass heroin taking fiend 🤨". The user is asking to find any drug references here.
+
+Looking at the words: "drawls" and "heroin" are mentioned. Let's check the index terms. 
+
+"Drawls" – Hmm, I'm not sure. Wait, the index terms include "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". But "drawls" doesn't match any of those. Wait, maybe "drawls" is a misspelling or slang for something else? Let me check the list again. The index terms for Codeine include "Lean", "Purple Drank", "Schoolboy". "Drawls" isn't listed. But maybe "drawls" is a typo for "drugs"? Or maybe it's a slang term for something else. Wait, looking at the example #3, "xans" was considered "other" because it wasn't in the list. So if "drawls" isn't in the index terms, it would be "other".
+
+Then "heroin" is explicitly mentioned. Heroin is listed in the index terms as "Heroin (MS Contin, Miss Emma, Morph)" but wait, looking at the index terms provided, the exact term for heroin is under "Morphine" as "Morphine (MS Contin, Miss Emma, Morph)"? Wait, no. Wait, the index terms list "Morphine" as the prototypical opioid, but heroin isn't directly listed. Wait, looking back at the index terms list:
+
+Wait, the index terms list "Morphine (MS Contin, Miss Emma, Morph)" but heroin isn't explicitly listed. However, the user's task is to check if the drug is in the list. If the drug isn't in the list, use "other". So, "heroin" is not in the index terms list. Wait, looking at the index terms again:
+
+Looking through the list, I don't see "Heroin" as an index term. The closest is "Morphine", which is a different drug. So "heroin" would be "other".
+
+Wait, but in the example #4, "snow" and "white lines" were considered "other" because they weren't on the list. So, "heroin" is not in the index terms, so it would be "other". However, wait, the index terms list "Benzoylecgonine (BZE, Ecgonine benzoate)" as the primary metabolite of cocaine. But heroin isn't directly listed. So, "heroin" is not in the index terms, so it's "other".
+
+But wait, the user's post says "heroin taking fiend". So "heroin" is the drug here. But since the index terms don't have "Heroin" as an index term, we have to check if it's in the list. Let me check again:
+
+Looking through the index terms, I don't see "Heroin" listed. The only opioid-related terms are Morphine, Codeine, Fentanyl, OxyContin, etc. So "heroin" is not in the list, so it's "other".
+
+So the matched phrases are "drawls" and "heroin". Both are not in the index terms, so both would be "other". But wait, "drawls" – is that a typo for "drugs"? Or is it a slang term? Let me check the index terms again. The index terms for Codeine include "Lean", "Purple Drank", "Schoolboy". "Drawls" isn't there. So "drawls" is not in the list, so "other".
+
+Therefore, the JSON array would have two entries: "drawls" and "heroin", both mapped to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drawls"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "NFTs and cannabis are 2 disruptive industries... It's time to bring them together..." and wants me to detect any drug-related references.
+
+First, I need to check each word or phrase in the post. The post mentions "cannabis." Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is listed as an illicit drug. So "cannabis" here would map to "Marijuana" as the index term. 
+
+Next, the rest of the post talks about NFTs and bringing them together. NFTs are digital assets, not drugs. The other terms like "disruptive industries" are just descriptors. There's no mention of any other drugs or slang terms. 
+
+I should make sure there's no other hidden references. Words like "NFTs" are unrelated. The phrase "bring them together" is metaphorical. So the only match is "cannabis" under the Marijuana index term. 
+
+Wait, the example in the problem statement had "snow" and "white lines" as "other" because they weren't drugs. But here, "cannabis" is explicitly listed in the index terms. So the correct index term is "Marijuana". 
+
+No other phrases in the post relate to drugs. So the final answer should be one object with "Marijuana" and "cannabis".
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

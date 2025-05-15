@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post about DMX's death and whether it can be used to bring attention to addiction issues. The task is to detect any drug-related references in the post and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions "addiction issues" but doesn't use any specific drug terms. The user is asking about using DMX's death to highlight addiction, but there's no explicit mention of drugs or slang terms. The example given in the problem statement shows that even if a term like "xans" is used, it's categorized as "other" if not on the list. 
+
+Looking at the index terms, "Codeine" has synonyms like "lean" and "purple drank," but the post doesn't use those. The term "addiction" itself isn't a drug name but a broader category. Since the post doesn't mention any specific drugs or their slang terms, there are no matches. 
+
+The user might be testing if I can recognize that "addiction" is a general term and not a specific drug. The examples show that "xans" is "other" because it's not a listed term. Similarly, "addiction" isn't listed as an index term. Therefore, the correct response is to return an empty array since there are no drug-related phrases detected.
+</think>
+
+[]

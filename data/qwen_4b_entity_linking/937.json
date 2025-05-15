@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I never thought you'd be a junkie because heroin is so passe." I need to detect any drug references here.
+
+First, I'll look for words or phrases that could refer to illicit drugs. The word "junkie" is a term for someone who uses drugs, but the task is to find specific drug names or synonyms. The phrase "heroin is so passe" mentions heroin. Heroin is listed in the index terms under "Morphine (MS Contin, Miss Emma, Morph)" as the prototypical opioid. Wait, but the index term for heroin isn't explicitly listed. Let me check the index terms again.
+
+Looking through the list, "Morphine" is listed, but heroin isn't directly mentioned. However, heroin is a type of opioid, and in the index terms, "Morphine" is the index term. But wait, the index term for heroin might not be present. Wait, the index terms include "Morphine" and "Codeine", but heroin isn't listed. However, in the example given, "Codeine" is linked to "lean" and "codeine". So, in this case, the post mentions "heroin", which is a drug. But the index terms don't have a specific entry for heroin. Wait, looking back, the index terms include "Morphine" and "Heroin" isn't listed. Wait, the index term for heroin isn't there. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)". So, heroin isn't directly listed. However, the user's task is to check if the drug is in the list. If not, use "other".
+
+So, "heroin" is not in the index terms. Therefore, the matched phrase "heroin" would map to "other". But wait, let me check again. The index terms include "Morphine" and "Heroin" isn't listed. Therefore, "heroin" is not in the list, so the index term should be "other".
+
+But wait, the user's example 1 has "lean" and "codeine" both mapped to Codeine. So in the post, "heroin" is mentioned. Since heroin isn't in the index terms, it would be "other". Therefore, the correct response is to map "heroin" to "other". But the user's task is to detect every word or phrase that refers to an illicit drug. So "heroin" is a drug, but since it's not in the index terms, it's "other". 
+
+So the JSON array would have one object: {"index_term": "other", "matched_phrase": "heroin"}.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

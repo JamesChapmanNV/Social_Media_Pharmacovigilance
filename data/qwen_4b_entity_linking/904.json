@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about insurance coverage for fentanyl and wants me to detect any drug-related references. First, I need to go through the post carefully.
+
+The post mentions "transmucosal fentanyl (Actiq, Fentora, etc)". Fentanyl is listed in the index terms as an opioid, specifically under "Fentanyl (China White, Apache, Duragesic)". The brand names Actiq and Fentora are examples of fentanyl products. So "fentanyl" is a direct match. The other brand names are just examples, but the key term here is "fentanyl".
+
+I should check if there are any other terms. The post also mentions "non-cancer intractable pain" but that's not a drug. The rest is about insurance and FDA guidelines. No other drugs are mentioned. 
+
+So the only matched phrase is "fentanyl", which maps to the index term "Fentanyl". The other brand names are just examples and not part of the index terms. Therefore, the correct JSON array should have one object with index_term "Fentanyl" and matched_phrase "fentanyl".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]

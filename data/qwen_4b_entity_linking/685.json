@@ -1,0 +1,26 @@
+<think>
+Okay, let's tackle this query. The user provided a post about the drug trade, mentioning the Opium Wars, Britain, HSBC, Chinese triads, and Afghanistan heroin. My task is to detect any drug-related references and link them to the index terms.
+
+First, I'll read through the post carefully. The key phrases here are "drug trade," "opium," "Opium Wars," "opium from India," and "Afghanistan heroin." 
+
+Looking at the index terms list, "Codeine" has synonyms like "Lean," "Purple Drank," and "Schoolboy," but the post mentions "opium" and "heroin." Wait, the index terms include "Codeine" but not "opium" or "heroin" directly. Let me check the list again. 
+
+Looking through the index terms, "Heroin" isn't listed. The closest is "Codeine," but the post mentions "opium" and "heroin." However, the index terms don't have entries for opium or heroin. The term "Heroin (MS Contin, Miss Emma, Morph)" is listed, but the post says "opium from India" and "Afghanistan heroin." 
+
+Wait, the index term for heroin is listed as "Morphine (MS Contin, Miss Emma, Morph)" but that's Morphine, not Heroin. Wait, no, looking again: the index term for Heroin isn't listed. The index term for Morphine is listed, but Heroin isn't. The index term for "Codeine" is there, but "opium" isn't in the list. 
+
+So, "opium" isn't in the index terms. The post mentions "opium from India" and "Afghanistan heroin." Since "opium" isn't in the index terms, those would be "other." Similarly, "heroin" isn't in the index terms either. Wait, the index term for heroin isn't listed. Let me check again. 
+
+Looking at the index terms, "Heroin" isn't listed. The closest is "Morphine," but that's a different drug. So "opium" and "heroin" in the post would be "other." 
+
+But wait, the post says "Afghanistan heroin." The index term for heroin isn't present, so "heroin" would map to "other." Similarly, "opium" is not in the index terms, so that's "other." 
+
+So the detected phrases would be "opium" and "heroin," both mapped to "other." Also, "drug trade" is a general term, but not a specific drug. The post mentions "drug gangs," which is a general term. So the only specific drug references are "opium" and "heroin," which are not in the index terms. 
+
+Therefore, the JSON array should have two entries: "opium" and "heroin" both as "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "opium"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

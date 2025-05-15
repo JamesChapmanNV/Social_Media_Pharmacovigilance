@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this content. The user is asking me to classify the given text as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content mentions the crack epidemic, a documentary about it, and then says "Fentanyl is the new crack. Fight me." 
+
+First, I need to check if there's any mention of illegal drugs in the context of abuse or misuse. The term "crack" is definitely a slang term for cocaine, which is an illicit drug. The documentary reference is about the crack epidemic, which is related to the abuse of cocaine. Then the mention of fentanyl, which is a highly addictive opioid, being the new crack. 
+
+The user's example 1 had "lean" and "codeine" which are drugs, and the explanation was about the context of abuse. Here, the content is talking about the historical context of crack (cocaine) and then fentanyl, which is another illicit drug. The phrase "Fight me" might be a bit of a hyperbolic statement, but the key is whether it's promoting or glorifying drug use. 
+
+The content is discussing the historical context of drug abuse, referencing a documentary, and comparing fentanyl to crack. However, the user's example 2 had a medical context, which was false. Here, the content is more about the history and the current problem, not promoting or encouraging misuse. But the mention of fentanyl as the new crack could be seen as a reference to its abuse. However, the user's examples show that if it's in a context of discussing the problem, it might be false. 
+
+Wait, the definition says True includes content that mentions illegal drugs in the context of abuse or misuse, using slang, etc. The content here is not promoting but discussing the historical context. The user's example 2 was a pharmacology lecture, which is educational. Similarly, this is a discussion about the history of drug abuse, not promoting it. However, the mention of fentanyl as the new crack might be seen as a reference to its abuse. But the user's example 1 was about the crack epidemic, which was a real event, and the explanation was about the context of abuse. 
+
+Hmm. The content is not promoting drug use but discussing the history and the current situation. The user's example 1 had "hooked" and "everyday" with an approving tone. Here, the tone is more about discussing the problem, not glorifying. So maybe this is False. But the mention of fentanyl as the new crack could be a reference to its abuse. However, the user's example 2 was a medical context, which was false. 
+
+Alternatively, if the content is using "crack" as a slang term, which is an illicit drug, and referencing its historical abuse, then it's True. But the user's example 1 had a similar structure but was labeled True. Wait, in example 1, the content was about being hooked on codeine, which is an OTC drug, but in the context of abuse. Here, the content is talking about the crack epidemic, which is a historical context of abuse. So maybe this is True. 
+
+But the user's example 2 was a medical context, which was False. So the key is whether the content is promoting or discussing abuse. The user's content is discussing the history of drug abuse, which might be considered True. However, the user's example 1 had a more direct mention of drug use. 
+
+Alternatively, if the content is not promoting but discussing, maybe it's False. But according to the definitions, True includes content that mentions illegal drugs in the context of abuse. The user's content is discussing the historical abuse of crack and fentanyl, which is a form of mentioning abuse. So the label would be True. But I need to check the examples again. 
+
+In example 1, the content was about being hooked on codeine, which is a drug, and the explanation was about the context of abuse. Here, the content is discussing the crack epidemic, which is a historical context of abuse. So the label would be True. But the user's example 2 was a medical context, which was False. So in this case, the content is about the history of drug abuse, which is True. 
+
+But the user's example 1 had a more direct mention of the drug use. However, the current content is about the crack epidemic, which is a reference to the abuse of crack. Therefore, the label should be True. However, the user might consider that it's not promoting but discussing. But according to the definitions, any mention of illegal drugs in the context of abuse or misuse is True. Therefore, the answer is True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references 'crack' (a slang term for cocaine, an illicit drug) and 'fentanyl' (a highly addictive opioid), linking them to historical and current drug abuse contexts."
+}

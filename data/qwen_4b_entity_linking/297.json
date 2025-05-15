@@ -1,0 +1,7 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "crack" and wants me to detect any drug references and link them to the appropriate index terms.
+
+First, I need to check the list of index terms. Looking through them, I see that "crack" isn't listed directly. The closest might be "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. But the post says "smoking crack," which is a slang term for cocaine. However, the index terms don't have a direct entry for crack. The example given in the problem where "snow" was considered "other" because it's not a drug, so maybe "crack" here would also be "other" since it's not explicitly listed. Wait, but wait—the index term for cocaine is Benzoylecgonine. But the post is referring to "crack," which is a form of cocaine. However, the index terms don't have a specific entry for crack. The example in the problem where "snow" was "other" because it's not a drug. So in this case, "crack" is a drug, but since it's not in the index terms list, it should be "other". But wait, maybe I'm missing something. Let me check again. The index terms include "Cocaine (Cocaine)" but the entry for Benzoylecgonine is the metabolite. However, the problem says to use the index terms as given. Since "crack" isn't listed, even though it's a drug, it's not in the list, so the index term should be "other". Therefore, the matched phrase is "crack" and the index term is "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "crack"}]

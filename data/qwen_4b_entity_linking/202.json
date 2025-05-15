@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Cough syrup with codeine isn't near as potent as I expected... Waiting for it to KO me". I need to identify any drug references here.
+
+First, I'll scan the post for any terms that might refer to illicit drugs or substances. The word "codeine" is mentioned directly. Looking at the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine" is a direct match here. 
+
+Next, the post mentions "cough syrup with codeine". The syrup is a common delivery method for codeine, which is a mild opioid. Since codeine is on the list, that's a clear hit. The user is talking about using codeine, which is an illicit drug in this context because it's being used beyond its medical purpose, like in cough syrup. 
+
+The second part of the post says "isn't near as potent as I expected... Waiting for it to KO me". "KO" here is slang for knockout, which could relate to the drug's effects. But the main term here is still codeine. The phrase "codeine" is the key term. 
+
+I need to check if there are any other terms. "Cough syrup" is a common product, but the index terms don't list cough syrup as a drug. The main drug here is codeine. The user is referring to codeine, which is in the index term list. 
+
+So the only matched phrase is "codeine". The index term is Codeine. The other parts of the post don't mention any other drugs. The "KO" is a slang term but not a specific drug name. So the JSON should have one entry with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

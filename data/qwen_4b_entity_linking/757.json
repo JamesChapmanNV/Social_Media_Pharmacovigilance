@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "busy singing Uptown Girl at rock choir under the influence of codeine!" and wants me to detect any drug references, link them to the index terms, and return a JSON array.
+
+First, I need to scan the post for any words or phrases that might refer to illicit drugs. The post mentions "codeine," which is directly in the index terms. Looking at the list, Codeine has several synonyms like Lean, Purple Drank, Schoolboy. The phrase "under the influence of codeine" clearly refers to the drug. So "codeine" is a direct match. 
+
+Now, check if there are any other terms. The rest of the post is about singing and a choir, which doesn't mention any other drugs. The word "Uptown Girl" is a song title, so that's not a drug reference. "Rock choir" is just a group activity. No other terms here. 
+
+So the only matched phrase is "codeine," which maps to the index term "Codeine." No other terms are present. The example given in the problem statement had "lean" and "codeine" both mapping to Codeine. But in this case, the post only mentions "codeine" directly. The answer should be an array with one object: {"index_term": "Codeine", "matched_phrase": "codeine"}.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

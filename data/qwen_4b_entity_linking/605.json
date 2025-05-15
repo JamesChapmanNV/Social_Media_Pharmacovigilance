@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "baby i can't quit that lean put a ring around codeine 💍". I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "lean" and "codeine". Checking the index terms, "Codeine" has synonyms like "Lean" and "Purple Drank", so "lean" maps to Codeine. Then "codeine" is directly listed as an index term. The rest of the sentence is just descriptive, so no other terms. The emojis don't count. So the matches are "lean" and "codeine" under Codeine. No other terms are present. The answer should be a JSON array with those two entries.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

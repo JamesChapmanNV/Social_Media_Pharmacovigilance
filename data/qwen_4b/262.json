@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet that says "Probably took a lot of drugs. Methamphetamine Morphine Etc." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. The content here lists specific drugs: methamphetamine and morphine. Both are controlled substances, with methamphetamine being illegal and morphine being a prescription drug. The phrase "took a lot of drugs" suggests possible misuse or abuse. The mention of these drugs in a list might indicate they're being discussed in a context of use, possibly recreational or abusive. 
+
+The example given in the task includes mentions of slang or specific drugs in a context that implies abuse. The user's content here is straightforward, listing drugs and using "took a lot of drugs," which could be seen as promoting or discussing their misuse. However, the exact context isn't clear. But according to the definitions, if it's mentioning drugs in a way that implies abuse, even if not explicitly promoting, it would be True. 
+
+The example 1 mentions "hooked" and "everyday" with an approving tone, which is why it's True. Here, the content is more direct. The user might be referring to someone who has taken a lot of drugs, possibly implying abuse. The list of drugs includes both illegal and prescription drugs, which could be in a context of misuse. 
+
+Therefore, the label should be True because it mentions specific drugs in a context that suggests abuse or misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions methamphetamine and morphine, which are controlled substances, and uses 'took a lot of drugs' implying potential misuse or abuse."
+}

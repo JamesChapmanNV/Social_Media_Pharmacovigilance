@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Straight to health center I go in the AM I need some codeine in my system 🍼". I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The key phrases are "codeine" and "health center". The mention of "codeine" is straightforward. Looking at the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The user says "I need some codeine in my system", so "codeine" is a direct match. 
+
+Next, check if there are any other terms. The "health center" part doesn't refer to a drug. The emoji 🍼 is a grape, which isn't a drug. The rest of the sentence is about going to the health center in the morning. 
+
+No other slang or euphemisms are present here. The only detected phrase is "codeine". According to the index terms, Codeine is listed, so the index term is Codeine. 
+
+I need to make sure there's no other possible match. The word "health center" is just a place, not a drug. The emoji is unrelated. So the only match is "codeine" under Codeine. 
+
+Therefore, the correct JSON array should have one object with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

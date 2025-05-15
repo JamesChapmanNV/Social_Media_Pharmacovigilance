@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is "When you put codeine in your pumpkin spiced latte." First, I need to determine if this is illicit or abusive drug-related. Codeine is a controlled substance, typically an opioid, and its use can be illegal or abuse-related.
+
+The context here is someone adding codeine to a latte, which is a beverage. That seems unusual because codeine is usually prescribed for medical purposes, not consumed in drinks. The mention of codeine in a casual, possibly recreational way might indicate misuse. However, the phrase "pumpkin spiced latte" is a common drink, so the combination could be seen as a slang or euphemism for something else. But codeine is a controlled drug, so even if it's in a drink, it's still related to abuse or illicit use. The example given in the task mentions codeine in a context of being "hooked" which is abuse. Here, the act of adding codeine to a drink might imply misuse or recreational use. So the label should be True. The explanation would note the mention of codeine in a context that suggests misuse or recreational use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' a controlled substance, in a context that implies recreational or non-medical use through a casual, possibly euphemistic phrase."
+}

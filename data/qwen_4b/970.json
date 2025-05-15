@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I've been sippin' on nothing but codeine the whole week 🍼🍇😻👅". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang or euphemisms indicating recreational use or abuse. The example given in the prompt mentions "lean" and "codeine" with a supportive tone, which is why it's labeled True.
+
+In the current content, the user is saying they've been drinking codeine all week. Codeine is an opioid, which is a controlled substance. The phrase "sippin'" is slang for drinking, which is a casual way of saying consuming. The use of emojis like 🍼 (wine glass), 🍇 (grape), 😻 (cat face), and 🤿 (tongue) adds a playful or suggestive tone. 
+
+The context here is about consuming codeine regularly, which could indicate abuse or misuse. The user isn't mentioning any medical context, but rather their own consumption. The tone seems personal and possibly indicating ongoing use, which might be a sign of abuse. 
+
+Comparing to the example, the key factors are the mention of codeine (a drug) and the context of regular use. The example had "hooked on that lean" which implies dependency. Here, "nothing but codeine the whole week" suggests continuous use, which is a form of abuse. 
+
+So, based on the definitions, this should be classified as True because it's about using codeine in a way that's not medical, but rather recreational or habitual, which is abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a context of regular, unregulated consumption ('sippin'... the whole week') with casual, suggestive language and emojis indicating recreational use."
+}

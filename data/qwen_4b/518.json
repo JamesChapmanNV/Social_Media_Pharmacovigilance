@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The content is: "I think so it's paracetamol based isn't it? With codeine supplement. Dr Google?" 
+
+First, I need to determine if this is illicit or abusive drug-related. The user is asking about a medication that's paracetamol-based with codeine. Paracetamol is an OTC drug, and codeine is an opioid. But the context here is someone consulting Dr. Google, which suggests they're seeking information about a medication.
+
+I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. However, in this case, the user is asking about a medication's composition, not using it for abuse. They might be discussing a drug that's available over-the-counter, but the key is whether there's any indication of abuse or promotion of misuse.
+
+The phrase "Dr Google" indicates they're looking up information, which is educational. There's no mention of using the drug for recreational purposes, promoting its use, or any abusive context. The user is likely trying to understand the composition of a medication, which is a medical or educational context. 
+
+So, according to the definitions, False includes content that's in a medical or educational context. Therefore, this should be classified as False. The explanation would note that the content is about a medication's composition without promoting abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a medication's composition (paracetamol/codeine) in a general, informational context without indicating abuse, promotion, or misuse."
+}

@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "trap/coke hyena/codeine music." I need to identify any drug references here.
+
+First, "trap" is a slang term often associated with hip-hop, but in this context, it might refer to a type of music or a genre. However, the key words here are "coke" and "codeine." 
+
+"Coke" is a well-known slang for cocaine, which is an illicit drug. Looking at the index terms, cocaine is listed as "Benzoylecgonine (BZE, Ecgonine benzoate)" but the term "coke" isn't directly listed. However, the example given in the task includes "addy" as Amphetamine, so maybe "coke" is considered under another term. Wait, checking the index terms again, there's no direct entry for "coke" but "Benzoylecgonine" is the metabolite of cocaine. However, in the example, "addy" was mapped to Amphetamine, so perhaps "coke" here would be mapped to "other" since it's not explicitly listed. But wait, the index terms include "Cocaine" as a separate entry? Wait, looking back, the index terms list "Benzoylecgonine" as the metabolite, but the actual drug is cocaine. However, in the index terms provided, there's no direct entry for "Cocaine" but "Benzoylecgonine" is the metabolite. But the user's example for "addy" was mapped to Amphetamine, which is in the list. So maybe "coke" is considered as "other" because it's not explicitly listed. Wait, but in the index terms, "Cocaine" isn't listed. Let me check again. The index terms include "Benzoylecgonine (BZE, Ecgonine benzoate)" as the metabolite of cocaine. But the actual drug is cocaine. However, the user's example for "addy" was mapped to Amphetamine, which is in the list. So perhaps "coke" here is not directly listed, so it would be "other." But wait, the user's example 4 had "snow" and "white lines" as "other" because they weren't on the list. So in this case, "coke" is a slang for cocaine, which is an illicit drug. However, the index terms don't have a direct entry for cocaine. Wait, looking at the index terms again, there's no "Cocaine" listed. The only related term is Benzoylecgonine, which is the metabolite. So maybe "coke" would be "other" because it's not directly listed. But the user's example 4 had "snow" as "other" even though it's not a drug. So "coke" here would be "other." 
+
+Next, "codeine" is explicitly listed under the index term "Codeine" with synonyms like "Lean," "Purple Drank," etc. So "codeine" in the post would map to "Codeine." 
+
+So the post has "coke" and "codeine." "Coke" is likely cocaine, which isn't directly listed, so "other." "Codeine" is directly listed. 
+
+Therefore, the JSON should have two entries: one for "codeine" and one for "coke" as "other."
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "coke"}
+]

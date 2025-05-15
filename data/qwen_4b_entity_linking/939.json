@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "#Baseball fans are junkies, and their heroin is the statistic." I need to detect any drug-related references here.
+
+First, I'll scan the post for keywords. The phrase "junkies" is a term often associated with drug use, but I need to check if it's listed in the index terms. Looking at the list, "junkies" isn't directly listed. However, the index term for codeine includes "Lean," "Purple Drank," and "Schoolboy." But "junkies" might be considered as a slang term for drug users, but since it's not in the index terms, I should check if there's a match.
+
+Wait, the post mentions "heroin is the statistic." "Heroin" is explicitly listed in the index terms as a drug. Let me check the index terms. Yes, "Heroin (MS Contin, Miss Emma, Morph)" is listed. So "heroin" is a direct match. Then "statistic" might be a euphemism or slang. But "statistic" isn't in the index terms. However, the user might be using "statistic" as a metaphor for something else. But since it's not in the list, it would be "other."
+
+Wait, the example 4 shows that "snow" and "white lines" are considered "other" even if they're not drugs. So "statistic" here is probably a metaphor, not a drug. So the only direct match is "heroin." But the post says "their heroin is the statistic." So "heroin" is the drug, and "statistic" is not a drug. So the only matched phrase is "heroin," which maps to the index term "Heroin."
+
+Wait, but the user's task is to detect every word or phrase that refers to an illicit drug. "Junkies" is a term for people who use drugs, but the index terms don't have a specific term for "junkies." However, the example 3 has "xans" which is not in the list, so it's "other." So "junkies" would be "other" as well. But the post says "junkies" is the subject, but the actual drug is "heroin." So the main match here is "heroin."
+
+So the JSON array should have one entry: index_term "Heroin" and matched_phrase "heroin." The rest of the words like "statistic" are not in the list, so they would be "other," but the user's task is to detect drug references. Since "statistic" isn't a drug, it's not included. The only drug reference is "heroin."
+</think>
+
+[{"index_term": "Heroin", "matched_phrase": "heroin"}]

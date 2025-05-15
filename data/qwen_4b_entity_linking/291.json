@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "It burns when i pee that's how i know my D is hot 🔥". I need to detect any drug-related references here.
+
+First, I'll go through each word and phrase. The post mentions "D is hot". Looking at the index terms, "D" could be an abbreviation. Checking the list, "D" isn't listed as a drug term. The index terms include things like Codeine, Amphetamine, Methamphetamine, etc. "D" might refer to "Dilaudid" (Hydromorphone) but that's a stretch. Alternatively, "D" could be a slang term for a drug, but it's not in the provided list. The other part is "burns when I pee". That's a symptom, maybe related to a drug's effect, but the index terms don't have a term for that. The emoji 🔥 is just a symbol, not a drug. So, there's no direct match here. The phrase "D is hot" doesn't correspond to any index term. Therefore, the answer should be "other" for both "D" and "hot", but wait, "hot" isn't a drug term. Wait, the user's example 3 had "xans" as other. So in this case, "D" is not a drug term, so it's "other". The phrase "D is hot" is not a drug reference. So the matched phrases would be "D" and "hot", both mapped to "other". But the user's example 4 had "snow" and "white lines" as other. So in this case, the answer would be two entries with "other" for "D" and "hot". But wait, the post says "my D is hot". The "D" might be an abbreviation for a drug. Let me check the index terms again. The index terms include "Dilaudid" (Hydromorphone), but "D" isn't listed. So "D" is not in the index terms, so it's "other". The "hot" is not a drug term either. So both phrases are "other". So the JSON array would have two entries: "D" and "hot" both as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "D"},
+  {"index_term": "other", "matched_phrase": "hot"}
+]

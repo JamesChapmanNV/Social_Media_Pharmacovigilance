@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this content. The user provided a social media post that includes phrases like "boatload of terror & morphine," "carved my face into Carolina pulled pork," and mentions doctors and a cancer-related context. The hashtags are #cancer and #medicine. 
+
+First, I need to determine if this is illicit or abusive drug-related. The mention of morphine is a controlled substance, but the context here is a medical procedure related to cancer treatment. The user is describing a medical experience, not promoting or using morphine for abuse. The terms "boatload of terror" and "homemade BBQ sauce" might be hyperbolic or metaphorical, not indicating drug abuse. The hashtags and the mention of doctors suggest a medical context. There's no encouragement or glorification of drug misuse here. So, it's more of a personal account of medical treatment rather than promoting or abusing drugs. Therefore, the classification should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a medical procedure (morphine use during cancer treatment) in a personal, narrative context without promoting or glorifying drug abuse."
+}

@@ -1,0 +1,33 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post is: "perfect morning to all, i wish you a nice 420 day🍁 #42 will be droped today, yes there will be #marihuana #cannabis in the #artwork #NFTs #NFTCommmunity #Happy420 #bobmarley".
+
+First, I need to detect any words or phrases that refer to illicit drugs or substances. The index terms list includes marijuana and cannabis as separate entries. Let me check the post.
+
+The user mentions "#420" which is a slang for April 20th, the holiday for cannabis. But the index term for marijuana is listed, so "420" is a reference to that. However, the index terms don't have "420" as a term, but the actual drug is marijuana. Wait, the index term for marijuana is "Marijuana (Cannabis, Weed, Pot)" so any mention of cannabis or marijuana would map to that.
+
+Looking at the post: "#marihuana", "#cannabis" are hashtags. The index term for marijuana includes "marijuana" and "cannabis" as synonyms. So those hashtags are direct matches. Also, the #420 is a reference to the 4/20 holiday, which is associated with cannabis. But the index terms don't have "420" as a term, so according to the instructions, if the drug isn't in the list, use "other". However, the post mentions "marijuana" and "cannabis" which are in the index term list. 
+
+Wait, the index term for marijuana is "Marijuana (Cannabis, Weed, Pot)" so any occurrence of "marijuana", "cannabis", "weed", "pot" would map to that. The post has "#marihuana" and "#cannabis", which are exact matches. Also, the phrase "420" is a reference to the holiday, but since the index term doesn't include "420", that would be "other". However, the user might be referring to the drug here. But according to the instructions, if the drug isn't in the list, use "other". Since "marijuana" and "cannabis" are in the list, those are matched. The "420" is a cultural reference but not a drug name, so it's "other". 
+
+So the matched phrases are "#marihuana", "#cannabis", and "420". Wait, but the user's post says "420 day" which is a reference to the 4/20, but the index term for marijuana includes "Marijuana (Cannabis, Weed, Pot)", so "420" is not in the list. Therefore, "420" would be "other". However, the hashtags are "marihuana" and "cannabis", which are in the list. 
+
+So the JSON should have two entries for "marijuana" and "cannabis", and "420" as "other". Wait, but the user's post says "420 day" which is a reference to the holiday. However, the index term for marijuana includes "Marijuana (Cannabis, Weed, Pot)", so "420" is not a direct term. Therefore, "420" would be "other". 
+
+But the user's post also mentions "420" in the text. So the matched phrases would be "420", "marihuana", "cannabis". However, "420" is not in the index terms, so it's "other". So the JSON would be:
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "marihuana"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "other", "matched_phrase": "420"}
+]
+
+But wait, the user's post says "420 day", so the phrase is "420". The index terms don't have "420" as a term, so it's "other". Therefore, the correct answer should include those three entries. However, the example in the problem shows that if the drug is not in the list, use "other". So "420" is a cultural reference, not a drug term, so it's "other". 
+
+Therefore, the final answer should have two entries for "marijuana" and "cannabis", and one for "420" as "other".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "marihuana"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "other", "matched_phrase": "420"}
+]

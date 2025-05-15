@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I think so it's paracetamol based isn't it? With codeine supplement. Dr Google?" I need to detect any drug references here.
+
+First, I'll go through each word and phrase. The post mentions "paracetamol" and "codeine". Checking the index terms, paracetamol is not listed as an illicit drug. The index terms include Codeine, which is listed under "Codeine (Lean, Purple Drank, Schoolboy) – A mild opioid...". So "codeine" is directly listed. The phrase "codeine supplement" would match "codeine" as the index term. 
+
+"Paracetamol" is an OTC drug, but since it's not in the index terms, it should be "other". The user also mentions "Dr Google", which is a reference to seeking information, but not a drug. So the matches are "codeine" and "paracetamol". Wait, but the task is to detect illicit drugs. Paracetamol is a legitimate OTC drug, so even though it's mentioned, since it's not in the index terms, it's "other". 
+
+So the JSON should have two entries: one for "codeine" with "codeine", and another for "other" with "paracetamol". The user might be referring to a combination of codeine (illicit) and paracetamol (OTC). But according to the task, any reference to an illicit drug or substance, including OTC or RX. Wait, the task says: "Include illegal, RX, OTC, or recreational drugs (using, buying, promoting, encouraging or glorifying drug use)." So paracetamol is OTC, but is it considered here? The index terms don't include paracetamol, so it's "other". 
+
+So the correct matches are codeine and paracetamol as "other". But wait, the example 3 shows "xans" as "other" even though it's a benzodiazepine. So in this case, "paracetamol" is not in the index terms, so it's "other". The phrase "codeine supplement" is codeine, which is in the index terms. So the answer should be two entries: codeine for "codeine", and other for "paracetamol".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "paracetamol"}
+]

@@ -1,0 +1,35 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I'll be friends with a nigga who deals CRACK before I'm friends with a fent dealer." I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll look for words or phrases that could refer to illicit drugs. The post mentions "CRACK" and "fent dealer." 
+
+CRACK is a slang term for cocaine, specifically cocaine base. Looking at the index terms, there's no direct entry for cocaine, but there's Benzoylecgonine (BZE) which is the primary metabolite of cocaine. However, the index terms list includes "Marijuana" and other specific drugs. Wait, the index terms don't have a direct entry for cocaine, but the example 4 shows that if the drug isn't on the list, use "other." But wait, the user's instruction says to check if the drug is in the list. Let me check the index terms again.
+
+Looking through the list, there's no entry for cocaine. The closest is Benzoylecgonine, which is a metabolite of cocaine. But the index terms list includes "Marijuana" and others. The example 4 had "snow" and "white lines" mapped to "other" because they weren't on the list. So, since "CRACK" is a slang term for cocaine, which isn't listed in the index terms, it should be "other."
+
+Then "fent dealer." Fent is slang for fentanyl. The index term for fentanyl is listed as "Fentanyl (China White, Apache, Duragesic)." So "fent" refers to fentanyl. Therefore, "fent dealer" would map to "Fentanyl."
+
+So the matched phrases are "CRACK" and "fent." 
+
+Wait, but the index term for fentanyl is "Fentanyl," so "fent" is a slang term for fentanyl. So the first phrase is "CRACK" which is cocaine, not on the list, so "other." The second is "fent" which is fentanyl, so index term "Fentanyl."
+
+But wait, the example 3 had "xans" which is not in the list, so "other." Similarly, "CRACK" is not in the index terms, so "other." "Fent" is fentanyl, which is in the list. Therefore, the JSON should have two entries: one for "other" with "CRACK" and another for "Fentanyl" with "fent."
+
+Wait, but the user's post says "fent dealer." The phrase "fent" is the slang, so the matched phrase is "fent." So the two matches are "CRACK" and "fent." 
+
+So the JSON array should be:
+
+[
+  {"index_term": "other", "matched_phrase": "CRACK"},
+  {"index_term": "Fentanyl", "matched_phrase": "fent"}
+]
+
+I need to check if "fent" is correctly mapped. The index term for fentanyl is listed as "Fentanyl (China White, Apache, Duragesic)." So "fent" is a slang term for fentanyl, so the index term is "Fentanyl."
+
+Yes, that's correct. So the answer should have those two entries.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "CRACK"},
+  {"index_term": "Fentanyl", "matched_phrase": "fent"}
+]

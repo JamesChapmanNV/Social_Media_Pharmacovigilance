@@ -1,0 +1,8 @@
+[
+  {"index_term": "CBD", "matched_phrase": "cannabis"},
+  {"index_term": "other", "matched_phrase": "criminal"},
+  {"index_term": "other", "matched_phrase": "record"},
+  {"index_term": "other", "matched_phrase": "expungement"},
+  {"index_term": "other", "matched_phrase": "govt"},
+  {"index_term": "other", "matched_phrase": "petition"}
+]

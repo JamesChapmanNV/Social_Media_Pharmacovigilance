@@ -1,0 +1,9 @@
+<think>
+Okay, let's see. The user is asking to label the post "I guess you can't just order morphine at the hospital" as T or F based on the given rules. The rules are: T if the text shows illicit or abusive drug use, like using, seeking, buying, selling, trafficking, or slang for drugs. F otherwise, like medical discussions, news, discouraging use, or metaphors.
+
+First, I need to parse the sentence. The post says, "I guess you can't just order morphine at the hospital." Morphine is a controlled substance, typically used in medical settings for pain management. The key here is whether the post is indicating drug use or abuse. The sentence is talking about ordering morphine, which is a medical drug. However, the phrase "you can't just order morphine" might imply that it's not something you can casually obtain, which could be a reference to the controlled nature of the drug. But is this a case of showing drug use or abuse?
+
+Wait, the user is moderating social media posts related to drug abuse. The label T is for text that shows illicit or abusive use. Morphine is a prescription drug, so if someone is talking about ordering it in a medical context, that's probably F. However, if the context is implying that it's being used illegally or abused, then it might be T. But the sentence is about the hospital, which is a medical setting. The user is saying that you can't just order morphine there, which might be a comment on the process of getting it, not the actual use. So maybe it's F because it's a medical discussion. Alternatively, if "order" here is in the sense of obtaining it without a prescription, but in a hospital, you would need a prescription. So the post is not about using or seeking drugs, but rather the process of getting them in a medical setting. Therefore, it's F.
+</think>
+
+F

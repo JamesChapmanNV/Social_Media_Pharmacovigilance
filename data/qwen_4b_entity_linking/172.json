@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Bruh if he was dyin of an overdose what was the cop even gonna do lmao". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The main words are "overdose" and "cop". The term "overdose" is pretty straightforward. Looking at the Index Terms, there's a list of drugs and their synonyms. But "overdose" itself isn't listed. However, the task says to check if the phrase refers to an illicit drug or substance. Since "overdose" is a general term, not a specific drug name, it might not be in the list. Wait, but maybe "overdose" is part of a phrase that refers to a drug. However, in the given post, it's just "overdose" without specifying a drug. 
+
+Looking at the Index Terms, there's no entry for "overdose" as a term. The closest might be "fentanyl" or "morphine", but that's not the case here. The user's instruction says to link each detected phrase to its matching Index Term. If the phrase isn't in the list, use "other". 
+
+So "overdose" isn't a specific drug listed, so it would be "other". But wait, the post is about someone dying of an overdose, which could imply a drug. However, the task is to detect the actual drug names or phrases. Since the post doesn't mention a specific drug, just "overdose", which is a general term, it's not a specific drug. Therefore, "overdose" would be "other". 
+
+But wait, the example 4 had "snow" and "white lines" as "other" because they aren't drugs. Similarly, "overdose" here is a general term, not a specific drug. So the answer should be "other" for "overdose". 
+
+But wait, maybe "cop" refers to a drug? No, "cop" is slang for police. So the only phrase here is "overdose", which is not in the Index Terms. Therefore, the matched phrase is "overdose" with index_term "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "overdose"}]

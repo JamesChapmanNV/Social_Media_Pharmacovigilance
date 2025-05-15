@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post and wants me to detect any drug-related references, link them to the appropriate index terms, and return a JSON array.
+
+First, I need to read the post carefully. The post is: "WATCH: details waking up in the hospital after her overdose in 2018 & how she questioned her music career in that moment ⬇️ #DWTDTAOSO  #DemiDWTD". 
+
+Looking for any words or phrases that might refer to illicit drugs. The main content here is about someone waking up in the hospital after an overdose. The key term here is "overdose". Now, I need to check if "overdose" is linked to any index term. 
+
+Looking at the list of index terms, I don't see "overdose" listed. The index terms are specific to drugs like Codeine, Amphetamine, Fentanyl, etc. Since "overdose" isn't an index term, I should categorize it as "other". 
+
+But wait, the post mentions an overdose, which is a result of drug use. However, the task is to detect references to drugs themselves, not the consequence (overdose). The user's instruction says to detect words/phrases that refer to the drug, not the outcome. 
+
+In the example given, "overdose" wasn't in the list, so it was marked as "other". So in this case, the phrase "overdose" is a result of drug use but isn't a direct reference to a drug. Therefore, it should be "other". 
+
+Are there any other terms in the post? The hashtags #DWTDTAOSO and #DemiDWTD don't seem to relate to drugs. The rest of the text is about waking up in the hospital and questioning a music career. 
+
+So the only possible match is "overdose", which maps to "other". Therefore, the JSON array should have one entry with "other" and "overdose".
+</think>
+
+[{"index_term": "other", "matched_phrase": "overdose"}]

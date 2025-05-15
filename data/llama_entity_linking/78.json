@@ -1,0 +1,8 @@
+[
+  {"index_term": "other", "matched_phrase": "toys"},
+  {"index_term": "other", "matched_phrase": "computers"},
+  {"index_term": "other", "matched_phrase": "auto parts"},
+  {"index_term": "other", "matched_phrase": "spatulas"},
+  {"index_term": "other", "matched_phrase": "appliances"},
+  {"index_term": "other", "matched_phrase": "clothing"}
+]

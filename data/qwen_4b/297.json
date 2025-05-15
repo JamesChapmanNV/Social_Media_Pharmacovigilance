@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I knew he was smoking crack just like the idiots being happy about this shit 😑🤡". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False).
+
+First, I'll break down the content. The mention of "smoking crack" is pretty direct. Crack is a controlled substance, illegal, and associated with abuse. The phrase "just like the idiots being happy about this shit" suggests a negative judgment towards someone using crack. The emojis 😑 and 🤡 add to the dismissive or mocking tone.
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse, using slang or euphemisms, or encouraging/glorying misuse. Here, "smoking crack" is a clear reference to drug use. The context is negative, but the key point is the explicit mention of an illegal drug. The user is stating knowledge of someone's drug use, which could be seen as promoting or discussing abuse. The tone is critical, but the main issue is the direct mention of an illicit drug. 
+
+The example given in the prompt where "lean" and "codeine" were considered True because they were associated with abuse. Similarly, "smoking crack" is a direct reference to drug use. Even though the user is commenting on someone else's behavior, the content still involves mentioning an illegal drug in a context that implies abuse. The explanation should note the explicit mention of crack and the context of abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions'smoking crack,' a controlled substance associated with abuse, and uses dismissive language implying approval of its use."
+}

@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The content given is: "Fucke codeine and fuck do you even get cancer, I've had cartons of smokes in my face and I drop this album universe???" 
+
+First, I need to determine if this is illicit or abusive drug-related. The user is using strong language, which might indicate drug use. The mention of "codeine" is a controlled substance, so that's a red flag. The phrase "hooked on that lean" in the example was about abuse, so here "codeine" is mentioned directly. Also, "cartons of smokes" refers to cigarettes, which are drugs. The user is talking about using these substances and seems to be expressing a negative experience, but the key point is the mention of specific drugs. The context here is about using codeine and smoking, which are related to drug abuse. The tone is negative but the presence of drug names in the context of use makes it illicit. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and'smokes' in a context implying personal use and negative consequences, indicating drug abuse."
+}

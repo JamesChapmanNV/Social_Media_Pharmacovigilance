@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the correct Index Term from the provided list, and return a JSON array.
+
+First, I need to look at the post provided. The post is a conversation between two white guys and a white girl discussing music. The key part here is the mention of "heroin" and "flo milli's most popular songs" and "beef flo mix". 
+
+Looking at the Index Terms list, "Heroin" is listed as a term. The phrase "heroin" is directly mentioned, so that's a clear match. The other part is "flo milli's most popular songs" and "beef flo mix". I need to check if "flo milli" refers to a drug. Wait, "flo" could be an abbreviation for "fentanyl" or "fro", but in the context of music, "Flo Milli" is a rapper. However, sometimes slang can be used. But according to the Index Terms, there's no entry for "flo" or "flo milli" as a drug. The term "heroin" is the only one here. 
+
+Wait, the user's example 4 had "snow" and "white lines" as other because they aren't in the list. So if "flo milli" isn't listed, then "flo" might be considered "other". But the post mentions "heroin" directly, which is in the list. So the main match here is "heroin". The other parts are about music, so they don't refer to drugs. 
+
+So the only detected phrase is "heroin", which maps to the Index Term "Heroin". The rest of the text is about music and doesn't refer to drugs. Therefore, the JSON array should have one entry for "heroin" and "heroin".
+</think>
+
+[{"index_term": "Heroin", "matched_phrase": "heroin"}]

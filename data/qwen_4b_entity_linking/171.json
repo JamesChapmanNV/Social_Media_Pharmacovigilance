@@ -1,0 +1,21 @@
+<think>
+Okay, let's see. The user provided a post: "HOW TO CRACK JEE IN 1 MONTH | 100% SELECTION GUARANTEED". I need to check if there are any drug-related references here.
+
+First, I'll go through the post word by word. The main words are "HOW TO CRACK JEE IN 1 MONTH" and "100% SELECTION GUARANTEED". JEE is the Joint Entrance Examination in India, so that's related to education. The phrase "crack JEE" is a common way to say "pass the exam". 
+
+Now, looking for any slang, euphemisms, or terms that might refer to drugs. The words here are all about studying and exams. There's no mention of drugs, substances, or any related terms. The example given in the problem had "lean" and "codeine" as references, but in this case, the post is entirely about academic success. 
+
+I should check if any of the terms in the index list might be confused with something else. For instance, "selection" could be a stretch, but "selection guaranteed" is more about exam results than drugs. The index terms include things like amphetamine, codeine, fentanyl, etc., but none of those words are present here. 
+
+The user's examples show that if there's no match, it's "other". Since there are no drug-related terms here, the answer should be an array with "other" for each matched phrase. But wait, the post doesn't have any actual phrases that refer to drugs. The user might have thought "selection" could be a euphemism, but according to the index terms, "selection" isn't listed. 
+
+So, the correct response is to return an empty array? Wait, no. The task says to detect every word or phrase that refers to an illicit drug. Since there are none, the JSON array should be empty. But the examples show that even if there's no match, like in example 3 where "xans" isn't a drug, it's marked as "other". However, in this case, the post doesn't contain any words that refer to drugs. So maybe the answer is an empty array. But according to the instructions, if there are no matches, the array is empty. Let me check the examples again. 
+
+In example 3, the post is "Popped two xans before class." The matched phrase is "xans", which is not a drug, so it's "other". But in this case, the post has no drug references. So the correct output is an empty array. But the user's instruction says to return only the JSON array. So the answer is an empty array. However, the user might have intended that even if there are no matches, we have to return the array with "other" for each phrase. Wait, no. The task says to detect every word or phrase that refers to an illicit drug. If none are found, then the array is empty. 
+
+But in example 4, the post has "snow" and "white lines" which are not drugs, so they are marked as "other". But in that case, the post had two phrases. Here, the post has two phrases: "HOW TO CRACK JEE IN 1 MONTH" and "100% SELECTION GUARANTEED". None of these are drug terms. Therefore, the correct answer is an empty array. However, the user's example 3 shows that if a phrase is not a drug, it's marked as "other". But if there are no phrases that refer to drugs, then the array is empty. 
+
+Wait, the user's instruction says: "Detect every word or phrase... that refers to an illicit drug... If the drug is not in the list, use 'other'." So if there are no such phrases, then the array is empty. Therefore, the correct answer is an empty array. But the user's example 4 shows that even if there are no drug references, but the post has some words, they are marked as "other". But in that case, the post has two words that are not drugs. However, in this case, the post doesn't have any words that refer to drugs. Therefore, the correct answer is an empty array.
+</think>
+
+[]

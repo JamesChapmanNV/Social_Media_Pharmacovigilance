@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the correct Index Term, and return a JSON array.
+
+First, I'll read the post carefully: "Codeine got me movin @ a turtle pace I show love idk why niggas hate #AllThatHating ‼️1k plays already ‼️👟💩 GO LISTEN". 
+
+Looking at the text, the first mention is "Codeine". According to the Index Terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "Codeine" itself is directly listed under Codeine. So that's one match: "Codeine" maps to "Codeine".
+
+Next, the phrase "movin @ a turtle pace" – "movin" is slang for moving, but not a drug. "Turtle pace" is a metaphor for slow movement. No drug references here. 
+
+Then "I show love idk why niggas hate #AllThatHating". The hashtag #AllThatHating is a trend, not a drug. "Niggas" is slang but not related to drugs. 
+
+The rest of the post includes "1k plays already" which is about views, and emojis like 🤟💩, which are not relevant. 
+
+So the only drug reference here is "Codeine". The other words don't match any Index Terms. Therefore, the JSON should have one entry for "Codeine" with the matched phrase "Codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

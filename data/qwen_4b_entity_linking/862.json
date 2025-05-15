@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I've seen M91's in dealer hands in Texas." I need to identify any drug-related references here.
+
+First, I'll look at the words and phrases. The key term here is "M91's". Now, checking the index terms list. Let me scan through the list for any mention of M91. 
+
+Looking through the index terms, I see "Methamphetamine" has synonyms like "Crystal Meth, Ice, Desoxyn". But M91 isn't listed here. Wait, maybe M91 is a slang term for a drug not explicitly listed. The index terms include "other" as a fallback. 
+
+Wait, is M91 a known drug slang? Let me think. I'm not familiar with M91 being a standard drug term. The example in the prompt had "xans" which was "other" because it wasn't listed. So if M91 isn't in the index terms, it should be "other". 
+
+But wait, maybe M91 is a typo or a specific term. Let me check again. The index terms include "Methamphetamine" but not M91. The user's task is to check if the phrase matches any index term. Since M91 isn't listed, the index term would be "other". 
+
+So the matched phrase is "M91's", and the index term is "other". The answer should be an array with that entry.
+</think>
+
+[{"index_term": "other", "matched_phrase": "M91's"}]

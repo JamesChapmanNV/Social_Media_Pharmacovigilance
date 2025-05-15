@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully. The post says: "Hiya Tom, she isn't good, she is sedated in hospital at the moment, I don't think she even knows she is in there. She was in such pain last night but because of her health they have to be really careful with morphine etc."
+
+Looking for keywords that might refer to drugs. The word "sedated" is mentioned. Now, I need to check if "sedated" is a slang or euphemism for a drug. From the index terms, there's a list of drugs and their synonyms. Let me check the index terms for any that relate to sedation.
+
+Looking through the list, there's "Lorazepam (Ativan)" which is a benzodiazepine used for sedation. Also, "Nordiazepam (Desmethyldiazepam, Nordazepam)" is a metabolite of diazepam, also used for sedation. But "sedated" itself isn't a drug name. However, the post mentions "morphine etc." So "morphine" is explicitly listed in the index terms under "Morphine (MS Contin, Miss Emma, Morph)".
+
+So the key phrases here are "morphine" and possibly "sedated". But "sedated" is a state, not a drug name. However, the post mentions that they are using morphine, which is a drug. The user might be referring to morphine as the drug causing sedation. So the detected phrase would be "morphine".
+
+Wait, the post says "because of her health they have to be really careful with morphine etc." So "morphine" is directly mentioned. So the matched phrase is "morphine", and the index term is "Morphine".
+
+Are there any other terms? The word "sedated" is a state, but not a drug. The index terms don't have a direct term for "sedated" as a drug. So the only drug mentioned is morphine. Therefore, the JSON array should have one entry for "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

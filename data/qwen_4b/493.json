@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The content is about new vehicle sales dropping 26% in September due to chip shortages and parts supply issues. The user wants to know if this is illicit/abusive-drug-related.
+
+First, I need to check if there's any mention of drugs, illegal substances, or related terms. The content talks about vehicles, sales, chip shortages, parts supply, and prices. There's no mention of drugs, opioids, codeine, or any slang related to drug use. The example given in the task had drug terms like 'lean' and 'codeine', which are related to drugs. Here, the topic is entirely about automotive sales and supply chain issues. 
+
+The definitions say True includes mentions of illegal drugs in contexts of abuse, misuse, promotion, etc. False includes medical, educational, or preventative contexts. This content is about a completely different topic. There's no drug-related terminology here. So the answer should be False because there's no drug mention or context. The explanation should note that the content is about vehicle sales and supply chain issues, not drugs.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses vehicle sales and supply chain issues, with no mention of drugs, drug-related terms, or contexts of abuse/misuse."
+}

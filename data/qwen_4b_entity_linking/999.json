@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Grandview gavw me 5 mL of codeine to make me comfortable and I've never felt more comfortable in my life." I need to identify any drug-related references here.
+
+First, I'll scan the post for any terms that might refer to illicit drugs or substances. The word "codeine" is explicitly mentioned. Looking at the Index Terms list, Codeine is listed with synonyms like "Lean," "Purple Drank," "Schoolboy." The phrase "codeine" directly matches the index term "Codeine." 
+
+The other part of the sentence is "Grandview gavw me 5 mL of codeine." "Grandview" might be a name or a place, but it's not a drug term. "Gavw" is likely a typo for "gave," so that's just a verb. The rest of the sentence talks about using codeine for comfort, which is a common context for codeine use, but the key here is the explicit mention of "codeine."
+
+I need to check if there are any other terms. The post doesn't mention any other drugs. The phrase "make me comfortable" is vague but doesn't indicate another drug. So the only match is "codeine." 
+
+Since "codeine" is in the index terms, the index term is "Codeine." The matched phrase is "codeine." There's no need to consider other terms like "Lean" here because the post doesn't use that slang. 
+
+So the JSON array should have one object with index_term "Codeine" and matched_phrase "codeine."
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

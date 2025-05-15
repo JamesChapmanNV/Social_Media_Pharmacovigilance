@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content classification. The user provided a sentence: "Coning out of heavy 'heroin' sedation, already beaten to death. LOSE ALL SON SIDE." 
+
+First, I need to determine if this is illicit or abusive drug-related. The key terms here are "heroin" and the context of "heavy sedation." Heroin is definitely an illegal drug. The phrase "coning out of heavy sedation" might be a typo or a misphrasing, but "coning" could be a slang term related to drug use. The mention of "already beaten to death" suggests a violent or tragic outcome, which is often associated with drug abuse or overdose.
+
+The second part, "LOSE ALL SON SIDE," is a bit unclear. It might be a misspelling of "lose all son's side," which could imply a family tragedy. However, the main point here is the mention of heroin and the context of sedation leading to death. This seems to be describing a situation where heroin use resulted in severe consequences, which fits under the definition of illicit drug-related content because it's discussing the abuse of heroin and the tragic outcome.
+
+I should check if there's any educational or medical context, but the sentence doesn't mention anything like treatment or prevention. Instead, it's a statement about a harmful outcome. The use of "heavy sedation" with heroin is a clear indicator of drug abuse. The tone seems to be describing a negative consequence, which aligns with the True category. Therefore, the label should be True with an explanation focusing on the mention of heroin and the context of abuse leading to death.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin' and describes a severe consequence ('heavy sedation', 'beaten to death'), indicating drug abuse and its harmful effects."
+}

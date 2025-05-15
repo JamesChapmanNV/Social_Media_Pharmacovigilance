@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references. First, I need to read through the post carefully.
+
+The post says: "My sister-in-law's blonde lives in Lahaina & all her friends are 80% blonde. every photo they're all drinking wine. my wife on the other hand is a spitting image of her Filipina mom."
+
+Looking for any slang, euphemisms, or terms that might refer to drugs. The key here is to check each word against the index terms provided. Let's break it down.
+
+First part: "sister-in-law's blonde" – "blonde" here is likely referring to hair color, not a drug. Then "Lahaina" is a place, so that's not relevant. "Friends are 80% blonde" – again, hair color. 
+
+Next part: "all drinking wine" – "wine" is a drink, but is it a drug? The index terms don't list wine as a drug. The example given in the problem had "snow" and "white lines" as "other" because they aren't drugs. So "wine" here is probably not a drug reference. 
+
+Then the wife part: "spitting image of her Filipina mom" – this is about appearance, no drug terms. 
+
+I don't see any terms that match the index list. The words like "blonde," "wine," "friends," "Lahaina" don't correspond to any illicit drugs listed. The example where "xans" was "other" because it wasn't on the list. So in this case, there are no drug references. 
+
+Therefore, the JSON array should be empty. But wait, the user said to return only the valid JSON array with matches. If there are none, then the array is empty. Let me double-check the index terms again to make sure I didn't miss anything. 
+
+Looking through the index terms: Codeine, Amphetamine, Benzodiazepines, Cocaine, Fentanyl, etc. None of the words in the post match any of these. "Wine" isn't a drug in the list. So the answer is an empty array.
+</think>
+
+[]

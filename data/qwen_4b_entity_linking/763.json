@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Have an excellent and happy 420! How has cannabis affected your life?" I need to moderate this for drug-related references.
+
+First, I'll look for any terms that might refer to illicit drugs or substances. The phrase "420" is a well-known slang for cannabis, specifically marijuana. The Index Terms list includes "Marijuana (Cannabis, Weed, Pot)" as a term. So "420" is a reference to marijuana. 
+
+Next, the rest of the post is about how cannabis has affected someone's life. There's no explicit mention of any other drugs or substances. The words "excellent" and "happy" are just descriptors. The term "cannabis" is directly listed in the Index Terms, so that's another match. 
+
+Wait, the user's post says "cannabis" explicitly. According to the Index Terms, "Marijuana" is listed, and "cannabis" is part of the synonyms. So "cannabis" should map to "Marijuana". 
+
+But the post is asking about the effects of cannabis, so the phrase "cannabis" is a direct reference. The "420" is also a slang term for cannabis. So both "420" and "cannabis" are matches. 
+
+Now, checking the Index Terms again to confirm. The Index Term for cannabis is "Marijuana (Cannabis, Weed, Pot)". So both "420" and "cannabis" would be under "Marijuana". 
+
+Wait, but the example in the problem statement had "lean" and "codeine" mapped to Codeine. So in this case, "420" is a slang term for cannabis, which is in the list. So the matched phrases would be "420" and "cannabis", both linked to "Marijuana".
+
+But the user's post says "cannabis" directly. So that's a direct match. The "420" is a slang term, which is also a reference to cannabis. So both are valid. 
+
+So the JSON array should have two entries: one for "420" and one for "cannabis", both under "Marijuana". 
+
+Wait, but the example in the problem statement had "lean" and "codeine" both mapped to Codeine. So in this case, "420" is a slang term for cannabis, so it's a match. The word "cannabis" is also a direct term. So both should be included. 
+
+Therefore, the correct output is two entries: {"index_term": "Marijuana", "matched_phrase": "420"} and {"index_term": "Marijuana", "matched_phrase": "cannabis"}.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "420"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

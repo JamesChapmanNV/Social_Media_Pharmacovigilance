@@ -1,0 +1,43 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that mentions "Codeine Crazy" in a song title. The task is to detect any drug references and link them to the appropriate index terms.
+
+First, I need to look at the post: "#Mood😈 Future - '16 Codeine Crazy [Prod. By TM-88]' using app #mymixtapez". The key phrase here is "Codeine Crazy". 
+
+Looking at the index terms, there's an entry for Codeine with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "Codeine Crazy" directly mentions "Codeine", so that should map to the Codeine index term. The word "Crazy" might be part of the song title but isn't a drug reference. The rest of the post doesn't mention any other drugs. 
+
+I need to check if "Crazy" is a slang term for a drug, but based on the index terms provided, it's not listed. So "Crazy" would fall under "other". However, the main phrase here is "Codeine Crazy", where "Codeine" is the drug. The user's example shows that "lean" and "codeine" are both matched. So in this case, "Codeine" is the key term. 
+
+Wait, the song title is "Codeine Crazy". The phrase "Codeine Crazy" is a title, but the actual drug reference is "Codeine". The word "Crazy" here might be part of the title but not a drug term. So the only match is "Codeine". 
+
+But the user's example in Example #1 had "lean" and "codeine" both matched. So in this case, "Codeine Crazy" would have "Codeine" as the matched phrase. The "Crazy" part isn't a drug term, so it's not included. 
+
+Therefore, the correct JSON should have one entry with index_term "Codeine" and matched_phrase "Codeine Crazy". Wait, but the index term is for the drug, so the matched phrase is the exact text. Wait, the instruction says to detect every word or phrase that refers to an illicit drug. So "Codeine Crazy" is the phrase. But does "Crazy" here refer to a drug? Probably not. The main term is "Codeine". 
+
+But the song title is "Codeine Crazy", so the phrase "Codeine Crazy" is the matched phrase. But according to the index terms, "Codeine" is the index term. So the matched_phrase is "Codeine Crazy", but the index term is Codeine. 
+
+Wait, but in the example given, "lean" and "codeine" are both matched. So in the example, the post was "I got her hooked on that lean everyday she say she want codeine", which had both "lean" and "codeine" as matched phrases. 
+
+In this case, the post mentions "Codeine Crazy" as the song title. The phrase "Codeine Crazy" is a title, but the word "Codeine" is the drug. So the matched_phrase is "Codeine Crazy", but the index term is "Codeine". 
+
+Wait, but the user's example shows that "lean" is matched as a phrase, even though it's a slang term. So in this case, the phrase "Codeine Crazy" is the matched phrase, and the index term is Codeine. 
+
+But the problem is that "Crazy" might not be a drug term. However, the entire phrase "Codeine Crazy" is the title, and the drug is "Codeine". So the matched_phrase is "Codeine Crazy", but the index term is Codeine. 
+
+Alternatively, maybe "Crazy" is part of the slang for codeine. But according to the index terms, "Codeine" is the term, and "Lean", "Purple Drank", "Schoolboy" are synonyms. So "Crazy" isn't listed. 
+
+Therefore, the correct match is the phrase "Codeine Crazy" with index_term "Codeine". But wait, the instruction says to detect every word or phrase that refers to an illicit drug. So "Codeine Crazy" is the phrase, but the actual drug is "Codeine". 
+
+But the user's example in example #1 had "lean" and "codeine" as separate matches. So in that case, the phrase "lean" is a slang term for codeine, and "codeine" is the direct term. 
+
+In this case, "Codeine Crazy" is the phrase. However, the "Crazy" part isn't a drug term. So the correct approach is to check if "Codeine Crazy" is a phrase that refers to codeine. Since "Codeine" is the drug, the matched_phrase is "Codeine Crazy", and the index_term is Codeine. 
+
+But maybe the user is expecting that "Crazy" is part of the slang. However, based on the index terms provided, "Crazy" isn't a term. So the correct answer is to match "Codeine" as the index term and the matched_phrase as "Codeine Crazy". 
+
+Alternatively, maybe "Crazy" is not part of the drug reference. So the matched_phrase is "Codeine", but the phrase is "Codeine Crazy". But the user's example shows that the entire phrase is matched if it's a slang term. 
+
+In the example, "lean" is a slang term for codeine. So in this case, "Codeine Crazy" is the phrase, but the actual drug is codeine. Therefore, the matched_phrase is "Codeine Crazy", and the index_term is "Codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine Crazy"}
+]

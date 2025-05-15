@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is about morphine and benzodiazepines in end-of-life treatment, emphasizing that the dose should be just right, not too high or low.
+
+First, I need to check the definitions. True includes mentions of illegal drugs in abuse contexts, slang, or encouragement of misuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+The content here is discussing medical dosing for end-of-life care. It's talking about proper medication use, not abuse. The terms morphine and benzodiazepines are prescribed medications, not illegal drugs. The context is about correct dosage, which is part of medical treatment, not misuse or promotion. There's no mention of abuse, slang, or encouragement. So this falls under False. The explanation should note the medical context and proper use, not abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses medical dosing of prescribed medications (morphine, benzodiazepines) in end-of-life care, focusing on appropriate usage rather than abuse or illicit use."
+}

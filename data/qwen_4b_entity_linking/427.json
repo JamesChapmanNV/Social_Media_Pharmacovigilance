@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Same. Sadly that's exactly what I'm doing… I would guess we're in my father-in-law's last 24 hours. The morphine has begun…" I need to detect any drug references here.
+
+First, I'll read through the post carefully. The key part is "The morphine has begun…" So "morphine" is clearly mentioned. Looking at the Index Terms, Morphine is listed as an index term. So "morphine" maps directly to "Morphine". 
+
+Are there any other phrases? The rest of the post talks about the father-in-law's last 24 hours, which seems like a metaphor or a statement about a situation, not a drug reference. The word "begun" might be part of a phrase like "has begun" but that's just the verb. No other drug terms here. 
+
+I should check if "morphine" is in the list. Yes, under Morphine (MS Contin, Miss Emma, Morph). So the matched phrase is "morphine", index term is "Morphine". 
+
+No other words in the post seem to refer to drugs. The example in the problem statement had "lean" and "codeine" both mapping to Codeine. Here, only "morphine" is present. So the JSON array should have one object with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

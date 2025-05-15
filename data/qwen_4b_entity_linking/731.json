@@ -1,0 +1,25 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I need to look at the provided post: "250 million Americans have access to legal, adult-use/medical cannabis in 18 states while 40,000 remain in prison for cannabis offenses. This video by  highlights clips from 2020 presidential candidate Joe Biden discussing cannabis reform & he has failed to deliver."
+
+I need to scan through the text for any mentions of drugs or substances. The first part mentions "cannabis," which is listed in the Index Terms under "Marijuana (Cannabis, Weed, Pot)." The second part talks about "cannabis reform," which is a reference to cannabis, but the term "cannabis" itself is the key here. 
+
+Now, checking the Index Terms, "Marijuana" is explicitly listed. The phrase "cannabis" is a synonym for marijuana. The post uses "cannabis" in the context of legal access and reform, which is a reference to the drug. However, the task is to detect any references to illicit drugs. But in this case, the post is talking about legal cannabis in 18 states. However, the user's instruction says to detect any illicit drug references, including legal ones if they're being used in a context that might imply illicit use. Wait, but the Index Terms include "Marijuana" as a non-illicit drug? Wait, the Index Terms list "Marijuana (Cannabis, Weed, Pot) – The most widely used illicit drug, containing psychoactive cannabinoids THC only." Wait, but the note says it's the most widely used illicit drug. So even though it's legal in some states, the Index Term is still considered illicit. So the phrase "cannabis" here would map to "Marijuana" as the Index Term.
+
+But wait, the user's task is to detect any references to illicit drugs. The post is about legal cannabis, but the Index Term for marijuana is listed as an illicit drug. So even though it's legal in some states, the term "cannabis" is considered an illicit drug here. Therefore, the phrase "cannabis" in the post would be detected as referring to the Index Term "Marijuana."
+
+But wait, the user's example 3 had "xans" which wasn't in the list, so it was marked as "other." However, in this case, "cannabis" is explicitly in the Index Terms. So the correct Index Term here is "Marijuana."
+
+So the matched_phrase is "cannabis" and the index_term is "Marijuana."
+
+Now, checking if there are any other terms. The post mentions "cannabis offenses," which is a reference to the drug. But the key term is "cannabis" itself. The rest of the text doesn't mention any other drugs. So the only match is "cannabis" under "Marijuana."
+
+Therefore, the JSON array should have one object: {"index_term": "Marijuana", "matched_phrase": "cannabis"}.
+
+Wait, but the user's example 4 had "snow" and "white lines" as "other" because they weren't on the list. But in this case, "cannabis" is on the list. So the answer is correct.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

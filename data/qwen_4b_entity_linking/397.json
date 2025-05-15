@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Drinking hasn't been doing it for me lately maybe I'll start doing heroin". I need to detect any drug references here.
+
+First, I'll look for words or phrases that could refer to illicit drugs. The word "heroin" is pretty straightforward. Checking the index terms, heroin is listed under "Morphine" as "MS Contin, Miss Emma, Morph". Wait, no, looking back, the index terms for Morphine include "MS Contin, Miss Emma, Morph", but heroin isn't directly listed. Wait, the index terms list "Morphine" as the prototypical opioid, but heroin is a separate drug. Wait, let me check the list again.
+
+Looking at the Index Terms, there's "Heroin (MS Contin, Miss Emma, Morph)"? Wait no, the entry for Morphine says "Morphine (MS Contin, Miss Emma, Morph)" and then under "Codeine" there's "Lean, Purple Drank, Schoolboy". Wait, the user's post mentions "heroin", which is an opioid. But in the index terms, is heroin listed? Let me check again.
+
+Looking through the list: The index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)". Then there's "Hydrocodone (Vicodin, Norco, Vike)", "Hydromorphone (Dilaudid, Dillies)", "Oxycodone (OxyContin, Percocet, Hillbilly Heroin)", "Fentanyl (China White, Apache, Duragesic)", "Carfentanil (Wildnil, Elephant tranquilizer)", "Methadone (Dolophine, Methadose, Done)", "Buprenorphine (Suboxone, Subutex, Bupe)", "Ketamine (Special K, Keta, Ketalar)", "LSD (Acid, Lucy, Delysid)", "Marijuana (Cannabis, Weed, Pot)", etc. 
+
+Wait, "heroin" isn't directly listed in the index terms. The index terms for opioids include Morphine, Codeine, Hydrocodone, Hydromorphone, Oxycodone, Fentanyl, Carfentanil, Methadone, Buprenorphine. Heroin isn't explicitly listed. However, in the example given, "Codeine" is linked to "lean" and "codeine". So if the post mentions "heroin", which is a different drug, but not in the index terms, then according to the instructions, if the drug is not in the list, use "other". 
+
+But wait, the index terms list "Morphine" as a separate entry, but heroin is a different drug. So "heroin" isn't in the index terms. Therefore, the matched phrase "heroin" should map to "other". However, I need to check if there's an index term that covers heroin. Let me check again. 
+
+Looking through the index terms, there's no entry for heroin. The closest is "Morphine", but that's a different drug. So "heroin" would be "other". 
+
+But wait, the user's post says "maybe I'll start doing heroin". The word "heroin" is the drug here. Since it's not listed in the index terms, the index term should be "other". Therefore, the correct JSON would be [{"index_term": "other", "matched_phrase": "heroin"}]. 
+
+But wait, let me check the example 1 again. In example 1, "lean" and "codeine" are both mapped to Codeine. So if the post has "heroin", which is not in the index terms, then it's "other". Therefore, the answer is one object with index_term "other" and matched_phrase "heroin".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

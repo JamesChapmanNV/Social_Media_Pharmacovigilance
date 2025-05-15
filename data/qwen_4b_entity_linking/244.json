@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I'll read the post carefully: "There is no #access to #health without access to #essential #medicines, including #morphine and other controlled substances. #PalliativeCare #pain #mentalhealth #equity"
+
+Looking for keywords that might refer to illicit drugs or substances. The post mentions "morphine" and "controlled substances." 
+
+Checking the index terms list, "Morphine" is listed as an index term. The phrase "morphine" is directly mentioned. The word "controlled substances" is a general term, but since "morphine" is specifically listed, that's the only direct hit. The rest of the post talks about access to medicines and health, but nothing else that's a specific drug or slang. 
+
+The other part is "#other controlled substances," but since "controlled substances" is a general category and not a specific drug listed in the index terms, those would fall under "other." However, the post doesn't explicitly use any slang or synonyms for other drugs. The only explicit mention is "morphine," which is in the list. 
+
+So the only matched phrase is "morphine" under the index term "Morphine." The rest of the terms like "controlled substances" are not specific enough and aren't in the index list, so they would be "other," but the post doesn't use those terms directly. Wait, the post says "including #morphine and other controlled substances." The "other controlled substances" is a phrase, but since "controlled substances" isn't an index term, but "morphine" is. So the only exact match is "morphine." The "other controlled substances" is a general term, but the user's instructions say to check for every word or phrase that refers to an illicit drug. Since "controlled substances" is a legal term, but the post is talking about access to them, but the index terms don't have "controlled substances" as a term. Therefore, "other" would be used for "controlled substances" if it's a reference. However, the post says "including #morphine and other controlled substances." The "other controlled substances" is a phrase, but since "controlled substances" isn't in the index terms, but the user's task is to check for any drug references. However, the index terms include specific drugs, not the general category. So "controlled substances" isn't a specific drug here, so the only exact match is "morphine."
+
+Therefore, the correct JSON array should have one entry for "morphine" and "morphine" as the matched phrase. The rest of the hashtags are not drug-related terms. The answer should be:
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post provided is about George Floyd's death and mentions a drug overdose. My task is to detect any drug references, link them to the appropriate index terms, and return a JSON array.
+
+First, I'll read through the post carefully. The key part is "drug overdose." Now, I need to check if "overdose" is a drug reference. Looking at the index terms, there's no direct term for "overdose," but maybe "drug overdose" could be linked to a specific substance. However, the index terms list specific drugs, not the act of overdosing. 
+
+Wait, the index terms include things like Codeine, Amphetamine, Fentanyl, etc. The phrase "drug overdose" isn't a specific drug name, so according to the instructions, if the drug isn't in the list, use "other." But the user might be referring to an overdose related to a specific drug. However, in the post, it's just "drug overdose" without specifying which drug. Since the index terms don't have a general term for overdose, I should map "drug overdose" to "other."
+
+But wait, let me check the index terms again. The list includes terms like "Codeine," "Amphetamine," "Fentanyl," etc., but not "overdose." So "drug overdose" isn't a specific drug, so it's "other." However, the post mentions "drug overdose" as a result of using drugs, but the actual drug name isn't specified. Therefore, the matched phrase here is "drug overdose," which isn't in the index terms, so index_term is "other."
+
+Wait, but the example 4 had "snow" and "white lines" as other. So in this case, "drug overdose" is not a specific drug, so it's "other." So the JSON would be {"index_term": "other", "matched_phrase": "drug overdose"}.
+
+But wait, maybe the user is referring to a specific drug that's not listed. However, the post doesn't specify which drug caused the overdose. The mention of "drug overdose" is a general term. Therefore, the correct index term here is "other."
+
+So the final answer should have one object with index_term "other" and matched_phrase "drug overdose".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drug overdose"}
+]

@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I was like codeine? We have codeine she says yeah it's from a few years back when they used to prescribe it gave you a lot". I need to detect any drug references here.
+
+First, I'll read through the post carefully. The user is talking about "codeine" and mentions it was prescribed in the past. Looking at the Index Terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine" is directly mentioned, so that's a clear match. The user also says "we have codeine" which is the same as the index term. The rest of the sentence talks about it being from a few years back when it was prescribed, which doesn't add any other drug references. There's no mention of other drugs here. So the only matches are "codeine" and "codeine" again. Wait, the user says "I was like codeine?" which might be a slang or a way of saying they were using it. But the exact phrase is "codeine" in the post. So two instances of "codeine" in the post. The index term for codeine is "Codeine". So the JSON should have two entries, both with index_term "Codeine" and matched_phrase "codeine". The other parts of the sentence don't refer to any other drugs. So the answer is two entries.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

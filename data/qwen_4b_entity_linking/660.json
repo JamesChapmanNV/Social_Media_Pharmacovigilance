@@ -1,0 +1,34 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "Looking to do some collab Mental Health/Cannabis & CBD spaces with projects and people in the NFT space! Tap in with me via DM's 🔥✨🧲🦾💯". 
+
+Looking for any slang, euphemisms, or terms that might refer to illicit drugs. The post mentions "Cannabis & CBD". Now, checking the index terms. Cannabis is listed as an index term under "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. CBD is listed as a non-intoxicating cannabinoid, but the post is combining Cannabis and CBD. However, the index term for Cannabis is "Marijuana", so "Cannabis" would map to that. CBD is listed as a separate index term, but the post is using "CBD" in the context of Cannabis, so maybe "CBD" is part of the Cannabis reference. Wait, the index term for CBD is "CBD (Cannabidiol, Epidiolex)", so if the phrase is "CBD", it should map to that. But the post says "Cannabis & CBD", so "Cannabis" is a drug, and "CBD" is a cannabinoid. However, the user's task is to detect any drug references. Since Cannabis is an illicit drug, and CBD is a non-intoxicating cannabinoid, but in the context of the post, they are combining them. However, the index terms list "Marijuana" as the term for Cannabis, and "CBD" as a separate term. So "Cannabis" would map to "Marijuana", and "CBD" would map to "CBD". 
+
+But wait, the post says "Cannabis & CBD spaces". The user is collaborating in spaces related to Cannabis and CBD. The question is whether "Cannabis" is considered a drug here. Since Cannabis is listed as an index term, "Cannabis" would map to "Marijuana". The term "CBD" is a separate index term. So the phrases "Cannabis" and "CBD" would be matched. However, the post is not using them in a context of use or promotion, but rather as topics for collaboration. But according to the task, even if it's mentioning the drug, even if it's not promoting, it's still a reference. The task says to detect every word or phrase that refers to an illicit drug or substance, regardless of context. So "Cannabis" is an illicit drug, so it's a match. "CBD" is a non-intoxicating cannabinoid, but it's listed as an index term. However, the post is using "CBD" in the context of Cannabis, but the index term for CBD is separate. So the phrases "Cannabis" and "CBD" would be matched. 
+
+But wait, the example 4 shows that "snow" and "white lines" are mapped to "other" because they aren't on the list. So if "Cannabis" is on the list, then it's mapped to "Marijuana". "CBD" is on the list as well. So the matched phrases would be "Cannabis" and "CBD". 
+
+So the JSON array would have two entries: one for "Marijuana" with "Cannabis", and one for "CBD" with "CBD". But wait, the post says "Cannabis & CBD spaces". So the exact phrases are "Cannabis" and "CBD". Therefore, the correct matches are:
+
+{"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+{"index_term": "CBD", "matched_phrase": "CBD"}.
+
+But wait, the index term for CBD is "CBD (Cannabidiol, Epidiolex)", so "CBD" is correct. However, the user's task says to link each detected phrase to its matching index term. So "Cannabis" maps to "Marijuana", and "CBD" maps to "CBD". 
+
+But the example 3 shows that "xans" is mapped to "other" because it's not on the list. So in this case, "Cannabis" is on the list, so it's mapped to "Marijuana", and "CBD" is on the list, so mapped to "CBD". 
+
+Therefore, the correct output is two entries. However, I need to check if "CBD" is considered a drug here. The index term for CBD is a non-intoxicating cannabinoid, but the post is using it in the context of Cannabis, which is an illicit drug. However, the task is to detect any reference to a drug or substance, even if it's a non-intoxicating one. So "CBD" is a substance, but according to the index terms, it's listed as an index term. Therefore, it's included. 
+
+So the final answer should be:
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+  {"index_term": "CBD", "matched_phrase": "CBD"}
+]
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+  {"index_term": "CBD", "matched_phrase": "CBD"}
+]

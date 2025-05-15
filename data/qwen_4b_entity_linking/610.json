@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I gotta bitch for everyday of the week & I gotta brick for every crack on yo street." I need to identify any drug-related references here.
+
+First, I'll break down the post. The words "bitch" and "brick" are used. Looking at the index terms, "Codeine" has synonyms like "Lean" and "Purple Drank," but "bitch" isn't listed. However, "brick" might refer to a slang term for a drug. Wait, in some contexts, "brick" can be a slang for crack cocaine. Let me check the index terms. The list includes "Crack" under marijuana? No, wait, the index terms don't have "crack" as a separate entry. Wait, looking back, the index terms include "Marijuana (Cannabis, Weed, Pot)" but not "crack." However, the user's example 4 had "snow" and "white lines" as "other" because they weren't in the list. So if "brick" is a slang for crack cocaine, but since crack isn't listed in the index terms, it would fall under "other." But wait, the index terms do have "Methamphetamine (Crystal Meth, Ice, Desoxyn)" and "Ketamine (Special K, Keta, Ketalar)" but not crack. So "brick" here is likely referring to crack cocaine, which isn't listed, so it's "other." 
+
+But wait, the user's example 3 had "xans" which is not in the list, so "other." Similarly, "brick" here is a slang for crack, which isn't in the index terms. Therefore, both "bitch" and "brick" would be "other." However, I need to check if "brick" is a known slang in the index terms. Let me check again. The index terms include "Codeine" with "Lean," "Purple Drank," "Schoolboy," but not "brick." "Crack" is under marijuana? No, the index terms for marijuana are "Marijuana (Cannabis, Weed, Pot)" but not crack. So "brick" is not in the list, so "other." 
+
+So the matched phrases would be "bitch" and "brick," both under "other." But wait, the user's example 4 had "snow" and "white lines" as "other," even though they weren't drugs. So in this case, "brick" is a slang for crack cocaine, which is a drug, but since it's not in the index terms, it's "other." Therefore, the answer should have both phrases as "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "bitch"},
+  {"index_term": "other", "matched_phrase": "brick"}
+]

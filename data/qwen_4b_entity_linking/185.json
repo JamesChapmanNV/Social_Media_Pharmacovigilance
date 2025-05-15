@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "kuruma" and "narutos journey," and then says "Your high on crack 😂." I need to check if there are any drug references here.
+
+First, looking at the Index Terms list. "Crack" is a slang term for cocaine, right? The list includes "Amphetamine (Speed, Bennies, Adderall)" and "Methamphetamine (Crystal Meth, Ice, Desoxyn)", but cocaine isn't explicitly listed. However, the example in the user's prompt shows that "snow" and "white lines" were categorized as "other" when not on the list. Since "crack" is a form of cocaine, which is an illicit drug, even if not in the Index Terms, it should be marked as "other" based on the examples. 
+
+Wait, the user's example 4 had "snow" and "white lines" as "other" because they weren't on the list. So "crack" isn't listed in the Index Terms, so it should be "other". The phrase "high on crack" refers to cocaine use, so that's a drug reference. The rest of the post talks about anime characters and animation, which don't relate to drugs. So the only match is "crack" under "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "crack"}]

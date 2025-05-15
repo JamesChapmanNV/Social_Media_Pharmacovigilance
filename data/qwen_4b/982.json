@@ -1,0 +1,14 @@
+<think>
+Okay, let's see. The content here is: "Codeine can be used as a positive control instead of histamine as it is a great activator of mast cells #GA2LENAllergySchool". I need to determine if this is illicit/abusive-drug-related.
+
+First, I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse or misuse, slang, euphemisms, or encouraging misuse. False includes medical, educational, or preventative contexts.
+
+The content mentions codeine, which is an opioid and a controlled substance. But the context here is in an allergy school setting, talking about it as a positive control in a scientific experiment. The phrase "positive control" suggests it's part of a study or educational purpose. The hashtag #GA2LENAllergySchool indicates it's related to allergy education. 
+
+So, the use of codeine here is in a medical or educational context, not for abuse or promotion. The explanation given in the example about pharmacology lectures being false because they're educational applies here. The content isn't encouraging misuse, just discussing its use in a controlled, educational scenario. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses codeine in an educational allergy research context, not promoting abuse or misuse."
+}

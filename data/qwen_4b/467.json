@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is about the show "Outer Banks" and mentions a character named Barry the drug dealer.
+
+First, I need to check if there's any mention of drugs in the context of abuse or misuse. The show's character is called Barry the drug dealer, which suggests he's involved in dealing drugs. However, the content itself just mentions the character's name and the show's title. There's no explicit mention of drug use, abuse, or promotion. The term "drug dealer" is part of the character's role in the show, but the content doesn't state that Barry is using drugs or promoting their use. 
+
+The definitions say that True includes mentions of illegal drugs in the context of abuse or misuse. But here, the reference is to a character in a TV show, not actual drug use. The content doesn't encourage or glorify drug misuse. It's just a reference to a character's role. So, it's more of a cultural reference rather than promoting abuse. 
+
+Therefore, the classification should be False because it's not promoting drug abuse but rather referencing a character in a TV show. The explanation should note that it's a cultural reference without promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a TV show character named 'Barry the drug dealer' as a cultural reference, not promoting drug abuse or misuse."
+}

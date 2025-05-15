@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user wants me to label the given social media post as T or F based on the rules provided. The post is in Hindi, so I need to parse that.
+
+First, the post mentions "Heavy Amount of Drugs Heroine Captured in NCB Raid in Shaheen Bagh". The key terms here are "Drugs", "Heroine", and "NCB Raid". The NCB is the National Crime Bureau, so this is likely a news report about a drug seizure. The mention of heroin is a drug, so that's a clear T. The rest of the post talks about the location (Jamia Nagar, Delhi) and the arrest of a person linked to an Indo-Afghan gang based in Dubai. 
+
+The rules state that T is for any text showing illicit or abusive drug use, including using, seeking, buying, selling, trafficking, or slang. The post is reporting on the seizure of heroin, which is a drug. The mention of the gang and the raid is about trafficking, which is part of the T category. 
+
+The other part of the post is in Hindi, but the key elements are the drugs and the arrest related to drug trafficking. The label should be T because it's reporting on the capture of heroin, which is a drug. The rest is about the location and the gang, which are related to drug trafficking. So the answer should be T.
+</think>
+
+T

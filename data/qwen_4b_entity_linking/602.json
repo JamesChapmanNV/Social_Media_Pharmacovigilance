@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that mentions "Codeine Scene" in the context of a music video by Hozier. My task is to detect any drug-related references and map them to the appropriate index terms.
+
+First, I need to check if "Codeine" is in the list of index terms. Looking at the list, yes, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The post mentions "Codeine Scene", so "Codeine" is a direct match. The index term here is "Codeine", and the matched phrase is "Codeine Scene". Wait, but the example shows that "lean" and "codeine" are both matched. However, in the post, it's "Codeine Scene". The phrase "Codeine Scene" is a reference to the drug, so the matched phrase should be exactly "Codeine Scene". But according to the index terms, "Codeine" is the index term. So the correct mapping is index_term: "Codeine", matched_phrase: "Codeine Scene".
+
+I need to make sure there are no other terms. The rest of the post is about a music video title, which doesn't contain any other drug references. So the only match is "Codeine Scene" under Codeine. The answer should be a JSON array with one object. Let me confirm the example. In example 1, "lean" and "codeine" are both matched. But in this case, the phrase is "Codeine Scene". Since "Codeine" is the index term, and the phrase is "Codeine Scene", that's the correct entry. The other examples show that even if the phrase is part of a longer term, like "Codeine Scene", it's still matched under Codeine. So the final answer should be one object with index_term "Codeine" and matched_phrase "Codeine Scene".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "Codeine Scene"}]

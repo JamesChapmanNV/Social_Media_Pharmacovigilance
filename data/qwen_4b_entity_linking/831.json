@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Morphine is more powerful than single malt scotch 😳". I need to detect any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs or substances. The word "Morphine" is directly listed in the index terms as an opioid analgesic. So that's a clear match. The phrase "single malt scotch" is a type of alcohol, but the user's instruction says to check for drug references. Since scotch isn't on the list of index terms, it's probably "other". But wait, the task is to detect any drug-related phrases. However, "single malt scotch" is a drink, not a drug. The example in the prompt where "snow" was considered "other" even though it's not a drug. So in this case, "single malt scotch" isn't a drug, so it should be "other". But the main phrase here is "Morphine", which is an index term. So the only match is "Morphine". The rest is just a comparison, but the user is asking for drug references. So the answer should have one entry for "Morphine" and the other phrase as "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "other", "matched_phrase": "single malt scotch"}
+]

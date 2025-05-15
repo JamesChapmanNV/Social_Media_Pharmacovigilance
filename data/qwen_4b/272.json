@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content classification. The user provided a statement about someone who received morphine in the hospital due to sepsis and renal failure. The person describes feeling "so out of it" and mentions refusing a tube insertion. 
+
+First, I need to check if this content is related to illicit or abusive drug use. The mention of morphine is a controlled substance, but the context here is medical. The person is explaining their experience with morphine as part of treatment for a severe illness. There's no indication of abuse, misuse, or promotion. The tone is personal and descriptive, not glorifying or encouraging drug use. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. Here, morphine is used medically, not for abuse. The explanation is about the side effects and the medical situation, not promoting or encouraging its use. Therefore, this should be classified as False. The key point is the medical context and lack of promotion or encouragement of misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes morphine use in a medical context due to a severe illness (sepsis, renal failure), with no indication of abuse, promotion, or encouragement of drug misuse."
+}

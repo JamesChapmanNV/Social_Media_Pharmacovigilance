@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "It's crazy that heroin in all forms is legal now." I need to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll scan the post for any words or phrases that might refer to illicit drugs. The main term here is "heroin." Checking the index terms list, there's an entry for Morphine, which includes aliases like MS Contin, Miss Emma, Morph. However, heroin isn't directly listed. Wait, looking again, the index terms include "Morphine" but not heroin specifically. The example given in the problem statement had "Codeine" linked to "lean" and "codeine," so maybe heroin isn't in the list. 
+
+Wait, the index terms list includes "Morphine" as a separate entry. Heroin is a different drug, but maybe it's considered under Morphine? Or perhaps the index terms don't have a direct entry for heroin. Let me check again. The index terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. The user's task says to use the list provided. Since heroin isn't listed, the correct index term would be "other." 
+
+But wait, the example in the problem statement had "Codeine" for "lean" and "codeine," which are synonyms. So if "heroin" isn't in the index terms, then it should be "other." However, I need to confirm if "heroin" is considered under any of the existing terms. The index terms for Morphine are separate. Heroin is a different drug, so the correct index term here would be "other." 
+
+So the matched phrase is "heroin," and since it's not in the list, the index term is "other." Therefore, the JSON should have one object with index_term "other" and matched_phrase "heroin."
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

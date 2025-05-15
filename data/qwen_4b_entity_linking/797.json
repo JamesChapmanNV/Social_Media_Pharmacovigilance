@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I'm on the codeine moving like a dead body #nofr". I need to detect any drug references here.
+
+First, I'll look for words that match the index terms. The post mentions "codeine", which is directly listed under the Codeine index term. So that's one match. Then there's "moving like a dead body". Hmm, that's a common phrase used to describe the sedative effects of opioids. But is "moving like a dead body" a slang term for a drug? The index terms don't have that exact phrase, but the context here is about codeine's effects. Since the phrase isn't explicitly listed in the index terms, I should check if it's a known slang. 
+
+Looking at the index terms, "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "moving like a dead body" isn't listed, but the user is referring to codeine's effects. However, the task says to link each detected phrase to the index term. Since "moving like a dead body" isn't a direct synonym or slang in the list, it's probably "other". But wait, the user is explicitly talking about codeine, so maybe the phrase is a description of codeine's effects. However, the instruction says to detect every word or phrase that refers to the drug. The phrase "moving like a dead body" is more of a description of the effect rather than a reference to the drug itself. So the only direct reference is "codeine". The hashtag #nofr might be a typo for "no fear" or something else, but it's not a drug reference. So the only match is "codeine". 
+
+Wait, but the example in the problem statement had "lean" and "codeine" both matched to Codeine. So in this case, the phrase "codeine" is directly matched. The rest is just describing the effect. So the correct JSON should have one entry for "codeine".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

@@ -1,0 +1,6 @@
+[
+  {"index_term": "Covid", "matched_phrase": "Covid"},
+  {"index_term": "other", "matched_phrase": "drug overdose"},
+  {"index_term": "other", "matched_phrase": "X"},
+  {"index_term": "other", "matched_phrase": "cuh"}
+]

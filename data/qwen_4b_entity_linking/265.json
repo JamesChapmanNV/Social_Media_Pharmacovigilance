@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about a marijuana shop getting planning board approval. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read the post carefully: "Kittery adult-use marijuana shop at the Outlet Mall receives Planning Board approval." The key words here are "marijuana" and "adult-use." 
+
+Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. The phrase "marijuana" is explicitly listed here. The term "adult-use" might be a reference to legal adult use, but the post is about a shop receiving approval, so the main reference is "marijuana." 
+
+I need to check if "marijuana" is in the index terms. Yes, it is. So the matched phrase is "marijuana," and the index term is "Marijuana." There's no mention of any other drugs or slang terms here. The rest of the post is about a shop and planning approval, which doesn't include any other drug references. 
+
+So the only match is "marijuana" under the Marijuana index term. No other terms are applicable here. The example in the problem statement where "snow" was considered "other" because it's not a drug, but here "marijuana" is explicitly listed. Therefore, the correct JSON array should have one entry with index_term "Marijuana" and matched_phrase "marijuana."
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "marijuana"}]

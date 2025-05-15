@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content classification. The user provided a specific example, so I need to follow the guidelines carefully.
+
+First, the content mentions fentanyl and a drug overdose. The key here is the context. The doctor admitted to having fentanyl in his system and the symptoms of overdose, like suppressed breathing and foam from the mouth. The user is describing a medical emergency related to drug overdose. 
+
+Looking at the definitions, True includes mentions of illegal drugs in contexts of abuse or misuse. But here, the content is discussing a medical situation where someone had a drug overdose. The mention of fentanyl is in a medical context, not promoting or encouraging its use. The explanation is about the consequences of drug use, not promoting or glorifying it. 
+
+The example given in the task shows that if the content is about medical treatment, it's False. The current content is about a doctor's admission of having fentanyl and the symptoms of overdose. This is more about the effects of the drug in a medical context, not encouraging misuse. Therefore, it should be classified as False. The explanation should note the medical context and the discussion of overdose symptoms without promoting abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a medical emergency involving fentanyl overdose symptoms, focusing on health consequences rather than promoting or glorifying drug misuse."
+}

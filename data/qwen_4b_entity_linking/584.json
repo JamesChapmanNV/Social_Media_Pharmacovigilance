@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that's a bit graphic, talking about someone overdosing and four men kneeling on a man's neck. The task is to detect any drug-related references and link them to the index terms.
+
+First, I need to scan the post for any words or phrases that might refer to illicit drugs, slang, or related terms. The post mentions "overdose," which is a common term associated with drug use, but I need to check if there's a specific drug mentioned. 
+
+Looking at the text: "4 men kneeling on a man, one bearing down harder and harder on his neck, while he's having an overdose is still not murder." The key here is "overdose." The index terms list includes several opioids like fentanyl, morphine, codeine, etc. However, "overdose" itself isn't listed as an index term. The index terms are specific substances, not the general term for an overdose. 
+
+The example given in the problem where "snow" was considered "other" because it's not a drug. Similarly, "overdose" isn't a specific drug listed in the index terms. The post doesn't mention any specific drug names like codeine, fentanyl, cocaine, etc. It's more about the scenario of an overdose rather than the substance itself. 
+
+So, the phrase "overdose" isn't directly linked to any index term. The user's task is to detect drug references, but since the post doesn't mention any specific drug names or slang terms from the index list, there are no matches. Therefore, the correct response would be to return an empty array or indicate that there are no matches. 
+
+Wait, but the example 4 had "snow" and "white lines" as "other" because they aren't drugs. Similarly, "overdose" isn't a drug. So the answer here is that there are no drug references in the post. Hence, the JSON array should be empty.
+</think>
+
+[]

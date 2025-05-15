@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "kingdom fr put crack in all of their songs. i love them and their concept mwaaah <3". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting. Also, slang or cultural references indicating recreational use. The example given in the prompt mentions "lean" and "codeine" as examples. Here, the content mentions "crack", which is a controlled substance and illegal. The user is talking about a band (Kingdom of Loathing, maybe?) using crack in their songs. The tone is positive ("I love them and their concept"), which could be seen as glorifying or promoting the use of crack. 
+
+But wait, is "crack" in this context referring to the drug? Yes, crack is a form of cocaine. The user is saying the band includes crack in their songs, and they love it. That's promoting the use of an illegal drug. Even if the band is fictional or a meme, the mention of the drug itself in a positive light could be considered abuse-related. The explanation needs to note that "crack" is an illegal drug and the positive tone indicates promotion or glorification. So the label should be True.
+</think>
+
+{"label": "True", "explanation": "The content mentions 'crack,' an illegal drug, in a context that appears to glorify or promote its use through a band's music and positive sentiment."}

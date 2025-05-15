@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "Is that a true quote? Context? Because, you know, I used to be a glue dealer 😆"
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse.
+
+The content here mentions "glue dealer". Glue is a slang term for methamphetamine, which is an illicit drug. The person is saying they used to be a glue dealer, which implies they were involved in selling or dealing with meth. That's definitely related to drug abuse or illegal activity. The use of "glue dealer" is a slang term that's associated with drug dealing, which is illegal. The tone here seems casual, but the mention of being a dealer directly points to illicit drug-related activity. 
+
+The example given in the problem statement had "lean" and "codeine" which are drugs, and the explanation was about the context of abuse. Similarly, "glue dealer" is a clear indicator of involvement in drug dealing, which is illegal. So the label here should be True. The explanation should mention the slang term "glue dealer" indicating illicit drug dealing.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The mention of 'glue dealer' refers to illicit drug dealing, indicating involvement in the distribution of methamphetamine, an illegal substance."
+}

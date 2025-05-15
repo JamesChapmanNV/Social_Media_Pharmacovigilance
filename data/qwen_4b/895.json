@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "PAS only concerned on the name itself, they the one loudly asked for arak ban in malaysia but now so damn quite like a mice".
+
+First, I need to understand what the content is talking about. The mention of "PAS" (which I think is the People's Alliance for Justice, a Malaysian political party) and "arak" (a traditional palm wine in Malaysia, which is a controlled substance there). The user is saying that PAS is only concerned with the name of the substance, and they previously advocated for a ban on arak but are now quiet like a mouse.
+
+Now, checking the definitions. True includes content that mentions illegal, RX, or OTC drugs in the context of abuse or misuse, uses slang, or encourages misuse. False includes medical, educational, or preventative contexts.
+
+The content here is talking about a political party's stance on arak, which is a controlled substance. However, the user is not discussing the misuse or abuse of arak. Instead, they're commenting on the political party's change in position. The mention of arak is in the context of a political debate, not about its abuse or promotion. There's no indication of encouraging or glorifying drug use. The terms used are about political actions, not drug-related abuse. Therefore, this doesn't fit the True category. It's more about political discourse rather than drug misuse. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses political discourse around arak (a controlled substance) and PAS's stance, not promoting or glorifying drug abuse or misuse."
+}

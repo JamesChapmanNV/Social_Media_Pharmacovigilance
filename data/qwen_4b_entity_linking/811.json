@@ -1,0 +1,30 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index terms, and return a JSON array.
+
+First, I'll read the post carefully: "Mix the codeine with the sprite and i pop me a xan bitch, i'm getting to the money i ain't changing my plan." 
+
+Looking at the first part, "codeine" is explicitly mentioned. According to the index terms, codeine is listed under "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". So "codeine" directly maps to "Codeine".
+
+Next, "xan" is used. The index terms include "Bromazolam" as a designer benzodiazepine sold illicitly, also known as "Fake Xanax". However, "xan" could be a slang for Xanax (alprazolam), but in the index terms, "Xanax" is not listed. However, "Bromazolam" is listed as a designer benzodiazepine that's a fake Xanax. Since "xan" is a slang for Xanax, but the index term for Xanax isn't present, but "Bromazolam" is a related term. Wait, looking back at the index terms, "Bromazolam" is listed as a designer benzodiazepine sold illicitly that mimics alprazolam (Xanax). So "xan" here is likely referring to Xanax, but since Xanax isn't in the index terms, but "Bromazolam" is a similar drug, but the user's example 3 shows "xans" is "other". Wait, in example 3, "xans" was "other" because it's not in the list. But in the index terms, "Bromazolam" is listed as a designer benzodiazepine that's a fake Xanax. So "xan" could be a slang for Bromazolam, which is in the list. But the index term for Bromazolam is "Bromazolam", so if "xan" is a slang for Bromazolam, then "xan" would map to "Bromazolam". But the example 3 had "xans" as "other" because it's not in the list. However, in the index terms, "Bromazolam" is listed, so maybe "xan" is a slang for Bromazolam. Alternatively, maybe "xan" is a slang for Xanax, which isn't in the index terms, so it would be "other". But the example 3 says "xans" is "other", so perhaps any mention of Xanax or similar terms not in the list is "other". 
+
+Wait, looking at the index terms, "Bromazolam" is listed as a designer benzodiazepine sold illicitly that mimics Xanax. So if "xan" is a slang for Bromazolam, then "xan" would map to "Bromazolam". But if "xan" is a slang for Xanax, which is not in the index terms, then it's "other". But the example 3 had "xans" as "other", so maybe any term that's a slang for Xanax (like "xan") is considered "other" unless it's explicitly listed. However, in the index terms, "Bromazolam" is listed as a fake Xanax. So maybe "xan" is a slang for Bromazolam. But the problem is that the user's example 3 had "xans" as "other", which suggests that if the term isn't in the list, it's "other". 
+
+Alternatively, maybe "xan" is a slang for Xanax, which isn't in the index terms, so it's "other". Therefore, in this case, "xan" would map to "other". 
+
+So the post has "codeine" and "xan". "Codeine" is directly in the index term. "Xan" is not in the list, so "other". Therefore, the JSON would be two entries: one for codeine and one for other. 
+
+Wait, but the example 2 had "addy" which is slang for amphetamine, and it was mapped to "Amphetamine". So "xan" is similar to "addy" in that it's a slang term. But in the index terms, "Bromazolam" is listed as a designer benzodiazepine that's a fake Xanax. So "xan" could be a slang for Bromazolam. But the index term for Bromazolam is "Bromazolam". However, the user's example 3 had "xans" as "other", so perhaps if the term is not explicitly listed, even if it's a slang for a drug in the list, it's considered "other". 
+
+Alternatively, maybe "xan" is a slang for Xanax (alprazolam), which is not in the index terms. Therefore, "xan" is "other". 
+
+So the answer would be two entries: codeine and other. 
+
+Wait, but looking at the index terms, "Bromazolam" is listed as a designer benzodiazepine sold illicitly that mimics the sedative effects of alprazolam (Xanax). So if "xan" is a slang for Bromazolam, then "xan" would map to "Bromazolam". But the user's example 3 had "xans" as "other", so maybe the system is looking for exact matches. Since "xan" is not an exact match for any index term, even if it's a slang for a drug in the list, it's considered "other". 
+
+Therefore, the correct mapping is "codeine" and "other" for "xan".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "xan"}
+]

@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "codeine crazy is one of my favorite future songs 🙌🏽". I need to detect any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The word "codeine" is explicitly listed in the index terms under Codeine. The phrase "crazy" might be a slang term, but I need to check if it's associated with a drug. However, in the given index terms, "crazy" isn't listed. The example given in the problem statement includes "lean" and "codeine" as matches. 
+
+Wait, the user's post has "codeine" and "crazy". The index terms include Codeine, so "codeine" is a direct match. But "crazy" isn't listed in the index terms. However, the example in the problem shows that "codeine" is matched even if there's a slang term. But in this case, "crazy" isn't a drug term. Let me check the index terms again. 
+
+Looking at the list, "crazy" isn't mentioned. The only drug-related terms are the ones listed. So "codeine" is a direct match. The word "crazy" might be a slang term for something else, but since it's not in the index terms, it should be marked as "other". 
+
+Wait, but the user's example 3 has "xans" which is not in the list, so it's "other". Similarly, in example 4, "snow" is "other". So in this case, "codeine" is a direct match, and "crazy" isn't a drug term. So the correct matches would be "codeine" and "crazy" as "other". But wait, the user's example 1 has "lean" and "codeine" both mapped to Codeine. So in this case, the phrase "codeine crazy" would have "codeine" as a match, and "crazy" as "other". 
+
+But wait, is "crazy" a slang for a drug? Let me think. In some contexts, "crazy" might be slang for a drug, but according to the index terms provided, there's no entry for "crazy". So the correct approach is to check each word against the index terms. 
+
+So "codeine" is a direct match. "Crazy" is not in the index terms, so it's "other". Therefore, the JSON array should have one entry for "codeine" and another for "crazy" as "other".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "crazy"}
+]

@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post that's pretty visual with hearts and a mention of "heroin" in the middle. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look through the post for any words or phrases that could refer to illicit drugs. The post has a lot of hearts arranged in a pattern, but the key part here is the word "heroin" clearly stated. Checking the index terms list, heroin is listed as "Morphine (MS Contin, Miss Emma, Morph)" but wait, the index term for heroin is actually under Morphine? Let me check again. Wait, looking at the index terms, Morphine is listed as the prototypical opioid, and heroin is a separate entry? Wait no, in the index terms list, Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph)" and then there's a separate entry for "Heroin (MS Contin, Miss Emma, Morph)"? Wait no, looking back, the index terms list includes "Morphine (MS Contin, Miss Emma, Morph)" and then "Heroin" isn't explicitly listed. Wait, actually, in the index terms provided, the entry for Morphine is listed, but heroin isn't directly listed. Wait, let me check again.
+
+Looking at the list: The index terms include "Morphine (MS Contin, Miss Emma, Morph)" and then "Heroin" isn't directly listed. Wait, but in the example given, "Codeine" has aliases like "Lean", "Purple Drank", etc. So maybe "Heroin" is not in the index terms. Wait, but in the index terms list, the entry for Morphine is there, but heroin is not. However, the user's task says to link to the index terms. So if "heroin" is not in the list, then it should be "other". Wait, but wait, looking at the index terms again, is there an entry for heroin? Let me check again.
+
+Looking through the list: The index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Heroin" is not listed as a separate index term. Wait, but in the example given in the problem statement, the first example has "lean" and "codeine" both linked to Codeine. So if the post mentions "heroin", but there's no index term for heroin, then it would be "other". But wait, in the index terms list, is there an entry for heroin? Let me check again.
+
+Looking at the index terms list again: The entry for "Morphine" is there. Then, looking for "Heroin", I don't see it. So "Heroin" is not in the index terms. Therefore, if the post mentions "heroin", it should be categorized as "other". However, the user's instruction says to check if the drug is in the list. Since "Heroin" isn't in the list, it's "other". But wait, the index terms list includes "Heroin" as a separate entry? Wait, no. Wait, the index terms list includes "Morphine" but not "Heroin". So the correct index term for "heroin" would be "other".
+
+But wait, the user's example 1 has "lean" and "codeine" both linked to Codeine. So if "heroin" is not in the index terms, then it's "other". Therefore, in this case, the post has the word "heroin", which is not in the index terms list, so it should be "other". Therefore, the matched phrase is "heroin" with index term "other".
+
+So the output should be a JSON array with one object: {"index_term": "other", "matched_phrase": "heroin"}.
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Love 3 am migraines. They are the best. Never wanted to get sick from pain before, which is nice. Codeine is awesome though." I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll break down the content. The person is talking about migraines and mentions codeine. Codeine is an opioid, which is a controlled substance. The tone here seems positive about migraines and codeine. They say "they are the best" and "codeine is awesome," which sounds like they're endorsing its use. 
+
+Looking at the definitions, True includes mentions of illegal or OTC drugs in the context of abuse or misuse. The user is using codeine in a way that's promoting it as good, which could be seen as encouraging misuse. Also, the mention of codeine in a positive light without any context of medical use might fall under slang or euphemisms. 
+
+The example given in the task mentions that if someone says "hooked" on a drug, that's a sign. Here, the person is praising codeine, which is a drug. Even though they mention migraines, the context is about using codeine for pain, which could be considered misuse if it's not prescribed. 
+
+The other example had a pharmacology lecture, which is educational, so that's False. But here, there's no educational context. The user is expressing a positive opinion about codeine, which is a drug. So this would be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content promotes codeine as 'awesome' in the context of migraines, implying recreational or non-medical use with a positive tone."
+}

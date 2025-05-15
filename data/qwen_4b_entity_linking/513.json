@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I need to look at the provided post. The post mentions "#cannabiscommunity #marijuana #cannabis" and talks about a court ruling to revoke marijuana ballot initiatives in Lamar. The main content is about legal recreational marijuana sales. 
+
+Now, I need to check if any of the terms in the post are illicit drugs or substances. The hashtags are #cannabis and #marijuana, which are explicitly mentioned in the Index Terms under "Marijuana (Cannabis, Weed, Pot) – The most widely used illicit drug, containing psychoactive cannabinoids THC only." 
+
+But wait, the post is about legal recreational use. However, the task is to detect any references to illicit drugs. The term "marijuana" is listed as an Index Term, so even if it's in a legal context, it's still considered an illicit drug here. The user's instruction says to include illegal, RX, OTC, or recreational drugs if they are using, buying, promoting, etc. So even if it's legal, the term itself is part of the Index Terms.
+
+So, the phrases "marijuana" and "cannabis" are both in the Index Terms under "Marijuana". The post uses both terms. Therefore, each occurrence should be matched to the "Marijuana" index term.
+
+I need to make sure there are no other terms. The rest of the post is about a court ruling and legal initiatives, so no other drug references. The hashtags are part of the content, so they should be included. 
+
+So the JSON array should have two entries: one for "marijuana" and one for "cannabis", both mapped to the "Marijuana" index term. Let me double-check the Index Terms. Yes, "Marijuana" is listed as an Index Term. The other terms like "Cannabidiol (CBD)" are different, but the post is about cannabis in general, not CBD specifically. 
+
+Therefore, the correct matches are "marijuana" and "cannabis" under the "Marijuana" index term.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

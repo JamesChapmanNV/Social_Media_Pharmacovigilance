@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about a case involving heroin smuggling. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The key part here is where it mentions "smuggling 42g of heroin". The word "heroin" is explicitly mentioned. Looking at the index terms, there's an entry for Morphine, which includes aliases like "MS Contin, Miss Emma, Morph". However, the index term for heroin isn't listed directly. Wait, checking the list again: the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin specifically. The other entries for opioids like Codeine, Fentanyl, etc., but heroin isn't directly listed. 
+
+Wait, the index term for Morphine includes "Morph" as an alias. But heroin is a separate substance. However, in the list, the only opioid-related terms are Morphine, Codeine, Fentanyl, etc. Since heroin isn't listed as an index term, I should check if there's a possible synonym or if it's considered under another term. But according to the provided index terms, "heroin" isn't directly listed. The closest might be Morphine, but that's not accurate. Alternatively, maybe "other" is the correct category here because heroin isn't in the list. 
+
+Wait, looking again: the index term for Morphine includes "Morph" as an alias, but heroin is a different drug. The index terms don't have a specific entry for heroin. Therefore, the correct index term would be "other" since heroin isn't listed. But wait, the user's example 4 shows that if the drug isn't on the list, use "other". So in this case, "heroin" isn't in the index terms, so the index_term should be "other". 
+
+So the matched_phrase is "heroin", and the index_term is "other". Are there any other drug references? The post mentions "drug lords", which is a general term, not a specific drug. So the only detected phrase is "heroin", which maps to "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is: "Gossiping with qai is literally my daily dose of morphine." First, I need to determine if this is illicit or abuse-related. The key terms here are "daily dose of morphine." Morphine is a controlled substance, typically used medically but also associated with abuse. The phrase "daily dose" suggests regular use, which could indicate misuse. Also, the context is gossiping with someone named Qai, but the mention of morphine in a daily dosage might imply that the person is using it recreationally. The tone here seems to be casual, maybe even glorifying the use. Since morphine is an illegal drug in many contexts when used without a prescription, and the mention of it in a daily dose without any medical context points towards abuse. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions'morphine' in the context of a 'daily dose,' implying recreational or habitual use without medical context, which signals abuse."
+}

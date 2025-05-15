@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Why you pouring all that codeine in that Sprite, Why ❓". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse.
+
+The content mentions "codeine", which is an OTC drug but also a controlled substance. The phrase "pouring all that codeine in that Sprite" sounds like someone is talking about adding codeine to a drink, which could be a way of misuse. The use of "why you" and the question mark might indicate a rhetorical question, possibly mocking or commenting on someone's behavior. 
+
+Is there a context of abuse or promotion? The sentence seems to be questioning why someone would add codeine to Sprite, which could imply that the person is doing something harmful or illegal. The use of codeine in a non-medical context, like mixing it into a drink, is a sign of misuse. 
+
+The example given in the first example mentions "lean" and "codeine" with an approving tone. Here, the tone is questioning, but the mention of codeine in a way that suggests it's being used in an inappropriate or harmful manner. So, this would fall under the True category because it's discussing the misuse of codeine. 
+
+I should make sure there's no educational or medical context here. The content isn't discussing treatment or education, but rather the act of adding codeine to a drink, which is a form of abuse. So the label should be True with an explanation about the misuse of codeine.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a context implying its misuse (adding to a drink), suggesting recreational or harmful use."
+}

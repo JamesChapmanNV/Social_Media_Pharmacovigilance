@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The content is: "My friend doesn't crack his back neck fingers he only cracks his Feet. Disgusting." Hmm, first, I need to check if there's any mention of drugs or drug-related terms. The words here are "crack," "back neck fingers," "feet," and "disgusting." 
+
+Wait, "crack" can be a slang term for crack cocaine, right? But the user is talking about cracking their fingers or feet, which is a physical action. The context here is about someone's habit of cracking their fingers or feet, and the speaker finds it disgusting. There's no mention of drugs, illegal substances, or anything related to drug use. The term "crack" here is more likely referring to the physical action of cracking joints, not the drug. The user is expressing a negative opinion about the friend's behavior, but there's no indication of drug abuse or promotion. 
+
+So according to the definitions, True would be if there's mention of illegal drugs in abuse context, slang, or encouragement. Here, there's no drug-related content. The explanation is about a physical action, not drug use. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a physical action (cracking joints) and expresses distaste for it, with no mention of drugs, drug abuse, or related terminology."
+}

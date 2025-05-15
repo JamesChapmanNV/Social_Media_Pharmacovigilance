@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Cephalon getting FDA approval for FENTORA and ACTIQ with a risk evaluation and mitigation strategy for drug abuse. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look for any mentions of drugs, slang, or terms that could refer to illicit substances. The post mentions "FENTORA" and "ACTIQ". Checking the index terms, I see that "Fentanyl" is listed with several synonyms like China White, Apache, Duragesic. FENTORA and ACTIQ are brand names for fentanyl products. So "FENTORA" and "ACTIQ" would map to "Fentanyl" as the index term.
+
+Next, the phrase "signs of drug abuse" is mentioned. But "drug abuse" is a general term and not a specific substance. Since the index terms don't include a general term for abuse, I should check if "drug abuse" is considered here. However, the task specifies to look for specific drugs or substances. Since "drug abuse" isn't a specific substance, it's probably not included. The example 3 shows "xans" is "other" because it's not a specific term. So "signs of drug abuse" would be "other" as it's not a specific drug or substance.
+
+So the only matches are "FENTORA" and "ACTIQ" linked to Fentanyl. The rest is general terms, so they are marked as "other". Wait, but the post is about the approval and risk evaluation. The actual drugs in the post are FENTORA and ACTIQ, which are fentanyl products. So those two should be matched to Fentanyl. The rest of the text doesn't mention any other drugs. So the JSON should have two entries for FENTORA and ACTIQ.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "FENTORA"},
+  {"index_term": "Fentanyl", "matched_phrase": "ACTIQ"}
+]

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully. The post mentions "Southwestern Oregon" and "Northern California Emerald Triangle." The Emerald Triangle is known for cannabis cultivation, so "cannabis" is a key term here. The user also mentions "cannabis devastation of resources" in the Amazon, but the main focus is on the Emerald Triangle. 
+
+Looking at the Index Terms, "Marijuana (Cannabis, Weed, Pot)" is listed. The phrase "cannabis" directly matches this index term. The other parts of the post talk about the Amazon, but "snow" and "white lines" in example 4 were marked as "other," but in this case, the post doesn't mention any drugs outside of cannabis. The mention of "cannabis" is the only drug-related term here. 
+
+I need to check if there are any other phrases. The post doesn't use slang or other terms like "lean," "codeine," or any other listed drugs. The rest is about locations and hypothetical scenarios, which don't relate to illicit drugs. 
+
+So the only matched phrase is "cannabis," which maps to the index term "Marijuana (Cannabis, Weed, Pot)." The rest of the post doesn't contain any other drug references. Therefore, the JSON array should have one entry with "Marijuana" and "cannabis."
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

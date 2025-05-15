@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is: "Im on ocean drive sippin codeine with the top down 20 grand on me lot of jewelry and a glock 9." 
+
+First, I need to check if this mentions illegal or abused drugs. The user is talking about "codeine," which is a controlled substance. The context here is someone being on codeine, which could imply misuse. The phrase "sippin codeine" suggests consumption, and the mention of having a lot of money and jewelry might indicate a lifestyle associated with drug use. The location "ocean drive" might be a reference to a specific area, but the key part is the codeine use.
+
+The example given in the prompt includes "lean" and "codeine" as illicit, so this fits. The tone seems to be describing a scenario that's promoting or glorifying the use of codeine, possibly in a way that's not medical. The presence of a glock 9 and 20 grand might add to the context of a person with a certain lifestyle, but the main point is the codeine use. 
+
+Since codeine is an opioid and can be abused, and the context here is about being on it, this would be classified as True. The explanation should mention the mention of codeine and the context of use, possibly implying abuse or misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a context that implies recreational use and a lifestyle associated with drug abuse."
+}

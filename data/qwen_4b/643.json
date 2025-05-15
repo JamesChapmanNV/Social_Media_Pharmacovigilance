@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this content classification. The user provided a sample content and wants me to determine if it's illicit/abusive-drug-related.
+
+First, I need to read the content carefully. The lines are: "Last name Savage bitch, but no I'm not Randy. Hit her with no condom, had to make her eat a plan B. And I'm sippin' on that Codeine, not Brandy."
+
+Looking at the keywords here. "Codeine" is a drug, specifically an opioid. The context is someone using codeine, which is a controlled substance. The mention of "plan B" refers to emergency contraception, but that's not directly related. However, the key part is "sippin' on that Codeine," which suggests consumption of the drug. 
+
+Now, checking the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse or misuse. Here, codeine is an opioid, which is a controlled substance. The usage here is in a way that implies recreational or possibly abusive use. The other parts about condom and Plan B might be unrelated, but the codeine part is the main focus.
+
+Is there any context that would make this not illicit? The user is talking about personal actions, possibly in a colloquial or slang way. "Sippin'" is a slang term for drinking, so "sippin' on codeine" could be a euphemism for using it. Also, the mention of codeine without any medical context suggests misuse. 
+
+The example given in the prompt includes "codeine" and "lean" as indicating abuse. Here, codeine is directly mentioned in a context that implies use. So according to the definitions, this should be classified as True. The explanation should mention the mention of codeine and the context of use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'Codeine' in a context implying recreational use ('sippin' on that Codeine'), which aligns with illicit/abusive-drug-related criteria."
+}

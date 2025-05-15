@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post about fentanyl lollipops (Actiq) and their effect on tooth decay. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs or substances. The post mentions "fentanyl lollipop (Actiq)". Fentanyl is listed in the index terms as a synthetic opioid, so "fentanyl" would map to that. The term "Actiq" is a brand name for a fentanyl product, but since it's a specific product, I need to check if it's in the list. Looking at the index terms, "Fentanyl" is listed with synonyms like China White, Apache, Duragesic. Actiq isn't explicitly listed, but since it's a form of fentanyl, it should still be under the Fentanyl index term. 
+
+Next, the post also mentions "common drug for cancer patients". While "common drug" is general, the context here is fentanyl, which is a prescribed drug. However, the index terms include "Fentanyl" as a synthetic opioid, so even if it's prescribed, it's still a drug reference. The mention of "severe tooth decay due to high sugar content" is a side effect, but not a drug reference. The rest of the sentence talks about monitoring, which is unrelated.
+
+So the only detected phrase here is "fentanyl lollipop (Actiq)". The "lollipop" is a form of administration, but the drug itself is fentanyl. The brand name Actiq isn't in the index terms, but since it's a product of fentanyl, it should be linked to Fentanyl. Therefore, the matched phrase is "fentanyl lollipop (Actiq)" and the index term is Fentanyl. 
+
+I need to make sure there are no other phrases. The word "drug" is used, but it's not a specific substance. The rest is about side effects and monitoring. So the only entry should be Fentanyl linked to the phrase mentioned.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl lollipop (Actiq)"}
+]

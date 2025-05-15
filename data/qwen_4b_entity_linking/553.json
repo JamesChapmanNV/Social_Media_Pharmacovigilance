@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index terms, and return a JSON array.
+
+First, I'll look at the post: "now kiles create a new project, And in 1 years win the final championship Valorant AGAIN Crack absoluto #yoestoyconkiles". 
+
+Breaking it down, the main parts are "Crack absoluto" and "Valorant". The hashtag #yoestoyconkiles is probably just a social media tag and not related. 
+
+Now, checking the index terms. "Crack" is a slang term for cocaine, but looking at the list, cocaine is listed as "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. However, the index term for cocaine itself isn't directly listed. Wait, the index terms include "Codeine" with synonyms like "lean" and "purple drank", but "crack" isn't listed. However, in the example 4, "snow" was marked as "other" even though it's not a drug. So if "crack" isn't in the index terms, it should be "other". 
+
+But wait, the index terms list "Benzoylecgonine" as the metabolite of cocaine. However, the term "crack" is a slang for cocaine. Since the index terms don't have a direct entry for "crack", but "cocaine" is not listed either. Wait, looking back, the index terms do not include "cocaine" as an entry. The only entry related to cocaine is Benzoylecgonine, which is the metabolite. So "crack" is a slang for cocaine, but since the index terms don't have "cocaine" as an index term, it should be marked as "other". 
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" even though they aren't drugs. So "crack" here is a drug, but since it's not in the index terms, it's "other". 
+
+So the only detected phrase here is "Crack absoluto". "Crack" is a slang for cocaine, but since the index terms don't have a specific entry for cocaine, it's "other". 
+
+Therefore, the JSON should have one entry with index_term "other" and matched_phrase "Crack".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "Crack"}
+]

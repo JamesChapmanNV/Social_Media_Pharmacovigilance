@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "baby i can't quit that lean put a ring around codeine 💍". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False).
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse.
+
+Looking at the content: "lean" is a slang term for crack cocaine, which is illegal. "Codeine" is an opioid, often used in medications but also a controlled substance. The phrase "can't quit that lean" suggests addiction or ongoing use, which is a sign of abuse. "Put a ring around codeine" is a euphemism or slang for using the drug. The tone seems supportive and approving, which could be glorifying the use.
+
+The example given in the prompt where "lean" and "codeine" were mentioned with a supportive tone was classified as True. This content is similar. The use of "can't quit" indicates dependency, and the mention of codeine in a casual, possibly euphemistic way points to abuse. There's no educational or medical context here. So, this should be labeled True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'lean' (crack cocaine) and 'codeine' in a context implying addiction and dependency, with a tone of approval and struggle with substance use."
+}

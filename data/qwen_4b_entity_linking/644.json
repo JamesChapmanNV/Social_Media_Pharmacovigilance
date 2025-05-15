@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I'll read the post carefully: "Birds in the trap sing Brian McKnight. Percocet & codeine please don't take my life 🙏🏻". 
+
+Looking at the first part, "Birds in the trap sing Brian McKnight." That seems like a lyric reference, maybe a song title or a metaphor. But I don't see any drug references here. The second part is "Percocet & codeine please don't take my life 🙏🏻". 
+
+Now, checking the index terms. "Percocet" is a brand name for oxycodone, which is a semi-synthetic opioid. The index term for oxycodone is "Oxycodone (OxyContin, Percocet, Hillbilly Heroin)". So "Percocet" would map to "Oxycodone".
+
+Then "codeine" is explicitly listed in the index terms under "Codeine (Lean, Purple Drank, Schoolboy)". So "codeine" directly maps to "Codeine".
+
+Are there any other phrases? The rest of the post is a plea, not a drug reference. The emojis don't count. So the matched phrases are "Percocet" and "codeine".
+
+Now, checking if there are any other possible terms. "Percocet" is a specific drug, so it's covered. "Codeine" is also covered. The rest of the text doesn't mention any other drugs. 
+
+So the JSON array should have two entries: one for "Oxycodone" with "Percocet" and another for "Codeine" with "codeine".
+</think>
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "Percocet"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

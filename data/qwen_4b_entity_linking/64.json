@@ -1,0 +1,26 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I need to look at the provided post: "Excited delirium is normally caused by stimulants like methamphetamine. The officers didn't know he had taken meth and fentanyl. When taken together, methamphetamine masks the symptom of fentanyl overdose. If they treated him for excited delirium, as per protocol, he'd die."
+
+I'll start by breaking down the post sentence by sentence. The first part mentions "methamphetamine," which is listed in the index terms under "Methamphetamine (Crystal Meth, Ice, Desoxyn)" as a powerful stimulant with high addiction potential. So "methamphetamine" directly maps to that index term.
+
+Next, the post says "he had taken meth and fentanyl." Here, "meth" is a slang term for methamphetamine, so that's another instance of "Methamphetamine." Then "fentanyl" is explicitly mentioned. Looking at the index terms, fentanyl is listed under "Fentanyl (China White, Apache, Duragesic)" as a synthetic opioid 50–100 times stronger than morphine. So "fentanyl" maps to that term.
+
+Now, checking if there are any other terms. The rest of the post talks about excited delirium, which is a condition caused by stimulants, but the terms "excited delirium" themselves aren't listed as drugs. The mention of "methamphetamine masks the symptom of fentanyl overdose" doesn't introduce new terms. So the only drug references here are methamphetamine and fentanyl.
+
+I need to make sure there's no other slang or euphemism. Words like "meth" and "fentanyl" are direct matches. The index terms for methamphetamine include "Crystal Meth," "Ice," "Desoxyn," but the post uses "meth," which is a slang term. However, the index term is "Methamphetamine," so even though "meth" is a slang, the index term is the full name. Wait, looking back at the index terms, the entry for Methamphetamine includes "Crystal Meth, Ice, Desoxyn" as examples. So "meth" is a slang, but the index term is "Methamphetamine." So in the JSON, the matched_phrase would be "meth" and the index_term is "Methamphetamine."
+
+Wait, but in the example given in the problem statement, "lean" is mapped to "Codeine," which is the index term. So even if the slang is used, the index term is the actual drug name. So in this case, "meth" is a slang for methamphetamine, so the index term is "Methamphetamine."
+
+Similarly, "fentanyl" is directly listed as an index term, so that's straightforward.
+
+So the two matches would be "meth" under Methamphetamine and "fentanyl" under Fentanyl.
+
+I need to check if there are any other terms. The post doesn't mention any other drugs. The rest is about the medical condition and how the drugs interact, but no other drug names. So the final JSON should have two entries: one for meth and one for fentanyl.
+</think>
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]

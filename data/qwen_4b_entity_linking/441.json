@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a post about the Narcotics Control Bureau seizing drugs, and I need to detect any drug-related references.
+
+First, I'll read through the post carefully. The post mentions "high-quality" heroin and "other suspected drugs." The index terms list includes heroin under "Morphine" as the prototypical opioid. So "heroin" should map to "Morphine." Then there's "other suspected drugs," which isn't specific enough. Since the list doesn't have a general term for other drugs, I should use "other" for that phrase. The rest of the post doesn't have any other drug references. So the JSON array should have two entries: one for "heroin" as Morphine and "other suspected drugs" as other.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "other suspected drugs"}
+]

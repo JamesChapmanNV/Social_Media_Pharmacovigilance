@@ -1,0 +1,24 @@
+<think>
+Okay, let's see. The user provided a content example: "#NowPlaying Angel Of Small Death & The Codeine Scene by Hozier ♫". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, or promoting. Also, slang or euphemisms related to recreational use. False includes medical, educational, or preventative contexts.
+
+The content here is a social media post with a hashtag about a song titled "Angel Of Small Death & The Codeine Scene" by Hozier. The song title includes "Codeine". Now, codeine is an opioid, which is a controlled substance. But the context here is a song title. The user is sharing that they're now playing this song. 
+
+I need to determine if this is promoting drug use. The song title might reference codeine, but the actual content of the song isn't described here. However, the hashtag is just indicating the song is being played. The mention of codeine in the song title could be part of the music's theme, but without more context, it's hard to say. However, the user's task is to look for indicators in the content itself. 
+
+The example given in the problem shows that mentioning codeine in a song title could be considered if it's in a context that implies abuse or promotion. But in this case, the content is just a social media post about playing the song. The use of codeine in the song title might be part of the music's subject matter, but unless the content is explicitly promoting or glorifying drug use, it might not be classified as illicit. 
+
+However, the song title includes "Codeine Scene", which could be a reference to the drug. But the user's task is to check if the content itself is related to drug abuse. Since the content is just a hashtag indicating the song is being played, and there's no explicit mention of abuse, promotion, or misuse, it might fall under False. 
+
+But wait, the example given in the problem had "lean" and "codeine" in the content and was classified as True. However, that example's explanation was about the context of being hooked. In this case, the content is just a song title. So maybe the presence of codeine in the song title is enough to trigger the True classification. But the song title is part of the music, which might not be considered as promoting drug use unless the content is explicitly about that. 
+
+Alternatively, the user is using a hashtag to share the song, which could be seen as referencing the drug. But the key is whether the content is promoting or glorifying drug use. Since the content is just a social media post about playing the song, not discussing the drug's use, it might be considered as NOT ILLICIT. 
+
+So the answer would be False, because it's just mentioning a song title with codeine, not promoting or glorifying drug abuse. The explanation would be that the content mentions a song title with codeine, but it's in a musical context, not promoting or glorifying drug abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a song title containing 'codeine' in a musical context, not promoting or glorifying drug abuse."
+}

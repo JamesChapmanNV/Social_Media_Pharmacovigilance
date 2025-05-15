@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The content is a quote from Jigga (Justin Timberlake) about fame being the worst drug, stronger than heroin. The user wants to classify if this is illicit/abusive drug-related.
+
+First, I need to check if the content mentions illegal drugs or promotes their use. The quote compares fame to a drug, specifically heroin, which is illegal. But the context here is metaphorical. The speaker is using "drug" as a metaphor for fame's addictive nature, not promoting actual drug use. 
+
+The definition says True if it's about abuse, misuse, or promoting drugs. Here, the mention of heroin is part of a metaphor, not promoting its use. The tone is about the negative effects of fame, not encouraging or glorifying drug misuse. So it's not directly about illicit drugs. The explanation should note the metaphorical use and lack of promotion. Therefore, the label is False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content uses 'drug' metaphorically to describe the addictive nature of fame, not promoting or glorifying illicit drug use."
+}

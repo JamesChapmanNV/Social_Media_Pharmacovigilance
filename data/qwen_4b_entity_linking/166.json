@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Currently Playing: Venus Blake - Chocolate Morphine, at Lonely Oak radio". I need to detect any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs or substances. The song title is "Chocolate Morphine". "Morphine" is a classic opioid, and it's listed in the index terms under "Morphine". The term "Chocolate Morphine" is a slang or a creative name for a song, but the word "morphine" itself is a direct reference. 
+
+Next, I check if "morphine" is in the index terms. Yes, it's listed as "Morphine (MS Contin, Miss Emma, Morph)". So the matched phrase here is "morphine", and the index term is "Morphine". 
+
+I should make sure there are no other phrases. The rest of the post is about the radio station and the song title, but "Chocolate" here is just part of the song title and not a drug reference. "Venus Blake" and "Lonely Oak radio" are likely just names and not related to drugs. 
+
+So the only match is "morphine" under the Morphine index term. No other terms are present. The answer should be a JSON array with one object containing "index_term" as "Morphine" and "matched_phrase" as "morphine".
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

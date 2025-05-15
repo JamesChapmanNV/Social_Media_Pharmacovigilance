@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "Hehehee, I know what you experiencing 🤣😂 been there myself."
+
+First, I need to check if there's any mention of drugs, illegal substances, or any context related to abuse. The message is pretty light-hearted, using emojis and a casual tone. Words like "experiencing" and "been there" are general phrases that could relate to various situations, but there's no explicit mention of drugs or any slang related to drug use. 
+
+The example provided in the task shows that if there's a mention of codeine or lean, it's considered illicit. But here, there's no such reference. The user might be referring to a general experience, maybe something like a stressful situation or a personal problem, but not related to drugs. 
+
+Since there's no indication of drug abuse, promotion, or misuse, and the context is too vague to infer any drug-related content, the classification should be False. The explanation needs to highlight the lack of specific drug terms or context that would indicate abuse or illegal activity.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content uses casual, non-specific language without mentioning drugs, slang, or contexts related to drug abuse or misuse."
+}

@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post about traveling to various cities and mentioning Cannabis and hash. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look for any slang, euphemisms, or synonyms for illicit drugs. The post mentions "Cannabis" and "hash". Checking the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "Cannabis" would map to that index term. Then "hash" is a form of cannabis, so that should also be under "Marijuana". 
+
+Wait, the example in the problem statement had "hash" in a different context, but in the index terms, "Marijuana" includes Cannabis, so hash is a derivative. The user's post says "locally grown Cannabis" and "hash between the Nepalese in Amsterdam". Since hash is a form of cannabis, it's covered under the Marijuana index term. 
+
+Are there any other terms? The post doesn't mention any other drugs. The rest is about travel and locations. So the only matches are "Cannabis" and "hash". Both should be linked to "Marijuana". 
+
+But wait, the index term for Marijuana is "Marijuana (Cannabis, Weed, Pot)", so "Cannabis" is directly listed. "Hash" is a type of cannabis product, so it's also under the same index term. Therefore, both phrases should be mapped to "Marijuana". 
+
+I need to make sure there's no other drug mentioned. The post doesn't mention any other substances. So the JSON array should have two entries: one for "Cannabis" and one for "hash", both under the "Marijuana" index term.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "hash"}
+]

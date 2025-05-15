@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this content classification. The user provided a snippet of text that needs to be checked for illicit or abusive drug-related content.
+
+First, I'll read through the content carefully. The lines are: "Snake start hissing", "Heads go missing", "Rest in piss to the ones I'm killing", "Chief Keef drilling", "Codeine spilling...". 
+
+Looking at the phrases, "Snake start hissing" might be a reference to a drug-related slang. "Snake" could be a term used in drug circles, maybe referring to a drug dealer or a type of drug. "Hissing" might be a metaphor for something illegal or harmful.
+
+Next, "Heads go missing" – this could be a euphemism for something related to drug use, like losing control or something more sinister. "Rest in piss" is a bit unclear, but "piss" might be slang for something like "piss" as in a drug, or it could be a reference to a drug-related event. 
+
+"Chief Keef drilling" – "Keef" is a slang term for cannabis, so "Chief Keef" might be a reference to a drug. "Drilling" could be a term used in the context of drug dealing or processing. 
+
+"Codeine spilling..." directly mentions codeine, which is an opioid and a controlled substance. The use of "spilling" here might imply misuse or abuse, like someone accidentally or intentionally using it in a harmful way. 
+
+Putting this all together, the content uses drug-related slang and mentions specific drugs like codeine. The context seems to be promoting or glorifying drug use, possibly in a violent or harmful way. The phrases like "Rest in piss" and "Heads go missing" could be references to drug-related violence or abuse. 
+
+Since the content includes direct mentions of codeine and uses slang that's associated with drug abuse, it fits under the ILLICIT/ABUSIVE-DRUG-RELATED category. The explanation should note the specific drug mentioned and the use of slang indicating abuse or misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and uses slang like 'Chief Keef drilling' and 'heads go missing' which reference drug abuse or violence associated with illicit drug use."
+}

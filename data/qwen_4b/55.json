@@ -1,0 +1,10 @@
+<think>
+Okay, let's see. The content is "Listen to - Kobe Codeine Ft. (Prod. by ) by Dirty Rose Music Group #np #SoundCloud". I need to determine if this is illicit/abusive-drug-related.
+
+First, the mention of "Codeine" is a drug, but the context here is a music track. The user is promoting a song, not discussing its use or abuse. The hashtag #np might mean "no preview" or something else, but the main point is the song title. Codeine is a controlled substance, but the content is just referencing a song title. There's no indication of promoting misuse, abuse, or illegal use. It's more about sharing a music track. So according to the definitions, if it's in a medical, educational, or preventative context, it's false. Since this is a music track, it's unrelated. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a music track titled 'Kobe Codeine' but does not indicate drug abuse, promotion, or misuse; it is a cultural reference to a song title."
+}

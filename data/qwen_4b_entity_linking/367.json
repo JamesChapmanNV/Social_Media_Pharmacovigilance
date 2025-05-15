@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this. The user provided a post that's pretty intense, talking about law enforcement and drug overdoses. My job is to detect any drug-related references in the post and map them to the correct index terms.
+
+First, I'll read through the post carefully. The main points are about a Law Enforcement Criminal shooting and killing a civilian through a locked door, and then another incident where a criminal dies of a drug overdose, and the shooter is charged with murder. The user is upset about the lack of charges and improper procedure.
+
+Now, looking for any mentions of drugs. The second part of the post says "a criminal who dies of drug overdose." The word "drug" is there. But wait, the index terms list includes specific drugs. However, the term "drug" itself isn't listed as an index term. The index terms are specific substances like Codeine, Amphetamine, etc. So "drug" would fall under "other" because it's not a specific term in the list.
+
+Wait, but the user's example 3 had "xans" which wasn't in the list, so it was "other". Similarly, if the post mentions "drug" without specifying, it's "other". But in this case, the post says "drug overdose". The word "drug" is a general term, not a specific substance. So the matched phrase would be "drug", and the index term is "other".
+
+But wait, is there any other mention of drugs? Let me check again. The post doesn't use any slang or specific terms. It just mentions "drug overdose". So the only detected phrase is "drug", which maps to "other".
+
+So the JSON array should have one object: {"index_term": "other", "matched_phrase": "drug"}.
+
+I need to make sure there's no other term. The rest of the post talks about law enforcement, charges, media, etc., but no other drug references. So that's the only one.
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug"}]

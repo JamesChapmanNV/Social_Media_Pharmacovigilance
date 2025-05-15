@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I ain't feelin none of you niggas I'm on morphine 💅". I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "morphine". Checking the index terms, Morphine is listed as an index term. The phrase "I'm on morphine" directly refers to using morphine, which is a controlled substance. 
+
+Now, I need to check if there are any other terms. The rest of the sentence is "I ain't feelin none of you niggas", which doesn't seem to reference any drugs. The emoji 💅 might be a slang or a symbol, but it's not listed in the index terms. So, the only match here is "morphine".
+
+Looking at the index terms, Morphine is explicitly listed. So the matched phrase is "morphine" and the index term is "Morphine". There are no other terms in the post that match the list. Therefore, the JSON array should have one object with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

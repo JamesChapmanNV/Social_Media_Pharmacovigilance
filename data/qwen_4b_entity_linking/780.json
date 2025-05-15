@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Thank you David. Hopefully the morphine driver is doing its job 😔". I need to detect any drug references here.
+
+First, I'll go through the post word by word. The first part is "Thank you David." That doesn't seem to have any drug terms. Then "Hopefully the morphine driver is doing its job." 
+
+Now, "morphine" is definitely a drug. Looking at the index terms, Morphine is listed as an index term. The phrase "morphine driver" is a bit tricky. The term "driver" here might be a slang or a euphemism. But in the index terms, "Morphine" is listed, so "morphine" itself is a match. "Driver" isn't in the index terms, so it's probably not a drug reference. So the only match here is "morphine".
+
+Wait, the user's example had "lean" mapped to Codeine. So in this case, "morphine" would be the matched phrase, and the index term is Morphine. The "driver" part is just part of the phrase but not a drug term. So the correct JSON should have one entry: index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

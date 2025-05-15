@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "my brain has slept like 6 hours in the past 3 days and its telling me to kill people". 
+
+First, I need to check if there's any mention of drugs, either illegal, prescription, or over-the-counter. The words here are "brain", "slept", "hours", "kill people". There's no direct mention of drugs. But wait, maybe there's an indirect reference? Like, could "brain has slept" be a slang term for drug use? Hmm, not sure. 
+
+The user mentioned that True includes slang, euphemisms, or cultural references that signal recreational drug use or abuse. But in this case, the content seems more like a person describing their mental state. Maybe they're experiencing hallucinations or a mental health issue, but not necessarily drug-related. 
+
+The explanation needs to be a one-sentence reason. The key here is that there's no direct mention of drugs. The phrase "telling me to kill people" might be a symptom of a mental health condition, but not necessarily drug abuse. So, the classification would be False because there's no indication of drug misuse or promotion. The context is more about a person's mental state rather than drug-related content.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a mental health symptom (sleeping excessively and suicidal thoughts) without mentioning drugs, slang, or drug-related context."
+}

@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is in Hindi, so I need to parse that. The main points are about a raid where 50 kg of heroin was seized in Shaheen Bagh, and an arrest was made. The mention of heroin is a controlled substance, specifically an illegal drug. The context here is a law enforcement action, so it's about seizing drugs, not promoting or using them. The user is asking if this is illicit or not. Since the content is reporting on the seizure of heroin, which is illegal, but the context is about law enforcement, not abuse or promotion. The definition says True includes mentions of illegal drugs in abuse contexts. But here, it's just reporting the seizure, not discussing use or abuse. So it's more about the drug itself being illegal, but the content isn't promoting or encouraging misuse. Therefore, it's False because it's a news report on law enforcement action, not about abuse or promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content reports on the seizure of heroin by law enforcement, which is a factual statement about illegal drugs in a legal enforcement context, not promoting or discussing abuse."
+}

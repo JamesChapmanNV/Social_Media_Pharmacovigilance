@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content provided is a very emotional statement about an overdose, expressing regret and the irreversible consequences of drug use.
+
+First, I need to check if there's any mention of drugs in the context of abuse or misuse. The content talks about an overdose, which is a result of drug use. However, the key here is the context. The speaker is expressing the aftermath of a drug overdose, not promoting or encouraging its use. There's no mention of using drugs, buying them, or glorifying the behavior. The tone is regretful and cautionary, highlighting the irreversible effects. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. But in this case, the content is more about the consequences of drug use rather than promoting or encouraging it. The terms used are about the severity of the outcome, not the act of using drugs. There's no slang or euphemism here, just a heartfelt statement about the tragedy of an overdose. 
+
+Since the content is discussing the negative consequences of drug use without promoting or glorifying it, it falls under the False category. The explanation should note that the content is about the irreversible effects of drug overdose, not encouraging or promoting drug use.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses the irreversible consequences of a drug overdose, emphasizing regret and tragedy, not promoting or encouraging drug use."
+}

@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post provided is about watching an NBA game stream. The task is to detect any words or phrases that refer to illicit drugs, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "To watch NBA Game: Memphis Grizzlies vs Minnesota Timberwolves stream go to link in tweet below: Live NBA Streams Playoffs 2022 games #NBAPlayoffs #Grizzlies #RaisedByWolves CLICK ====v". 
+
+Looking at the text, the main content is about streaming an NBA game. The hashtags are #NBAPlayoffs, #Grizzlies, #RaisedByWolves. The user mentions a link to stream the game. There's no mention of any drugs or substances here. The words like "stream", "NBA", "Grizzlies", "Timberwolves" are related to sports and not drugs. 
+
+I need to check if any of the terms in the post could be slang or euphemisms for drugs. The example given in the problem had "lean" and "codeine" linked. But in this post, there's no such terms. The words like "CLICK" might be a typo or part of the link, but not a drug reference. The hashtags are related to the sports team, not drugs. 
+
+The index terms list includes drugs like codeine, amphetamine, benzodiazepines, etc. But none of the words in the post match any of those. The only possible thing is "CLICK" but that's not a drug. The user might have included some random words, but in this case, there's nothing related to drugs. 
+
+So, the answer should be an empty array because there are no drug references in the post. The example where "snow" was considered "other" because it's not a drug, but here, all the terms are related to sports and streaming. Therefore, no matches found. The JSON array should be empty.
+</think>
+
+[]

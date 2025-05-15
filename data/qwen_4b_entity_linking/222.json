@@ -1,0 +1,20 @@
+<think>
+Okay, let's see. The user provided a post: "Happy 420 Can't wait for cannabis to be legalized in Nigeria." I need to check for any drug-related references here.
+
+First, "420" is a well-known slang for cannabis, right? It's a reference to the day in 1968 when the Beatles' song "Tomorrow Never Knows" was released, which is associated with the cannabis culture. So "420" is a clear indicator of cannabis. 
+
+Next, the phrase "cannabis" is mentioned. Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is the index term for cannabis. So "cannabis" would map to that.
+
+Now, checking if there are any other terms. The post doesn't mention any other drugs or slang. The user is talking about legalization, but the actual drug reference is cannabis. 
+
+So the matched phrases are "420" and "cannabis". Both should be linked to the index term "Marijuana (Cannabis, Weed, Pot)". 
+
+Wait, but in the example, "snow" was considered "other" because it's not on the list. But "cannabis" is explicitly listed. So "cannabis" is correct. "420" is a slang term, but the index term for cannabis includes "Cannabis" as a synonym. So "420" would map to the same index term as "cannabis".
+
+So the JSON array should have two entries: one for "420" and one for "cannabis", both under the "Marijuana" index term.
+</think>
+
+[
+  {"index_term": "Marijuana (Cannabis, Weed, Pot)", "matched_phrase": "420"},
+  {"index_term": "Marijuana (Cannabis, Weed, Pot)", "matched_phrase": "cannabis"}
+]

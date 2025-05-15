@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is: "They say scrap NASS that provide checks for executive recklessness but give PMB special power, too much codeine is dangerous to reasoning."
+
+First, I need to check if there's any mention of drugs in a context that's illicit or abusive. The phrase "too much codeine is dangerous to reasoning" is key here. Codeine is a controlled substance, and the sentence is warning about its danger. The mention of codeine here is in a cautionary context, indicating that excessive use is harmful. There's no promotion, use, or encouragement of misuse. The rest of the sentence talks about political entities (NASS, PMB), which seems unrelated to drug abuse. The key point is that the content is highlighting the danger of codeine, which falls under the False category because it's in a medical or preventative context, not promoting abuse. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content mentions codeine in a cautionary context about its danger, not promoting or glorifying abuse."
+}

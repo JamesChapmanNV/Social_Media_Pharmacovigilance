@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "A good article on this 4/20 day (aka Cannabis Day)." I need to detect any drug-related references and map them to the index terms.
+
+First, I'll scan the post for any mentions of drugs or related terms. The key part here is "Cannabis Day." Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. The post mentions "Cannabis Day," which is a reference to marijuana. The term "Cannabis" is explicitly listed in the index terms under the Marijuana entry. 
+
+Now, checking if "Cannabis Day" is considered a slang or euphemism. The index term for Marijuana includes "Cannabis" as one of the synonyms. Since the post uses "Cannabis" directly, it should be matched to the index term "Marijuana." The phrase "4/20 day" is a reference to cannabis, but the exact term used in the post is "Cannabis Day," which is a direct mention. 
+
+I need to make sure there are no other terms. The rest of the post is about an article, which doesn't contain any other drug references. So the only match is "Cannabis" under the Marijuana index term. 
+
+Wait, the example in the problem statement had "snow" and "white lines" mapped to "other" because they weren't on the list. But here, "Cannabis" is explicitly in the index terms. So the correct index term is "Marijuana." 
+
+Therefore, the JSON should have one object with index_term "Marijuana" and matched_phrase "Cannabis."
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"}
+]

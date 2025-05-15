@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The content is: "Remember to warm them up slowly, so they don't crack." I need to determine if this is illicit/abusive-drug-related or not.
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Also, slang or euphemisms related to drug use. False includes medical, educational, or preventative contexts.
+
+The sentence here talks about warming something up to prevent it from cracking. The key words are "warm" and "crack." There's no mention of drugs, illegal substances, or any context related to drug use. The terms "them" could refer to materials like ceramics or metal, which is common in manufacturing or cooking. There's no indication of drug-related activity here. The advice is about handling materials properly, not about drugs. So, it's unrelated to drug abuse or illicit substances. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses material handling (warming up items to prevent cracking) in a general, non-drug-related context."
+}

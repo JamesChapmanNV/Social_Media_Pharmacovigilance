@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet that says: "Up, after fuck all sleep, because my left foot is being an absolute bastard again. Fuck you, left foot! Give me codeine, or give me death. ☠"
+
+First, I need to check if this is illicit or abusive drug-related. The key words here are "codeine" and the phrase "give me codeine, or give me death." Codeine is a controlled substance, and the context here is someone demanding it, which could imply misuse or abuse. The tone is aggressive and threatening, which might indicate encouragement of drug use. The mention of codeine in a context that's not medical or educational, but rather a demand for it in a harmful way. The phrase "or give me death" adds a violent threat, which could be a sign of promoting abuse. Since the content is about requesting codeine in a way that's not justified and with a threatening tone, it's likely classified as illicit/abusive. The example given in the task includes similar language, so this should be labeled True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly demands codeine in a threatening, abusive context and uses violent language ('give me death') to justify its request."
+}

@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Cannabis Business Association of Illinois executive director Pamela Althoff summed up the state of the state's legal recreational-use cannabis industry in one word: 'Halted.'" The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any mentions of drugs, slang, or terms related to illicit substances. The post mentions "cannabis," which is listed as an index term under "Marijuana (Cannabis, Weed, Pot)" in the provided list. The term "cannabis" is explicitly listed, so that's a clear match. The word "Halted" is used as a descriptor for the state of the industry, but that's not a drug reference itself. The rest of the sentence doesn't include any other drug terms. 
+
+I should check if "Halted" could be a slang term for a drug, but based on the examples given, like "snow" being classified as "other," it's likely that "Halted" isn't a drug term here. The main term here is "cannabis," which is directly listed. So the only match would be "cannabis" under the Marijuana index term. There are no other terms in the post that refer to drugs. The answer should be a JSON array with one object for "cannabis."
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

@@ -1,0 +1,26 @@
+<think>
+Okay, let's see. The user provided a content snippet: "Marvel need to base a super hero off of this Nigguh.. 'Captain Codeine'". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references that signal recreational drug use or abuse. Encouraging or glorifying drug misuse.
+
+The content here mentions "Captain Codeine". Codeine is an opioid, which is a controlled substance. The term "Captain Codeine" is a fictional character, but the name itself includes a drug. The user is suggesting a superhero based on this, which might be a cultural reference. However, the use of "Codeine" in the name could be seen as a slang or euphemism, especially if it's being used in a way that's promoting or glorifying its use. The term "Nigguh" might be a typo or slang, but the main focus is on "Codeine".
+
+But wait, the example given in the task had "lean" and "codeine" as part of a statement about being hooked. Here, it's a suggestion for a superhero name. The key is whether this is promoting or glorifying drug use. Since it's a fictional character, maybe it's just a creative name without promoting abuse. However, the mention of codeine could be considered as using the drug name in a context that might imply its use. But the example given in the task had "hooked" which was a sign of abuse. In this case, the user is suggesting a superhero, which might be a cultural reference but not necessarily promoting abuse. However, the name "Captain Codeine" could be seen as using the drug in a way that's not necessarily promoting abuse, but maybe just a creative name. 
+
+But according to the definitions, if it's using a drug name in a cultural reference that signals recreational use, it might be considered True. However, the example given in the task had "lean" and "codeine" in a context that was approving. Here, the context is suggesting a superhero, which is more of a creative idea. But the presence of "Codeine" in the name could still be a reference to drug use. However, the user might be using it as a fictional character, not promoting abuse. 
+
+Alternatively, if the name is used in a way that's associated with drug use, like a superhero that's a drug, then it could be considered as promoting or glorifying. But the example in the task had "hooked" which was a direct indicator. In this case, the name "Captain Codeine" might be a reference to the drug, but the context is not explicitly promoting abuse. However, the user is suggesting a superhero based on this, which might be a cultural reference. 
+
+Hmm. The key is whether the content is encouraging or glorifying drug misuse. If the name is used in a way that's not promoting abuse, but just a creative name, then it's False. But if the name is used in a context that implies drug use, even in a fictional sense, it might be True. 
+
+Looking back at the definitions: True includes using slang, euphemisms, or cultural references that signal recreational drug use or drug abuse. So, if "Captain Codeine" is a cultural reference that implies drug use, then it's True. However, if it's just a creative name without any implication, it's False. 
+
+But in the example given, "lean" and "codeine" were part of a statement that implied being hooked, which is abuse. Here, the name is part of a suggestion for a superhero, which is a creative idea. The term "Nigguh" might be a typo, but the main point is "Captain Codeine". 
+
+I think the answer here is True because the name "Codeine" is a drug, and using it in a superhero name could be seen as a cultural reference that signals drug use. However, the context is not explicitly promoting abuse. But according to the definitions, using the drug name in a cultural reference that signals recreational use could be True. So I'll go with True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'Codeine' in a fictional character name, which may signal recreational drug use through cultural reference."
+}

@@ -1,0 +1,35 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Happy 4/20. Blaze it, then fork over some dough to help get folks imprisoned on cannabis-related charges clemency and rebuild their lives." I need to detect any drug-related references here and link them to the index terms.
+
+First, I'll read through the post carefully. The main parts are "Happy 4/20," which is a reference to April 20th, a day associated with cannabis use. Then "Blaze it" – "blaze" can be slang for cannabis, especially in the context of smoking. The phrase "fork over some dough" is a bit unclear, but "dough" is slang for money. The rest is about helping people imprisoned for cannabis-related charges, which is a social issue, not a drug reference itself.
+
+Looking at the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. The word "Blaze" is a slang term for cannabis, so that would map to "Marijuana." The "4/20" is a cultural reference, but since it's not a specific drug term, it's "other." The part about "dough" is just money, so "other" again. The rest of the post is about clemency and rebuilding lives, which doesn't refer to drugs. 
+
+Wait, the user's task is to detect every word or phrase that refers to an illicit drug or substance. "Blaze it" is a slang for cannabis, so that's a match. "4/20" is a cultural reference but not a specific drug term, so "other." The rest of the post doesn't have any other drug references. So the only match is "Blaze" which is "Marijuana." But wait, in the index terms, "Marijuana" is listed as an index term. So the matched phrase "blaze" would be under "Marijuana." But I need to check if "blaze" is in the index terms. Looking at the list, "Marijuana" is the index term, and "blaze" is a slang term for cannabis. So the correct index term here is "Marijuana," and the matched phrase is "blaze." 
+
+Wait, but the example in the problem shows that "lean" is mapped to Codeine. So in this case, "blaze" would be mapped to "Marijuana." The other parts of the post don't have any drug references. So the JSON array should have one entry: {"index_term": "Marijuana", "matched_phrase": "blaze"}.
+
+But wait, the user's post also mentions "cannabis-related charges." The word "cannabis" is in the index terms as "Marijuana." So "cannabis" would be a match. But the post says "help get folks imprisoned on cannabis-related charges." So "cannabis" is a direct term. However, in the post, the phrase is "cannabis-related charges," so the word "cannabis" is present. But the user's task is to detect every word or phrase that refers to an illicit drug. So "cannabis" is a direct term. But according to the index terms, "Marijuana" is the index term for cannabis. So "cannabis" would map to "Marijuana." But in the example, "codeine" is mapped to "Codeine," and "lean" is also mapped to "Codeine." So in this case, "cannabis" would be "Marijuana." However, the user's post says "cannabis-related charges," so the word "cannabis" is present. So that would be another match. 
+
+Wait, but the post is: "Happy 4/20. Blaze it, then fork over some dough to help get folks imprisoned on cannabis-related charges clemency and rebuild their lives." The phrase "cannabis-related charges" includes the word "cannabis," which is a direct reference. So "cannabis" is a matched phrase. Therefore, the JSON array would have two entries: one for "blaze" and one for "cannabis." But wait, the example in the problem has "codeine" and "lean" both mapped to Codeine. So "blaze" is a slang term for cannabis, which is in the index term "Marijuana." "Cannabis" is also in the index term "Marijuana." Therefore, both "blaze" and "cannabis" would be matched to "Marijuana."
+
+But the user's post says "cannabis-related charges," so the word "cannabis" is present. Therefore, the matched phrases are "blaze" and "cannabis." But wait, the user's task is to detect every word or phrase that refers to an illicit drug. So "cannabis" is a direct term, and "blaze" is a slang term. Both would be matched to "Marijuana." However, the example in the problem shows that "lean" is mapped to Codeine, which is a slang term for codeine. So in this case, both "blaze" and "cannabis" would be mapped to "Marijuana."
+
+But the user's post also includes "dough," which is slang for money. However, the index terms don't have a term for money, so it would be "other." But the user's task is to detect drug-related references. "Dough" is not a drug, so it's "other."
+
+So the final answer should be two entries: one for "blaze" and one for "cannabis," both under "Marijuana." But wait, the example in the problem shows that "codeine" is mapped to "Codeine," and "lean" is also mapped to "Codeine." So "blaze" is a slang term for cannabis, so it's "Marijuana." "Cannabis" is the direct term, so also "Marijuana." Therefore, the JSON array would have two entries. However, looking at the example in the problem, "codeine" and "lean" are both mapped to "Codeine," so "blaze" and "cannabis" would be mapped to "Marijuana."
+
+But wait, the user's post says "cannabis-related charges," so the word "cannabis" is a direct reference. Therefore, the correct answer would be:
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "blaze"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]
+
+But the user's example 4 shows that "snow" and "white lines" are mapped to "other" because they are not drug terms. So in this case, "blaze" and "cannabis" are both drug-related terms. Therefore, the correct answer is the two entries above. However, I need to check if "blaze" is considered a drug reference. Yes, "blaze" is slang for cannabis. So that's correct. Therefore, the JSON array should have those two entries.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "blaze"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

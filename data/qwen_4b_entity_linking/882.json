@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that mentions Fentanyl, Duragesic, and Actiq. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll look at the post: "#Fentanyl #Pain #Relief : DURAGESIC AND #ACTIQ #TREATMENT ->>>". The hashtags include #Fentanyl, #Duragesic, and #Actiq. 
+
+Looking at the Index Terms list, Fentanyl is explicitly listed under "Fentanyl (China White, Apache, Duragesic)" so "Fentanyl" directly maps to that index term. Then, "Duragesic" is one of the aliases for Fentanyl, so that's another match. 
+
+Next, "Actiq" is a brand name for a fentanyl patch. Checking the index terms, Fentanyl is listed with Duragesic, Apache, and Duragesic. Wait, the index term for Fentanyl includes "Duragesic" as a synonym. But what about "Actiq"? The index term for Fentanyl doesn't mention Actiq, but since Actiq is a product containing fentanyl, it's still under the Fentanyl index term. 
+
+So both "Fentanyl" and "Duragesic" are directly mapped to the Fentanyl index term. "Actiq" is a brand name for a fentanyl product, so it's also under Fentanyl. Therefore, all three terms should be linked to "Fentanyl". 
+
+Wait, the example in the problem shows that "Duragesic" is part of the Fentanyl index term. So the matched phrases would be "Fentanyl", "Duragesic", and "Actiq" all under the same index term. 
+
+So the JSON array should have three entries: each with index_term "Fentanyl" and matched_phrase as "Fentanyl", "Duragesic", and "Actiq". 
+
+I need to make sure there are no other terms. The post doesn't mention any other drugs. So the final answer should be three objects in the array.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Fentanyl"},
+  {"index_term": "Fentanyl", "matched_phrase": "Duragesic"},
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"}
+]

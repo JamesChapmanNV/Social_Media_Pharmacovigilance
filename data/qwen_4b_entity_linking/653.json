@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Is that a true quote? Context? Because, you know, I used to be a glue dealer 😆". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The main phrases are "glue dealer". Now, "glue" is a slang term for methamphetamine, right? In the index terms, Methamphetamine is listed with synonyms like Crystal Meth, Ice, Desoxyn. So "glue" is a slang for meth. The index term for methamphetamine is "Methamphetamine". 
+
+The user is referring to being a "glue dealer", which is a slang term for selling meth. So "glue dealer" would map to Methamphetamine. The other parts of the post don't have any other drug references. The rest is about quotes and context, which aren't drug-related. 
+
+I should check if "glue" is explicitly in the index terms. Looking at the list, Methamphetamine has synonyms including "Crystal Meth", "Ice", "Desoxyn", but "glue" isn't listed. However, in the example provided, "xans" was categorized as "other" because it wasn't in the list. But in this case, "glue" is a known slang for meth. Wait, the index terms don't have "glue" listed, but the task says to use the index terms provided. Since "glue" isn't in the list, but "methamphetamine" is, and "glue" is a slang for meth, maybe I need to check if "glue" is considered a drug term here.
+
+Wait, the index term for Methamphetamine is "Methamphetamine", and the synonyms include "Crystal Meth", "Ice", "Desoxyn". "Glue" is a slang term for meth, but it's not in the index terms. However, the user is using "glue dealer" which refers to selling meth. So the matched phrase is "glue dealer", but the index term is Methamphetamine. But the problem is that the index terms don't have "glue" as a term. However, the task says to link each phrase to its matching index term. Since "glue" is a slang for meth, but the index term for meth is "Methamphetamine", even though "glue" isn't listed, the phrase "glue dealer" refers to meth. Therefore, the correct index term would be "Methamphetamine", and the matched phrase is "glue dealer".
+
+But wait, the example 3 had "xans" which was not in the list, so it was "other". But here, "glue dealer" is a reference to meth, which is in the index terms. So even though "glue" isn't in the list, the phrase "glue dealer" is referring to meth, so the index term is Methamphetamine. Therefore, the correct entry would be {"index_term": "Methamphetamine", "matched_phrase": "glue dealer"}.
+
+But I need to check if "glue dealer" is a recognized term in the index terms. The index terms don't have "glue dealer", but the phrase refers to meth. So the answer would be Methamphetamine. Alternatively, maybe "glue" is considered as "other" because it's not in the list. Wait, but the index terms include Methamphetamine, and "glue" is a slang for it. The task says to link to the index term if it's in the list. Since "glue" isn't in the list, but the phrase "glue dealer" is a reference to meth, which is in the list, then the index term is Methamphetamine. So the correct answer is Methamphetamine for "glue dealer".
+</think>
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "glue dealer"}
+]

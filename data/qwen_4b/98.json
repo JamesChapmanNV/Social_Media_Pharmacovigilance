@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content: "EXCLUSIVE: Enveric Offers Investors Rare Exposure To Both Cannabis And Psychedelic Industries". First, I need to determine if this is illicit or abuse-related. The keywords here are "Cannabis" and "Psychedelic Industries". 
+
+Cannabis is a drug, but the context here is about investment opportunities. The term "psychedelic" can refer to drugs like LSD, but again, the focus is on industries. The content is talking about companies involved in these sectors, not about using or promoting the drugs. There's no mention of abuse, misuse, or encouragement of drug use. Instead, it's about investment, which is a business context. 
+
+The definitions say that True includes mentions of illegal drugs in contexts of abuse or misuse. However, this content is about industries, not about using the drugs. Also, the example given in the prompt where a pharmacology lecture was considered False because it was educational. Similarly, this is a business news article, not promoting abuse. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses investment opportunities in cannabis and psychedelic industries, which is a business context, not promoting or glorifying drug abuse."
+}

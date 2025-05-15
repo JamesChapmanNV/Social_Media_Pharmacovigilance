@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "Other than the plague, not yet :( gonna crack into my last Raymond chandler finally! Then I'll have read them all I think. & ima read world war z o.o". 
+
+Looking for any slang, euphemisms, or phrases that might refer to illicit drugs. The main parts here are "the plague" and "Raymond chandler" and "world war z". 
+
+"The plague" is a common euphemism for cocaine, but I need to check if it's in the index terms. Looking through the list, there's no entry for "plague" as a drug. The index terms include things like Codeine, Amphetamine, etc. Since "plague" isn't listed, it should be "other".
+
+Next, "Raymond chandler" refers to the books by Raymond Chandler, which are crime novels. That's not a drug reference. "World War Z" is a movie, also not a drug. The user might be using "o.o" as an emoji, which is just an expression of surprise, not a drug.
+
+So the only possible match is "the plague", which isn't in the index terms. Therefore, it should be categorized as "other". The rest of the post doesn't mention any drugs. 
+
+I need to make sure there are no other phrases. The user mentioned "crack into my last Raymond chandler" – "crack into" might mean reading, not a drug. No other terms here. 
+
+So the final answer should have one entry for "the plague" as "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "the plague"}]

@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this content classification. The user provided the content: "I pour up a four.......Its 4oz,which is 4 pounds, amount of codeine used to make lean." 
+
+First, I need to parse the key terms here. The mention of "codeine" is a controlled substance, so that's a red flag. Then there's "lean," which is slang for a type of drug, often associated with methamphetamine. The user is talking about measuring the amount of codeine used to make lean, which suggests they're involved in the production or use of drugs.
+
+The context here is about the quantity of codeine being used. The phrase "pour up a four" might be a typo or slang for "pour up a four ounce," which is a specific amount. The user is specifying the amount of codeine, which could indicate they're either making or using the drug. The term "used to make lean" directly links codeine to the production of a drug, which is illegal.
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse, misuse, or promotion. Here, the content is talking about the amount of codeine used in making a drug (lean), which is a form of drug abuse or production. The explanation should note the mention of codeine and the context of making lean, which is associated with drug abuse. 
+
+I should check if there's any medical or educational context, but in this case, it's clearly about the quantity and method of producing a drug, which is illegal. So the classification should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions codeine and references 'lean' (a slang term for methamphetamine), indicating involvement in drug production or abuse."
+}

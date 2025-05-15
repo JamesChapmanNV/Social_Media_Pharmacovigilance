@@ -1,0 +1,5 @@
+[
+  {"index_term": "CBD", "matched_phrase": "CBD oil"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis plant"},
+  {"index_term": "other", "matched_phrase": "THC"}
+]

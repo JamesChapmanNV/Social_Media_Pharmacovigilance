@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post about someone interested in growing cannabis and starting a dispensary. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post says, "That is cool! I am taking a class on growing cannabis! I want my own strain and dispensary!" 
+
+Looking for any mentions of drugs or substances. The key terms here are "cannabis" and "dispensary." Now, checking the index terms list. The index term for marijuana is listed as "Marijuana (Cannabis, Weed, Pot)" which is exactly what's mentioned here. "Cannabis" is directly listed as an index term. The word "dispensary" isn't listed in the index terms, but since the post is about growing cannabis, which is covered under the marijuana index term, I don't need to worry about "dispensary" as it's not a drug reference itself. 
+
+So, the only detected phrase is "cannabis," which maps to the "Marijuana" index term. There are no other drug-related terms here. The rest of the post is about a class and wanting a dispensary, which doesn't involve illicit drugs. Therefore, the correct JSON array should have one entry for "cannabis" under the Marijuana index term.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

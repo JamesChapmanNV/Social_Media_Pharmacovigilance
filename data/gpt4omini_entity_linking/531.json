@@ -1,0 +1,6 @@
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabisforveterans"},
+  {"index_term": "other", "matched_phrase": "420"},
+  {"index_term": "other", "matched_phrase": "Alternative Therapies"}
+]

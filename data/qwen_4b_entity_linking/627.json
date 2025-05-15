@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Remember to warm them up slowly, so they don't crack." I need to check if there are any drug-related references here.
+
+First, I'll go through the post word by word. The words are "Remember," "to," "warm," "them," "up," "slowly," "so," "they," "don't," "crack." None of these words seem like they'd be slang for drugs. The phrase "warm them up" is about heating something to prevent it from cracking, maybe like warming up a substance. But there's no mention of any drugs or related terms here. 
+
+Looking at the index terms list, I need to make sure none of the phrases could be a euphemism or slang. Terms like "lean," "codeine," "adderall," "xanax," etc., are listed. The post doesn't use any of those. The word "them" could be a pronoun referring to something else, but without context, it's not a drug reference. 
+
+The example given in the problem where "snow" was considered "other" because it's not a drug, so here "them" isn't a drug term either. There's no mention of any drug names, slang, or related terms. So the answer should be an empty array since there are no matches.
+</think>
+
+[]

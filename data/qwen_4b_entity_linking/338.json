@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Source? Cuz everything I read says he had a heart attack because of an overdose. Which means the overdose killed him". I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The main points are about a heart attack caused by an overdose. The key term here is "overdose". Now, checking the list of Index Terms, I need to see if "overdose" is directly mentioned. But looking at the list, there's no exact term for "overdose". The closest might be terms related to opioids or other drugs, but "overdose" itself isn't listed. 
+
+Wait, the task says to detect phrases that refer to illicit drugs or substances. The post doesn't use specific slang or terms from the Index Terms. The mention of "overdose" is a general term, not a specific drug. The user is talking about the cause of death being an overdose, but the actual drug isn't named. So, according to the instructions, if the drug isn't in the list, we use "other". 
+
+But wait, maybe "overdose" is considered a reference to drug use. However, the Index Terms don't have an "overdose" entry. The example in the problem statement includes "other" when the phrase isn't in the list. So in this case, the phrase "overdose" isn't directly linked to any specific Index Term. Therefore, the correct index term would be "other".
+
+So the matched phrase is "overdose", and the index term is "other". The post doesn't mention any specific drug names or slang, just the consequence of an overdose. Hence, the answer should be one object with index_term "other" and matched_phrase "overdose".
+</think>
+
+[{"index_term": "other", "matched_phrase": "overdose"}]

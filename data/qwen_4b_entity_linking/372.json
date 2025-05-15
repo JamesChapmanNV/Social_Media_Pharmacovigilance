@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Codeine Crazy, March Madness, How Can I Not, Rotation, No Charge". I need to detect any drug-related references here.
+
+First, I'll go through each word or phrase in the post. The first part is "Codeine Crazy". "Codeine" is clearly listed in the index terms under the Codeine entry. So that's a direct match. Then "Crazy" – but I don't think that's a slang for a drug. Maybe "Crazy" is part of a song title or a phrase, but not a drug reference. 
+
+Next is "March Madness". That's a sports term, referring to the NCAA basketball tournament. Not a drug reference. "How Can I Not" – this could be a lyric or a phrase, but nothing here points to a drug. "Rotation" might be a term in sports or a song, but again, not a drug. "No Charge" could be a phrase, maybe from a song, but not a drug reference.
+
+Looking at the index terms, "Codeine" is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The post has "Codeine" explicitly mentioned, so that's a match. The other phrases don't seem to relate to any drugs listed. So the only match here is "Codeine". 
+
+Wait, the user's example had "lean" and "codeine" both matching to Codeine. In this case, the post has "Codeine" directly, so that's one entry. Are there any other terms? Let me check again. "Crazy" might be part of a song title, but not a drug. The rest are not drug terms. So the only matched phrase is "Codeine", which maps to the index term "Codeine".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "Codeine"}]

@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "Chillin in the ER and in horrible pain and this place is packed. FML. I'm just sitting here in a wheelchair bawling. I'm gonna crack fr".
+
+First, I need to check the definitions. True includes mentions of illegal drugs in abuse contexts, slang, or encouragement of misuse. False includes medical, educational, or preventative contexts.
+
+Looking at the content, the person is in the ER, experiencing horrible pain, using a wheelchair, and feeling like they're about to "crack". The term "crack" here might be slang for a drug, like crack cocaine. But the context is in a hospital setting, so maybe they're referring to emotional breakdown rather than drug use. However, "crack" as a slang term for drugs is common. The mention of pain and being in the ER could relate to drug use, but it's not clear if they're using drugs or just dealing with pain from an injury. The user is expressing distress, but there's no explicit mention of drugs. The phrase "I'm gonna crack fr" might be a typo for "crack up" or "crack fr" as in "crack for", but without more context, it's ambiguous. However, given that the user is in the ER, it's possible they're referring to a medical condition rather than drug abuse. The content doesn't explicitly mention any drugs, so it might fall under False. But I need to be careful. The term "crack" could be a red flag. However, since the context is in a hospital, maybe it's not related to drug abuse. The explanation should focus on the lack of explicit drug mention and the context of being in the ER. So the label is False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a personal medical experience in the ER without explicitly mentioning drugs, focusing on pain and emotional distress rather than drug use or abuse."
+}

@@ -1,0 +1,15 @@
+<think>
+Okay, let's see. The user provided a post: "Do you have the full judgement? If you do, please share it with me. ✨" And I need to moderate this for drug-related references.
+
+First, I need to check each word or phrase in the post to see if it refers to an illicit drug or substance. The task is to detect any slang, euphemism, synonym, or cultural references related to drugs. Then link each to the correct index term from the given list. If it's not in the list, use "other".
+
+Looking at the post: "judgement" is the key word here. Wait, "judgement" isn't a drug. But maybe it's a slang term? Let me check the index terms. The list includes terms like Codeine, Amphetamine, LSD, etc. "Judgement" doesn't seem to be listed. The example 3 had "xans" which was "other" because it wasn't a known drug term. Similarly, "snow" in example 4 was "other" because it's not a drug. 
+
+So "judgement" here is probably not a drug reference. The user might be using "judgement" in a different context, like a legal judgment or a metaphor. Since there's no drug-related term here, the answer should be "other" for "judgement". But wait, maybe "judgement" is a slang for something? Let me check the index terms again. No, I don't see "judgement" listed. The closest might be "Codeine" with aliases like "Lean", "Purple Drank", "Schoolboy", but "judgement" isn't any of those. 
+
+So the post doesn't contain any drug references. Therefore, there are no matches. But the user's example 3 had "xans" which was "other", so in this case, since "judgement" isn't a drug term, the answer would be an array with "other" and "judgement". Wait, but the post is "Do you have the full judgement? If you do, please share it with me. ✨". The word "judgement" is the only one here. So the JSON array should have one entry: index_term "other" and matched_phrase "judgement". 
+
+But wait, maybe "judgement" is a typo or a misspelling? Like "judgment" vs "judgement"? But even so, it's not a drug term. So the correct response is to have "other" for "judgement". Therefore, the output should be a JSON array with one object: {"index_term": "other", "matched_phrase": "judgement"}.
+</think>
+
+[{"index_term": "other", "matched_phrase": "judgement"}]

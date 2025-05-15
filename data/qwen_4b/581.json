@@ -1,0 +1,8 @@
+<think>
+Okay, let's see. The content is about a woman being arrested after heroin was found in her vehicle during a traffic stop. So, the key terms here are "heroin" and the context of an arrest. Heroin is an illegal drug, and the situation describes a law enforcement action. The content is reporting an incident where illegal drugs were discovered, leading to an arrest. This is not promoting or encouraging drug use, but rather reporting a crime. The definition for True includes mentions of illegal drugs in the context of abuse or misuse, like using, buying, promoting. However, this content is about finding heroin during a traffic stop, which is a law enforcement action, not about the use or promotion. So, it's more of a news report on a crime, not glorifying or encouraging drug abuse. Therefore, it should be classified as False because it's not promoting misuse, but rather reporting an illegal activity. The explanation would note that it's a report of an arrest for drug possession, not promoting or encouraging abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content reports an arrest for drug possession, not promoting or encouraging drug abuse."
+}

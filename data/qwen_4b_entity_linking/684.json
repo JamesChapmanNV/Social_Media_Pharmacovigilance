@@ -1,0 +1,33 @@
+<think>
+Okay, let's see. The user provided a post that says: "but muh heritage" meanwhile they're out in a double-wide shooting up heroin and losing teeth from meth. but hey at least they have their heritage right?
+
+First, I need to check for any drug-related references in this post. The main part here is "shooting up heroin" and "losing teeth from meth." 
+
+Heroin is definitely an illicit opioid, and it's listed in the index terms under "Morphine" as a prototypical opioid analgesic. Wait, looking at the index terms, Morphine is listed, but heroin isn't directly listed. Wait, let me check again. The index terms include "Morphine (MS Contin, Miss Emma, Morph)" but heroin isn't explicitly listed. However, the task says to include illegal, RX, OTC, or recreational drugs, including those that are being used, bought, promoted, etc. So even if the exact term isn't in the list, if it's a drug that's illicit, it should be matched to the closest term.
+
+But in the index terms, "Heroin" isn't listed. Wait, looking at the list again: the index terms include "Morphine" but not heroin. However, the example given in the problem includes "Codeine" for "lean" and "codeine." So maybe if the drug isn't directly listed, but is a known illicit drug, we have to check if there's a related term. Wait, but the instructions say to link each detected phrase to its matching index term, and if the drug is not in the list, use "other."
+
+Wait, the index terms list "Morphine" as a term, but heroin is a different drug. However, heroin is a derivative of morphine. But in the index terms, is there a specific term for heroin? Let me check again. The index terms list "Morphine" but not heroin. So if the post mentions heroin, which is not in the index terms, then it would be "other." But wait, the index terms also include "Codeine (Lean, Purple Drank, Schoolboy)" which is a different drug. So in this case, the user is talking about heroin and meth.
+
+Meth is methamphetamine, which is listed in the index terms under "Methamphetamine (Crystal Meth, Ice, Desoxyn)" so that's a direct match. Heroin is not in the index terms, so it would be "other." But wait, the index terms include "Morphine" but not heroin. However, the task says to include any illegal, RX, OTC, or recreational drugs. So heroin is an illicit drug, but since it's not in the index terms, we have to use "other."
+
+So the phrases here are "shooting up heroin" and "losing teeth from meth." "Meth" is methamphetamine, which is in the index terms. "Heroin" is not in the index terms, so "other." Therefore, the JSON array should have two entries: one for "methamphetamine" with "meth," and one for "other" with "heroin." Wait, but the user wrote "shooting up heroin" and "losing teeth from meth." So the matched phrases are "heroin" and "meth." 
+
+But wait, the index terms have "Methamphetamine" as the index term for "meth." So "meth" would map to "Methamphetamine." However, the user is talking about "heroin," which isn't in the index terms, so that would be "other." 
+
+So the correct JSON would be two entries: one for "Methamphetamine" with "meth," and another for "other" with "heroin." But wait, the user's post mentions "shooting up heroin," so the phrase is "heroin." So the matched_phrase is "heroin," and the index_term is "other." 
+
+Therefore, the output should be:
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]
+
+But wait, the example 4 shows that "snow" and "white lines" are "other" even though they're not drugs. So in this case, "heroin" is not in the index terms, so "other," and "meth" is in the index terms as "Methamphetamine."
+</think>
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

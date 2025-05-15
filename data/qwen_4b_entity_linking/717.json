@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I'll look at the post: "Listen to ILL_ Dont Like Us _Migo _Codeine_ LBPimpin (Millzmadedabeat) by Pimpinslethallit #np on #SoundCloud". The main thing here is the phrase "_Codeine_" in the track title. 
+
+Looking at the Index Terms list, "Codeine" is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase here is exactly "Codeine", so it matches the index term "Codeine". There are no other words or phrases in the post that seem to refer to drugs. The rest is about a music track and social media tags, which don't relate to drugs. 
+
+I need to make sure there's no other hidden reference. Words like "Migo" or "LBPimpin" don't seem to be drug terms. The hashtags #np and #SoundCloud are irrelevant. So the only match is "Codeine" in the track name. 
+
+Therefore, the correct JSON array should have one object with index_term "Codeine" and matched_phrase "Codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

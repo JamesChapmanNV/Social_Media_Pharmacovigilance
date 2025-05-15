@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Got Promethzine & Codeine 🍇🍼  All N My Belly #RIPSwiepy". I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll break down the post. The main phrases are "Promethzine" and "Codeine". Let me check the index terms list.
+
+Looking at Promethzine: The index terms include Diphenhydramine (Benadryl, Nytol) as a first-generation antihistamine. But Promethzine is a different drug. Wait, the index terms don't have Promethzine listed. The closest might be Diphenhydramine, but Promethzine is a separate drug. Since it's not in the list, I should mark it as "other".
+
+Next, "Codeine" is explicitly listed in the index terms under Codeine (Lean, Purple Drank, Schoolboy). So "Codeine" directly maps to Codeine. 
+
+The rest of the post has emojis and hashtags, which aren't drug references. The hashtag #RIPSwiepy is likely a tribute, not a drug reference. 
+
+So the matches are Promethzine (other) and Codeine (Codeine). Wait, but the example in the user's prompt shows that "xans" is considered other if not in the list. Similarly, Promethzine isn't listed, so it's "other". 
+
+Therefore, the JSON array should have two entries: one for Promethzine as "other" and Codeine as "Codeine".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "Promethzine"},
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

@@ -1,0 +1,29 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "So I took medicine with codeine so I wouldn't cough all night and a breathing treatment. My statement is this: don't mix uppers & downers." I need to detect any drug references here.
+
+First, I'll read through the post carefully. The first part mentions "medicine with codeine." Codeine is explicitly listed in the index terms under the Codeine entry. So "codeine" is a direct match. The phrase "codeine" is in the post, so that's one entry.
+
+Next, the post also says "don't mix uppers & downers." The term "uppers" is a slang term for stimulants, which could include amphetamines or other stimulants. However, looking at the index terms, "Amphetamine" is listed with synonyms like Speed, Bennies, Adderall. But "uppers" isn't directly listed. However, "uppers" is a general term for stimulants, which might fall under "other" if not specifically listed. Wait, but the task says to link to the index term if possible. Since "uppers" isn't in the index terms, but "Amphetamine" is, but "uppers" is a broader term. However, the user's example 2 had "addy" mapped to Amphetamine. So maybe "uppers" is considered as "other" because it's not a specific term in the index. Alternatively, maybe "uppers" is a slang for amphetamines, but since it's not explicitly listed, the correct term would be "other". 
+
+Wait, the index terms include "Amphetamine (Speed, Bennies, Adderall)" so if "uppers" is a slang for amphetamine, but the user's example 3 had "xans" as "other" because it's not in the list. So "uppers" isn't in the index terms, so it should be "other". 
+
+But the user's instruction says to link to the index term if possible. However, "uppers" isn't in the list, so the correct index term would be "other". 
+
+So in the post, "codeine" is directly matched to Codeine. The "uppers & downers" part is a warning about mixing stimulants and depressants, but since "uppers" isn't a specific term in the index, it's "other". However, the user's example 3 had "xans" as "other" even though it's a benzodiazepine. So "uppers" would be "other".
+
+Wait, but the user's example 2 had "addy" mapped to Amphetamine. So "addy" is a slang for amphetamine. So if "uppers" is a slang for amphetamines, but not explicitly listed, but the index term for Amphetamine is "Amphetamine", so maybe "uppers" is not in the list, so "other". 
+
+Therefore, the only direct match is "codeine". The "uppers" is not in the index terms, so it's "other". 
+
+Wait, but the task says to detect every word or phrase that refers to an illicit drug. The "uppers" is a slang term, but the index terms don't have a specific entry for "uppers". So the correct index term would be "other". 
+
+So the JSON array should have one entry for "codeine" and "codeine" as the matched phrase. The "uppers" is not in the list, so it's "other". But the user's example 3 had "xans" as "other", so that's the same logic. 
+
+So the final answer is [{"index_term": "Codeine", "matched_phrase": "codeine"}]. 
+
+Wait, but the user's example 1 had "lean" and "codeine" both mapped to Codeine. In the given post, the user says "medicine with codeine", so "codeine" is the exact phrase. The "uppers" is a warning, but not a drug reference. So the only matched phrase is "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

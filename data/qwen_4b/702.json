@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "All this codeine got me nodding off yo bitch at the crib nodding off". I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll break down the content. The mention of "codeine" is a key point. Codeine is an opioid, which is a controlled substance, so that's a red flag. The phrase "got me nodding off" suggests that the person is experiencing the effects of codeine, which is a drug. The use of "yo bitch" adds a casual, possibly slangy tone. 
+
+Now, looking at the definitions. True includes mentions of illegal drugs in the context of abuse or misuse. The content here is talking about using codeine and the effect it has (nodding off), which is a sign of drug use. The tone seems to be about the effects of using the drug, which could be seen as promoting or discussing misuse. 
+
+The example given in the prompt where "lean" and "codeine" were mentioned and labeled as True is similar. Here, the user is talking about the effects of codeine, which is a drug, and the context is about being affected by it. The phrase "nodding off" is a common slang term for the sedative effects of drugs, which is a sign of recreational use or abuse. 
+
+I should check if there's any educational or medical context, but in this case, there's none. The content is just a personal statement about the effects of codeine. The user isn't discussing treatment or education, but rather the personal experience of using the drug. 
+
+Therefore, based on the definitions, this content should be classified as True because it mentions a drug (codeine) in the context of its misuse or abuse, using slang ("nodding off") to describe the effects.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and describes its effects ('nodding off') in a casual, slang-laden context implying recreational use or abuse."
+}

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "So! You're actually a confessed drug dealer & or connected????. Makes sense now!" I need to detect any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "drug dealer" and "connected." The term "drug dealer" is pretty straightforward—it refers to someone involved in selling drugs, which is illicit. But is "drug dealer" listed in the index terms? Let me check the list. The index terms are specific substances like Codeine, Amphetamine, etc. "Drug dealer" isn't one of them. The example 3 shows "xans" is "other" because it's not a specific term. So "drug dealer" would fall under "other" since it's not a specific drug name but a role.
+
+Next, "connected" could be a slang term, but I don't see it listed. The user is asking if someone is a drug dealer or connected to them. The phrase "connected" here might imply being linked to drug activities, but without a specific drug term, it's "other."
+
+So the matched phrases are "drug dealer" and "connected," both mapping to "other" since they aren't specific drugs in the index list. The answer should be two entries with "other" and the exact phrases.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drug dealer"},
+  {"index_term": "other", "matched_phrase": "connected"}
+]

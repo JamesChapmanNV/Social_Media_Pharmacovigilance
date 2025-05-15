@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a social media content snippet that includes hashtags related to EXO and some Korean phrases. The task is to determine if this content is illicit/abusive-drug-related.
+
+First, I need to check if there are any mentions of drugs, illegal substances, or slang related to drug use. The hashtags listed are #EXO, #엑소, and some Korean phrases like "영원한_우리의_피터팬_엑소" which translates to "Eternal our Peter Pan EXO." There's also a hashtag #OVERDOSE. Wait, "overdose" is a term related to drug overdose, but in this context, is it part of a hashtag related to a group or event?
+
+Looking at the content, the main focus seems to be on EXO, a K-pop group. The hashtag #OVERDOSE might be a reference to a song or a fan event, not necessarily related to drug abuse. The Korean phrases are likely fan-related, expressing loyalty or memories of the group. The term "overdose" here could be a play on words, but without explicit mention of drug use or promotion, it's more likely a cultural reference. 
+
+The example given in the problem statement includes a hashtag #OVERDOSE in Example 1, which was classified as True. But in that case, the context was about drug use. However, in this case, the content is about a K-pop group, so the hashtag might be a fan reference. The key is whether the content promotes or discusses drug abuse. Since the content is about a group and their anniversary, it's not promoting drug use. The mention of "overdose" is part of a hashtag related to the group, not drug abuse. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a K-pop group (EXO) and related hashtags, with 'overdose' likely used in a cultural or fan context, not indicating drug abuse or promotion."
+}

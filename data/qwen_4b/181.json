@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this content. The user is talking about being in a hospital after surgery and taking a lot of painkillers, specifically morphine. They mention waking up with their mom and the nurses being amazing. The key here is to determine if this is related to illicit or abusive drug use.
+
+First, the content mentions morphine, which is a prescription opioid used for pain management. The user was in the hospital for surgery, so this is a medical context. They were on "so many pain killers," but that's in the context of post-surgery recovery, which is a legitimate medical use. There's no mention of abuse, misuse, or anything illegal. The tone is about recovery and the nurses being helpful. The mention of morphine is part of standard post-operative care. There's no encouragement or glorification of drug use here. So, the context is medical and not related to illicit drug abuse. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes post-surgery pain management with morphine in a medical context, not involving abuse, misuse, or illegal drug use."
+}

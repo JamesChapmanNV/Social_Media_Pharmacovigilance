@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "Kidney stone pain has been compared to child birth pain. I handled kidney stone pain really well. I went to the emergency room at the hospital and begged for morphine IVs.😂😂😂😂"
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse or misuse, slang, euphemisms, or encouraging misuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+Looking at the content, the person is talking about experiencing kidney stone pain and going to the ER for morphine. Morphine is an opioid, which is a controlled substance. But the context here is a personal experience of pain management. The user is describing a medical situation where they requested morphine for severe pain. There's no indication of abuse, promotion, or misuse. They're just sharing a personal experience of seeking medical treatment. The use of morphine here is in a legitimate medical context, not for recreational or abusive purposes. The tone is personal and narrative, not encouraging or glorifying drug use. So this should be classified as False. The explanation should mention that the content describes a medical situation with morphine use for pain management, not abuse or promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a medical situation where morphine was used for pain management in a hospital setting, not for abuse or promotion of drug misuse."
+}

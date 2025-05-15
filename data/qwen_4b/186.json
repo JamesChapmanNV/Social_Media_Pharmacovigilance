@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is about a child named Mason who's off morphine but is getting sicker from chemo. The hashtag #leukemiawarrior is there.
+
+First, I need to check the definitions. True includes mentions of illegal drugs in abuse contexts, slang, or promoting misuse. False includes medical, educational, or preventative contexts. 
+
+The content mentions morphine, which is a controlled substance, but it's in the context of chemo and leukemia treatment. The user is talking about the side effects of chemo, not using or promoting the drug. The hashtag #leukemiawarrior suggests a medical or health-related context. There's no indication of abuse or encouragement of drug use. The mention of morphine is part of medical treatment, not misuse. So this should be False. The explanation should note that it's discussing medical treatment and side effects, not abuse or promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses medical treatment (chemo, morphine) and its side effects in a health-related context, not promoting or glorifying drug abuse."
+}

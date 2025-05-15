@@ -1,0 +1,6 @@
+```json
+[
+  {"index_term": "Marijuana", "matched_phrase": "420"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]
+```

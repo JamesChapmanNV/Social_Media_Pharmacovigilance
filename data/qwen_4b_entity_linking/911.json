@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "i would never give a bitch the satisfaction of bein able to hold that over my head. i sell crack first". The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs. The user mentioned "crack" in the second sentence. Now, checking the list of index terms, I see that "Crack" isn't explicitly listed. However, "Crack" is a slang term for cocaine, which is a controlled substance. But looking at the index terms provided, there's no direct entry for cocaine. The closest might be "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine, but that's not a slang term. 
+
+Wait, the index terms include "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". But "crack" isn't listed. The example in the problem statement had "snow" and "white lines" as "other" because they weren't on the list. So, since "crack" isn't in the index terms, it should be categorized as "other". 
+
+But wait, maybe I'm missing something. Let me check the index terms again. The list includes "Cocaine" as a metabolite (Benzoylecgonine), but the term "crack" isn't in the index terms. The user is referring to "crack" as a drug, which is a form of cocaine. However, the index terms don't have a direct entry for "crack", so according to the instructions, if the drug isn't in the list, use "other". Therefore, "crack" should be mapped to "other".
+
+So the only detected phrase here is "crack", which maps to "other". The rest of the post doesn't have any other drug references. Therefore, the JSON array should have one entry with "other" and "crack".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"}
+]

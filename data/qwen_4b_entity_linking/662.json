@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post mentions the Indian Coast Guard and ATS capturing a Pakistani ship named Al Haj with 09 crew on the Arabian Sea, along with heroin worth 280 crores. 
+
+First, I need to check if there are any drug-related terms in the post. The key part here is "heroin." Looking at the index terms provided, heroin is listed as a drug. Wait, let me check the index terms again. The list includes "Heroin (MS Contin, Miss Emma, Morph)" but in the given index terms, "Heroin" isn't explicitly listed. Wait, looking back, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin specifically. Wait, the user provided a list of index terms. Let me check again.
+
+Looking through the index terms, there's "Heroin (MS Contin, Miss Emma, Morph)" but actually, in the list provided, "Heroin" isn't directly listed. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)" but heroin isn't explicitly listed. However, in the example given, "Codeine" is matched to "lean" and "codeine." So, the user's index terms might not include heroin. Wait, but in the list, "Heroin" is not present. Wait, the user's index terms include "Morphine" and "Codeine," but not heroin. However, in the example, the user has "Codeine" as an index term. So, if the post mentions "heroin," but heroin isn't in the index terms, then according to the instructions, we should use "other."
+
+Wait, the user's instruction says: if the drug is not in the list, use "other." So, heroin is not in the index terms. Let me check again. The index terms list "Morphine" and "Codeine," but not heroin. Therefore, "heroin" would be considered "other." However, in the example, "Codeine" is matched to "lean" and "codeine," which are in the index terms. So, in this case, the post mentions "heroin," which is not in the index terms, so the index term would be "other."
+
+Wait, but maybe I'm missing something. Let me check the index terms again. The list includes "Heroin (MS Contin, Miss Emma, Morph)"? Wait no, looking back, the index terms list "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)" but not heroin. Therefore, "heroin" is not in the index terms. Therefore, the matched phrase "heroin" would map to "other."
+
+So the post has "heroin worth 280 crores." The phrase "heroin" is a drug, but since it's not in the index terms, it's categorized as "other." Therefore, the JSON array should have one entry with index_term "other" and matched_phrase "heroin."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

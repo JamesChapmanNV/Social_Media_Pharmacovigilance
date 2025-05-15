@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about a music band and their cassette copy. The task is to detect any drug-related references in the post and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions "Love Overdose" as a band, their genre, and a cassette copy of an EP. The user's mom had a cassette from a California band called "Chicks Rule, OK?" but she doesn't remember anything about them. There's a link provided, but the actual content of the post doesn't include any drug names or slang. 
+
+I need to check if there are any phrases that could be slang for drugs. The words "overdose" might be a red herring here. "Overdose" can refer to both a medical term and drug use, but in the context of the post, it's part of the band name "Love Overdose." The band name isn't a drug reference. The mention of a cassette and a band's EP doesn't include any drug-related terms. 
+
+Looking at the index terms, I don't see any that match "overdose" in this context. The index terms include drugs like codeine, amphetamine, fentanyl, etc., but the post doesn't mention any of those. The phrase "overdose" here is part of the band's name, not a reference to drug use. 
+
+So, there are no drug-related phrases in the post. Therefore, the correct response is to return an empty array since no matches were found.
+</think>
+
+[]

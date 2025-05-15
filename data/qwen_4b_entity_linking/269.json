@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "If u can't bring nothing to the table i don't want nothing with you ✌" and wants me to detect any drug-related references.
+
+First, I need to go through the post word by word. The post is in a casual, possibly slangy way. The phrase "nothing to the table" is a common idiom meaning not contributing anything. But wait, sometimes "nothing" can be slang for drugs. However, looking at the index terms, I need to check if "nothing" is listed. The index terms include things like "Codeine", "Amphetamine", etc., but "nothing" isn't listed. The example 3 shows "xans" is "other" because it's not a specific drug. Similarly, "snow" in example 4 is "other". 
+
+So, in this post, the words "nothing" are used. But since "nothing" isn't an index term, it would fall under "other". However, I need to check if there's any other possible drug references. The rest of the post is "i don't want nothing with you". There's no mention of any specific drug names or slang terms. The phrase "nothing to the table" is a metaphor, not a drug reference. 
+
+Therefore, there are no drug-related phrases here. The user might be testing if I recognize that "nothing" isn't a drug term. So the correct response is an empty array. But wait, the example 4 had "snow" and "white lines" as "other". So in this case, even though "nothing" isn't a drug, the user might be expecting "other" for any non-index terms. But the task is to detect only those that refer to drugs. Since there are no actual drug terms here, the answer should be an empty array. 
+
+Wait, the instructions say to detect every word or phrase that refers to an illicit drug. If "nothing" isn't a drug, then there's nothing to match. So the JSON array should be empty. Let me confirm the index terms again. The index terms include specific drugs and their slang names. "Nothing" isn't listed, so it's "other" only if it's a drug reference. But in this case, it's not. Therefore, no matches. So the output is an empty array.
+</think>
+
+[]

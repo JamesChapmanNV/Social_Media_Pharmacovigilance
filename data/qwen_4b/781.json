@@ -1,0 +1,10 @@
+<think>
+Okay, let's see. The user provided a content snippet and wants me to classify it as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "Well, supposedly there's interest by Disney for him in the role, but they're only talking about it... But yeah, does suck. While I think he's a bit too old to reboot the role rn, I would've loved to see Tom Hardy take a crack at it... Whoever it is has to have some grit about'm".
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to drug abuse. The content is talking about Disney considering a role for someone, possibly referring to an actor. The mention of Tom Hardy is a person's name, and the discussion is about acting roles and whether the actor is suitable. There's no mention of drugs, medications, or anything related to drug use, abuse, or misuse. The terms like "grit" are about personality traits, not drugs. The context is entirely about entertainment and acting, not drug-related topics. So according to the definitions, since there's no mention of drugs in a medical, educational, or preventative context, and no slang or euphemisms related to drug abuse, the label should be False. The explanation should note that the content discusses acting roles and doesn't mention drugs or drug-related issues.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses acting roles and actor suitability, with no mention of drugs, drug abuse, or related terms."
+}

@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The content is: "Can see me getting hooked on codeine to fall asleep 😳". First, I need to determine if this is illicit or abusive drug-related.
+
+The key terms here are "getting hooked on codeine". "Hooked" in this context suggests dependence or addiction, which is a sign of abuse. Codeine is a controlled substance, and using it for falling asleep might indicate misuse, especially if it's not prescribed properly. The emoji 😳 adds a tone of concern or anxiety, which could imply the person is struggling with the effects of codeine. 
+
+Looking at the definitions, True includes mentions of illegal or OTC drugs in contexts of abuse or misuse. The content here is about using codeine for sleep, which is a common misuse scenario. There's no mention of medical use or education, so it's not False. The tone seems to be about the negative consequence of using codeine, which aligns with abuse. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in the context of being 'hooked' for sleep, indicating potential misuse or abuse of a controlled substance."
+}

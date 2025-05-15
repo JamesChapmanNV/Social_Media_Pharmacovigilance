@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post about crypto and NFTs, and I need to check for any drug-related references. The task is to detect any words or phrases that refer to illicit drugs, using the given index terms.
+
+First, I'll read through the post carefully. The post says: "THEN those same just reward of holders leaving everyone else out of future projects. This is antithetical to crypto where everyone has a shot. NFTs will surely undergo a complete revamp in the next few years to shed this toxic shell."
+
+Looking for any drug terms. The key words here are "toxic shell." Wait, "toxic" in this context is probably a metaphor, not referring to a drug. The user mentioned that if the drug isn't in the list, use "other." The post doesn't mention any specific drugs like codeine, amphetamine, cocaine, etc. Words like "toxic" might be a red herring here. The phrase "toxic shell" is about NFTs, not drugs. There's no mention of any substance or slang related to drugs. 
+
+I should check if "toxic" is in the index terms. Looking through the list, "toxic" isn't an index term. The index terms are specific drug names or metabolites. So "toxic" here is a metaphor, not a drug reference. Therefore, there are no matches. The answer should be an empty array.
+</think>
+
+[]

@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is about a new method of smuggling heroin through cloth threads in India. The key points here are the mention of heroin, which is an illegal drug, and the context of smuggling. The DRI and ATS are authorities involved in drug enforcement. The content talks about a joint operation seizing a container with 9,760 kgs of threads used for smuggling. 
+
+Now, according to the definitions, True includes content that mentions illegal drugs in the context of abuse, misuse, or promotion. Here, the heroin is being smuggled, which is a method to transport illegal drugs. The content is reporting on an operation that seized drugs, which is related to the illicit trade. The mention of heroin and the smuggling method directly relates to the abuse and illegal distribution of drugs. There's no mention of medical use or educational context here. The tone is factual but the subject matter is about illegal drug trafficking. So, this should be classified as ILLICIT/ABUSIVE-DRUG-RELATED.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions heroin, an illegal drug, in the context of smuggling and law enforcement operations, indicating illicit drug trafficking."
+}

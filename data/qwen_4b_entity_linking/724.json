@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term from the provided list, and return a JSON array.
+
+First, I need to look at the post: "BREAKING: Medical examiner says if he found Floyd home alone he would conclude he had a fentanyl overdose #DerekChauvinTrail #GeorgeFloydIsNotOnTrial Fentanyl #Chauvin #GeorgeFloyd #". 
+
+The main phrase here is "fentanyl overdose". The word "fentanyl" is clearly listed in the Index Terms under "Fentanyl (China White, Apache, Duragesic) – A synthetic opioid 50–100 times stronger than morphine that drives many overdose deaths." So "fentanyl" directly maps to the Index Term "Fentanyl".
+
+Now, checking if there are any other phrases. The post mentions "overdose", but "overdose" itself isn't listed in the Index Terms. The Index Terms are specific to the drug names or their synonyms, not the act of overdosing. So "overdose" would fall under "other" because it's not a specific drug reference. However, the user's instruction says to detect every word or phrase that refers to an illicit drug or substance. Since "overdose" is a consequence of drug use, but not a drug itself, it's not in the list. So the only match here is "fentanyl".
+
+Wait, but the post says "fentanyl overdose". The word "overdose" is part of the phrase, but the main drug is "fentanyl". The task is to detect the drug references. So "fentanyl" is the key term here. The "overdose" is just describing the effect, not the drug itself. So the only matched phrase is "fentanyl".
+
+Therefore, the JSON array should have one entry: {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}.
+
+I need to make sure there are no other terms. The hashtags include #Fentanyl and #Chauvin, but the hashtags are not part of the post's content. The post's text is "fentanyl overdose", so only "fentanyl" is the drug reference here. The rest is context about the overdose, which isn't a drug name or synonym. So the answer is correct.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]

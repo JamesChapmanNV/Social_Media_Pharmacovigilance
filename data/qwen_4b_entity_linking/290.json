@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this query. The user provided a post about parents switching from harmful drugs like alcohol to cannabis. My task is to detect any drug references and map them to the correct index terms.
+
+First, I'll read through the post carefully. The post mentions "deadly carcinogenic harmful drugs like alcohol" and then "safe medicinal drug in cannabis". 
+
+Looking at the index terms list, alcohol isn't listed, so any references to it would be "other". But wait, the user's example 4 had "snow" and "white lines" as other because they weren't drugs. However, in this case, the post is talking about alcohol and cannabis. 
+
+Wait, the index terms include "Marijuana (Cannabis, Weed, Pot)" as a separate entry. So "cannabis" would map to that. But the post says "safe medicinal drug in cannabis". The word "cannabis" is in the index terms, so that's a match. 
+
+Then, "alcohol" is mentioned. The index terms don't list alcohol, so that would be "other". The post says "deadly carcinogenic harmful drugs like alcohol", so "alcohol" is a reference to a drug not in the list. 
+
+So the matched phrases are "alcohol" and "cannabis". 
+
+Now, check if there are any other terms. The rest of the post is about switching from one to the other, but no other drug terms. 
+
+So the JSON array should have two entries: one for "alcohol" as other, and "cannabis" as the index term. 
+
+Wait, but the user's example 3 had "xans" which wasn't in the list, so it was "other". Similarly, here "alcohol" is not in the index terms, so it's "other". "Cannabis" is in the list as "Marijuana (Cannabis, Weed, Pot)", so that's the index term. 
+
+So the correct output would be two entries: alcohol as other, and cannabis as the index term. Let me confirm that "cannabis" is indeed in the index terms. Yes, under Marijuana. 
+
+Therefore, the final answer should be two objects in the array.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "alcohol"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

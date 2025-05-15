@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "codeine" and "Tramadol". My task is to identify any drug-related references and map them to the correct Index Terms from the given list.
+
+First, I'll look at the post: "NDLEA nabs five with 4,580KG of codeine, Tramadol: Kunle Falayi A haul of codeine and Tramadol hidden in warehouses…". The words "codeine" and "Tramadol" are clearly mentioned here. 
+
+Now, checking the Index Terms. Codeine is listed under "Codeine (Lean, Purple Drank, Schoolboy)" so "codeine" directly maps to that index term. 
+
+Next, Tramadol. Looking through the list, I don't see Tramadol explicitly mentioned. The closest is "Oxazepam (Serax)" but that's not related. Wait, the Index Terms include "Tramadol" in the list? Let me check again. No, the Index Terms provided don't have Tramadol as a separate entry. The only mention of Tramadol is in the example where it's part of a sentence, but in the given list, Tramadol isn't listed as an index term. 
+
+Wait, the user's example 3 had "xans" which was "other" because it wasn't in the list. So if Tramadol isn't in the Index Terms list, then it should be "other". 
+
+But wait, let me double-check the Index Terms. The list includes "Tramadol" as part of "Oxazepam (Serax)"? No, looking back, the Index Terms list doesn't have Tramadol. The closest is "Oxazepam (Serax)" which is a benzodiazepine. Tramadol is an opioid, but it's not listed in the Index Terms. Therefore, "Tramadol" would be "other".
+
+So the post has "codeine" which is mapped to Codeine, and "Tramadol" which is "other". The user's example 3 had "xans" as "other", so same logic applies here. Therefore, the JSON should have two entries: one for codeine and one for tramadol as other.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "Tramadol"}
+]

@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Pretty sure heroin is illegal yet business is booming still in NY. So you'll just create another underground thing." I need to detect any drug-related references and map them to the correct index terms.
+
+First, I'll read through the post carefully. The first part mentions "heroin is illegal," which is straightforward. Heroin is a well-known opioid, and looking at the index terms, there's an entry for Morphine, but heroin isn't listed. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, the user's instruction says to use the provided index terms. Since heroin isn't listed, I should check if there's a related term. The index term for morphine is there, but heroin is a different drug. Wait, the index terms don't have a specific entry for heroin. Let me check again.
+
+Looking at the index terms list, the only opioid-related terms are Codeine, Morphine, Fentanyl, Buprenorphine, Carfentanil, Methadone, Oxycodone, Hydrocodone, Hydromorphone, and Metonitazene. Heroin isn't listed. The user's task says if the drug is not in the list, use "other". So "heroin" would map to "other".
+
+But wait, the example given in the problem statement includes "codeine" and "lean" as Codeine. So in the example, "lean" is a slang for codeine. Similarly, the user's post mentions "heroin", which is not in the index terms. Therefore, the matched phrase "heroin" should be under "other".
+
+Then, the second part of the post: "business is booming still in NY. So you'll just create another underground thing." The phrase "underground thing" is vague, but it's not a specific drug reference. So no match here.
+
+So the only detected phrase is "heroin", which maps to "other". Therefore, the JSON array should have one object with index_term "other" and matched_phrase "heroin".
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

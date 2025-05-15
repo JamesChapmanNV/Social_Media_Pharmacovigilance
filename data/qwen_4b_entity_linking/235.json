@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Oh I'm scared, what she bout to do to Rue with that morphine?!" and wants me to detect any drug references and link them to the index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs. The key here is to check against the list of index terms provided. The post mentions "morphine". Looking at the index terms, Morphine is listed as an index term. The phrase "that morphine" directly refers to morphine. So, "morphine" is a matched phrase here. 
+
+Now, checking if there's any other term. The rest of the sentence is about fear and someone named Rue, which doesn't mention any other drugs. The word "bout" is part of "what she bout to do", which is a contraction of "about", so that's not a drug term. 
+
+So the only match here is "morphine" under the index term "Morphine". The example given in the problem statement for morphine was in the list, so that's straightforward. 
+
+I should make sure that "morphine" is exactly as in the post. The index term is "Morphine", and the matched phrase is "morphine". No other terms are present. Therefore, the JSON array should have one object with those values.
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

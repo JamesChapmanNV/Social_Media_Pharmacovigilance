@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content provided is: "Snap back at those painful headaches and neck pains with a good pop and crack from our chiropractors here at Crawford Chiropractor. Call us today at (209) 216-5588."
+
+First, I need to check the definitions. True includes mentions of illegal drugs, RX, OTC in abuse contexts, slang, or encouragement of misuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+Looking at the content, the key terms are "snap back," "painful headaches," "neck pains," "pop and crack," and "chiropractors." "Snap back" might be a slang term, but I'm not sure. "Pop and crack" could refer to a chiropractic adjustment, which is a medical procedure. The mention of chiropractors suggests a medical or health-related service. There's no mention of drugs, illegal substances, or any abuse. The context is about treating pain through chiropractic care, which is a legitimate medical practice. The terms used here are related to physical therapy or spinal adjustments, not drug use. The phrase "snap back" might be a colloquial term for a quick recovery, but without any indication of drug use or abuse. The overall tone is promotional for a chiropractic service, not related to drugs. Therefore, this should be classified as False because it's in a medical context and doesn't involve drug abuse or illegal substances.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content promotes chiropractic services for pain relief, using terms like'snap back' and 'pop and crack' which refer to physical therapy procedures, not drug-related abuse or illegal substances."
+}

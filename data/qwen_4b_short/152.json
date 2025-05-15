@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user wants me to label the given social media post as T or F based on the rules provided. The post is: "ER doctor ruled out drug overdose in Floyd death - News".
+
+First, I need to check if the text shows illicit or abusive drug use. The key terms here are "drug overdose" and "Floyd death". The mention of a drug overdose could be related to drug use. However, the context is that an ER doctor ruled it out. So, the doctor's conclusion is that there was no drug overdose. 
+
+The label rules say T is for text that shows using, seeking, buying, selling, trafficking, or slang for drugs. F is for other cases like medical discussion, news, discouraging use, or metaphor.
+
+In this case, the post is reporting news about a medical ruling. The fact that the doctor ruled out a drug overdose is part of a news story. The post itself doesn't state that the person was using drugs, but rather that the overdose was ruled out. So it's not directly stating drug use. It's more of a news report about a medical determination. Therefore, according to the rules, this would be F because it's a news item discussing a medical ruling, not directly showing drug use. The mention of "drug overdose" is part of the news, but the ruling out implies that there's no evidence of drug use. So the label should be F.
+</think>
+
+F

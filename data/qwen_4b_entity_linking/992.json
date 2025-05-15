@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Baby I can't quit that lean put a ring around codeine". I need to detect any drug references here and link them to the correct index terms.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The word "lean" is mentioned. From the index terms, Codeine has synonyms like "Lean" and "Purple Drank". So "lean" should map to Codeine. Then there's "codeine" directly, which is listed under Codeine as well. 
+
+Next, check if there are any other terms. The rest of the sentence doesn't have any other drug-related words. "Baby" and "put a ring around" are just part of the sentence structure, not drug references. 
+
+So the matches are "lean" and "codeine" both under Codeine. No other terms are present. The example given in the problem shows that "lean" and "codeine" are both mapped to Codeine, so this should follow the same pattern. Make sure to use the exact phrases as they appear. No other index terms apply here. The answer should be a JSON array with those two entries.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

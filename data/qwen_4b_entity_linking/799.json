@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "in a dream yea.. Thinkin bout codeine yea.. 😈". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The phrase "codeine" is directly mentioned. Looking at the Index Terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The user wrote "codeine", which is exactly one of the index terms. So that's a clear match.
+
+Next, the rest of the post is "in a dream yea.. Thinkin bout codeine yea.. 😈". The words "dream" and "yea" don't seem to relate to any drugs on the list. The emoji 😈 might indicate something sinister, but it's not a drug reference. The phrase "Thinkin bout codeine" is just reinforcing the mention of codeine. There's no other slang or euphemism here. 
+
+I should check if "codeine" is in the Index Terms. Yes, it is. So the only matched phrase is "codeine". The other words don't fit any drug terms. The example given in the problem had "lean" and "codeine" both matching Codeine. But in this case, only "codeine" is present. 
+
+Wait, the user's post says "Thinkin bout codeine yea..". "Thinkin" is a typo for "thinking", but that's not a drug term. "Yea" is just an affirmation. So no other terms here. 
+
+Therefore, the correct JSON array should have one entry: index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

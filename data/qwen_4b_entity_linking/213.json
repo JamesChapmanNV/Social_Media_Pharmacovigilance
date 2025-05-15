@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Over the months of visiting the patient, Robin received increasing doses of Actiq, the fentanyl lollipops." I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll scan the post for any terms that might refer to illicit drugs or substances. The key words here are "Actiq" and "fentanyl lollipops." 
+
+Looking at the list of index terms, I see that Fentanyl is listed with several slang names like China White, Apache, Duragesic. Actiq is a brand name for a fentanyl product, so it's likely referring to fentanyl. The post mentions "fentanyl lollipops," which is a slang term for fentanyl in a candy form. 
+
+Now, checking the index terms, Fentanyl is explicitly listed. So "Actiq" would map to Fentanyl, and "fentanyl lollipops" also maps to Fentanyl. There's no mention of other drugs here. The example given in the problem statement had "lean" mapping to Codeine, so similar logic applies here. 
+
+I need to make sure that "Actiq" is correctly identified as a fentanyl product. Since Actiq is a prescription medication containing fentanyl, it's a controlled substance. The post is talking about increasing doses, which could be related to medical use, but the task is to detect any references regardless of context. 
+
+So the matched phrases are "Actiq" and "fentanyl lollipops," both under the index term Fentanyl. There are no other terms here that match any other index terms. The answer should be an array with two objects, each with index_term as Fentanyl and the matched phrases.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl lollipops"}
+]

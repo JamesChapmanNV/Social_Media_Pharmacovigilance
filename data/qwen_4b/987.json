@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I'm on ocean drive sitting codeine wit da top down." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+The content mentions "codeine," which is an OTC drug but also can be misused. The phrase "sitting codeine wit da top down" uses slang ("wit da top down" might be a casual way of saying sitting outside with a top down, but the key part is "codeine"). The tone seems casual, possibly indicating recreational use. The user is "on ocean drive" which might be a location, but the key is the mention of codeine. Since codeine is mentioned in a context that could imply use, and the phrasing is casual, this might be considered illicit. The example given in the first example used "lean" and "codeine" with a supportive tone, which was classified as true. Here, the user is using codeine in a casual, possibly recreational setting. So the label should be True. The explanation would note the mention of codeine and the casual, possibly recreational context.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a casual, recreational context, suggesting use in a non-medical setting."
+}

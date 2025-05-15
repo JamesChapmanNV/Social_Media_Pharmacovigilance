@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this content classification. The user provided a specific example, so I need to follow the guidelines carefully.
+
+First, the content is: "They do crack at orgies conducted by radical right wing corrupt RepubliCONS. Ask cowthorn about it. Now go back to school and get an education. President Biden WON. Everyone caught committing ELECTION FRAUD has been a REPUBLICON."
+
+I need to determine if this is ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False). 
+
+Looking at the content, the main terms are "crack" and "orgies." "Crack" is a slang term for crack cocaine, which is an illicit drug. The phrase "crack at orgies" might be a reference to drug use in a sexual context, which could be related to drug abuse. However, the rest of the content is about political figures, election fraud, and criticizing Republicans. 
+
+But the key here is whether the content is promoting or glorifying drug abuse. The mention of "crack" in a context that seems to describe a criminal activity (orgies conducted by corrupt individuals) might be part of a political rant. However, the term "crack" is a clear indicator of an illicit drug. 
+
+The definitions say that True includes mentions of illegal drugs in the context of abuse or misuse. Even if the rest of the content is political, the presence of "crack" (a drug) in the context of abuse (orgies) would make it True. However, the user's example in the prompt shows that if the content mentions drugs in a context that's not directly about abuse, but just using slang, it's still True. 
+
+But wait, the example given in the problem's first example mentions "lean" and "codeine" with a supportive tone. Here, "crack" is used in a context that's more about criminal activities. However, the term "crack" itself is an illicit drug. So even if the context is about orgies, the mention of the drug is enough to classify it as True. 
+
+Alternatively, maybe the user is trying to say that the content is about political issues, and "crack" is a metaphor or a slang term not directly related to drug abuse. But according to the definitions, any mention of illegal drugs in the context of abuse or misuse is True. Since "crack" is a known illicit drug, even if the context is a political statement, the presence of the drug term would make it True. 
+
+But I need to check if the content is promoting or glorifying drug use. The phrase "crack at orgies" might be a way of describing drug use in a sexual context, which is a form of abuse. Therefore, the content is mentioning an illicit drug in the context of abuse, so it's True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'crack,' an illicit drug, in a context implying drug abuse (orgies), even if the broader message is political."
+}

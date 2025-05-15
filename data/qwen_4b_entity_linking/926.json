@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Go buy one if you love me mwah". I need to detect any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post says "buy one". The word "one" could be a slang term for a drug. Looking at the index terms, "Codeine" has synonyms like "Lean" and "Purple Drank", but "one" isn't listed. However, in some contexts, "one" might be a slang for a drug, like a pill or a dose. But checking the index terms, there's no entry for "one" as a drug. The closest might be "Amphetamine" with "Speed", "Bennies", "Adderall", but "one" isn't listed there. 
+
+Wait, the example #2 had "addy" mapped to Amphetamine. So maybe "one" here is a slang term. But according to the index terms, "one" isn't listed. The instruction says if the drug isn't in the list, use "other". So "one" isn't a recognized term in the index terms, so it would be "other". 
+
+But wait, maybe "one" is part of a phrase. The post is "buy one". Could "one" be a slang for a specific drug? Let me check the index terms again. For example, "Codeine" has "Lean", "Purple Drank", "Schoolboy". "One" isn't there. "Amphetamine" has "Speed", "Bennies", "Adderall". "One" isn't listed. So "one" would be "other".
+
+But the user's example #3 had "xans" mapped to "other". So in this case, "one" is a standalone word that's not in the index terms, so it's "other". Therefore, the matched phrase is "one" with index_term "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "one"}]

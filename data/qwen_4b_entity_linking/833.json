@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says "MORPHINE" with some emojis. The task is to detect any drug references and link them to the index terms.
+
+First, I need to check if "Morphine" is listed in the index terms. Looking through the list, yes, Morphine is there. The index term for Morphine is "Morphine (MS Contin, Miss Emma, Morph)".
+
+The post uses the exact word "MORPHINE", which is a direct reference. Since it's in the index terms, the matched phrase is "MORPHINE" and the index term is "Morphine". 
+
+I should make sure there are no other phrases. The rest of the post has emojis and text like "ALDUBatADNLove", which doesn't seem to reference any drugs. So only "MORPHINE" is the match here. 
+
+No need to consider other terms like "other" since Morphine is explicitly listed. The JSON should have one object with the correct index term and matched phrase.
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "MORPHINE"}]

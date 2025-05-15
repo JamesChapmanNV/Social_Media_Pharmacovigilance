@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "whaaat? endorphins are peptides? i thought they would look like morphine". I need to check for any drug-related references here.
+
+First, I'll go through the post word by word. The user is asking about endorphins being peptides and comparing them to morphine. The key terms here are "endorphins" and "morphine". 
+
+Looking at the Index Terms list, morphine is listed under "Morphine" with its synonyms. The user mentions morphine, so that's a direct match. However, the post is discussing endorphins, which are naturally occurring peptides. The Index Terms don't have an entry for endorphins, so that would be "other". 
+
+But wait, the task is to detect any references to illicit drugs or substances. Endorphins are endogenous opioids, but they aren't listed as an index term here. The user is comparing endorphins to morphine, which is a drug. However, the question is about whether the post contains any drug references. The user is not using endorphins as a drug, but rather discussing their nature. 
+
+The phrase "look like morphine" might be a metaphor, but since morphine is in the index terms, that's a match. The word "morphine" is explicitly listed. The rest of the post is about endorphins, which aren't in the index terms. So the only match here is "morphine". 
+
+Wait, the user says "i thought they would look like morphine". The word "morphine" is in the Index Terms under "Morphine". So the matched phrase is "morphine", and the index term is "Morphine". The rest of the post doesn't mention any other drugs. 
+
+So the JSON array should have one entry: {"index_term": "Morphine", "matched_phrase": "morphine"}.
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

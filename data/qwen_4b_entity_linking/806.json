@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I'll read the post carefully: "Wiz Khalifa annoys the shit out of me with his 'no blunt' policy but the bitch hops on the codeine train no problem." 
+
+Looking for drug references here. The phrase "codeine train" stands out. The index terms list includes "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "codeine train" is a slang reference to using codeine. So "codeine" is directly mentioned, which maps to the index term "Codeine". 
+
+Are there any other terms? The rest of the post talks about Wiz Khalifa's policy and someone hopping on the codeine train. There's no other mention of drugs here. The word "blunt" might refer to a cigarette, but it's not listed in the index terms as a drug. So "blunt" would be "other" since it's not a drug. But wait, the user's example 3 had "xans" as "other" because it wasn't a listed term. However, in this case, "blunt" isn't a drug term, so it's "other". But the user's instruction says to detect every word or phrase that refers to an illicit drug. Since "blunt" is a slang for a cigarette, not a drug, it's not part of the index terms. So the only match here is "codeine".
+
+Wait, the user's example 4 had "snow" and "white lines" as "other" because they weren't drugs. So in this case, "codeine" is directly in the index terms. The phrase "codeine train" is a slang, so the matched_phrase is "codeine train". But the index term is "Codeine". Wait, the index term is "Codeine", and the matched_phrase is "codeine train". But the index term is for the drug, and the matched phrase is the slang. So the correct entry would be {"index_term": "Codeine", "matched_phrase": "codeine train"}? But in the example 1, "lean" and "codeine" are both matched. However, in the example 1, the post was "I got her hooked on that lean everyday she say she want codeine", so "lean" is a slang for codeine, and "codeine" is the direct term. 
+
+So in this case, the phrase "codeine train" is a slang reference to codeine. Therefore, the matched_phrase is "codeine train", and the index_term is "Codeine". But wait, the index term is "Codeine", and the matched_phrase is the slang term. However, the example 1 shows that "lean" is mapped to "Codeine", even though "lean" is a slang. So in this case, "codeine train" would be the matched_phrase, and the index_term is "Codeine".
+
+But wait, the user's instruction says to detect every word or phrase that refers to an illicit drug. So "codeine train" is a phrase that refers to using codeine. Therefore, the correct JSON would be {"index_term": "Codeine", "matched_phrase": "codeine train"}.
+
+But wait, in the example 1, the matched_phrase is "lean" and "codeine", so the exact text. So in this case, the phrase "codeine train" is the exact text. So the answer would be one object with index_term "Codeine" and matched_phrase "codeine train".
+
+But wait, the user's example 1 has "lean" and "codeine" as separate entries. So if the post has "codeine train", that's one phrase. So the answer is one entry. Therefore, the correct JSON is [{"index_term": "Codeine", "matched_phrase": "codeine train"}].
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine train"}
+]

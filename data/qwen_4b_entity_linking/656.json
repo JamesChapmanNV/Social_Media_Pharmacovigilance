@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this. The user provided a post and wants me to detect any drug-related references. The post is: "Imo Risk level - High 11 p/e standard for cannabis sector 2 scenarios Rev growth 10yrs - 50% avg 10 yr pt $60.98 (today buy price would be under $20) Rev growth 10 yr - 25% avg 10 yr pt $10.98 (buy at $3.88 and below) Biggest risk is the dilution". 
+
+First, I need to scan through the text for any slang, euphemisms, or terms that might refer to illicit drugs. The user mentioned that the Index Terms are provided, so I need to check each phrase against that list.
+
+Looking at the post, the words "Imo" could be a typo or abbreviation. "Imo" is sometimes used as "I'm" but in some contexts, it might be slang. However, checking the Index Terms, I don't see "Imo" listed. The next part is "Risk level - High" which is about financial risk, not a drug. Then "11 p/e standard for cannabis sector" – "p/e" is price-to-earnings ratio, a financial term. "Cannabis sector" is mentioned, but cannabis is listed as an illicit drug in the Index Terms. Wait, the Index Terms have "Marijuana (Cannabis, Weed, Pot)" as a term. But the post is talking about the cannabis sector, not using the drug. So "cannabis" here is a reference to the industry, not the drug itself. However, the user's task is to detect references to illicit drugs. Since "Marijuana" is listed as an Index Term, but the post is discussing the sector, not using the drug. So maybe "cannabis" here is not a drug reference but a business term. 
+
+Looking for other phrases: "Rev growth 10yrs" – revenue growth, not a drug. "10 yr pt $60.98" – price target, financial. "Buy price" – financial. "Dilution" – financial term related to stock dilution. 
+
+The post doesn't mention any specific drug names or slang terms. The only possible term is "Imo", but that's not in the Index Terms. The rest are financial terms. So there are no drug references here. Therefore, the answer should be an empty array. But wait, the user's example 4 had "snow" and "white lines" as "other" because they aren't on the list. But in this case, the post doesn't have any phrases that match the Index Terms. So the correct response is an empty JSON array.
+</think>
+
+[]

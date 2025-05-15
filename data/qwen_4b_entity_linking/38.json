@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I'll read through the post carefully. The post says: "But please don't feel sorry for me please, I am strong and as long as I have pain meds I can make it through most of the day. I'm on enough morphine to kill a animal; but I do not want to complain about & don't you dare feel sorry for me please. 💋love, NormaJean I am a strong."
+
+Looking for drug references here. The first mention is "pain meds," which is a bit vague. But the next part is "morphine to kill a animal." Morphine is listed in the Index Terms under "Morphine" as the prototypical opioid. So "morphine" is a direct match. 
+
+Then there's "killer" in "kill a animal," but "killer" isn't a drug term. The "animal" part might be a typo or slang, but since "morphine" is explicitly listed, that's the key term here. 
+
+The phrase "I'm on enough morphine to kill a animal" clearly refers to morphine. The Index Term for morphine is "Morphine (MS Contin, Miss Emma, Morph)". So the matched phrase is "morphine".
+
+Also, the user mentions "pain meds" in the first sentence. "Pain meds" is a general term, but the context here is about morphine. However, "pain meds" isn't specifically listed in the Index Terms. The Index Terms include "Oxycodone (OxyContin, Percocet, Hillbilly Heroin)" and "Hydrocodone (Vicodin, Norco, Vike)", but "pain meds" is too broad. Since "pain meds" isn't a specific drug listed, it would fall under "other". But wait, the user is specifically talking about morphine, so maybe "pain meds" is just a general term and not a specific drug. However, the example in the user's prompt includes "xans" as "other" because it's not a specific term. So "pain meds" might be "other" unless it's a known slang for a specific drug. But in this case, the user is explicitly using "morphine" and the "pain meds" is just a general statement. So "pain meds" would be "other".
+
+But wait, the user says "I'm on enough morphine to kill a animal". The main drug here is morphine. The "pain meds" is a general term, but the actual drug mentioned is morphine. So the only specific drug here is morphine. The rest is just general statements. So the only match is "morphine".
+
+Wait, but the user might be using "pain meds" as a slang for a specific drug. But according to the Index Terms, "pain meds" isn't listed. The Index Terms have "Oxycodone", "Hydrocodone", "Morphine", etc. So "pain meds" is not a specific term, so it would be "other". However, the user is specifically talking about morphine. So the only matched phrase is "morphine".
+
+So the JSON array should have one entry: {"index_term": "Morphine", "matched_phrase": "morphine"}.
+
+Wait, but the user wrote "kill a animal". Maybe "animal" is a typo for "a man" or "a person", but that's not relevant. The key term is "morphine".
+
+So the answer is just the morphine entry.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

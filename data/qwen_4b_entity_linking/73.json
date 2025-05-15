@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post mentions several things: "free heroin needles" and "food stamps to eat at restaurants on the taxpayer dime." 
+
+First, I need to check each phrase for drug references. "Heroin needles" is a direct reference to heroin, which is an illicit drug. Looking at the index terms, heroin isn't listed, but there's a mention of Benzoylecgonine (BZE) as the primary metabolite of cocaine. Wait, but heroin isn't in the list. The index terms include Codeine, Amphetamine, Methamphetamine, etc., but not heroin. So, according to the instructions, if the drug isn't in the list, use "other". 
+
+So "heroin needles" would map to "other" because heroin isn't in the index terms. Then "food stamps" is a policy term, not a drug reference. The hashtag #Obamacare and #MedicaidExpansion are political, so they don't relate to drugs. The rest of the post talks about welfare state expansion, which is not a drug reference. 
+
+Therefore, the only detected phrase is "heroin needles" which maps to "other". The answer should be a JSON array with that entry.
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin needles"}]

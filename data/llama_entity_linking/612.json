@@ -1,0 +1,10 @@
+[
+  {"index_term": "CBD", "matched_phrase": "cannabis"},
+  {"index_term": "CBD", "matched_phrase": "edibles"},
+  {"index_term": "CBD", "matched_phrase": "smoking"},
+  {"index_term": "CBD", "matched_phrase": "vaping"},
+  {"index_term": "delta‑9‑THC‑COOH", "matched_phrase": "cannabis"},
+  {"index_term": "delta‑9‑THC‑COOH", "matched_phrase": "edibles"},
+  {"index_term": "delta‑9‑THC‑COOH", "matched_phrase": "smoking"},
+  {"index_term": "delta‑9‑THC‑COOH", "matched_phrase": "vaping"}
+]

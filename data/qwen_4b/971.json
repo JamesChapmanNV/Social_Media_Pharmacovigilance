@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Lol my family hates my trap/coke hyena/codeine music. Their like you ain't about that life. True but its turnt." 
+
+First, I need to check if this is illicit or abusive drug-related. The content mentions "trap," "coke," "hyena," and "codeine." These are all slang terms related to drugs. "Coke" is a common slang for cocaine, which is an illicit drug. "Codeine" is an opioid, also illegal without a prescription. The mention of "trap" might refer to trap music, but the context here is the drugs. The phrase "you ain't about that life" suggests a cultural reference to drug use, possibly glorifying it. The user also says "True but its turnt," which might imply that the content is about drug use being trendy or accepted. 
+
+The definitions say that True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. The content here is using slang and cultural references that signal recreational drug use. Even though the user is talking about their family hating it, the mention of the drugs and the cultural references fit the True category. The explanation should note the specific drug terms and the context of recreational use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'coke' and 'codeine' as slang for illicit drugs and references 'trap music' with a cultural context implying recreational drug use."
+}

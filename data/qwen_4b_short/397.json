@@ -1,0 +1,7 @@
+<think>
+Okay, let's see. The user is asking me to label a social media post related to drug abuse. The post is: "Drinking hasn't been doing it for me lately maybe I'll start doing heroin". The rules are T if it shows illicit or abusive drug use (using, seeking, buying, selling, trafficking, or slang for drugs), otherwise F.
+
+First, I need to parse the sentence. The person mentions "Drinking hasn't been doing it for me lately". So they're talking about not drinking, which is a bit confusing. Then they say "maybe I'll start doing heroin". The key part here is the mention of heroin. Heroin is an illicit drug, so that's a clear T. But wait, the first part is about drinking, which is a drug, but is it considered illicit? Drinking alcohol is legal, but in some contexts, it might be considered a drug. However, the label rules specify "illicit or abusive drug use". So if someone is talking about using alcohol, but in the context of the post, the person is saying that drinking hasn't been working, and maybe they'll try heroin. The mention of heroin is a direct reference to an illicit drug. So even though the first part is about drinking, the main point is the transition to heroin. The label should be T because heroin is an illicit drug. The other part about drinking might be a red herring, but the key is the mention of heroin. Therefore, the answer is T.
+</think>
+
+T

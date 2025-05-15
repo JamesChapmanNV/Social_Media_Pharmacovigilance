@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Germany being a dealer before WWII, mentioning they synthesized drugs instead of importing from colonies. The task is to detect any drug references and link them to the index terms.
+
+First, I need to scan the post for any terms that could refer to illicit drugs. The post says "best quality shit" which is slang for drugs. The word "shit" here is likely a euphemism for drugs. Then there's "synthesize drugs"—synthesizing drugs could refer to making illicit drugs, but the index terms don't have a direct match for "synthesize drugs". However, the term "shit" is a common slang for drugs, so I need to check if "shit" is in the index terms. Looking at the list, none of the index terms are "shit", so it would fall under "other".
+
+Another part is "Blitzed"—this is a slang term for being high on drugs, specifically cocaine or other stimulants. But checking the index terms, "Blitzed" isn't listed. However, the example in the user's prompt shows that "Blitzed" was considered as "other" in a previous example. Wait, in Example 4, "snow" and "white lines" were marked as other. So "Blitzed" here would also be "other".
+
+So the matched phrases are "shit" and "Blitzed". Both are not in the index terms, so index_term is "other". The JSON array should have two entries for these phrases. Let me confirm again. The index terms include things like Codeine, Amphetamine, etc., but not "shit" or "Blitzed". Therefore, both are "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "shit"},
+  {"index_term": "other", "matched_phrase": "Blitzed"}
+]

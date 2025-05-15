@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "swear my back has been worn away to dust, ive had bare codeine and it still feels like its in absolute bits :("
+
+First, I need to determine if this is illicit/abusive-drug-related. The key terms here are "codeine" and the context of using it. Codeine is an opioid, which is a controlled substance. The user mentions having "bare codeine" which might be a slang term for using it. The phrase "still feels like its in absolute bits" sounds like they're describing the effects of the drug, possibly in a negative way. 
+
+But wait, the user is talking about their own experience with codeine. The context here is personal use, but the question is whether it's promoting or encouraging misuse. The user is not explicitly promoting drug use, but rather sharing a personal negative experience. However, the mention of codeine in a context that might imply abuse. 
+
+Looking at the definitions: True includes mentions of illegal drugs in the context of abuse or misuse. The user is using codeine, which is an OTC drug but can be abused. The phrase "bare codeine" might be a slang for using it. The user is expressing a negative effect, but the key is whether it's promoting or glorifying. Since they're talking about their own experience, it's more about personal use rather than promoting. But the presence of codeine in the context of abuse could still make it True. 
+
+Alternatively, if the user is just sharing a personal problem, maybe it's not promoting. But the content does mention codeine in a way that could indicate misuse. The explanation in the example 1 mentions 'hooked' and 'everyday' with an approving tone. In this case, the user is expressing a negative effect, but the mention of codeine could still be considered as related to abuse. 
+
+Wait, the example 1 was about codeine and lean, which are drugs. The user here is talking about codeine, which is an OTC drug but can be abused. The phrase "bare codeine" might be a slang for using it. The user is describing the effects, but the key is whether it's promoting or encouraging. Since they are not promoting, but just using it, maybe it's still considered as True because it's mentioning the drug in the context of use. 
+
+Alternatively, if the user is just sharing a personal experience, maybe it's not promoting. But the definitions say that any mention of illegal, RX, or OTC drugs in the context of abuse or misuse counts. So even if it's personal use, if it's in the context of abuse, then it's True. The user is using codeine, which is a controlled substance, and the context is their own use. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' a controlled substance, in a personal context suggesting its use and negative effects, which aligns with abuse or misuse."
+}

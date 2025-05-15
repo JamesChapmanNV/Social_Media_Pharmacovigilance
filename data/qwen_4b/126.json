@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is: "#AryanKhan who the hell is this druggy dealer flogging my twitter feed". First, I need to determine if this is illicit or abuse-related. The user is talking about someone named Aryan Khan, who they refer to as a "druggy dealer". The term "druggy dealer" suggests someone involved in selling drugs, which is illegal. The phrase "flogging my twitter feed" might mean they're promoting or spreading content, possibly related to drugs. The use of "druggy" is a slang term that indicates drug use or dealing. Since the content mentions someone involved in drug dealing, that's a clear indication of illicit activity. The context here is about promoting or spreading content related to drug dealers, which fits under illicit/abusive-drug-related. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content refers to someone as a 'druggy dealer,' indicating involvement in drug distribution, which is illicit."
+}

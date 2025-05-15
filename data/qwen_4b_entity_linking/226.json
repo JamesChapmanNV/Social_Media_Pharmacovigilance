@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "If it's codeine I've got a shedload. But you can't have it." I need to detect any drug references here.
+
+First, I'll look for words that might refer to illicit drugs. The phrase "codeine" is directly mentioned. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The word "codeine" matches exactly, so that's one entry.
+
+Next, "shedload" is a slang term. I need to check if that's a known slang for a drug. From the index terms, I don't see "shedload" listed. However, in the example #3, "xans" was categorized as "other". Similarly, "shedload" isn't in the index terms, so it should be "other". 
+
+Wait, but the user's example #1 had "lean" mapped to Codeine. So "shedload" isn't a direct term in the list, so it's "other". 
+
+So the matched phrases are "codeine" and "shedload". The first is Codeine, the second is other. Let me confirm the index terms again. The index term for Codeine includes "Lean", "Purple Drank", "Schoolboy". "Shedload" isn't listed, so it's "other". 
+
+Therefore, the JSON array should have two entries: one for codeine and one for other.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "shedload"}
+]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is about two people arrested in different countries with drugs. The first person was hanged in Singapore for heroin, and the second, André do Rap, was released in Brazil with tons of cocaine. 
+
+First, I need to check if there's any mention of drug abuse, misuse, or promotion. The content talks about arrests and legal consequences. It mentions heroin and cocaine, which are illegal drugs, but the context is about legal actions and punishments. There's no indication of promoting, using, or glorifying drug use. The terms are used in a factual, news-like context. 
+
+The definitions say True includes content that mentions illegal drugs in the context of abuse or misuse. But here, it's about arrests and legal outcomes. The user is not discussing the use or abuse but rather the legal repercussions. So it's more about the legal system's response rather than promoting or encouraging drug use. 
+
+Therefore, the label should be False because it's not promoting or glorifying drug abuse. The explanation should note that the content discusses legal consequences without promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses legal consequences of drug possession in different jurisdictions without promoting, glorifying, or mentioning drug abuse or misuse."
+}

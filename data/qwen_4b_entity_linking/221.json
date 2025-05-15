@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this query. The user provided a post about #Four20 and mentions cannabis as a migraine treatment. The task is to detect any drug-related references and link them to the index terms.
+
+First, I need to scan the post for any terms that might refer to illicit drugs or substances. The post starts with "#Four20", which is a reference to April 20th, a day associated with cannabis use. But is "Four20" considered a drug reference here? The index terms don't list "Four20" as a drug, so it would fall under "other".
+
+Next, the post mentions "cannabis" explicitly. Looking at the index terms, "Marijuana" is listed as a separate entry. However, the post says "cannabis has long been recognised as a migraine treatment". Since cannabis is listed under "Marijuana" in the index terms, I should check if "cannabis" is directly listed. Wait, the index term for marijuana is "Marijuana (Cannabis, Weed, Pot)", so "cannabis" is a synonym for marijuana. Therefore, "cannabis" here would map to "Marijuana".
+
+But wait, the user's task is to detect every word or phrase that refers to an illicit drug. The post is talking about cannabis as a treatment, but the index term for marijuana is listed. However, the example given in the problem statement includes "Marijuana" as an index term. So, in this case, "cannabis" is a synonym for marijuana, so it should be matched to "Marijuana".
+
+But the post is talking about cannabis in a historical context as a treatment. However, the task is to detect any references to illicit drugs. Since cannabis is listed as an index term, even if it's being discussed as a treatment, it's still considered an illicit drug here. The index term for marijuana is explicitly listed, so "cannabis" would map to "Marijuana".
+
+So, the post has two phrases: "#Four20" and "cannabis". "#Four20" is not in the index terms, so it's "other". "Cannabis" is mapped to "Marijuana".
+
+Wait, but the example in the problem statement includes "codeine" as an index term and "lean" as a matched phrase. So in this case, "cannabis" is a direct synonym for the index term "Marijuana". Therefore, the correct mapping would be "Marijuana" for "cannabis".
+
+But the user's post is about cannabis being used as a treatment. However, the index term for marijuana is listed, so even if it's being discussed in a medical context, it's still considered an illicit drug here. Therefore, "cannabis" should be matched to "Marijuana".
+
+So the JSON array would have two entries: one for "#Four20" as "other", and "cannabis" as "Marijuana".
+
+Wait, but the example in the problem statement for Example #4 includes "snow" and "white lines" as "other" because they aren't on the list. So in this case, "#Four20" is not in the index terms, so it's "other". "Cannabis" is in the index terms as "Marijuana", so that's a match.
+
+So the final answer would be two entries: one for "#Four20" as "other", and "cannabis" as "Marijuana".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "#Four20"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

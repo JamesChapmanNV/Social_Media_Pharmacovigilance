@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "one thing abt it i'm crack a lil jokey jokey while sippin a lil drinky drink 😭😂🤌🏽". 
+
+First, I need to understand what's being said here. The user is talking about "crack" and "drinky drink". "Crack" is a slang term for crack cocaine, which is an illicit drug. The mention of "crack" directly points to a drug. Also, the phrase "sippin a lil drinky drink" might be referring to drinking alcohol, but the context here is the use of crack, which is illegal.
+
+The tone seems casual and possibly humorous, but the key is the mention of an illicit drug. Even if the user is being playful, the presence of "crack" in the content is a clear indicator of drug use. The example given in the prompt where "lean" and "codeine" were considered illicit because they relate to drug abuse supports this. 
+
+I should check if there's any context that might make this non-illicit, but "crack" is a well-known slang term for the drug. The other terms like "jokey" and "drink" might be part of the slang or just casual language, but the main point is the mention of crack. 
+
+So the label should be True because it mentions an illicit drug (crack) in a context that could imply use or abuse. The explanation should note the mention of crack and the context of use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'crack,' a slang term for crack cocaine, which is an illicit drug associated with abuse or misuse."
+}

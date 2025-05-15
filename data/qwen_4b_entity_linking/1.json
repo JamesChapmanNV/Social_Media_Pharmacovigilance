@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Ex heroin addict here and I endorse this message." They also mention counselors in rehab who are 23-year-old women with no real-life addiction experience.
+
+First, I need to check for any drug-related references. The main phrase here is "heroin addict." Heroin is an opioid, and looking at the index terms, Morphine is listed, but Heroin isn't directly listed. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin specifically. However, the user's task is to match the detected phrases to the index terms. Since "heroin" isn't in the list, but "Morphine" is, but heroin is a different drug. Wait, the index term for morphine is listed, but heroin isn't. However, the index term for "Morphine" includes "MS Contin, Miss Emma, Morph," but heroin is a different drug. Wait, looking back, the index terms include "Heroin" as a separate entry? Wait no, checking the list again: the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. Wait, the user's example 1 has "Codeine" linked to "lean" and "codeine," so maybe if the phrase is "heroin," but it's not in the index terms. Wait, the index terms don't have "Heroin" listed. Let me check again.
+
+Looking at the index terms list: the only opioid-related terms are Codeine, Morphine, Fentanyl, Buprenorphine, Carfentanil, Methadone, Oxycodone, Oxymorphone, etc. Heroin isn't listed as an index term. However, the index term for 6-Acetylmorphine (6-MAM) is an intermediate metabolite of heroin. But the user's task is to match the detected phrase to the index term. So if the phrase is "heroin," but there's no index term for heroin, then it would be "other."
+
+Wait, the user's instruction says: "If the drug is not in the list, use 'other'." So if the detected phrase is "heroin," and there's no index term for heroin, then it's "other." However, the index term for 6-Acetylmorphine is a metabolite of heroin. But the phrase "heroin" itself isn't an index term. Therefore, "heroin" would map to "other."
+
+But in the example given, "codeine" is mapped to "Codeine" because it's in the list. So "heroin" isn't in the list, so it would be "other."
+
+So in the post, the phrase "heroin addict" would be "heroin," which is not in the index terms, so index_term is "other."
+
+Then, the rest of the post is about counselors in rehab, which doesn't mention any drugs. So the only detected phrase is "heroin," which maps to "other."
+
+So the JSON array would have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+Wait, but the user's example 3 has "xans" which is not in the list, so it's "other." Similarly, "heroin" is not in the index terms, so it's "other."
+
+Therefore, the correct answer is to list "heroin" as "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

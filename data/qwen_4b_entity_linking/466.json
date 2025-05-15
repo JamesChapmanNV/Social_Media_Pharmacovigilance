@@ -1,0 +1,37 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I'll read the post carefully: "Hit her with no condom had to make her eat a plan b and im sippin on the codeine not brandy". 
+
+Looking for drug-related terms. The first part mentions "plan b". Plan B is a common term for emergency contraception, which isn't a drug in the list, so that's probably "other". Then "codeine" is explicitly mentioned. Codeine is listed under the Index Terms as "Codeine" with synonyms like "Lean" and "Purple Drank". The user used "codeine" here, so that's a direct match. 
+
+The rest of the sentence includes "no condom", which is about contraception, not a drug. "Sippin on the codeine" clearly refers to codeine. There's no mention of other drugs here. 
+
+So the only detected phrase is "codeine", which maps to the Index Term "Codeine". The "plan b" is not a drug in the list, so it's "other". But wait, the example 3 shows that "xans" is "other" even if it's a drug. So "plan b" is a non-drug term here. 
+
+Wait, but the user's instruction says to detect every word or phrase that refers to an illicit drug or substance. Plan B is not a drug, it's a contraceptive. So "plan b" would be "other". But the user's example 4 had "snow" and "white lines" as other. So in this case, "plan b" is not a drug, so it's "other". However, the post says "make her eat a plan b", which is a bit odd, but the main drug here is codeine. 
+
+So the correct matches are "codeine" under Codeine, and "plan b" as other. But wait, the example 3 had "xans" as other. So the answer should include both "plan b" and "codeine". 
+
+Wait, but the user's example 3: "Popped two xans before class." The answer was "other" for "xans". So "plan b" is not a drug, so it's "other". But the user's post has "plan b" and "codeine". So the JSON should have two entries: one for "codeine" and one for "plan b" as other. 
+
+But wait, the user's instruction says to detect every word or phrase that refers to an illicit drug or substance. So "plan b" is not a drug, so it's "other". However, maybe "plan b" is a slang term for something else? But according to the index terms, there's no mention of plan b. So "plan b" is "other". 
+
+Therefore, the correct JSON would have two entries: codeine and plan b as other. But wait, in the example 3, "xans" is other. So the answer should be:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "plan b"}
+]
+
+But the user's example 4 had "snow" and "white lines" as other. So this seems correct. But wait, the user's post says "plan b" which is a contraceptive, not a drug. So the answer should include both "codeine" and "plan b" as other. 
+
+Wait, but the user's instruction says to detect every word or phrase that refers to an illicit drug or substance. So "plan b" is not a drug, so it's "other". So the answer is two entries: codeine and plan b as other. But the example 3 had "xans" as other. So that's correct. 
+
+So the final answer is the two entries.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "plan b"}
+]

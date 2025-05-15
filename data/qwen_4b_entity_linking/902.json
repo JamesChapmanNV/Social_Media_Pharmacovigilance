@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references. First, I need to go through the post carefully.
+
+The post says: "I also have the foot drop causes a lot of falls or near falls. Omg the actiq is more expensive than subsys. I have trouble believing that the pn med manufacturers will go down w/o a fight. Esp when this kind of profit is involved."
+
+Looking for any mentions of drugs or substances. The first part talks about "foot drop," which is a medical condition, not a drug. Then "actiq" and "subsys" are mentioned. Let me check the index terms. 
+
+Actiq is a brand name for a medication containing baclofen, which is used for muscle spasms. Subsys is another brand name for a different medication. Neither Actiq nor Subsys are listed in the index terms as illicit drugs. The user's post is about medication costs and manufacturers, not about using or promoting illicit drugs. 
+
+So, there are no phrases here that refer to illicit drugs. The terms "actiq" and "subsys" are prescription medications, not covered under the index terms provided. Therefore, each of these should be categorized as "other" since they aren't listed in the index terms for illicit drugs. 
+
+Wait, but the task is to detect any references to illicit drugs. Since Actiq and Subsys are prescription drugs, not illicit, they don't fall under the index terms. The example in the prompt where "xans" was "other" because it wasn't on the list. So here, "actiq" and "subsys" are not in the index terms, so they should be marked as "other". 
+
+So the JSON array would have two entries, both with index_term "other" and matched phrases "actiq" and "subsys".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "actiq"},
+  {"index_term": "other", "matched_phrase": "subsys"}
+]

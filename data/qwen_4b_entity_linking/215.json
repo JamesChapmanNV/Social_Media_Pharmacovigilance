@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the correct index term, and return a JSON array.
+
+First, I'll read through the provided post carefully. The post is: "We knew  is  #Capitalist  Pete worked on the #NeverBernie Pac  #Cannabis "Tree of Life" we can not eat  Abortion is #Healthcare we never got  $7.25 is Poverty Wage 2022  protect #Fascism by Jim Crow, Rule of Law".
+
+Looking for drug-related terms. The hashtags here are #Capitalist, #NeverBernie, #Cannabis, #Healthcare, #Fascism. The main content mentions "Cannabis" and "Tree of Life" in the context of #Cannabis. But wait, the index terms include "Marijuana (Cannabis, Weed, Pot)" as a separate entry. However, the user's task is to detect any references to illicit drugs. The post says "#Cannabis "Tree of Life" we can not eat". The phrase "Cannabis" is listed in the index terms as a non-illicit drug? Wait, no. Wait, the index term for Cannabis is listed as "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. But the index term says "Marijuana" is the main entry. However, the user's instruction says to check if the drug is in the list. So "Cannabis" is in the list as "Marijuana", so the index term would be "Marijuana". But the post says "#Cannabis", which is a hashtag. The exact phrase here is "Cannabis" in the text. So the matched phrase is "Cannabis", and the index term is "Marijuana".
+
+Wait, looking back at the index terms: "Marijuana (Cannabis, Weed, Pot)" is listed as the index term. So any reference to Cannabis, Weed, Pot would map to "Marijuana". So in the post, the phrase "#Cannabis" is a hashtag, but the actual text is "Cannabis". So the matched phrase is "Cannabis", and the index term is "Marijuana".
+
+But the post also mentions "Tree of Life" in the context of Cannabis. However, "Tree of Life" isn't listed in the index terms. So that's probably not a drug reference. The rest of the post talks about other topics like #Capitalist, #NeverBernie, Abortion, Poverty Wage, etc. None of those seem to be drug references. The only possible drug reference is the #Cannabis hashtag. So the matched phrase is "Cannabis", index term "Marijuana".
+
+Wait, but the user's example 3 had "xans" which wasn't in the list, so it was "other". But in this case, "Cannabis" is in the index terms as "Marijuana". So the correct index term is "Marijuana".
+
+So the JSON array would have one entry: {"index_term": "Marijuana", "matched_phrase": "Cannabis"}.
+
+But wait, the post has "#Cannabis" as a hashtag. The exact text in the post is "Cannabis" in the hashtag. So the matched_phrase is "Cannabis". The index term is "Marijuana".
+
+Therefore, the final answer should be a JSON array with that single entry.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "Cannabis"}]

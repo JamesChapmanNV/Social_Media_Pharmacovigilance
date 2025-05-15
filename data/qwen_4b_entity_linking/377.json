@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "let me get a caesar salad please with croutons and codeine dressing". I need to detect any drug-related references here.
+
+First, I'll go through each word in the sentence. The main phrases are "caesar salad", "croutons", and "codeine dressing". 
+
+Looking at the index terms list, "codeine" is listed under the index term "Codeine", with synonyms like "Lean", "Purple Drank", etc. The phrase "codeine dressing" directly mentions "codeine", so that's a clear match. The rest of the words like "caesar salad", "croutons" don't relate to any illicit drugs listed. The example given in the task shows that "codeine" is matched to "codeine", so here "codeine dressing" would be the matched phrase. Since "codeine" is in the list, the index term is "Codeine". There are no other drug terms here. So the JSON should have one entry for "codeine dressing".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine dressing"}]

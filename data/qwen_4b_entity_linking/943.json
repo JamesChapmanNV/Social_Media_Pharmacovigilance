@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index terms, and return a JSON array.
+
+First, I'll look at the post: "Coning out of heavy 'heroin' sedation, already beaten to death.LOSE ALL SON SIDE." 
+
+Breaking it down, the main phrase here is "heroin". According to the index terms, heroin is listed as "Morphine (MS Contin, Miss Emma, Morph)" but wait, the index term for heroin is actually under Morphine. Wait, checking the list again: the index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)". But the user's post mentions "heroin", which is a different substance. However, in the index terms, there's no specific entry for heroin. Let me check again.
+
+Looking at the list, the index terms include "Morphine" and "Codeine", but heroin isn't listed as an index term. However, the user's example 1 had "codeine" and "lean" both mapped to Codeine. So if the post mentions "heroin", which isn't in the index terms, then according to the instructions, it should be mapped to "other".
+
+Wait, but wait. Let me check the index terms again. The index terms include "Morphine" as the index term. Heroin is a different drug. The index term for heroin isn't listed. So "heroin" would be "other". But wait, in the example 4, "snow" and "white lines" were mapped to "other" even though they aren't drugs. So in this case, "heroin" is a drug, but if it's not in the index terms, then it's "other". 
+
+But wait, the index terms list "Morphine" as the index term. Heroin is a different substance. The index terms don't have a specific entry for heroin. Therefore, "heroin" should be mapped to "other". 
+
+So the matched phrase is "heroin", and the index term is "other". 
+
+But wait, the user's post says "heavy 'heroin' sedation". The word "heroin" is in quotes, but the index terms don't have a specific entry for heroin. Therefore, the correct index term is "other". 
+
+Therefore, the JSON array should have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

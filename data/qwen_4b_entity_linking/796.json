@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "swear my back has been worn away to dust, ive had bare codeine and it still feels like its in absolute bits :(".
+
+First, I need to identify any drug-related references here. The main phrase to look for is "codeine". Looking at the Index Terms list, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The user used "codeine" directly, so that's a clear match. The phrase "bare codeine" might be a slang term, but "codeine" itself is explicitly listed. The rest of the post talks about the effects of codeine, but the task is to detect the drug references, not the effects. So the only match here is "codeine". The other parts like "worn away to dust" are metaphorical and not drug terms. So the JSON should have one entry with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

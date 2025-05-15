@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I need to read the post carefully: "Everywhere we go we clean, she wants me to quit that lean, baby I can't quit that lean, put a ring around codeine😛". 
+
+Looking for words or phrases that might refer to illicit drugs. The term "lean" is mentioned twice. From the index terms, Codeine has aliases like "Lean" and "Purple Drank". So "lean" should map to Codeine. Then there's "codeine" explicitly mentioned, which directly matches the index term "Codeine". 
+
+I need to check if there are any other terms. The rest of the post talks about quitting and not quitting, but no other drug references. "Clean" might be a slang term, but it's not listed in the index terms. "Put a ring around codeine" is a phrase, but "codeine" is already covered. 
+
+No other terms like "xans" or "snow" are present here. So the only matches are "lean" and "codeine", both under Codeine. The other terms in the post aren't drug-related. 
+
+Make sure to format the JSON correctly with each match as an object. No extra text, just the array. Also, check that "codeine" is exactly matched and "lean" is also matched. The example shows that "lean" is mapped to Codeine, so that's correct here. 
+
+No other index terms apply here. So the final answer should have two entries: one for "lean" and one for "codeine", both under Codeine.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

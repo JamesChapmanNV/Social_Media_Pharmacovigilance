@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "Nothing much, there are just two protest groups outside."
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to abuse. The content here talks about protest groups, which is about social movements, not drugs. There's no mention of drugs, slang, or anything related to misuse. The context is entirely about protests, so it doesn't fit the criteria for True. The explanation should mention that there's no drug-related content. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes protest groups without mentioning drugs, abuse, or related terms."
+}

@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "You must be partying with Hunter Biden with all the crack your smoking." I need to detect any drug references here.
+
+First, I'll look for words or phrases that could refer to illicit drugs. The phrase "crack your smoking" stands out. "Crack" here is likely a slang term for crack cocaine. The index terms list includes "Crack" as a drug, but wait, looking at the index terms provided, there's no direct entry for "crack." Let me check again. The index terms include "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine, but "crack" itself isn't listed. However, the example in the user's prompt had "snow" and "white lines" mapped to "other" because they weren't on the list. 
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" even though they might refer to cocaine. However, in the index terms, "Benzoylecgonine" is the metabolite of cocaine. But "crack" is a form of cocaine. Since "crack" isn't explicitly listed in the index terms, I should check if there's a term that covers it. The index terms don't have "crack" as a standalone term. The closest might be "Cocaine" but it's not in the list. Wait, looking back, the index terms do include "Benzoylecgonine" which is a metabolite of cocaine. But the user's instruction says to use the index terms provided. Since "crack" isn't listed, the correct index term would be "other." 
+
+Wait, but in the example 4, "snow" was mapped to "other" even though it's a reference to cocaine. So following that logic, "crack" here would also be "other" because it's not explicitly listed. However, the user might have intended "crack" as a slang term for cocaine. But according to the index terms provided, "Cocaine" is not listed. The index terms include "Benzoylecgonine" which is a metabolite, not the drug itself. So "crack" isn't in the index terms. Therefore, the correct index term here is "other." 
+
+So the matched phrase is "crack," and the index term is "other." The user's example 3 had "xans" mapped to "other," so this is similar. Therefore, the answer should be an object with index_term "other" and matched_phrase "crack."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"}
+]

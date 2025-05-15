@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is: "Vair kind, but I'd prefer some codeine & a bit of a sleep m'darkling." First, I need to check if it's about illicit or abusive drug use.
+
+The user mentions "codeine," which is a controlled substance. The phrase "I'd prefer some codeine" suggests a request for the drug, possibly for misuse. The mention of "a bit of a sleep" might indicate using codeine for sleep, which could be recreational or for abuse. The tone seems personal and possibly indicating a desire to use the drug, which could be a sign of abuse. Also, "m'darkling" might be a typo or slang, but the key part is the codeine. Since codeine is an OTC drug but can be misused, and the context here is about preferring it, this might fall under illicit or abusive use. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' a controlled substance, and expresses a preference for its use, indicating potential misuse or abuse."
+}

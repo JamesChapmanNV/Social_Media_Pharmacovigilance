@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post about cannabis, specifically mentioning "marijuana" and "cannabis," and references to Malawi having the best marijuana. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to check the list of index terms. Looking through the list, "Marijuana (Cannabis, Weed, Pot)" is explicitly listed. The post uses "marijuana" and "cannabis," which are synonyms for the index term. So those should be matched to "Marijuana."
+
+The rest of the post talks about the environment for growing ganja, Indian hemp, or Chamba. "Ganja" is another term for marijuana, so that's another instance. "Indian hemp" is a common term for cannabis, so that's also a match. "Chamba" might be a regional term, but since it's not in the index terms, it should be marked as "other."
+
+Wait, the user's instruction says to check if the drug is in the list. Since "Marijuana" is in the list, all instances of "marijuana," "cannabis," "ganja," and "Indian hemp" should be matched to "Marijuana." "Chamba" isn't listed, so that's "other."
+
+So the matched phrases would be "marijuana," "cannabis," "ganja," "Indian hemp," and "Chamba." The first four are "Marijuana," and the last is "other." But wait, the example in the user's prompt shows that "snow" and "white lines" are "other" even if they're not drugs. So "Chamba" is a term that's not in the index terms, so it's "other."
+
+But wait, the user's example 4 says "snow" is "other" even though it's not a drug. So any term not in the index terms is "other." So "Chamba" is not in the index terms, so it's "other."
+
+So the JSON array should have entries for "marijuana," "cannabis," "ganja," "Indian hemp" as "Marijuana," and "Chamba" as "other."
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "ganja"},
+  {"index_term": "Marijuana", "matched_phrase": "Indian hemp"},
+  {"index_term": "other", "matched_phrase": "Chamba"}
+]

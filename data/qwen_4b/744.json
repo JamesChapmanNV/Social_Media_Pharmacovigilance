@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this content. The user provided a detailed account of their experiences with injuries from horse riding and mentions being on 480 mg of oxycodone and oxycontin for two years, along with morphine 3. 
+
+First, I need to check if there's any mention of illegal or abusive drug use. The drugs listed here are oxycodone, oxycontin, and morphine. These are all prescription opioids, which are controlled substances. The user is talking about their long-term use of these medications, which could indicate misuse if they're using them beyond medical necessity. However, the context here is personal health experience, not necessarily promoting or glorifying the use. 
+
+The content doesn't mention using these drugs for recreational purposes or encouraging others to do so. It's more about their personal struggle with injuries and the medical treatment they received. The mention of high doses and long-term use might be a red flag for misuse, but the key here is the context. Since the user is discussing their own medical treatment, it's in a medical context, not promoting abuse. 
+
+The definitions say that True includes content that mentions illegal or OTC drugs in the context of abuse or misuse. Here, the user is talking about their own use of prescription drugs for pain management, which could be a misuse if they're not under medical supervision. However, without explicit mention of abuse or promoting it, it's more of a personal medical history. 
+
+But wait, the user is on high doses for two years. That might be considered misuse. However, the content is a personal account, not promoting or encouraging others. The example given in the task had a similar case where someone was on medication for pain, but the label was False because it was a medical context. So in this case, the user is talking about their own use, which is a medical context, even if it's long-term. 
+
+So the answer would be False because it's a personal medical use, not promoting or encouraging abuse. The explanation would be that the content discusses personal medical treatment with prescription opioids, not promoting or glorifying their misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes personal medical treatment with prescription opioids for chronic pain, not promoting or glorifying drug misuse."
+}

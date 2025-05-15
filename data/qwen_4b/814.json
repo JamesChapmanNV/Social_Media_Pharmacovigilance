@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a content snippet: "thanks. I've taken a night nurse! Just one, not two. Codeine hates me so I try to avoid it". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False).
+
+First, I'll break down the content. The mention of "codeine" is a key point. Codeine is an opioid, which is a controlled substance. The user says "Codeine hates me so I try to avoid it." The phrase "hates me" is a bit strong, but it's expressing a negative personal experience with codeine, indicating they're trying to avoid it. 
+
+Now, checking the definitions. True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. However, in this case, the user is not promoting or encouraging the use of codeine. Instead, they're stating they avoid it because they have a negative reaction. The context here is personal health, not abuse or misuse. 
+
+Also, the mention of "night nurse" might be a slang or a typo. Wait, "night nurse" could be a reference to a drug, like "night nurse" being a slang term for something else. But in this context, the user is talking about taking a night nurse, which might be a misunderstanding. However, the main focus is on codeine. 
+
+The user is not using codeine in a way that's promoting or glorifying its use. They're avoiding it, which is a negative context. The definitions for False include medical, educational, or preventative contexts. Here, it's more about personal experience and avoidance, not a medical discussion. 
+
+So, the key points are: the mention of codeine, but in a context of personal avoidance due to negative effects. There's no promotion, abuse, or misuse. Therefore, this should be classified as False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content mentions codeine in a personal health context, expressing avoidance due to negative personal experience, not promoting or glorifying its misuse."
+}

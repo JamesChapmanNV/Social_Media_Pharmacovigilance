@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "crystal meth" and "drug dealer hooking a new customer." My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to check if "crystal meth" is in the list of index terms. Looking through the list, there's an entry for Methamphetamine with synonyms like Crystal Meth, Ice, Desoxyn. So "crystal meth" should map to "Methamphetamine."
+
+Next, the phrase "drug dealer hooking a new customer" is more of a description rather than a direct reference to a specific drug. The term "hooking" here might be a euphemism for dealing or selling drugs, but the index terms don't have a specific entry for "hooking" as a drug reference. Since the task is to detect words or phrases that refer to illicit drugs, "hooking" might not be directly listed. However, the context is about a drug dealer, which could imply the sale of drugs. But according to the instructions, I need to match exact phrases from the index terms. Since "hooking" isn't listed, it would fall under "other."
+
+Wait, but the example in the user's prompt had "xans" which wasn't in the list, so it was marked as "other." Similarly, "hooking" here isn't a direct drug name but a term related to drug dealing. However, the task is to detect references to drugs, not the act of dealing. So maybe "drug dealer" is just context, but the actual drug mentioned is "crystal meth." The phrase "hooking a new customer" might be a metaphor for selling drugs, but the exact term isn't in the index. So the only direct match is "crystal meth," which is Methamphetamine. The rest of the sentence doesn't have any other drug terms. So the answer should be one entry for "crystal meth" mapped to Methamphetamine. The rest of the text doesn't have any other drug references, so the JSON array should only include that one entry.
+</think>
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "crystal meth"}
+]

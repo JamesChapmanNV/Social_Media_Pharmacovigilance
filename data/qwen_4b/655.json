@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content provided is about Purdue Pharma and OxyContin. 
+
+First, I need to check if there's any mention of illegal drugs, abuse, or promotion. The content mentions Purdue Pharma, which is known for OxyContin, a prescription opioid. The text says they started selling OxyContin eight years after Arthur's death. But the key point here is that OxyContin is a controlled substance, and Purdue Pharma is associated with the opioid crisis.
+
+However, the content doesn't explicitly talk about abuse, misuse, or promotion. It's more about the company's history and the product's introduction. The mention of OxyContin is in a factual context, not promoting its use or abuse. The example given in the task shows that if it's educational or medical, it's False. Here, the content is historical and factual, not encouraging or glorifying drug use.
+
+So, the answer should be False because it's discussing a pharmaceutical company and a drug in a historical context without promoting abuse or misuse. The explanation should note that it's about the company's history and the drug's introduction, not related to abuse or promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses Purdue Pharma's historical role in developing OxyContin, a prescription opioid, without promoting abuse, misuse, or recreational use."
+}

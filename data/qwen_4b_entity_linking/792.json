@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Matter number 13 on Judge Malindi's unopposed motion roll of 27 Jan". I need to check if there are any drug-related references here.
+
+First, I'll go through each word and phrase. The post mentions "Matter number 13", "Judge Malindi", "unopposed motion roll", and "27 Jan". None of these words seem to relate to drugs. The terms like "motion roll" might be legal jargon, but not related to illicit drugs. The index terms list includes things like Codeine, Amphetamine, LSD, etc., but nothing here matches those. 
+
+I should check if any slang or euphemisms are present. Words like "roll" could be a typo or a term in legal context, but not a drug reference. "Matter number" is just a legal document reference. There's no mention of substances, drugs, or related terms. 
+
+Since there are no detected phrases that match any of the index terms, the correct response would be to list "other" for any matches. But since there are no matches at all, the JSON array should be empty. Wait, but the examples show that even if there's no match, it's listed as "other". However, in this case, there are no phrases that refer to drugs. So the correct output is an empty array. 
+
+Wait, the user's instruction says if the drug is not in the list, use "other". But if there are no matches, then there are no entries. So the JSON array should be empty. Let me confirm. The example 3 had "xans" which wasn't in the list, so it was "other". But in this case, there are no phrases that refer to drugs. Therefore, the output is an empty array.
+</think>
+
+[]

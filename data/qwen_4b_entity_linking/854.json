@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Dear is double-dealer. My loan repayment has been bounce because PhonePe. show me the right way, I want complain against". The task is to detect any drug-related references and link them to the index terms.
+
+First, I'll read through the post carefully. The main content here is about a loan repayment issue related to PhonePe. The words mentioned are "loan", "repayment", "bounce", "PhonePe", and some other phrases. 
+
+Now, I need to check each word or phrase against the list of index terms. Let's go through each part:
+
+- "Dear" – Not a drug-related term.
+- "double-dealer" – Could be a metaphor, but not a drug term.
+- "loan repayment" – Financial terms, not drugs.
+- "bounce" – Here, it's likely referring to a bounced payment, not a drug.
+- "PhonePe" – This is a mobile payment app, not a drug. The example given in the problem statement had "snow" and "white lines" as "other" because they aren't drugs. Similarly, PhonePe isn't listed in the index terms, so it would fall under "other".
+
+Looking at the index terms list, none of the terms relate to PhonePe or the financial aspects mentioned. The post doesn't use any slang, euphemisms, or synonyms for drugs. The only possible mention is "PhonePe", which isn't in the index terms. Therefore, the correct index term here would be "other" for "PhonePe".
+
+The rest of the post doesn't contain any drug-related terms. The user is asking for help with a complaint, which is unrelated to drugs. So, the only match here is "PhonePe" under "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "PhonePe"}]

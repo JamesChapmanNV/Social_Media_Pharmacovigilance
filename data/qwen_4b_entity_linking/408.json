@@ -1,0 +1,35 @@
+<think>
+Okay, let's tackle this query. The user is asking if the FDA and U.S. government consider cannabis equivalent to heroin. First, I need to check the post for any drug-related references.
+
+Looking at the post: "Doesn't the FDA/U$ Govt equate Cannabis with heroin?" The user is questioning the government's stance on cannabis versus heroin. Now, I need to identify any phrases that refer to illicit drugs or substances. 
+
+The words "Cannabis" and "heroin" are mentioned. Checking the index terms, "Marijuana" is listed as an index term, which is a synonym for cannabis. Heroin is listed under "Morphine" as a prototypical opioid. But wait, the index terms for heroin would be "Morphine" and "Opioid" maybe? Wait, looking back at the index terms list, "Morphine" is listed, but heroin is not directly listed. However, the index term for heroin isn't explicitly there. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but heroin isn't directly listed. However, the user is comparing cannabis to heroin. 
+
+But the task is to detect any drug references and link them to the index terms. "Cannabis" is directly listed as an index term. "Heroin" isn't in the index terms, but "Morphine" is. However, heroin is a different drug. Wait, the index terms list "Morphine" as a separate entry. But heroin is a different opioid. However, in the index terms, "Morphine" is listed, but heroin isn't. However, the user is comparing cannabis to heroin. So "heroin" is not in the index terms, so it would be "other". 
+
+But the user is asking about the government's equivalence. The actual drugs mentioned are "Cannabis" and "heroin". "Cannabis" is an index term. "Heroin" is not in the index terms. So "heroin" would be "other". 
+
+So the matched phrases would be "Cannabis" and "heroin". But according to the index terms, "Marijuana" is the index term for cannabis. So "Cannabis" is matched to "Marijuana". "Heroin" is not in the index terms, so it's "other". 
+
+Wait, the index terms list "Marijuana (Cannabis, Weed, Pot)" so "Cannabis" is mapped to "Marijuana". "Heroin" is not in the index terms, so it's "other". 
+
+Therefore, the JSON should have two entries: one for "Marijuana" with "Cannabis", and another for "other" with "heroin". 
+
+But the user's post is a question, not a statement. However, the task is to detect any drug references. The user is referring to "Cannabis" and "heroin". So both are drug references. 
+
+So the correct JSON would be:
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]
+
+But wait, the index terms list "Marijuana" as an index term. So "Cannabis" is matched to "Marijuana". "Heroin" is not in the index terms, so "other". 
+
+Yes, that's correct. The user is asking about the government's equivalence, but the actual drugs mentioned are cannabis and heroin. So those two phrases are detected.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

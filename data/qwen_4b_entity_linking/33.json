@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Im on ocean drive sipping codeine with the top down". I need to detect any drug references here.
+
+First, I'll look for keywords that might refer to illicit drugs. The word "codeine" is explicitly mentioned. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine" directly matches the index term "Codeine". 
+
+The rest of the sentence is about being on Ocean Drive and sipping with the top down. There's no other mention of drugs or slang terms. So the only match here is "codeine". 
+
+I should make sure there's no other possible terms. Words like "ocean drive" or "top down" don't relate to drugs. The example given in the task had "lean" linked to codeine, but in this case, the exact term is "codeine". 
+
+So the correct JSON array should have one object with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post about a real estate presentation related to the New York Cannabis Industry. My task is to check for any drug-related references and map them to the index terms.
+
+First, I'll read through the post carefully. The post mentions "FL Gorman Presenting on Real Estate Needs of the New York Cannabis Industry at April NYSCAR WNY Chapter Luncheon." The key words here are "Cannabis Industry." Now, looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. The term "Cannabis" is explicitly listed as an index term. 
+
+But wait, the post uses "Cannabis Industry," which is a bit more specific. However, the index term is "Marijuana," which is a synonym for cannabis. Since the post is talking about the cannabis industry, that's a reference to marijuana. There's no mention of any other drugs or slang terms here. The rest of the post is about a real estate presentation and a chapter luncheon, which don't contain any drug-related phrases. 
+
+I need to make sure there's no other hidden references. Words like "Real Estate," "Presenting," "Chapter Luncheon" are all unrelated. The only term that could be a match is "Cannabis," which maps to "Marijuana" in the index terms. So the correct index term here is "Marijuana," and the matched phrase is "Cannabis Industry." But wait, the index term is "Marijuana," and the matched phrase is "Cannabis Industry." However, the example in the problem statement shows that "codeine" maps to "Codeine," so the exact phrase is used. 
+
+Wait, the user's example 1 had "lean" and "codeine" both mapping to Codeine. So in this case, the phrase is "Cannabis Industry," but the index term is "Marijuana." So the correct JSON would be {"index_term": "Marijuana", "matched_phrase": "Cannabis Industry"}.
+
+But I need to check if "Cannabis Industry" is considered a reference to an illicit drug. The index term for marijuana is listed as "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. So even though the post is about the industry, the term "Cannabis" is part of the phrase. Therefore, the matched phrase is "Cannabis Industry," and the index term is "Marijuana." 
+
+But wait, the index term is "Marijuana," and the matched phrase is "Cannabis Industry." However, the problem says to detect every word or phrase that refers to an illicit drug. The term "Cannabis Industry" is a reference to the industry, but the actual drug is cannabis. So the matched phrase would be "Cannabis," but in the post, it's "Cannabis Industry." However, the exact phrase is "Cannabis Industry," so the matched_phrase should be that. But the index term is "Marijuana," which is the same as cannabis. 
+
+So the correct output is one object with index_term "Marijuana" and matched_phrase "Cannabis Industry." But wait, the index term is "Marijuana," and the matched phrase is "Cannabis Industry." However, in the example 1, "lean" and "codeine" are both mapped to Codeine. So in this case, the exact phrase is "Cannabis Industry," which refers to the drug. Therefore, the correct JSON is as above. 
+
+But I need to check if "Cannabis Industry" is considered a drug reference. Since the index term is "Marijuana," which is the same as cannabis, the phrase "Cannabis Industry" is a reference to the drug. Therefore, the answer should be that one object.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "Cannabis Industry"}]

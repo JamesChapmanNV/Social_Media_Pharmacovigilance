@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "codeine help me stop feeling ~ take me away from the pain". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False).
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse.
+
+The content mentions "codeine", which is an OTC drug but also a controlled substance. The phrases "help me stop feeling" and "take me away from the pain" suggest using it for pain relief, but the tone here is personal and possibly indicating dependency. The user is talking about using codeine to manage pain, which could be a sign of misuse if it's being used without medical supervision or in a way that's not prescribed.
+
+However, the content doesn't explicitly mention abuse, promoting, or encouraging misuse. It's more about personal use for pain relief. But codeine is a controlled substance, and using it without a prescription could be considered misuse. The explanation needs to connect the mention of codeine in a context that implies its use for personal relief, which might be seen as abuse if it's not medically supervised. 
+
+But wait, the example given in the prompt had "lean" and "codeine" with "hooked" and "everyday" which was classified as True. Here, the user is saying codeine helps them stop feeling pain, which is a bit more direct. However, the user might be implying that they are using it for pain relief, which could be a medical use, but if it's not prescribed, it's misuse. But the content doesn't specify if it's prescribed or not. 
+
+The key here is whether the context indicates abuse or misuse. The phrase "take me away from the pain" could be a euphemism for using drugs to escape pain, which might be a sign of abuse. However, codeine is sometimes used for pain management, so it's a bit ambiguous. But given the definitions, if it's in the context of using it for personal relief without mention of medical use, it might be considered abuse. 
+
+Alternatively, if it's just a statement about using codeine for pain, but not necessarily in a way that's abusive. But the example given in the prompt had "hooked" and "everyday" which was considered abuse. So in this case, the user is saying codeine helps them stop feeling, which is a bit more direct. So maybe this is True because it's using codeine for pain relief, which could be a sign of misuse or abuse. 
+
+Alternatively, if the user is using it as a medical treatment, then it's False. But the content doesn't mention a medical context. So the explanation would be that the content mentions codeine in a context that suggests its use for pain relief, which could indicate misuse. Therefore, the label would be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions codeine in a context suggesting its use for pain relief, which may indicate misuse or abuse without medical supervision."
+}

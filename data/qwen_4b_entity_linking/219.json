@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "The urge to crack open the third bubblr of the hour." I need to detect any drug-related references here.
+
+First, I'll look for slang, euphemisms, or synonyms for illicit drugs. The word "bubblr" stands out. Checking the index terms, I see that "bubblr" isn't listed. Wait, maybe it's a misspelling or a slang term. Let me think. The index terms include things like "Codeine" with synonyms like "lean" and "purple drank," but "bubblr" isn't there. 
+
+Looking at the list again, there's no mention of "bubblr" as a drug. The closest might be "bath salt" which is N,N-Dimethylpentylone, but that's not it. Alternatively, "bubblr" could be a brand name or a misspelling of "bubba" or something else. Since it's not in the index terms, I should mark it as "other." 
+
+The post mentions "third bubblr," so the phrase "bubblr" is the key here. Since there's no matching index term for it, the correct classification is "other." No other words in the post seem to reference drugs. So the only match is "bubblr" under "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "bubblr"}]

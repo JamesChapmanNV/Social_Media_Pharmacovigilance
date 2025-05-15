@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is: "Semantic error, wyel needs s2 its too short, heroin webseries cuz it ended in a cliffhanger". First, I need to check if there's any mention of drugs in a context that's illicit or abusive.
+
+The word "heroin" is definitely a controlled substance, so that's a red flag. The mention of a webseries ending in a cliffhanger might be related to a show, but the key here is the explicit mention of heroin. The user is talking about a webseries that's related to heroin, which is an illicit drug. Even if the context is a show, the presence of the drug name itself in the content would classify it as illicit. The other parts about a semantic error and needing a second season don't relate to drug use. But the mention of heroin is enough to make this True. The explanation should note the explicit mention of heroin as an illicit drug.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin,' an illicit drug, in the context of a webseries, indicating potential drug-related content."
+}

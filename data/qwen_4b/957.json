@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Yeah day by day the first outcome is thankfully looking less likely at least but wowee that's gonna be a heafty debt to the west." I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll check for any mention of drugs. The words here are "outcome," "debt," "west," and "heafty." There's no direct reference to drugs. The mention of "debt" might be related to financial issues, but not drug-related. The phrase "heafty debt" is a typo for "heavy debt," which is about financial burden. The context doesn't involve any drug names, slang, or terms related to abuse. The tone is about outcomes and debt, not drug use or promotion. Since there's no indication of drug misuse or illegal drugs, the classification should be False. The explanation should note the absence of drug-related terms and the context of financial debt.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses financial debt and outcomes, with no mention of drugs, drug-related terms, or contexts of abuse/misuse."
+}

@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I need to look at the provided post: "These numbers equate to more than one overdose each day, and it's not uncommon for the same people to overdose again and again. In these first three months of 2021, we have responded to another 136 overdoses and within the same time period."
+
+I need to scan each word and phrase for any drug references. Let's break it down sentence by sentence.
+
+The first sentence talks about overdoses, but doesn't mention any specific drugs. Words like "overdose" are mentioned, but the Index Terms don't include "overdose" itself. The task is to find references to drugs, not the act of overdosing. So "overdose" here is just a general term, not a specific drug.
+
+The second part mentions "136 overdoses" again. Still, no specific drug names or slang. The post is discussing statistics about overdoses but not specifying which drugs are involved. 
+
+Looking at the Index Terms list, there are terms like Codeine, Amphetamine, Fentanyl, etc. But the post doesn't use any of the slang terms listed. Words like "lean" (Codeine), "addy" (Amphetamine), "xans" (Bromazolam), etc., aren't present here. 
+
+The post is about the number of overdoses, not the drugs involved. Therefore, there are no direct references to specific drugs or their synonyms, slang terms, or euphemisms in the text. 
+
+Since there are no matches, the correct response would be an empty array. But wait, the user's example 3 shows that if there's no match, it's "other". However, in the examples, when there's no drug reference, the matched_phrase is the word, but index_term is "other". But in this case, the post doesn't mention any drug names or terms. The only words are "overdose", which isn't in the Index Terms. So, according to the instructions, if the drug isn't in the list, use "other". However, the post doesn't have any drug-related phrases. 
+
+Wait, the task is to detect every word or phrase that refers to an illicit drug. Since the post doesn't mention any specific drugs, there are no matches. Therefore, the JSON array should be empty. But the user's example 4 shows that even if the word isn't a drug, it's marked as "other". However, in this case, the post is about overdoses, not drugs. So, there's no drug reference here. 
+
+Therefore, the correct answer is an empty array. But the user's example 3 has "xans" which is not in the list, so it's "other". But in this case, there are no drug references at all. So the JSON array should be empty.
+</think>
+
+[]

@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post about pharmacy shortages and mentions "diamorphine" and "Morphine PF". First, I need to check if these terms are in the index terms list.
+
+Looking at the index terms, "Morphine" is listed as the prototypical opioid analgesic. "Diamorphine" is another name for morphine, so that should map to "Morphine". The post also mentions "Morphine PF", which is likely a formulation of morphine. Since "Morphine" is in the list, both "diamorphine" and "Morphine" would be indexed under "Morphine". 
+
+I need to make sure there are no other terms. The rest of the post talks about shortages and costs, but no other drugs are mentioned. So the only matches are "diamorphine" and "Morphine". 
+
+Wait, the example in the problem statement had "codeine" and "lean" both mapped to codeine. So here, "diamorphine" is the same as morphine, so both instances should be under "Morphine". The answer should have two entries: one for "diamorphine" and one for "Morphine". 
+
+I need to check if "diamorphine" is explicitly in the index terms. The index term for morphine includes "Morphine (MS Contin, Miss Emma, Morph)", but diamorphine isn't listed. However, since it's a synonym for morphine, it's still valid. The instruction says to use the index term if the drug is in the list, otherwise "other". Since morphine is in the list, and diamorphine is a synonym, it's safe to map to "Morphine". 
+
+So the JSON array should have two entries: {"index_term": "Morphine", "matched_phrase": "diamorphine"} and {"index_term": "Morphine", "matched_phrase": "Morphine"}.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "diamorphine"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "for a start, i sold a whole case of codeine and promethazine, I'm bout to make this green". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang or euphemisms that signal recreational use or abuse. Encouraging or glorifying misuse.
+
+The content mentions "codeine" and "promethazine". Both are drugs. Codeine is an opioid, which is illegal in many places. Promethazine is an antihistamine, but sometimes used in combination with opioids. The user says they sold a whole case of codeine and promethazine. Selling drugs is definitely promoting or facilitating abuse. The phrase "I'm bout to make this green" might be slang for making money, but the key part is selling the drugs. 
+
+The context here is about selling drugs, which is illegal and related to abuse. The user is engaging in distributing controlled substances, which is a clear case of illicit drug-related activity. So the label should be True. The explanation should mention selling codeine and promethazine, which are controlled substances, and the context of selling implies promotion or distribution for abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions selling codeine and promethazine, which are controlled substances, and implies distribution for profit, indicating illicit drug-related activity."
+}

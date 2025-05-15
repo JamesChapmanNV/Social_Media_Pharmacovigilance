@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "Hi Scarlett, very sorry to hear your I'll again. 🙁 Get well soon. At least the morphine should make you feel high. 🤓 I need to get some strong cigars to get spaced out."
+
+Looking for words or phrases that refer to illicit drugs or substances. Let's break it down sentence by sentence.
+
+The first part is "Hi Scarlett, very sorry to hear your I'll again." The "I'll" might be a typo for "ill," but in context, it could be referring to a medical condition, but not a drug. Maybe "I'll" is short for "illness," but not sure. However, the next part says "the morphine should make you feel high." Morphine is listed in the index terms as an opioid analgesic. So "morphine" is a direct match for the index term "Morphine."
+
+Then, the last sentence: "I need to get some strong cigars to get spaced out." "Spaced out" is a slang term for being high or under the influence of drugs. But the question is, does "cigars" refer to a drug? In some contexts, "cigars" might be a slang for something else, but looking at the index terms, I don't see "cigars" listed. However, "spaced out" could be a euphemism for using drugs like marijuana or other substances. But the index terms don't have a direct match for "spaced out." Alternatively, "strong cigars" might be a metaphor for something else, but maybe "spaced out" is a slang for a drug. However, the index terms don't have an entry for that. So "spaced out" would be "other" since it's not directly listed. But wait, the user's example 3 had "xans" as "other" because it wasn't listed. So "spaced out" is a phrase that's not in the index terms, so it would be "other." However, maybe "cigars" is a reference to something else. Wait, in the index terms, "cannabis" is listed as "Marijuana," but "cigars" might not be a direct term. Alternatively, maybe "spaced out" is a slang for a drug like PCP (angel dust), but that's not in the list. So "spaced out" would be "other."
+
+But the main drug here is "morphine," which is clearly in the index terms. So the first match is "morphine." The other part is "spaced out," which is not in the list, so "other." But wait, the user's example 4 had "snow" and "white lines" as "other" because they weren't drugs. So in this case, "spaced out" is a phrase that's not a direct term, so it's "other."
+
+So the JSON array would have one entry for "morphine" and another for "spaced out" as "other." But wait, the user's example 3 had "xans" as "other" because it wasn't in the list. So "spaced out" is not a direct term, so it's "other." However, maybe "spaced out" is a slang for a drug. Let me check the index terms again. The index terms include "Ketamine" with synonyms like "Special K," but "spaced out" isn't listed. So "spaced out" would be "other."
+
+So the final answer would be two entries: one for "morphine" and one for "spaced out" as "other."
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "spaced out"}
+]

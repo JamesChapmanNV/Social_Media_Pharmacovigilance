@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "get those tablets with paracetamol and codeine. Will sort you right out". I need to detect any drug references here.
+
+First, I'll break down the sentence. The words mentioned are "paracetamol" and "codeine". Looking at the index terms list, codeine is explicitly listed under "Codeine (Lean, Purple Drank, Schoolboy)". So "codeine" directly maps to that index term. 
+
+Now, "paracetamol" is another term. Wait, the index terms don't have paracetamol listed. The closest might be "Acetaminophen" but that's not in the list either. The list includes "Codeine", "Amphetamine", "Methamphetamine", etc., but not paracetamol. Since the task says if the drug isn't in the list, use "other". 
+
+So "paracetamol" isn't in the index terms, so it should be "other". But wait, the user's example 3 had "xans" which wasn't in the list and was marked as "other". Similarly, "paracetamol" isn't listed here. Therefore, both "paracetamol" and "codeine" need to be checked.
+
+Wait, the index term for codeine is listed, so "codeine" is a match. "Paracetamol" isn't in the index terms, so it's "other". The phrase "will sort you right out" is probably a slang for making someone sick or something, but that's not a drug reference. So the only matches are "paracetamol" and "codeine". 
+
+So the JSON should have two entries: one for codeine and one for paracetamol as "other". Wait, but the example 3 had "xans" as other. So yes, "paracetamol" is not in the list, so it's "other". 
+
+Therefore, the correct output is two entries: codeine and paracetamol as other. Wait, but the user's example 1 had "lean" and "codeine" both mapped to codeine. So in this case, "codeine" is a direct match, and "paracetamol" is other. So the JSON array would be:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "paracetamol"}
+]
+
+Wait, but the post says "tablets with paracetamol and codeine". So both are in the same sentence. So both need to be checked. The user's example 3 had "xans" as other. So yes, "paracetamol" is not in the index terms, so it's "other". Therefore, the answer should include both "codeine" and "paracetamol" as other. But wait, the index terms don't have paracetamol. So the correct JSON is as above.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "paracetamol"}
+]

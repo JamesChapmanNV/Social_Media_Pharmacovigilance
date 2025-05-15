@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post about a cannabis farm opening on 4/20. My task is to check for any drug-related references and map them to the correct index terms.
+
+First, I'll read the post carefully: "The first-ever cannabis farm bookings open tomorrow! 4/20 at 10 AM Pacific. They'll go fast so mark your calendar!" 
+
+Looking for keywords related to drugs. The main term here is "cannabis." Checking the index terms list, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is exactly what's mentioned. The phrase "cannabis farm" directly refers to marijuana. The 4/20 reference is a cultural reference to cannabis use, but since "cannabis" is listed, that's the index term. 
+
+I need to make sure there are no other terms. The post doesn't mention any other drugs or slang. Words like "bookings" or "mark your calendar" are just about the event, not drug references. So the only match is "cannabis" under the Marijuana index term. 
+
+Wait, the example in the problem had "snow" and "white lines" as "other" because they weren't on the list. But here, "cannabis" is explicitly listed. So the correct index term is "Marijuana (Cannabis, Weed, Pot)" and the matched phrase is "cannabis." 
+
+No other phrases in the post refer to drugs. The 4/20 is a cultural reference but not a drug term itself. So the JSON should have one entry with index_term "Marijuana" and matched_phrase "cannabis."
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

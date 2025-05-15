@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "You'd think they'd want to crack down on CRACK. But who am I to tell you how to raise your kid named Hunter?" 
+
+First, I need to identify any drug-related references in the post. The main phrase here is "CRACK." Now, I need to check if "CRACK" is listed in the index terms. Looking through the list, I see that "CRACK" isn't explicitly mentioned. However, "CRACK" is a slang term for cocaine, which is a controlled substance. But according to the index terms provided, cocaine's metabolite is Benzoylecgonine (BZE). Since "CRACK" isn't listed as an index term, the correct term here would be "other." 
+
+Wait, but the user's task is to detect any illicit drug references. "CRACK" is a slang term for cocaine, which is an illicit drug. However, the index terms don't have a direct entry for "CRACK." The closest might be "Cocaine," but in the index terms, cocaine is not listed. The only mention related to cocaine is Benzoylecgonine, which is the metabolite. So, since "CRACK" isn't in the index terms, it should be categorized as "other."
+
+So the matched phrase is "CRACK," and the index term is "other." There's no other drug reference in the post. The rest of the sentence talks about raising a kid named Hunter, which is unrelated. Therefore, the JSON array should have one entry with "other" and "CRACK."
+</think>
+
+[{"index_term": "other", "matched_phrase": "CRACK"}]

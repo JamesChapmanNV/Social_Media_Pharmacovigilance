@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "When that codeine had u knocked all day, now ur fever finally breaks and u can't go to sleep!! 😔🙁"
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse, using slang, euphemisms, or cultural references that signal recreational use or abuse. Also, encouraging or glorifying misuse.
+
+The content mentions "codeine," which is an OTC drug. But the context here is about the effects of codeine. The user says "had u knocked all day" which might be a slang for being sedated or sleepy. Then "fever finally breaks and can't go to sleep." This seems like a description of the side effects of codeine, possibly in a medical context. However, the tone here is more about the effects rather than promoting or abusing it. The user is talking about the aftermath of taking codeine, maybe in a medical setting. 
+
+But wait, codeine is a controlled substance, so mentioning it could be a red flag. However, the context here is about the effects of taking it, not promoting or encouraging its use. The user is not using slang or euphemisms that suggest abuse. The exclamation points and emojis might indicate a negative experience, but that's more about the side effects rather than misuse. 
+
+The example given in the task has a similar structure where the content mentions codeine and uses "hooked" which was considered abusive. However, in this case, the user is describing the effects of codeine, not using it in a way that's promoting or glorifying. The mention of codeine here is in a medical context, perhaps talking about its side effects. 
+
+But the user is not necessarily promoting it. The explanation should be based on the context. Since the content is about the effects of codeine (fever breaking, not being able to sleep), it's more about the drug's effects rather than abuse. So maybe this is a False. But wait, codeine is an OTC drug, but the context here is not about misuse. The user is not encouraging or promoting its use. The mention of codeine is in a medical context, even if the user is not a medical professional. 
+
+Alternatively, if the user is using codeine for a medical purpose, but the content is not in a medical context. The user is just talking about their experience. However, the key is whether it's promoting abuse. Since the content is not encouraging or glorifying, but rather describing the effects, it's more likely False. 
+
+But the example 1 had "hooked" which was considered abusive. In this case, the user is not using codeine in a way that's abusive. The mention of codeine is in a context of its effects, not misuse. Therefore, the label should be False. The explanation would be that the content mentions codeine in a context of its effects, not promoting or encouraging abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content mentions codeine in a context describing its physiological effects (sedation, fever reduction) rather than promoting, encouraging, or glorifying its misuse."
+}

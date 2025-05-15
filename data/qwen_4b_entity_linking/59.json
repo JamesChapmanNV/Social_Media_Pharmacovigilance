@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I need to read through the post carefully. The post says: "I take ER morphine since 93' and IR morphine now, only. They won't even switch up to oxy for an extra trauma/oral/surgery or loritab elixir for an occasional COPD/bronchitis/flu cough when needed. No occasional Soma for a muscle injury or 2 Ativan if I have to fly or dentist."
+
+Looking for drug terms. The first mention is "ER morphine" and "IR morphine". Morphine is listed in the index terms under "Morphine". So "morphine" would map to that. Then "oxy" likely refers to oxycontin or oxycodone, which is in the list as "Oxycodone". 
+
+Next, "loritab elixir" – Lorazepam is in the index terms under "Lorazepam". Then "Soma" is a brand name for zolpidem, which is listed as "Zolpidem". "Ativan" is lorazepam, which is already covered. 
+
+Wait, but the user's post mentions "2 Ativan" – Ativan is Lorazepam. So that's another instance of Lorazepam. 
+
+So the matched phrases would be "morphine", "oxy", "loritab", "soma", "ativan". 
+
+Now check each against the index terms. Morphine is directly listed. Oxy is Oxycodone. Loritab is Lorazepam. Soma is Zolpidem. Ativan is Lorazepam again. 
+
+So the JSON array should have entries for each of these. Let me make sure none of these are in the "other" category. All of these are in the index terms. 
+
+So the final JSON would list each of these phrases with their corresponding index terms.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Oxycodone", "matched_phrase": "oxy"},
+  {"index_term": "Lorazepam", "matched_phrase": "loritab"},
+  {"index_term": "Zolpidem", "matched_phrase": "soma"},
+  {"index_term": "Lorazepam", "matched_phrase": "ativan"}
+]

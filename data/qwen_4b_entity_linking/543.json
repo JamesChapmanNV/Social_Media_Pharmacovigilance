@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "At that point most folks are already drawing a morphine prescription, heroin is not that wild." I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll read through the post carefully. The key phrases here are "morphine prescription" and "heroin". Looking at the index terms list, Morphine is listed as an index term. The entry for Morphine includes "MS Contin, Miss Emma, Morph" as synonyms. So "morphine" directly maps to "Morphine". 
+
+Next, "heroin" is mentioned. Checking the index terms, Heroin isn't explicitly listed, but looking at the list, there's an entry for "Morphine" and others like Fentanyl, Codeine, etc. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" so "heroin" isn't directly listed. However, the task says to use the index terms provided. Since "heroin" isn't in the list, I should check if there's any related term. But looking through the list again, there's no specific index term for heroin. The closest might be Morphine, but that's a different drug. Wait, the index terms list includes "Morphine" as a separate entry. Heroin isn't listed, so according to the instructions, if the drug isn't in the list, use "other". 
+
+Wait, but the example given in the problem statement includes "Codeine" for "lean" and "codeine". So in the example, "codeine" is directly mapped. But in this case, "heroin" isn't in the index terms. Let me check again. The index terms list includes "Morphine" but not "Heroin". So "heroin" would be "other". 
+
+So in the post, "morphine prescription" is a direct reference to morphine, which is in the index terms. "Heroin" is not in the index terms, so it's "other". 
+
+Therefore, the matched phrases are "morphine" and "heroin". The first maps to "Morphine", the second to "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Seriously tho, I could get prescribed some promethazine/codeine w/ this cough that I have lol". I need to identify any drug references here.
+
+First, I'll break down the sentence. The key part is "promethazine/codeine". Promethazine is mentioned here. Looking at the index terms, promethazine is listed under Diphenhydramine (Benadryl, Nytol) as a first-generation antihistamine sometimes misused. But wait, the index term for promethazine isn't directly listed. Wait, checking the index terms again: Diphenhydramine is the index term for Benadryl, Nytol, but promethazine isn't explicitly listed. However, the user might be referring to promethazine as a drug. But according to the provided index terms, promethazine isn't listed. However, the example 3 shows "xans" is "other" because it's not in the list. So if promethazine isn't in the index terms, it would be "other". But wait, the index terms include "Diphenhydramine (Benadryl, Nytol)" but not promethazine. So "promethazine" isn't in the list, so it would be "other". However, codeine is in the list under Codeine (Lean, Purple Drank, Schoolboy). So "codeine" is an index term. So in the phrase "promethazine/codeine", "codeine" is a match for Codeine, and "promethazine" is not in the list, so "other". Therefore, the matched phrases would be "codeine" under Codeine, and "promethazine" under other. But wait, the user's post says "promethazine/codeine". So the two words are "promethazine" and "codeine". So the JSON should have two entries: one for codeine and one for promethazine. But since promethazine isn't in the index terms, it's "other". So the answer would be two entries: codeine and other. Let me check the index terms again. The index terms include "Diphenhydramine" but not promethazine. So yes, promethazine is not listed, so "other". Therefore, the correct JSON would have codeine for "codeine" and other for "promethazine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "promethazine"}
+]

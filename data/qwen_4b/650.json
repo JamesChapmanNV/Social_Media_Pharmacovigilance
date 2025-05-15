@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this content classification. The user provided the content: "I was so down bad fo her till she used heroin then she died and i felt null". First, I need to determine if this is illicit/abusive-drug-related.
+
+Looking at the keywords: "heroin" is definitely an illicit drug. The context here is someone using heroin, leading to a tragic outcome. The mention of heroin in the context of someone's death suggests it's related to drug abuse. The user is describing a personal experience with heroin use resulting in a death. 
+
+The definitions say True includes mentions of illegal drugs in the context of abuse or misuse. The content directly references heroin, which is illegal, and the outcome is a death due to its use. The tone seems to be about the consequences of drug abuse. 
+
+Also, the phrase "used heroin" indicates active use, which is part of the abuse context. The user is not discussing medical use but rather the negative consequences. There's no mention of education or prevention here. 
+
+So, based on the definitions, this should be classified as True. The explanation should note the mention of heroin and the context of abuse leading to a death.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'heroin' and describes its use leading to a fatal outcome, indicating drug abuse and its severe consequences."
+}

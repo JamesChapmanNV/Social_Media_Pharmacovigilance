@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Put codeine on salad, guess I'm on a codeine salad." I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "codeine" directly. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine on salad" is a bit unusual, but "codeine" itself is clearly a drug. The second part, "codeine salad," is a slang term, but since "codeine" is in the index term, that's a match. 
+
+I need to make sure there are no other terms. The rest of the post doesn't have any other drug references. The word "salad" isn't a drug, so it's just part of the phrase. The index term for codeine includes "codeine," so both instances of "codeine" in the post should be matched to Codeine. 
+
+No other terms are present. The example given in the problem shows that "lean" and "codeine" both map to Codeine. Here, the post uses "codeine" twice, so both should be included. The answer should be two entries in the JSON array.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

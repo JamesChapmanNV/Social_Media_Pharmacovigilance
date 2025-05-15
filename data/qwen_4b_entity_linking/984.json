@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Rue isn't human...how tf do you bounce back from morphine like that #Euphoria". I need to detect any drug references here.
+
+First, I'll scan the text for any terms that might refer to illicit drugs or substances. The phrase "morphine" is mentioned. Looking at the Index Terms list, Morphine is listed as an index term. The entry for Morphine includes terms like MS Contin, Miss Emma, Morph. So "morphine" directly maps to the index term "Morphine".
+
+The rest of the post is about Rue not being human and bouncing back from morphine. The hashtag #Euphoria might be a reference to the TV show, but the main drug reference here is "morphine". There's no other drug mentioned. The phrase "tf" is slang for "how", but that's not a drug. "Bounce back" is metaphorical, so no need to worry about that. 
+
+So the only matched phrase is "morphine", which corresponds to the index term "Morphine". No other terms in the post match any drug entries in the list. Therefore, the JSON array should have one object with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

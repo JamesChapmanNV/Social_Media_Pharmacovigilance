@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a content snippet: "Wow, a world leader that will actually take your phone call? Impressive." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check if there's any mention of drugs. The content talks about a world leader taking a phone call. The words "world leader" and "phone call" are the key terms here. There's no mention of any drugs, slang, or terms related to drug use. The tone is positive, expressing admiration. Since there's no reference to drugs in any form, either directly or through euphemisms, the classification should be False. The explanation should note the absence of drug-related terms and the context of a political statement.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a political statement about a world leader's communication habits, with no mention of drugs, drug-related terms, or contexts related to abuse/misuse."
+}

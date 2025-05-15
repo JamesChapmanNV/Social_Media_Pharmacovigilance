@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I need to look at the provided post: "New Delhi: A novel way to smuggle in heroin through cloth threads has been detected with the DRI and ATS Gujrat, in a joint operation, seizing a container at Gujarat's Pipavav port with 9,760 kgs of such thread. According to a DRI official, the drug syndicate used this unique mo..."
+
+Looking for drug-related terms. The key part here is "heroin". Heroin is listed in the index terms as "Morphine (MS Contin, Miss Emma, Morph)" but wait, the index term for heroin is actually "Morphine" in the list. Wait, checking the index terms again: "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence." So heroin is a different substance, but in the index terms, heroin isn't explicitly listed. Wait, the index terms include "Heroin" as a separate entry? Let me check again.
+
+Looking through the index terms, the only mention of heroin is in the example given in the problem statement. Wait, in the example #1, "lean" is linked to codeine, and codeine is listed as an index term. But in the index terms provided, there's no direct entry for heroin. Wait, the index terms list "Morphine" as an index term, but heroin is a different substance. However, in the problem statement's example, the user mentions "heroin" in the post. But in the index terms, is there an entry for heroin?
+
+Wait, looking back at the index terms list, the only entry related to heroin is under "Morphine", but that's the prototypical opioid. However, heroin is a different drug. But in the index terms, there's no explicit entry for heroin. So if the post mentions "heroin", since it's not in the index terms, we should map it to "other".
+
+But wait, the user's example #1 includes "lean" and "codeine" as index terms. So in the given post, the term "heroin" is mentioned. Since heroin isn't listed in the index terms, we need to check if there's any index term that might cover it. But looking at the list, the closest is "Morphine", but heroin is a different drug. Therefore, "heroin" would be mapped to "other".
+
+So in the post, the phrase "heroin" is present. Therefore, the matched_phrase is "heroin", and the index_term is "other".
+
+Are there any other drug-related terms in the post? The post talks about "cloth threads" and "seizing a container with 9,760 kgs of such thread". The term "thread" here is part of the smuggling method, but "thread" isn't a drug. The other terms are "DRI", "ATS", "Gujarat", "Pipavav port", "container", "kg", "syndicate", "unique mo". None of these are drug terms. The only drug term is "heroin".
+
+Therefore, the JSON array should have one entry: index_term "other" and matched_phrase "heroin".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

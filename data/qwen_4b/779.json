@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a content snippet: "Because, as far as I know, I'm not addicted to morphine! Caffeine, on the other hand, is life. Much like futbol." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False).
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, or promoting use. Also, slang or references to recreational use. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+Looking at the content: The user mentions "morphine" and "caffeine." Morphine is an opioid, which is a controlled substance. The user says they're not addicted to morphine, which could imply they've used it, but the context here is about addiction. However, the key is whether there's any promotion or encouragement of misuse. 
+
+The phrase "caffeine, on the other hand, is life. Much like futbol." – "futbol" is a slang term for football, but the user is comparing caffeine to something else. However, caffeine is a legal stimulant, not an illicit drug. The mention of caffeine here is in a positive light, but it's not related to abuse or misuse. The user is talking about their own addiction status, but not promoting or glorifying drug use. 
+
+The content doesn't encourage or glorify drug misuse. It's more about personal experience with addiction. Since morphine is a controlled substance, but the user is not promoting its use, just stating their own situation. The comparison to caffeine is unrelated to drug abuse. Therefore, this doesn't fit the criteria for True. The explanation should note that the mention of morphine is in a personal, non-promotional context, and caffeine is a legal substance. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses personal addiction to morphine and compares it to caffeine, a legal stimulant, without promoting or glorifying drug misuse."
+}

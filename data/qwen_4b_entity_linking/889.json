@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Thank you on behalf of all Lebanese." I need to check if there are any drug-related references here.
+
+First, I'll go through each word and phrase. The post is a thank you message, mentioning "Lebanese." The Index Terms list includes various drugs and their slang terms. But "Lebanese" is a nationality or ethnicity, not a drug. The examples given in the task show that if a term isn't in the list, it's marked as "other." 
+
+Looking at the Index Terms, none of them relate to "Lebanese." The terms are specific to drugs like codeine, amphetamine, cocaine, etc. Since "Lebanese" isn't a drug or a slang term for a drug, it should be categorized as "other." 
+
+Wait, but the user's example 4 had "snow" and "white lines" as "other" even though they weren't drugs. So in this case, "Lebanese" isn't a drug reference, so the index term should be "other." 
+
+I need to make sure there's no hidden reference. Maybe "Lebanese" is a slang term for something else? But according to the provided Index Terms, there's no entry for that. So the correct response is to mark it as "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "Lebanese"}]

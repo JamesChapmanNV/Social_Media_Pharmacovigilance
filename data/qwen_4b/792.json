@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Matter number 13 on Judge Malindi's unopposed motion roll of 27 Jan". I need to determine if this is illicit/abusive-drug-related or not.
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting use. Also, slang or cultural references indicating recreational use. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+Looking at the content, it's about a legal matter, specifically a motion roll by a judge. The terms "Matter number 13", "Judge Malindi", "unopposed motion", and "27 Jan" are all legal or procedural terms. There's no mention of drugs, illegal substances, or anything related to drug use, abuse, or misuse. The context is entirely legal proceedings, not related to drugs. 
+
+Since there's no reference to drugs or any drug-related terms, it doesn't fit the criteria for True. The explanation should note that the content is about a legal matter with no drug-related terms. Therefore, the label is False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a legal matter (motion roll) with no drug-related terms or context."
+}

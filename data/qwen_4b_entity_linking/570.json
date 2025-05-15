@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "got a cute lil pendant necklace i can store 2 pills of morphine inside sick". I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The main phrases are "morphine" and "pills". The index terms list includes "Morphine" as the index term. The phrase "morphine" is directly listed under Morphine. The word "pills" might be a bit tricky. But looking at the index terms, "Morphine" is listed, and "pills" isn't specifically mentioned. However, in the context, "pills of morphine" refers to the drug itself. Since "morphine" is explicitly in the list, the matched phrase should be "morphine". The word "pills" here is just a container, but the drug is morphine. So the correct index term is Morphine for "morphine". The "sick" at the end is likely an expression of being ill, but not a drug reference. So the only match is "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

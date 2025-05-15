@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully: "Like medically speaking she knew that morphine wasn't going to help her. She even said it before she gave it so idk why she just said fuck it. That was wild af."
+
+Looking for any terms that might refer to illicit drugs or substances. The first mention is "morphine." Checking the index terms, there's an entry for Morphine under the index term "Morphine (MS Contin, Miss Emma, Morph)". So "morphine" is a direct match here.
+
+Next, the post has "fuck it" and "wild af." Those are slang expressions, but they don't directly reference a specific drug. The user's instruction says to include slang, euphemisms, etc. However, "fuck it" is more of a phrase indicating giving up rather than a drug reference. "Wild af" is slang for something extreme, but not a drug. So these might not be matched to any index term. 
+
+The example provided in the problem statement includes "xans" as "other" because it's not on the list. Similarly, "wild af" isn't a drug term here. So the only match is "morphine."
+
+Wait, but the user's task includes detecting any word or phrase that refers to an illicit drug. "Morphine" is listed in the index terms, so that's a clear match. The rest of the post doesn't mention any other drugs. 
+
+So the JSON array should have one entry: {"index_term": "Morphine", "matched_phrase": "morphine"}.
+
+I need to make sure there are no other terms. The post mentions "she gave it" – "it" could refer to morphine, but the exact phrase is "morphine." So the only matched phrase is "morphine." 
+
+No other terms like "codeine," "amphetamine," etc., are present. Therefore, the correct output is the single entry for morphine.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

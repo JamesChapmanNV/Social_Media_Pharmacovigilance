@@ -1,0 +1,14 @@
+<think>
+Okay, let's see. The content here is "brb, obtaining an Rx for heroin to treat my 'hysteria'". I need to determine if this is illicit or abusive drug-related.
+
+First, the mention of "heroin" is a controlled substance, definitely illegal. The user is talking about obtaining a prescription (Rx) for it. Then there's the term "hysteria" which might be a euphemism for a mental health issue, but the key point is the prescription for heroin. 
+
+The context here is someone getting a prescription for heroin, which is an illicit drug. Even though the reason given is "hysteria," the act of obtaining a prescription for heroin is illegal. The user is using the term "Rx" which implies a prescription, but heroin is not approved for general use and is classified as a Schedule I drug. 
+
+So, this seems like a case of promoting or discussing the use of an illegal drug, even if the intent is to treat a medical condition. The explanation should note the mention of heroin, the Rx, and the context of abuse. The example given in the task also includes similar cases where mentioning the drug and the act of obtaining it is considered illicit. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'heroin' (an illegal drug) and references obtaining a prescription (Rx), which implies misuse or abuse in a context that could encourage illicit drug use."
+}

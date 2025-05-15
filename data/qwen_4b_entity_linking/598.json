@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about someone who had surgery and was given too much morphine, which they found to be "fucking fantastic." The task is to detect any drug references and link them to the appropriate index terms.
+
+First, I need to scan the post for any mentions of drugs or related terms. The post mentions "morphine," which is a known opioid. Looking at the index terms, Morphine is listed as an index term. The phrase "too much morphine" directly refers to the drug morphine. So, "morphine" should be matched to "Morphine" as the index term.
+
+Next, check if there are any other terms. The rest of the post talks about a gall bladder removal and a mix-up, but nothing else. The word "fucking fantastic" is slang but doesn't refer to a drug. The user might be expressing that the morphine was effective, but the actual drug mentioned is morphine. 
+
+No other drugs are mentioned. The example in the problem statement had "codeine" linked to "lean" and "codeine," so here "morphine" is the only term. The index term for morphine is "Morphine," so the correct JSON should have one object with index_term "Morphine" and matched_phrase "morphine."
+
+I need to make sure there's no other possible terms. "Gall bladder" is not a drug. "Nurses administering" is just a context. So the only match is morphine. The answer should be an array with that single object.
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

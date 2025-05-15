@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is "😂😂 you smoking heroin??" So, first, I need to check if this is illicit or abusive drug-related. The user is asking if someone is smoking heroin, which is a controlled substance. The use of "smoking" here is a direct reference to using heroin, which is illegal. The emojis might indicate a joke or a comment, but the mention of heroin itself is a clear indicator. The context here is about someone using heroin, which is an illicit drug. The user might be mocking or commenting on someone's drug use, but the key point is the explicit mention of heroin. According to the definitions, mentioning illegal drugs in the context of use would be True. Even if it's a joke, the content is still about drug abuse. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin,' an illegal drug, and uses informal language suggesting recreational use or commentary on drug use."
+}

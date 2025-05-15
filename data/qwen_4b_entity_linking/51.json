@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Please tell your drug dealer I said hie". I need to detect any drug-related references here.
+
+First, I'll look for words or phrases that could be slang, euphemisms, or synonyms for illicit drugs. The word "hie" stands out. Hmm, "hie" isn't a drug term I recognize immediately. But wait, in some contexts, "hie" might be a slang term. Let me check the index terms provided.
+
+Looking through the list, the index terms include "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". But "hie" isn't listed there. Wait, maybe "hie" is a misspelling or a variant of another term? Alternatively, could "hie" be a slang for a drug? Let me think. In some contexts, "hie" might be a variation of "high", but that's not a drug. Alternatively, maybe "hie" is a term used in a specific subculture. 
+
+Wait, the example given in the problem includes "lean" as a slang for codeine. The user's post has "hie". Since "hie" isn't listed in the index terms, and there's no direct match, the correct index term would be "other". 
+
+But wait, maybe "hie" is a typo or a misspelling. Let me check again. The index terms don't have "hie" listed. So, the matched phrase is "hie", and since it's not in the list, it should be "other". 
+
+So the output would be an object with index_term "other" and matched_phrase "hie".
+</think>
+
+[{"index_term": "other", "matched_phrase": "hie"}]

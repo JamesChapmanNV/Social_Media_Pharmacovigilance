@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this content classification. The user provided a statement that's a bit complex. The content is: "So it's ok to shit on someone that accidentally dies of an over dose? But it's not ok to shit on someone that cowardly kills the self.... like let's say Robin Williams, Anthony Bordain."
+
+First, I need to determine if this is illicit or abusive drug-related. The key here is to check for mentions of drugs in the context of abuse, misuse, promotion, or glorification. The user is talking about overdose deaths and self-harm, but the main focus is on the reaction to these events. The mention of "over dose" is important. However, the content is more about the ethical response to such incidents rather than promoting or discussing drug use. The terms "over dose" are part of the context of drug-related deaths, but the content isn't encouraging or glorifying drug use. It's more about moral judgment of how people react to such tragedies. There's no explicit mention of drugs in a way that suggests abuse or misuse. The example given in the task includes mentions of codeine and lean, which are specific drugs. Here, the content is about the consequences of drug use leading to death, but the focus is on the reaction to those deaths, not the drug use itself. Therefore, the content doesn't fit the criteria for True. The explanation should note that while there's a mention of overdose, the context is about ethical judgment rather than promoting or discussing drug abuse. So the label would be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses ethical judgments around overdose deaths and self-harm, not promoting or glorifying drug abuse or misuse."
+}

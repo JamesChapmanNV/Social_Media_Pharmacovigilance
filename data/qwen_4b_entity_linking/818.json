@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I need to look at the post provided. The post is a conversation between Laurie and Rue. Laurie says, "I don't think you're going to get me my money, rue. You might have to sell some 🐱" and then Rue responds with an ellipsis. Laurie then says, "here's some morphine".
+
+The key part here is the last sentence: "here's some morphine". The word "morphine" is directly mentioned. Now, I need to check the list of index terms to see if morphine is listed. Looking through the list, yes, "Morphine" is listed as an index term with the description as the prototypical opioid analgesic. 
+
+So, the matched phrase is "morphine", and the index term is "Morphine". There are no other words in the post that refer to drugs. The emoji 🐱 is probably a cat, but it's not related to drugs. The rest of the text is about money and selling, which doesn't involve drugs. 
+
+I need to make sure there's no slang or alternative names for morphine in the post. The user used "morphine" directly, so it's straightforward. The example given in the problem statement had "lean" and "codeine" linked to Codeine, so in this case, "morphine" should be linked to "Morphine". 
+
+No other terms in the post match any index terms. Therefore, the JSON array should have one object with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

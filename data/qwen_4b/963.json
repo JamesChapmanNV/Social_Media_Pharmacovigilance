@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "Ever seen a nigga keep it real then he change up".
+
+First, I need to check if there's any mention of drugs, illegal substances, or slang related to drug use. The phrase "keep it real" is a common slang in hip-hop culture, often used to describe someone being genuine or honest. "Change up" might refer to a change in behavior or a shift, but not necessarily related to drugs.
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse, misuse, or promotes it. False includes medical, educational, or preventative contexts. The example given in the prompt shows that "lean" and "codeine" are drug-related terms, so that's a clue. 
+
+In this case, the content doesn't mention any specific drugs or terms related to drug abuse. The phrases "keep it real" and "change up" are more about personal behavior or authenticity, not drug use. There's no indication of promoting, using, or discussing drugs in a way that's illegal or abusive. 
+
+The user also provided examples where the content was classified as True when drugs were mentioned in a context of abuse, and False when it was educational. Here, there's no drug-related terminology. So, the answer should be False because there's no mention of drugs or drug-related activities. The explanation should note that the content doesn't reference drugs or drug abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content uses slang ('keep it real') and cultural references without mentioning drugs, abuse, or illicit substances."
+}

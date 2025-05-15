@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Can see me getting hooked on codeine to fall asleep 😳". I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The key phrase here is "getting hooked on codeine". The task is to find every word or phrase that refers to an illicit drug or substance. 
+
+Looking at the Index Terms list, "Codeine" is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The post uses "codeine" directly, which is explicitly in the list. So "codeine" maps directly to "Codeine" as the index term. 
+
+The phrase "getting hooked on" is a common slang for becoming addicted to a drug. However, the task is to detect the specific drug names or phrases. The word "codeine" is the main term here. The rest of the sentence is about the purpose (to fall asleep), but the drug itself is "codeine". 
+
+I need to check if there are any other terms. The post doesn't mention any other drugs or slang terms. The emoji is just a reaction and doesn't relate to drugs. 
+
+So the only matched phrase is "codeine", which corresponds to the index term "Codeine". The answer should be a JSON array with one object containing these two fields.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

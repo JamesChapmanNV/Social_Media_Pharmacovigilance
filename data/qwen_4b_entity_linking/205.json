@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I'll read through the post carefully: "Fucke codeine and fuck do you even get cancer, I've had cartons of smokes in my face and I drop this album universe???" 
+
+Looking for drug-related terms. The first part mentions "codeine," which is directly listed in the Index Terms under Codeine. So "codeine" is a clear match. 
+
+Next, there's "smokes." Now, "smokes" can be slang for cigarettes, but in the context of drug use, it might refer to cocaine. However, the Index Terms don't have a specific entry for cocaine. Wait, the Index Terms do include "Benzoylecgonine (BZE, Ecgonine benzoate)" as the primary metabolite of cocaine. But the user's post says "smokes," which is a bit ambiguous. However, in the example provided (Example 4), "snow" was categorized as "other" even though it's a slang for cocaine. So maybe "smokes" here is considered a slang for cocaine, but since it's not explicitly listed in the Index Terms, it would fall under "other." 
+
+But wait, the user's example 3 had "xans" which was "other" because it's not a listed term. So "smokes" isn't a direct term in the Index Terms, so it should be "other." 
+
+Then there's "album universe," which seems like a reference to a music album, not a drug. So that's not relevant. 
+
+So the detected phrases are "codeine" and "smokes." "Codeine" maps directly to the Index Term "Codeine." "Smokes" isn't listed, so it's "other." 
+
+Wait, but in the example 4, "snow" was "other" even though it's a slang for cocaine. So same logic applies here. Therefore, "smokes" would be "other." 
+
+So the JSON array should have two entries: one for "codeine" and one for "other" with "smokes."
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "smokes"}
+]

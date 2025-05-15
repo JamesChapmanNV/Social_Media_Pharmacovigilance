@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Codeine crazy, codeine crazy. All this motherfucking money got me going codeine crazy." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False).
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse.
+
+The content uses "codeine crazy" repeatedly. Codeine is an opioid, which is a controlled substance. The phrase "crazy" here might be a slang term indicating the effects of the drug. The mention of "motherfucking money" suggests that the speaker is using money to get codeine, which could imply drug abuse or misuse. The repetition and the tone ("crazy") might be indicating that the person is using codeine in a way that's problematic. 
+
+The context here is about using codeine for recreational purposes, possibly in a way that's harmful. The phrase "got me going" could mean that the person is using the drug to feel something, which is a sign of abuse. There's no mention of medical use or education here. The language is quite colloquial and seems to be glorifying the use of codeine, which fits the True category. 
+
+So the label should be True because it's about using codeine in a way that's associated with abuse, using slang, and the context suggests misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content repeatedly uses 'codeine crazy' and 'got me going,' indicating recreational drug use and glorification of codeine abuse."
+}

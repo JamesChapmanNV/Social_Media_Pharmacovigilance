@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post about being a medical cannabis advocate and making their own edibles. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any mentions of drugs, slang, or euphemisms. The post says "medical cannabis," which is listed as an index term. The phrase "medical cannabis" is directly mentioned, so that's a clear match. The index term for marijuana is "Marijuana (Cannabis, Weed, Pot)." 
+
+Next, the user mentions "edibles." Edibles are a form of cannabis consumption, so "edibles" would fall under the marijuana category. However, the index terms don't have a specific entry for "edibles." The closest is "Marijuana," which is the main term. Since "edibles" is a method of consumption, it's still related to marijuana. 
+
+The post also talks about making their own edibles and the effects lasting longer. There's no mention of any other drugs or slang here. The key terms are "medical cannabis" and "edibles," both of which are under the marijuana index term. 
+
+I need to check if "edibles" is considered a drug reference. Since it's a product form of cannabis, it's still within the marijuana category. The example given in the problem statement includes "snow" and "white lines" as "other" because they aren't on the list, but here "edibles" is related to the listed term. 
+
+So, the matched phrases would be "medical cannabis" and "edibles," both linked to "Marijuana." The answer should be an array with those two entries. I need to make sure the JSON is correctly formatted with the exact phrases and the correct index terms.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "medical cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "edibles"}
+]

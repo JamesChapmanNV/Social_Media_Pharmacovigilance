@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this query. The content is about DoorDash considering expanding into cannabis delivery. First, I need to determine if this is illicit or abusive drug-related. The key here is the context. The mention of cannabis is a drug, but the company is expanding delivery services. The example given in the task mentions that False includes drug-related terms in different contexts. Here, the focus is on delivery services, not misuse or abuse. Also, there's no indication of promoting or encouraging drug use. It's more about a business expansion. So, the classification should be False. The explanation should note that it's a business context, not promoting abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a business expansion into cannabis delivery, not promoting or glorifying drug abuse or misuse."
+}

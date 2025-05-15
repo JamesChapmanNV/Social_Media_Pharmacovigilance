@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Anthony Durante, a wrestler, who had an accidental overdose on oxycodone or fentanyl in 2003. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look at the post: "Anthony Durante, a professional wrestler, experienced an accidental oxycodone or fentanyl overdose in 2003 at age 36." The key words here are "oxycodone" and "fentanyl." 
+
+Looking at the index terms list, I see that Oxycodone is listed under "Oxycodone (OxyContin, Percocet, Hillbilly Heroin)" as a semi-synthetic opioid. Fentanyl is listed under "Fentanyl (China White, Apache, Duragesic)" as a synthetic opioid 50–100 times stronger than morphine. Both are explicitly mentioned in the index terms, so they should be matched directly.
+
+The post uses "oxycodone" and "fentanyl" as the drugs involved. The phrase "oxycodone or fentanyl" is the exact text, so each should be a separate entry. Since both are in the index terms, there's no need to use "other." 
+
+I need to make sure there are no other phrases. The rest of the post doesn't mention any other drugs. The words "overdose" are part of the context but not a drug name. So the JSON array should have two entries: one for oxycodone and one for fentanyl.
+</think>
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "oxycodone"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]

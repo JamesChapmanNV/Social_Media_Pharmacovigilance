@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I guess you can't just order morphine at the hospital." I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs or substances. The post mentions "morphine." Checking the index terms, Morphine is listed as an index term. The entry for Morphine includes synonyms like MS Contin, Miss Emma, Morph. So "morphine" directly maps to the index term "Morphine."
+
+The phrase "order morphine at the hospital" is a bit tricky. Morphine is a prescribed opioid, so in a medical context, it's a legitimate medication. However, the task is to detect any references to illicit drugs, including prescription ones if they're being used in a context that implies misuse or illegal access. But the post is stating that you can't just order it, which might be referring to the fact that it's a controlled substance requiring a prescription. However, the instruction says to detect any mention of illicit drugs, including RX or OTC drugs if they're being used in a way that's promoting or encouraging use. 
+
+Wait, the task says to detect every word or phrase that refers to an illicit drug or substance, including illegal, RX, OTC, or recreational drugs, even if they're being used in a context that's promoting or encouraging use. So even if it's a prescribed drug, if it's mentioned in a way that could be associated with misuse, it might be flagged. But in this case, the post is just stating that you can't order morphine at the hospital, which is a factual statement about controlled substances. However, the index term for Morphine is listed, so "morphine" would map to "Morphine" as the index term.
+
+So the matched phrase is "morphine," and the index term is "Morphine." There are no other words or phrases in the post that refer to drugs. The rest of the sentence is just about the hospital and ordering, which doesn't involve any other drug references. Therefore, the correct JSON array should have one entry with index_term "Morphine" and matched_phrase "morphine."
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

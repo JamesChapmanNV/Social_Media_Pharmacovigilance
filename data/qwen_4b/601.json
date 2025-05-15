@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content. The user provided a sentence that says: "You smoking crack my guy. There was no coup. There was fraud. To deny it is being at best intellectually dishonest and at worst straight up fucking lying..the history books will support it." 
+
+First, I need to determine if this is illicit or abusive drug-related. The key words here are "smoking crack." Crack is a highly addictive illegal drug, so mentioning it directly is a red flag. The phrase "smoking crack" is a clear reference to using an illicit drug. The rest of the sentence talks about a political event (coup, fraud) and accuses someone of lying. However, the main focus here is on the drug use. Even though the rest of the content is about politics, the mention of crack is explicit. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. Since "smoking crack" is a direct reference to using an illicit drug, this would fall under the True category. The other parts of the sentence don't relate to drug use, but the presence of "crack" alone is enough to classify it as illicit. The tone here is negative, but the main point is the drug reference. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions'smoking crack,' which refers to the use of an illegal drug, indicating illicit drug-related activity."
+}

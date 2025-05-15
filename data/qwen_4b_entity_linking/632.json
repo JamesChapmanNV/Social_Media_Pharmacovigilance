@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "i need me a little morphine myself after that episode…. #Euphoria #EuphoriaHBOMax". I need to detect any drug references and link them to the index terms.
+
+First, I'll scan the text for any mentions of drugs. The phrase "morphine" is clearly in there. Looking at the index terms, Morphine is listed as an index term. The post says "morphine myself", so that's a direct match. The hashtags #Euphoria and #EuphoriaHBOMax are probably just references to the TV show, so they don't relate to drugs. 
+
+Wait, the task is to check for any slang, euphemisms, etc. The word "morphine" is exactly in the index terms. The user might be referring to morphine, which is a controlled substance. The example given in the task had "codeine" and "lean" linked to codeine. So here, "morphine" should map directly to the index term "Morphine". 
+
+I need to make sure there's no other phrase. The rest of the post is about needing morphine after an episode, but no other drug terms. The hashtags are not drug references. So the only match is "morphine" under the index term "Morphine". 
+
+Double-checking the index terms: yes, Morphine is listed. So the correct JSON should have one object with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

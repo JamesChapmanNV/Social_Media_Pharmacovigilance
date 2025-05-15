@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully. The post is a question about why Chauvin continued applying force to Floyd even when he was motionless. It also asks why the drug for an apparent overdose wasn't administered and why the paramedic wasn't informed about the overdose.
+
+Looking for any mentions of drugs or substances. The phrase "required drug for the apparent drug overdose" stands out. The word "drug" here is general, but the context is an overdose. However, the index terms list specific drugs. The term "drug" itself isn't in the list, so according to the instructions, if the drug isn't in the list, use "other". 
+
+But wait, the post mentions "apparent drug overdose". The word "drug" here is a general term. The index terms don't have a general "drug" entry, so I should map it to "other". However, maybe there's a specific drug mentioned? Let me check again. The post doesn't specify which drug caused the overdose. It just says "drug overdose", so it's a generic term. Therefore, the matched phrase would be "drug" and the index term would be "other".
+
+Another part is "administer the required drug". Again, "drug" is the term here. So both instances of "drug" in the post would be matched to "other".
+
+Are there any other terms? The rest of the post doesn't mention any specific drugs or substances. The question is about the response to an overdose, but the actual drug isn't named. So the only matches are the two instances of "drug".
+
+So the JSON array should have two entries: each with "index_term": "other" and "matched_phrase": "drug".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drug"},
+  {"index_term": "other", "matched_phrase": "drug"}
+]

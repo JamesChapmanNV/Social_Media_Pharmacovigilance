@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about new vehicle sales dropping due to chip shortages and supply issues. The task is to detect any drug-related references and link them to the index terms.
+
+First, I'll read through the post carefully. The post mentions "chip shortages" and "parts-supply disruptions," but there's no mention of any drugs or substances. The keywords here are related to automotive sales and supply chain issues. 
+
+Looking at the index terms list, I need to check if any of the phrases in the post could be slang or euphemisms for drugs. The post doesn't use any terms like "codeine," "amphetamine," "cocaine," or other listed index terms. The only words are "chip," "shortages," "parts-supply," "disruptions," "selection," "dealer," "lots," "prices," and "record levels." None of these words are associated with illicit drugs as per the index terms provided.
+
+The example where "snow" was categorized as "other" because it's not a drug, so similarly, "chip" and "parts-supply" aren't drugs. The user might have thought "snow" was a drug, but in this case, the post doesn't have any drug references. 
+
+Therefore, there are no matches. The JSON array should be empty. But wait, the examples show that even if there's no match, the array is returned as empty. So the correct response is an empty array.
+</think>
+
+[]

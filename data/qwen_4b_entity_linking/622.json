@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I look like a part time drug dealer who's got no authority with the opps". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The phrase "drug dealer" is pretty straightforward. The Index Terms list includes "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". But "drug dealer" isn't listed. Wait, the task says to check for any slang, euphemisms, etc. However, the Index Terms provided don't have an entry for "drug dealer". The closest might be "Codeine" if there's a synonym, but "drug dealer" isn't a synonym for codeine. 
+
+Next, "opps" – that's likely a typo for "opps", which could be "opiates" or "opps" as slang. Looking at the Index Terms, "Morphine" has synonyms like MS Contin, Miss Emma, Morph. But "opps" isn't directly listed. However, "opps" might be a slang term for opioids. Wait, the Index Terms include "Codeine" with "Lean", "Purple Drank", "Schoolboy", and "Morphine" with "MS Contin, Miss Emma, Morph". But "opps" isn't in the list. However, the user's example 4 shows that if the term isn't in the list, use "other". 
+
+So, "drug dealer" isn't in the Index Terms, so it's "other". Similarly, "opps" is probably slang for opioids, but since there's no exact match, it's "other". Therefore, both "drug dealer" and "opps" would map to "other". 
+
+Wait, but the user's example 3: "xans" is "other" because it's not in the list. So here, "drug dealer" and "opps" are not in the Index Terms, so both should be "other". 
+
+But wait, maybe "opps" is a typo for "opps" as in "opiates" or "opiates". But the Index Terms don't have "opiates" listed. The closest is "Morphine" and "Codeine", but "opps" isn't a synonym for any of those. So yes, both "drug dealer" and "opps" are "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug dealer"}, {"index_term": "other", "matched_phrase": "opps"}]

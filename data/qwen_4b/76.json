@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The content is: "#MedASSIST is kicking goals with >2 million records of OTC #codeine meds in real time". 
+
+First, I need to determine if this is illicit or abuse-related. The hashtag #MedASSIST suggests it's related to medication assistance programs. The mention of OTC codeine meds in real time might be about tracking or monitoring the distribution of over-the-counter codeine medications.
+
+Now, checking the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse or misuse. However, the content here is talking about a program that tracks OTC codeine meds. The key here is the context. If it's about monitoring or tracking, it's more of a public health or medical context rather than promoting abuse. The use of "kicking goals" is a slang term, but in this case, it's likely referring to a program's success. The mention of OTC codeine is in a medical or public health context, not promoting misuse. The hashtag #MedASSIST implies a program that helps people access medications, not encouraging abuse. So, the explanation should note that it's about tracking OTC codeine in a public health context, not promoting misuse. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a medication assistance program tracking OTC codeine meds in a public health context, not promoting abuse or misuse."
+}

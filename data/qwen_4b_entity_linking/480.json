@@ -1,0 +1,17 @@
+<think>
+Okay, let's see. The user provided a post: "Did she just lie and say she 'accidentally dropped' something? Yeah this gotta be crack." I need to detect any drug references here.
+
+First, I'll go through the post word by word. The phrase "accidentally dropped" is mentioned. But the context is that the person is accusing someone of lying about dropping something, and the conclusion is "this gotta be crack." So "crack" is probably the key term here. 
+
+Looking at the index terms, "crack" isn't listed directly. Wait, the index terms include "Codeine" with synonyms like "Lean," "Purple Drank," "Schoolboy." But "crack" isn't in the list. However, in the example 4, "snow" and "white lines" were marked as "other" because they aren't on the list. So if "crack" isn't in the index terms, then it should be "other."
+
+Wait, but wait. Let me check the index terms again. The list includes "Codeine" with synonyms, but "crack" isn't listed. However, "crack" is a slang term for cocaine. But in the index terms, the only mention of cocaine is "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. But the term "crack" itself isn't in the index terms. So according to the instructions, if the drug isn't in the list, use "other."
+
+So in this case, "crack" is a slang term for cocaine, but since the index terms don't list "crack" as an index term, the correct index term would be "other." Therefore, the matched phrase is "crack" with index_term "other."
+
+Wait, but maybe I'm missing something. Let me check again. The index terms include "Cocaine" as a drug? Wait, no, looking at the list, there's no entry for "Cocaine" itself. The only related term is "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite. So the actual drug "Cocaine" isn't listed as an index term. Therefore, if the post mentions "crack," which is a slang term for cocaine, but since "Cocaine" isn't in the index terms, it should be "other."
+
+Therefore, the correct response is to mark "crack" as "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "crack"}]

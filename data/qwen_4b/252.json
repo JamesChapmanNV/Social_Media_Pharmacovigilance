@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "People shoot meth and heroin in front of their kids so why not."
+
+First, I need to check the definitions. True includes mentions of illegal drugs in the context of abuse or misuse, using slang, or encouraging it. False includes medical, educational, or preventative contexts.
+
+The content mentions "shoot meth and heroin," which are both illegal drugs. The phrase "shoot" here is slang for injecting drugs, which is a form of abuse. The sentence also says "so why not," which sounds like encouragement or justification for using drugs in a harmful way, especially in front of children. That's promoting misuse. 
+
+The context here is clearly about drug abuse, using illegal substances and encouraging their use despite the harm. So according to the definitions, this should be classified as True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references illegal drugs (meth, heroin) and uses the slang'shoot' to imply injection, while the'so why not' phrase encourages reckless drug use in harmful contexts."
+}

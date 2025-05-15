@@ -1,0 +1,9 @@
+<think>
+Okay, let's see. The user provided a post: "eren doing heroin and i shake my phone so violently". I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The word "heroin" is clearly listed in the index terms under Morphine. So "heroin" directly maps to Morphine. The rest of the sentence is about shaking a phone, which doesn't seem related to drugs. The phrase "i shake my phone so violently" is just describing an action, not a drug reference. So the only match here is "heroin" under Morphine. I should check if there's any other possible slang or euphemism, but "heroin" is straightforward. The answer should be a JSON array with one object: index_term "Morphine" and matched_phrase "heroin".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "heroin"}
+]

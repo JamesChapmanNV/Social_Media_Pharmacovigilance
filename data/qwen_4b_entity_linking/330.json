@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I'll read through the post carefully: "today it was finding out she used a loop of some russian kids supposedly overdosing on heroin for a now deleted music video from Was it weird i listened to "i'm god" by clams Casino when i lost my virginity". 
+
+Looking for drug references here. The phrase "overdosing on heroin" is pretty straightforward. Heroin is listed in the Index Terms under "Morphine" as MS Contin, Miss Emma, Morph. Wait, but the Index Terms for Morphine include "Morphine (MS Contin, Miss Emma, Morph)" so "heroin" isn't directly listed. However, the user's instruction says to include illegal, RX, OTC, or recreational drugs, including those that are promoting or glorifying use. But in the Index Terms, heroin isn't explicitly listed. Wait, looking back at the Index Terms, the entry for "Morphine" includes "MS Contin, Miss Emma, Morph" but not heroin. However, the user's example 1 had "lean" and "codeine" both linked to Codeine. So maybe "heroin" isn't in the list. But wait, the Index Terms for "Heroin" isn't present. Wait, the Index Terms list includes "Morphine" but not heroin. However, the user's example 1 had "lean" and "codeine" both linked to Codeine. So perhaps "heroin" is not in the list, so we should use "other"?
+
+Wait, but the Index Terms list includes "Heroin" as a term? Let me check again. No, looking at the Index Terms list, I don't see "Heroin" as an index term. The closest is "Morphine" which is a different drug. So "heroin" is not in the list. Therefore, the phrase "overdosing on heroin" would map to "other" since heroin isn't in the list. But wait, maybe the user is expecting that "heroin" is considered a drug here. However, according to the given Index Terms, heroin isn't listed. So the correct index term would be "other".
+
+Then, the rest of the post: "loop of some russian kids supposedly overdosing on heroin". The word "heroin" is the key here. Since it's not in the Index Terms, it's "other". The other part is "i listened to "i'm god" by clams Casino". The song title "i'm god" by clams Casino isn't a drug reference, so no match there. 
+
+So the only detected phrase is "heroin", which maps to "other". Therefore, the JSON array should have one object with index_term "other" and matched_phrase "heroin".
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

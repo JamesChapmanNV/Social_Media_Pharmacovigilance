@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is: "My high school rival is addicted to heroin so he's lazy and can't get a job where I was more successful. As a meth addict I just can't keep a job. What a fukkin loser right?"
+
+First, I need to check if it's about drug abuse or illegal drugs. The user mentions heroin and meth, both are illegal drugs. The person is describing their own addiction and their rival's addiction. The tone seems negative, using words like "loser" and talking about the negative consequences like being lazy and unable to get a job. 
+
+The definitions say that True includes mentions of illegal drugs in the context of abuse or misuse. Here, the user is talking about being a meth addict, which is a misuse. Also, the mention of heroin addiction is part of the abuse. The content is not in an educational or medical context. The user is not promoting the use but rather discussing their personal experience with addiction. However, the example given in the task includes a similar case where someone is a meth addict and the label is True. 
+
+Wait, the example in the task where the user says "As a meth addict I just can't keep a job" is classified as True. So in this case, the content is about personal experience with drug abuse, which falls under ILLICIT/ABUSIVE-DRUG-RELATED. The user is not promoting it but is discussing their own addiction. However, the example in the task had a similar case where the user was a meth addict and it was labeled True. So following that example, this content should be classified as True because it mentions drug use in the context of abuse (being a meth addict, heroin addiction) and the negative consequences. The explanation should note the mention of illegal drugs and the context of abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'heroin' and'meth,' which are illicit drugs, and describes personal addiction and its negative consequences, indicating abuse or misuse."
+}

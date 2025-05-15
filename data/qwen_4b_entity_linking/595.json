@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Gossiping with qai is literally my daily dose of morphine." I need to detect any drug references here.
+
+First, I'll break down the sentence. The key words are "qai" and "morphine." The task is to check if these terms are slang or euphemisms for illicit drugs. 
+
+Looking at the Index Terms list, "Morphine" is listed as an index term. The phrase "daily dose of morphine" directly mentions morphine, which is a controlled substance. So "morphine" is a clear match.
+
+Now, "qai" – I need to check if that's a slang term for a drug. Scanning through the Index Terms, I don't see "qai" listed. The closest might be "Codeine" with synonyms like "Lean," "Purple Drank," "Schoolboy," but "qai" isn't among them. Also, other drugs like Amphetamine, Methamphetamine, etc., don't match. Since "qai" isn't in the list, it should be categorized as "other."
+
+So the matched phrases are "morphine" under the index term "Morphine," and "qai" under "other." The example in the problem where "xans" was "other" because it wasn't a listed term applies here. Therefore, the JSON array should include both entries.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "qai"}
+]

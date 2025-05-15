@@ -1,0 +1,7 @@
+[
+  {"index_term": "Heroin", "matched_phrase": "heroin use"},
+  {"index_term": "other", "matched_phrase": "intravenous drug use"},
+  {"index_term": "other", "matched_phrase": "coffee"},
+  {"index_term": "other", "matched_phrase": "beer"},
+  {"index_term": "other", "matched_phrase": "school"}
+]

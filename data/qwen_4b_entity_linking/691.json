@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "Then why would you think people would be stroking furry walls if you were in that culture as you put it iv never had cannabis ever make me feel that way". 
+
+Looking for any slang, euphemisms, or terms that might refer to illicit drugs. The key part here is "cannabis". Checking the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is listed as an illicit drug. The user mentions "cannabis" directly, so that's a clear match. 
+
+The rest of the post talks about "furry walls" which seems like a metaphor or a cultural reference, but nothing related to drugs. The phrase "iv never had cannabis ever make me feel that way" confirms that "cannabis" is the term here. 
+
+Since "cannabis" is explicitly listed in the index terms under "Marijuana", the index term should be "Marijuana". There are no other drug references in the post. So the JSON array should have one entry with "Marijuana" and "cannabis" as the matched phrase. 
+
+I need to make sure there's no other term I'm missing. Words like "furry walls" don't map to any index term, so they're marked as "other" if they were, but in this case, the only drug reference is "cannabis". 
+
+Therefore, the correct output is a single JSON object with index_term "Marijuana" and matched_phrase "cannabis".
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

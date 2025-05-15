@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Ever seen a nigga keep it real then he change up". I need to check for any drug-related references here.
+
+First, I'll look for slang, euphemisms, or phrases that might refer to illicit drugs. The words "nigga" and "keep it real" are part of a colloquial expression, but I don't see any direct drug terms here. "Change up" could be a metaphor, but not sure if it's a drug reference. 
+
+Looking at the index terms, I need to match any detected phrases. The post doesn't mention specific drugs like codeine, amphetamine, or others listed. The phrases "nigga" and "keep it real" aren't in the index terms. "Change up" isn't a drug term either. 
+
+Since there are no direct matches to the index terms, I should mark them as "other". But wait, the example 3 had "xans" as other. So in this case, the phrases "nigga" and "keep it real" aren't drug terms, so they should be "other". However, "change up" might be a stretch. But according to the task, if the drug isn't in the list, use "other". 
+
+So the answer would be two entries with "other" for "nigga" and "keep it real", and maybe "change up" as well. Wait, the post is "Ever seen a nigga keep it real then he change up". So three phrases: "nigga", "keep it real", "change up". But none of these are drug terms. So all three should be "other". 
+
+But the example 3 had "xans" as other. So the correct approach is to check each word/phrase. Since none of them are in the index terms, they all get "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "nigga"}, {"index_term": "other", "matched_phrase": "keep it real"}, {"index_term": "other", "matched_phrase": "change up"}]

@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this content classification. The user provided a specific example, so I need to follow the guidelines closely.
+
+The content is: "Friday's seizure is the third such haul in two weeks. A container was filled with yarn, but an examination showed that the threads were laced with a heroin derivative."
+
+First, I need to check if this mentions illegal drugs in the context of abuse or misuse. The key terms here are "heroin derivative." Heroin is an illegal drug, and a derivative would also be illicit. The context here is about a seizure (which I think refers to a law enforcement action, like a raid or arrest) and the discovery of heroin in yarn. This seems like a drug trafficking or smuggling scenario. 
+
+The definition for True includes content that mentions illegal drugs in the context of abuse, misuse, or promoting their use. Here, the heroin derivative is being found in a container, which is part of a drug trafficking operation. The mention of "heroin derivative" is a direct reference to an illicit drug. The context is about the seizure of drugs, which is related to drug abuse or trafficking. 
+
+The example given in the problem statement includes similar content where the presence of drugs in a container is part of a drug-related activity. Since the content here is about finding heroin in yarn, which is a method of smuggling, this would be classified as True. The explanation should note the mention of heroin derivative in the context of drug trafficking, which is illegal and related to abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'heroin derivative,' an illicit drug, in the context of drug trafficking (seizure of drugs in yarn)."
+}

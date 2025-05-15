@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about surgery and pain management. The main points are that the person had surgery, was in pain, took Norco because they were allergic to Morphine, and got a prescription from CVS Pharmacy at Target on the Katy Freeway.
+
+First, I need to check for any drug-related references. The post mentions "Norco," which is a brand name for Hydrocodone, a semi-synthetic opioid. Looking at the Index Terms, Hydrocodone is listed under "Hydrocodone (Vicodin, Norco, Vike)" as a commonly prescribed semi-synthetic opioid. So "Norco" would map to Hydrocodone.
+
+Next, "Morphine" is mentioned as an allergy. Morphine is listed under "Morphine (MS Contin, Miss Emma, Morph)" as the prototypical opioid analgesic. So "Morphine" would map to that index term.
+
+The rest of the post talks about a pharmacy and location, which don't relate to drugs. The phrase "Norco" is a brand name, so the matched phrase should be "Norco," and "Morphine" is directly listed. Both are in the index terms, so no need for "other."
+
+I need to make sure there are no other terms. The post doesn't mention any other drugs or slang. So the JSON array should have two entries: one for Norco (Hydrocodone) and one for Morphine (Morphine).
+</think>
+
+[{"index_term": "Hydrocodone", "matched_phrase": "Norco"}, {"index_term": "Morphine", "matched_phrase": "Morphine"}]

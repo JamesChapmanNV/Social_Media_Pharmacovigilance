@@ -1,0 +1,15 @@
+<think>
+Okay, let's see. The user is asking me to label a social media post related to drug abuse. The post is: "If it's codeine I've got a shedload. But you can't have it." The rules are T if it shows illicit or abusive drug use (using, seeking, buying, selling, trafficking, or slang for drugs), otherwise F.
+
+First, I need to parse the sentence. The key words here are "codeine" and "shedload." Codeine is a controlled substance, a narcotic, often used in medications but also classified as an opioid. The phrase "shedload" is slang, meaning a large amount. So the person is saying they have a lot of codeine. 
+
+Now, does this indicate drug use? The user is talking about having a lot of codeine, which could imply possession. But the context is a bit ambiguous. If they're saying they have a lot of codeine, that might be related to drug use. However, codeine can be a prescription medication, so maybe they're referring to a legitimate medical use. But the presence of "shedload" suggests a large quantity, which might be illegal.
+
+But the label rules specify that T is for illicit or abusive use. So if the person is talking about having a large amount of codeine, that could be considered as possessing drugs, which is related to drug abuse. However, codeine is sometimes used medically, so it's a bit tricky. But the phrase "shedload" is definitely slang for a large amount, which might be associated with drug use. 
+
+Alternatively, maybe the person is talking about having a lot of codeine in a medical context. But the way it's phrased, "If it's codeine I've got a shedload. But you can't have it." It sounds like they're saying they have a lot of codeine, but someone else can't have it. That might imply that they are in possession of codeine, which could be illegal. 
+
+So according to the rules, if the text shows drug use, seeking, buying, selling, trafficking, or slang for drugs, then it's T. The use of "shedload" is slang for drugs, and codeine is a drug. Therefore, the label should be T.
+</think>
+
+T

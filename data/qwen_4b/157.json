@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this content. The user is talking about morphine being the most powerful pain medication they've received after surgery. They mention not wanting or needing anything stronger and express gratitude for not having to deal with chronic or acute pain. They also say it's rough juggling pain with addictive drugs.
+
+First, I need to check if there's any mention of illegal or abused drugs. Morphine is a controlled substance, typically used medically. The user is discussing their experience with it in a medical context, not promoting or glorifying its use. They mention it's addictive, which is a known side effect, but they're not encouraging its misuse. The tone seems to be about managing pain, not abuse. There's no slang or euphemism here. The context is about post-surgery pain management, so it's educational or medical. The explanation mentions "addictive drugs" but in a negative light, not promoting misuse. So according to the definitions, this should be False because it's in a medical context and not promoting abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses morphine as a medical pain medication in a post-surgery context, acknowledging its addictive nature but not promoting or glorifying its misuse."
+}

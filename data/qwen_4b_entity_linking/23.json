@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that's a list of topics, and I need to detect any drug-related references. The main task is to find every word or phrase that refers to an illicit drug or substance, link them to the correct Index Term, and return a JSON array.
+
+First, I'll look at the post text: "Top 🇺🇸 #SocialMedia Obsession: ❶ Sex ❷ Drugs ❸ Overdose ❹ Dead People ❺ Previously, Trump ❻ Now, Anything Stupid ❼ As Catastrophized by Media; ❽ Mass Shootings & Empty "Gun Reform" Talk ❾ GQP & Extreme Left's Toxic/Anti-Democratic Antics🔴". 
+
+Looking through the list, the second item is "Drugs". The user's instruction says to detect any references to illicit drugs, including slang, euphemisms, etc. The phrase "Drugs" here is a general term, but the problem is whether it's a specific drug or just a category. However, in the Index Terms provided, "Drugs" isn't listed as a specific term. The example 3 shows that "xans" is "other" because it's not a specific drug. So, "Drugs" in the list is a general term, not a specific drug name. Therefore, it should be categorized as "other".
+
+Are there any other phrases? The rest of the list includes terms like "Overdose", "Dead People", "Mass Shootings", etc., but those aren't drug-related references. The only explicit mention is "Drugs", which is a general term. So the only match here is "Drugs" linked to "other".
+
+Wait, but the user's example 4 had "snow" and "white lines" as "other" because they weren't drugs. Similarly, "Drugs" here is a general term, not a specific drug. So the correct index term would be "other".
+
+So the output should be one object: {"index_term": "other", "matched_phrase": "Drugs"}.
+</think>
+
+[{"index_term": "other", "matched_phrase": "Drugs"}]

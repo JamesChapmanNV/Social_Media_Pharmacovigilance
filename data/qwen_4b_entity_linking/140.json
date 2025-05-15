@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Let me get a Caesar salad please.. With croutons and uhh codeine dressing 😈". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The main phrase is "codeine dressing". Looking at the index terms, Codeine is listed under the index term "Codeine", with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "codeine dressing" directly mentions "codeine", so that's a clear match. 
+
+The rest of the post is about a Caesar salad with croutons. "Caesar salad" is a regular food item, and "croutons" are just a topping. There's no mention of any other drugs here. The emoji 😈 might indicate something sinister, but the actual text doesn't have any other drug references. 
+
+I should check if "dressing" could be a slang term for something else, but in this context, it's part of "codeine dressing", which directly refers to codeine. The index term for codeine includes "codeine" itself, so that's the match. No other terms in the post fit the index list. Therefore, the only match is "codeine" in "codeine dressing".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

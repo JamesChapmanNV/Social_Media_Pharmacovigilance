@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is about a man in Great Neck being sentenced to prison for providing heroin that led to two overdose deaths in Queens. The key here is to determine if this is illicit or abusive drug-related.
+
+First, the mention of heroin is an illegal drug. The context is about someone being sentenced for providing heroin, which is directly related to drug abuse and illegal distribution. The fact that it led to overdose deaths emphasizes the misuse and harm caused by heroin. The article is reporting on a legal consequence for distributing a controlled substance, which falls under illicit drug-related content. The example given in the task includes mentions of illegal drugs in the context of abuse or misuse, so this fits. The explanation should note the mention of heroin and the legal consequence for distribution, indicating abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions heroin, an illegal drug, and describes its distribution leading to overdose deaths, indicating illicit drug abuse and misuse."
+}

@@ -1,0 +1,7 @@
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "#four20"},
+  {"index_term": "other", "matched_phrase": "#THC"},
+  {"index_term": "Marijuana", "matched_phrase": "#flower"},
+  {"index_term": "Marijuana", "matched_phrase": "#cannabis"}
+]

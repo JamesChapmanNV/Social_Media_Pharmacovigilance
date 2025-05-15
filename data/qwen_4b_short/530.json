@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user is asking me to label a social media post related to drug abuse. The post says, "Dropped 2 ounces of codeine in my Minute Maid 🍇". The rules are T if it shows illicit or abusive drug use (using, seeking, buying, selling, trafficking, or slang for drugs), otherwise F.
+
+First, I need to parse the sentence. The key words here are "dropped 2 ounces of codeine". Codeine is a controlled substance, classified as a narcotic. The action here is "dropped", which might be a bit ambiguous. But in the context of drug use, "dropping" could refer to using or possessing the drug. The mention of "Minute Maid" is probably a brand name of a soda, so that's just a reference to the container, not related to drugs. 
+
+Now, codeine is an opioid, which is a controlled substance. The quantity is 2 ounces, which is a significant amount. The act of dropping it might be part of using or possessing. The user is likely referring to using codeine, which is an illicit drug in many contexts. 
+
+But wait, codeine is also used in some over-the-counter medications. However, the post doesn't mention any medical context. The presence of the drug in a soda container might be a way to indicate possession or use. The label is T if it's showing drug use. So, "dropped" here is likely part of using or having the drug. 
+
+Therefore, the correct label should be T because it's indicating the use or possession of an illicit drug (codeine), which is a controlled substance.
+</think>
+
+T

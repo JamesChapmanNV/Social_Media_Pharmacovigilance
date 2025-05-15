@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "eren doing heroin and i shake my phone so violently". I need to determine if this is illicit/abusive-drug-related.
+
+First, check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting. Also, slang or cultural references indicating recreational use. The example given in the first example mentions "lean" and "codeine" with a supportive tone, which is why it's classified as True.
+
+In this content, "heroin" is a controlled substance, definitely illegal. The mention of someone using heroin, and the reaction of shaking the phone violently. The phrase "doing heroin" is a direct reference to drug use. The reaction might indicate distress or alarm, but the key point is the explicit mention of heroin, which is an illicit drug. The context here is about someone using heroin, which fits under the abuse or misuse category. Even if the reaction is a bit unclear, the mention of the drug itself is enough to classify it as True. The example in the first case had "hooked" and "everyday" which indicated approval, but here it's just stating the fact of use. Still, the presence of the drug name in a context that implies use (even if not explicitly promoting) is enough. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin,' an illegal drug, and describes someone 'doing heroin,' indicating direct reference to drug use."
+}

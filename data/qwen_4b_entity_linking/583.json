@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "No shit there was a fucking pandemic going on". I need to check if there are any drug-related references here.
+
+First, I'll go through each word and phrase. The post is "No shit there was a fucking pandemic going on". The key words here are "pandemic" and "fucking". 
+
+Looking at the index terms, I need to see if any of the listed terms match. The index terms include things like Codeine, Amphetamine, LSD, Marijuana, etc. "Pandemic" isn't listed as a drug term. "Fucking" is a strong word but not a drug reference. The example given in the problem had "xans" which was marked as "other" because it wasn't a specific drug. Similarly, "snow" in example 4 was "other". 
+
+So, in this case, neither "pandemic" nor "fucking" are drug terms. The user is talking about a pandemic, which is a public health crisis, not an illicit drug. Therefore, there are no matches here. The answer should be an empty array since there are no detected phrases that refer to illicit drugs according to the index terms provided.
+</think>
+
+[]

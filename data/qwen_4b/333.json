@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this classification. The content is: "The International Cannabis Conversation - NEW SHOW - The International Cannabis Conversation is live on". 
+
+First, I need to determine if this is about illicit or abusive drugs. The title mentions "Cannabis", which is a drug. But the context here is a show that's live. The key is whether it's promoting abuse or misuse.
+
+The phrase "International Cannabis Conversation" could be a discussion about cannabis in a legal or educational context. The fact that it's a new show and live might indicate it's a media event, possibly discussing the topic in a non-misuse context. However, cannabis is a controlled substance in many places, so the term "cannabis" could be problematic. But the content doesn't mention use, abuse, or promotion. It's just a show's title. 
+
+Looking at the definitions, True includes mentions of illegal drugs in abuse contexts. But here, it's a show's name, not promoting misuse. The example given in the task where a pharmacology lecture is considered False because it's educational. Similarly, this might be a media event discussing cannabis, not promoting abuse. So the label should be False. The explanation would note that it's a show's title without promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a media event discussing cannabis in a general context, not promoting abuse or misuse."
+}

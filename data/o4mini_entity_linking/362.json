@@ -1,0 +1,6 @@
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "opioids"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "other", "matched_phrase": "crack"}
+]

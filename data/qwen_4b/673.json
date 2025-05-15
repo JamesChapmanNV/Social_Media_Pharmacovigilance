@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The content is: "Floyd was a junky. He was suffering from an overdose in the same way he had previously done. Justice will prevail." 
+
+First, I need to determine if this is illicit/abusive-drug-related. The key terms here are "junky" and "overdose." "Junky" is a slang term for someone addicted to drugs, which is a clear indicator of drug abuse. The mention of overdose suggests that he had a drug-related incident. The context here is describing someone's past drug use and a previous overdose, which is related to drug abuse. The phrase "Justice will prevail" doesn't directly relate to the drug content, but the main points are about the person's drug addiction and overdose. 
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse. Since "junky" and "overdose" are directly related to drug abuse, this should be classified as True. The example given in the prompt where "lean" and "codeine" were considered True fits here. The content is not in a medical or educational context, so it's not False. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references 'junky' and 'overdose,' which directly indicate drug abuse and misuse."
+}

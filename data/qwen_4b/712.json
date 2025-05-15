@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is a dialogue between two people, YE and RAY J, where they're discussing some questionable phrases. 
+
+First, I need to check if there's any mention of illegal drugs, misuse, or promotion. The lines include phrases like "Stick a thousand needles in your eye?" and "Step on a crack, break your mother's back?" These are classic references to drug-related slang or cultural references that imply drug use or abuse. The conversation seems to be using these phrases in a humorous or edgy way, possibly glorifying or normalizing drug-related behavior.
+
+Looking at the definitions, True includes content that uses slang or cultural references signaling recreational drug use or abuse. The phrases here are well-known in drug culture, so even without explicit drug names, the context suggests abuse. The tone seems to be approving, as they're agreeing with these statements. 
+
+The example given in the prompt where "lean" and "codeine" were mentioned as True is similar. Here, the references are to drug-related actions, so it's likely a True classification. The explanation should note the use of cultural references implying drug abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The dialogue includes culturally recognized drug-related references ('stick a thousand needles in your eye','step on a crack') that imply recreational drug abuse or glorification."
+}

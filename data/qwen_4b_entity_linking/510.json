@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Trying to give me more morphine! No! *ahem* codeine is fine! Kkta…" I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll go through the post word by word. The first part is "Trying to give me more morphine! No!" The word "morphine" is definitely a drug. Looking at the index terms, Morphine is listed as an index term. So "morphine" maps to "Morphine".
+
+Next, the user says "*ahem* codeine is fine! Kkta…" The word "codeine" is mentioned here. From the index terms, Codeine is listed, and the synonyms include "Lean", "Purple Drank", "Schoolboy". But in the post, the exact phrase is "codeine", so that maps directly to "Codeine". 
+
+Then there's "Kkta…" which is a bit tricky. I need to check if "Kkta" is a slang or abbreviation for a drug. Looking at the index terms, I don't see "Kkta" listed. However, "Kkta" might be a misspelling or slang for a drug. Let me think. Wait, in the index terms, there's "2-Fluoro-2-Oxo PCE (CanKet, 2F-NENDCK, 2-FXE)" which is a dissociative anesthetic. The abbreviation "CanKet" is mentioned. But "Kkta" isn't listed. Alternatively, "Kkta" could be a typo for "Ketamine" or another drug. However, since "Kkta" isn't in the index terms, I should map it to "other". 
+
+So the matched phrases are "morphine" and "codeine". The "Kkta" part isn't a recognized term in the index list, so it's "other". But wait, the user's example 3 has "xans" mapped to "other". So in this case, "Kkta" is not in the list, so it's "other". 
+
+Therefore, the JSON array should have two entries: one for "morphine" and one for "codeine". The "Kkta" is considered "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "Kkta"}
+]

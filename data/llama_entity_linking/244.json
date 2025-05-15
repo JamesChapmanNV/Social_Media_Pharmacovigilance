@@ -1,0 +1,9 @@
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "essential medicines"},
+  {"index_term": "other", "matched_phrase": "controlled substances"},
+  {"index_term": "other", "matched_phrase": "PalliativeCare"},
+  {"index_term": "other", "matched_phrase": "pain"},
+  {"index_term": "other", "matched_phrase": "mentalhealth"},
+  {"index_term": "other", "matched_phrase": "equity"}
+]

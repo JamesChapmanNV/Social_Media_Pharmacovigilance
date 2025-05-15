@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Yes! Just had my 'long release' Morphine tablet (which they all stood around evidencing, for the record, so to speak🤷🏽‍♂️) x". I need to detect any drug references here.
+
+First, I'll scan the post for any terms that might refer to illicit drugs or substances. The main phrase here is "Morphine tablet". Looking at the Index Terms list, Morphine is listed as an index term. The entry for Morphine includes terms like MS Contin, Miss Emma, Morph. The user used "Morphine", which is directly listed, so that's a match. The phrase "long release" might refer to the formulation, but the key term here is "Morphine". 
+
+The post also has "they all stood around evidencing" which is probably just describing the situation, not a drug reference. The "x" at the end is likely a social media emoji, so not relevant. 
+
+So the detected phrase is "Morphine", which maps to the index term "Morphine". There's no other drug mentioned here. The example in the prompt where "addy" was mapped to Amphetamine shows that slang terms are considered. Here, "Morphine" is a direct match. The answer should be an array with one object: index_term "Morphine" and matched_phrase "Morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]

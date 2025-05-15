@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post about watching an NBA game and includes some links. My task is to check for any drug-related references and map them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions "To watch NBA Game: Memphis Grizzlies vs Minnesota Timberwolves stream go to link in tweet below: Live NBA Streams Playoffs 2022 games #NBAPlayoffs #Timberwolves #RaisedByWolves CLICK ====v"
+
+Looking for any words or phrases that could refer to illicit drugs. The main content here is about sports, streaming a game, and some hashtags. The words "NBA", "Grizzlies", "Timberwolves", "Playoffs", "stream", "link", "CLICK" are all related to sports and media. There's no mention of any drug names, slang, or euphemisms here. The hashtags #NBAPlayoffs and #Timberwolves are related to the sports team, not drugs. The word "CLICK" is part of a link, but not a drug reference. 
+
+I should check if any of the terms in the post could be slang for drugs. For example, "stream" might be confused with something else, but in this context, it's about watching a game. The word "CLICK" is part of a link, not a drug. The rest of the terms are all related to sports and events. 
+
+Since there are no drug-related terms in the post, the correct response would be to return an empty array. However, the user's example 3 shows that if there's no match, it's "other". But in this case, there are no phrases that refer to drugs. So the JSON array should be empty. 
+
+Wait, the user's example 4 had "snow" and "white lines" mapped to "other" because they weren't on the list. But here, there are no drug references at all. So the correct answer is an empty array. Let me confirm the index terms again. The post doesn't have any of the listed index terms. Therefore, no matches. So the output is an empty JSON array.
+</think>
+
+[]

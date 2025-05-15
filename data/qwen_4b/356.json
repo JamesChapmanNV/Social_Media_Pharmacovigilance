@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is: "I mean to general audience, not this crack team of sleuths. Spoiler being just how hurt might she be." 
+
+First, I need to check if there's any mention of drugs, illegal substances, or abuse. The word "crack" here is part of a phrase "crack team of sleuths." Wait, "crack team" usually refers to a highly skilled group, not the drug crack. But the user is asking if there's any illicit drug reference.
+
+Looking at the context, the user is talking about a movie or show, maybe "The Hurt Locker," which is a film about a military team. The mention of "crack team" is a metaphor for a skilled group, not the drug. The second part mentions "how hurt might she be," which is about the plot's spoiler, not drug use.
+
+No explicit mention of drugs, slang, or abuse. The terms here are part of a movie reference, not drug-related. So the classification should be False. The explanation would note that "crack" is part of a movie title or metaphor, not referring to the drug.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The term 'crack' refers to a movie title or metaphorical 'crack team' (highly skilled group), not the illicit drug, and the context is unrelated to drug abuse or promotion."
+}

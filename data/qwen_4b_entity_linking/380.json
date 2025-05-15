@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. The post is: "PS: while I'm specifically talking about the evil and hypocrisy of incarcerating people for cannabis today, I want to be very clear that prisons are not a place for *anyone* to be, and we need to completely abolish them."
+
+First, I need to scan the post for any mentions of drugs, slang, or terms that could refer to illicit substances. The main topic here is cannabis, which is mentioned as "cannabis." Looking at the index terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "cannabis" would map to that index term.
+
+Next, check if there are any other terms. The post doesn't mention any other drugs or slang. Words like "prisons," "abolish," "incarcerating" are part of the context but not drug references. The user is discussing cannabis specifically, so the only match is "cannabis."
+
+Now, verify if "cannabis" is in the index terms. Yes, it's listed under Marijuana. So the matched phrase is "cannabis" and the index term is "Marijuana." No other terms are present. The example in the problem statement had "snow" and "white lines" as "other" because they weren't drugs. Here, "cannabis" is a direct match. So the JSON should have one object with index_term "Marijuana" and matched_phrase "cannabis."
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

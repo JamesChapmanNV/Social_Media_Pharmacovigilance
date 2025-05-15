@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "#MedASSIST is kicking goals with >2 million records of OTC #codeine meds in real time." I need to identify any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs or substances. The post has "#codeine" in a hashtag. According to the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" directly maps to Codeine. The hashtag #codeine is a clear reference. Then there's "OTC" which stands for Over-the-Counter. But wait, the index terms include OTC drugs, but the task says to check if the drug is in the list. Codeine is in the list, so even though OTC is mentioned, the actual drug is codeine. However, the task says to detect every word or phrase that refers to an illicit drug. Wait, OTC can be for prescription or over-the-counter drugs. But in this case, codeine is an OTC drug. However, the index terms include Codeine, so "codeine" is a match. The OTC here might be a descriptor, but the main term is codeine. The hashtag #codeine is the key phrase here. So the matched_phrase would be "codeine", and the index_term is Codeine. The OTC part is part of the phrase "OTC #codeine meds", but OTC is a term that's not in the index terms. Wait, the task says to detect every word or phrase that refers to an illicit drug. So "OTC" is a descriptor, but the actual drug is codeine. So the main phrase is "codeine", which is in the index. The "OTC" might not be a drug itself, so it's not part of the match. The user's example 2 had "addy" which is a slang for amphetamine, so "addy" was matched. So in this case, the phrase is "#codeine", but the exact text is "codeine". The hashtag is part of the post, but the exact matched_phrase is "codeine". So the correct match is {"index_term": "Codeine", "matched_phrase": "codeine"}.
+
+Wait, the post says "OTC #codeine meds". So the phrase is "codeine", and the OTC is part of the context. But the task says to detect every word or phrase that refers to an illicit drug. Since "codeine" is in the index terms, that's the match. The OTC is not a drug, so it's not included. So the output should be one object with codeine and the matched phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

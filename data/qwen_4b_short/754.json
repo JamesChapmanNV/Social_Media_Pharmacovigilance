@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this label. The user is moderating social media posts related to drug abuse. The task is to determine if the given post falls under category T (indicating illicit drug use) or F (other cases).
+
+The post is: "I can't quit that lean put a ring around codeine". First, I need to parse the words here. "Lean" can be a slang term for cocaine, right? So that's a possible indicator. Then "codeine" is a drug, specifically an opioid. The phrase "put a ring around" might be a metaphor, but the key words here are "lean" and "codeine". 
+
+So, the user is talking about not being able to quit "lean", which is a drug, and mentioning codeine. Both are drugs. Even if "put a ring around" is a metaphor, the presence of codeine and lean (cocaine) would make this a T. The user is discussing using these drugs, so it's a clear case of T. The answer should be T.
+</think>
+
+T

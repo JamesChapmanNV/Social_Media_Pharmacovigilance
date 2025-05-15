@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet that mentions someone avoiding testifying because they fear being tried for third-degree murder if they sold drugs to Floyd. It also mentions a fentanyl overdose as a likely cause of death and that's bad news for the prosecution.
+
+First, I need to determine if this content is illicit or abusive drug-related. The key points here are the mention of selling drugs (which is illegal) and fentanyl, a highly addictive and illegal opioid. The context is about a legal case, but the content is discussing the sale of drugs and the potential for overdose, which is related to drug abuse. 
+
+The user's task is to classify this as True or False based on the definitions. True includes content that mentions illegal drugs in the context of abuse or misuse, such as selling, using, or promoting. The content here does mention selling drugs (which is illegal) and references fentanyl, an illicit drug. Even though it's in a legal context, the mention of selling drugs and the drug's association with overdose points to abuse or misuse. 
+
+The example given in the prompt includes content about codeine and leaning, which is considered True. Similarly, this content is discussing the sale of drugs and the consequences of drug use, which fits under the illicit category. The explanation should note the mention of selling drugs and fentanyl, which are related to drug abuse. 
+
+So the label should be True because the content is discussing the sale of drugs (illegal) and the use of fentanyl, which is an illicit drug, in a context that implies misuse or abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references selling drugs (illegal activity) and fentanyl (a highly addictive illicit drug), indicating potential drug abuse or misuse in a legal context."
+}

@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The content is: "I took some cough medicine on Friday codeine knocked me out all day." First, I need to check if this is about illicit or abusive drug use.
+
+The user mentions "codeine," which is an opioid. The phrase "knocked me out all day" suggests that the codeine was used in a way that caused significant drowsiness or impairment. The context here is taking cough medicine, which might contain codeine as a component. But the key point is whether this is about abuse or misuse. 
+
+Codeine is a controlled substance, and using it in high doses or without a prescription could be considered misuse. The sentence implies that the user took a significant amount (since it "knocked him out"), which might indicate overuse or abuse. However, it's also possible that the user is referring to a legitimate over-the-counter cough medicine containing codeine. But the phrase "knocked me out" is a strong indicator of misuse. 
+
+Looking at the definitions, True includes mentions of illegal or OTC drugs in the context of abuse or misuse. The content here does mention codeine (an OTC drug in some regions) and describes a negative effect (knocked out), which points to misuse. The user might be implying that they took too much or used it in a way that's not recommended. 
+
+The example given in the prompt had similar language, like "hooked" and "everyday," which were considered abusive. Here, the effect is severe, so it's likely abuse. Therefore, the classification should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions codeine, a controlled substance, and describes a severe effect ('knocked me out all day'), indicating potential misuse or abuse."
+}

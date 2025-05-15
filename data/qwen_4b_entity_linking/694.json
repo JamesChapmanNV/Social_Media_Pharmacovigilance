@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "She definitely a cool ass retired drug dealer 😂" and wants me to detect any drug-related references.
+
+First, I need to go through the post word by word. The key words here are "drug dealer." Now, checking the Index Terms list, I see that "drug dealer" isn't listed as a specific drug or substance. The Index Terms include specific drugs like Codeine, Amphetamine, Benzodiazepines, etc., but "drug dealer" is more of a person's role rather than a substance itself. 
+
+The task is to detect phrases that refer to illicit drugs or substances. "Drug dealer" refers to someone who deals in drugs, not the drug itself. Since the Index Terms don't have an entry for "drug dealer," the correct index term would be "other." 
+
+I should check if there are any other possible matches. Words like "cool ass" are slang but not related to drugs. The emoji is just a reaction and not a drug reference. So the only possible match is "drug dealer," which isn't in the list, so it's categorized as "other."
+
+Therefore, the JSON array should have one object with index_term "other" and matched_phrase "drug dealer."
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug dealer"}]

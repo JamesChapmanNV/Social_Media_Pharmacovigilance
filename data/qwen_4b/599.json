@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this content classification. The user provided a specific example, so I need to apply the definitions given.
+
+First, the content is about the speaker being woken up by their mom, who told them to call off work because hospice left their house and started their grandma on morphine. The key terms here are "morphine" and the context of hospice care. 
+
+Now, according to the definitions, True includes mentions of illegal, RX, or OTC drugs in contexts of abuse or misuse. However, morphine is a prescription drug used for pain management, especially in hospice. The content here is about a medical situation—grandma is receiving morphine for her condition, not for abuse or misuse. The tone is about a personal tragedy, not promoting or glorifying drug use. 
+
+The example also mentions "hospice just left our house," which is a medical setting. The use of morphine here is part of a medical treatment, not abuse. There's no indication of promoting, buying, or using drugs in a recreational way. The explanation should note that the content is about medical use in a terminal illness context, not abuse. 
+
+So the label should be False because it's a medical context, not promoting or encouraging misuse. The explanation needs to highlight that morphine is used in hospice for pain management, not abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes morphine use in a medical context (hospice care for terminal illness), not abuse or promotion of drug misuse."
+}

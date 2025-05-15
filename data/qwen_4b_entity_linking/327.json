@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post about a drug overdose involving heroin and fentanyl. My task is to identify any drug-related references and map them to the correct index terms from the given list.
+
+First, I'll read through the post carefully. The key phrases here are "heroin" and "fentanyl". Looking at the index terms, both are listed. Heroin is under "Morphine" as the prototypical opioid analgesic. Fentanyl is listed under "Fentanyl" with synonyms like China White, Apache, Duragesic. 
+
+So, "heroin" should map to "Morphine" and "fentanyl" to "Fentanyl". I need to check if there are any other terms. The post mentions "drug overdose", but that's a general term, not a specific drug. The words "heroin" and "fentanyl" are directly listed in the index terms. 
+
+I should make sure there's no slang or alternative names. The example given in the problem shows that "lean" is a slang for codeine. But here, "heroin" and "fentanyl" are direct matches. The answer should be two entries: one for each drug. No other terms are present. So the JSON array should have two objects with the correct index terms and matched phrases.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "heroin"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]

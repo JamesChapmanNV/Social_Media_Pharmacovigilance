@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I just left your bedroom Give me some morphine Is there any more to do?" I need to detect any drug references here.
+
+First, I'll go through each word or phrase. The first sentence is "I just left your bedroom." That doesn't seem to have any drug references. The second part is "Give me some morphine." Morphine is listed in the index terms under "Morphine" as the prototypical opioid. So "morphine" directly maps to that index term. The last line is "Is there any more to do?" which doesn't mention any drugs. 
+
+Wait, are there any slang terms or alternative names for morphine in the post? The user used "morphine" directly, so that's straightforward. The index term for morphine is "Morphine". The phrase "Give me some morphine" matches exactly. There's no other drug mentioned here. The other parts of the post don't include any other drug references. So the only match is "morphine" under the Morphine index term. I need to make sure there's no other possible matches. The answer should be a JSON array with one object: index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "bruh does no one notice this guy is wearing a tie dye codeine shirt?" I need to detect any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "codeine shirt". Codeine is listed in the index terms under the Codeine entry. The phrase "codeine shirt" is a bit unconventional, but "codeine" itself is a direct match. The term "tie dye" is a description of the shirt's pattern, so that's not a drug reference. The "bruh" is slang, but not related to drugs. The rest of the sentence is about noticing someone's shirt, which doesn't involve any other drugs. 
+
+So the only matched phrase here is "codeine". According to the index terms, Codeine is listed, so the index term should be "Codeine". There's no other drug mentioned here. The answer should be a JSON array with one object: {"index_term": "Codeine", "matched_phrase": "codeine"}.
+
+Wait, but the example 1 had "lean" and "codeine" both mapped to Codeine. In this case, the phrase is "codeine shirt", but the actual drug term is "codeine". The shirt is just a descriptor. So the matched phrase is "codeine", even though it's part of "codeine shirt". The task says to detect every word or phrase that refers to the drug. Since "codeine" is the drug, even if it's part of a phrase, it's still a match. So the correct entry is codeine. No other terms here. So the JSON array should have one entry with codeine and the matched phrase as "codeine".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The content is "Threads Soaked In Heroin Worth Rs 450 Crore Seized From Gujarat Port." I need to determine if this is illicit/abusive-drug-related.
+
+First, the key terms here are "heroin" and "seized." Heroin is an illegal drug, so that's a red flag. The mention of threads soaked in heroin suggests that the drug is being discussed in a context of possession or trafficking. The fact that it's seized from a port implies that it's related to illegal drug activity. 
+
+The definition says True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Here, the content is reporting on the seizure of heroin, which is a direct reference to an illegal drug. The context is about law enforcement action, which is related to drug abuse and trafficking. Even though it's a news report, the presence of heroin and the action of seizing it fits under the illicit category. 
+
+I should check if there's any other context that might make it false. But the terms are straightforward. The example given in the task includes mentions of illegal drugs in the context of abuse, so this case fits. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'heroin,' an illegal drug, and describes its seizure, indicating illicit drug trafficking or abuse."
+}

@@ -1,0 +1,7 @@
+```json
+[
+  {"index_term": "Oxycodone", "matched_phrase": "Oxy"},
+  {"index_term": "Hydrocodone", "matched_phrase": "Norco"},
+  {"index_term": "other", "matched_phrase": "high doses of Ibuptofen"}
+]
+```

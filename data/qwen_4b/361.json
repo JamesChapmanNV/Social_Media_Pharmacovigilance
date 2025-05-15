@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "Abt to go codeine crazy with this lite cold before it get too crazy lol".
+
+First, I need to check the definitions. True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. Also, slang or euphemisms that signal recreational use or abuse. The example given in the first example mentions "lean" and "codeine" with a supportive tone, which is why it's classified as True.
+
+In the current content, the user is talking about "codeine" and "go codeine crazy". The phrase "codeine crazy" is a slang term that suggests using codeine in a way that's excessive or possibly abusive. The mention of "lite cold" might be a typo for "cold" or "light cold", but the key part is the use of codeine. The phrase "go codeine crazy" implies that the person is planning to use codeine in a way that's not controlled, which could be a sign of abuse or misuse. The tone here is informal and possibly dismissive, as they mention "before it get too crazy", which might indicate they're trying to prevent overuse but still planning to use it. However, the key point is the mention of codeine in a context that suggests misuse. 
+
+Also, codeine is an opioid, which is a controlled substance, so mentioning it in the context of abuse would fall under True. The user is not discussing medical use but rather the potential for overuse. The "lite cold" might be a typo, but even if it's a cold, the focus is on codeine. The phrase "go codeine crazy" is a clear indicator of recreational or abusive use. Therefore, the classification should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'codeine crazy' as slang indicating recreational or excessive use of an opioid, implying misuse."
+}

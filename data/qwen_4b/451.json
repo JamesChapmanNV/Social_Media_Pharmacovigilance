@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content classification. The user provided a social media post that says: "Demand is crazy high. That plus chip shortage. Every dealer I called had around 100 on their waitlist and said they get about 20-25 delivered a month." 
+
+First, I need to determine if this is illicit or abusive drug-related. The key here is to look for mentions of drugs in the context of abuse, misuse, or promotion. The terms "dealer," "waitlist," and "delivered a month" suggest that the person is talking about the supply chain of drugs. The mention of "demand is crazy high" and the waitlist numbers indicate that there's a high demand for drugs, which could be related to illegal substances.
+
+The user is discussing the availability and demand for drugs, which might be related to illegal drugs like opioids or other substances. The term "dealer" is a strong indicator here, as it refers to someone selling drugs, which is typically associated with illicit drug trade. The waitlist and delivery numbers are part of the supply chain, which is part of the abuse or distribution of drugs. 
+
+The example given in the task includes mentions of codeine and lean, which are drugs. In this case, even though the specific drug isn't named, the context of dealers, waitlists, and high demand points to illicit drug activity. The content isn't in a medical or educational context, so it's not False. The tone is about the availability and demand, which is part of the abuse or distribution aspect. Therefore, this should be classified as True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content discusses drug dealers, waitlists, and supply chain details, indicating illicit drug distribution and high demand for controlled substances."
+}

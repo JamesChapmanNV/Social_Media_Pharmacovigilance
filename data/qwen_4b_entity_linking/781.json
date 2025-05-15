@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. First, I need to read through the post carefully.
+
+The post says: "Well, supposedly there's interest by Disney for him in the role, but they're only talking about it... But yeah, does suck. While I think he's a bit too old to reboot the role rn, I would've loved to see Tom Hardy take a crack at it... Whoever it is has to have some grit about'm."
+
+Hmm, looking for any slang, euphemisms, or phrases that refer to illicit drugs. Let me scan each word. The main content is about Disney considering a role for an actor, Tom Hardy, and discussing his age and grit. There's no mention of drugs here. Words like "lean" or "codeine" aren't in the post. The user mentioned "xans" in example 3, which was "other" because it wasn't on the list. But in this case, the post is entirely about actors and roles. 
+
+I need to check if any phrases could be slang for drugs. Words like "grit" might be a stretch, but "grit" isn't a drug term. "Reboot the role" is just acting terminology. There's no mention of any substances. So, there are no drug references here. Therefore, the answer should be an empty array. But wait, the examples show that even if there's no match, it's okay to return an empty array. The user's instruction says to return only the JSON array with matches, so if none are found, just an empty list. 
+
+Double-checking the index terms to make sure I didn't miss anything. The post doesn't have any words that match the index terms listed. So the correct response is an empty array.
+</think>
+
+[]

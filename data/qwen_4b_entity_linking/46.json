@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Publix blocking cannabis legalization in Florida. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions "Publix" and their profits from pharmaceuticals, and their stance on cannabis legalization. The key words here are "cannabis" and "Publix." 
+
+Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is a listed term. The post uses "cannabis," which is explicitly listed. So "cannabis" should map to "Marijuana." 
+
+Next, "Publix" is a retail chain, but the post mentions they profit from pharmaceuticals. However, the term "pharmaceuticals" isn't a drug itself but refers to medications. The index terms don't have a specific entry for "pharmaceuticals," so if "pharmaceuticals" is considered a reference to drugs, it might fall under "other." But in the example, "snow" and "white lines" were marked as "other" even though they aren't drugs. However, in this case, "pharmaceuticals" is a general term, not a specific drug. The user's instruction says to detect references to illicit drugs, so "pharmaceuticals" might not be a direct reference here. 
+
+Wait, the post is about Publix blocking cannabis legalization. The mention of "pharmaceuticals" is in the context of their profits, not necessarily referring to a specific drug. So "pharmaceuticals" isn't a slang or euphemism for a specific drug. Therefore, it's safer to mark "pharmaceuticals" as "other" since it's not a specific drug listed in the index terms. But the main term here is "cannabis," which is explicitly listed. 
+
+So the only drug-related term in the post is "cannabis," which maps to "Marijuana." The rest of the post doesn't mention any other drugs. Therefore, the JSON should have one entry for "cannabis" under "Marijuana."
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

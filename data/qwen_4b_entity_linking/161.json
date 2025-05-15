@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I need to look at the provided post: "Move over, Giuliani: how loopholes sparked a golden age of cannabis in New York-Oh yeah? Legalization put 75% of mom & pop pot growers, many medicinal, out of business in CA."
+
+I should start by scanning the text for any terms that might relate to drugs. The mention of "cannabis" is straightforward. Looking at the Index Terms, "Marijuana (Cannabis, Weed, Pot)" is listed. So "cannabis" would map to that index term. 
+
+Next, the post mentions "pot growers." "Pot" is another term for marijuana, so that's covered under the same index term. The phrase "mom & pop pot growers" refers to small-scale cannabis growers, which is part of the marijuana category. 
+
+The rest of the post talks about legalization and its effects, but there's no mention of any other drugs. Terms like "Giuliani" or "loopholes" are not drug-related. The phrase "many medicinal" might refer to medical marijuana, but since the Index Term for marijuana includes medicinal use, that's still under "Marijuana."
+
+I need to check if there are any other terms. "Legalization" is a process, not a drug. "Out of business" is a result, not a drug reference. No other slang or euphemisms are present here. 
+
+So the only matched phrases are "cannabis" and "pot," both under the "Marijuana" index term. The other terms don't refer to illicit drugs or substances. Therefore, the JSON array should include those two entries.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "pot"}
+]

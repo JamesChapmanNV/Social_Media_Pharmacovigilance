@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references. The post is: "For a short period of time until cannabis is legalized and you do a reverse merger. Either way it brings value to share holders if it occurs."
+
+First, I need to scan the text for any slang, euphemisms, or terms that might refer to illicit drugs. The main keywords here are "cannabis" and "legalized." Looking at the Index Terms list, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is a scheduled substance. However, the post mentions "cannabis is legalized," which refers to the legal status, not the drug itself. The term "cannabis" in this context is part of a discussion about legalization, not about using or promoting the drug. 
+
+The user's task is to detect references to illicit drugs. Since the post is talking about the legalization of cannabis, it's not promoting or encouraging drug use. The term "cannabis" here is part of a business or legal discussion, not a drug reference. Therefore, it doesn't fit into any of the index terms related to illicit drugs. 
+
+Looking at other possible terms: "reverse merger" is a financial term, not related. "Share holders" is business jargon. There's no mention of any other drugs or slang. So, there are no matches here. The answer should be an empty array because none of the phrases in the post refer to illicit drugs as per the index terms provided.
+</think>
+
+[]

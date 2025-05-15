@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this query. The content is about a Kittery adult-use marijuana shop getting Planning Board approval. First, I need to determine if this is illicit or abuse-related. The key here is the context. The shop is for adult-use marijuana, which in some places is legal. The mention of Planning Board approval suggests it's a regulatory process for a legal business. The terms used are about a business opening, not about misuse, abuse, or illegal activities. There's no indication of promoting drug use, encouraging abuse, or discussing illegal drugs. The focus is on the shop's approval, which is part of the legal framework. So, according to the definitions, this doesn't fit the True category because it's a legal business in a regulated context. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a legally permitted adult-use marijuana business receiving regulatory approval, not promoting or glorifying drug abuse."
+}

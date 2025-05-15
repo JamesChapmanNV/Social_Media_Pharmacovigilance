@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "codeine" and "Sprite." First, I need to check if "codeine" is in the index terms list. Looking at the list, yes, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine" directly matches the index term "Codeine." The other part is "Sprite," which is a drink. Since the index terms don't include any references to soda or drinks, unless it's a slang term. But in the given list, there's no mention of Sprite as a drug reference. So "Sprite" would fall under "other." Wait, the user's example 3 had "xans" which wasn't in the list, so it was "other." Similarly, "Sprite" isn't a drug term here, so it's "other." So the JSON should have two entries: one for "codeine" and one for "Sprite" as "other."
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "Sprite"}
+]

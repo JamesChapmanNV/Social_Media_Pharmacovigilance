@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Forensic pathologist ruled out drug overdose as Floyd's cause of death." I need to check for any drug-related references here.
+
+First, I'll scan the post for any words or phrases that might indicate illicit drugs. The key terms here are "drug overdose." But wait, the task is to detect specific terms from the index list. Let me check the index terms again.
+
+Looking at the list, "drug overdose" isn't explicitly listed. The index terms include specific drugs like Codeine, Amphetamine, Methamphetamine, etc. But "drug overdose" is a general term. However, the example given in the problem statement includes "drug overdose" in the post, but the example response was {"index_term": "other", "matched_phrase": "drug overdose"}? Wait, no, looking back at the examples, example 4 had "snow" and "white lines" as other. But in the problem statement, the user says if the drug isn't in the list, use "other". 
+
+Wait, the task says: "If the drug is not in the list, use 'other'." So "drug overdose" isn't a specific drug listed in the index terms. The index terms are specific substances, not general terms like overdose. So "drug overdose" would be "other" because it's not a specific drug name listed. 
+
+But wait, the post says "drug overdose," which is a general term. The index terms don't have a term for "overdose" itself, only specific drugs. So "drug overdose" would be "other" since it's not a specific drug listed. However, maybe "overdose" is part of a term? Let me check the index terms again. 
+
+Looking through the list, there's "6-Acetylmorphine (6-Monoacetylmorphine, 6-MAM) – An active intermediate metabolite formed almost immediately after heroin use." But "overdose" isn't a term here. So "drug overdose" is a general term, not a specific drug. Therefore, the matched phrase "drug overdose" would be "other". 
+
+But wait, the user's example 4 had "snow" and "white lines" as other. So in this case, the phrase "drug overdose" is not a specific drug in the list, so it's "other". 
+
+But the user's example 1 had "lean" and "codeine" both mapped to Codeine. So in this case, the post mentions "drug overdose", which is not a specific drug in the index terms, so it's "other". 
+
+Therefore, the correct JSON would be [{"index_term": "other", "matched_phrase": "drug overdose"}].
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug overdose"}]

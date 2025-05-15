@@ -1,0 +1,9 @@
+[
+  {"index_term": "other", "matched_phrase": "handgun"},
+  {"index_term": "other", "matched_phrase": "gun dealer"},
+  {"index_term": "other", "matched_phrase": "out of state purchases"},
+  {"index_term": "other", "matched_phrase": "another State"},
+  {"index_term": "other", "matched_phrase": "your state"},
+  {"index_term": "other", "matched_phrase": "seller"},
+  {"index_term": "other", "matched_phrase": "transaction"}
+]

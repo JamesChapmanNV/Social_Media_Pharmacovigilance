@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I pour up a four.......Its 4oz,which is 4 pounds, amount of codeine used to make lean." I need to detect any drug references and link them to the index terms.
+
+First, I'll read through the post carefully. The key phrases here are "codeine" and "lean." From the index terms list, Codeine is listed with synonyms like "Lean" and "Purple Drank." So "lean" directly maps to Codeine. The word "codeine" is also explicitly mentioned, so that's another match. The rest of the sentence talks about measurements (4oz, 4 pounds), which are just quantities and not drug terms. The phrase "amount of codeine used to make lean" confirms that both "codeine" and "lean" are referring to the same drug. 
+
+I need to check if there's any other term here. "Four" and "4oz" are numbers and units, not drug terms. "Pounds" is a unit of weight, so those don't count. The other parts are just context about the quantity. So the only matches are "codeine" and "lean." Both are under the Codeine index term. 
+
+I should make sure there's no other possible term. The example given in the problem had "lean" and "codeine" both mapped to Codeine. The user's post uses both terms, so both should be included. The answer should be an array with two objects: one for "lean" and one for "codeine," both under the Codeine index term. No other terms are present here. So the JSON array should have those two entries.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

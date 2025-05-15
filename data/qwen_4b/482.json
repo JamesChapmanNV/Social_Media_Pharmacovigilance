@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this content classification. The user provided a social media post that says: "overdose!! but i focused less on exo since 2019 n started focusing on nct but i still love them as my boys🥺‼️ HAPPY 9 YEARS WITH EXO #9ToEternityWithEXO #9YearswithEXO #EXO #엑소". 
+
+First, I need to determine if this content is related to illicit or abusive drug use. The main keywords here are "overdose" and mentions of the K-pop groups EXO and NCT. The user is talking about their fandom loyalty, celebrating 9 years with EXO, and switching focus to NCT. 
+
+The term "overdose" could be a red flag, but I need to check the context. The user says "overdose!!" but then explains that they focused less on EXO since 2019 and started focusing on NCT. The rest of the post is about celebrating their time with EXO and expressing love for the group. There's no mention of drugs, drug use, abuse, or any related terms. The hashtag #9ToEternityWithEXO is a common fan hashtag for EXO, which is a K-pop group, not related to drugs.
+
+The key here is that the overdose is likely referring to the group's activities or a fan event, not drug-related. The user is expressing emotional support and fandom, not discussing drug use. There's no indication of promoting, using, or discussing drugs in a harmful way. The mention of overdose is probably a typo or a misunderstanding, but without more context, it's safe to assume it's not related to drug abuse. 
+
+Since the content is about a K-pop group and fan loyalty, not drug-related topics, the correct classification would be False. The explanation should note that the content is about fan loyalty and celebration, not drug use or abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses fan loyalty and celebration of a K-pop group (EXO) with hashtags related to fandom, not drug use or abuse."
+}

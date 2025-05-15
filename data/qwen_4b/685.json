@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this content classification. The user provided a text that talks about the City of London and banks like HSBC being involved in the drug trade, referencing the Opium Wars, and mentions Chinese triads and Afghanistan heroin. 
+
+First, I need to check if this content is promoting or glorifying drug abuse. The mention of the drug trade, Opium Wars, and drug gangs seems to be discussing the historical and economic aspects of drug trafficking. However, the key here is whether it's about abuse or misuse. The text doesn't explicitly talk about using drugs recreationally or promoting their use. Instead, it's more about the historical context and the role of certain entities in the drug trade.
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse, like using, buying, promoting. The example given in the prompt includes mentions of codeine and lean, which are drugs associated with abuse. In this case, the content is more about the history and operations of the drug trade, not about the abuse or misuse of drugs. It's discussing the trade and its historical background, not encouraging or glorifying the use of drugs.
+
+So, the label should be False because it's discussing the drug trade in a historical or economic context, not promoting or encouraging drug abuse. The explanation should note that it's about historical context and drug trafficking, not misuse or abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses historical drug trade and Opium Wars in a factual, historical context, not promoting or glorifying drug abuse or misuse."
+}

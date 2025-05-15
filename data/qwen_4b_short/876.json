@@ -1,0 +1,5 @@
+<think>
+Okay, let's tackle this query. The user is asking about buying wine in Mexico. The label rules are T for drug-related content and F otherwise. The post mentions "this wine" but doesn't specify any drug. The user is asking for a dealer in Mexico, which could be a metaphor or a literal request. Since there's no mention of drugs, slang, or illicit activity, it's probably a F. But wait, maybe "this wine" is a slang term for a drug? But in Mexico, wine is a common item. The user is asking where to buy it, so it's more likely a F. So the answer should be F.
+</think>
+
+F

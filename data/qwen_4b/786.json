@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content classification. The user provided a social media post about the cannabis industry needing banking partners. The hashtags are #fincann and #fincanncorp, along with #bankingsolutions. 
+
+First, I need to check if there's any mention of drugs in an illicit or abusive context. The content talks about the cannabis industry and financial services. Cannabis is a controlled substance in many places, but the post is about finding banking solutions for businesses in that industry. There's no mention of drug use, abuse, or promotion of misuse. The terms used are related to business and finance, not drug-related activities. The hashtags are about financial solutions for cannabis businesses, which is a legitimate industry. 
+
+The example given in the task had a mention of codeine and lean, which are drugs. Here, the content is about cannabis industry banking, which is a different context. Even though cannabis is a drug, the post isn't promoting its use or abuse. It's about financial services for a legal industry (if legal in the user's jurisdiction). The key is whether the content is promoting drug abuse. Since it's about business and banking, not drug use, it's not illicit. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses financial solutions for the cannabis industry, which is a legal business context, not promoting or glorifying drug abuse."
+}

@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Ion Even Po Codeine, Got To Saddity Fa Da Lean." I need to detect any drug-related references here.
+
+First, I'll break down the post word by word. The phrase "Codeine" is directly mentioned, so that's an obvious match. The index term for Codeine is listed, so that's straightforward. Then there's "Lean," which in the index terms is listed under Codeine as a slang term. So "Lean" would map to Codeine as well. 
+
+The rest of the words like "Ion," "Even," "Po," "Saddity," "Fa," "Da" don't seem to relate to any drugs listed. "Saddity" might be a misspelling or slang, but since it's not in the index terms, it should be marked as "other." However, the user's examples show that if the phrase isn't in the list, it's "other." But in this case, the main phrases are "Codeine" and "Lean," which are both covered under the Codeine index term. The other words are probably just part of the sentence structure and not drug references. So the correct matches are "Codeine" for both "Codeine" and "Lean."
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"},
+  {"index_term": "Codeine", "matched_phrase": "Lean"}
+]

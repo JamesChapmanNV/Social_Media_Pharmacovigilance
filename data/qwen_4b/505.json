@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is a dialogue between two white guys talking about heroin and a white girl not knowing popular songs, referencing Flo Milli's music.
+
+First, I need to check if there's any mention of illegal drugs, abuse, or promotion. The term "heroin" is definitely an illicit drug. The context here is a conversation where they're discussing heroin, which is illegal. The mention of "heroin" directly points to an illicit drug. The dialogue seems to be in a casual, maybe even a humorous or cultural context, but the presence of the drug name itself is a red flag. 
+
+The example given in the task mentions that True includes mentions of illegal drugs in the context of abuse or misuse. Even if the conversation is about a cultural reference, the explicit mention of heroin (a controlled substance) would classify it as illicit. The other part about Flo Milli's songs might be a cultural reference, but the key here is the direct mention of heroin. 
+
+So, the label should be True because heroin is an illicit drug, and the content mentions it, even if the context is a conversation. The explanation should note the explicit mention of heroin, which is an illicit drug, and the context of the conversation, even if it's a cultural reference, the drug itself is the key factor here.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin,' an illicit drug, in a casual conversation, indicating reference to drug use."
+}

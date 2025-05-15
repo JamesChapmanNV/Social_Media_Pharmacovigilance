@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this labeling task. The user wants to know if the given social media post falls under T (indicating illicit or abusive drug use) or F (other cases like medical discussion, news, etc.). 
+
+First, I need to understand the content of the post. The post says, "No paracetamol should be banned, a non reversible drug in overdose causing multi organ failure sold OTC." 
+
+Breaking it down: The main subject here is paracetamol, which is commonly known as acetaminophen. It's a medication used for pain and fever. The post mentions that it's a "non-reversible drug in overdose causing multi organ failure" and that it's "sold OTC" (over-the-counter). The author is arguing against banning paracetamol.
+
+Now, applying the label rules. The T category is for text that shows illicit or abusive drug use, including using, seeking, buying, selling, trafficking, or slang for drugs. The F category includes medical discussions, policy, news, or discouraging use, etc.
+
+The post is discussing paracetamol's risks when overdosed, which is a medical or public health issue. The user is talking about the drug's effects and its availability (OTC), but not necessarily promoting or using it. The statement is about whether it should be banned, which is a policy discussion. There's no mention of using, selling, or seeking the drug. The term "non-reversible drug" might be a bit confusing, but in this context, it's referring to the drug's effects in overdose, not its classification as a controlled substance.
+
+So, the post is a medical or policy-related discussion, not directly about drug use. Therefore, the label should be F. The key here is that the post isn't about using or promoting the drug, but rather discussing its risks and potential regulation. Even though it mentions the drug's dangers, it's not indicating that the drug is being used illicitly or that the user is engaging in drug use. Instead, it's a statement on the drug's medical implications and policy.
+</think>
+
+F

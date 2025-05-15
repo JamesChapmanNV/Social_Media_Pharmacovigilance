@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is "Innovation drives shift in cannabis product demand, especially around 4/20." First, I need to determine if this is about illicit or abusive drug-related content.
+
+Cannabis is a controlled substance in many places, so mentioning it could be relevant. But the context here is about innovation and product demand, which sounds more like a business or market trend. The mention of 4/20 is a cultural reference to cannabis use, but the content doesn't explicitly discuss abuse, misuse, or promote drug use. It's more about the market's response to innovations. The tone is neutral, discussing demand rather than encouraging use. Since there's no indication of promotion or abuse, it's probably not illicit. The example given in False includes educational contexts, and this seems similar—discussing cannabis in a market context without promoting misuse. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses cannabis product demand in a market context, not promoting abuse or misuse, and references 4/20 as a cultural event rather than illicit drug use."
+}

@@ -1,0 +1,8 @@
+[
+  {"index_term": "Morphine", "matched_phrase": "ER morphine"},
+  {"index_term": "Morphine", "matched_phrase": "IR morphine"},
+  {"index_term": "Oxycodone", "matched_phrase": "oxy"},
+  {"index_term": "Lorazepam", "matched_phrase": "loritab"},
+  {"index_term": "Methocarbamol", "matched_phrase": "Soma"},
+  {"index_term": "Lorazepam", "matched_phrase": "Ativan"}
+]

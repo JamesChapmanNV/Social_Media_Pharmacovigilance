@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet that needs classification as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The example given in the prompt is about someone talking about heroin use and a violent incident. 
+
+First, I need to check if the content mentions illegal drugs in a context of abuse or misuse. The content says "two dudes shooting each other's heroin." That's a clear reference to heroin use, which is an illegal drug. The mention of shooting each other suggests violence related to drug use, which is a form of abuse or promotion. 
+
+Also, the phrase "heroin" is a direct mention of an illicit drug. The context here is about drug use leading to violence, which aligns with the definition of ILLICIT/ABUSIVE-DRUG-RELATED. The example in the prompt had similar elements, like "lean" and "codeine" being mentioned with a supportive tone. Here, the content is describing a violent act related to drug use, which fits the True category.
+
+I should make sure there's no educational or medical context here. The content isn't discussing treatment or prevention. It's about the negative consequences of drug use. So, the label should be True. The explanation needs to mention the direct mention of heroin and the violent context.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin' and describes a violent act ('shooting each other's heroin'), indicating illicit drug abuse and associated criminal behavior."
+}

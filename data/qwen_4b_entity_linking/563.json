@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this query. The user provided a post that's about someone comparing tics to an overdose, and they're saying that's insensitive. The task is to detect any drug-related references in the post and link them to the appropriate index terms.
+
+First, I need to read through the post carefully. The post says: "saying someone is on drugs bc of their tics: one of my friends at the begging of the school year used to say this. comparing tics to an overdose is extremely insensitive to both drug addicts and people with tourettes, so please dont say this."
+
+Looking for any mentions of drugs, slang, or terms related to illicit substances. The key part here is "saying someone is on drugs bc of their tics." The phrase "on drugs" is a common slang for using drugs, but I need to check if "drugs" is in the index terms list. Wait, the index terms list includes specific drugs like Codeine, Amphetamine, etc., but "drugs" as a general term isn't listed. However, the instruction says to detect every word or phrase that refers to an illicit drug or substance. So "drugs" here is a general term, but since it's not in the index terms, we should mark it as "other".
+
+Wait, but the example in the problem statement includes "xans" as "other" because it's not a specific term. So in this case, "drugs" is a general term, not a specific drug, so it would be "other". However, the user's post is about the act of saying someone is on drugs, not the drugs themselves. So the phrase "on drugs" is a reference to drug use, but since it's not a specific drug name or slang from the list, it would be "other".
+
+But wait, the task says to detect every word or phrase that refers to an illicit drug or substance. So "drugs" is a general term, but maybe in the context of the post, it's referring to illicit drugs. However, the index terms don't have a general term for drugs, so according to the instructions, if the drug is not in the list, use "other". Therefore, "drugs" would be "other".
+
+But let me check the post again. The post is about the insensitivity of comparing tics to an overdose. The phrase "on drugs" is used as a general term, not a specific drug. So the detected phrase is "drugs", which is not in the index terms, so index_term is "other".
+
+Another part of the post is "overdose". Is "overdose" a term that refers to a drug? Well, overdose is a consequence of drug use, but the term "overdose" itself isn't listed in the index terms. However, the task is to detect references to drugs, not the consequences. So "overdose" might not be a direct reference to a drug, but the act of overdosing is related to drug use. However, the index terms don't have an entry for "overdose", so that would also be "other".
+
+But the user's post is about the insensitivity of comparing tics to an overdose. The main point is that the person is saying someone is on drugs because of their tics, which is a wrong comparison. The actual drug-related terms here are "drugs" and possibly "overdose". However, since neither is in the index terms, they would both be "other".
+
+But wait, the example in the problem statement includes "xans" as "other" because it's not a specific term. So in this case, "drugs" is a general term, so it's "other". Similarly, "overdose" is a consequence, not a specific drug, so "other".
+
+So the JSON array would have two entries: one for "drugs" and one for "overdose", both marked as "other". But wait, the post says "saying someone is on drugs bc of their tics". The phrase "on drugs" is the key here. So the matched_phrase is "drugs", and index_term is "other". The "overdose" is mentioned in the context of comparing tics to an overdose, but "overdose" itself isn't a drug, so it's "other".
+
+So the final answer would be two entries: "drugs" and "overdose" both as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drugs"},
+  {"index_term": "other", "matched_phrase": "overdose"}
+]

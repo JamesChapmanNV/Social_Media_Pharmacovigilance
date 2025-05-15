@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is "Ninah is crazy 😭 y'all crack me up cause you're the complete opposite." I need to determine if this is illicit/abusive-drug-related.
+
+First, check for any mention of drugs. The words here are "crazy," "crack me up," and "complete opposite." "Crack me up" is an idiom meaning to find something funny, not related to drugs. There's no mention of any drugs, slang, or terms related to drug use. The context is about someone being crazy and the speaker finding it funny because they're opposites. No indication of abuse, promotion, or misuse of drugs. The tone is casual and humorous, not encouraging or glorifying drug use. So, this doesn't fit the criteria for True. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content uses 'crack me up' as an idiom for humor, with no mention of drugs, drug slang, or drug-related abuse/misuse."
+}

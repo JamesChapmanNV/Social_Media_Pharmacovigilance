@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a content snippet: "I'm in love with Mary Jane and codeine I don't love these hoesss." I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll break down the content. "Mary Jane" is a slang term for marijuana. "Codeine" is an opioid, which is a controlled substance. The phrase "I'm in love with" suggests a romantic or affectionate sentiment towards these drugs. The mention of "hoesss" (probably a typo for "hoes," which is slang for women, but could also be a misspelling of "hooch," which is slang for a drug solution). 
+
+The context here is about being in love with drugs, which implies recreational use or dependency. The user is expressing affection towards these substances, which could indicate misuse or abuse. The use of slang terms like "Mary Jane" and "codeine" directly points to drug-related content. The tone seems to be supportive or approving, which aligns with the definition of illicit/abusive-drug-related content. 
+
+I should check if there's any medical or educational context, but the content doesn't mention anything like that. It's clearly about personal use and affection towards drugs, so the classification should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'Mary Jane' (marijuana) and 'codeine' in a romantic, affectionate context, indicating recreational drug use and potential abuse."
+}

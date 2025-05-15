@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. First, I need to read through the post carefully.
+
+The post says: "Update (for those of you playing along at home) So far, in the effort to turn my life around, I/we have: 3 yrs and 3 mos off heroin 3 digitally released albums The first 7 live lone wooF shows. Temporary housing thanks to my oldest friend. A real life. Hope. My twitter family🥰"
+
+Looking for any mentions of drugs or substances. The first thing I notice is "heroin". Heroin is an opioid, and checking the index terms, there's an entry for Morphine, but heroin isn't listed. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, the user's task says to use the index terms provided. Since heroin isn't listed, I should check if there's a related term. Wait, looking back at the index terms, there's "Heroin" listed? Let me check again.
+
+Wait, no. The index terms listed don't have "Heroin" explicitly. The closest is Morphine, but heroin is a different drug. The user's instructions say if the drug isn't in the list, use "other". So "heroin" isn't in the index terms, so it should be "other".
+
+But wait, the example in the problem statement had a post with "snow" and "white lines" which were marked as "other" because they weren't drugs. So in this case, "heroin" is a drug, but it's not in the index terms. Therefore, the matched phrase "heroin" would map to "other".
+
+But wait, let me check the index terms again. The index terms include "Morphine" but not heroin. The user's task says to link to the index term if it's present, else "other". So "heroin" is not in the list, so index_term is "other".
+
+Are there any other drug references in the post? The rest of the post talks about albums, live shows, housing, real life, hope, and Twitter family. No other drug-related terms. So the only match is "heroin" which is "other".
+
+So the JSON array should have one object: {"index_term": "other", "matched_phrase": "heroin"}.
+
+Wait, but the user's example 1 had "lean" and "codeine" both mapped to Codeine. So in this case, "heroin" is not in the index terms, so it's "other". Therefore, the correct output is a single entry with "other" and "heroin".
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

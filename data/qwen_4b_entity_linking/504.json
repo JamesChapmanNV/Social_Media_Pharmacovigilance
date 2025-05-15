@@ -1,0 +1,34 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be analyzed for drug-related references. My task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index terms, and return a JSON array.
+
+First, I'll read through the post carefully. The post is: "To be wifed up and allowed to be a spoloed brat huh kim mesun how we ran district for how long Rev Mac come show his shoes brings HIS GUN TOTONG KIDS AND AL FLOWERS COMES WITH THE CRACK HEAD 20 A DAY TEAM FOR A BUMP TO HELP FACILITATE THEFT"
+
+Looking for drug-related terms. Let's break it down word by word.
+
+"spoloed brat" – Not sure about that. Maybe a typo or slang? "Spoloed" might be a misspelling of "spoiled"? Not a drug term.
+
+"Rev Mac" – Could be a person's name, not a drug.
+
+"brings HIS GUN" – Gun is not a drug, but maybe part of a context? Not directly a drug term.
+
+"TOTONG KIDS" – "Totong" might be a typo. Maybe "tong"? Not sure. But "tong" isn't a drug term. However, "tong" could be a slang for something else, but not in the index list.
+
+"AL FLOWERS" – "Al flowers" could be a reference to "al" as in "alcohol"? But "flowers" is a slang term for cocaine. Wait, in some contexts, "flowers" is slang for cocaine. But checking the index terms, "Cocaine" is listed as "Marijuana (Cannabis, Weed, Pot)" but cocaine isn't in the list. Wait, the index terms include "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. But the index term for cocaine itself isn't listed. Wait, looking back at the index terms, the user provided a list. Let me check again.
+
+Looking at the index terms list: "Benzoylecgonine (BZE, Ecgonine benzoate)" is the metabolite of cocaine. But the index terms don't have a direct entry for cocaine. However, the user's instruction says if the drug is not in the list, use "other". So if the phrase is "flowers", which is slang for cocaine, but since cocaine isn't in the index terms, it would be "other".
+
+But wait, the user's example 4 has "snow" and "white lines" as "other" because cocaine isn't in the list. So in this case, "flowers" is a slang for cocaine, but since cocaine isn't in the index terms, it would be "other".
+
+Then "CRACK HEAD" – "Crack" is a slang term for crack cocaine. "Crack head" refers to someone who uses crack cocaine. Since "crack" is a form of cocaine, but again, the index terms don't have a direct entry for cocaine. However, the index term for "Benzoylecgonine" is the metabolite. But the actual drug is cocaine, which isn't listed. So "crack head" would be "other".
+
+Also, "20 A DAY TEAM" – Not a drug term. "BUMP TO HELP FACILITATE THEFT" – Theft is not a drug term.
+
+So the detected phrases are "AL FLOWERS" and "CRACK HEAD". Both are slang for cocaine. Since cocaine isn't in the index terms, they should be marked as "other".
+
+So the JSON array would have two entries: "other" for "AL FLOWERS" and "other" for "CRACK HEAD".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "AL FLOWERS"},
+  {"index_term": "other", "matched_phrase": "CRACK HEAD"}
+]

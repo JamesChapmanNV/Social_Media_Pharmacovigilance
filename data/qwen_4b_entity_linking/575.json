@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user is asking about a patient with signs of Morphine and Gabapentin toxicity and wants recommendations for CT and MRI. My task is to detect any drug references in the post and link them to the appropriate index terms.
+
+First, I'll read the post carefully: "Would you recommend a patient with signs of Morphine and Gabapentin toxicity for CT and MRI?" The key words here are "Morphine" and "Gabapentin". 
+
+Looking at the Index Terms list, Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph)" so that's a direct match. Then Gabapentin is listed as "Gabapentin (Neurontin, Gralise, Gabbies)", so that's another direct match. 
+
+I need to check if there are any other terms or slang, but the post uses the exact names. There's no mention of any other drugs or slang terms here. So each of these two drugs is directly in the index terms. 
+
+I should make sure there's no other possible interpretation. The user is asking about toxicity, but the actual drug names are Morphine and Gabapentin. No other terms are present. So the JSON array should have two entries: one for Morphine and one for Gabapentin, each with their exact matched phrases.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "Gabapentin", "matched_phrase": "Gabapentin"}
+]

@@ -1,0 +1,8 @@
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "PST"},
+  {"index_term": "other", "matched_phrase": "tooth extractions"},
+  {"index_term": "other", "matched_phrase": "bone metastases"},
+  {"index_term": "other", "matched_phrase": "drug war"}
+]

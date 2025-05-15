@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The content is about Bella Thorne and Dasha, mentioning "her alleged heroin addict era." First, I need to determine if this is illicit or not. The key here is the context. The user is referring to a past period when someone was an alleged heroin addict. The term "alleged" suggests that there's no confirmation, but the mention of heroin is a drug. However, the context is about a public figure's past, possibly in a media or social media context. 
+
+Now, checking the definitions. True includes mentions of illegal drugs in the context of abuse or misuse. But here, it's about a past era, not promoting or encouraging use. The user is talking about a public figure's history, not advocating for drug use. The term "alleged" might indicate that it's not confirmed, but the presence of the drug name is still there. However, the explanation in the example 1 mentions "hooked" and "everyday" with an approving tone. In this case, the content is more about a past event, not promoting or glorifying. 
+
+So, the content is referring to a past situation, not encouraging abuse. Therefore, it's more likely to be False. The explanation should note that it's a reference to a past event, not promoting drug use. The drug is mentioned, but in a context that's not about abuse or encouragement. Hence, the label would be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a public figure's past alleged drug use in a historical context, not promoting or glorifying drug abuse."
+}

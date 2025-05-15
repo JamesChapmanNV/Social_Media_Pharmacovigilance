@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is "Caddy shack >mr bean but do go on". 
+
+First, I need to check if there are any drug-related terms here. The words mentioned are "Caddy shack" and "mr bean". I know "Caddy Shack" is a movie, and "Mr. Bean" is another movie. The user is comparing these two movies, saying Caddy Shack is better. There's no mention of drugs, illegal substances, or anything related to drug use, abuse, or misuse. The phrase "do go on" might be a typo or a misstatement, but even if it's meant to be "do go on" as in continue, there's no drug context here.
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse, uses slang related to drug use, or encourages misuse. False includes medical, educational, or preventative contexts. The given content is just a movie comparison with no drug references. So it doesn't fit either category. Therefore, the label should be False because there's no drug-related content here.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses movie comparisons with no mention of drugs, illegal substances, or drug-related contexts."
+}

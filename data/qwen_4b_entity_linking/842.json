@@ -1,0 +1,36 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "In any case, I think I'm going to go with White Zombie over Morphine, which will lose me some coolness points but "Astro-Creep" is almost certainly a Top 20 metal album for me."
+
+Looking for words or phrases that could refer to illicit drugs or substances. The key here is to check against the list of index terms provided. 
+
+The post mentions "Morphine" explicitly. Checking the index terms, Morphine is listed as an index term under "Morphine (MS Contin, Miss Emma, Morph)" which is a prototypical opioid. So "Morphine" directly maps to that index term.
+
+Next, "White Zombie" is a band name, but I need to check if it's a slang or euphemism for a drug. Looking through the index terms, I don't see "White Zombie" listed. The closest might be "White Zombie" as a possible reference to a drug, but since it's not in the list, it would fall under "other". However, I should verify if "White Zombie" is a known slang for a drug. From what I recall, "White Zombie" isn't a standard drug slang. It's more of a band name. So "White Zombie" would be "other".
+
+The rest of the post talks about an album and coolness points, which don't relate to drugs. So the only matches are "Morphine" and possibly "White Zombie" if it's a drug reference. But since it's not in the index terms, it's "other".
+
+So the JSON array should have one entry for "Morphine" and another for "White Zombie" as "other". Wait, but the example in the user's prompt shows that "xans" is "other" when not in the list. So "White Zombie" isn't in the index terms, so it's "other".
+
+But wait, the user's example 3 had "xans" as other. So in this case, "White Zombie" is not a drug term, so it's "other". Therefore, the output should be:
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "other", "matched_phrase": "White Zombie"}
+]
+
+But wait, the user's example 4 had "snow" and "white lines" as other. So in this case, "White Zombie" is not a drug term, so it's "other". However, the user's instruction says to detect every word or phrase that refers to an illicit drug. Since "White Zombie" is a band, not a drug, it's not a match. So only "Morphine" is a match.
+
+Wait, the post says "go with White Zombie over Morphine". So "White Zombie" is a choice over Morphine. But is "White Zombie" a drug? I don't think so. So the only match is "Morphine".
+
+So the correct output is just one entry: {"index_term": "Morphine", "matched_phrase": "Morphine"}.
+
+But wait, maybe "White Zombie" is a slang? Let me check the index terms again. The index terms include things like "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". But "White Zombie" isn't listed. So it's not a drug term. Therefore, only "Morphine" is a match.
+
+So the final answer is the JSON array with one entry for Morphine.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]

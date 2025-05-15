@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I was so down bad fo her till she used heroin then she died and i felt null". I need to detect any drug references here.
+
+First, I'll go through each word. "Heroin" is definitely a drug. Looking at the index terms, heroin is listed as "Morphine" with synonyms like MS Contin, Miss Emma, Morph. Wait, but the index term for heroin is "Morphine"? Let me check the list again. Yes, under Morphine, it says "The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence." So "heroin" would map to "Morphine" as the index term. 
+
+Then, "fo" is probably a typo for "for", so that's not a drug. "Used heroin" is the key part here. So the matched phrase is "heroin", which maps to "Morphine". 
+
+Are there any other drugs? The rest of the sentence doesn't mention any other substances. "Null" is just a state of feeling, not a drug. So the only match is "heroin" under Morphine. 
+
+Wait, but the example in the problem statement had "lean" mapped to Codeine. So in this case, "heroin" should be mapped to "Morphine". Let me confirm again. The index terms list Morphine as the term, and heroin is a form of morphine. So yes, the correct index term here is "Morphine".
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "heroin"}]

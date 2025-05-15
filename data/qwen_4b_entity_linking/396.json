@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Hit her with no condom.. Had to make her eat a plan B.. And I'm sippin on that codeine not brandy." I need to identify any drug-related references here.
+
+First, I'll go through each part of the post. The first part is about not using a condom, which is related to sexual activity but not a drug. Then "make her eat a plan B" – Plan B is a contraceptive, so that's not a drug. The last part is "sippin on that codeine not brandy." Codeine is listed in the index terms under Codeine. The phrase "codeine" is a direct match. The word "brandy" is a type of alcohol, but since it's not in the index terms, it would be "other." However, the user's instruction says to detect every drug-related phrase. The main one here is "codeine." The rest of the post doesn't mention any other drugs. So the JSON should have one entry for "codeine" with the matched phrase "codeine." The "brandy" is not a drug, so it's not included. Wait, the user's example 3 had "xans" as other. So in this case, "codeine" is in the index terms, so that's the only one. The answer should be [{"index_term": "Codeine", "matched_phrase": "codeine"}].
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

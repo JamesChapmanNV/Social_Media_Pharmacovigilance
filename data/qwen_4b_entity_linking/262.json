@@ -1,0 +1,38 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Probably took a lot of drugs. Methamphetamine Morphine Etc". The task is to detect any drug references and link them to the index terms.
+
+First, I need to go through each word or phrase in the post. The first part is "Probably took a lot of drugs." The word "drugs" is general and not specific, so according to the instructions, if it's not a specific term listed, it should be "other". But wait, the example 3 shows "xans" as other. So "drugs" here is a general term, so index_term is "other".
+
+Next, the post has "Methamphetamine", which is explicitly listed under the index terms as "Methamphetamine (Crystal Meth, Ice, Desoxyn)". So that's a direct match. Then "Morphine" is also listed under "Morphine (MS Contin, Miss Emma, Morph)". So those two are clear.
+
+Then "Etc" is a slang for "etcetera", which is not a specific drug. So that would be "other". 
+
+So the JSON array should have entries for "drugs", "Methamphetamine", "Morphine", and "Etc". Wait, but the example 3 had "xans" as other. So "drugs" is a general term, so index_term "other". Similarly, "Etc" is not a specific drug, so "other".
+
+So the final answer should have four entries: "drugs", "Methamphetamine", "Morphine", and "Etc" all as "other" except the specific ones. Wait, no. Wait, "Methamphetamine" and "Morphine" are specific index terms. So the entries would be:
+
+- "drugs" → "other"
+- "Methamphetamine" → "Methamphetamine"
+- "Morphine" → "Morphine"
+- "Etc" → "other"
+
+So the JSON array would have three objects: two with the specific terms and two with "other"? Wait, the post is "Probably took a lot of drugs. Methamphetamine Morphine Etc". So the words are "drugs", "Methamphetamine", "Morphine", "Etc". So each of these is a separate phrase. So four entries. But "drugs" is a general term, so "other". "Methamphetamine" is a specific term. "Morphine" is another specific term. "Etc" is not a drug, so "other".
+
+So the JSON array should have:
+
+[
+  {"index_term": "other", "matched_phrase": "drugs"},
+  {"index_term": "Methamphetamine", "matched_phrase": "Methamphetamine"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "other", "matched_phrase": "Etc"}
+]
+
+But wait, the example 3 had "xans" as "other". So "Etc" is not a drug, so "other". So that's correct. The user's post has four phrases: "drugs", "Methamphetamine", "Morphine", "Etc". Each of these is a separate matched phrase. Therefore, the answer should include all four, with the first and last as "other", and the other two as their respective index terms.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drugs"},
+  {"index_term": "Methamphetamine", "matched_phrase": "Methamphetamine"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "other", "matched_phrase": "Etc"}
+]

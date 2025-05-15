@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this label. The user is moderating social media posts related to drug abuse. The task is to determine if the post falls under T (text shows illicit or abusive drug use) or F (other cases like medical discussion, news, etc.).
+
+Looking at the post: "Wow. Morphine is the most powerful pain med I've received post surgery. I don't want/need anything stronger. I'm blessed to not have to live w/ chronic or acute pain to function. It has to be rough juggling pain w/ addictive drugs."
+
+First, I need to check if there's any mention of using, seeking, buying, selling, trafficking, or slang for drugs. The user mentions morphine, which is a prescription opioid, typically used medically for pain management. The person is talking about receiving it post-surgery, which is a medical context. They don't mention using it in a way that's illicit or abusive. They talk about not wanting stronger drugs, which is about medical necessity, not abuse. The mention of "addictive drugs" is in the context of managing pain, not implying misuse or addiction. The post seems to be a personal account of medical treatment, not discussing drug abuse or illicit use. Therefore, it should be labeled F.
+</think>
+
+F

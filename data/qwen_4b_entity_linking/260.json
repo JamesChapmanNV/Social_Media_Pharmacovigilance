@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Sources: Codeine addiction, NFL drug policy cloud LB Rolando McClain's future with Cowboys". I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The first part is "Sources: Codeine addiction". The word "Codeine" is directly mentioned here. Looking at the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "Codeine" is a direct match. 
+
+Next, the rest of the sentence talks about NFL drug policy affecting a player's future. The term "drug policy" is mentioned, but the index terms don't have a specific entry for "drug policy" itself. However, the context here is about drug-related issues in sports, but the actual drug mentioned is Codeine. The rest of the sentence doesn't include any other drug terms. 
+
+So the only matched phrase here is "Codeine". The index term for Codeine is "Codeine", and the matched phrase is "Codeine". The other part of the sentence is about the NFL policy, but since there's no specific term for that in the index, it's not included. 
+
+I need to make sure there's no other slang or euphemism. The word "addiction" is used, but that's a general term and not a specific drug. The post doesn't mention any other substances. 
+
+Therefore, the correct JSON array should have one entry: index_term "Codeine" and matched_phrase "Codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

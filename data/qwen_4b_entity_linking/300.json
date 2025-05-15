@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "If you don't like codeine crazy by future your not a true fan. I can't never skip that song". I need to detect any drug references here.
+
+First, I'll read through the post carefully. The phrase "codeine" is mentioned directly. Looking at the Index Terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The word "codeine" is explicitly in the list, so that's a clear match. 
+
+Next, the phrase "crazy by future" – I need to check if "crazy" here is a slang for a drug. But "crazy" isn't listed in the Index Terms. "Future" is a person's name, so that's not a drug reference. The rest of the sentence talks about a song and being a fan, which doesn't relate to drugs. 
+
+So the only matched phrase here is "codeine". The other words like "crazy" or "future" don't correspond to any drug terms in the provided list. Therefore, the JSON should only include the "codeine" entry.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

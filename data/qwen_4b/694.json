@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The content is: "She definitely a cool ass retired drug dealer 😂". The user wants me to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED (True) or NOT (False). 
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting it. Also, slang or cultural references indicating recreational use or abuse. False includes medical, educational, or preventative contexts.
+
+The content here uses "retired drug dealer". The term "drug dealer" directly refers to someone involved in selling illegal drugs. The slang "cool ass" is a common way to describe someone who's cool or stylish, but in this context, it's used to describe a retired drug dealer. The use of "retired" might imply that they used to deal drugs, which is illegal. The phrase "cool ass" could be a way to mock or admire someone's style, but the key here is the mention of being a drug dealer. 
+
+Since the content is referring to someone who was involved in drug dealing, which is illegal, and using a slang term that's associated with such a person, this would fall under the True category. The context is about someone's past involvement in drug dealing, which is illicit. Even though it's not explicitly talking about current use, the mention of being a drug dealer is directly related to illicit drug activity. The emoji might just be adding a casual tone but doesn't change the fact that the content is referencing an illegal activity. 
+
+So the label should be True because it's referring to a person who was involved in drug dealing, which is illicit. The explanation should mention the term "drug dealer" and the context of being retired, indicating past involvement in illegal activities.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content refers to someone as a'retired drug dealer,' directly associating them with illicit drug-related activity."
+}

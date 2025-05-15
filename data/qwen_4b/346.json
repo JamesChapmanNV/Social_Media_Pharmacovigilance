@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this classification. The content is: "Adults can't purchase heroin for themselves without going to prison or can't chop off their own limbs without being committed. Same thing here. Mental illness needs to be treated, not held up as normal."
+
+First, I need to check if this mentions illegal drugs in a context of abuse or misuse. The first part talks about heroin, which is an illegal drug. The user is discussing the legal consequences of purchasing heroin, which is related to drug abuse. The phrase "can't purchase heroin for themselves without going to prison" implies that heroin is illegal and that using it leads to severe legal issues, which is a form of abuse or misuse.
+
+Then there's the part about mental illness being treated, which is a positive statement. However, the first part is about heroin, which is a drug. The mention of heroin is in the context of its illegal nature and the consequences of using it, which aligns with the definition of illicit drug-related content. The second part is about mental illness, which is not related to drug abuse. But the first part is the key here. The user is discussing the illegality and the negative consequences of heroin use, which is promoting awareness about drug abuse. So the label should be True because it's discussing an illegal drug in the context of its misuse and legal consequences.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions heroin, an illegal drug, and discusses its legal consequences, implying awareness of drug abuse and misuse."
+}

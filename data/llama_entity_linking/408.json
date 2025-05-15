@@ -1,0 +1,7 @@
+[
+  {"index_term": "Cannabis", "matched_phrase": "Cannabis"},
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "FDA"},
+  {"index_term": "other", "matched_phrase": "Govt"},
+  {"index_term": "other", "matched_phrase": "white wash house"}
+]

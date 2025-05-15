@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "If alcohol can be legal then so should cannabis. Alcohol if far more harmful to the body and minds. Cannabis can add so much more to the economy and help so many people."
+
+First, I need to check the definitions. True includes mentions of illegal drugs in abuse contexts, slang, or encouraging misuse. False includes medical, educational, or preventative contexts.
+
+The content is discussing the legalization of cannabis compared to alcohol. It's making a argument about the benefits of cannabis and the harms of alcohol. But does it mention drug abuse? The user is talking about legalization, not misuse. The terms used are "cannabis" and "alcohol," but the context is about legal status and economic benefits, not promoting or encouraging abuse. There's no mention of using drugs, promoting their use, or any slang. The argument is about policy and benefits, not misuse. So this is more of a political or social commentary, not promoting abuse. Therefore, it should be classified as False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses cannabis legalization and comparative harm of alcohol vs. cannabis, but does not mention drug abuse, misuse, or promote illegal drug use."
+}

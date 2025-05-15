@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The content is: "Thinking about the amount of people who would read this and think 'obviously the royal prince goes to heaven and the gangbanger who died of an overdose does not' is depressing."
+
+First, I need to determine if this is illicit/abusive-drug-related. The key here is to look for mentions of drugs in the context of abuse, misuse, or promotion. The user is talking about a gangbanger who died of an overdose. Overdose is a direct result of drug abuse, so that's a red flag. The mention of "overdose" is a clear indicator of drug-related abuse. The phrase "gangbanger" might imply involvement in drug-related activities, though that's more of a cultural reference. The content is discussing the consequences of drug abuse, which falls under the illicit category. The tone is reflective and somber, but the main point is the mention of overdose, which is a direct indicator of drug abuse. The example given in the task includes mentions of codeine and lean, which are drugs, and here it's overdose, which is a result of drug use. So, the classification should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references 'overdose' in the context of a 'gangbanger,' indicating drug abuse and its fatal consequences."
+}

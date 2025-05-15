@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to look at the post: "#Arak son of thunder #DCcomics Man versus myth atop Mount Olymp by WisconsinfindsShop". 
+
+I'll start by breaking down the text. The hashtags are #Arak and #DCcomics. The main text mentions "Man versus myth atop Mount Olymp". 
+
+Now, checking the index terms list. The term "Arak" isn't listed. Let me check the index terms again. The list includes terms like Codeine, Amphetamine, Benzodiazepines, etc. But "Arak" isn't mentioned. 
+
+Wait, is "Arak" a drug? Arak is a type of alcohol, specifically a strong spirit, but it's not listed in the index terms. The example 4 mentions "snow" and "white lines" as "other" since they aren't drugs. So, if "Arak" isn't in the index terms, it should be categorized as "other".
+
+The other part of the post is "#DCcomics", which is a comic book reference. There's no drug-related term here. 
+
+So, the only possible match is "Arak", which isn't in the index terms. Therefore, it should be "other". The hashtag #DCcomics is unrelated. 
+
+So the JSON array should have one entry: index_term "other" and matched_phrase "Arak".
+</think>
+
+[{"index_term": "other", "matched_phrase": "Arak"}]

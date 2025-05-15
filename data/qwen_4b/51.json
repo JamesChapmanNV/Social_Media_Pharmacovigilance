@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Please tell your drug dealer I said hie". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting. Also, slang or references to recreational use. False includes medical, educational, or preventative contexts.
+
+The content here is "Please tell your drug dealer I said hie". The key words are "drug dealer" and "hie". "Drug dealer" directly refers to someone involved in selling drugs, which is illegal. "Hie" is a slang term, sometimes used to mean "hello" but in some contexts, it can be associated with drug use. However, the phrase "tell your drug dealer" is a direct reference to someone dealing in drugs. 
+
+The user is asking someone to relay a message to a drug dealer, which could imply involvement in drug dealing, which is illegal. The context here is about contacting a drug dealer, which is related to drug abuse or illicit activities. 
+
+The example given in the prompt where "lean" and "codeine" were considered illicit because they refer to drugs and the context of being hooked. Similarly, here, the mention of "drug dealer" is a clear indicator of involvement in drug-related activities. 
+
+So, the label should be True because it's referencing a drug dealer, which is associated with illicit drug activities. The explanation should mention the reference to a drug dealer indicating involvement in drug-related abuse.
+</think>
+
+{"label": "True", "explanation": "The content references a 'drug dealer' and uses 'hie' (slang for 'hello'), indicating involvement in drug-related illicit activities."}

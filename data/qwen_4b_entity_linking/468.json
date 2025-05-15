@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Fentanyl Floyd died of overdose. Get over it." I need to detect any drug-related references here.
+
+First, I'll scan the post for any words or phrases that might refer to illicit drugs. The word "Fentanyl" is clearly a drug listed in the index terms. The index term for Fentanyl is "Fentanyl" itself. Then there's "Floyd" which is a person's name, so that's not a drug reference. The rest of the sentence is about an overdose, which is related to Fentanyl but the phrase "died of overdose" is a consequence, not the drug name. 
+
+So the only matched phrase here is "Fentanyl". Checking the index terms, Fentanyl is listed with its own entry. Therefore, the JSON should have one object with index_term "Fentanyl" and matched_phrase "Fentanyl". 
+
+I need to make sure there's no other possible references. "Get over it" is just a phrase and not a drug term. No other words in the post match any of the index terms. So the final answer should be the one entry for Fentanyl.
+</think>
+
+[{"index_term": "Fentanyl", "matched_phrase": "Fentanyl"}]

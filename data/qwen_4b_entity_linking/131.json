@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions someone dying from an overdose of drugs. My task is to identify any drug-related references in the post and map them to the appropriate index terms from the given list.
+
+First, I'll read through the post carefully. The first part talks about "chauvin legs" on George's neck and back, which seems like a description of a scene, maybe a video or photo. The second part says the guy died of an overdose of drugs. The key here is the mention of "over dose of drugs." 
+
+Now, I need to check if "drugs" is a specific term in the index list. Looking through the index terms, there's a list of various drugs and their synonyms. However, the term "drugs" itself isn't listed as an index term. The index terms are specific to certain drugs like Codeine, Amphetamine, Fentanyl, etc. Since "drugs" is a general term and not a specific substance listed, I should map it to "other" as per the instructions.
+
+The post doesn't mention any specific drug names or slang terms that match the index terms. The only reference is "over dose of drugs," which is general. Therefore, the matched phrase would be "drugs" and the index term would be "other."
+
+I need to make sure there are no other phrases. The first part about "chauvin legs" doesn't relate to drugs. The rest is just describing the scene and the cause of death. So the only match is "drugs" under "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "drugs"}]

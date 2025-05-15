@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Wow Covid + drug overdose 🤦🏾‍♂️ c'mon X pull through cuh". I need to detect any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "drug overdose", which is a clear indicator. But according to the index terms, "drug" itself isn't listed, so I need to check if any specific terms are mentioned. The phrase "drug overdose" is a general term, but the index terms don't have a direct match for "drug". However, the user's instruction says to use "other" if the drug isn't in the list. 
+
+Wait, but maybe "overdose" is part of a drug reference. However, the index terms don't have an entry for "overdose" as a standalone term. The example given in the problem where "snow" and "white lines" were marked as "other" because they aren't drugs. So in this case, "drug overdose" is a general term, not a specific drug name. Therefore, the matched phrase would be "drug" and "overdose", but since neither is in the index terms, they should be categorized as "other".
+
+But wait, the user's example 3 had "xans" which wasn't in the list, so it was "other". Similarly, "drug" isn't in the index terms. However, the post mentions "drug overdose", which is a specific context. But according to the task, I need to detect every word or phrase that refers to an illicit drug. "Drug" here is a general term, not a specific substance. So maybe "drug" is the matched phrase, but since it's not in the index terms, it's "other". 
+
+But the user's example 4 had "snow" and "white lines" as "other" even though they were not drugs. So in this case, "drug" is not a specific drug name, so it's "other". Also, "overdose" is a consequence, not a drug itself. So the matched phrases would be "drug" and "overdose", both leading to "other". 
+
+But the user's example 3 had "xans" which is not a specific drug, so it's "other". So in this case, the post mentions "drug overdose", which is a general term. Therefore, the matched phrases would be "drug" and "overdose", both mapped to "other". 
+
+Wait, but the user's example 4 had "snow" and "white lines" as "other", even though they weren't drugs. So the same logic applies here. The answer should be two entries with "other" for "drug" and "overdose".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "drug"},
+  {"index_term": "other", "matched_phrase": "overdose"}
+]

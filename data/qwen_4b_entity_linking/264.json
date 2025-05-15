@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "heroin" and "knock out Harmony & save Alexis from getting killed." The task is to detect any drug references and link them to the appropriate index terms.
+
+First, I need to check if "heroin" is in the list of index terms. Looking through the list, yes, heroin is listed under "Morphine" as "MS Contin, Miss Emma, Morph." Wait, no, actually, the index terms are listed with their synonyms. Let me check again. The index terms include "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no, looking back, the index terms are listed as:
+
+"Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence."
+
+Wait, but heroin isn't directly listed. Wait, the index terms are the actual drug names. Let me check again. The user provided a list of index terms. Let me scan through the list again.
+
+Looking through the list, "Heroin" is not directly listed as an index term. The closest is "Morphine" and "Codeine," but heroin isn't explicitly there. Wait, the index terms are the actual drug names, but some have synonyms. For example, "Codeine (Lean, Purple Drank, Schoolboy)" is an index term. So, "heroin" isn't in the list. However, the user's example #1 had "lean" and "codeine" both linked to codeine. So in this case, the post mentions "heroin," which is not in the index terms. Therefore, according to the instructions, if the drug is not in the list, use "other."
+
+So the phrase "heroin" would map to "other." Then, the other part is "knock out Harmony & save Alexis from getting killed." The verb "knock out" might be a euphemism for using a drug, but the actual drug isn't mentioned. The post is about a story where a character is the "heroin" of every story, implying she's a central character. However, the word "heroin" is a drug, but since it's not in the index terms, it's "other."
+
+Wait, but the index terms include "Heroin" as a drug? Wait, looking back at the index terms list, I don't see "Heroin" listed. The index terms are specific compounds or drugs. For example, "Heroin" is not listed. The index terms include "Morphine," "Codeine," "Fentanyl," etc., but not "Heroin." So "heroin" would be "other."
+
+Therefore, the matched phrase is "heroin," which is not in the index terms, so index term is "other." The other part of the post is about "knock out," which is a verb, but not a drug reference. So the only detected phrase is "heroin," which maps to "other."
+
+So the JSON array should have one object: {"index_term": "other", "matched_phrase": "heroin"}.
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

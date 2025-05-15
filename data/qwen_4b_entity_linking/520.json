@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Just found these baggies my mom gave me for my bday (in a gift bag with a bunch of other stuff). I didn't realize til now, but my mom totally thinks I'm a drug dealer." I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The key words here are "baggies" and "drug dealer." The index terms list includes "Codeine" with synonyms like "lean," but "baggies" isn't listed. However, "baggies" is a slang term for small bags used to carry drugs, which is a common reference in drug contexts. But wait, the index terms don't have an entry for "baggies." The example 3 shows "xans" is marked as "other" since it's not in the list. So, "baggies" isn't directly listed, so it should be "other."
+
+Then there's "drug dealer," which is a term indicating involvement in drug trafficking, but the index terms don't have a specific term for that. The example 4 mentions "snow" and "white lines" as "other" because they aren't in the list. So "drug dealer" would also be "other."
+
+Wait, but the task is to detect phrases that refer to illicit drugs. "Drug dealer" is more about the person rather than the drug itself. The user might be referring to the bags as containing drugs, but "baggies" is a slang term for drug containers. However, the index terms don't have an entry for "baggies," so it's "other." The phrase "drug dealer" is more about the person, not the drug, so it's also "other."
+
+So the matched phrases are "baggies" and "drug dealer," both mapped to "other" since they aren't in the index terms. But wait, let me check the index terms again. The index terms include "Codeine," "Amphetamine," etc., but not "baggies" or "drug dealer." Therefore, both should be "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "baggies"},
+  {"index_term": "other", "matched_phrase": "drug dealer"}
+]

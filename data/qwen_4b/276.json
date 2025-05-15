@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The content is: "crazy how people really considered doing heroin... AND DID IT." 
+
+First, I need to determine if this is illicit/abusive-drug-related. The key words here are "heroin" and the phrase "considered doing heroin... AND DID IT." Heroin is definitely an illegal drug. The use of "considered doing" and "DID IT" suggests that people actually used it, which is a form of abuse. The tone here seems to be about people's actions, possibly glorifying or discussing the misuse of heroin. 
+
+Looking at the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse, using slang or encouraging misuse. The content here is talking about people who considered and actually did heroin, which is a misuse. The word "crazy" might be a bit subjective, but the action of using heroin is clearly illicit. 
+
+The example given in the prompt where "lean" and "codeine" were mentioned as True is similar here. The content here is about heroin use, which is illegal and related to abuse. The fact that they "did it" indicates actual use, which is a misuse. 
+
+So the label should be True. The explanation would mention the mention of heroin and the context of actual use, which is abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions heroin, an illegal drug, and describes individuals who 'did it,' indicating actual use and abuse."
+}

@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "just get me some fuckin' morphine doc before I rip out your other eye." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse.
+
+The content uses "morphine," which is an OTC drug (though actually, morphine is a controlled substance, but maybe in this context, it's considered OTC? Wait, no, morphine is typically a prescription drug. But the key here is the context. The user is saying "get me some morphine" in a threatening way. The phrase "before I rip out your other eye" is a threat. So the person is demanding morphine, which is a drug, and using violent language. That seems like abuse or misuse. 
+
+The tone is aggressive and threatening, which might indicate a request for drug use in a harmful way. The use of "fuckin'" is slang, which could be a euphemism or part of a cultural reference. The context here is someone threatening to harm someone else if they don't get morphine, which could be a sign of drug abuse or misuse. 
+
+So according to the definitions, this would be True because it's mentioning a drug (morphine) in a context of misuse or abuse, and the threatening language might indicate a harmful intent. The user is not in a medical context but rather using the drug in a way that's harmful and threatening. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly requests morphine in a threatening context, indicating misuse or abuse of a controlled substance."
+}

@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Lemme get a caesar salad, with croutons, and uhhh... codeine dressing." I need to detect any drug references here.
+
+First, I'll go through each part of the sentence. The main components are "caesar salad," "croutons," and "codeine dressing." The task is to find any words or phrases that refer to illicit drugs or substances, including slang, euphemisms, etc.
+
+Looking at "codeine dressing," "codeine" is explicitly mentioned. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" directly maps to Codeine. The phrase "codeine dressing" is a bit tricky. Is "dressing" here a slang term? But the index term for Codeine includes "codeine" as a direct match. The dressing part might be a descriptor, but the key here is the word "codeine" itself. Since the index term includes "codeine," the matched phrase would be "codeine dressing," but wait, the index term is for the drug, not the dressing. Wait, the task says to detect every word or phrase that refers to the drug. So if "codeine dressing" is a term used to refer to codeine, then it's a match. But according to the index terms, Codeine is listed with synonyms, but the dressing part isn't in the list. However, the instruction says to link each detected phrase to its matching index term. So if "codeine dressing" is a phrase that refers to codeine, then the index term is Codeine. But maybe the dressing is just a modifier. However, the user might be using "codeine dressing" as a slang term for codeine. Alternatively, maybe "dressing" is a red herring, but the key is "codeine." 
+
+In the example given, "lean" was mapped to Codeine. So if the phrase is "codeine dressing," the matched phrase is "codeine dressing," and the index term is Codeine. But I need to check if "codeine dressing" is considered a reference. However, the index terms don't list "dressing" as a term, but the drug itself is codeine. So the phrase "codeine dressing" is a phrase that refers to codeine. Therefore, the correct index term would be Codeine, and the matched phrase is "codeine dressing." But wait, the example in the problem statement had "lean" and "codeine" as separate phrases. In the example, the post was "I got her hooked on that lean everyday she say she want codeine," which resulted in both "lean" and "codeine" being matched. So in this case, "codeine dressing" would be a phrase that includes the drug name. Therefore, the matched phrase is "codeine dressing," and the index term is Codeine. 
+
+But maybe the dressing is not a drug, but the codeine is. So the phrase "codeine dressing" is referring to codeine. Therefore, the correct mapping is Codeine. So the JSON array would have one entry: {"index_term": "Codeine", "matched_phrase": "codeine dressing"}.
+
+But wait, the example in the problem had "lean" and "codeine" as separate phrases. However, in that example, "lean" is a slang for codeine, and "codeine" is the direct term. So if the phrase is "codeine dressing," the matched phrase is "codeine dressing," and the index term is Codeine. Therefore, the correct output is that one entry.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine dressing"}
+]

@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is "proud of jesse pinkman for getting over his heroin addiction." First, I need to determine if this is illicit or abusive drug-related. The user is talking about someone overcoming heroin addiction. Heroin is definitely an illegal drug. But the context here is about recovery, not using or promoting it. The sentiment is positive, expressing pride in overcoming addiction. The key here is whether it's promoting or glorifying the misuse. Since it's about overcoming addiction, it's more about recovery, not abuse. So according to the definitions, False would be if it's in a medical or educational context. This seems like a personal story of recovery, so it's not promoting misuse. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses overcoming heroin addiction, which is a medical/health context, not promoting or glorifying drug misuse."
+}

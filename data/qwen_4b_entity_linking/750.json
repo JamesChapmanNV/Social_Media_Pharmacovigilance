@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I need to look at the provided post. The post is about trending hashtags related to EXO, a K-pop group. The hashtags mentioned are #2 EXO, #6 LOTTO, #8 MAMA, #10 OVERDOSE, and others. Then there are some Korean phrases like "너희는_여전히_엑소_우리는_변함없이_엑소엘" and "영원한_우리의_피터팬_엑소". The user also included the hashtags #EXO and #엑소.
+
+Now, I need to check if any of these terms are drug-related. Let's go through each part. The numbers #2, #6, #8, #10 could be positions or rankings, but not drugs. The hashtag #OVERDOSE might be a stretch, but "overdose" is a term related to drug use, but in the Index Terms list, "overdose" isn't listed. However, the Index Terms include "Codeine", "Amphetamine", etc., but not "overdose". So if "overdose" isn't in the list, it would be "other".
+
+Looking at the Korean phrases: "너희는_여전히_엑소_우리는_변함없이_엑소엘" translates to "You are still EXO, we are always EXO." And "영원한_우리의_피터팬_엑소" is "Eternal our Peter Pan EXO." These are just references to the K-pop group, not drug terms.
+
+The hashtags #EXO and #엑소 are brand names, not drug references. The numbers in the hashtags are just numbers, not drugs. The term "OVERDOSE" is in the hashtag, but since it's not in the Index Terms, it would be "other".
+
+So the only possible match is the hashtag #OVERDOSE. But according to the Index Terms, "overdose" isn't listed. The closest might be "other". However, the example in the user's prompt shows that if the drug isn't in the list, use "other". So in this case, "overdose" is not in the Index Terms, so it's "other".
+
+Wait, but the Index Terms include "Codeine", "Amphetamine", etc. The term "overdose" isn't listed, so any mention of "overdose" would be "other". Therefore, the matched_phrase is "OVERDOSE" with index_term "other".
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" because they weren't drugs. So in this case, the hashtag #OVERDOSE is a term that's not in the Index Terms, so it's "other".
+
+So the final answer should be an array with one object: index_term "other" and matched_phrase "OVERDOSE".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "OVERDOSE"}
+]

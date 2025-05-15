@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user posted: "Morphine recommendation please - need one to live in while we build our house in Greece." First, I need to check for any drug-related references here.
+
+Looking at the post, the word "Morphine" is mentioned. According to the Index Terms list, Morphine is listed as an opioid analgesic. The phrase "need one to live in" is a bit unclear, but "one" here likely refers to a drug. However, the term "live in" might be a slang or a metaphor. But since the user is asking for a recommendation for Morphine, which is a prescribed opioid, the direct mention of "Morphine" is a clear reference. 
+
+Now, checking the Index Terms, Morphine is listed under "Morphine (MS Contin, Miss Emma, Morph)" as the prototypical opioid. So the matched phrase here is "Morphine", and the index term is "Morphine". 
+
+I need to make sure there are no other terms. The rest of the post talks about building a house in Greece, which doesn't relate to drugs. So the only detected phrase is "Morphine". 
+
+Wait, but the user is asking for a recommendation. Is that considered promoting or encouraging use? The task says to detect any references to illicit drugs, including promoting. However, Morphine is a prescription drug. The Index Terms list includes Morphine as a prescribed opioid. The user might be asking about a prescription, but the task is to check for illicit or recreational use. However, the Index Terms include Morphine as a legitimate drug. But the user's request is for a recommendation, which could be seen as promoting its use. However, according to the Index Terms, Morphine is listed as a legitimate drug. The problem is whether "recommendation" here is part of the illicit use. But the task says to include illegal, RX, OTC, or recreational drugs. Since Morphine is a prescription drug (RX), it's included in the list. Therefore, the matched phrase is "Morphine", and the index term is "Morphine". 
+
+So the JSON should have one entry: {"index_term": "Morphine", "matched_phrase": "Morphine"}.
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "Morphine"}]

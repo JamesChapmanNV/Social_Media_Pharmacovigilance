@@ -1,0 +1,18 @@
+<think>
+Okay, let's see. The user provided a content snippet: "i have morphine statex for chronic pain, will share : )". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying misuse.
+
+The content here mentions "morphine statex". Morphine is a controlled substance, typically used for severe pain, often prescribed for medical reasons. The user says they have it for chronic pain and will share. The tone seems neutral or even positive, like sharing a personal experience. 
+
+But wait, is there any indication of abuse or misuse? The user is stating they have it for a medical condition, which is a legitimate use. The phrase "will share" might be just a social media post about their medication. There's no mention of using it recreationally, promoting it, or any negative context. 
+
+The example given in the task had a similar case where someone mentioned codeine and being hooked, which was classified as true. But here, the context is medical. The user is not promoting or encouraging misuse. They're just stating they have a prescribed medication for chronic pain. 
+
+So according to the definitions, False includes mentions in medical, educational, or preventative contexts. Since this is about a legitimate medical use, it's not promoting abuse. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content mentions morphine (a prescribed medication) in a medical context for chronic pain management, with no indication of abuse, promotion, or recreational use."
+}

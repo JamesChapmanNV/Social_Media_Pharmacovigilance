@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post about someone's experience with drug use, specifically mentioning oxycodone, oxycontin, and morphine. My task is to identify any drug-related references and map them to the correct index terms from the given list.
+
+First, I'll go through the post sentence by sentence. The user mentions "480 mg of oxycodone & oxycontin for 2 years." Both "oxycodone" and "oxycontin" are listed under the index term "Oxycodone (OxyContin, Percocet, Hillbilly Heroin)". So those should be matched to "Oxycodone".
+
+Next, there's "morphine 3". Morphine is listed under "Morphine (MS Contin, Miss Emma, Morph)", so "morphine" maps to that index term. 
+
+I need to check if there are any other phrases. The rest of the post talks about injuries and riding horses, which don't mention any drugs. The numbers like 480 mg and 3 might be dosages, but they aren't drug names. 
+
+No other terms like "codeine", "amphetamine", or others are present. So the only matches are oxycodone, oxycontin, and morphine. Each of these is correctly mapped to their respective index terms. The user didn't use any slang or alternative terms here, so it's straightforward. 
+
+I should make sure there's no other hidden references. The word "morphine" is directly in the list, so that's covered. The answer should be an array of three objects, each with the correct index term and matched phrase.
+</think>
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "oxycodone"},
+  {"index_term": "Oxycodone", "matched_phrase": "oxycontin"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

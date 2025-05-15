@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I'll look at the provided post. The user has given two points, 5 and 6. Let's break them down.
+
+Starting with point 5: "George's girlfriend talked about his overdose in March and the symptoms, such as his stomach hurting. The same complaint about his stomach hurting occurs in May 2020 arrest video." The key here is "overdose" and "stomach hurting." But the Index Terms don't have a direct entry for "overdose" or "stomach hurting." However, "overdose" might be linked to opioids or other drugs, but since the specific drug isn't mentioned, I should check if any of the Index Terms could be inferred. The Index Terms include things like "Codeine," "Fentanyl," "Methamphetamine," etc. However, "overdose" isn't a specific drug term here. The symptoms mentioned are general, so maybe "stomach hurting" is not a drug term. So, in this case, there might be no matches here, so "other" would be the index term if any terms are present. But since there's no specific drug mentioned, maybe no matches here.
+
+Now point 6: "From the body cam, there sounds like a portion where Floyd says he ate too many drugs." The phrase "ate too many drugs" is a clear reference to drug use. But the Index Terms don't have a general term for "drugs," so we need to check if any of the listed Index Terms could match. However, the Index Terms are specific to certain drugs. Since "drugs" is a general term, the correct index term here would be "other" because there's no specific drug listed. However, maybe "ate too many drugs" could be linked to a specific drug if it's a slang term. But in the Index Terms, "drugs" isn't a term. For example, if "drugs" were a slang for a specific drug like "codeine," but here it's general. So, the matched phrase is "ate too many drugs," and the index term is "other."
+
+Wait, but maybe "ate too many drugs" could be linked to a specific drug if there's a slang term. But in the given Index Terms, there's no general term for "drugs." So, the correct index term here is "other." So the JSON array would have one entry: {"index_term": "other", "matched_phrase": "ate too many drugs"}.
+
+But wait, the user's example 3 had "xans" which was "other" because it wasn't a specific term. Similarly, "drugs" in this case is a general term, so "other" is correct. Therefore, the answer should have one entry for "ate too many drugs" under "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "ate too many drugs"}
+]

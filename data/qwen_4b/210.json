@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "Watched's new video on YouTube, and the next video afterwards was "what happens when you overdose" 😂😅 Errrbody know."
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting it. Also, slang or references to recreational use. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+Looking at the content, the user watched a video and then another about overdose. The reaction is "😂😅 Errrbody know." The key here is the mention of overdose. But overdose is a consequence of drug use, but the content itself isn't promoting or glorifying drug use. It's more about a video that discusses a serious topic. The user is reacting to the content, but there's no explicit mention of drugs being used, abused, or promoted. The term "overdose" is a negative outcome, but the context is about a video's content, not encouraging misuse. The user's comment is more about the video's content rather than promoting drug use. So, the content is discussing a topic related to drugs (overdose), but in an educational or informational context, not promoting abuse. Therefore, it should be classified as False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a video about overdose, which is a medical/educational topic, not promoting or glorifying drug abuse."
+}

@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The user provided a content example: "I think Chauvin should be fired for not following procedure but be found not guilty for murder, because Mr Floyd died from a drug overdose." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I should check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting use. Also, slang or references to recreational use. False includes medical, educational, or preventative contexts, or drug terms in unrelated topics.
+
+The content here mentions "drug overdose." The person is talking about a legal case, specifically the death of George Floyd. The mention of drug overdose is part of the reason given for the outcome. But is this about abuse or misuse? The context is a legal discussion, not promoting drug use. The term "drug overdose" is a medical term here, part of the cause of death. There's no indication of encouraging or glorifying drug use. It's just stating a fact in the context of a legal case. So according to the definitions, this would fall under False because it's a medical context (cause of death) and not promoting misuse. The explanation should note that it's a factual statement about a cause of death without promoting or discussing abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a 'drug overdose' as a medical cause of death in a legal context, not promoting or glorifying drug abuse."
+}

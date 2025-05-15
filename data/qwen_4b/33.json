@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet: "Im on ocean drive sipping codeine with the top down." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying drug misuse.
+
+The content mentions "codeine." Codeine is an opioid, which is a controlled substance. The phrase "sipping codeine" suggests consumption. The location is "ocean drive" and "top down," which might imply a relaxed, possibly recreational setting. The use of "sipping" could indicate taking it in a way that's not medical, maybe for recreational purposes. 
+
+Is there any context that would make this non-illicit? The user is "on ocean drive," which is a place, but the action of sipping codeine is the key. Codeine is a controlled substance, and using it without a prescription is illegal. The tone here seems casual, which might be a sign of recreational use. 
+
+The example given in the first example had "lean" and "codeine" with a supportive tone, which was classified as true. This content is similar in that it's using codeine in a way that's not medical, and the setting might be recreational. So I think this should be classified as True. The explanation would mention the mention of codeine and the context of use, possibly implying recreational abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a recreational context ('sipping') and implies casual use in a non-medical setting."
+}

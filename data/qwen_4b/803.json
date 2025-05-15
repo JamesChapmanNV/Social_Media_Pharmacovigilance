@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "I remix that Sprite with 6 oz of codeine, they say I drink this shit like it give me protein 🎧".
+
+First, I need to check the definitions provided. True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse, using slang, euphemisms, or cultural references that signal recreational use or abuse. Also, encouraging or glorifying drug misuse.
+
+Looking at the content, "codeine" is a controlled substance, so that's a key point. The user is mixing codeine with Sprite and drinking it, which sounds like an abusive or recreational use. The phrase "drink this shit like it give me protein" is a bit slangy and implies that the person is using codeine in a way that's not medical, but rather for recreational purposes. The mention of "remix" might be a slang term for mixing substances, which is a red flag. The tone here seems to be supportive or even glorifying the use of codeine, which fits the True category. There's no mention of medical use or education here. So the label should be True. The explanation should mention codeine, mixing with Sprite, and the slang terms indicating abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions codeine (a controlled substance) in a context of recreational abuse, using slang ('remix', 'drink this shit') and implies non-medical consumption."
+}

@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Abt to go codeine crazy with this lite cold before it get too crazy lol". I need to detect any drug references here.
+
+First, I'll look for words that might refer to illicit drugs. The phrase "codeine" is explicitly mentioned, and according to the index terms, codeine is listed under "Codeine" with synonyms like "Lean" and "Purple Drank". The word "lean" is also a slang term for codeine, so that's another match. 
+
+The user wrote "lite cold" which might be a typo or slang. "Lite" could be short for "lean", which is a known slang for codeine. So "lite" here probably refers to codeine. The rest of the sentence is about getting sick, so the main drug references are "codeine" and "lean".
+
+I need to check if "lite" is in the index terms. Looking through the list, "Lean" is a synonym for codeine, but "lite" isn't listed. However, since "lite" is used as a slang for "lean" in this context, it's safe to map it to "Codeine" as the index term. 
+
+So the matched phrases would be "codeine" and "lean". The "lite" is part of "lite cold" which is a colloquial way of saying "cold" but in this context, the user is referring to codeine. Wait, the user says "Abt to go codeine crazy with this lite cold". So "lite cold" is probably a way of saying "codeine cold", but "lite" here is slang for codeine. Therefore, "lite" is a slang term for codeine, so it should be matched to "Codeine".
+
+But wait, the index terms list "Lean" as a synonym for codeine. "Lite" is not in the list, but if it's used as a slang for codeine, then it should be mapped to "Codeine". The example in the problem statement had "lean" mapped to codeine, so "lite" here is likely a typo or alternative slang for codeine. Therefore, both "codeine" and "lean" are in the list, and "lite" is a slang term for codeine, so it's mapped to "Codeine".
+
+So the JSON array should include "codeine" and "lean". The phrase "lite" is part of "lite cold" but the user is using "lite" as a slang for codeine. Therefore, the matched phrases are "codeine" and "lean".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "lean"}
+]

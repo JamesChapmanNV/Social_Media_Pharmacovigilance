@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user wants me to label the given social media post as T or F based on the rules provided. The post is in a mix of English and Arabic, so I need to parse that carefully.
+
+First, the main content: The person is talking about ARAK, which is a type of alcohol, commonly associated with Islamic culture. The user is suggesting that as a Muslim, they should fight against the sale of ARAK to Muslims or close the factory if they sell to Muslims. They also mention that halal food linked to Muslim names can't be compared to haram food unless you consume haram stuff.
+
+Now, applying the label rules. The key is to check if there's any mention of drug use, seeking, buying, selling, trafficking, or slang for drugs. ARAK is an alcoholic beverage, not a illicit drug. However, in some contexts, especially in certain regions, ARAK might be considered a controlled substance. But according to the rules, the focus is on illicit or abusive drug use. Since ARAK is alcohol, not a drug, unless the context here is different. But the user is talking about selling it to Muslims, which is a religious issue, not necessarily drug abuse. The post is more about religious or cultural practices rather than drug use. The mention of haram and halal is about religious compliance, not drug use. Therefore, the labels would be F, as it's not about drug abuse but religious matters. So the answer should be F.
+</think>
+
+F

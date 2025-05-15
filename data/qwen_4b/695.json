@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this query. The content is "Put the crack pipe down and go to bed." First, I need to determine if this is illicit or abuse-related. The phrase "crack pipe" refers to a device used to inhale crack cocaine, which is an illegal drug. The instruction to "put it down" suggests a warning or a call to stop using it. The context here is about stopping the use of a drug, which could imply abuse. The mention of "crack" directly points to an illegal substance. The tone is instructive, possibly from someone trying to help someone struggling with drug use. Since it's mentioning an illegal drug and the context of stopping its use, this fits under ILLICIT/ABUSIVE-DRUG-RELATED. The example given in the prompt where "lean" and "codeine" were considered true aligns with this reasoning. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'crack pipe,' a direct reference to illicit drug use, and implies a warning against continued abuse."
+}

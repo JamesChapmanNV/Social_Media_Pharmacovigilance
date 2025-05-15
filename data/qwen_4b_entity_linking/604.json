@@ -1,0 +1,129 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. My task is to detect any mentions of illicit drugs or substances, link them to the appropriate Index Terms from the given list, and return a JSON array.
+
+First, I'll read through the post carefully. The post says: "The internet is saturated with it" I need more. I need to write him 100 pages worth of bad fanfic on ao3. I need comics of him and Morgott in the sewers. I need to inject cloudycats' i will tell you of the sun directly into my bloodstream like pure heroin."
+
+Looking for drug-related terms. The first part mentions "it" but that's too vague. Then there's "heroin" towards the end. Heroin is listed under the Index Terms as "Heroin (MS Contin, Miss Emma, Morph)" but wait, checking the list again. Wait, the Index Terms include "Morphine" and "Heroin" is not explicitly listed. Wait, looking back at the Index Terms provided:
+
+Wait, the Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but not "Heroin" specifically. However, the user's example 1 had "Codeine" linked to "lean" and "codeine". So, in the given list, "Heroin" isn't directly listed. Wait, let me check again.
+
+Looking at the Index Terms list, the entry for "Heroin" isn't there. The closest is "Morphine" and "Oxycodone", etc. But the post mentions "heroin" directly. However, in the Index Terms, "Heroin" isn't listed. Wait, the Index Terms include "Morphine" but not "Heroin". Wait, the user's example 1 had "Codeine" linked to "lean" and "codeine". So, if the post mentions "heroin", but there's no specific Index Term for heroin, then according to the instructions, if the drug is not in the list, use "other".
+
+Wait, but looking at the Index Terms again, there's an entry for "Heroin" under "Morphine"? Wait no, the Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" and "Heroin" isn't listed. So, "heroin" is not in the Index Terms. Therefore, "heroin" would be classified as "other".
+
+But wait, in the example 4, the user mentioned "snow" and "white lines" which are not drugs, so they were marked as "other". Similarly, if "heroin" isn't in the list, it's "other".
+
+But wait, the user's example 1 had "lean" and "codeine" both mapped to "Codeine". So, in the post, the phrase "heroin" is present. Since "heroin" isn't in the Index Terms list (the list includes "Morphine", "Oxycodone", "Fentanyl", etc., but not "Heroin"), then "heroin" would be "other".
+
+But wait, let me check again. The Index Terms list includes "Heroin" as a separate entry? Let me check the list again:
+
+Looking through the list, the entries are:
+
+- Amphetamine
+- Benzoylecgonine
+- Bromazolam
+- Buprenorphine
+- Carfentanil
+- CBD
+- Codeine
+- Cyclobenzaprine
+- delta-8-THC-COOH
+- delta-9-THC-COOH
+- Diphenhydramine
+- EDDP
+- Fentanyl
+- Flubromazepam
+- Gabapentin
+- Hydrocodone
+- Hydromorphone
+- Ketamine
+- Lorazepam
+- LSD
+- Marijuana
+- MDA
+- MDMA
+- MDMB-4en-PINACA
+- Meperidine
+- Meprobamate
+- Methadone
+- Methamphetamine
+- Metonitazene
+- Mitragynine
+- Morphine
+- N,N-Dimethylpentylone
+- Naltrexone
+- N-Desethylmetonitazene
+- Norbuprenorphine
+- Norcarfentanil
+- Nordiazepam
+- Norfentanyl
+- Norketamine
+- Normeperidine
+- Noroxycodone
+- N-Pyrrolidinoetonitazene
+- O-Desmethyltramadol
+- ortho-Methylfentanyl
+- Oxazepam
+- Oxycodone
+- Oxymorphone
+- para-Fluorofentanyl
+- para-Fluoronorfentanyl
+- Pentylone
+- Phencyclidine
+- Pregabalin
+- Psilocin
+- Psilocybin
+- R-HHC-COOH
+- S-HHC-COOH
+- Speciociliatine
+- Temazepam
+- Xylazine
+- Zolpidem
+- Zopiclone
+
+So, "Heroin" is not listed here. The closest is "Morphine", but that's a different drug. Therefore, "heroin" in the post would not be in the Index Terms, so it's "other".
+
+But wait, the user's example 1 had "lean" and "codeine" both mapped to "Codeine", which is correct. So in the given post, the phrase "heroin" is present. Since "heroin" is not in the Index Terms, it should be "other".
+
+So the detected phrase is "heroin", which maps to "other".
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" because they weren't drugs. So similarly, "heroin" is a drug, but not in the list, so "other".
+
+Wait, but maybe I'm missing something. Let me check the Index Terms again. The entry for "Codeine" includes "Lean, Purple Drank, Schoolboy". The user's post mentions "heroin" directly. Since "heroin" is not in the list, it's "other".
+
+Therefore, the only detected phrase here is "heroin", which is "other".
+
+But wait, the post also mentions "inject cloudycats' i will tell you of the sun directly into my bloodstream like pure heroin." The phrase "heroin" is present, but also "i will tell you of the sun" is a reference to a song or a term, but not a drug. However, the user is using "heroin" as a direct reference. So the only detected phrase is "heroin", which maps to "other".
+
+Wait, but maybe "sun" is a slang term for something else? But according to the Index Terms, "sun" isn't listed. So "sun" would be "other".
+
+But the user's post is: "inject cloudycats' i will tell you of the sun directly into my bloodstream like pure heroin."
+
+So the phrases here are "heroin" and "sun". But "sun" is not a drug. So "heroin" is the only drug reference here. Therefore, the JSON array would have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+Wait, but the user's example 3 had "xans" which is not in the list, so "other". Similarly, "heroin" is not in the list, so "other".
+
+But wait, the Index Terms list includes "Morphine", but not "Heroin". So "heroin" is not in the list, so it's "other".
+
+Therefore, the correct JSON would be:
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]
+
+But wait, the user's post also says "inject cloudycats' i will tell you of the sun directly into my bloodstream like pure heroin." So "sun" is part of the phrase. But "sun" is not a drug. So only "heroin" is a drug reference here.
+
+So the answer should be:
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" even though "snow" is a slang for cocaine. But in that example, the user's post was about "snow" and "white lines" which were not in the list, so they were marked as "other". However, in this case, "heroin" is a drug, but not in the list, so it's "other".
+
+Therefore, the correct answer is the JSON array with "heroin" mapped to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

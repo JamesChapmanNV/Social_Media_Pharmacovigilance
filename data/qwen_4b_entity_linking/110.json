@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post that's a list of exo albums ranked. The task is to detect any drug-related references and map them to the appropriate index terms.
+
+First, I'll go through each album name in the list. The post mentions "overdose" as the fourth album. "Overdose" is a term that's directly listed in the index terms as an opioid, specifically under "Oxycodone" (OxyContin, Percocet, Hillbilly Heroin). Wait, no, looking back at the index terms, "Overdose" isn't listed. Wait, the index terms include "Oxycodone" and "Morphine", but "overdose" isn't a direct term. Wait, the example given in the problem statement had "overdose" as a match for "Oxycodone". Wait, no, in the example, the post was "overdose" and the index term was "Oxycodone"? Wait, no, looking back at the example 1, the post was "lean" and "codeine", which are in the index terms. But in the example 2, "addy" was mapped to "Amphetamine". 
+
+Wait, the user's instruction says that if the drug isn't in the list, use "other". So I need to check if "overdose" is in the index terms. Looking at the index terms list, "overdose" isn't listed. The index terms include "Oxycodone", "Morphine", "Fentanyl", "Codeine", etc. So "overdose" isn't directly listed. However, in the example 1, "lean" is mapped to "Codeine" because "lean" is a slang term for codeine. Similarly, "overdose" might be a slang term for a drug overdose, but since "overdose" isn't in the index terms, it would be "other". 
+
+Wait, but the index terms include "Oxycodone" which is a drug, but "overdose" is a term related to the effect of a drug, not the drug itself. The index terms are for the actual drugs, not the consequences. So "overdose" isn't a drug, but a term that could be related to drug use. However, according to the task, we need to detect phrases that refer to an illicit drug or substance. "Overdose" is a term that could be a slang for a drug, but since it's not in the index terms, it would be "other".
+
+But wait, looking back at the index terms, there's "Oxycodone" which is a drug. However, the term "overdose" is not in the list. Therefore, in the post, "overdose" is a phrase that refers to the act of taking too much of a drug, but since the index terms don't include "overdose" as a drug, it would be "other". 
+
+So in the given post, the only possible match is "overdose", which is not in the index terms. Therefore, the matched phrase would be "overdose" with index term "other". 
+
+But wait, the user's example 1 had "lean" mapped to Codeine, which is a slang term. Similarly, "overdose" might be a slang term for a drug, but since it's not in the index terms, it's "other". 
+
+Therefore, the answer would be one entry: {"index_term": "other", "matched_phrase": "overdose"}.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "overdose"}
+]

@@ -1,0 +1,8 @@
+<think>
+Okay, let's see. The content here is about a car lease deal from City Kia. The user is promoting a discount on a 2022 Kia Carnival LX with a monthly payment of $299. The key words here are "lease," "new car," "discount," and "offer ends." There's no mention of drugs, medications, or anything related to drug use. The example given in the task mentions that False includes content that uses drug terms in unrelated contexts. Since this is purely about a car lease and no drug-related terms are present, it should be classified as False. The explanation would note that there's no mention of drugs or related terms, so it's not illicit or abusive drug-related.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content promotes a car lease deal with no mention of drugs, medical contexts, or drug-related terms."
+}

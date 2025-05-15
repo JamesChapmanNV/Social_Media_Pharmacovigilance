@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Still waiting on the Codeine Crazy Future to come back 😩🍇🐐". I need to identify any drug-related references here.
+
+First, I'll look for keywords that might relate to illicit drugs. The phrase "Codeine Crazy Future" stands out. "Codeine" is directly listed in the index terms as an index term. The term "Crazy Future" might be a slang or a creative way to refer to something else, but since "Codeine" is already there, I should check if "Crazy Future" is a known slang. However, looking at the index terms, there's no mention of "Crazy Future" as a drug term. So, the only direct match here is "Codeine". 
+
+The rest of the post includes emojis and other words like "waiting" and "to come back", which don't relate to drugs. The emojis are probably just expressive and not part of the drug references. 
+
+So, the only matched phrase is "Codeine", and the index term is "Codeine". The "Crazy Future" part doesn't have a corresponding index term, so it's not included. The answer should be an array with one object: {"index_term": "Codeine", "matched_phrase": "Codeine"}.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

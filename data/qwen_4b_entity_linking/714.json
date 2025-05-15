@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post about cannabis and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "Cannabis brings people from all circles together, to enjoy a mutual passion for laughing, smoking and connecting. Happy 4:20 🍁. #Happy420". 
+
+Looking for any slang, euphemisms, or synonyms for illicit drugs. The word "cannabis" is mentioned. Checking the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is exactly the term used here. So "cannabis" should map to "Marijuana". 
+
+The rest of the post talks about social aspects, laughing, smoking, and the 4:20 reference, which is a common reference to cannabis. But the key term here is "cannabis". The other words like "smoking" are just activities related to using it, but the actual drug term is "cannabis". 
+
+I need to make sure there are no other terms. The post doesn't mention any other drugs or slang. The hashtag #Happy420 is a common reference but not a drug term. So the only match is "cannabis" under the Marijuana index term. 
+
+Wait, the index term for marijuana is listed as "Marijuana (Cannabis, Weed, Pot)", so "cannabis" is a direct match. Therefore, the correct JSON should have one object with index_term "Marijuana" and matched_phrase "cannabis".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

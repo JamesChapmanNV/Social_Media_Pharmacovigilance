@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Nothing better than the best sheriff to watch over the city like my husband David!" I need to check if there are any drug-related references here.
+
+First, I'll go through the post word by word. The words are "Nothing", "better", "than", "the", "best", "sheriff", "to", "watch", "over", "the", "city", "like", "my", "husband", "David!" 
+
+Looking at the index terms list, I need to see if any of these words or phrases match any drug terms. The index terms include things like Codeine, Amphetamine, Benzodiazepines, opioids, etc. 
+
+"Sheriff" is a public official, not a drug. "David" is a name. The phrase "best sheriff" is just referring to a police officer. There's no slang or euphemism here for drugs. The post is about a husband being a sheriff, so no drug references. 
+
+I should check if any of the words could be slang for drugs, but none of them fit. The example where "xans" was "other" because it wasn't on the list. Similarly, "sheriff" isn't a drug term. So the answer should be an empty array since there are no matches.
+</think>
+
+[]

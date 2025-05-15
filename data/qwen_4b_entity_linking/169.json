@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says, "Now playing 🎵Sasha Lopez & BRUJA - Overdose 18.03.21 Listen here:" and wants me to detect any drug-related references.
+
+First, I need to check each word or phrase in the post. The post mentions a song title: "Overdose 18.03.21". The word "Overdose" might be a clue. Looking at the index terms, there's an entry for "Codeine" with synonyms like "Lean" and "Purple Drank", but "Overdose" isn't directly listed. However, "Overdose" is a term often associated with drug use, especially opioids. But wait, the index terms don't have "Overdose" as a specific term. Let me check the list again.
+
+Looking through the index terms, I don't see "Overdose" listed. The closest might be "Fentanyl" or "Methamphetamine", but "Overdose" isn't explicitly there. The example in the problem statement had "snow" and "white lines" as "other" because they weren't drug terms. So if "Overdose" isn't in the index terms, it should be categorized as "other". 
+
+But wait, the song title "Overdose" could be a reference to drug overdose, but the task is to match exact phrases to index terms. Since "Overdose" isn't listed, the correct index term would be "other". The rest of the post doesn't have any other drug-related terms. The artist names and the date don't relate to drugs. So the only possible match is "Overdose" as "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "Overdose"}]

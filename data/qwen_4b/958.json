@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a content snippet: "Just look up way to crack it… maybe dm some editors 🤷‍♂️… I wish I could help but ima manager 😂". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting. False includes medical, educational, or preventative contexts. The content here is about "crack it" and DMing editors. "Crack" could be slang, but in this context, it's probably not related to drugs. The user is talking about solving a problem, maybe a technical issue, and mentions DMing editors. There's no mention of drugs, illegal substances, or anything related to abuse. The emojis and the tone are more about being a manager and not helping. So, no drug-related terms or context. Therefore, it's False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses problem-solving and social media interactions without mentioning drugs, illegal substances, or drug-related abuse/misuse."
+}

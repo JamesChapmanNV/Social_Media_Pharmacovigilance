@@ -1,0 +1,10 @@
+<think>
+Okay, let's see. The content here is: "Heroin. It almost killed me once - motherfucker won't get me again! 😬". I need to determine if this is illicit/abusive-drug-related.
+
+First, the mention of "Heroin" is a Schedule I controlled substance, so that's a red flag. The user says it "almost killed me once" which indicates personal experience with the drug. The phrase "won't get me again" suggests a desire to use it again, showing a possible addiction or relapse. The exclamation and the emoji add emotional intensity, which might indicate a warning or a personal struggle. However, the context here is about past use and a warning, but the key point is that heroin is an illicit drug. The content is not promoting or encouraging use, but rather sharing a personal experience. However, the mention of heroin itself, even in a negative context, still falls under illicit drug-related content. The user is talking about heroin, which is illegal, and the context of past use and a warning. But the example given in the task includes mentions of illegal drugs in the context of abuse. So even if it's a negative experience, the mention of the drug itself is enough. Therefore, this should be classified as True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'Heroin,' an illicit drug, and describes a personal experience with its dangerous effects, indicating abuse or misuse."
+}

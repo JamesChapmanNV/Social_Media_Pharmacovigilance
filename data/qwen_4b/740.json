@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a piece of content that says: "pls his entire look has me screaming😭😭 SO FCKING HOT SIR YOONGI MARRY ME!!!". I need to determine if this is illicit/abusive-drug-related or not.
+
+First, I'll check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promoting it. Also, slang or euphemisms related to drug use. False includes medical, educational, or preventative contexts.
+
+Looking at the content, the user is talking about someone's appearance, expressing admiration ("screaming", "so fucking hot"), and a request for marriage ("YOONGI MARRY ME!!!"). There's no mention of drugs, illegal substances, or any related terms. The mention of "YOONGI" is a reference to a K-pop idol, not a drug. The language is about personal admiration and a romantic request, not drug use or abuse. 
+
+No slang or euphemisms related to drugs here. The context is entirely about appearance and marriage, so it doesn't fit the criteria for True. Therefore, the classification should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content expresses admiration for a person's appearance and a romantic request, with no mention of drugs, drug-related terms, or contexts of abuse/misuse."
+}

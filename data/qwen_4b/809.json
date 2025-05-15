@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this content. The user says, "but i don't want clothes from mountain dew i just want soda to pour my codeine in." First, I need to check if there's any mention of illegal or abused drugs. The word "codeine" is a controlled substance, so that's a red flag. The context here is about using codeine, which is illegal without a prescription. The mention of "pour my codeine in" suggests misuse or abuse. Also, the phrase "soda to pour my codeine in" is a bit odd but indicates intent to use the drug. There's no educational or medical context here. The user is talking about using codeine, which is a drug related to abuse. So, this should be classified as ILLICIT/ABUSIVE-DRUG-RELATED.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and implies its misuse through the phrase 'pour my codeine in,' indicating recreational or abusive drug use."
+}

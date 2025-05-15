@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions a drug dealer hiding narcotics in fake books. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs. The post says "narcotics," which is a general term for illegal drugs. But looking at the index terms, "narcotics" isn't listed. The closest might be "other" since it's not a specific drug listed. However, the post also mentions "fake books"—maybe "books" here is a euphemism? Wait, no, "books" as in fake books, but that's not a drug. The main term here is "narcotics." Since "narcotics" isn't in the index terms, I should map it to "other." 
+
+Wait, but let me check the index terms again. The list includes things like Codeine, Amphetamine, Methamphetamine, etc. "Narcotics" is a broad term, but the specific drugs mentioned in the post are not listed. The user's example 4 had "snow" and "white lines" mapped to "other" because they weren't drugs. So in this case, "narcotics" is a general term, not a specific drug listed, so it should be "other." 
+
+Are there any other terms? The post mentions "drug dealer," but that's a person, not a drug. "Narcotics" is the key term here. So the matched phrase is "narcotics," and the index term is "other." 
+
+Wait, but maybe "narcotics" is a synonym for a specific drug? Let me check the index terms again. The index terms include "Codeine," "Amphetamine," "Methamphetamine," "Oxycodone," etc. But "narcotics" isn't listed. So the correct index term here is "other." 
+
+So the output should be one object with index_term "other" and matched_phrase "narcotics."
+</think>
+
+[{"index_term": "other", "matched_phrase": "narcotics"}]

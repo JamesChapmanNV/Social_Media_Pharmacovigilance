@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content classification. The user provided the content: "New article: Georgia Governor Appoints New Cannabis Commission Chair -". I need to determine if this is illicit/abusive-drug-related or not.
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, or promotion. Also, slang or cultural references indicating recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+The content mentions a "Cannabis Commission Chair". Cannabis is a drug, but the context here is about a commission being appointed. The article is about a government body, which is likely related to regulation or policy, not abuse or misuse. There's no mention of illegal use, promoting drugs, or encouraging misuse. It's more about governance and regulation. So, the context is educational or governmental, not promoting abuse. Therefore, this should be classified as False. The explanation would note that it's about a government commission, not promoting or discussing abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a government-appointed commission related to cannabis regulation, not promoting or discussing drug abuse or misuse."
+}

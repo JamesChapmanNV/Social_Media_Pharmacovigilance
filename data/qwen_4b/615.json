@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a content snippet: "So! You're actually a confessed drug dealer & or connected????" and wants it classified as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Also, slang or euphemisms that indicate recreational use or abuse. False includes medical, educational, or preventative contexts.
+
+The content here is a question asking if someone is a "confessed drug dealer" or connected. The term "drug dealer" is a direct reference to someone involved in selling drugs, which is illegal. The use of "confessed" suggests acknowledgment of involvement in illegal activities. This is promoting or glorifying drug dealing, which is abuse or misuse. 
+
+The user's example 1 had "lean" and "codeine" which are drugs, and the explanation was about the context of abuse. Here, the content is directly about being a drug dealer, which is illegal. The question is not just mentioning drugs in a medical context but rather pointing out someone's illegal activity. 
+
+So the label should be True because it's about drug dealing, which is illegal and related to abuse. The explanation should note the direct reference to drug dealing as an illegal activity.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content directly references 'drug dealer,' which indicates involvement in illegal drug distribution, a clear indication of illicit drug-related activity."
+}

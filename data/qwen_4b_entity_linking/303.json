@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Prince's overdose death and wants me to detect any drug-related references. First, I need to go through the post carefully.
+
+The post says: "the way he was publicly So against drugs but he died of an overdose". The key part here is "died of an overdose". Now, I need to check if "overdose" is a drug-related term. Looking at the index terms, there's no specific term for "overdose" listed. The index terms are specific to certain drugs or metabolites. Since "overdose" is a general term and not listed, it should be categorized as "other". 
+
+Wait, but maybe there's a drug mentioned here. The post mentions Prince was against drugs, but the cause of death was an overdose. However, the actual drug isn't named. The user's task is to detect any references to illicit drugs. Since the post doesn't name a specific drug, just mentions an overdose, which is a result, not a specific substance. Therefore, "overdose" would fall under "other" because it's not a specific drug listed in the index terms. 
+
+I need to make sure there are no other terms. The rest of the post doesn't mention any drugs. So the only match is "overdose", which maps to "other". Therefore, the JSON array should have one entry with "other" and "overdose".
+</think>
+
+[{"index_term": "other", "matched_phrase": "overdose"}]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The content is: "All we have left is to crack the 7M curse on yt. The day we surpass crown's views is the day we'll be invincible." 
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to abuse. The words here are "crack," "7M curse," "YT," "crown's views," and "invincible." 
+
+"Crack" can sometimes be a slang term for cocaine, but in this context, it's part of "7M curse," which might be a reference to a challenge or a viral trend on YouTube. The mention of "crown's views" could be about YouTube views or a specific channel. The phrase "invincible" is more about achieving success or dominance, not related to drug use.
+
+There's no explicit mention of drugs, illegal substances, or any context of abuse or misuse. The terms used are more about online challenges, views, and virality. The example given in the task mentions that False includes drug-related terms in unrelated contexts. Since there's no indication of drug use or promotion here, it's likely False. The explanation should note that the content refers to a YouTube challenge or viral trend, not drug-related abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a YouTube challenge or viral trend ('7M curse', 'crown's views') and does not mention drugs, abuse, or illicit substances."
+}

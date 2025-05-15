@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "birds in the trap sing Brian McKnight, percocet and codeine please don't take my life." I need to identify any drug references here.
+
+First, I'll go through each word or phrase. "Birds in the trap sing Brian McKnight" – that's probably a song reference, so no drugs there. Then "percocet" – looking at the index terms, Oxycodone is listed under Oxycodone (OxyContin, Percocet, Hillbilly Heroin). So "percocet" matches Oxycodone. Next, "codeine" is directly listed under Codeine (Lean, Purple Drank, Schoolboy). So "codeine" is a match for Codeine. The rest of the sentence is a plea, so no other terms there. 
+
+Check if there are any other possible terms. "Percocet" is definitely Oxycodone. "Codeine" is Codeine. The other words don't refer to drugs. So the JSON should have two entries: one for Oxycodone with "percocet" and one for Codeine with "codeine".
+</think>
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "percocet"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

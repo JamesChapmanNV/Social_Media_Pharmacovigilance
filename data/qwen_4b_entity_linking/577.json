@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "many say Silicon Valley drug culture revolves around stimulants and weed but I only ever seem to hear programmers talk about codeine". The task is to detect any drug-related references and map them to the appropriate index terms.
+
+First, I need to scan the post for any words or phrases that could refer to illicit drugs. The post mentions "stimulants" and "weed". Let's check the index terms. "Weed" is listed under Marijuana, so that's a match. Then "codeine" is explicitly mentioned, which is under the Codeine index term. 
+
+Wait, the user also says "stimulants". Are there any index terms for stimulants? Looking at the list, Amphetamine is a stimulant, but "stimulants" is a general term. However, the index terms don't have a general category for stimulants. The example in the task shows that if a phrase isn't directly in the list, it's marked as "other". So "stimulants" isn't a specific drug listed, so it should be "other". Similarly, "weed" is explicitly listed under Marijuana, so that's a match. 
+
+So the detected phrases are "weed" and "codeine". "Weed" maps to Marijuana, and "codeine" maps to Codeine. The rest of the post doesn't have any other drug references. The answer should be two entries in JSON format.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "weed"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

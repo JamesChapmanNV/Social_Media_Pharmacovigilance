@@ -1,0 +1,7 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "heroin" and I need to check if that's in the index terms. Looking at the list, Morphine is listed, but heroin isn't directly mentioned. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin specifically. However, the post says "heroin," which is a different substance. The index terms don't have a specific entry for heroin. So according to the instructions, if the drug isn't in the list, use "other". Therefore, "heroin" would map to "other". The rest of the post talks about a church and some criticism, but there are no other drug references. So the only match is "heroin" as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

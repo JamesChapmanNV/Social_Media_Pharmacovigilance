@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "I was a big grunge guy in the 90s. I mean, I lived in the Pacific Northwest, so is anyone surprised? Anyway, I still love it but Eddie Veder's voice from back then really grates on me in a way it never did. It's like all the mumbling of Michael Stipe on heroin."
+
+First, I need to check if there's any mention of drugs in the context of abuse or misuse. The user mentioned "heroin" in the last sentence. But wait, is that a direct reference to drug use or just a metaphor? The sentence says "Michael Stipe on heroin," which could be a metaphor comparing Stipe's voice to someone using heroin. But I need to be careful here. 
+
+The definition says True includes using slang, euphemisms, or cultural references that signal recreational drug use. Grunge music was associated with drug use in the 90s, so maybe that's a cultural reference. However, the mention of heroin here is a direct reference. But the context is about a music artist's voice, not promoting or encouraging drug use. The user is talking about a music style and a musician's voice, not promoting heroin use. 
+
+Also, the content is a personal reflection, not encouraging or glorifying drug misuse. The mention of heroin is in a metaphorical sense, not as a direct statement about using it. So it's more about cultural references rather than promoting drug abuse. Therefore, it's probably not ILLICIT. The key is whether it's promoting or encouraging misuse. Since it's a metaphor and not a direct mention of using drugs, it's more of a cultural reference, which might fall under False. 
+
+But wait, the user is comparing Michael Stipe's voice to heroin use. That could be seen as a negative metaphor, but not necessarily promoting drug use. The main point is that the content is about music and not directly about drug abuse. So the answer should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references heroin in a metaphorical comparison to a musician's voice, not in a context of promoting, encouraging, or glorifying drug abuse."
+}

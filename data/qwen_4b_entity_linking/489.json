@@ -1,0 +1,23 @@
+<think>
+Okay, let's see. The user provided a post about a man in Calabasas who allegedly scammed investors out of $28 million they thought would fund cannabis vaping businesses. The task is to detect any drug-related references in the post and link them to the appropriate index terms.
+
+First, I need to read through the post carefully. The main points are: the Editor is from Los Angeles, CA, a man named Calabasas Man, he scammed investors, and the money was supposed to fund cannabis vaping businesses. The key terms here are "cannabis vaping businesses." 
+
+Now, checking the index terms list. The index terms include "Marijuana (Cannabis, Weed, Pot)" which is listed as the most widely used illicit drug. The post mentions "cannabis vaping businesses," so "cannabis" is a direct reference. However, the index term for marijuana is "Marijuana," so that's a match. 
+
+But wait, the post says "cannabis vaping businesses." The term "cannabis" is explicitly mentioned, so that's a direct reference. The index term for cannabis is "Marijuana," so the matched phrase would be "cannabis" and the index term "Marijuana." 
+
+Are there any other terms? The post doesn't mention any other drugs or substances. Words like "vaping" might be a red herring, but it's not a drug itself. The rest of the post is about scamming investors and funding businesses, which doesn't involve any drug references beyond cannabis. 
+
+So the only detected phrase is "cannabis," which maps to the index term "Marijuana." The other terms like "vaping" aren't on the list of index terms, so they would be "other." But wait, the user's instruction says to detect every word or phrase that refers to an illicit drug or substance. "Vaping" is a method of consumption, but the substance here is cannabis. So "cannabis" is the key term. 
+
+Wait, the example in the user's prompt includes "snow" and "white lines" as "other" because they aren't drugs. So in this case, "cannabis" is a drug, so it's a match. The answer should be {"index_term": "Marijuana", "matched_phrase": "cannabis"}.
+
+But wait, the index term for marijuana is listed as "Marijuana (Cannabis, Weed, Pot)". So "cannabis" is a synonym for marijuana. Therefore, the correct index term is "Marijuana". 
+
+So the final answer is one object in the JSON array with index_term "Marijuana" and matched_phrase "cannabis".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

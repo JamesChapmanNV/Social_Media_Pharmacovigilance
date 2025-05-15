@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this. The content is "Currently Playing: Venus Blake - Chocolate Morphine, at Lonely Oak radio." I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll check for any drug names. "Morphine" is a controlled substance, but the song title is "Chocolate Morphine." The term "chocolate" here might be a slang or a creative name. But the key is whether it's promoting abuse. The context is a radio station playing the song. 
+
+Now, considering the definitions: True includes mentions of illegal drugs in abuse contexts. But here, the song title uses "morphine," which is a drug. However, the context is just a radio play, not promoting use. The user might be referring to the song's title, but without more info, it's unclear if the song is about drug use. 
+
+But the example given in the task had "lean" and "codeine" as indicators. Here, "morphine" is a drug. However, the song title might be a metaphor or not directly related to abuse. The radio play itself doesn't mention anything about using or promoting drugs. So maybe it's not directly related. 
+
+Wait, the definition says if it's in the context of abuse, misuse, etc. Since the content is just a radio play, unless the song's title is a reference to drug use, which isn't clear. The user might be using "chocolate morphine" as a creative title, not necessarily indicating abuse. So the label might be False because it's not promoting misuse. 
+
+But I'm not sure. Maybe "morphine" in the title is a red flag. However, the context is just a music stream. The example 1 had "hooked on codeine" which was abuse. Here, the song title is a title, not promoting use. So the answer is False. The explanation would be that it's a song title without promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a song title with'morphine' but does not explicitly promote, encourage, or describe drug abuse in a social media context."
+}

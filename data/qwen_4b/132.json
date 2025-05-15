@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is about someone winning a WSOP bracelet. The user mentioned a "dealer" who won a prize. Now, I need to check if there's any mention of drugs or drug-related terms.
+
+The key terms here are "dealer" and "WSOP". Wait, "dealer" could be a slang term for someone dealing drugs, but in the context of a poker tournament, "dealer" usually refers to the person who deals cards. The hashtag #WSOP2021 is about a poker event. There's no mention of drugs, illegal substances, or anything related to abuse. The prize money is $39k, which is typical for such events. The explanation in the example mentions that if there's no promotion of misuse, it's false. Since there's no drug reference here, it's probably not illicit. So the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a poker tournament winner and uses 'dealer' in the context of a card game, with no mention of drugs or drug-related abuse."
+}

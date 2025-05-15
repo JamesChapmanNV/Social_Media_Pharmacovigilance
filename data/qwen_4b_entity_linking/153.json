@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Denver's first 'equity' cannabis store went to a white guy from Wyoming Lol". I need to check for any drug-related references here.
+
+First, I'll scan the post for any terms that might refer to illicit drugs or substances. The main words here are "cannabis". Looking at the Index Terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is listed as the most widely used illicit drug. So "cannabis" would map to "Marijuana" in the index terms. 
+
+The rest of the post mentions "equity" which might be a term related to cannabis stores, but that's not a drug reference. "White guy from Wyoming" is just describing a person, not a drug. "Lol" is an expression, not related. 
+
+I need to make sure there are no other terms. The post doesn't mention any other drugs or slang. So the only match is "cannabis" under the Marijuana index term. 
+
+Wait, the example in the problem statement had "cannabis" mapped to "Marijuana". So in this case, the matched phrase is "cannabis", and the index term is "Marijuana". 
+
+I should check if "equity" is a term in the index. Looking through the list, no, "equity" isn't listed. So the only match is "cannabis". 
+
+So the JSON array should have one object: index_term "Marijuana" and matched_phrase "cannabis".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

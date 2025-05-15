@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet that needs classification as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "HIT HER WITH NO CONDOM HAD TO MAKE HER EAT A PLAN B AND IM SIPPIN ON THAT CODEINE NOT BRANDY!!!!!!!!!!!!!!!!!!!!!!!"
+
+First, I need to parse the content. The key terms here are "PLAN B" and "CODEINE". PLAN B is a brand name for emergency contraception, which is a medical product. But the context here is a bit different. The user mentions "HIT HER WITH NO CONDOM" which implies a sexual encounter without protection, leading to the need for Plan B. Then, they say "IM SIPPIN ON THAT CODEINE NOT BRANDY" which is a slang expression. "Sippin on" is a colloquial way of saying using or consuming something, and "codeine" is an opioid drug. The mention of codeine in this context could be related to abuse or misuse, especially if it's being used in a recreational or non-medical way.
+
+Now, considering the definitions. True includes content that mentions illegal, RX, or OTC drugs in the context of abuse or misuse. The user is talking about using codeine, which is an opioid, and the context seems to be about using it in a way that's not medical. Also, the use of "sippin on" is a slang term that can indicate recreational use. The mention of Plan B is a medical product, but the overall context might be about drug use. However, the main focus here is on codeine. The exclamation marks and the casual tone might indicate a more casual or even abusive context. 
+
+But wait, the user is also talking about a sexual encounter without a condom, which could be a red flag for drug use in that context. The codeine is mentioned as something being consumed, not in a medical setting. The phrase "not brandy" might be a way to say that they're not using alcohol, but instead codeine. 
+
+So, the key points are the use of codeine in a non-medical context, possibly for recreational use, and the casual, possibly abusive tone. The mention of Plan B is a medical product, but the overall content is more about the use of codeine. The explanation needs to highlight that codeine is being used in a context that suggests abuse or misuse, possibly in a recreational setting. 
+
+Therefore, the label should be True because the content mentions codeine in a context that implies misuse, and the use of slang like "sippin on" indicates recreational use. The mention of Plan B is a red herring, but the main focus is on codeine. The explanation should connect the use of codeine with abuse or misuse, and the slang terms.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a casual, slang-heavy context ('sippin on') and implies recreational use, suggesting misuse or abuse."
+}

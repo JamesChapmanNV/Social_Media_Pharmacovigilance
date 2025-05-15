@@ -1,0 +1,5 @@
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Zolpidem", "matched_phrase": "ambien"},
+  {"index_term": "Diazepam", "matched_phrase": "valium"}
+]

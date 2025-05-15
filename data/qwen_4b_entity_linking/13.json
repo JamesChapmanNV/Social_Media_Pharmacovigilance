@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Im on Ocean Drive sipin' codeine w the top down 🏍". I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "codeine". Checking the index terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "sipin' codeine" directly uses "codeine", which is in the list. So that's a clear match. The other parts of the sentence like "Ocean Drive" and "w the top down" are just context about being on a drive, so they don't refer to drugs. The emoji is just decorative. So the only match here is "codeine". The index term for codeine is "Codeine", so the JSON should have one object with that term and the matched phrase. No other terms are present here. Let me make sure there's no other slang or euphemism. "Sipin'" is slang for drinking, but the drug is codeine. So the answer should be the single entry for codeine.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

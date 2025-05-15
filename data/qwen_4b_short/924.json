@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user is asking me to label a social media post as T or F based on specific rules. The post is "They won't take a QB at 6". The rules say T if the text shows illicit or abusive drug use, like using, seeking, buying, selling, trafficking, or slang for drugs. Otherwise, it's F.
+
+First, I need to parse the sentence. "They won't take a QB at 6". QB stands for Quarterback, which is a position in American football. The phrase "take a QB" might be a metaphor or slang. But wait, in football terms, "taking a QB" could mean selecting a quarterback in a draft, but the "at 6" part is confusing. Maybe "at 6" refers to the 6th round in the draft? So the sentence is about a football draft, where they aren't taking a quarterback in the 6th round. 
+
+Now, checking if there's any drug-related terminology here. The words "QB" is an acronym for football, not drugs. The numbers "6" could be a round number, but not related to drugs. There's no mention of drugs, slang, or any related terms. The sentence is about sports, specifically football drafts. 
+
+So according to the rules, since there's no mention of drugs or related terms, the label should be F. The user is testing if I can distinguish between sports jargon and drug-related terms. The answer is F.
+</think>
+
+F

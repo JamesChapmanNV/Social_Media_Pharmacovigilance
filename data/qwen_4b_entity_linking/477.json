@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Doc just prescribed morphine. Fingers crossed it does the trick. X". I need to detect any drug-related references here.
+
+First, I'll go through each word. "Doc" is just a doctor, so that's fine. "Prescribed morphine" – morphine is listed in the index terms as an opioid analgesic. So "morphine" directly maps to "Morphine". The next part is "Fingers crossed it does the trick." "Trick" here is probably a slang for effectiveness, but not a drug term. The "X" at the end is just a hashtag or emoji, not a drug reference.
+
+Looking at the index terms, Morphine is listed as the index term. So the matched phrase is "morphine". There's no other drug mentioned here. The example in the task shows that "codeine" and "lean" are both mapped to Codeine. Similarly, "morphine" should be mapped to "Morphine". 
+
+I should check if there's any other possible terms. "Fingers crossed" is a common phrase, but not a drug reference. "Trick" isn't in the list. So the only match is "morphine". 
+
+Wait, the user's example 1 had "lean" and "codeine" both mapped to Codeine. So in this case, "morphine" is the exact term, so the index term is "Morphine". 
+
+No other phrases here. So the JSON array should have one object with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

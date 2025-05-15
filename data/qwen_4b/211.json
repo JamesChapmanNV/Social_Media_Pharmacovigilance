@@ -1,0 +1,14 @@
+<think>
+Okay, let's see. The user provided a content snippet that's just "Overdose" followed by some hashtags related to a K-pop group, EXO. I need to determine if this is illicit/abusive-drug-related.
+
+First, the main word here is "Overdose." That's a direct term related to drug use, specifically indicating an excessive amount of a substance, which can be life-threatening. The hashtags are about a group, which is unrelated. But the key part is the word "Overdose." 
+
+Now, according to the definitions, True includes mentions of illegal drugs in contexts of abuse or misuse. "Overdose" is a clear indicator of drug abuse. Even if there's no explicit mention of a drug name, the term itself is strong evidence. The hashtags don't add any context here, so the main focus is on "Overdose."
+
+The example given in the task had "lean" and "codeine" which are drugs, and the explanation was about the context. Here, "Overdose" is a direct term related to drug abuse. So the label should be True. The explanation would mention that "Overdose" indicates drug abuse or misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The term 'Overdose' directly indicates drug abuse or misuse in a life-threatening context."
+}

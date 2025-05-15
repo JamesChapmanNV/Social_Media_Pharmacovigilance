@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I gotta bitch for everyday of the week & I gotta brick for every crack on yo street." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I should break down the words. "Bitch" here is likely a slang term. In some contexts, "bitch" can be a slang for a drug, like a "bitch" in the sense of a drug dealer or a drug. Then "brick" is a slang term for crack cocaine. "Crack" is also a direct reference to the drug. The phrase "everyday of the week" and "every crack on yo street" seems to be talking about frequent use or dealing with the drug. The tone here is supportive or even glorifying the use of these drugs. 
+
+Looking at the definitions, True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. The terms "brick" and "crack" are definitely drugs. The use of "bitch" as slang here is likely referring to a drug. The content is using these terms in a way that seems to endorse or glorify their use, especially with phrases like "everyday of the week" suggesting regular use. 
+
+So the classification should be True. The explanation would mention the slang terms and the context of drug use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses 'brick' (slang for crack cocaine) and 'crack' directly, with a tone implying habitual drug use and association with street-level drug culture."
+}

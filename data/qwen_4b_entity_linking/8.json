@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references. The post is: "First one and the third one the best. Love the actress that playes the """drug dealer""" one in the first and third".
+
+First, I need to go through the post word by word. The main phrases here are "drug dealer". The task is to check if "drug dealer" is a slang or euphemism for an illicit drug or substance. Looking at the Index Terms list, I don't see "drug dealer" listed. The Index Terms include specific drugs like Codeine, Amphetamine, LSD, etc., but not general terms like "drug dealer". 
+
+The user's instruction says if the drug isn't in the list, use "other". So "drug dealer" isn't a specific drug listed, so it should map to "other". The phrase "drug dealer" is a person who sells drugs, but since it's not a direct reference to a substance, it's categorized as "other".
+
+I need to make sure there are no other terms. The rest of the post doesn't have any drug-related words. The mention of "actress that plays the """drug dealer""" one" is just referring to a role in a show or movie. So the only matched phrase here is "drug dealer", which maps to "other".
+
+So the JSON array should have one object with index_term "other" and matched_phrase "drug dealer".
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug dealer"}]

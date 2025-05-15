@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "What appears like an ordinary cough medication is proving to be the most sought after drug ingredient. Codeine is..." I need to detect any drug-related references here.
+
+First, I'll read through the post carefully. The first sentence mentions "ordinary cough medication" which is a bit vague. But the second part says "Codeine is..." So the key phrase here is "Codeine". 
+
+Looking at the Index Terms list, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The post uses the exact term "Codeine", so that's a direct match. The first part about cough medication might be a hint, but since Codeine is explicitly mentioned, that's the main term here. 
+
+I need to check if there's any other slang or phrases. The post doesn't mention any other drugs. The phrase "most sought after drug ingredient" could imply that the cough medication is a drug, but the explicit mention is "Codeine". 
+
+So the only matched phrase here is "Codeine". According to the Index Terms, Codeine is listed, so the index term is Codeine. There's no other term here. The answer should be a JSON array with one object: index_term as Codeine and matched_phrase as codeine.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content here is about dying in a hospital and mentions opioid pain medications like morphine. The explanation talks about how these meds can make patients not aware of their caregivers or visitors. Then there's a mention of a slowly dying sibling and a hashtag about Trump.
+
+First, I need to check if there's any mention of illegal or abused drugs. The content does mention morphine, which is an opioid. But the context here is about its use in a medical setting, specifically in pain management for a dying patient. The explanation discusses the effects of morphine on a patient's awareness, which is part of its medical use. There's no indication of abuse, misuse, or promotion. The hashtag about Trump seems unrelated. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse. Here, morphine is a prescribed medication, not illegal. The discussion is about its medical use and effects, not about using it for recreational purposes or promoting abuse. The mention of a dying sibling is about end-of-life care, which is a medical context. 
+
+So, the content is in a medical or educational context, discussing the effects of a prescribed medication. There's no encouragement or glorification of drug misuse. Therefore, it should be classified as False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses opioid pain medications (morphine) in a medical context related to end-of-life care, not abuse, misuse, or promotion of illicit drugs."
+}

@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this content classification. The user provided a specific example, so I need to analyze it carefully.
+
+The content says: "The way you're asking the question is like you're looking for a schedule for how long to get well. Doesn't matter what you're smoking - meth, heroin, crack, whatever - it's going to be physically, mentally and emotionally difficult, but it's worth it. Get help."
+
+First, I need to check if this is promoting or glorifying drug use. The mention of meth, heroin, and crack are all illicit drugs. The phrase "it's going to be physically, mentally and emotionally difficult, but it's worth it" seems to suggest that despite the challenges, using these drugs is considered worthwhile. That's encouraging or glorifying misuse, which fits the True category. The last part "Get help" might be a bit confusing, but the overall tone is about the difficulty and the perceived value of using these drugs. So the classification should be True because it's promoting drug use despite its negative effects.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions illicit drugs (meth, heroin, crack) and glorifies their use by suggesting they are 'worth it' despite severe physical, mental, and emotional consequences."
+}

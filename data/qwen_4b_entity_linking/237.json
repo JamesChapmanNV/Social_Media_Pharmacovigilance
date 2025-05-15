@@ -1,0 +1,43 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "IS IT CRACK? COCAINE OR METH YOU SMOKE!???" and wants me to detect any drug references, link them to the index terms, and return a JSON array.
+
+First, I need to go through each word or phrase in the post. The post is in all caps, so I should check each term. The first word is "CRACK". Looking at the index terms, I see that cocaine is listed, but crack isn't explicitly mentioned. Wait, the index terms include "Benzoylecgonine (BZE, Ecgonine benzoate)" as the primary metabolite of cocaine. However, the user's post mentions "CRACK", which is a form of cocaine. But in the index terms, there's no direct entry for crack. The example given in the problem statement includes "other" when the drug isn't on the list. So "crack" would be "other" since it's not listed. 
+
+Next, "COCAINE" is explicitly listed in the index terms under "Benzoylecgonine (BZE, Ecgonine benzoate)" as the primary metabolite. So "COCAINE" should map to "Benzoylecgonine". But wait, the index term for cocaine is actually "Benzoylecgonine", but the user might be referring to the drug itself. Wait, looking back at the index terms, the entry for cocaine is under Benzoylecgonine, which is the metabolite. However, the index terms list "Benzoylecgonine" as the term for cocaine's metabolite. But the user is asking about the actual drug name. Wait, the index terms might not have a direct entry for "cocaine" but rather its metabolite. Let me check the list again.
+
+Looking at the index terms, "Benzoylecgonine (BZE, Ecgonine benzoate)" is listed as the primary metabolite of cocaine. So if the post mentions "COCAINE", the index term would be "Benzoylecgonine" because that's the metabolite. But the user's task is to link the phrase to the index term. However, the index terms might not have a direct term for the drug name. Wait, the index terms are the actual terms used for the substances. For example, "Codeine" is an index term, and "lean" is a slang for codeine. So if the post says "COCAINE", the index term would be "Benzoylecgonine" because that's the metabolite. Wait, but the index terms are the actual names of the substances. Let me check again.
+
+Looking at the index terms list, "Benzoylecgonine (BZE, Ecgonine benzoate)" is the entry for cocaine's metabolite. So if the post mentions "COCAINE", the index term would be "Benzoylecgonine". But wait, the user is asking for the index term that matches the substance. However, the index terms are the specific terms listed. For example, "Codeine" is an index term, and "lean" is a slang for codeine. So if the post says "COCAINE", the index term would be "Benzoylecgonine" because that's the metabolite. But the problem is that the index terms list "Benzoylecgonine" as the term for cocaine's metabolite, but the actual drug is cocaine. However, the index terms might not have a direct entry for the drug name, but the metabolite. So in this case, "COCAINE" would map to "Benzoylecgonine".
+
+Then there's "METH". Methamphetamine is listed as an index term. So "METH" would map to "Methamphetamine". 
+
+So the post has "CRACK", "COCAINE", and "METH". 
+
+"CRACK" is not listed in the index terms, so it's "other". "COCAINE" maps to "Benzoylecgonine". "METH" maps to "Methamphetamine".
+
+Wait, but in the index terms, "Methamphetamine (Crystal Meth, Ice, Desoxyn)" is listed. So "METH" is a slang for methamphetamine, so the index term is "Methamphetamine".
+
+So the JSON array would have:
+
+- "other" for "CRACK"
+- "Benzoylecgonine" for "COCAINE"
+- "Methamphetamine" for "METH"
+
+But wait, the example in the problem statement for "xans" was "other" because it's not on the list. So "CRACK" is not in the index terms, so "other". "COCAINE" is the metabolite, so the index term is "Benzoylecgonine". "METH" is a slang for methamphetamine, which is an index term. So that's correct.
+
+So the final answer would be:
+
+[
+  {"index_term": "other", "matched_phrase": "CRACK"},
+  {"index_term": "Benzoylecgonine", "matched_phrase": "COCAINE"},
+  {"index_term": "Methamphetamine", "matched_phrase": "METH"}
+]
+
+But wait, the user's post is in all caps. The matched_phrase should be the exact text, so "CRACK", "COCAINE", "METH". But the index terms for cocaine is "Benzoylecgonine", which is the metabolite. However, the problem says that the index terms are the terms listed. So the correct mapping is as above.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "CRACK"},
+  {"index_term": "Benzoylecgonine", "matched_phrase": "COCAINE"},
+  {"index_term": "Methamphetamine", "matched_phrase": "METH"}
+]

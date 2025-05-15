@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content here is a social media post that references Prophet Muhammad and mentions "Arak tree." 
+
+First, I need to recall the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. False includes medical, educational, or preventative contexts. Also, slang or euphemisms related to drug use.
+
+The content talks about a hadith where the Prophet mentions that even taking a false oath about a stick from the Arak tree is a sin. Arak is a type of traditional Middle Eastern drink, often made with alcohol. However, the key here is the context. The post is discussing religious teachings, not promoting or abusing drugs. It's about a religious obligation or sin related to lying, not about drug use. 
+
+There's no mention of any illegal drugs, their abuse, or promotion. The reference to Arak is in the context of a religious teaching about lying, not drug use. So, the content is not related to illicit drugs. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses religious teachings about lying and a hadith related to false oaths, not drug use or abuse."
+}

@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Working on merch for brainrot :) ( on Instagram)". I need to detect any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs. The main phrase here is "brainrot". Now, I need to check if "brainrot" is listed in the index terms. Scanning through the list, I don't see "brainrot" mentioned. The index terms include things like Codeine, Amphetamine, LSD, etc., but not "brainrot". 
+
+Next, I should consider if "brainrot" is a slang or euphemism for a drug. From what I know, "brainrot" isn't a standard term for a drug. It might be a term used in a different context, like a meme or a brand name. Since the user's task is to check against the provided index terms, and "brainrot" isn't listed there, the correct index term would be "other".
+
+The post also mentions "( on Instagram)" which is probably a typo or a placeholder. The parentheses and the mention of Instagram don't relate to drugs. So, the only possible match is "brainrot", which isn't in the index terms. Therefore, the matched phrase should be "brainrot" with index_term "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "brainrot"}]

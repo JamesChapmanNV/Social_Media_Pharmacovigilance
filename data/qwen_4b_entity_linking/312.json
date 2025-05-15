@@ -1,0 +1,29 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I'm like ma'am please give me all the Oxy and Morphine. Fuck that Tylenol lol." I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll break down the post. The user is asking for "Oxy" and "Morphine," and mentions "Tylenol." Let me check the index terms list.
+
+Looking at the list, "Oxycodone" is listed under the index term "Oxycodone (OxyContin, Percocet, Hillbilly Heroin)." So "Oxy" is a slang for Oxycodone. Then "Morphine" is directly listed as an index term. "Tylenol" is a brand name for acetaminophen, which is an OTC drug, but it's not on the list of illicit drugs. The instructions say to use "other" if the drug isn't in the list. So "Tylenol" would be "other."
+
+Wait, the task says to detect every word or phrase that refers to an illicit drug or substance. Tylenol is OTC, but the user is saying "Fuck that Tylenol," which might be a derogatory term. However, since Tylenol isn't listed as an illicit drug in the index terms, it should be "other." 
+
+So the matched phrases are "Oxy," "Morphine," and "Tylenol." Mapping them: "Oxy" is Oxycodone, "Morphine" is Morphine, and "Tylenol" is other. 
+
+Let me double-check the index terms. Yes, Oxycodone is listed, Morphine is listed, and Tylenol isn't. So the JSON should have two entries for Oxy and Morphine, and one for Tylenol as other. Wait, but the example in the problem had "xans" as other. So in this case, the user is asking for Oxy (which is a drug) and Morphine (another drug), but Tylenol is OTC. So the correct mapping is Oxy to Oxycodone, Morphine to Morphine, and Tylenol to other. 
+
+So the JSON array should be:
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "Oxy"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "other", "matched_phrase": "Tylenol"}
+]
+
+But wait, the user wrote "Tylenol" in the post. The index terms don't include Tylenol, so it's "other." That's correct. The example 3 had "xans" as other, so same logic here. So the answer should be those three entries.
+</think>
+
+[
+  {"index_term": "Oxycodone", "matched_phrase": "Oxy"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "other", "matched_phrase": "Tylenol"}
+]

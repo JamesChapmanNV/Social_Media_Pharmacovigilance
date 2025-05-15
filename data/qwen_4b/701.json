@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The content is: "bruh does no one notice this guy is wearing a tie dye codeine shirt?" 
+
+First, I need to determine if this is illicit or abusive drug-related. The key terms here are "codeine" and "tie dye shirt." Codeine is a controlled substance, so mentioning it could be relevant. But the context is someone wearing a shirt with codeine printed on it. The phrase "bruh" is slang, often used in a casual or humorous way, maybe to get attention.
+
+Now, the question is whether this is promoting or glorifying drug use. The user is asking if people notice the shirt, which might be a reference to codeine, but it's not clear if it's about using the drug or just a fashion statement. The term "tie dye" is common in clothing, so the shirt might be a cultural reference rather than a direct mention of drug use. 
+
+Looking at the definitions, True includes mentions of illegal drugs in contexts of abuse or misuse. However, if the content is just referring to a shirt with a drug name on it without any indication of use or promotion, it might fall under False. The example given in the task where a shirt with a drug name was mentioned was classified as False because it was a cultural reference without promoting misuse. 
+
+So, in this case, the content is about someone wearing a shirt with codeine, which is a slang term. The user is asking if people notice, which is more of a social comment rather than promoting drug use. Therefore, the label should be False because it's not encouraging or glorifying drug abuse but rather a reference to clothing with a drug name.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a shirt with 'codeine' in a casual, cultural context without indicating drug use, promotion, or abuse."
+}

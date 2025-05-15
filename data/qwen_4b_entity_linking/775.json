@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I took some cough medicine on Friday codeine knocked me out all day". I need to identify any drug references here.
+
+First, I'll break down the sentence. The words "codeine" are mentioned directly. Looking at the index terms, codeine is listed under "Codeine (Lean, Purple Drank, Schoolboy)". So "codeine" is a direct match. 
+
+Then there's "cough medicine". The index terms don't list "cough medicine" specifically, but codeine is a mild opioid painkiller and cough suppressant. The post mentions taking cough medicine, which might imply codeine, but the user might be referring to a generic cough syrup. However, since "codeine" is explicitly mentioned, that's the key term here. 
+
+The phrase "knocked me out all day" could be a euphemism for the effects of codeine, but the index terms don't have a specific entry for that. The main match is "codeine". 
+
+So the detected phrase is "codeine", which maps to the index term "Codeine". The other part, "cough medicine", isn't listed in the index terms, so it would be "other". Wait, but the example 3 shows that "xans" is "other". However, in the example, "xans" isn't a specific drug. But in this case, "cough medicine" might be a generic term. However, the user might be referring to codeine-based cough syrup. But according to the index terms, "codeine" is a direct match. The problem is that "cough medicine" isn't a specific term in the index, so it would be "other". But the user's post says "codeine knocked me out", so the main phrase is "codeine". The "cough medicine" is a general term, but since codeine is a specific drug, the main match is codeine. 
+
+Wait, the task is to detect every word or phrase that refers to an illicit drug. "Cough medicine" could be a generic term, but if it's codeine-based, then codeine is the term. However, the user might not be referring to codeine here. But the post says "codeine knocked me out", so the key phrase is "codeine". The "cough medicine" is a general term, but the index terms don't have "cough medicine", so it would be "other". But the example 3 shows that "xans" is "other" even though it's a slang for benzodiazepine. So in this case, "cough medicine" is not a specific drug in the list, so it's "other". But the user might be referring to codeine as part of the cough medicine. However, the task is to detect every word or phrase that refers to an illicit drug. Since "codeine" is explicitly mentioned, that's a match. The "cough medicine" is a general term, but if it's codeine-based, then codeine is the drug. But the user's post says "I took some cough medicine on Friday codeine knocked me out all day". So "codeine" is the drug here. The "cough medicine" is part of the context but not a specific drug term. Therefore, the only detected phrase is "codeine", which maps to "Codeine". 
+
+Wait, but the user might be referring to "cough medicine" as a slang for codeine. However, the index terms don't have "cough medicine" as a term. The index term for codeine includes "Lean, Purple Drank, Schoolboy", but "cough medicine" isn't listed. Therefore, "codeine" is the only match here. So the answer should be one object with "codeine" as the index term and "codeine" as the matched phrase. The "cough medicine" is not a specific drug in the list, so it's "other", but the user might not have intended that. However, the task is to detect every word or phrase that refers to an illicit drug. Since "codeine" is explicitly mentioned, that's the only match. The "cough medicine" is a general term, but if it's codeine-based, then codeine is the drug. But the user might not be using "cough medicine" as a slang. Therefore, the correct answer is {"index_term": "Codeine", "matched_phrase": "codeine"}.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

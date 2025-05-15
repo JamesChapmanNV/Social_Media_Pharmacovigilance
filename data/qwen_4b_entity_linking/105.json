@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Accidentally taken too much codeine at work and I actually feel off my face 😂". I need to detect any drug references here.
+
+First, I'll look for keywords related to illicit drugs. The phrase "codeine" is directly mentioned. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" maps directly to Codeine. The user also says "feel off my face", which might be a slang term for feeling high or impaired, but I need to check if "off my face" is a recognized term in the index. Looking through the list, I don't see "off my face" as a specific term. The example in the prompt had "feel off my face" in a different context, but in this case, it's likely referring to the effects of codeine. However, the task is to match exact phrases from the index terms. Since "off my face" isn't listed, I should check if any other terms might fit. But the main phrase here is "codeine", which is explicitly in the index. The "feel off my face" is more of a description of the effect, not a drug name or slang. So the only match here is "codeine". 
+
+Wait, the example 1 had "lean" and "codeine" both mapped to Codeine. So in this case, the post mentions "codeine" directly, so that's a clear match. The other part is the effect, but the task is to detect the drug references in the post, not the effects. So the only matched phrase is "codeine". Therefore, the JSON should have one entry with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

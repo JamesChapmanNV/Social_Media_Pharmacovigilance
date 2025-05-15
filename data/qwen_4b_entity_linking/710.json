@@ -1,0 +1,31 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully. The post says: "Broadway street is something fucking else. I saw a dead kitten on the freeway yesterday and I thought that was bad. Broadway is worse I can tell you that. P sure I saw two dudes shooting each other's heroin 🙃"
+
+Looking for drug terms. The first part talks about Broadway street, which might be a slang term. But I need to check the index terms. The index terms include "Codeine" with synonyms like "Lean" and "Purple Drank". The user mentions "heroin" in the last sentence. Heroin is listed in the index terms as a separate entry. 
+
+Wait, the index terms don't have "heroin" listed. Let me check again. The index terms include "Morphine" and "Oxycodone", but not heroin. However, "heroin" is a drug, but if it's not in the list, I should use "other". But wait, looking at the index terms again, there's "Heroin" listed? Wait, no. Let me check the list again. The index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. So "heroin" isn't in the list. Therefore, "heroin" would be "other".
+
+But wait, in the example 4, "snow" was "other" even though it's not a drug. So in this case, "heroin" is not in the index terms, so it should be "other". But wait, the user wrote "shooting each other's heroin". So "heroin" is the drug here. But the index terms don't have "heroin" as an index term. The closest is "Morphine", but that's not the same. So "heroin" would be "other".
+
+But wait, the index terms include "Codeine" with "Lean", "Purple Drank", "Schoolboy". The user mentions "lean" in the first example. But in this post, the user says "heroin". So "heroin" is not in the index terms, so it's "other".
+
+So the matched phrases here are "heroin". The index term for heroin is not listed, so it's "other". Also, "Broadway street" – is that a slang term? The index terms don't have "Broadway" as a drug. So that's "other". But the user might be referring to "Broadway" as a place, not a drug. So the only drug reference here is "heroin", which maps to "other".
+
+Wait, but in the example 3, "xans" was "other" because it's not in the list. So "heroin" is not in the index terms, so it's "other".
+
+So the JSON array would have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+But wait, the user also mentions "Broadway street". Is that a slang term? Let me check the index terms again. The index terms include "Codeine", "Heroin" is not listed. So "Broadway street" is not a drug term, so it's "other".
+
+So the post has two phrases: "heroin" and "Broadway street". But the user's post says "Broadway street is something fucking else. I saw a dead kitten... Broadway is worse... P sure I saw two dudes shooting each other's heroin".
+
+So "Broadway street" is a place, not a drug. The only drug term is "heroin", which is not in the index terms, so "other".
+
+So the correct output is one entry for "heroin" as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

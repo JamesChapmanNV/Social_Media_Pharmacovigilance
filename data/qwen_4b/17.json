@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this content. The user is asking me to classify the given text as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "IMHO adults should be able to buy quality, tested, clean cocaine & heroin & LSD from drug stores. What's in that, fentanyl? Nope, check the label. Prohibition is a crime & every substance should be legal. I'm moderate on a lot of stuff (serious!) but I'm hardcore on legalization."
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. The content here is talking about legalizing drugs like cocaine, heroin, and LSD. The user is advocating for legal access to these substances, which are all illegal. The mention of "buy quality, tested, clean" suggests they're talking about purchasing these drugs, which is a form of promoting or encouraging their use. Also, the phrase "Prohibition is a crime" implies support for drug legalization, which can be seen as encouraging misuse if not regulated. The use of terms like "hardcore on legalization" reinforces the idea of promoting access. Even though the user mentions checking labels for fentanyl, which is a concern, the overall message is about legalizing these drugs, which is a clear promotion of their use. So according to the definitions, this would be classified as True because it's promoting the availability of illicit drugs, which is abuse or misuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content promotes the legal sale of illicit drugs (cocaine, heroin, LSD) and advocates for their availability, which aligns with encouraging abuse or misuse."
+}

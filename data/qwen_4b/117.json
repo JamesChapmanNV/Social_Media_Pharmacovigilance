@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet: "I think I'm losing my mind, codeine keep slowing my time." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I should check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying drug misuse.
+
+The content mentions "codeine," which is an OTC drug, but here it's being used in a way that sounds like it's causing negative effects. The phrase "keep slowing my time" might be a slang reference. The user is talking about their own experience with codeine, possibly indicating misuse. The tone seems personal and possibly indicating that the drug is being used in a way that's causing issues. 
+
+But wait, is "slowing my time" a euphemism for something else? Maybe they're referring to the drug's effects, like drowsiness or slowing down. However, the user is expressing that they think they're losing their mind, which could be a sign of dependency or abuse. The mention of codeine in a context where it's causing negative effects might fall under misuse. 
+
+Alternatively, could this be a metaphor? But given the context of codeine, which is a controlled substance, and the user's statement about it affecting them, it's more likely related to abuse. The content doesn't mention any medical use or education, so it's not in a False category. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' in a personal, negative context suggesting misuse or dependency, with'slowing my time' implying adverse effects of drug use."
+}

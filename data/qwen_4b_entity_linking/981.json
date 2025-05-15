@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Jumping Off Of A Mountain Into A Sea Of Codeine". My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The phrase "Sea Of Codeine" stands out. Now, looking at the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The exact match here is "Codeine", so "Sea Of Codeine" would map to Codeine. 
+
+I need to check if there are any other phrases. The rest of the post is "Jumping Off Of A Mountain Into A Sea Of Codeine". The main phrase here is "Sea Of Codeine", which directly refers to Codeine. There's no other drug mentioned here. 
+
+I should make sure that "Sea Of Codeine" is considered a matched phrase. The index term is Codeine. So the JSON array should have one object with index_term as Codeine and matched_phrase as "Sea Of Codeine". 
+
+Wait, the example 1 had "lean" and "codeine" both mapped to Codeine. In this case, the phrase is "Sea Of Codeine", which is a different phrase but still refers to Codeine. Since the task is to detect every word or phrase that refers to an illicit drug, even if it's a metaphorical or euphemistic expression, as long as it's a reference to the drug, it should be included. 
+
+So the correct output would be an array with one entry: {"index_term": "Codeine", "matched_phrase": "Sea Of Codeine"}.
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "Sea Of Codeine"}]

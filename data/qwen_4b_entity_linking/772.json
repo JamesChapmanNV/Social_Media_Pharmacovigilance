@@ -1,0 +1,83 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "The three most harmful addictions are heroin, carbohydrates, and a monthly salary." I need to identify any drug-related references here.
+
+First, I'll go through each word. "Heroin" is definitely a drug on the list. Looking at the Index Terms, Morphine is listed, and Heroin is a prototypical opioid. Wait, the Index Term for Heroin is "Morphine"? Let me check. No, the Index Terms list "Morphine" as a separate entry. Wait, the user's Index Terms include "Heroin (MS Contin, Miss Emma, Morph)" but in the list, the entry is "Morphine (MS Contin, Miss Emma, Morph)"? Wait, no. Let me check again.
+
+Looking back at the Index Terms provided:
+
+- Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence.
+
+Wait, the entry for Morphine is listed as the index term. But the post mentions "heroin". However, in the Index Terms, "Heroin" isn't explicitly listed. Wait, looking at the list again:
+
+The Index Terms include "Morphine" as an entry, but "Heroin" isn't directly listed. Wait, the user's Index Terms list "Morphine" as an index term, but heroin is a different drug. Wait, but in the example given, "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". So, in the example, "lean" maps to Codeine. Similarly, if the post mentions "heroin", is there an index term for heroin?
+
+Looking at the Index Terms again:
+
+The Index Terms list "Morphine" as an entry. Then, "Heroin" is not explicitly listed. Wait, but in the example, "Codeine" is mapped to "lean", which is a slang term. So, if the post mentions "heroin", is there an index term for that? Let me check the list again.
+
+Looking through the Index Terms:
+
+- "Heroin (MS Contin, Miss Emma, Morph)" – Wait, no. Wait, the user provided the Index Terms as a list. Let me check again.
+
+Looking at the list:
+
+- Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence.
+
+So, the Index Term is "Morphine". But the post mentions "heroin". Since "heroin" is not directly listed in the Index Terms, but "Morphine" is, but heroin is a different drug. However, the user's example in Example #1 has "lean" mapped to Codeine, which is a different drug. So, if the post mentions "heroin", but there's no index term for heroin, then we need to check if "heroin" is in the list. Wait, the user's Index Terms list "Heroin" as an entry?
+
+Wait, looking again:
+
+The Index Terms list:
+
+- Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence.
+
+So, "Heroin" is not in the list. Wait, but the example given in the problem has "Codeine" as the index term for "lean" and "codeine". So, if the post mentions "heroin", but there's no index term for heroin, then we need to check if "heroin" is in the list. Wait, maybe I made a mistake here.
+
+Wait, the user's Index Terms include "Heroin" as an entry? Let me check again.
+
+Looking through the list:
+
+- "Heroin (MS Contin, Miss Emma, Morph)" – No, that's not in the list. The entry for Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph)". So, "Heroin" is not directly listed. Therefore, "heroin" would not be in the Index Terms, so the index term would be "other".
+
+But wait, the example given in the problem includes "Codeine" as the index term for "lean" and "codeine". So, if the post mentions "heroin", but there's no index term for heroin, then "heroin" would map to "other".
+
+But wait, the user's Index Terms list "Heroin" as an entry? Let me check again. No, the Index Terms list "Morphine" as the index term. So, "Heroin" is not in the list. Therefore, the phrase "heroin" would not be in the list, so it would be "other".
+
+But in the example, "lean" is mapped to Codeine. So, in the post, "heroin" is mentioned. Since there's no index term for heroin, it would be "other".
+
+So, in the given post, the words are "heroin", "carbohydrates", "monthly salary". "Heroin" is a drug, but since it's not in the Index Terms list, it would be "other". "Carbohydrates" and "monthly salary" are not drugs, so they would be "other" as well. But the task is to detect every word or phrase that refers to an illicit drug or substance. So, "heroin" is a drug, but if it's not in the list, then it's "other".
+
+Wait, but the user's Index Terms include "Heroin" as an entry? Let me check again. Looking back:
+
+The user provided the list of Index Terms. Let me check again:
+
+Looking through the list:
+
+- Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence.
+
+So, "Heroin" is not in the list. Therefore, "heroin" would not be in the Index Terms. Therefore, the matched phrase "heroin" would be "other".
+
+Similarly, "carbohydrates" is not a drug, so it's "other". "Monthly salary" is not a drug, so "other".
+
+But the user's task is to detect every word or phrase that refers to an illicit drug or substance. So, "heroin" is an illicit drug, but since it's not in the list, it's "other".
+
+So, the output would be:
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "carbohydrates"},
+  {"index_term": "other", "matched_phrase": "monthly salary"}
+]
+
+But wait, the user's example 3 has "xans" mapped to "other" because it's not in the list. Similarly, in this case, "heroin" is not in the list, so it's "other".
+
+Therefore, the correct answer is to map "heroin" to "other", and the other two phrases to "other" as well. But the user's task is to detect every word or phrase that refers to an illicit drug or substance. So, "heroin" is a drug, but since it's not in the list, it's "other". The other two are not drugs, so they are also "other".
+
+Therefore, the JSON array would have three entries, each with "other" as the index term.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "carbohydrates"},
+  {"index_term": "other", "matched_phrase": "monthly salary"}
+]

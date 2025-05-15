@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Rubix cubes were invented to give Xers something to do when the heroin kicked in." I need to detect any drug-related references here.
+
+First, I'll scan the post for words or phrases that might refer to illicit drugs. The word "heroin" is pretty straightforward. Looking at the index terms, heroin is listed as "Morphine (MS Contin, Miss Emma, Morph)" but wait, heroin isn't directly in the index terms. Wait, checking the list again. The index terms include "Heroin" as "Morphine" but that might be a mistake. Wait no, looking at the index terms, the entry for Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph)" but heroin isn't explicitly listed. Wait, the index terms include "Heroin" as "Morphine"? Wait no, let me check again. The index terms list "Morphine" as the entry, but heroin is a different drug. Wait, looking back, the index terms don't have a specific entry for heroin. The entry for morphine is listed, but heroin isn't directly in the list. However, the user's instruction says to link to the index term if it's present. Since heroin isn't in the index terms, I should use "other". Wait, but wait, in the example given, "Codeine" is linked to "lean" and "codeine". So in this case, "heroin" isn't in the index terms. Let me check the index terms again.
+
+Looking through the list, the index terms include "Heroin" as "Morphine"? No, the entry for Morphine is listed, but heroin isn't explicitly there. The index terms list "Morphine" as the entry, but heroin is a separate drug. Wait, the index terms list "Morphine" as the term, but heroin is a different drug. However, in the example given, "Codeine" is linked to "lean" and "codeine", which are both in the index terms. So in this case, "heroin" is not in the index terms. Therefore, the correct index term would be "other".
+
+So the phrase "heroin" is in the post, but since it's not in the index terms, it's categorized as "other". The other part is "Xers". Wait, "Xers" is a slang term. Let me check if "Xers" is a slang for a drug. From the index terms, "Xers" isn't listed. But maybe "Xers" is a slang for something else. Wait, "Xers" could be a misspelling or slang for "X" which might refer to a drug. But looking at the index terms, I don't see "Xers" listed. So "Xers" would also be "other". However, the user's example 3 has "xans" as "other". So in this case, "Xers" is not in the index terms, so it's "other". 
+
+But wait, the post says "Xers" as a plural. Maybe "Xers" is a slang for a drug. But according to the index terms, there's no entry for "Xers". Therefore, both "heroin" and "Xers" would be "other". However, "heroin" is a drug, but if it's not in the index terms, then it's "other". Wait, but the index terms include "Morphine" but not heroin. So the correct index term for heroin would be "other". So the matched phrases would be "heroin" and "Xers" both as "other".
+
+Wait, but the user's example 1 has "lean" and "codeine" both linked to "Codeine". So in this case, "heroin" is not in the index terms, so it's "other". Therefore, the JSON array would have two entries: one for "heroin" as "other" and "Xers" as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "Xers"}
+]

@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user provided a post: "Because it's more likely to crack down the road." I need to check for any drug-related references here.
+
+First, I'll break down the sentence. The key words are "crack" and "down the road." Wait, "crack" can be a slang term for cocaine. But I need to check if "crack" is listed in the index terms. Looking at the list, there's no entry for "crack" directly. The closest might be "Cocaine (Cannabis, Weed, Pot)" but that's for marijuana. Wait, no, the index terms for cocaine are "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite, not the slang. The user's post uses "crack" as a slang for cocaine. Since "crack" isn't listed in the index terms, I should mark it as "other". 
+
+Then "down the road" – that's a phrase, but not a drug term. So the only possible match is "crack", which isn't in the index terms. So the index term would be "other". 
+
+Wait, but maybe "crack" is considered a drug here. Let me check the index terms again. The index terms include "Cocaine" but the entry is Benzoylecgonine. The slang for cocaine is "crack", but since the index term for cocaine is Benzoylecgonine, and "crack" isn't listed, I have to use "other". 
+
+So the matched phrase is "crack", index term "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "crack"}]

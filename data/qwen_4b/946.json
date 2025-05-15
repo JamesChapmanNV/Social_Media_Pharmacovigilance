@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "imyt but im gg to sleep now 😭 gn". First, I need to determine if this is illicit/abusive-drug-related.
+
+Looking at the words, "imyt" might be a typo or slang. "GG" is a common abbreviation for "good game" in gaming contexts. "To sleep now" is pretty straightforward. The emojis are just expressing a mood. There's no mention of drugs, illegal substances, or any context related to drug use, abuse, or promotion. The user is just talking about being tired and going to sleep. No slang or euphemisms related to drugs here. The context is entirely about sleep and maybe a gaming session. So, according to the definitions, since there's no mention of drugs in a misuse or abuse context, it should be classified as False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses sleep and a gaming context with no mention of drugs, slang, or drug-related abuse."
+}

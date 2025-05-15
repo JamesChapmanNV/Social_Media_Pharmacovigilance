@@ -1,0 +1,6 @@
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Opiates", "matched_phrase": "opiates"},
+  {"index_term": "Opioids", "matched_phrase": "opioids"}
+]

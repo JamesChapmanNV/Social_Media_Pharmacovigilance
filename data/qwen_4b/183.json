@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is a song title: "Codeine N Chill (Prod. by BirdieBands)". The user wants to know if this is illicit/abusive-drug-related.
+
+First, I need to check if the song title mentions illegal drugs. "Codeine" is a controlled substance, right? It's an opioid, so it's illegal in many places. The term "N Chill" might be slang for "and chill," which is just a casual way to say "and relax." But the main issue here is the mention of codeine. 
+
+Now, the song title could be promoting the use of codeine, which is a controlled substance. Even if it's just a song title, the mention of codeine might be considered illicit. But wait, the example given in the prompt had "lean" and "codeine" and was classified as true. So in that case, even if it's a song title, the mention of codeine and the context of being "hooked" was enough.
+
+In this case, the song title includes "Codeine," which is an illicit drug. The term "N Chill" doesn't add any context here. The song might be promoting or glorifying the use of codeine, which would fall under illicit. So the label should be True. The explanation would mention the mention of codeine, which is an illicit drug, and the context of the song title, which could imply promotion or use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' an illicit drug, in a song title that could imply promotion or reference to its use."
+}

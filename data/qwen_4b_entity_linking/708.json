@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a post about someone undergoing angioplasty and receiving morphine and Valium. The task is to detect any drug references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions "1 morphine & 2 Valium 30 minutes when they will be awake during the procedure." So, the words "morphine" and "Valium" are directly mentioned. 
+
+Looking at the index terms list, Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph)" so "morphine" would map to that index term. Then, Valium is a benzodiazepine. Checking the list, "Valium (XLI-268, Fake Xanax)" is listed under Bromazolam, but wait, the index term for Valium is actually "Bromazolam"? Wait no, let me check again. Wait, the index terms list includes "Bromazolam (XLI-268, Fake Xanax)" but Valium is a different drug. Wait, looking back: the index terms include "Lorazepam (Ativan)" and "Bromazolam (XLI-268, Fake Xanax)" but Valium is a different drug. Wait, Valium is actually "Bromazolam"? No, Valium is a brand name for diazepam. Wait, but in the index terms, there's "Bromazolam (XLI-268, Fake Xanax)" which is a designer benzodiazepine. However, Valium is a prescription benzodiazepine. Looking at the index terms, the entry for "Bromazolam" is listed as a designer benzodiazepine, but Valium is a different drug. Wait, the index terms list includes "Bromazolam" as a separate entry. But Valium is not directly listed. Wait, the index terms list includes "Lorazepam (Ativan)" and "Bromazolam (XLI-268, Fake Xanax)" but Valium is a different drug. Wait, Valium is a brand name for diazepam, which is a benzodiazepine. However, in the index terms, the entry for "Bromazolam" is a designer benzodiazepine, but Valium is a prescription drug. However, in the index terms list, there's no direct entry for Valium. Wait, the index terms list includes "Bromazolam" as a designer benzodiazepine, but Valium is a different drug. However, the user's post mentions "Valium," which is a prescription drug. But according to the index terms, is Valium listed? Let me check again.
+
+Looking at the index terms list, there's an entry for "Bromazolam (XLI-268, Fake Xanax)" which is a designer benzodiazepine. Then, under "Lorazepam (Ativan)" and others. But Valium is not listed. Wait, Valium is a brand name for diazepam. However, in the index terms, the entry for "Bromazolam" is a designer benzodiazepine. But Valium is a prescription benzodiazepine. However, the index terms list doesn't include Valium. So, in this case, "Valium" is a prescription drug, but it's not in the index terms. Therefore, according to the instructions, if the drug is not in the list, use "other".
+
+Wait, but let me check again. The index terms list includes "Bromazolam (XLI-268, Fake Xanax)" as a designer benzodiazepine. Valium is a different drug. However, the index terms list includes "Bromazolam" as a separate entry. But Valium is not in the list. Therefore, "Valium" would map to "other" because it's not listed in the index terms. But wait, the index terms list includes "Bromazolam" as a designer benzodiazepine, but Valium is a different drug. So, the correct index term for Valium would be "other" since it's not in the list.
+
+Wait, but wait. Let me check the index terms again. The index terms list includes "Bromazolam (XLI-268, Fake Xanax)" which is a designer benzodiazepine. But Valium is a prescription benzodiazepine. However, the index terms list does not have an entry for Valium. Therefore, "Valium" would be "other".
+
+So, in the post, "morphine" is directly listed in the index terms as "Morphine (MS Contin, Miss Emma, Morph)", so that's a direct match. "Valium" is not in the index terms, so it's "other".
+
+Therefore, the JSON array should have two entries: one for "morphine" and one for "Valium" as "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "Valium"}
+]

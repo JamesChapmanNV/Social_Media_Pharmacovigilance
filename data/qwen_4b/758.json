@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The content is: "The doctor prescribed me codeine pills & I never even used them." 
+
+First, I need to determine if this is illicit or abusive drug-related. The user mentions codeine, which is a controlled substance. But the key here is the context. The person says they were prescribed it by a doctor and never used them. 
+
+Looking at the definitions, True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. But in this case, the person didn't use the pills. They were prescribed them but didn't use them. The content is about a medical prescription, not misuse or abuse. 
+
+The explanation should note that it's a medical context, not promoting or encouraging misuse. The user didn't use the drugs, so there's no indication of abuse. Therefore, it's not illicit or abusive. The label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a prescription medication (codeine) in a medical context, with no indication of abuse, misuse, or promotion of drug use."
+}

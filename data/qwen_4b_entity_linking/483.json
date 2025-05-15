@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term from the given list, and return a JSON array.
+
+First, I'll look at the post: "RT : Codeine Crazy makes me want to shed tears and turn up at the same time. 'We been through a lot, but we still here' music."
+
+Breaking it down, the main phrase here is "Codeine Crazy". The user is referring to "Codeine" directly. Now, checking the Index Terms, "Codeine" is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "Codeine Crazy" is a slang term, but the key part here is "Codeine". The word "Crazy" might be a slang term, but I need to check if it's part of a recognized term. However, in the Index Terms, "Codeine" is listed, and "Crazy" isn't a specific drug term here. So, "Codeine" is the main term here. 
+
+The other part of the post is about music, which doesn't relate to drugs. So the only detected phrase is "Codeine". According to the example, "Codeine" would map to the index term "Codeine". The "Crazy" part might be a descriptor but not a drug term. So the correct match is "Codeine" with the phrase "Codeine". 
+
+Wait, the user wrote "Codeine Crazy". Is "Crazy" part of a slang term? Let me check the Index Terms again. The list includes "Codeine (Lean, Purple Drank, Schoolboy)", but "Crazy" isn't listed. So "Crazy" here is likely an adjective describing the effect of codeine, not a drug name itself. Therefore, only "Codeine" is the matched phrase. 
+
+So the JSON should have one object with index_term "Codeine" and matched_phrase "Codeine". The "Crazy" part isn't a drug term, so it's not included. The example in the prompt had "lean" and "codeine" both mapped to Codeine. But in this case, the phrase is "Codeine Crazy", but the actual drug term is "Codeine". So the correct match is "Codeine" as the index term and "Codeine" as the matched phrase. 
+
+I need to make sure that only the exact drug terms are matched. Since "Crazy" isn't in the list, it's not included. Therefore, the final answer is one entry with Codeine and Codeine.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"}
+]

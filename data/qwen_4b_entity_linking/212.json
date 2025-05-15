@@ -1,0 +1,29 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I'll read the post carefully: "if you wanna touch the spot my cups got codeine in it and mine be straight mud i po more lean in it". Breaking it down sentence by sentence.
+
+The first part is "my cups got codeine in it". The word "codeine" is directly listed in the index terms under Codeine. So that's a clear match. The index term here is "Codeine", and the matched phrase is "codeine".
+
+Next, "mine be straight mud". The word "mud" here is a slang term. Looking at the index terms, I don't see "mud" listed. But wait, in the example 3, "xans" was considered "other". So "mud" might not be a direct term. However, "mud" could be a slang for something else. Wait, in the index terms, "Codeine" has "Lean" as a synonym. The user mentioned "i po more lean in it". "Lean" is explicitly listed under Codeine. So "lean" is a direct match. 
+
+But the phrase "straight mud" – "mud" might not be a drug term. However, in some contexts, "mud" could be slang for a drug, but according to the provided index terms, it's not listed. So "mud" would be "other". But wait, the user's example 3 had "xans" as "other". So maybe "mud" here is not a drug term. However, the user might be using "mud" as a slang for something else. But since it's not in the index terms, it's "other". But wait, the post says "i po more lean in it". "Lean" is a direct term for codeine. So "lean" is matched. 
+
+So the matched phrases are "codeine" and "lean". The "mud" part is not a drug term, so it's "other". But wait, the user's example 4 had "snow" and "white lines" as "other". So in this case, "mud" is not a drug term, so it's "other". However, the post says "straight mud" – maybe "mud" is a slang term for something else. But according to the index terms, it's not listed. So "mud" would be "other".
+
+But the user's example 3 had "xans" as "other", which is not in the index terms. So in this case, "mud" is not a drug term, so "other". However, the user's post has "codeine" and "lean" which are both under Codeine. So the JSON should have two entries: codeine and lean. The "mud" is not a drug term, so it's "other". But the user's example 3 had "xans" as "other", so "mud" would be "other". However, the user's post says "i po more lean in it". "Lean" is a direct term. So the matched phrases are "codeine" and "lean". The "mud" is not a drug term, so "other". But the user's example 3 had "xans" as "other", so "mud" would be "other".
+
+Wait, but the user's example 4 had "snow" and "white lines" as "other", even though they were not drug terms. So in this case, "mud" is not a drug term, so it's "other". However, the user's post is: "if you wanna touch the spot my cups got codeine in it and mine be straight mud i po more lean in it". The "mud" part is not a drug term. So the matched phrases are "codeine" and "lean", and "mud" is "other". But the user's example 3 had "xans" as "other", so "mud" would be "other". Therefore, the JSON should have two entries for codeine and lean, and "mud" as "other". Wait, but the user's instruction says to detect every word or phrase that refers to an illicit drug. So "mud" is not a drug term. Therefore, the correct matches are "codeine" and "lean". The "mud" is not a drug term, so it's "other". But in the post, "mud" is part of the phrase "straight mud", but the user is using "mud" as a slang for something else. However, according to the index terms, it's not listed. Therefore, "mud" is "other". But the user's example 4 had "snow" as "other", so "mud" would be "other".
+
+Wait, but the user's instruction says to detect every word or phrase that refers to an illicit drug. So "mud" is not a drug term, so it's not matched. The only matched phrases are "codeine" and "lean". Therefore, the JSON should have two entries: codeine and lean. The rest is "other" if any, but in this case, "mud" is not a drug term. Therefore, the correct answer is:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "lean"}
+]
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "lean"}
+]

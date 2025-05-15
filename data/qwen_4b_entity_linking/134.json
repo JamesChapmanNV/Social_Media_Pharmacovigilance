@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "crack head son." First, I need to check if "crack" refers to a drug. From the index terms, I see that "crack" isn't listed. The index terms include substances like cocaine, but "crack" is a form of cocaine. However, in the given list, cocaine is listed as "Marijuana (Cannabis, Weed, Pot)" which is incorrect because marijuana is different from cocaine. Wait, no, looking back, the index terms have "Benzoylecgonine (BZE, Ecgonine benzoate)" as the metabolite of cocaine. So "crack" is a form of cocaine, but the index term for cocaine isn't explicitly listed. Wait, the index terms don't have a direct entry for cocaine. Let me check again.
+
+Looking at the index terms, the only mention of cocaine is under Benzoylecgonine, which is the metabolite. So "crack" is a slang term for cocaine, but since the index terms don't have a direct entry for cocaine, I need to check if "crack" is considered under "other" or if there's a term that covers it. Wait, the index terms include "Codeine" with synonyms like "lean," but "crack" isn't listed. The user's example 4 had "snow" and "white lines" as "other" because they aren't drugs. So in this case, "crack head" refers to cocaine, but since the index terms don't have a specific entry for cocaine, I should map it to "other." However, the index term for Benzoylecgonine is the metabolite of cocaine. But the user's task is to map to the index terms provided. Since "crack" isn't listed in the index terms, the correct index term would be "other." Therefore, "crack" is mapped to "other," and "crack head" is also "other." So the answer would have both "crack" and "crack head" as "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"},
+  {"index_term": "other", "matched_phrase": "crack head"}
+]

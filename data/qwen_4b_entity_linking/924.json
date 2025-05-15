@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user provided a post: "They won't take a QB at 6". I need to check if there are any drug-related references here.
+
+First, I'll break down the post. The main words are "They", "won't", "take", "a", "QB", "at", "6". The term "QB" is an abbreviation for quarterback in sports. "6" could refer to the number 6, maybe a player's number or something else. 
+
+Looking at the index terms provided, I need to check if any of the phrases match. The index terms include things like Codeine, Amphetamine, Benzodiazepines, etc. But "QB" isn't listed as a drug term. The example given in the problem had "addy" matching Amphetamine, but "QB" isn't a slang term for any drug here. 
+
+The user's task is to detect any words or phrases that refer to illicit drugs. Since "QB" is a sports term and "6" is a number, there's no drug reference here. The example where "snow" was considered "other" because it wasn't a drug, so similarly, "QB" and "6" don't match any index terms. 
+
+Therefore, there are no matches. The answer should be an empty array. But wait, the user's examples sometimes have "other" when the term isn't a drug. However, in this case, the post doesn't contain any drug-related terms. So the correct response is an empty JSON array.
+</think>
+
+[]

@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I was going for drug dealer 🤣🤣🤣 but 🤷🏽‍♀️". I need to check for any drug-related references here.
+
+First, I'll look at the text. The main phrase is "drug dealer". The index terms list includes "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". But "drug dealer" isn't directly listed. The task is to detect any slang, euphemisms, etc. that refer to illicit drugs. 
+
+Wait, "drug dealer" refers to someone who sells drugs, not the drug itself. The index terms don't have an entry for "drug dealer" as a drug name. The example 3 shows "xans" is "other" because it's not a specific drug. Similarly, "drug dealer" here is a person, not a substance. So, there's no match here. The user might be joking or using "drug dealer" metaphorically, but according to the task, we need to check for actual drug names or phrases. Since "drug dealer" isn't in the index terms, it should be categorized as "other". But wait, the example 4 had "snow" and "white lines" as "other" even though they might refer to cocaine. So, in this case, "drug dealer" is a person, not a drug, so it's "other". 
+
+But wait, maybe there's a possibility that "drug dealer" is a slang term for a specific drug? Let me check the index terms again. The list includes terms like Codeine, Amphetamine, etc., but not "drug dealer". So, the correct index term here would be "other" because the phrase "drug dealer" is not a drug name or synonym listed. Therefore, the output should be an object with "other" and "drug dealer".
+</think>
+
+[{"index_term": "other", "matched_phrase": "drug dealer"}]

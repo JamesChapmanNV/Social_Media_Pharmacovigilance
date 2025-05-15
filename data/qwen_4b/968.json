@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Im tryin to ride down ocean drive sippin codeine with the top down." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang, euphemisms, or cultural references indicating recreational use or abuse. Encouraging or glorifying drug misuse.
+
+The content mentions "codeine," which is an OTC drug but can be abused. The phrase "sippin codeine" suggests consuming it, possibly in a recreational way. The context is "riding down ocean drive with the top down," which sounds like a social or recreational setting. The use of "sippin" (slang for drinking) and the setting might imply that the person is using codeine for recreational purposes. 
+
+Is there any medical context here? No, it's not discussing treatment or education. The tone seems casual and possibly approving, which could be a sign of glorifying the use. So based on the definitions, this would be classified as True because it mentions a drug (codeine) in a context that suggests recreational use, possibly abuse.
+</think>
+
+{"label": "True", "explanation": "The content mentions 'codeine' in a recreational context ('sippin') and implies use in a social setting, suggesting potential abuse or misuse."}

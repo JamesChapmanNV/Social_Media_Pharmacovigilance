@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The post is: "Cesar salad wit croutons and codeine dressing fuck be wrong wit 2chains". 
+
+First, I need to scan through the text for any mentions of illicit drugs or substances. The task is to detect every word or phrase that refers to an illicit drug, using slang, euphemisms, synonyms, or cultural references. Then, link each to the appropriate Index Term from the given list. If it's not in the list, use "other".
+
+Looking at the post, the first thing I notice is "codeine dressing". The Index Terms list includes "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "codeine dressing" directly mentions "codeine", so that's a clear match. The index term here is "Codeine".
+
+Next, there's "2chains". I need to check if "2chains" is a slang term for a drug. Looking through the Index Terms, I don't see any entry for "2chains". The closest might be "2F-NENDCK" (2-Fluoro-2-Oxo PCE) which is a ketamine-like substance, but "2chains" isn't listed. Also, "2chains" could be a reference to something else, like a person's name or a brand, but since it's not in the list, it should be categorized as "other".
+
+So, the matched phrases are "codeine" and "2chains". The first is clearly under Codeine. The second is not listed, so "other". 
+
+Wait, the example 3 had "xans" which was "other" because it wasn't in the list. Similarly, "2chains" isn't in the Index Terms, so it's "other". 
+
+Therefore, the JSON array should have two entries: one for "codeine" and one for "other" with "2chains".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "2chains"}
+]

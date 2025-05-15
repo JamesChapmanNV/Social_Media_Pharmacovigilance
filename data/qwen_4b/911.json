@@ -1,0 +1,7 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "i would never give a bitch the satisfaction of bein able to hold that over my head. i sell crack first". I need to classify this as ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, promotion, etc. The content here says "sell crack first". Selling crack is illegal and directly related to drug abuse. The phrase "sell crack" indicates involvement in distributing a controlled substance, which is illicit. Also, the tone seems to be about engaging in drug trafficking, which is abusive. The other part about not giving someone satisfaction by holding something over their head might be a metaphor, but the key part is selling crack. So this definitely falls under True. The explanation should mention selling crack and the context of abuse or promotion.
+</think>
+
+{"label": "True", "explanation": "The content explicitly mentions'sell crack', indicating direct involvement in distributing an illicit drug, which is abuse-related."}

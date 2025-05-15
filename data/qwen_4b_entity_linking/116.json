@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "kingdom fr put crack in all of their songs. i love them and their concept mwaaah <3". I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The phrase "crack" stands out. From the index terms, I remember that "crack" is a slang term for cocaine. Let me check the list. Yes, under the index terms, there's "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. But wait, the index term for cocaine itself isn't listed. The list includes "Cocaine (Speed, Bennies, Adderall)" but that's under Amphetamine. Wait, no, looking back, the index terms include "Amphetamine (Speed, Bennies, Adderall)" but cocaine isn't listed as an index term. However, the user's instruction says if the drug isn't in the list, use "other". 
+
+Wait, the index terms include "Benzoylecgonine (BZE, Ecgonine benzoate)" which is a metabolite of cocaine. But the actual drug is cocaine. However, in the list, there's no direct entry for cocaine. The only mention related to cocaine is Benzoylecgonine. So if the post mentions "crack", which is a slang for cocaine, but since the index terms don't have a direct entry for cocaine, I should check if "crack" is considered under any index term. Alternatively, maybe "crack" is considered as "other" since it's not listed. But wait, the example 4 mentions "snow" and "white lines" as "other" even though they're not drugs. So in this case, "crack" is a slang for cocaine, but since the index terms don't have a specific entry for cocaine, maybe it's "other". But wait, looking at the index terms again, there's no entry for cocaine. The closest is Benzoylecgonine, which is a metabolite. So "crack" refers to cocaine, which is not in the index terms. Therefore, the matched phrase "crack" would map to "other". 
+
+But wait, maybe I'm missing something. Let me check again. The index terms list "Cocaine (Speed, Bennies, Adderall)"? No, looking back, the index terms for Amphetamine are listed as "Amphetamine (Speed, Bennies, Adderall)". Cocaine isn't listed. So "crack" is a slang for cocaine, which isn't in the index terms. Therefore, the correct index term is "other". 
+
+So the post has "crack" which is a drug reference, but since it's not in the index terms, it's "other". The rest of the post is about a band and their concept, which doesn't mention any other drugs. So the only match is "crack" mapped to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"}
+]

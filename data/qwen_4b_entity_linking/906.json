@@ -1,0 +1,57 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "came home and we've been watching Wes Anderson films while I basically inhale tizanidine and Actiq and Norco". I need to detect any drug references here.
+
+First, I'll go through each word and phrase. The main part is "inhale tizanidine and Actiq and Norco". Let's check each drug name against the index terms.
+
+Tizanidine: Looking at the list, I see "Tizanidine" isn't listed. Wait, the index terms include "Tizanidine" as a separate entry? Wait, no, let me check again. The index terms provided don't have Tizanidine. The closest might be "Methadone" or "Oxycodone", but no. Wait, looking through the list again, I don't see Tizanidine listed. The index terms include "Tizanidine" as a separate entry? Let me check again. Wait, no. The index terms listed don't include Tizanidine. The list includes "Tizanidine" as part of the index terms? Wait, no. Let me check the index terms again. 
+
+Looking through the list: The index terms include "Tizanidine" as a separate entry? Wait, no. The index terms listed don't have Tizanidine. The entry for Tizanidine is not present. Wait, the user provided the index terms. Let me check again. The index terms include "Tizanidine" as a separate entry? No. The index terms are listed as:
+
+Looking through the list, the entry for Tizanidine is not present. The closest is "Tizanidine" is not in the index terms. Wait, the index terms include "Tizanidine"? Let me check again. The user's index terms list includes:
+
+Wait, the index terms list includes "Tizanidine"? Let me check. The user provided a list of index terms. Let me scan through them. 
+
+Looking through the list, I don't see "Tizanidine" listed. The entry for "Tizanidine" is not present. The index terms include "Tizanidine" as a separate entry? No. The index terms include "Tizanidine" as part of the list? No. The index terms list includes "Tizanidine" as a separate entry? Wait, no. The index terms list includes "Tizanidine" as a separate entry? Let me check again. The user's index terms list includes "Tizanidine" as a separate entry? No. The index terms list includes "Tizanidine" as part of the list? No. The index terms list includes "Tizanidine" as a separate entry? No. The index terms list includes "Tizanidine" as part of the list? Wait, no. The index terms list does not include "Tizanidine". Therefore, "tizanidine" would be "other".
+
+Then, Actiq. Actiq is a brand name for a drug. Looking at the index terms, "Actiq" is not listed. The index terms include "Hydrocodone" (Vicodin, Norco, Vike), but Actiq is a different drug. Actiq is a brand name for a drug containing fentanyl. Wait, Actiq is a brand name for a fentanyl patch. But in the index terms, is there an entry for fentanyl? Yes, "Fentanyl (China White, Apache, Duragesic)" is listed. So "Actiq" is a brand name for a fentanyl product. However, in the index terms, the entry for fentanyl is listed. Therefore, "Actiq" would be linked to "Fentanyl".
+
+Then, Norco. Norco is a brand name for a drug that contains hydrocodone. The index terms include "Hydrocodone (Vicodin, Norco, Vike)". So "Norco" is linked to "Hydrocodone".
+
+So the matched phrases are "tizanidine", "Actiq", "Norco". Now, check if they are in the index terms. 
+
+Tizanidine: Not in the index terms. So "other".
+
+Actiq: Fentanyl is in the index terms, so "Actiq" would be linked to "Fentanyl".
+
+Norco: Hydrocodone is in the index terms, so "Norco" is linked to "Hydrocodone".
+
+So the JSON array would have:
+
+{"index_term": "other", "matched_phrase": "tizanidine"}, 
+{"index_term": "Fentanyl", "matched_phrase": "Actiq"}, 
+{"index_term": "Hydrocodone", "matched_phrase": "Norco"}.
+
+Wait, but the user's example 3 shows that "xans" is "other" because it's not in the list. So for "Actiq", since it's a brand name for fentanyl, which is in the index terms, then it's linked to "Fentanyl".
+
+Yes. So the correct matches are:
+
+tizanidine → other
+
+Actiq → Fentanyl
+
+Norco → Hydrocodone
+
+So the JSON array would be:
+
+[
+  {"index_term": "other", "matched_phrase": "tizanidine"},
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"},
+  {"index_term": "Hydrocodone", "matched_phrase": "Norco"}
+]
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "tizanidine"},
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"},
+  {"index_term": "Hydrocodone", "matched_phrase": "Norco"}
+]

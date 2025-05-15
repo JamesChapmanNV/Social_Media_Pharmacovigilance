@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that's a religious message about a hadith from Prophet Muhammad regarding taking false oaths. The task is to detect any drug-related references and map them to the index terms. 
+
+First, I need to read through the post carefully. The post talks about Allah's decrees on Hell, Fire, Jannah, and a hadith where a man asks about taking a false oath even for a small thing, like a stick from the Arak tree. 
+
+Now, looking for any terms that could refer to drugs. The key part here is "Arak tree". I remember that Arak is a type of spirit or alcohol, commonly made from date palm sap. It's a strong alcoholic drink, but is it considered an illicit drug here? The index terms list includes substances like amphetamine, codeine, cocaine, etc., but not alcohol. 
+
+Looking at the index terms, there's no entry for alcohol or any related terms. The closest might be "other" if the phrase isn't listed. The user's examples show that if the term isn't in the list, it's categorized as "other". 
+
+So, "Arak tree" is mentioned here. Since Arak is an alcoholic drink, not an illicit drug as per the index terms provided, the matched phrase should be "Arak tree" under "other". 
+
+I need to check if there are any other terms. The rest of the post is about religious concepts, no other drug references. So the only match is "Arak tree" which maps to "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "Arak tree"}]

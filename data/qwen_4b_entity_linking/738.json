@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "i'm on ocean drive sippin codeine with the top down". I need to detect any drug references here.
+
+First, I'll look for words that might refer to illicit drugs. The phrase "sippin codeine" stands out. "Codeine" is directly listed in the index terms under the Codeine entry. The synonyms listed include "Lean", "Purple Drank", "Schoolboy", but in the post, the exact word used is "codeine". So the matched phrase here is "codeine", and the index term is Codeine. 
+
+The rest of the sentence mentions "ocean drive" and "top down", which are likely references to a location or a car, not drugs. There's no other mention of drugs here. So the only match is "codeine". 
+
+I should check if there's any other possible slang or euphemism. "Sippin" is a colloquial term for drinking, but it's not a drug reference. "Ocean drive" is a place, so no. "Top down" refers to driving with the top down, not a drug. 
+
+Therefore, the only detected phrase is "codeine", which maps to the index term Codeine. No other terms are present here. The answer should be a JSON array with one object containing those terms.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

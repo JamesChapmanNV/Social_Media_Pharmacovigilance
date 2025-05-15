@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I just read somebody post said DMX didn't overdose it was the covid vaccine." I need to check for any drug-related references here.
+
+First, I'll go through the post word by word. The main phrases are "DMX" and "covid vaccine." The task is to detect any mentions of illicit drugs, synonyms, slang, etc., and link them to the index terms. 
+
+DMX is a rapper, but I need to check if there's any slang or term related to drugs. Wait, DMX is also a street term for methamphetamine. Let me check the index terms. Looking through the list, there's "Methamphetamine" with synonyms like "Crystal Meth, Ice, Desoxyn." So "DMX" is a slang for methamphetamine. That would map to "Methamphetamine" as the index term.
+
+Next, "covid vaccine" is mentioned. The index terms don't include anything related to vaccines, so that would be "other." But wait, the task is to detect drug references. The post is talking about a cause of overdose, but the vaccine isn't a drug in the list. So "covid vaccine" is not a drug reference here, so it's "other."
+
+So the matched phrases are "DMX" and "covid vaccine." The first maps to Methamphetamine, the second to other. Let me confirm if there's any other terms. The post doesn't mention any other drugs. So the JSON array should have two entries: one for DMX as Methamphetamine, and the other for "covid vaccine" as other.
+</think>
+
+[
+  {"index_term": "Methamphetamine", "matched_phrase": "DMX"},
+  {"index_term": "other", "matched_phrase": "covid vaccine"}
+]

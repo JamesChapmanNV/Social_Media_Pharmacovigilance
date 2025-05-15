@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I can't quit that lean put a ring around codeine". I need to identify any drug references here and map them to the correct index terms.
+
+First, I'll break down the post. The words "lean" and "codeine" are mentioned. Looking at the index terms, Codeine has several synonyms listed, including "Lean" and "Purple Drank", "Schoolboy". So "lean" directly maps to Codeine. Then "codeine" is explicitly listed as an index term. The phrase "put a ring around codeine" is a bit more tricky. The action here might be a slang reference, but the key word is "codeine", which is already covered. The phrase "put a ring around" might be a metaphor, but since "codeine" is the main term, I don't need to check for other terms here. 
+
+I should check if there are any other possible terms. The post doesn't mention any other drugs. "Lean" is clearly Codeine, and "codeine" is straightforward. The rest of the sentence doesn't introduce new terms. So the JSON should have two entries: one for "lean" and one for "codeine", both under the Codeine index term. No other terms are applicable here. I need to make sure the exact phrases are matched as they appear. The example in the problem shows that "lean" and "codeine" are both mapped to Codeine, so this should follow the same structure.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

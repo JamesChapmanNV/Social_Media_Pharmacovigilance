@@ -1,0 +1,16 @@
+<think>
+Okay, let's see. The user provided a content snippet: "I'll be friends with a nigga who deals CRACK before I'm friends with a fent dealer." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I should check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Slang or euphemisms that indicate recreational use or abuse also count. Also, encouraging or glorifying drug misuse.
+
+The content mentions "CRACK" and "fent dealer." CRACK is a slang term for cocaine, which is an illegal drug. "Fent dealer" likely refers to fentanyl, another illegal opioid. The phrase "deals CRACK" suggests involvement in selling or distributing the drug. The speaker is saying they would be friends with someone who deals in these drugs, which implies approval or association with drug dealing. 
+
+The use of "nigga" is a slang term that can be offensive, but the main point is the mention of drug dealing. The context here is about associating with someone who deals in illegal drugs, which is promoting or glorifying drug abuse. The phrase "before I'm friends with a fent dealer" further emphasizes that the speaker is choosing to associate with someone involved in drug dealing, which is a form of encouraging or endorsing such behavior.
+
+So according to the definitions, this would be classified as True because it mentions illegal drugs (CRACK and fentanyl) in the context of dealing, which is related to abuse or misuse. The tone seems to support or encourage associating with someone involved in drug dealing.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'CRACK' and 'fent dealer,' which are slang terms for illegal drugs, and implies approval of associating with someone involved in drug dealing."
+}

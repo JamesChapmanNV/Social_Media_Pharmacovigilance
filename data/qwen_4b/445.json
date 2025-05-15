@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I have an orthopedic joke but it may crack you up." I need to determine if this is illicit/abusive-drug-related or not.
+
+First, I'll check the definitions. True includes mentions of illegal drugs, slang, or contexts promoting abuse. False includes medical, educational, or preventative contexts. The content here is about an orthopedic joke. Orthopedic relates to bones and joints, not drugs. The mention of a joke doesn't involve any drug references. There's no slang, euphemism, or indication of drug use. The context is completely unrelated to drugs. So, it's not related to illicit drugs. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content mentions 'orthopedic' and 'joke,' which are unrelated to drug use or abuse, with no context suggesting illicit drug activity."
+}

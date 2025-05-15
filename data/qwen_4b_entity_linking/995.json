@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Of the molly and codeine that's my medication i just killed my first rapper it's a celebration ;b". I need to identify any drug references here and map them to the correct index terms.
+
+First, I'll break down the post sentence by sentence. The first part is "Of the molly and codeine that's my medication". "Molly" is a slang term for MDMA, which is listed under the index terms as MDMA. So "molly" should map to "MDMA". Then "codeine" is directly listed under the Codeine index term. 
+
+Next part: "i just killed my first rapper it's a celebration ;b". The phrase "killed my first rapper" is likely metaphorical, but I need to check if "killed" refers to any drug-related term. However, in this context, it's probably not a drug reference. The semicolon and "b" at the end are just emojis or internet slang, not drug terms. 
+
+So the detected phrases are "molly" and "codeine". Mapping them to the index terms: "molly" is MDMA, and "codeine" is Codeine. The other parts of the sentence don't refer to any drugs listed. Therefore, the JSON array should include these two entries.
+</think>
+
+[
+  {"index_term": "MDMA", "matched_phrase": "molly"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

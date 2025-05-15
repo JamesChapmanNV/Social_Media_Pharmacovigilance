@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. First, I need to read the post carefully: "I am in the middle of humming about to crack when my substantival-less duplicator brings me hoplites (not asked for) with aroid as I kill So how's your day going?"
+
+Hmm, the main challenge here is identifying any slang, euphemisms, or phrases that refer to illicit drugs. Let's break down the post word by word.
+
+The first part: "humming about to crack". "Crack" can sometimes refer to crack cocaine, but I need to check if "crack" is listed in the index terms. Looking at the list, "Crack" isn't explicitly mentioned. However, "Crack cocaine" is a known drug, but since the index terms don't have "Crack" as a standalone term, maybe it's "other". But wait, the example in the user's prompt shows that "snow" is "other" even though it's not a drug. So "crack" here might be a slang term for crack cocaine, but since it's not in the index terms, it would be "other".
+
+Next part: "substantival-less duplicator". This seems like a made-up term or a metaphor. "Substantival" might be a typo or a non-standard term. "Duplicator" could be a metaphor for something else, but not a drug. Not sure here. Maybe not a drug reference.
+
+Then: "hoplites (not asked for)". "Hoplites" are ancient Greek soldiers, but in slang, sometimes "hop" can refer to heroin. But "hoplites" isn't a direct slang. However, "hop" is a slang for heroin. But the word here is "hoplites", which is a plural. Maybe not a direct reference. But the note says "(not asked for)" which might be a hint. But I don't see a direct drug term here.
+
+Next: "with aroid as I kill". "Aroid" could be a misspelling of "roid", which is slang for anabolic steroids. But the index terms don't list anabolic steroids. The index terms include "Methamphetamine", "Amphetamine", etc., but not anabolic steroids. So "roid" would be "other". However, "roid" is a slang term for anabolic steroids, which are not listed in the index terms. So "roid" would be "other".
+
+So the possible drug references here are "crack" and "roid". But need to check the index terms again. Let me look through the index terms again. The index terms include "Codeine", "Amphetamine", "Methamphetamine", "Methadone", "Oxycodone", etc. But "roid" is not listed. "Aroid" is not a term in the index. So "roid" would be "other". Similarly, "crack" is not in the index terms. However, the example 4 shows that "snow" is "other" even though it's not a drug. So "crack" here would be "other".
+
+But wait, the user's example 1 has "lean" as Codeine. So if "crack" is a slang term for crack cocaine, but it's not in the index terms, then it's "other". Similarly, "roid" is not in the index terms. So the matched phrases would be "crack" and "roid", both linked to "other".
+
+But wait, the user's example 3 has "xans" as "other". So if "aroid" is a misspelling of "roid", then it's "other". So the JSON would have two entries: "crack" and "roid" as "other".
+
+But let me check again. The post says "with aroid as I kill". "Aroid" is a misspelling of "roid", which is slang for anabolic steroids. Since anabolic steroids are not listed in the index terms, it's "other". "Crack" is a slang term for crack cocaine, which is not in the index terms either. So both "crack" and "roid" would be "other".
+
+Therefore, the output would be two entries: {"index_term": "other", "matched_phrase": "crack"}, {"index_term": "other", "matched_phrase": "roid"}.
+
+But wait, the user's example 4 has "snow" and "white lines" as "other", even though they are not drugs. So in this case, "crack" and "roid" are not in the index terms, so they are "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "crack"}, {"index_term": "other", "matched_phrase": "roid"}]

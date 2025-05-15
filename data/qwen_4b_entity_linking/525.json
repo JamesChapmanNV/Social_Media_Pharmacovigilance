@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index terms, and return a JSON array.
+
+First, I'll read the post carefully: "Drank so much codeine, drinking til im colour blind, she gon' do the coke until she can see the line." 
+
+Looking at the first part, "codeine" is directly mentioned. According to the index terms, codeine is listed under "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". So "codeine" is a direct match here.
+
+Next, the phrase "do the coke". "Coke" is a common slang for cocaine. Checking the index terms, cocaine's metabolite is Benzoylecgonine (BZE), but cocaine itself isn't listed as an index term. However, the index terms include "other" for drugs not in the list. Since "coke" refers to cocaine, which isn't explicitly listed, it should be categorized under "other".
+
+Wait, let me double-check the index terms. The list includes "Benzoylecgonine (BZE, Ecgonine benzoate)" as the primary metabolite of cocaine. But the index terms don't have "cocaine" itself. So any reference to cocaine would be "other". Therefore, "coke" here is "other".
+
+So the matched phrases are "codeine" and "coke". The first is Codeine, the second is other. The JSON should have two entries: one for codeine and one for other.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "coke"}
+]

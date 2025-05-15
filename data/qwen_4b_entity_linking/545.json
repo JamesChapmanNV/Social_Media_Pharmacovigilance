@@ -1,0 +1,13 @@
+<think>
+Okay, let's see. The user provided a post: "Crack is one hell of a drug my G". I need to detect any drug references here.
+
+First, "Crack" is a slang term for cocaine. Looking at the index terms, there's no direct entry for cocaine, but there's "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the primary metabolite of cocaine. Since the post mentions "Crack", which is a form of cocaine, I should map it to the index term for cocaine's metabolite. However, the index terms list "Marijuana" as a separate entry, but "Crack" is specifically cocaine. Wait, the index terms don't have a direct entry for cocaine, only its metabolite. So according to the instructions, if the drug isn't in the list, use "other". But wait, the user's example 4 had "snow" and "white lines" as "other" even though they might refer to something else. 
+
+Wait, the index terms include "Benzoylecgonine" as the metabolite of cocaine. But the post is referring to "Crack" itself, not the metabolite. Since "Crack" is a form of cocaine, but the index terms don't have a direct entry for cocaine, maybe "other" is the right choice here. However, the user's example 1 had "lean" mapped to Codeine, which is a slang term. So in this case, "Crack" is a slang term for cocaine, which is an illicit drug. But the index terms don't have a direct entry for cocaine. Therefore, according to the task, if the drug isn't in the list, use "other". Therefore, "Crack" would map to "other". 
+
+But wait, maybe "Crack" is considered a drug in the list? Let me check the index terms again. The index terms include "Marijuana", "Cocaine" is not listed. Wait, looking back: the index terms list "Benzoylecgonine" as the metabolite of cocaine, but the actual drug name "Cocaine" isn't in the list. So "Crack" is a form of cocaine, but since the index terms don't have a direct entry for cocaine, the correct index term would be "other". Therefore, the matched phrase "Crack" would be "other". 
+
+So the answer should be [{"index_term": "other", "matched_phrase": "Crack"}]. But wait, the user's example 4 had "snow" as "other" even though it's not a drug. So in this case, "Crack" is a drug, but since it's not in the index terms, it's "other". Therefore, the correct JSON is as above.
+</think>
+
+[{"index_term": "other", "matched_phrase": "Crack"}]

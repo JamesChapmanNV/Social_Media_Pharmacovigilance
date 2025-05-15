@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The user provided a content snippet: "I really don't feel good from the hospital last night they gave me morphine and it makes me feeling yucky right now." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse or misuse, slang, euphemisms, or encouraging misuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+The content mentions morphine. Morphine is an opioid, which is a controlled substance, so that's a drug. But the user is talking about receiving it from the hospital, which is a medical context. The person is expressing that they feel bad because of the morphine, saying it makes them feel "yucky." This seems like a personal experience with medication, not promoting or abusing it. There's no mention of using it recreationally, buying it, or encouraging others. The context is about a medical treatment, so it's in the medical context. Therefore, this should be classified as False. The explanation would note the medical context and the personal reaction to medication, not promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a personal medical experience with morphine administered in a hospital setting, expressing discomfort rather than promoting or glorifying drug misuse."
+}

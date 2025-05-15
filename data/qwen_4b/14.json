@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this query. The content is: "I seen her in my dream, fell in love with codeine." First, I need to determine if this is illicit or abusive drug-related. The key here is the mention of "codeine." Codeine is an opioid, which is a controlled substance, so that's a red flag. But the context is a dream and falling in love with it. The user might be using "codeine" metaphorically, like a drug in a dream, but the phrase "fell in love with codeine" could imply a romantic or emotional attachment to the substance. However, codeine is a controlled drug, and using it in a way that suggests a personal connection, even if it's in a dream, might still be considered abusive or related to drug use. The example given in the prompt had "hooked on that lean" which was classified as true because it mentioned codeine and implied abuse. Here, the user is talking about loving codeine, which could be seen as promoting or glorifying its use. But wait, the user is in a dream. Does that change anything? The definition says if it's in the context of abuse, misuse, etc. Even if it's a dream, the mention of codeine in a way that suggests a positive or emotional attachment might still be considered abusive. So the label would be True. The explanation would note the mention of codeine and the implication of emotional attachment, which could be seen as promoting or glorifying its use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' a controlled substance, and uses 'fell in love with' to imply a positive or emotional attachment, which could signal recreational or abusive use."
+}

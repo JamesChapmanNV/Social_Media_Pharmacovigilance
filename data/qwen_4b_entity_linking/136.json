@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Put down the crack pipe and slowly walk away from the keyboard." I need to identify any drug-related references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The word "crack" is immediately noticeable. From the index terms, "Crack" isn't listed directly, but "Crack pipe" is a slang term for crack cocaine. The index terms include "Codeine" with synonyms like "lean" and "purple drank," but "crack" isn't listed. However, "crack" is a known slang for crack cocaine, which is an illicit drug. Since "crack" isn't in the index terms, I should check if there's a matching term. Wait, looking back at the index terms, there's no entry for crack. The closest might be "other" because it's not listed. But wait, the index terms include "Codeine" with "lean," but "crack" is a different drug. The index terms don't have "crack" listed. So "crack pipe" would map to "other" because it's not in the provided list. However, maybe "crack" is considered under another term? Let me check again. The index terms include "Benzoylecgonine (BZE, Ecgonine benzoate)" which is a metabolite of cocaine, but "crack" is a form of cocaine. Since "crack" isn't in the index terms, the correct index term would be "other." So the matched phrase is "crack pipe," which maps to "other." The second part is "keyboard," which is not a drug reference. So the only match is "crack pipe" as "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack pipe"}
+]

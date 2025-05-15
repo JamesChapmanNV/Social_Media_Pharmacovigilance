@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term from the provided list, and return a JSON array.
+
+First, I need to look at the post: "Starting TOMORROW  recreational #marijuana users 21 and older can purchase up to an ounce of weed per sale at #NewJersey dispensaries without a medical card. "A day late and a dime bag short" if you celebrate #420day #cannabis"
+
+The main words here are "marijuana," "weed," and "cannabis." Looking at the Index Terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is listed as a non-intoxicating cannabinoid? Wait, no, the Index Terms say "Marijuana (Cannabis, Weed, Pot) – The most widely used illicit drug, containing psychoactive cannabinoids THC only." So, even though CBD is non-intoxicating, marijuana here refers to the illicit use. The post is talking about recreational use, so "marijuana," "weed," and "cannabis" all fall under the Index Term "Marijuana."
+
+But wait, the user's task is to detect any references to illicit drugs. The post is about legal recreational use in New Jersey, but the terms "marijuana," "weed," and "cannabis" are all synonyms for the drug. However, the Index Term for Marijuana is listed as an illicit drug. So even if it's legal in the state, the terms themselves are considered illicit in the context of the list. So each occurrence of "marijuana," "weed," and "cannabis" should be matched to "Marijuana."
+
+Looking at the example given in the problem statement, the third example had "xans" which wasn't in the list, so it was "other." But here, "marijuana," "weed," and "cannabis" are all in the list. So each of these words would be mapped to "Marijuana."
+
+So the JSON array should have three entries: "marijuana," "weed," "cannabis" all under the index term "Marijuana." The post mentions "#marijuana," "#weed," and "#cannabis" as hashtags. The exact phrases are "marijuana," "weed," and "cannabis." So each of these should be matched. The example in the problem where "marijuana" is in the list, so the answer would be those three terms. The user's example 1 had "lean" and "codeine" both mapped to Codeine. Similarly, here, the three terms are all under the same index term. So the final answer would be three entries with index term "Marijuana" and the matched phrases as "marijuana," "weed," and "cannabis."
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "marijuana"},
+  {"index_term": "Marijuana", "matched_phrase": "weed"},
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

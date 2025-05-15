@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Because no one tell me what the fuck I do. And if they put me out on the street I would just become a meth dealer." I need to detect any drug-related references here.
+
+First, I'll go through the post sentence by sentence. The first part is "Because no one tell me what the fuck I do." The phrase "the fuck I do" is a bit of a filler, but not a drug term. The second part is "And if they put me out on the street I would just become a meth dealer." Here, "meth dealer" is the key part. 
+
+Looking at the index terms, "Methamphetamine" is listed under the term "Methamphetamine (Crystal Meth, Ice, Desoxyn)". So "meth dealer" refers to someone dealing methamphetamine. The exact phrase here is "meth dealer", which is a slang term for selling meth. 
+
+Now, checking the index terms, "Methamphetamine" is the index term for that. The matched phrase is "meth dealer". Since "meth dealer" is a reference to the drug methamphetamine, it should map to "Methamphetamine". 
+
+I don't see any other drug terms in the post. The rest of the text is about the speaker's situation, not direct references to other drugs. So the only match here is "meth dealer" under Methamphetamine. 
+
+Wait, but the index term for methamphetamine includes "Crystal Meth, Ice, Desoxyn" as synonyms. "Meth dealer" is a person who sells it, so the phrase itself isn't a synonym but refers to the drug. Therefore, the correct index term is Methamphetamine. 
+
+No other terms in the post match the index list. So the JSON array should have one object with index_term "Methamphetamine" and matched_phrase "meth dealer".
+</think>
+
+[{"index_term": "Methamphetamine", "matched_phrase": "meth dealer"}]

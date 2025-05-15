@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about job opportunities in Moreno Valley involving rolling cannabis products. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look for any words or phrases that could refer to illicit drugs or substances. The post mentions "rolling cannabis products." The word "cannabis" is listed in the index terms as "Marijuana (Cannabis, Weed, Pot)" which is the most widely used illicit drug. However, the term "rolling" here likely refers to the process of rolling cannabis into joints or blunts, which is a common activity related to cannabis use. But the key term here is "cannabis," which is explicitly listed. 
+
+I should check if "cannabis" is in the index terms. Yes, under Marijuana. So the phrase "cannabis products" would map to "Marijuana." The rest of the post talks about job shifts and locations, which don't contain any other drug references. The term "rolling" is part of the process, but it's not a slang or euphemism for a drug. Therefore, the only match is "cannabis" under the Marijuana index term. 
+
+I need to make sure there's no other term. The post doesn't mention any other drugs or slang. So the JSON array should have one entry with index_term "Marijuana" and matched_phrase "cannabis".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

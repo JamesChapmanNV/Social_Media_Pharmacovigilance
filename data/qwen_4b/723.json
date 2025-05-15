@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "and I'm sippin on that codeine, not Brady 😈". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, using, buying, promoting, etc. Also, slang or euphemisms indicating recreational use or abuse. The example given in the first example mentions "lean" and "codeine" with a supportive tone, which is why it's labeled True.
+
+In the current content, the user says "sippin on that codeine". "Sippin" is slang for drinking, so this is a casual way of saying they're consuming codeine. Codeine is an opioid, which is a controlled substance. The phrase "not Brady" might be a reference to a person's name, but the main point is the use of codeine. The tone here is casual and possibly recreational, using slang. 
+
+The presence of codeine, which is an OTC drug but also a controlled substance, and the use of "sippin" (slang for drinking) suggests recreational use. The emoji 😈 adds a dismissive or mocking tone, which could indicate normalization or even encouragement of its use. 
+
+Since the content mentions codeine in a context that implies use (sipping it), and uses slang, this fits the True category. The example given in the first example had similar elements, so this should be classified as True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses'sippin on that codeine' with slang and a dismissive tone, indicating recreational drug use."
+}

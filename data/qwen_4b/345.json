@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The content here is about a report mentioning a drug overdose and intent in a murder charge. The user wants to classify this as illicit/abusive-drug-related or not. 
+
+First, I need to check if there's any mention of illegal drugs, abuse, or promotion. The content says "drug overdose," which is a medical or legal context. The mention of murder charge relates to the intent, but the focus is on the overdose. 
+
+The example given in the task says that if it's in a medical or educational context, it's false. This seems like a legal or news report discussing a drug-related incident, but not promoting or encouraging abuse. There's no slang or euphemism here. The terms are used in a factual, legal sense. So the classification should be false. The explanation would note that it's discussing a drug overdose in a legal context without promoting misuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a drug overdose in a legal context (murder charge) without promoting, glorifying, or abusing drugs."
+}

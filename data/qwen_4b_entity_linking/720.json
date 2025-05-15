@@ -1,0 +1,26 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions opioids and morphine. The task is to detect any drug references and link them to the appropriate index terms.
+
+First, I need to go through the post carefully. The first sentence says, "I've been through morphine withdrawal too, it's no fun." The word "morphine" is directly listed in the index terms under "Morphine". So that's a clear match. The index term for morphine is "Morphine", and the matched phrase is "morphine".
+
+Next, the post mentions "opiates" in the first sentence. Wait, the index terms don't have an entry for "opiates" specifically. The index terms include "Morphine" but not a general term for opioids. However, the user's instruction says to use "other" if the drug isn't in the list. But wait, the term "opiates" is a broader category. However, in the index terms, "Morphine" is listed, and "Opioids" aren't explicitly mentioned. Wait, looking back at the index terms, the entry for Morphine is there. But "opiates" is a synonym for opioids, which are a class that includes morphine. However, the index terms don't have a separate entry for "opiates". So "opiates" isn't in the list, so it should be "other". But wait, the user's example 3 had "xans" which isn't in the list, so it was "other". So in this case, "opiates" is not in the index terms, so it should be "other".
+
+But wait, the first sentence says "huge amount of opioids". Wait, the user wrote: "I've been through morphine withdrawal too..." So "morphine" is directly in the index terms. Then "opiates" is mentioned. But the index terms don't have "opiates" as a separate term. However, "morphine" is an opioid. But the user is using "opiates" here. However, the index terms don't have "opiates" as a term. So "opiates" would be "other".
+
+Wait, but the user's post says "huge amount of opioids for my pain". The index term for opioids isn't listed. The index terms include "Morphine", "Codeine", "Fentanyl", etc., but not "opiates" or "opioids" as a general term. So "opiates" is not in the list, so it should be "other".
+
+But wait, the user's post says "opiates" but the index term is "Morphine". However, "opiates" is a broader term. But the index terms don't have a general term for opioids. Therefore, "opiates" is not in the list, so it's "other".
+
+Wait, but the user's post mentions "opiates" and "morphine". So "morphine" is in the list, so that's a match. "Opiates" is not in the list, so it's "other".
+
+So the matched phrases would be "morphine" under "Morphine", and "opiates" under "other".
+
+Wait, but the user's post says "huge amount of opioids for my pain". Wait, the index terms include "Morphine", but "opiates" is not in the list. However, "opiates" is a synonym for opioids. But since the index terms don't have "opiates", it's "other".
+
+So the final answer would be two entries: one for "morphine" and one for "opiates" as "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "opiates"}
+]

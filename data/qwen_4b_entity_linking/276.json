@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "crazy how people really considered doing heroin... AND DID IT." I need to detect any drug references here.
+
+First, I'll look for keywords related to illicit drugs. The word "heroin" is clearly mentioned. Checking the index terms, there's an entry for Morphine, which includes aliases like MS Contin, Miss Emma, Morph. But wait, heroin is a different drug. Wait, looking back at the index terms, Morphine is listed as the prototypical opioid, but heroin isn't explicitly in the list. Wait, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, the task says to check if the drug is in the list. Since heroin isn't listed, I should check if there's any other term that might cover it. 
+
+Wait, looking at the index terms again, there's "Codeine (Lean, Purple Drank, Schoolboy)" and "Morphine" but not heroin. The user's example had "Codeine" for "lean" and "codeine". In this case, the post mentions "heroin". Since heroin isn't in the index terms, the correct index term would be "other". 
+
+But wait, let me double-check. The index terms list "Morphine" as a separate entry. Heroin is a different substance, even though they're both opioids. The index terms don't include heroin, so any mention of heroin would fall under "other". Therefore, the matched phrase is "heroin", and the index term is "other". 
+
+So the JSON array should have one object with index_term "other" and matched_phrase "heroin". The user also mentioned "AND DID IT" which might be a slang for doing something, but "it" here refers to heroin. However, "it" alone isn't a drug reference. So the only match is "heroin".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

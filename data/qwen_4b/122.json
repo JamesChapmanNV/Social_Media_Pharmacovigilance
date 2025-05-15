@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this. The content is: "Yo out here drinking promethazine like its codeine 😂😂😂😂 thinking he's getting high lol I'm so geeked rn". 
+
+First, I need to check if this is about illicit or abusive drug use. The user mentions promethazine, which is an OTC drug, but they're using it like codeine. Codeine is a controlled substance, so that's a red flag. The slang "drinking" here might be a euphemism for consuming. The tone is playful and supportive, with "hooked" and "geeked" which are slang for being high. The context is about using a drug in a way that's not medical, just for the effect. So this seems like abuse. The explanation should note the slang, the comparison to codeine, and the tone. So label is True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content uses slang ('drinking', 'hooked', 'geeked') and compares promethazine to codeine, implying recreational use and approval of drug abuse."
+}

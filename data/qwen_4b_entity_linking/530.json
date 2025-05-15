@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Dropped 2 ounces of codeine in my Minute Maid 🍇". I need to detect any drug-related references here.
+
+First, I'll look for keywords that match the index terms. The post mentions "codeine", which is directly listed under the Codeine index term. The phrase "codeine" is a direct match. Then there's "Minute Maid", which is a soda brand. Since the index terms don't include any references to soda or beverages, "Minute Maid" would fall under "other". The emoji 🍇 is just a grape emoji, so it's not a drug reference. 
+
+So the detected phrases are "codeine" and "Minute Maid". "Codeine" maps to the Codeine index term. "Minute Maid" isn't listed in the index terms, so it's "other". The example in the prompt where "snow" was "other" fits here. 
+
+Wait, but the user's example 3 had "xans" as "other". So in this case, "Minute Maid" is a brand name, not a drug. Therefore, the correct matches are codeine and other for Minute Maid. The answer should be two objects in the JSON array.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "Minute Maid"}
+]

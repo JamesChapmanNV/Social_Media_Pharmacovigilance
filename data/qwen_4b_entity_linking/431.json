@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "How am i still awake after many doses of codeine, a Benadryl& 3 bowls". I need to identify any drug references here and map them to the correct index terms.
+
+First, I'll break down the post word by word. The first part is "How am i still awake after many doses of codeine". The word "codeine" is clearly listed under the Codeine index term. So that's one match: index_term "Codeine" and matched_phrase "codeine".
+
+Next, the post mentions "a Benadryl& 3 bowls". "Benadryl" is a brand name for diphenhydramine, which is listed under the Diphenhydramine index term. So that's another match: index_term "Diphenhydramine" and matched_phrase "Benadryl".
+
+Then there's "3 bowls". The term "bowls" here might be a slang reference. Looking at the index terms, I don't see "bowls" listed. The closest might be "CBD" or other terms, but "bowls" isn't directly mentioned. However, in some contexts, "bowls" could refer to a slang term for a drug, but since it's not in the provided list, I should mark it as "other". So "3 bowls" would be index_term "other" and matched_phrase "3 bowls".
+
+Wait, but the user's example 3 had "xans" as "other". So if "bowls" isn't in the list, it's "other". So that's the third match.
+
+So the final JSON array should have three entries: codeine, benadryl, and bowls as other.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Diphenhydramine", "matched_phrase": "Benadryl"},
+  {"index_term": "other", "matched_phrase": "3 bowls"}
+]

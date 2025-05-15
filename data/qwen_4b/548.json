@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is about the DRI arresting a businessman linked to a drug haul case where 205.6 kg of heroin was seized. The key here is to determine if this is illicit or abusive drug-related.
+
+First, the mention of heroin is an illegal drug. The context is about an arrest and seizure, which indicates illegal activity. The term "drug haul case" suggests that the content is related to the illegal trafficking of drugs. The mention of heroin in a context of law enforcement action points to illicit drug-related content. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse, misuse, or promotion. Here, the heroin is being trafficked, which is illegal. The content is reporting on a criminal activity, so it's definitely related to illicit drugs. 
+
+The example given in the task includes similar scenarios where drug trafficking is mentioned, and the label is True. So this should be classified as True because it's about illegal drugs in a context of criminal activity.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions heroin, an illegal drug, in the context of a criminal operation involving drug trafficking and law enforcement action."
+}

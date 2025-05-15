@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "im making a heartstopper on crack video and im just laughing at myself like an idiot😭😭". I need to detect any drug references here.
+
+First, I'll go through the post word by word. The phrase "heartstopper" might be a slang term, but I don't see it listed in the index terms. Then "on crack" – wait, "crack" is a slang term for cocaine. Checking the index terms, cocaine's metabolite is Benzoylecgonine, but the term "crack" itself isn't listed. However, the index term for cocaine is Benzoylecgonine, but the user's instruction says if the drug isn't in the list, use "other". Wait, looking back at the index terms, cocaine is listed as Benzoylecgonine. But the post says "crack", which is a slang for cocaine. However, the index terms don't have "crack" as a direct term. The index term for cocaine is Benzoylecgonine, but the phrase "crack" isn't in the list. So according to the instructions, if the drug isn't in the list, use "other". Wait, but the index terms include "Cocaine" as Benzoylecgonine. Wait, no, looking at the list again: "Benzoylecgonine (BZE, Ecgonine benzoate) – The primary metabolite of cocaine measured in urine drug testing." So "Benzoylecgonine" is the index term for cocaine. But the phrase in the post is "crack", which is a slang for cocaine. However, the index term for cocaine is Benzoylecgonine, not "crack". Therefore, "crack" isn't listed in the index terms, so it should be "other". 
+
+Wait, but the index terms list "Cocaine" as Benzoylecgonine. Wait, no, looking at the list again: the index terms are listed as specific compounds. For example, "Amphetamine (Speed, Bennies, Adderall)" is an index term. So "crack" isn't in the list. Therefore, "crack" would be "other". However, the user might be referring to "crack" as a slang term for cocaine. But according to the index terms, the only entry related to cocaine is Benzoylecgonine. Therefore, "crack" isn't in the list, so it should be "other". 
+
+But wait, the index term for cocaine is Benzoylecgonine, but the user is using "crack" as a slang. Since "crack" isn't in the index terms, the correct index term would be "other". Therefore, the matched phrase "crack" would be "other". 
+
+So the output would be [{"index_term": "other", "matched_phrase": "crack"}]. 
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" because they weren't on the list. Similarly, "crack" isn't in the index terms, so it's "other". Therefore, the correct answer is "other" for "crack".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"}
+]

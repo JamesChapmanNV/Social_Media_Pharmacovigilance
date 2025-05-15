@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I just took a piss and I seen codeine coming out". I need to detect any drug references here.
+
+First, I'll read through the post carefully. The key part is "codeine coming out". The index terms list includes "Codeine" with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine" is directly listed under Codeine. The user is mentioning seeing codeine in their urine, which is a direct reference to the drug. 
+
+I should check if "codeine" is in the index terms. Yes, it is. The matched phrase is "codeine". There's no other slang or euphemism here. The rest of the sentence is about urinating, which isn't a drug reference. So the only match is "codeine". 
+
+I need to make sure there's no other term. The post doesn't mention any other drugs. So the JSON array should have one object with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

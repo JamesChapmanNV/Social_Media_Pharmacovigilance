@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I'll read through the post carefully: "Just chatting about old school games come vibe with us #cod #warzoneclips #twitch #twitchstreamer #fyp #iamsilencio #gaming #funnyvideos #lol #twitchclips #funnytwitchclip #crack #crackhead #lifestories #oldschoolgames #nintendo #mortalkombat #thesimpsons". 
+
+Looking for any drug-related terms. The hashtags here are important. Let's break them down:
+
+- #cod: Could be an abbreviation. In the index terms, "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". But "cod" might not directly map. Wait, "cod" could be short for "codeine"? But in the example, "lean" was mapped to codeine. However, "cod" isn't listed as a synonym in the index terms. But wait, looking back, the index term for Codeine includes "Lean", "Purple Drank", "Schoolboy". So "cod" might not be a direct match. However, sometimes "cod" is slang for codeine, but it's not in the list. Alternatively, maybe "cod" is a typo or abbreviation for something else. But in the context of the post, the user is using #cod and #crack, #crackhead. 
+
+Looking at the index terms, "Crack" is not listed as an index term. The index term for cocaine is "Benzoylecgonine (BZE, Ecgonine benzoate)" but that's the metabolite, not the slang. However, in the example 4, "snow" and "white lines" were marked as "other" because they aren't on the list. So if "crack" is a slang term for cocaine, but since the index terms don't have a specific entry for "crack" as a drug, it would be "other". Wait, but the index terms include "Crack" as a slang? Let me check the index terms again. 
+
+Looking at the list, "Crack" isn't listed as an index term. The index terms include "Methamphetamine", "Codeine", "Cocaine" (as Benzoylecgonine), but "Crack" is not directly listed. However, in the example 4, "snow" was considered "other" because it's not on the list. Similarly, "crack" might be considered as a slang term for cocaine, but since it's not in the index terms, it would be "other". 
+
+But wait, the index terms include "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. But the slang "crack" refers to cocaine. However, in the index terms, there's no direct entry for "crack" as a drug. Therefore, "crack" would be "other". Similarly, "crackhead" is a term for someone who uses crack, so that would also be "other".
+
+So in the post, the hashtags #crack and #crackhead are present. Since "crack" isn't in the index terms, they should be marked as "other". The #cod might be a typo or abbreviation. If "cod" is short for "codeine", then "codeine" is in the index terms. But "cod" isn't listed as a synonym. However, in the example 1, "lean" was mapped to codeine. So if "cod" is a slang for codeine, but it's not in the index terms, then it would be "other". But wait, the index term for codeine includes "Lean", "Purple Drank", "Schoolboy". "Cod" isn't listed. So "cod" would be "other".
+
+But wait, the user might have used #cod as a typo for "codeine". But since the index terms don't list "cod" as a synonym, it's safer to mark it as "other". 
+
+So the detected phrases would be "crack" and "crackhead", both marked as "other". The rest of the hashtags are related to gaming, so they don't refer to drugs. 
+
+Therefore, the JSON array would have two entries: "crack" and "crackhead" as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"},
+  {"index_term": "other", "matched_phrase": "crackhead"}
+]

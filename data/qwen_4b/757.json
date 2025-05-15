@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The content is "busy singing Uptown Girl at rock choir under the influence of codeine!" 
+
+First, I need to check if it's about illicit or abusive drug use. The key terms here are "codeine" and "under the influence." Codeine is a controlled substance, so that's a red flag. The phrase "under the influence" suggests that the person is using drugs, which could be recreational or misuse.
+
+The song "Uptown Girl" is by Billy Joel, which is a well-known song. But the context here is that the person is singing it while under the influence of codeine. The use of codeine in this context is likely recreational, as it's a controlled substance. The mention of "under the influence" indicates that the drug is being used, which could be considered abuse or misuse.
+
+The example given in the task includes "hooked" and "everyday" with an approving tone, which is why it's classified as True. Similarly, here, the content is about using codeine, which is an illicit drug, and the context is under the influence. Even though it's a song, the act of using codeine in that context is promoting or glorifying its use. 
+
+So, the label should be True because it mentions codeine in the context of being under its influence, which is a form of drug abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and 'under the influence,' indicating recreational drug use and potential abuse."
+}

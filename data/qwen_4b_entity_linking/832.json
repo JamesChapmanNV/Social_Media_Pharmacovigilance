@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Nu on air: Morphine - The Other Side (Unders Remix)". I need to detect any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs or substances. The post mentions "Morphine". Checking the index terms, Morphine is listed as an index term. The entry for Morphine says it's the prototypical opioid analgesic used for severe pain but prone to tolerance and dependence. So "Morphine" directly maps to the index term "Morphine".
+
+Are there any other phrases? The rest of the post is "Nu on air: The Other Side (Unders Remix)" which doesn't contain any other drug references. "Nu" might be a reference to a music genre or a person, but not a drug. "The Other Side" is a song title, so no drug terms there. "Unders Remix" is likely a remix title, not a drug.
+
+So the only match is "Morphine". The JSON array should have one object with index_term "Morphine" and matched_phrase "Morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]

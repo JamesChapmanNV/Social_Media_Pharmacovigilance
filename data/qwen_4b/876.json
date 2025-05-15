@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user wants to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "Hi, I'm from Mexico, where can I buy this wine? Any dealer in Mexico?"
+
+First, I need to check if there's any mention of drugs in the context of abuse, misuse, or promotion. The user is asking about buying wine in Mexico. Wine is an alcoholic beverage, but the question is whether this relates to illicit drugs. 
+
+Looking at the definitions, True includes mentions of illegal drugs, RX, OTC, or slang related to drug use. The content here mentions "wine," which is a legal drink in most places, including Mexico. There's no indication of drug abuse, promotion, or misuse. The user is asking about purchasing wine, which is a normal, legal activity. 
+
+The explanation should note that the content is about wine, not drugs. There's no slang or euphemism here. The context is about buying a legal product, so it's not related to illicit drugs. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to purchasing wine, a legal alcoholic beverage, with no mention of drugs, abuse, or illicit activity."
+}

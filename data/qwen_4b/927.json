@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is: "i imagine heroin feeling like calling someone back and them not answering." 
+
+First, I need to determine if this is illicit or abusive drug-related. The user is using heroin, which is an illegal drug. The phrase "feeling like calling someone back and them not answering" is a metaphor. But the key here is whether it's promoting or glorifying drug use.
+
+Heroin is a controlled substance, so mentioning it directly is a red flag. The metaphor might be trying to describe the emotional state associated with heroin use, which could be seen as encouraging or normalizing its use. Even if it's a metaphor, the mention of heroin itself is enough to classify it as illicit. The context here is about the experience of using heroin, which could be seen as promoting or discussing its effects, which might be considered abuse-related. 
+
+So, the label should be True because it mentions heroin (an illegal drug) in a context that could be associated with drug use, even if it's a metaphor. The explanation should note the mention of heroin and the context of imagining its effects, which might imply promotion or discussion of abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'heroin,' an illegal drug, and describes its effects in a way that could imply normalization or glorification of its use."
+}

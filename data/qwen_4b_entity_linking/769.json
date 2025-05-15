@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Strimmed the banks and donned chest waders to cut back weeds and reeds yesterday. Now where did I put my codeine phosphate?". I need to detect any drug references here.
+
+First, I'll go through each word and phrase. The first part talks about strimming banks, wearing waders, cutting weeds and reeds. Those are all gardening or maintenance activities. No drug terms there. 
+
+Then the second part: "Now where did I put my codeine phosphate?". The key phrase here is "codeine phosphate". Looking at the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. Codeine phosphate is a form of codeine, so it should map to the Codeine index term. 
+
+I need to check if "codeine phosphate" is exactly matched. The index term for Codeine includes "codeine", so "codeine phosphate" is a specific form but still falls under the Codeine category. The task says to match exact text, so even though it's a variant, it's still codeine. 
+
+No other phrases in the post seem to reference drugs. The rest are about activities and a question about where codeine is. So the only match is "codeine phosphate" under Codeine. 
+
+I should return a JSON array with one object: index_term "Codeine" and matched_phrase "codeine phosphate".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine phosphate"}
+]

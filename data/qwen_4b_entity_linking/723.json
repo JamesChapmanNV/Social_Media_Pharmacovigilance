@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "and I'm sippin on that codeine, not Brady 😈". I need to detect any drug references here.
+
+First, I'll look for keywords that might refer to illicit drugs. The phrase "sippin on that codeine" stands out. "Codeine" is explicitly listed in the index terms under the Codeine entry. The slang "lean" is also mentioned as a synonym for codeine, but in this post, the user says "codeine" directly. The mention of "Brady" might be a reference to a person, but since it's not a drug term, it's probably just a name. The emoji 😈 is just expressive and not relevant here.
+
+So, the main phrase here is "codeine". Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. Since "codeine" is directly mentioned, it matches the index term "Codeine". There's no other drug reference in the post. The "not Brady" part doesn't relate to any drug. Therefore, the only match is "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

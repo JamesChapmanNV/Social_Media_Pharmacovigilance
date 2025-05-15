@@ -1,0 +1,25 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "life you can't reject. capitalism injects a morphine called 'hope' as collateral for dreams." I need to detect any drug-related references here.
+
+First, I'll go through the post sentence by sentence. The first part is "life you can't reject." That doesn't seem to have any drug terms. The second sentence is the key part: "capitalism injects a morphine called 'hope' as collateral for dreams."
+
+Looking at the index terms, "Morphine" is listed. The phrase here is "morphine called 'hope'". But wait, the index term for morphine is "Morphine (MS Contin, Miss Emma, Morph)" which is a direct match. However, the post uses "morphine" as a metaphor, not the actual drug. But according to the task, I need to detect any references to illicit drugs, including metaphors or slang. However, the index terms are specific to the listed substances. Since "morphine" is in the index terms, even if it's used metaphorically here, it's still a direct match. 
+
+Wait, but the example in the problem statement includes "codeine" as an index term, and the phrase "lean" is a slang for codeine. So even if the term is used in a metaphor, as long as it's a direct reference to a drug in the index, it should be matched. 
+
+In this case, "morphine" is in the index terms. The phrase here is "morphine called 'hope'". The exact phrase is "morphine", so even though it's a metaphor, the actual word "morphine" is present. Therefore, it should be matched to "Morphine". 
+
+But wait, the user's instruction says to detect every word or phrase that refers to an illicit drug. The phrase "morphine" is a direct match. However, in the example given, "codeine" is matched with "lean" and "codeine". So even if "morphine" is used metaphorically, as long as it's a direct reference to the drug, it's included. 
+
+But the problem is that "morphine" is a legitimate drug, and in the index terms, it's listed. So the correct index term here is "Morphine". Therefore, the matched phrase is "morphine". 
+
+But wait, the post says "capitalism injects a morphine called 'hope'". The word "morphine" is present, so it's a direct reference. Therefore, the index term is "Morphine", and the matched phrase is "morphine". 
+
+But the user might be tricking us here. However, according to the instructions, we have to link each detected phrase to the index term. Since "morphine" is in the index terms, it's a valid match. 
+
+So the output should be one object: {"index_term": "Morphine", "matched_phrase": "morphine"}.
+
+I need to check if there are any other terms. The rest of the post doesn't have any other drug references. So the final answer is just that one entry.
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

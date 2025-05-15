@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this content classification. The user provided the content: "Try his friend who was in the passenger seat who sold him the drugs. He is responsible for George Floyd's overdose." 
+
+First, I need to determine if this is illicit/abusive-drug-related. The key here is to check for mentions of illegal drugs, abuse, or promotion. The content mentions "sold him the drugs" and "overdose." The mention of selling drugs implies involvement in drug trafficking or distribution, which is illegal. Also, the reference to George Floyd's overdose is a real event, but the context here is about someone being responsible for that overdose, which could be linked to drug abuse.
+
+However, the user's task is to classify based on the content's context. The sentence is about someone being responsible for an overdose, which might be a result of drug use. But does it directly mention illegal drugs? The term "drugs" is general. However, in the context of the sentence, it's about selling drugs, which is illegal. The phrase "He is responsible for George Floyd's overdose" connects the person to a drug-related death. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse, such as using, buying, promoting. Here, selling drugs is promoting or distributing, which is illegal. The overdose is a result of drug abuse. So the content is discussing the sale of drugs and the consequence of an overdose, which fits under illicit/abusive-drug-related. 
+
+But wait, the example given in the prompt includes "codeine" and "lean" as slang, which are drugs. In this case, the content doesn't specify the type of drug, just "drugs" in general. However, the act of selling drugs is illegal, so even without specifying, the context of selling and the overdose would be considered abusive. 
+
+So the label should be True because it's about selling drugs (which is illegal) and the overdose, which is a result of drug abuse. The explanation should mention the sale of drugs and the overdose as indicators of drug abuse.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions'sold him the drugs' and references an overdose, indicating involvement in drug distribution and drug abuse-related consequences."
+}

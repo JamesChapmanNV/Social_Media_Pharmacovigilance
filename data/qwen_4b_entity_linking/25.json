@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Mike Tyson is Heading to Hippie Hill for 4/20". I need to check if there are any drug-related references here.
+
+First, I'll break down the post. The main elements are "Mike Tyson", "Hippie Hill", and "4/20". 
+
+"Hippie Hill" might be a reference to a place associated with counterculture or cannabis use, but I need to check if it's a known slang term for a drug. From the index terms, "Marijuana" is listed as Cannabis, Weed, Pot. But "Hippie Hill" isn't directly listed. However, 4/20 is a well-known reference to cannabis use, especially in the US. The index term for marijuana is "Marijuana (Cannabis, Weed, Pot)". 
+
+The phrase "4/20" is a clear reference to cannabis. So the matched phrase here would be "4/20", and the index term is "Marijuana". 
+
+I should check if "Hippie Hill" is a slang term for anything. But looking at the index terms, there's no mention of "Hippie Hill" as a drug reference. So it's probably just a place name. Therefore, the only drug-related term here is "4/20", which links to marijuana. 
+
+So the JSON array should have one entry with index_term "Marijuana" and matched_phrase "4/20".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "4/20"}
+]

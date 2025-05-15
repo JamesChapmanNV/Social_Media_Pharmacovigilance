@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "All we have left is to crack the 7M curse on yt. The day we surpass crown's views is the day we'll be invincible." I need to check for any drug-related references here.
+
+First, I'll go through each part of the post. The first sentence mentions "crack the 7M curse on yt." The word "crack" might be a slang term, but I need to check if it's related to drugs. However, "7M" could refer to a number or a term in the context of YouTube views, like reaching 7 million. "Curse" here is probably metaphorical, not related to drugs. "Yt" is likely "YouTube."
+
+The second sentence: "The day we surpass crown's views is the day we'll be invincible." "Crown's views" again refers to YouTube views. The phrase "be invincible" is about achieving success, not related to drugs. 
+
+Looking at the index terms provided, none of the terms here match. The post doesn't mention any drug names, slang, or euphemisms. Words like "crack," "curse," "views," "invincible" don't align with any of the listed index terms. 
+
+So, there are no drug-related references in this post. Therefore, all detected phrases should be marked as "other." But wait, the user's examples show that if there's no match, it's "other." Since there's no drug mention here, the answer should be an empty array? Wait, no, the examples have cases where "other" is used when the phrase isn't a drug. But in this case, the post doesn't have any phrases that refer to drugs. So the correct response is an empty array? But the user's example 3 shows "xans" as other. But in this case, the post has no drug references. So the JSON array should be empty. Wait, the user's instruction says to return only the matches. If there are none, then the array is empty. But the examples have cases where even if the phrase isn't a drug, like "xans" in example 3, it's marked as "other." But in this post, there's no mention of drugs, so the answer should be an empty array. However, the user's example 4 shows that even if the phrase isn't a drug, like "snow" and "white lines," they are marked as "other." But in this case, the post doesn't have any drug terms. Therefore, the correct output is an empty array. But the user's example 4 has two entries, but in this case, there are none. So the answer is an empty array. But the user's instruction says to return only the valid JSON array. So the final answer is an empty array.
+</think>
+
+[]

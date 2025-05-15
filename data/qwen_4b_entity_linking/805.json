@@ -1,0 +1,29 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that needs to be moderated for drug-related references. The post is: "CODEINE CUPS PAINT A PICTURE SO VIVID 🍼💟👽 #BeamUp". 
+
+First, I need to identify any words or phrases that refer to illicit drugs or substances. The task is to detect every such term, link them to the appropriate Index Term from the given list, and return a JSON array.
+
+Looking at the post, the first word is "CODEINE". According to the Index Terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "CODEINE" is directly mentioned here, so that's a clear match. The Index Term for Codeine is "Codeine", so the matched_phrase is "CODEINE".
+
+Next, the phrase "CUPS" is mentioned. Now, I need to check if "cups" refers to a drug. From the Index Terms, I don't see any entry that directly refers to "cups" as a drug. However, in some contexts, "cups" might be slang for a drug, but based on the provided list, there's no match. So, this would fall under "other".
+
+Then "PAINT A PICTURE" – this is a metaphorical expression. There's no drug-related term here. "SO VIVID" is an adjective describing the picture, not a drug. The emojis 🍼 (which is a grape, but sometimes used as a slang for drugs like "grape" in some contexts, but not in the provided list) and 💟 (a heart symbol) and 👽 (a alien symbol) are likely just decorative and not drug references. The hashtag #BeamUp is unrelated.
+
+So the only direct match is "CODEINE". The "CUPS" is not in the list, so it's "other". But wait, the user's instruction says to detect every word or phrase that refers to an illicit drug. "Cups" might be a slang term here. Wait, but in the Index Terms, there's no entry for "cups". However, in some contexts, "cups" can refer to "codeine cups", which is a slang term for codeine. But according to the provided list, "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". But "cups" isn't listed. However, the user's example 1 had "lean" and "codeine" both matched. So maybe "cups" is a slang term for codeine. But according to the Index Terms, "Codeine" is the index term for "lean", "codeine", etc. But "cups" isn't listed. Wait, maybe "cups" is not a drug reference here. The user might be using "cups" as a metaphor, like "paint a picture" as a metaphor for something else. Alternatively, maybe "cups" is a slang term for a drug, but since it's not in the list, it's "other".
+
+But the user's example 3 had "xans" which is not in the list, so it was "other". Similarly, in example 4, "snow" and "white lines" were "other". So in this case, "cups" is not a known drug term, so it's "other". However, the user might have intended "cups" as a slang term for codeine. But according to the Index Terms, "Codeine" is the term, and "cups" isn't listed. Therefore, "cups" would be "other". But the user's example 1 had "lean" and "codeine" both matched. So in this case, the only match is "CODEINE". The rest of the words are not drug references. So the JSON array should have one entry for "CODEINE" and "cups" as "other".
+
+Wait, but the user's instruction says to detect every word or phrase that refers to an illicit drug. So "cups" might be a slang term. But according to the provided list, "cups" is not in the Index Terms. Therefore, it's "other". So the final answer would be:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "CODEINE"},
+  {"index_term": "other", "matched_phrase": "CUPS"}
+]
+
+But wait, the user's example 3 had "xans" as "other", and in example 4, "snow" and "white lines" were "other". So in this case, "cups" is not a drug term, so "other". But the user might have intended "cups" as a slang term for codeine. However, according to the given list, "Codeine" is the term, and "cups" isn't listed. Therefore, the correct approach is to match "CODEINE" to "Codeine", and "CUPS" to "other".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "CODEINE"},
+  {"index_term": "other", "matched_phrase": "CUPS"}
+]

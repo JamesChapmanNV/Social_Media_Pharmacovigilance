@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this content. The user provided a song lyric snippet with phrases like "steal the night K WORD," "feel it under your skin," "time is right," "pulling you in," "pump it up," "overdose," and "infected by the sound." 
+
+First, I need to check if there's any mention of drugs. The words "overdose" and "K WORD" stand out. "K WORD" could be slang for a drug, maybe a reference to a specific substance. "Overdose" is a strong indicator of drug use. The context is a song, so the lyrics might be about drug use or addiction. The phrases like "pulling you in" and "infected by the sound" suggest a seductive or addictive theme. 
+
+The example given in the prompt where "overdose" was part of the content was classified as True. Here, the mention of overdose and possible drug slang ("K WORD") fits the criteria for illicit or abusive drug-related content. The song's lyrics seem to glorify or encourage the use of drugs, using euphemisms and references to addiction. 
+
+I should also consider if there's any medical or educational context, but the tone here is more about the experience of using drugs, not teaching about them. The use of "overdose" in the lyrics implies the risk of drug abuse, which aligns with the True category. 
+
+So the classification should be True because the content mentions drug-related terms in a context that suggests abuse or addiction.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content references 'overdose' and 'K WORD' (potentially slang for a drug), suggesting themes of drug use and addiction with a glorifying tone."
+}

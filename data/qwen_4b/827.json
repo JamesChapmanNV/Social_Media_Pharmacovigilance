@@ -1,0 +1,10 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "Do you have the full judgement? If you do, please share it with me. ✨"
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to abuse. The words here are "judgement" and "share it". The emoji is a sparkle, which might be just decorative. There's no mention of drugs, opioids, codeine, or any slang terms. The context seems to be about sharing judgment or opinion, not related to drug use. The example given in the task had terms like "lean" and "codeine" which are drug-related. Here, there's no such terms. The user is asking for someone's judgment, which is unrelated to drug abuse. So, the answer should be False. The explanation should note that there's no drug-related content mentioned, just a request for judgment.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content does not mention drugs, drug abuse, or related terms, and instead focuses on a request for judgment or opinion."
+}

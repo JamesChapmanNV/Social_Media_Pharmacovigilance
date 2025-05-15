@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references. First, I need to read the post carefully.
+
+The post says: "We're partnering with  and  to host an online discussion about our newest issue brief, The Impact of the Overdose Crisis on the Latino Community in California. Join us on Wednesday April 21 @ 3pm PST. Register here:"
+
+Looking through the text, I need to check for any slang, euphemisms, or terms that might refer to illicit drugs. The main content here is about an event discussing the overdose crisis. The keywords here are "overdose crisis," which is a general term related to drug overdoses but not a specific drug name. The post doesn't mention any specific drugs or substances. The terms "Latino Community in California" are just demographic information. 
+
+The example given in the problem statement includes terms like "lean" and "codeine" which are directly linked to the index terms. However, in this post, there's no mention of specific drugs. The phrase "overdose crisis" is a broad term and not a specific drug. The index terms list includes things like Codeine, Amphetamine, etc., but the post doesn't use any of those specific terms. 
+
+I should check if "overdose" is considered a drug-related term, but according to the index terms provided, it's not listed. The index terms are specific to certain drugs or metabolites. Since the post doesn't mention any specific drug names or slang, there are no matches. Therefore, the answer should be an empty array. 
+
+Wait, but the user's examples include cases where "xans" was considered "other" because it wasn't in the list. In this case, the post doesn't have any drug-related phrases. So the correct response is an empty JSON array.
+</think>
+
+[]

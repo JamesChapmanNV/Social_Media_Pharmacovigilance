@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term, and return a JSON array.
+
+First, I'll look at the post: "pls his entire look has me screaming😭😭 SO FCKING HOT SIR YOONGI MARRY ME!!!". The user is expressing admiration for Yoongi, possibly from a group, and asking him to marry them. There's a lot of emotional language here, but I need to check if there are any drug-related terms.
+
+Looking at the words: "pls", "screaming", "FCKING HOT", "YOONGI", "MARRY ME". None of these words directly relate to drugs. The exclamation "FCKING HOT" is more about expressing strong emotion or attraction, not a drug reference. The mention of Yoongi is a person's name, not a substance. 
+
+I should check if any slang or euphemisms are present. Words like "screaming" could be part of a euphemism, but in this context, it's more about emotional reaction. "Hot" is a colloquial term for attractive, not a drug. There's no mention of any substances, drugs, or related terms like "codeine", "amphetamine", "cocaine", etc. 
+
+The example provided in the problem statement shows that "lean" and "codeine" are linked, but in this case, there's no such term. The post is about a personal relationship request, not drug use. Therefore, there are no drug-related references here. 
+
+Since there are no matches, the JSON array should be empty. However, the user's examples show that even if there are no matches, the output is an empty array. So the correct response is an empty JSON array.
+</think>
+
+[]

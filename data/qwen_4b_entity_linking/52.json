@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post mentions DMX overdosing and his mentor tricking him into smoking weed laced with crack when he was 14. 
+
+First, I need to identify any drug references in the post. The key phrases here are "weed laced with crack". Let me check the index terms provided. 
+
+Looking at the list, "Crack" is not directly listed, but "Crack" is a known illicit drug. However, in the index terms, the only mention related to crack is under "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. But the user is referring to crack, which is a form of cocaine. However, the index terms don't have a direct entry for crack. Wait, the index terms include "Benzoylecgonine" as the primary metabolite of cocaine. Since crack is a form of cocaine, maybe it's considered under cocaine? But the index terms don't have a specific entry for crack. 
+
+Wait, looking again at the index terms, there's no specific entry for crack. The closest is "Benzoylecgonine" which is the metabolite of cocaine. However, the post mentions "weed laced with crack", so "crack" is the drug here. But since the index terms don't have a direct term for crack, I need to check if "Crack" is in the list. Let me scan through the index terms again. 
+
+Looking through the list, the only cocaine-related term is Benzoylecgonine. The other terms are for various drugs like fentanyl, methamphetamine, etc. So "crack" isn't listed. Therefore, according to the instructions, if the drug is not in the list, use "other". 
+
+So "crack" would be "other". Also, "weed" is a slang for marijuana, which is listed as "Marijuana (Cannabis, Weed, Pot)". So "weed" would map to "Marijuana". 
+
+So in the post, "weed laced with crack" would be "weed" as Marijuana and "crack" as other. 
+
+The other part of the post is "overdose" which is a general term, but not a specific drug. The user is referring to an overdose, but the actual drug in question is crack. The mentor tricking him into smoking weed laced with crack. So the key terms are "weed" and "crack". 
+
+So the JSON array should have two entries: one for "Marijuana" with "weed" and another for "other" with "crack". 
+
+Wait, but the example in the user's instruction shows that "snow" and "white lines" are considered "other" even though they might be references to something else. So in this case, "crack" is not in the index terms, so it's "other". 
+
+Therefore, the correct matches are "weed" as Marijuana and "crack" as other. The rest of the post doesn't mention any other drugs. The mention of "overdose" is a general term, not a specific drug. So the final answer should be two entries.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "weed"},
+  {"index_term": "other", "matched_phrase": "crack"}
+]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's see. The user provided a content snippet about Prince's death from an overdose. The task is to classify this as illicit/abusive-drug-related or not. 
+
+First, I need to check if the content mentions illegal drugs in a context of abuse or misuse. The content says Prince was "publicly So against drugs" but died of an overdose. The key here is the mention of overdose, which is a form of drug abuse. However, the context is a tribute to Prince, who was a public figure against drugs. The content is discussing his death due to an overdose, which is a tragic event, but it's not promoting or glorifying drug use. It's more of a statement about his death and his stance against drugs.
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse, using slang, etc. But in this case, the content is not promoting or encouraging drug use. It's just stating a fact about his death. The mention of overdose is a result of drug abuse, but the content isn't encouraging or glorifying it. It's more of a sad commentary on his death. 
+
+So according to the definitions, False includes content that uses drug terms in different contexts or unrelated topics. Since the content is about a public figure's death and his stance against drugs, it's not promoting misuse. Therefore, the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses Prince's death from an overdose in the context of his public opposition to drugs, not promoting or glorifying drug abuse."
+}

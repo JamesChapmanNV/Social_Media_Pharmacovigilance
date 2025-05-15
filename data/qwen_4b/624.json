@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "You must be partying with Hunter Biden with all the crack your smoking."
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Also, slang or euphemisms related to drug use. False includes medical, educational, or preventative contexts.
+
+Looking at the content, "crack" is a slang term for crack cocaine, which is an illegal drug. The phrase "all the crack your smoking" seems like it's referring to someone using crack cocaine. The mention of "partying with Hunter Biden" might be a reference to a specific event or context, but the key part here is the mention of crack. 
+
+The user is using "crack" in a context that implies recreational use, as "partying" and "smoking" are activities associated with drug use. The tone here seems to be making a statement that someone is using drugs, possibly in a way that's not encouraged. The mention of a specific person (Hunter Biden) might be a red herring, but the drug reference is clear.
+
+Since "crack" is an illegal drug and the context suggests recreational use, this would fall under True. The explanation should note the mention of crack and the context of use. The example given in the prompt where "lean" and "codeine" were considered True is similar here. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'crack,' a slang term for crack cocaine, and implies recreational drug use through the context of 'partying' and'smoking.'"
+}

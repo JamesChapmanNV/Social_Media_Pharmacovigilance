@@ -1,0 +1,33 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read the post carefully: "I don't want to add to yur sad songs.. Yu should start using cannabis sha.. I don't want to hear pray 4  Ezinne". 
+
+Looking for any slang, euphemisms, or synonyms for drugs. The first part mentions "add" which could be a reference to amphetamine (since "addy" is listed as Amphetamine in the index terms). But the user wrote "add" without the "y", but "addy" is a known slang. However, the post says "add to yur sad songs", which might be a typo or misspelling. But "add" could be short for "addict" or "add" as in amphetamine. However, in the example, "addy" was matched to Amphetamine. Here, "add" might be a misspelling of "addy", but the exact phrase is "add". Wait, the index term for Amphetamine includes "Speed, Bennies, Adderall", but "addy" is a slang. However, the post says "add" without the "y". But maybe the user intended "addy" here. But the exact phrase is "add". However, the example 2 has "addy" matched to Amphetamine. So maybe "add" here is a variant. But the index term for Amphetamine is "Amphetamine (Speed, Bennies, Adderall)", so "addy" is a slang. But the post says "add" without the "y". But maybe it's a typo. However, the user might have intended "addy" here. Alternatively, maybe "add" is not in the list. Wait, the index terms for Amphetamine include "Adderall", but "add" is not listed. However, in example 2, "addy" is matched. So perhaps "add" is a misspelling of "addy", but the exact phrase is "add". However, the index term for Amphetamine is "Amphetamine (Speed, Bennies, Adderall)", so "addy" is a slang. But the post says "add" without the "y". So maybe this is not a match. Alternatively, maybe "add" is not in the list, so it would be "other". 
+
+Then the next part: "Yu should start using cannabis sha..". "Cannabis" is listed as an index term. So "cannabis" is directly matched to "Marijuana (Cannabis, Weed, Pot)". So "cannabis" is a direct match. 
+
+The last part: "I don't want to hear pray 4 Ezinne". "Pray 4 Ezinne" is unclear, but "pray" might be a misspelling of "pray" as in "pray for", but not a drug reference. "Ezinne" could be a name or a misspelling. So no drug references here.
+
+So the detected phrases are "add" and "cannabis". 
+
+Now, check the index terms. "Amphetamine" is the index term for "Amphetamine (Speed, Bennies, Adderall)", but "add" is not exactly listed. However, in example 2, "addy" is matched to Amphetamine. So maybe "add" is considered a slang here. But the exact phrase is "add". Since "addy" is a slang, but "add" is not in the list, perhaps it's "other". Wait, the index terms for Amphetamine include "Adderall", but "add" is not in the list. So maybe "add" is not a match. But the user might have intended "addy" here. However, the exact phrase is "add", so if the index term doesn't have "add", then it would be "other". 
+
+Alternatively, maybe "add" is a typo for "addy", but the exact phrase is "add". Since the index terms don't have "add" as a synonym, it would be "other". 
+
+So the first part "add" is not a direct match, so "other". Then "cannabis" is a direct match. 
+
+So the JSON would be: 
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]
+
+But wait, the user wrote "cannabis sha". "Sha" might be a slang, but not in the list. So "cannabis" is the only match. 
+
+So the answer is the cannabis match.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"}
+]

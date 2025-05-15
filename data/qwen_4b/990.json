@@ -1,0 +1,14 @@
+<think>
+Okay, let's see. The user provided a content snippet: "i just found by chance and i'm so glad she's so beautiful i love girls." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check if there are any drug-related terms mentioned. The content talks about finding someone by chance, being glad she's beautiful, and loving girls. There's no mention of drugs, slang, or anything related to drug use, abuse, or promotion. The words "found," "glad," "beautiful," "love" are all general terms. 
+
+The definitions say True includes mentions of illegal drugs in contexts of abuse, slang, or encouragement. False includes medical, educational, or preventative contexts. This content doesn't mention any drugs at all. It's just about a person's appearance and feelings. 
+
+So the answer should be False because there's no drug-related content here. The explanation would note that there's no mention of drugs or drug-related terms in any context.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes a personal relationship observation with no mention of drugs, drug terminology, or drug-related contexts."
+}

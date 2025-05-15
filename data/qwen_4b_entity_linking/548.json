@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I need to look at the provided post: "In a big breakthrough, the DRI arrested a businessman in connection with last year's #drug haul case, where 205.6-kg heroin was seized at #Kandla port in Gujarat."
+
+I need to scan each word and phrase for any drug references. The post mentions "#drug haul case" and "heroin." Heroin is explicitly listed in the Index Terms under "Morphine" as MS Contin, Miss Emma, Morph. Wait, let me check the Index Terms again. Yes, Morphine is listed as the prototypical opioid analgesic, and heroin is a separate entry? Wait, looking back, the Index Terms include "Heroin" as one of the terms? Wait, no. Let me check the list again.
+
+Looking at the Index Terms, the entry for Morphine is: "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence." Heroin isn't directly listed here. However, the term "heroin" is a drug, but in the Index Terms, is there an entry for it? Let me check again.
+
+Looking through the list, I don't see "Heroin" listed as an Index Term. The closest is "6-Acetylmorphine (6-Monoacetylmorphine, 6-MAM) – An active intermediate metabolite formed almost immediately after heroin use." But that's a metabolite, not the drug itself. The Index Terms include "Heroin" as a separate entry? Wait, no. The Index Terms provided don't have a direct entry for "Heroin." The only mention of heroin is in the metabolite 6-MAM. So, if the post mentions "heroin," does that count as a drug reference? The task says to detect every word or phrase that refers to an illicit drug or substance, including illegal, RX, OTC, or recreational drugs. So "heroin" is an illicit drug. However, in the Index Terms, is there an entry for heroin? Let me check again.
+
+Looking through the list, there's no direct entry for "Heroin." The Index Terms include "Morphine" and "6-Acetylmorphine," but not heroin. The user's instruction says to link each detected phrase to its matching Index Term. If the drug isn't in the list, use "other." So in this case, "heroin" is an illicit drug, but it's not in the Index Terms. Therefore, the matched_phrase "heroin" would be linked to "other."
+
+Wait, but the example given in the problem includes "lean" and "codeine" under Codeine. So, if the post mentions "heroin," since it's not in the Index Terms, it should be "other." However, the user might have intended that "heroin" is part of the Index Terms. Let me check again. The Index Terms list includes "Heroin" as a term? No, looking at the list, the only entries related to opioids are Morphine, Codeine, Fentanyl, OxyContin, etc. Heroin isn't explicitly listed. Therefore, "heroin" would be "other."
+
+But wait, the user's example 1 includes "lean" and "codeine" as Codeine. So "lean" is a slang for codeine. In the post, "heroin" is a direct reference. Since the Index Terms don't have an entry for heroin, the correct index term would be "other."
+
+So the matched_phrase here is "heroin," and the index_term is "other." Also, the hashtag #drug is mentioned, but the user's example 4 shows that "snow" and "white lines" are "other" because they aren't drugs. However, the hashtag #drug is a general term, not a specific drug. So in this case, the only drug mentioned is "heroin," which is not in the Index Terms. Therefore, the JSON should have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+Wait, but the post also mentions "#drug haul case." The hashtag #drug is a general term, not a specific drug. So that's not a drug reference. The only specific drug is "heroin." Therefore, the correct output is one entry for "heroin" as "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

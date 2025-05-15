@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "yep, I stopped drinking 8 1/2 yrs ago, strictly #Cannabis now, I don't miss a drop". I need to detect any drug-related references and map them to the index terms.
+
+First, I'll scan the post for any mentions of drugs. The user mentions "drinking" but then says they stopped and now use Cannabis. The hashtag #Cannabis is there. Looking at the index terms, Cannabis is listed as "Marijuana (Cannabis, Weed, Pot)".
+
+The word "drinking" might be a slang term for consuming alcohol, but since the user is now using Cannabis, the main reference here is Cannabis. The phrase "strictly #Cannabis now" clearly points to Cannabis. The term "don't miss a drop" could imply regular use, but the key term is Cannabis.
+
+Checking the index terms, "Marijuana" is the correct index term for Cannabis. There's no mention of other drugs here. So the only match is "Cannabis" under the index term "Marijuana". The rest of the post doesn't have any other drug references. So the JSON array should have one object with index_term as "Marijuana" and matched_phrase as "Cannabis".
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "Cannabis"}]

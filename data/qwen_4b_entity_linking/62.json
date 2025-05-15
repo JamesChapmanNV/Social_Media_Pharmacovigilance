@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "Right here👇would add Soul Food… 😂the crack comment tho🤣🤣". I need to detect any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs. The phrase "Soul Food" is mentioned. Wait, Soul Food is a type of cuisine, not a drug. But the user also mentions "crack comment". Oh, "crack" is a slang term for crack cocaine. So "crack" is definitely a drug reference. 
+
+Looking at the index terms, "crack" isn't listed directly. The closest might be "Codeine" but that's not right. Wait, the index terms include "Codeine" with synonyms like "Lean", "Purple Drank", "Schoolboy". But "crack" isn't in the list. The example 4 shows that if the drug isn't in the list, use "other". So "crack" would map to "other".
+
+So the matched phrase is "crack", and the index term is "other". The "Soul Food" part is just a food reference, so it's not a drug. The rest of the post is just emojis and a comment, so no other terms. Therefore, the JSON should have one entry for "crack" as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"}
+]

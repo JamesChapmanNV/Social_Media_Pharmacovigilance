@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to read the post carefully: "Him and Davison getting arrested over this Kinahan shit would be tremendous. They'd both grass in a heartbeat. Davison would be first to crack."
+
+Looking for slang, euphemisms, or terms that might refer to drugs. The word "grass" is a common slang for marijuana. But wait, is "grass" in the index terms? Let me check the list. Scanning through, I don't see "grass" listed. The index terms include things like Codeine, Amphetamine, Benzodiazepines, etc. "Grass" isn't directly listed, so according to the instructions, if the drug isn't in the list, use "other". 
+
+Then there's "Kinahan shit". Kinahan is a name, probably a reference to a criminal organization, but "shit" here is probably not a drug term. The phrase "would be tremendous" is just commentary. "They'd both grass in a heartbeat" – "grass" is the key here. Since "grass" isn't in the index terms, it should be "other". 
+
+"Crack" could refer to crack cocaine, but "crack" is listed as a term under "Methamphetamine" (Crystal Meth, Ice, Desoxyn)? Wait, no. Let me check the index terms again. The index terms include "Methamphetamine" and "Crack" isn't listed. Wait, the index terms for Methamphetamine are listed as "Methamphetamine (Crystal Meth, Ice, Desoxyn)" but "crack" isn't in the list. However, "crack" is a term for cocaine, but in the index terms, "Benzoylecgonine (BZE, Ecgonine benzoate)" is the metabolite of cocaine. But "crack" itself isn't listed. So if "crack" is used, it's not in the index terms, so it would be "other". 
+
+But wait, the post says "Davison would be first to crack." Here, "crack" is likely slang for crack cocaine. However, in the index terms, "crack" isn't listed. The only cocaine-related term is "Benzoylecgonine", which is a metabolite. So "crack" isn't in the index terms, so it should be "other". 
+
+So the detected phrases are "grass" and "crack". Both are not in the index terms, so they should be "other". 
+
+Wait, but "grass" is a known slang for marijuana. However, in the index terms, the only related term is "CBD" and "Marijuana (Cannabis, Weed, Pot)", but "grass" isn't listed. The index terms for marijuana are "Marijuana", so if "grass" is a synonym, but it's not in the list, so it's "other". 
+
+Therefore, both "grass" and "crack" would be marked as "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "grass"},
+  {"index_term": "other", "matched_phrase": "crack"}
+]

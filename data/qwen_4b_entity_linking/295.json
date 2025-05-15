@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Vote Up Loudiene - Codeine & Crablegs Hosted by DJ Scream". I need to detect any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs. The post mentions "Codeine" directly, which is listed in the index terms. So that's one match. Then there's "Crablegs". Wait, I need to check if "Crablegs" is a slang or a term for a drug. Hmm, I'm not sure. Let me think. "Crablegs" doesn't ring a bell as a drug term. Maybe it's a typo or a brand name? Alternatively, could it be a misspelling of "Crack" or something else? But "Crack" isn't in the list. The index terms include "Codeine", "Amphetamine", "Methamphetamine", etc. "Crablegs" doesn't match any of those. So maybe it's not a drug reference. 
+
+Wait, the user's example 3 had "xans" which wasn't in the list, so it was marked as "other". Similarly, if "Crablegs" isn't in the index terms, it should be "other". But I need to confirm if "Crablegs" is a known term. Let me check the index terms again. The list includes terms like "Codeine", "Amphetamine", "Methamphetamine", "Ketamine", "LSD", "Marijuana", etc. "Crablegs" doesn't appear there. So, "Crablegs" would be "other". 
+
+So the post has "Codeine" which is directly in the index, and "Crablegs" which isn't. Therefore, the JSON should have one entry for Codeine and another for "other" with Crablegs. Wait, but the example 3 had "xans" as other. So in this case, "Crablegs" is not a drug term, so it's "other". 
+
+So the final answer should be two entries: Codeine for "Codeine" and other for "Crablegs".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "Codeine"},
+  {"index_term": "other", "matched_phrase": "Crablegs"}
+]

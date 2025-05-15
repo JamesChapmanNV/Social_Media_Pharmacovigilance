@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I chose alcohol. That was stupid af. I shoulda chose the damn codeine." I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. 
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, promotion, etc. Also, slang or euphemisms indicating recreational use or abuse. False includes medical, educational, or preventative contexts.
+
+Looking at the content: The user is talking about choosing between alcohol and codeine. The phrase "stupid af" and "shoulda chose the damn codeine" suggests a negative judgment about alcohol and a positive (or at least not negative) view of codeine. Codeine is an opioid, which is a controlled substance. The use of "damn" here might indicate a strong preference or maybe even a form of encouragement to use codeine, which is a drug that's illegal or restricted in many places. 
+
+But wait, codeine is sometimes available over-the-counter for cough syrups, but in some contexts, it's considered a controlled substance. The user is comparing alcohol (which is legal but addictive) to codeine (which is a controlled substance). The mention of codeine here is in a context that seems to be about personal choice, but the tone is negative towards alcohol and possibly positive towards codeine. However, the user is not explicitly promoting codeine use. They're just expressing regret over choosing alcohol. 
+
+But the key here is whether the content is promoting or glorifying the use of codeine. The phrase "shoulda chose the damn codeine" might be seen as a form of encouragement, even if it's in a personal context. However, codeine is a controlled substance, and using it in this way could be considered misuse. The user is not necessarily promoting it, but the mention of codeine in a context that could be seen as endorsing it, especially if it's being compared to alcohol. 
+
+Alternatively, maybe the user is just talking about a personal mistake. But the use of "damn" and the comparison might be indicating a form of encouragement. However, the content doesn't explicitly state that they are using codeine, just that they should have chosen it. The context is a bit ambiguous. 
+
+But according to the definitions, if it's about abuse or misuse, even if it's in a personal context, it might still be classified as True. The mention of codeine, which is a controlled substance, and the context of choosing it over alcohol, which is a drug, could be seen as related to drug abuse. The user is not promoting it, but the mention of codeine in this context could be considered as part of drug-related content. 
+
+Alternatively, maybe the user is just making a personal choice, but the presence of codeine, which is a controlled substance, and the context of the choice could be considered as related to drug abuse. Therefore, the label would be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' a controlled substance, and implies a preference for it over alcohol, which may signal recreational or misuse-related context."
+}

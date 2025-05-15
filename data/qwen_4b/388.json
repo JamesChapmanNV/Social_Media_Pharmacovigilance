@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this content classification. The user provided the content: "I'm on them beans, alcohol, booku loud, and that codeine." I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll break down the terms. "Beans" could be slang for something, but in this context, maybe it's referring to a drug? Wait, "beans" isn't a standard drug term. Then "alcohol" is legal, but the other terms: "booku loud" – that sounds like a slang term. I'm not sure what "booku loud" means, but it might be a euphemism or slang for a drug. "Codeine" is definitely a controlled substance, often used in medications but also misused. 
+
+The user is listing substances they're on, which could indicate use. The terms "booku loud" might be a slang for something like "bukkake" (a Japanese term for a specific type of sexual activity), but that's not related to drugs. Wait, maybe "booku loud" is a misspelling or slang for "bukkake" but that's not a drug. Alternatively, maybe "booku" is a typo for "buk" or "bukk" which could be a slang term. But I'm not certain. 
+
+Alternatively, "booku loud" could be a reference to "booku" as in "buku," which in some contexts is slang for a drug. But I'm not sure. However, "codeine" is definitely a drug. The user is listing these substances, which might indicate recreational use. 
+
+The key here is whether the content is promoting, encouraging, or glorifying drug use. The phrase "I'm on them" suggests current use, which could be abusive. Even if "booku loud" is unclear, the presence of codeine, which is a controlled substance, and the context of listing them as things one is on, might indicate misuse. 
+
+So, the classification would be True because it mentions codeine (a controlled drug) and uses slang terms that could indicate recreational use. The explanation would note the mention of codeine and the use of slang terms.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine,' a controlled substance, and uses slang ('booku loud') that may indicate recreational drug use."
+}

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the appropriate index terms, and return a JSON array.
+
+First, I need to look at the post: "After two full hours of play, we finally got a new dealer at our table. He politely asked that players keep their 5K and 25K big chips visible… in front / up top. I let him know I like to keep mine in other player's stacks."
+
+I need to scan each part of the post for any drug-related terms. The main content here is about a poker game, mentioning chips of different denominations (5K, 25K). The term "dealer" here refers to a poker dealer, not a drug dealer. The mention of chips being visible and keeping them in other players' stacks is about poker strategy, not drugs.
+
+Looking at the index terms provided, none of the terms relate to poker chips or gambling terms. The phrases "5K" and "25K" are monetary values, not drugs. The word "dealer" could be a red herring, but in this context, it's a poker term. There's no mention of any slang, euphemisms, or drug names here. 
+
+So, there are no drug references in this post. Therefore, all matched phrases would fall under "other" since they don't relate to illicit drugs. But wait, the user's instruction says to return only the matches that refer to drugs. Since there are none, the JSON array should be empty. However, the examples show that even if there's no match, the array is empty. But the user's example 3 shows "xans" as other. But in this case, the post doesn't have any drug-related terms. So the correct response is an empty array. Wait, but the user's instruction says to return only the valid JSON array with matches. If there are no matches, then the array is empty. But the user's example 4 shows that even non-drug terms are listed as "other". However, in this case, the post doesn't have any drug-related terms. So the answer is an empty array. But the user's example 3 has "xans" as other. However, in this case, the post doesn't have any drug terms. Therefore, the correct answer is an empty array.
+</think>
+
+[]

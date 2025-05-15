@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "You can see the codeine in this mans eyes 💀". I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "codeine". Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine" is directly listed, so that's a match. The emoji 💀 might be a graphic, but the task is about words/ phrases, not emojis. So the only match here is "codeine". 
+
+Wait, the example 1 had "lean" and "codeine" both matching to Codeine. But in this case, the post only has "codeine". So the JSON should have one entry with index_term "Codeine" and matched_phrase "codeine". 
+
+I need to make sure there's no other term. The rest of the post is "in this mans eyes", which doesn't refer to any drug. So the answer is just the codeine entry.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

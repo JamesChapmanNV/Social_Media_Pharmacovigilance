@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "How the Legalization of Cannabis Will Impact Thailand CBD Relief Authority News -". I need to check for any drug-related references here.
+
+First, I'll scan the post for keywords. The main terms are "Cannabis", "CBD", "Legalization", "Thailand", "Relief Authority", "News". 
+
+Looking at the index terms, "Marijuana" is listed as a term for cannabis. The post mentions "Cannabis", which is the same as "Marijuana" in the index. So "Cannabis" should map to "Marijuana".
+
+Next, "CBD" is explicitly listed as an index term. The post has "CBD", so that's a direct match. 
+
+The rest of the text is about legalization, Thailand, and a news authority. None of those terms are drug-related references. The words "Relief Authority" might be a stretch, but since it's part of the title, it's likely a proper noun related to the news outlet, not a drug term. 
+
+So the detected phrases are "Cannabis" and "CBD". Mapping them to the index terms: "Marijuana" and "CBD". 
+
+I need to make sure there's no other slang or euphemism. The post doesn't use any other terms. So the JSON should have two entries: one for "Marijuana" with "Cannabis" and another for "CBD" with "CBD".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+  {"index_term": "CBD", "matched_phrase": "CBD"}
+]

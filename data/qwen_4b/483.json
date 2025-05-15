@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content given is: "RT : Codeine Crazy makes me want to shed tears and turn up at the same time. 'We been through a lot, but we still here' music."
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. Also, slang or euphemisms that indicate recreational use or abuse. False includes medical, educational, or preventative contexts, or drug terms in unrelated contexts.
+
+Looking at the content, "Codeine" is mentioned. Codeine is an opioid, which is a controlled substance. The phrase "Crazy makes me want to shed tears and turn up at the same time" seems like a description of a strong emotional reaction, possibly from using codeine. The mention of "Crazy" might be a slang term for being under the influence of drugs. The "turn up" could be a reference to the drug's effects, like a physical reaction. 
+
+The user is using codeine in a way that suggests it's causing emotional and physical effects, which might indicate misuse. The context here is personal and emotional, not educational or medical. The mention of codeine without any context of medical use or prevention points towards abuse. The "Crazy" part is a slang term that's often associated with drug use. 
+
+So, based on the definitions, this would be classified as True because it mentions codeine in a context that suggests abuse or misuse, using slang terms that indicate recreational use. The explanation should note the mention of codeine and the slang term "Crazy" indicating recreational use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions 'codeine' and uses 'Crazy' as a slang term indicating recreational drug use, suggesting abuse or misuse."
+}

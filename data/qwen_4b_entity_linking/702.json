@@ -1,0 +1,9 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "All this codeine got me nodding off yo bitch at the crib nodding off". I need to detect any drug references and link them to the index terms.
+
+First, I'll scan the post for any words or phrases that might refer to illicit drugs. The word "codeine" is explicitly mentioned. Looking at the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "nodding off" might be a slang for the effects of codeine, but I need to check if "nodding off" is considered a reference here. However, the task says to detect every word or phrase that refers to the drug. Since "nodding off" is a result of codeine's effects, not the drug itself, it might not be a direct reference. But wait, the example in the user's prompt includes "lean" and "codeine" in the same post. In the example, "lean" is a slang for codeine. So, in this post, "codeine" is directly mentioned, so that's a clear match. The rest of the text is "got me nodding off yo bitch at the crib nodding off". "Nodding off" is a verb phrase describing the effect, but the task is to detect the drug references. Since "codeine" is directly mentioned, that's the only match here. The other parts are just describing the effect, not the drug itself. So the only matched phrase is "codeine", which maps to the index term "Codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

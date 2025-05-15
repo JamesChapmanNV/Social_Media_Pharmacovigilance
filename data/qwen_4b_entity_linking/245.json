@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Let me get a salad with croutons and umm codeine dressing". I need to detect any drug references here.
+
+First, I'll go through each word. The main phrases are "codeine dressing". Looking at the index terms, Codeine is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "codeine dressing" directly mentions "codeine", so that's a clear match. The other words like "salad", "croutons" aren't drugs. The index term for codeine is "Codeine", so the matched phrase is "codeine dressing". Wait, but the example 1 had "lean" and "codeine" as separate entries. However, in this case, the phrase is "codeine dressing". But according to the index terms, "Codeine" is the index term. The instruction says to match the exact text. So even though "dressing" isn't in the index terms, the entire phrase "codeine dressing" is the matched phrase. But wait, the index terms are for the drug names, not the phrases. So if the phrase is "codeine dressing", but the index term is Codeine, then that's the correct mapping. The example 1 had "lean" and "codeine" as separate entries, but in this case, the phrase is "codeine dressing". However, the index term is Codeine, so the matched_phrase is "codeine dressing". But maybe the system is looking for the exact term. Wait, the index terms include "Codeine (Lean, Purple Drank, Schoolboy)", so "codeine" is the index term, and "lean", "purple drank", etc., are the synonyms. But in the post, it's "codeine dressing". The exact phrase is "codeine dressing". However, the index term is Codeine, so the matched_phrase would be "codeine dressing". But the example 1 had "lean" and "codeine" as separate entries. So maybe "codeine dressing" is a phrase that refers to codeine. So the correct entry would be {"index_term": "Codeine", "matched_phrase": "codeine dressing"}.
+
+But wait, the user's example 3 had "xans" which is not in the list, so it's "other". So in this case, "codeine dressing" is a phrase that refers to codeine. Therefore, the index term is Codeine. So the answer should be one object with index_term "Codeine" and matched_phrase "codeine dressing".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine dressing"}
+]

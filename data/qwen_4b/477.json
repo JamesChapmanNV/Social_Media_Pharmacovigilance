@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this query. The content is: "Doc just prescribed morphine. Fingers crossed it does the trick. X"
+
+First, I need to determine if this is illicit or abusive drug-related. The user is asking to classify based on the definitions provided.
+
+Morphine is a controlled substance, typically used for pain management. The mention of a doctor prescribing it suggests a medical context. The phrase "Fingers crossed it does the trick" is a common expression for hoping something works, which is neutral. There's no indication of abuse, promotion, or misuse here. The context is medical, so according to the definitions, False includes content that mentions drugs in a medical context. Since there's no encouragement or glorification of misuse, it's likely False. The explanation should note the medical context and lack of promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content refers to a medical prescription for morphine in a neutral, non-abusive context without promoting or glorifying drug misuse."
+}

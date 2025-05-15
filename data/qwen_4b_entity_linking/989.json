@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "i always wonder why people put codeine up their ass." I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The phrase "codeine" is directly mentioned. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The user wrote "codeine," which is exactly in the index term list. So that's a clear match.
+
+Now, the other part of the sentence is "put codeine up their ass." The phrase "put up their ass" is a bit slangy. But does it refer to using codeine? In some contexts, "putting something up your ass" can be a euphemism for ingestion, like taking drugs. However, the index terms don't have an "other" category for such phrases. Wait, the task says if the drug isn't in the list, use "other". But here, "codeine" is in the list. So even if the phrase is slang, as long as the word itself is a known drug, it's a match.
+
+So the matched phrase here is "codeine," which maps to Codeine. The rest of the sentence is just a question about why people do that, but the key term is "codeine." There's no other drug mentioned here. So the JSON should have one entry: index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

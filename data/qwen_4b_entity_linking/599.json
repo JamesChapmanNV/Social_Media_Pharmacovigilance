@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I'll read through the post carefully. The post says: "I was woken up this morning by my mom telling me to call off work and that hospice just left our house telling us that my grandmas not gonna be here much longer and started her on the morphine. Woke up to my worst nightmare."
+
+Looking for any mentions of drugs or substances. The key part here is "started her on the morphine." Morphine is explicitly listed in the index terms under "Morphine" as the prototypical opioid analgesic. So "morphine" is a direct match. 
+
+I need to check if there are any other terms. The rest of the post talks about hospice, grandma's condition, and waking up to a nightmare, but nothing else. There's no mention of other drugs like codeine, amphetamines, or anything else from the list. 
+
+So the only matched phrase is "morphine," which maps to the index term "Morphine." The other parts of the sentence don't refer to any drugs. The word "hospice" is a medical term but not a drug. "Grandma" is a person, and "worst nightmare" is a metaphor. 
+
+I should make sure there's no slang or euphemism here. "Morphine" is a direct term, so it's a clear match. No other terms are present. Therefore, the JSON array should have one entry with index_term "Morphine" and matched_phrase "morphine."
+</think>
+
+[{"index_term": "Morphine", "matched_phrase": "morphine"}]

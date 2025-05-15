@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user posted: "I have a cold. Does anyone have some codeine and sprite they could lend?" 
+
+First, I need to identify any drug-related references here. The main words are "codeine" and "sprite". 
+
+Looking at the index terms, "Codeine" is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "codeine" is directly listed under Codeine, so that's a clear match. 
+
+Now, "sprite" – I need to check if that's a slang term for a drug. From the index terms, I don't see "sprite" listed. The closest might be something like "OTC" or "RX", but "sprite" isn't in the list. The example 3 mentions "xans" as other because it's not listed. So "sprite" here is likely a non-drug term, maybe a brand name for a drink. 
+
+So the only match is "codeine". The answer should be an array with one object: index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

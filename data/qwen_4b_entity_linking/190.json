@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Congress appointing negotiators for a manufacturing bill that might include cannabis banking protections. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions "CannabisNewsWire" and talks about a bill with "Cannabis Banking Protections." The key here is to check if there are any terms that refer to illicit drugs or substances. 
+
+Looking at the text: "Congress Appoints Negotiators to Finalize Manufacturing Bill with Possible Cannabis Banking Protections." The main terms here are "Cannabis" and "Banking Protections." Now, checking the index terms list, "Marijuana" is listed as an index term, and it's the most widely used illicit drug, containing psychoactive cannabinoids THC. The post mentions "Cannabis," which is the same as "Marijuana" in the index terms. However, the post is about a bill related to banking protections for cannabis, which is a legal context. But the question is whether "Cannabis" here is a reference to an illicit drug. Since the index term for marijuana is listed, and the post uses "Cannabis," which is the same as the index term, it should be matched.
+
+Wait, but the index term for Marijuana is listed as "Marijuana (Cannabis, Weed, Pot)" so "Cannabis" is part of the index term. Therefore, the phrase "Cannabis" in the post would map to "Marijuana" as the index term. However, the post is about a bill that might include banking protections, which is a legal or regulatory context. But the task is to detect any references to illicit drugs. The term "Cannabis" here is part of the legal discussion, but the index term includes "Cannabis" as a synonym. However, the user's task is to detect any mention of illicit drugs, even if it's in a legal context. But the index term for Marijuana is listed, so "Cannabis" would be matched to "Marijuana."
+
+Wait, but the example in the user's prompt includes a post about "Cannabis" and the index term is "Marijuana." So in the example where the post is "Picked up fresh snow to ride those white lines tonight ❄️," the term "snow" is matched to "other" because it's not on the list. Similarly, if the post mentions "Cannabis," it should be matched to "Marijuana" since that's the index term. 
+
+So in this case, the post mentions "Cannabis," which is part of the index term "Marijuana." Therefore, the matched phrase would be "Cannabis" and the index term is "Marijuana." However, the post is about a bill related to cannabis banking, which is a legal or regulatory topic. But the task is to detect any references to illicit drugs, regardless of context. Since "Cannabis" is listed as an index term, even if it's in a legal context, it's still considered a drug reference. 
+
+But wait, the index term for Marijuana is listed as "Marijuana (Cannabis, Weed, Pot)" which means that any of those terms would be matched to "Marijuana." Therefore, the phrase "Cannabis" in the post would be matched to "Marijuana." However, the user's example 3 has "xans" which is not on the list, so it's "other." But in this case, "Cannabis" is part of the index term, so it should be matched. 
+
+Therefore, the correct JSON array would have one entry: {"index_term": "Marijuana", "matched_phrase": "Cannabis"}.
+
+But wait, the user's example 1 has "lean" and "codeine" both mapped to "Codeine." So in this case, the post mentions "Cannabis," which is part of the index term "Marijuana." Therefore, the answer should be that. However, the user's instruction says to detect every word or phrase that refers to an illicit drug. The term "Cannabis" is listed as an index term, so it's a valid match. Therefore, the correct output is the JSON array with that entry.
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"}
+]

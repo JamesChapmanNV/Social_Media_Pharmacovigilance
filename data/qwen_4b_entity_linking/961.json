@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I need to look at the post: "wdw pls stop going live at the crack of dawn or while i'm working thank youu 😂". The user is asking someone (maybe a streamer) to stop going live at certain times. The key here is to check if there are any slang terms or phrases that refer to illicit drugs.
+
+Looking at the text, the main words are "wdw" (which is "wait, what" or "what the heck"), "go live", "crack of dawn", and "working". None of these seem to be drug-related terms. The index terms list includes things like codeine, amphetamine, benzodiazepines, etc. But phrases like "crack of dawn" is a time reference, not a drug. "Go live" is about streaming, not drugs. The user is expressing frustration about the timing of live streams, not mentioning any drugs. 
+
+I should check if any of the words are slang for drugs. "Crack" can sometimes refer to cocaine, but in this context, "crack of dawn" is a time expression. "WDW" isn't a drug term. "Live" here is about streaming, not drug use. The response doesn't mention any drug names, slang, or related terms. 
+
+So, there are no matches. The JSON array should be empty. But according to the examples, if there are no matches, the index term is "other". However, in the example 3, "xans" was "other" because it wasn't a known term. But in this case, the post doesn't have any drug-related phrases. So the correct response is an empty array. Wait, but the user said to return only the JSON array with matches. If there are no matches, then the array is empty. But the example 3 had "xans" which was "other". But in this case, the post doesn't have any drug references. So the answer is an empty array. 
+
+Wait, but the user's instruction says to link each detected phrase to the index term. If no phrases are detected, then the array is empty. So the correct output is an empty list. However, the user's example 4 had "snow" and "white lines" as "other". But in this case, there are no drug references. Therefore, the answer is an empty array. So the JSON array is empty.
+</think>
+
+[]

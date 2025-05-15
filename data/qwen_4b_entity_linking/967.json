@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Pour my codeine into a bigger hot New Orleans cream and sugar." I need to identify any drug references here.
+
+First, I'll look for words that might refer to illicit drugs. The phrase "codeine" is explicitly mentioned. According to the index terms, codeine is listed under "Codeine" with synonyms like "Lean," "Purple Drank," etc. So "codeine" directly maps to the index term "Codeine."
+
+Next, the rest of the sentence: "into a bigger hot New Orleans cream and sugar." The words "cream" and "sugar" don't seem to be drug terms. "New Orleans cream" might be a reference to a drink or a place, but there's no indication it's a drug. The term "cream" could be a slang term, but checking the index terms, I don't see any entries for "cream" as a drug. Similarly, "sugar" isn't listed as a drug term. 
+
+So the only direct match is "codeine." The other parts of the sentence don't refer to any drugs listed in the index. Therefore, the JSON array should only include the match for "codeine."
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

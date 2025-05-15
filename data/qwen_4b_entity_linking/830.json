@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I'll read through the post carefully: "in on TRVN and having to test my patience. It gots its FDA approval on olivyn a new opioid to replace morphine. Waiting on the DEA number around 73 days out. But i have learned PATIENCE IS KEY."
+
+Looking for any slang, euphemisms, or terms that might refer to illicit drugs. The first part mentions "TRVN". I need to check if that's a known term. From the index terms list, I don't see TRVN listed. Maybe it's a typo or a less common term. Since it's not in the list, I should mark it as "other".
+
+Next, "olivyn" is mentioned as a new opioid. Checking the index terms, there's an entry for "Opioid" but it's not a specific drug. However, the index terms list includes specific drugs like morphine, fentanyl, etc. Since "olivyn" isn't listed, it would fall under "other". But wait, the user might be referring to a real drug. Wait, maybe "olivyn" is a misspelling or a new term. Let me check again. The index terms include "Morphine" and "Opioid" as a general term, but "olivyn" isn't listed. So, "olivyn" would be "other".
+
+The rest of the post talks about FDA approval, DEA numbers, and patience. No other drug terms here. The phrase "PATIENCE IS KEY" is likely a metaphor, not a drug reference. 
+
+So, the detected phrases are "TRVN" and "olivyn". Both are not in the index terms list, so they should be "other". 
+
+Wait, but "olivyn" might be a misspelling of "OxyContin" or another opioid. But according to the index terms, "Oxycodone" is listed, but "olivyn" isn't. So, I have to stick with the given list. Therefore, both TRVN and olivyn are "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "TRVN"}, {"index_term": "other", "matched_phrase": "olivyn"}]

@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Because, as far as I know, I'm not addicted to morphine! Caffeine, on the other hand, is life. Much like futbol." I need to detect any drug references here.
+
+First, I'll go through each word. The first part mentions "morphine." Looking at the index terms, Morphine is listed as an index term. So "morphine" would map to "Morphine." 
+
+Next, the post talks about "Caffeine." Checking the index terms, caffeine isn't listed. The list includes drugs like amphetamine, codeine, morphine, but not caffeine. So "Caffeine" would be "other."
+
+Then there's "futbol." That's Spanish for football. The index terms don't have any entries related to football or sports. So "futbol" would also be "other."
+
+Wait, the task is to detect any references to illicit drugs, illegal, RX, OTC, or recreational drugs. Caffeine is a legal stimulant, but the user might be using it in a way that's not listed. However, according to the index terms, caffeine isn't listed, so it's "other." Same with "futbol," which is a noun but not a drug. 
+
+So the matched phrases are "morphine" and "futbol," but "futbol" isn't a drug. Wait, the user might have made a typo? Maybe "futbol" is a slang term? But in the index terms, there's no mention of that. So "futbol" is "other." 
+
+Therefore, the only valid match is "morphine." The other words are not drugs. So the JSON should have one entry for "morphine" and the rest are "other" but only if they are drugs. Wait, the example 3 shows "xans" as other. So in this case, "Caffeine" is not a drug in the list, so "other." "Futbol" is not a drug, so "other." But the user's post says "Caffeine, on the other hand, is life. Much like futbol." So "futbol" is not a drug. 
+
+So the only detected phrase is "morphine," which maps to "Morphine." The other words are not drugs. So the output should be one object with index_term "Morphine" and matched_phrase "morphine."
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

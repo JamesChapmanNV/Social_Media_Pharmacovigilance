@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post in Swahili: "Karinta is not a small time dealer wa kuuza blunts, he was the kingpin huku kwa mlima." I need to detect any drug-related references here.
+
+First, I'll translate the post to understand the context. "Karinta is not a small time dealer wa kuuza blunts, he was the kingpin huku kwa mlima." Translating roughly: "Karinta is not a small-time dealer of blunts, he was the kingpin in the area." 
+
+Now, looking for drug terms. "Blunts" in Swahili could refer to something like cigarettes or maybe a slang term for drugs. But in the context of drug references, "blunts" might be a euphemism. However, the Index Terms list doesn't have a direct match for "blunts." The term "blunt" is a slang for a cigarette, but in some contexts, it can refer to drug use. However, since "blunts" isn't listed in the Index Terms, I should check if there's any other term here.
+
+The other part is "kingpin," which refers to a leader or top person in a gang or organization. But "kingpin" itself isn't a drug term. The phrase "wa kuuza blunts" might mean "of the blunts" or "related to blunts." Since "blunts" isn't in the Index Terms, the matched phrase would be "blunts" under "other." 
+
+But wait, maybe "blunts" here is a slang for a drug. However, the Index Terms don't have an entry for "blunts." The closest might be "Cocaine" but that's not listed here. Alternatively, "blunts" could be a reference to something else. Since the user's instruction says to use "other" if the drug isn't in the list, I should check if "blunts" is a known slang. 
+
+Looking back at the Index Terms, the only entries related to drugs are specific chemicals like Codeine, Amphetamine, etc. "Blunts" isn't listed. Therefore, "blunts" would map to "other." 
+
+So the detected phrase is "blunts," which is not in the Index Terms, so index_term is "other." The other words in the post are "kingpin," which isn't a drug term. So the only match is "blunts" under "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "blunts"}]

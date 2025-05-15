@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post about someone's emotional experience with their father's death, mentioning midazolam and morphine. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to go through the post sentence by sentence. The key part here is "they gave him midazolam and morphine." Both midazolam and morphine are drugs. Let me check the index terms list.
+
+Looking at the list, midazolam is a benzodiazepine. The index term for midazolam isn't directly listed, but there's an entry for lorazepam (Ativan), which is a benzodiazepine. However, the index terms provided include specific drugs. Wait, the index terms include "Lorazepam (Ativan)" as an index term. But midazolam isn't listed. Wait, the index terms list includes "Nordiazepam (Desmethyldiazepam, Nordazepam)" as a metabolite of diazepam. Hmm, but midazolam is a different drug. Wait, let me check again.
+
+Looking at the index terms list, the entry for "Lorazepam (Ativan)" is listed as an index term. However, midazolam is a different drug. The index terms don't have an exact match for midazolam. Wait, the index term for midazolam might not be present. Let me check again. The index terms include "Lorazepam (Ativan)", "Nordiazepam (Desmethyldiazepam, Nordazepam)", "Oxazepam (Serax)", etc. But midazolam isn't listed. However, there's an entry for "Nordiazepam" which is a metabolite of diazepam. But midazolam is a separate drug. Wait, perhaps midazolam is a benzodiazepine, so maybe it's under the broader category? But according to the index terms, the exact term for midazolam isn't listed. The index terms list includes "Bromazolam (XLI-268, Fake Xanax)" as a designer benzodiazepine. But midazolam is a different drug. 
+
+Wait, the index terms list includes "Lorazepam (Ativan)" as an index term. However, midazolam is not listed. Therefore, if the post mentions midazolam, which isn't in the index terms, then the index term should be "other". But wait, the index terms list includes "Nordiazepam (Desmethyldiazepam, Nordazepam)" as an index term. But that's a metabolite of diazepam, not midazolam. So midazolam isn't in the list. Therefore, the matched phrase "midazolam" would be "other". Similarly, "morphine" is listed as an index term under "Morphine (MS Contin, Miss Emma, Morph)". So "morphine" would map to "Morphine".
+
+So in the post, "midazolam" is mentioned. Since midazolam isn't in the index terms list, it should be "other". But wait, let me check again. The index terms list includes "Lorazepam (Ativan)" and "Nordiazepam (Desmethyldiazepam, Nordazepam)", but not midazolam. Therefore, "midazolam" would be "other". However, maybe I'm missing something. Wait, the index terms list includes "Lorazepam (Ativan)" as a separate entry. But midazolam is a different drug. Therefore, the correct index term for midazolam is "other".
+
+Then, "morphine" is directly listed under "Morphine (MS Contin, Miss Emma, Morph)", so that's a direct match. So the JSON array should have two entries: one for "midazolam" as "other" and "morphine" as "Morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "midazolam"}
+]

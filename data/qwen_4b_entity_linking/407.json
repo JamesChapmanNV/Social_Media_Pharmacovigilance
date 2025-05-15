@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "If you are interested in the highest quality CBD products available that have been infused with natural energies please go to". The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll scan the post for any mentions of drugs, slang, or terms that could refer to illicit substances. The post mentions "CBD products". Looking at the index terms, CBD is listed as a non-intoxicating cannabinoid with antiepileptic properties. The index term for CBD is "CBD (Cannabidiol, Epidiolex)". 
+
+The phrase "CBD products" directly refers to CBD, which is on the list. So the matched phrase is "CBD products" and the index term is "CBD". There are no other terms in the post that relate to drugs. The rest of the sentence is about quality and natural energies, which don't indicate any illicit drugs. 
+
+I need to make sure there's no other hidden reference. Words like "natural energies" might be a stretch, but the key here is "CBD products". Since CBD is explicitly listed in the index terms, it's a valid match. The other terms in the example where "snow" was considered "other" because it's not a drug, but here CBD is directly listed. 
+
+So the correct JSON array should have one object with index_term "CBD" and matched_phrase "CBD products".
+</think>
+
+[{"index_term": "CBD", "matched_phrase": "CBD products"}]

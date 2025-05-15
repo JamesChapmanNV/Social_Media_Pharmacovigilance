@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "how much for my bday party at the codeine castle?". I need to detect any drug-related references here.
+
+First, I'll look for keywords that might refer to illicit drugs. The word "codeine" is directly mentioned. Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. So "codeine" is a direct match. 
+
+Next, "castle" might be a slang term. Wait, "castle" isn't listed in the index terms. The example 4 shows that "snow" and "white lines" are marked as other. So "castle" here is probably a euphemism or a brand name. Since it's not in the index terms, it should be "other". 
+
+But wait, is "codeine castle" a known slang? Let me check the index terms again. The Codeine entry includes "Lean", "Purple Drank", "Schoolboy". "Castle" isn't listed, so it's not a recognized term here. Therefore, "codeine" is a match for Codeine, and "castle" is other. 
+
+The user's post is asking about the cost of a birthday party at "codeine castle". The main drug reference is "codeine", so the JSON should have one entry for "codeine" and "castle" as other. But the example 3 shows "xans" as other. So in this case, "codeine" is the drug term, and "castle" is other. 
+
+So the correct output should be two entries: one for "codeine" and one for "castle" as other. Wait, but the example 1 had "lean" and "codeine" both mapped to Codeine. Here, "codeine" is the exact term, so it's a direct match. "Castle" isn't in the list, so it's other. 
+
+So the final JSON array should have two objects: one with index_term "Codeine" and matched_phrase "codeine", and another with "other" and "castle".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "castle"}
+]

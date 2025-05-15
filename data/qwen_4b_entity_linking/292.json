@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions "Halloween urban legend that people are putting drugs in sweets to give to kids" and mentions making "heroin gummy bears." The task is to detect any drug-related references and link them to the index terms.
+
+First, I need to look for any phrases that refer to illicit drugs or substances. The post mentions "heroin gummy bears." Heroin is explicitly listed in the index terms under "Morphine" as "MS Contin, Miss Emma, Morph." Wait, no, looking back, the index terms for heroin are under "Morphine" but the exact term for heroin isn't listed. Wait, the index terms include "Heroin" as a separate entry? Let me check the list again.
+
+Looking at the index terms, there's "Morphine (MS Contin, Miss Emma, Morph)" and "Heroin (MS Contin, Miss Emma, Morph)"? Wait no, in the list provided, "Morphine" is listed as the index term, and "Heroin" isn't explicitly listed. Wait, the index terms include "Morphine" but not "Heroin." However, the user's post mentions "heroin gummy bears." Since "heroin" isn't directly listed in the index terms, but "Morphine" is, but that's not the same as heroin. However, the index terms don't have a specific entry for heroin. Wait, looking again, the index terms include "Morphine" but not heroin. However, the user's post refers to "heroin," which is an opioid, so maybe it's considered under the broader category. But according to the index terms, "Heroin" isn't listed. Wait, the index terms list "Morphine" but not "Heroin." So if the phrase is "heroin," since it's not in the index terms, we should map it to "other."
+
+But wait, the user's post says "heroin gummy bears." The index term for heroin isn't present, so "heroin" would be "other." However, maybe "heroin" is considered under the "Opioid" category, but the index terms don't have a specific entry for heroin. Therefore, the correct index term would be "other" for "heroin."
+
+Additionally, the post mentions "Halloween urban legend that people are putting drugs in sweets." The phrase "drugs in sweets" is a general reference, but the specific drug mentioned is heroin. So the only detected phrase here is "heroin," which maps to "other" since it's not in the index terms. The rest of the post is about the legend, not specific drugs. Therefore, the only match is "heroin" as "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

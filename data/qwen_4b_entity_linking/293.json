@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term from the given list, and return a JSON array.
+
+First, I'll look at the post: "Get me a caesar's salad wif croutons and codeine dressing. Oh and a diet codeine. #DanielSonNecklaceDon". 
+
+I need to scan each part of the sentence. The first part mentions "codeine dressing". Looking at the Index Terms, "Codeine" is listed with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "codeine dressing" directly refers to codeine, so that's a match. The Index Term here is "Codeine", and the matched phrase is "codeine dressing".
+
+Next, there's "diet codeine". "Diet" here might be a slang term. Checking the Index Terms, "Codeine" is still the correct term. "Diet codeine" could be a way of referring to codeine, maybe a specific type or preparation. So that's another match: "codeine" as the index term and "diet codeine" as the phrase.
+
+I need to make sure there are no other terms. The rest of the post talks about a Caesar salad with croutons, which aren't drugs. The hashtag is unrelated. So only the two instances of "codeine" in the dressing and diet are relevant. 
+
+I should check if "codeine dressing" is exactly in the list. The Index Term for Codeine includes "codeine", and "codeine dressing" is a direct reference. Since "codeine" is in the list, even though "dressing" isn't, the entire phrase is a reference to codeine. Similarly, "diet codeine" is a variation, so it's still under Codeine. 
+
+No other terms in the post match any Index Terms. The rest are food items or a hashtag, which are not drug-related. Therefore, the JSON array should have two entries: one for "codeine dressing" and another for "diet codeine", both linked to "Codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine dressing"},
+  {"index_term": "Codeine", "matched_phrase": "diet codeine"}
+]

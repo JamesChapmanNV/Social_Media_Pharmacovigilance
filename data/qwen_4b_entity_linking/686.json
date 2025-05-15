@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Term from the provided list, and return a JSON array.
+
+First, I need to look at the post: "You'd make a terrible lawyer. Here's my daily reminder on your tweets about Derek Chauvin's murder trial: George Floyd had 11ng/ml of fentanyl in his blood. The recommended dosage for anaesthesia is 10-20ng/ml. He did not overdose. Find a different narrative you child."
+
+I need to scan through this for any drug references. The key part here is "fentanyl in his blood." Fentanyl is listed in the Index Terms as a synthetic opioid that's 50–100 times stronger than morphine and is linked to many overdose deaths. The exact term for fentanyl in the list is "Fentanyl (China White, Apache, Duragesic)".
+
+So the phrase "fentanyl" directly maps to the Index Term "Fentanyl". The rest of the post talks about legal matters and medical dosages, but there's no other drug mentioned. The mention of "11ng/ml" is a medical reference, not a slang term. The other parts are about the trial and the user's comment, which don't involve any other drugs. 
+
+I should check if there's any other possible drug reference. The word "anaesthesia" is mentioned, but that's a general term for medical procedures, not a specific drug. The user also says "He did not overdose," which is a statement about the case, not a drug reference. 
+
+So the only detected phrase is "fentanyl", which corresponds to the Index Term "Fentanyl". There are no other drugs or slang terms here. Therefore, the JSON array should have one object with "index_term" as "Fentanyl" and "matched_phrase" as "fentanyl".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]

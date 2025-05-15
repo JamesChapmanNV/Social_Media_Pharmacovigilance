@@ -1,0 +1,104 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Utica woman arrested after troopers discover heroin in vehicle during traffic stop." I need to detect any drug references here.
+
+First, I'll scan the post for any words or phrases that might refer to illicit drugs. The key term here is "heroin." Checking the list of Index Terms, heroin is listed as one of the terms. The Index Term for heroin is "Heroin" in the list. Wait, looking back at the Index Terms provided, I need to confirm if "Heroin" is explicitly listed. Let me check again.
+
+Looking through the list, under Morphine, there's "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic..." but heroin isn't directly listed. Wait, the user's example included "Codeine" for "lean" and "codeine," so maybe heroin is not in the list. Wait, no, the Index Terms list includes "Heroin" as a separate entry? Let me check again.
+
+Wait, the Index Terms list starts with 2,6-Xylidine, then 2-Amino-5-Chloropyridine, then 2-Fluoro-2-Oxo PCE, etc. Scrolling through, I don't see "Heroin" listed. The closest is Morphine, but that's a different drug. Wait, the user's example had "Codeine" as the index term for "lean" and "codeine," so maybe heroin isn't in the list. Wait, but the user's example for Codeine included "lean" and "codeine," which are synonyms. However, in the Index Terms list, "Codeine" is listed with synonyms like Lean, Purple Drank, Schoolboy. But heroin isn't listed. Wait, looking at the list again, the Index Terms include "Heroin" as a separate entry? Let me check again.
+
+Wait, no. The Index Terms list includes "Morphine" but not "Heroin." Wait, the user's example in the problem statement includes "Codeine" as an index term. So, if "heroin" is not in the list, then the index term would be "other." But wait, maybe I missed it. Let me check again.
+
+Looking through the list again: the Index Terms include "Heroin" as a separate entry? No, the list includes "Morphine" and "Heroin" is not explicitly listed. Wait, the Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic..." but heroin isn't listed. So, if the post mentions "heroin," and it's not in the Index Terms list, then the index term should be "other."
+
+Wait, but in the example given in the problem statement, the user's example 1 had "lean" and "codeine" both mapped to Codeine. So, if "heroin" isn't in the Index Terms list, then the correct index term would be "other." However, I need to confirm if "Heroin" is in the list. Let me check again.
+
+Looking at the Index Terms list again, the entries are:
+
+- 2,6-Xylidine
+- 2-Amino-5-Chloropyridine
+- 2-Fluoro-2-Oxo PCE
+- 2-Oxo-3-Hydroxy LSD
+- 3-Hydroxy flubromazepam
+- 3-Hydroxy flubromazepam glucuronide
+- 4-ANPP
+- 4-HIAA
+- 6-Acetylmorphine
+- 7-Aminoclonazepam
+- 7-Hydroxymitragynine
+- 7-OH-CBD glucuronide
+- 8-Aminoclonazolam
+- 8R-OH-R-HHC
+- 8S-OH-R-HHC
+- α-Hydroxyalprazolam
+- α-Hydroxybromazolam
+- Amphetamine
+- Benzoylecgonine
+- Bromazolam
+- Buprenorphine
+- Carfentanil
+- CBD
+- Codeine
+- Cyclobenzaprine
+- delta-8-THC-COOH
+- delta-9-THC-COOH
+- Diphenhydramine
+- EDDP
+- Fentanyl
+- Flubromazepam
+- Gabapentin
+- Hydrocodone
+- Hydromorphone
+- Ketamine
+- Lorazepam
+- LSD
+- Marijuana
+- MDA
+- MDMA
+- MDMB-4en-PINACA butanoic acid
+- Meperidine
+- Meprobamate
+- Methadone
+- Methamphetamine
+- Metonitazene
+- Mitragynine
+- Morphine
+- N,N-Dimethylpentylone
+- Naltrexone
+- N-Desethylmetonitazene
+- Norbuprenorphine
+- Norcarfentanil
+- Nordiazepam
+- Norfentanyl
+- Norketamine
+- Normeperidine
+- Noroxycodone
+- N-Pyrrolidinoetonitazene
+- O-Desmethyltramadol
+- ortho-Methylfentanyl
+- Oxazepam
+- Oxycodone
+- Oxymorphone
+- para-Fluorofentanyl
+- para-Fluoronorfentanyl
+- Pentylone
+- Phencyclidine
+- Pregabalin
+- Psilocin
+- Psilocybin
+- R-HHC-COOH
+- S-HHC-COOH
+- Speciociliatine
+- Temazepam
+- Xylazine
+- Zolpidem
+- Zopiclone
+
+So, "Heroin" is not listed here. The closest is "Morphine," but that's a different drug. Therefore, if the post mentions "heroin," since it's not in the Index Terms list, the index term should be "other." However, wait, the user's example in the problem statement includes "Codeine" as the index term for "lean" and "codeine," which are synonyms. So, in this case, the post says "heroin," which is not in the list, so the index term would be "other."
+
+But wait, maybe I'm missing something. Let me check again. The Index Terms list includes "Heroin" as an entry? No, the list includes "Morphine" but not "Heroin." Therefore, "heroin" is not in the list, so the index term is "other."
+
+Therefore, the matched phrase is "heroin," and the index term is "other."
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

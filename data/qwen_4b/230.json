@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The content is: "Whomever coined the phrase:'Out of the frying pan and into the fire' was on Codeine & tried combatting its costive effects with prune juice." 
+
+First, I need to determine if this is illicit/abusive-drug-related. The key here is to check if the content mentions illegal drugs in a context of abuse or misuse. The phrase "on Codeine" is mentioned. Codeine is a controlled substance, typically used in medications but also has potential for abuse.
+
+The user is referencing the origin of a phrase and the historical context of someone using codeine. The mention of codeine here is in a historical or anecdotal context, not promoting or encouraging its use. The explanation part talks about combating constipation with prune juice, which is a common method to counteract codeine's side effects. 
+
+The content doesn't glorify or encourage the use of codeine. It's more about a historical anecdote. So according to the definitions, True includes content that mentions illegal drugs in the context of abuse or misuse. However, here the mention of codeine is in a past context, not promoting abuse. Therefore, it's more of a historical reference rather than promoting or encouraging misuse. 
+
+So the label should be False because it's not promoting or encouraging drug misuse. The explanation would note that it's a historical reference without promoting abuse.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references historical use of codeine in a neutral, anecdotal context without promoting or encouraging its abuse or misuse."
+}

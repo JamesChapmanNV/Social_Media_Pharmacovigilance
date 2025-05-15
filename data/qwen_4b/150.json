@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user wants me to classify the given content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "I've had a terrible day, but I managed to insert a Trainspotting heroin joke into a game preview, so I call that a win. Now I'm going to order a takeaway, get lightly drunk with my best mate and enjoy three days off after a tough week. ✌🏻"
+
+First, I need to check if there's any mention of illegal drugs in the context of abuse or misuse. The user mentioned "Trainspotting heroin joke." Trainspotting is a movie that's known for its depiction of drug use, particularly heroin. The term "heroin joke" here is part of a joke, but the context is that the person is using a drug-related reference in a humorous way. However, the key is whether this is promoting or glorifying drug use.
+
+The content doesn't explicitly talk about using heroin, buying, or promoting it. Instead, it's a joke inserted into a game preview. The person is making a light-hearted comment about using a joke related to heroin, but there's no indication of actual drug use, promotion, or encouragement. The rest of the content talks about having a bad day and relaxing, which doesn't tie into drug abuse. 
+
+The definitions say that True includes content that mentions illegal drugs in the context of abuse or misuse, using slang, etc., or encourages it. Here, the mention of heroin is part of a joke, not a promotion. The use of Trainspotting, which is a film about drug use, might be a cultural reference, but the context is a joke, not abuse. The person isn't glorifying or encouraging drug use. They're just making a joke. So this would fall under False because it's not promoting misuse. The explanation should note that it's a joke using a cultural reference, not actual abuse or promotion.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content references a cultural reference ('Trainspotting') and a joke about heroin, but does not promote, encourage, or describe drug abuse or misuse."
+}

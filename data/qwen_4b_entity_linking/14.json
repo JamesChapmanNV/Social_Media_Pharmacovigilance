@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "I seen her in my dream, fell in love with codeine." I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "codeine." Checking the index terms, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The phrase "fell in love with codeine" directly mentions the drug. So "codeine" is a clear match. 
+
+Are there any other terms? The rest of the sentence is about a dream and falling in love, which doesn't include other drugs. The word "seen" is part of the sentence but not a drug reference. "Her" and "dream" are not related to drugs. 
+
+So the only matched phrase is "codeine," which maps to the index term "Codeine." No other terms are present. The answer should be a JSON array with one object for "codeine."
+</think>
+
+[{"index_term": "Codeine", "matched_phrase": "codeine"}]

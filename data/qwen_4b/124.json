@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is about someone who's in the hospital, sedated, and experiencing pain. The mention of morphine is key here. Morphine is a controlled substance, but the context is medical: they're using it to manage pain in a hospital setting. The user is describing the situation without any indication of abuse, misuse, or promotion. The tone is concerned and factual, not glorifying or encouraging drug use. So, according to the definitions, since it's in a medical context and not promoting abuse, it should be classified as False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes medical use of morphine for pain management in a hospital setting, not promoting or glorifying drug abuse."
+}

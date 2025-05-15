@@ -1,0 +1,9 @@
+```json
+[
+    {"index_term": "Morphine", "matched_phrase": "morphine"},
+    {"index_term": "Oxycodone", "matched_phrase": "oxy"},
+    {"index_term": "other", "matched_phrase": "loritab elixir"},
+    {"index_term": "Cyclobenzaprine", "matched_phrase": "Soma"},
+    {"index_term": "Lorazepam", "matched_phrase": "Ativan"}
+]
+```

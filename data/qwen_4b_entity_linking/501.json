@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Uhhh lemme get a Caesar salad please with croutons and codeine dressing." I need to detect any drug references here.
+
+First, I'll go through each word in the post. The phrase "codeine dressing" stands out. Looking at the index terms, Codeine is listed with synonyms like "Lean," "Purple Drank," "Schoolboy." The exact match here is "codeine," so "codeine dressing" would be a reference to codeine. 
+
+Wait, the task says to detect every word or phrase that refers to an illicit drug. "Codeine dressing" is a phrase, but the index term for codeine includes "codeine" as a direct match. The dressing here is a slang term, so the matched phrase is "codeine dressing," but the index term is Codeine. 
+
+I need to check if "dressing" is part of a recognized term. The index terms don't list "dressing" specifically, but since "codeine" is in the list, the phrase "codeine dressing" would be matched to Codeine. 
+
+So the correct JSON should have one entry: index_term "Codeine" and matched_phrase "codeine dressing". Let me confirm there's no other terms. The rest of the post is about a salad, which isn't related. So the only match is codeine.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine dressing"}
+]

@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "It's hell tryna engage in conversation whole time u need 40 mg IV morphine". I need to detect any drug references here.
+
+First, I'll break down the sentence. The key words are "morphine" and "IV". The phrase "40 mg IV morphine" directly mentions morphine, which is an opioid. Looking at the index terms, Morphine is listed as an index term. The word "morphine" is clearly in the list, so that's a match. The rest of the sentence talks about difficulty in conversation, which might be a symptom of morphine use, but the actual drug reference is "morphine". 
+
+I should check if there are any other terms. "IV" is a medical term for intravenous, but it's not a drug itself. "40 mg" is a dosage, but the drug is morphine. The phrase "hell tryna engage" is metaphorical, not a drug reference. So the only match here is "morphine". 
+
+Looking at the example where "codeine" was matched with "lean" and "codeine", here "morphine" is directly mentioned. The index term for morphine is listed, so the correct index term is "Morphine". The matched phrase is "morphine". 
+
+I need to make sure there's no other term. The user might have meant something else, but based on the given index terms, "morphine" is the only one here. So the JSON array should have one object with index_term "Morphine" and matched_phrase "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

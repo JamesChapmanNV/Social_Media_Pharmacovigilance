@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this. The user wants me to moderate social media content for drug-related references. The post here is: "There is a case you could make of Chauvin... A) Followed procedures correctly B) That George died due to an overdose from fentynal or meth C) That Chauvin had reason to doubt George about not being able to breathe as he said it before he even was being taken away from the car."
+
+First, I need to look for any mentions of drugs or drug-related terms. Let's go through each part.
+
+Looking at option B: "overdose from fentynal or meth". Fentynal is a typo for fentanyl, right? Fentanyl is listed in the index terms as an opioid, so that's a match. Then "meth" could refer to methamphetamine. Meth is listed as a synthetic stimulant with high addiction potential. So both fentanyl and meth are in the index terms.
+
+Now, checking if those terms are present. The index terms include Fentanyl (China White, Apache, Duragesic) and Methamphetamine (Crystal Meth, Ice, Desoxyn). So "fentynal" is likely a misspelling of fentanyl, so that's a match. "Meth" is a direct match for methamphetamine.
+
+So the matched phrases would be "fentynal" and "meth", both linked to their respective index terms. The other options don't mention drugs. The first part of the post doesn't have any drug references. The third option mentions "breathe" but not a drug. So the only matches are the two in option B.
+
+I need to make sure that "fentynal" is correctly linked to fentanyl. Since the index term for fentanyl is listed as "Fentanyl", and "fentynal" is a misspelling, but the user's task is to detect any reference, even if it's a misspelling. So "fentynal" would map to Fentanyl. Similarly, "meth" is directly listed under Methamphetamine.
+
+So the JSON array should have two entries: one for fentanyl and one for methamphetamine.
+</think>
+
+[{"index_term": "Fentanyl", "matched_phrase": "fentynal"}, {"index_term": "Methamphetamine", "matched_phrase": "meth"}]

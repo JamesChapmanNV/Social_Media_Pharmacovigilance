@@ -1,0 +1,12 @@
+<think>
+Okay, let's see. The user provided a content snippet about the user's aunt born in 1915, visiting from CA, playing cards with grandma, and talking about the Great Depression. The task is to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I need to check if there's any mention of drugs, illegal substances, or anything related to abuse. The content talks about the aunt's background, playing cards, TV show Jeopardy, and the Great Depression. There's no mention of drugs, medications, or any context related to drug use, abuse, or misuse. The terms used are about family, history, and TV shows. 
+
+The definitions say that True includes mentions of illegal drugs in contexts of abuse, slang, or encouragement of misuse. False includes medical, educational, or preventative contexts. This content doesn't mention any drugs at all. The mention of the Great Depression might be a cultural reference, but that's unrelated to drugs. So, there's no indication of drug-related content here. Therefore, the classification should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content describes family history and nostalgia without mentioning drugs, medical contexts, or drug-related themes."
+}

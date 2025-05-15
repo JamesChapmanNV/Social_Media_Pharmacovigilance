@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions #cannabiscommunity, #marijuana, and #cannabis. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to check each phrase in the post. The hashtags are #cannabiscommunity, #marijuana, and #cannabis. Looking at the index terms list, "Marijuana (Cannabis, Weed, Pot)" is listed. So both #cannabis and #marijuana would map to "Marijuana" as the index term. The phrase "Brilliant Miller Releases Video Podcast Interview with David Henkin – World News Report" doesn't contain any drug references, so those are the only ones. 
+
+I should make sure there's no other slang or euphemism here. The post is about a podcast interview, so the hashtags are the only possible matches. Each hashtag is a separate phrase, so both #cannabis and #marijuana should be included. The index term for both is "Marijuana". 
+
+Wait, the example in the problem statement had "marijuana" as the index term. So in this case, the matched phrases are the hashtags. The user's example 4 had "snow" and "white lines" as other, but here the hashtags are explicitly listed under the index term. So the correct JSON should have two entries for the two hashtags, both mapped to "Marijuana".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "#cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "#marijuana"}
+]

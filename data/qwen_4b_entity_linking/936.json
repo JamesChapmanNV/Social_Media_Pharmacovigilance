@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Bro. Don't forget, he's Keith Richard's son. Good Anti whiskey and heroin genes." I need to detect any drug-related references here.
+
+First, I'll go through each part of the post. The first part is about Keith Richard's son, which is a reference to a person, but not a drug. Then "Good Anti whiskey and heroin genes." The words "whiskey" and "heroin" are mentioned. 
+
+Looking at the index terms, "heroin" is listed under Morphine, which is an opioid. So "heroin" would map to "Morphine". However, "whiskey" is a type of alcohol, not a drug listed in the index terms. The example in the prompt shows that if a term isn't in the list, it's marked as "other". So "whiskey" would be "other". 
+
+Wait, but the user's instruction says to check for any illicit drugs, including references to them. However, "whiskey" is a drink, not a drug. The index terms don't include alcohol, so "whiskey" would be "other". 
+
+So the detected phrases are "heroin" and "whiskey". "Heroin" maps to Morphine. "Whiskey" is not in the list, so "other". 
+
+But wait, the example 4 had "snow" and "white lines" as other. So same logic applies here. Therefore, the JSON should have two entries: one for "heroin" under Morphine, and "whiskey" as other.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "whiskey"}
+]

@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post about a man being sentenced to prison for providing heroin that led to two overdose deaths. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look for any words or phrases that refer to illicit drugs or substances. The post mentions "heroin." Checking the index terms, heroin is listed as "Heroin (MS Contin, Miss Emma, Morph)" but wait, looking back at the index terms provided, heroin is actually under "Morphine" as the prototypical opioid. Wait, no, let me check again. The index terms list "Morphine (MS Contin, Miss Emma, Morph)" and then "Heroin (MS Contin, Miss Emma, Morph)"? Wait no, looking at the list again, the entry for Morphine is separate. Wait, the user provided the index terms, so I need to check if "Heroin" is explicitly listed. Let me scan through the index terms again.
+
+Looking through the list, there's an entry for "Heroin" under "Morphine (MS Contin, Miss Emma, Morph)"? Wait no, the entry for Morphine is separate. Wait, no, the user's index terms list "Morphine (MS Contin, Miss Emma, Morph)" and then "Heroin (MS Contin, Miss Emma, Morph)"? Wait no, that can't be. Let me check again. The user's index terms list "Morphine (MS Contin, Miss Emma, Morph)" and then "Heroin (MS Contin, Miss Emma, Morph)"? No, actually, looking at the list provided, the entry for Morphine is separate. Wait, the user's index terms list "Morphine (MS Contin, Miss Emma, Morph)" and then "Heroin" is not explicitly listed. Wait, no, looking again, the entry for Heroin is not in the index terms. Wait, the index terms list "Morphine (MS Contin, Miss Emma, Morph)" and "Heroin" is not present. Wait, but in the index terms, there's an entry for "Morphine" and another for "Codeine", but heroin is not directly listed. Wait, perhaps I'm missing something. Let me check again.
+
+Wait, the index terms list "Morphine (MS Contin, Miss Emma, Morph)" and "Heroin" is not listed. But in the example given, "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". So, the index terms are specific. Therefore, if the post mentions "heroin", I need to check if it's in the index terms. Looking through the list again, the entry for "Heroin" is not present. Wait, but the index terms list "Morphine" as a separate entry. So, "Heroin" is not in the index terms. Wait, but the user's example 1 has "codeine" and "lean" both mapped to Codeine. So, if the post mentions "heroin", but there's no index term for heroin, then it would be "other".
+
+But wait, in the index terms, is there an entry for heroin? Let me check again. The user's index terms list "Morphine (MS Contin, Miss Emma, Morph)" and "Heroin" is not listed. Wait, but maybe "Heroin" is considered under Morphine? No, that's not correct. Heroin is a separate drug. Wait, perhaps I made a mistake. Let me check the index terms again.
+
+Looking at the list again, the entry for "Morphine" is listed as "Morphine (MS Contin, Miss Emma, Morph)" and then "Heroin" is not in the list. Therefore, if the post mentions "heroin", since it's not in the index terms, it would be categorized as "other".
+
+But wait, the user's example 1 has "codeine" and "lean" both mapped to Codeine. So, in this case, the post says "providing heroin in two overdose deaths". The word "heroin" is the key term here. Since "heroin" is not in the index terms provided, the correct index term would be "other".
+
+Wait, but maybe I'm missing an entry. Let me check again. The index terms list "Heroin" as part of the Morphine entry? No, the entry for Morphine is separate. The entry for Morphine is "Morphine (MS Contin, Miss Emma, Morph)" and then "Heroin" is not listed. Therefore, "heroin" is not in the index terms. Therefore, the matched phrase "heroin" would map to "other".
+
+So the post mentions "heroin", which is not in the index terms, so the index term is "other". Therefore, the JSON array would have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+Wait, but the user's example 4 has "snow" and "white lines" as "other" because they are not drugs. So in this case, "heroin" is a drug, but if it's not in the index terms, then it's "other". Therefore, the answer is {"index_term": "other", "matched_phrase": "heroin"}.
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

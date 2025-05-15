@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The post provided is about George Floyd's death and the pathologist ruling out overdose. First, I need to check if there are any mentions of drugs or substances in the post.
+
+Looking at the post: "Brilliant : #GeorgeFloyd #BLM #Chauvin Pathologist rules out overdose as cause of George Floyd's death during Chauvin trial". The key part here is "rules out overdose". But the task is to detect any drug references. The word "overdose" is mentioned, but according to the index terms, overdose isn't listed as a specific drug. The index terms include specific substances like codeine, amphetamine, fentanyl, etc., but not the term "overdose" itself. 
+
+So, "overdose" is a general term, not a specific drug or substance listed in the index. Therefore, it should be categorized under "other". However, I need to check if "overdose" is considered a drug reference here. The task says to detect any word or phrase that refers to an illicit drug, including terms that might indicate drug use, even if they're not on the list. But the example given in the problem shows that "xans" was categorized as "other" because it's not a specific term in the index. Similarly, "snow" in example 4 was "other" because it's not a drug.
+
+In this case, "overdose" is a medical term, not a specific drug. The index terms don't include "overdose", so it should be "other". But wait, the task says to detect any reference to illicit drugs, including terms that might be slang or euphemisms. However, "overdose" is a general term, not a specific substance. So the correct index term here would be "other". 
+
+The post doesn't mention any specific drug names or slang terms. The only possible reference is "overdose", which isn't in the index terms. Therefore, the answer should be an object with "other" and "overdose" as the matched phrase. But wait, the user's example 3 had "xans" as "other", so that's similar. Therefore, the correct output is to list "overdose" under "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "overdose"}]

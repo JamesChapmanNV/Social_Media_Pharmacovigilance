@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references. First, I need to read through the post carefully.
+
+The post says: "Professional - salary, Laborer - Hourly, rest are carveouts in their underwriting. Though Salesperson is weird in prof as their typically commission-based (though B2B are less so). I agree with though, arms dealer. Create the conversation for changing their UI xD"
+
+Looking for any words or phrases that might refer to illicit drugs. The key here is to check against the list of index terms provided. Let's go through each part.
+
+The first part talks about professions and salaries. "Professional", "Laborer", "Salesperson", "underwriting" – none of these seem to relate to drugs. Then there's "arms dealer". Wait, "arms dealer" is mentioned. Let me check the index terms. 
+
+Looking through the list, I don't see "arms dealer" listed as an index term. The closest might be "other" since it's not explicitly listed. But wait, is there any drug-related term that could be associated with "arms dealer"? Hmm, "arms dealer" usually refers to someone dealing in weapons, not drugs. But maybe in some contexts, it could be slang? However, according to the index terms provided, there's no entry for "arms dealer". So, according to the instructions, if the drug isn't in the list, use "other". 
+
+So "arms dealer" would map to "other". Are there any other phrases? The rest of the post is about UI changes and conversations, which don't mention drugs. 
+
+So the only detected phrase is "arms dealer", which isn't in the index terms, so it's "other". Therefore, the JSON array should have one object with index_term "other" and matched_phrase "arms dealer".
+</think>
+
+[{"index_term": "other", "matched_phrase": "arms dealer"}]

@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. 
+
+First, I'll read through the post carefully. The post says: "Booze? Lol.. Me I nor be alcohol person o. I don't take neither do I buy it for anyone. Kush, Codeine.. I'm Game."
+
+Breaking it down word by word. The first part mentions "Booze," which is a slang term for alcohol. But looking at the index terms, alcohol isn't listed. The index terms include things like Amphetamine, Codeine, Cannabis (Marijuana), etc. Since "Booze" isn't in the list, it should be "other". 
+
+Next, "Kush" is a slang term for cannabis, specifically marijuana. The index term for marijuana is "Marijuana (Cannabis, Weed, Pot)". So "Kush" maps to "Marijuana".
+
+Then there's "Codeine" directly mentioned. The index term for Codeine is "Codeine (Lean, Purple Drank, Schoolboy)". So "Codeine" is a direct match.
+
+The rest of the post is about the person not using or buying alcohol, so no other drug references. 
+
+So the matched phrases are "Booze" (other), "Kush" (Marijuana), and "Codeine" (Codeine). 
+
+Wait, but in the example 3, "xans" was "other" because it wasn't listed. So "Booze" isn't in the index terms, so it's "other". "Kush" is in the index as Marijuana. "Codeine" is in the index. 
+
+So the JSON array should have three entries: "Booze" as other, "Kush" as Marijuana, and "Codeine" as Codeine. Let me check the index terms again to confirm. Yes, Marijuana is listed, and Codeine is listed. Booze isn't in the list, so other. 
+
+I think that's all. No other phrases. The user didn't mention any other drugs. So the final answer should be those three entries.
+</think>
+
+[{"index_term": "other", "matched_phrase": "Booze"}, {"index_term": "Marijuana", "matched_phrase": "Kush"}, {"index_term": "Codeine", "matched_phrase": "Codeine"}]

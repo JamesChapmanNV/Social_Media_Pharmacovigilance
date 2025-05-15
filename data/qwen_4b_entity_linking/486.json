@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "😂😂 you smoking heroin??" and I need to detect any drug references.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "heroin". Checking the index terms, there's an entry for Morphine, which includes aliases like "MS Contin, Miss Emma, Morph". But heroin isn't directly listed. Wait, looking again, the index terms include "Morphine" but not heroin. However, the example given in the problem statement includes "Codeine" for "lean" and "codeine". So, maybe if the drug isn't explicitly listed, I should use "other".
+
+Wait, the task says if the drug is not in the list, use "other". So, heroin isn't in the index terms. Let me check the list again. The index terms include "Morphine", "Fentanyl", "Carfentanil", "Oxycodone", "Hydrocodone", "Methadone", "Methamphetamine", etc. Heroin isn't listed. So "heroin" would map to "other".
+
+But wait, the example in the problem where "snow" and "white lines" were considered "other" even though they might refer to cocaine. So in this case, "heroin" isn't in the index terms, so it's "other". Therefore, the matched phrase is "heroin" with index term "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

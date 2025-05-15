@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post and wants me to detect any drug-related references. The task is to identify phrases that refer to illicit drugs, link them to the correct index terms, and return a JSON array.
+
+First, I'll read through the post carefully: "oooh i'm still learning their names, but i think go eun, ireh, and swan are potential biases!! and dosie rly stood out to me in the overdose cover (WHICH WAS SO GOOD)! who's yours?? :)" 
+
+Looking for any slang, euphemisms, or terms that might refer to drugs. The user mentions "go eun, ireh, and swan" as potential biases. Now, I need to check if these terms are in the index terms list. 
+
+Looking at the list, "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". But "go eun", "ireh", and "swan" don't match any of the listed index terms. The term "dosie" might be a reference to "Dose", but "Dose" isn't listed either. The mention of "overdose cover" could relate to drug use, but "overdose" itself isn't an index term. 
+
+The post also has "biases" which might be a typo or slang for something else, but it's not in the list. The other terms like "go eun", "ireh", "swan" don't match any of the index terms. Since none of these phrases are in the provided list, they should be categorized under "other". 
+
+So, the detected phrases are "go eun", "ireh", "swan", "dosie", and "overdose". But wait, "overdose" isn't in the index terms. However, the user's post mentions "overdose cover" which is a reference to a movie or media, not a drug. The key here is that the phrases need to be matched to the index terms. Since none of the terms in the post match the index terms, all should be "other". 
+
+Wait, the example 3 shows "xans" as "other" because it's not in the list. Similarly, "dosie" isn't in the index terms. So, the answer should have all these phrases as "other".
+</think>
+
+[{"index_term": "other", "matched_phrase": "go eun"}, {"index_term": "other", "matched_phrase": "ireh"}, {"index_term": "other", "matched_phrase": "swan"}, {"index_term": "other", "matched_phrase": "dosie"}, {"index_term": "other", "matched_phrase": "overdose"}]

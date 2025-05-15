@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Nigerian drug dealer sentenced to 10 years imprisonment in India." I need to check if there are any drug-related references here.
+
+First, I'll scan each word and phrase. The key terms here are "Nigerian drug dealer" and "India." The main focus is on a person being sentenced for drug dealing. But the task is to detect specific drug terms or phrases that refer to illicit drugs. 
+
+Looking at the Index Terms list, I need to see if any of the terms match. The post doesn't mention any specific drugs like codeine, amphetamine, cocaine, etc. It just mentions a drug dealer. The term "drug dealer" is a general term, not a specific drug name. The Index Terms include specific drugs and their synonyms, but "drug dealer" isn't listed. 
+
+The example given in the problem where "xans" was considered "other" because it wasn't a specific term. Similarly, "drug dealer" isn't a specific drug name. So, there's no direct match here. The post is about a person involved in drug trafficking, but it doesn't use any slang, euphemisms, or specific drug names. 
+
+Therefore, there are no matches in the post. The answer should be an empty array. But wait, the user's example 3 had "xans" as "other" because it wasn't a specific term. So, in this case, since there's no specific drug term, the correct response is to return an empty array. 
+
+Wait, but the user's instruction says to detect every word or phrase that refers to an illicit drug. "Drug dealer" is a person, not a drug. So, no matches. Hence, the JSON array should be empty.
+</think>
+
+[]

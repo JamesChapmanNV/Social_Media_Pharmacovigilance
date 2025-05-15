@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post and a response from someone else, and I need to detect any drug-related references.
+
+First, the post is: "Me at the hospital today: body go brrrrrrrrr them: morphine? morphine Me: body go br----"
+
+Looking at the text, the key part is "morphine?" mentioned by "them". The user is asking if the body going cold (brrrrrrrrr) is due to morphine. Morphine is an opioid, so I need to check if it's in the index terms. Yes, Morphine is listed as an index term. The phrase "morphine" is directly mentioned, so that's a match. The other parts like "body go brrrrrrrrr" are likely describing the side effects of morphine, but since the actual drug name is "morphine", that's the only match here. The rest of the text doesn't mention any other drugs. So the correct index term is Morphine, and the matched phrase is "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

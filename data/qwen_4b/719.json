@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The content is "New Music! Dwelly ft. Yung Spyda in 'Codeine Chill'!". I need to determine if this is illicit/abusive-drug-related.
+
+First, the song title is "Codeine Chill". Codeine is a controlled substance, often associated with opioid use. The term "Chill" might be a slang term for drug use, but I'm not sure. However, the title itself mentions codeine, which is a drug. The context is a music release, which could be promoting the song. But does that mean it's about drug use? The artist names are Dwelly and Yung Spyda, but I don't know their backgrounds. 
+
+Wait, the task is to check if the content is related to drug abuse. The title includes "Codeine", which is a drug. The term "Chill" might be a slang for drug use, but it's not clear. However, the key point is that the title directly mentions codeine, which is a controlled substance. The content is about a music release, but the title includes a drug name. 
+
+In the example given, "Codeine Chill" was considered True because it mentions codeine and implies use. So here, the content is promoting a song with that title. The label would be True because it's using a drug name in a way that could imply recreational use. Even if the song's content isn't clear, the title itself is a red flag. So the answer should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The song title 'Codeine Chill' explicitly mentions codeine, a controlled substance, and the term 'chill' may imply recreational drug use in a colloquial context."
+}

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "Real talk I'm PISSED because as a Broke using medical cannabis I relish the sales at dispensaries 😭 (and they can't deliver in NH)". I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll break down the content. The person mentions "medical cannabis," which is legal in some places but not all. They also mention being "broke" and "relish the sales at dispensaries." The key here is the context. The user is talking about using medical cannabis, which is for medical purposes, not recreational. However, the tone is negative ("PISSED") because they can't get it in NH. But the main point is that they are using it medically. 
+
+Now, according to the definitions, True includes mentions of illegal, RX, or OTC drugs in the context of abuse or misuse. But here, it's medical cannabis. The user is using it for medical reasons, not abusing. The mention of dispensaries and sales might relate to accessing it, but the content isn't promoting abuse. The user is expressing frustration about availability, not encouraging misuse. 
+
+The example given in the prompt where medical use was considered False, like the pharmacology lecture. So this case is similar. The content is about personal use of medical cannabis, not promoting or glorifying abuse. The slang or terms here are "medical cannabis," which is a legitimate term. The user isn't encouraging others to use it recreationally or misuse it. Therefore, it's more of a personal experience with medical use, so the label should be False.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses personal use of medical cannabis in a medical context, not promoting or glorifying abuse or misuse."
+}

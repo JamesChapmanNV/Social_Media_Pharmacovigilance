@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be checked for drug-related references. The task is to detect any words or phrases that refer to illicit drugs, link them to the correct index term, and return a JSON array.
+
+First, I'll read the post carefully: "the morphine shot was cool but all bc we can't see zendaya tittes IM CRYINGGGG #Euphoria". 
+
+Looking for drug-related terms. The first part mentions "morphine shot". Morphine is listed in the index terms under "Morphine" as the prototypical opioid analgesic. So "morphine" would map to "Morphine".
+
+Next, the rest of the post: "but all bc we can't see zendaya tittes IM CRYINGGGG #Euphoria". There's no direct drug reference here. "Zendaya tittes" is a reference to a celebrity, and "#Euphoria" is a hashtag related to a TV show. The user might be using "euphoria" as a slang term, but checking the index terms, "euphoria" isn't listed. However, "Amphetamine" is listed with synonyms like "Speed, Bennies, Adderall", but "euphoria" isn't directly linked. Wait, the example 2 had "addy" mapped to Amphetamine. But in this case, "euphoria" isn't a direct synonym for any drug in the list. The hashtag #Euphoria is just a reference to the show, not a drug term. 
+
+So the only drug reference here is "morphine shot", which maps to "Morphine". The rest of the text doesn't contain any other drug-related terms. The user might be trying to use "euphoria" as a slang term, but since it's not in the index terms, it would be "other". However, in the post, "euphoria" is part of a hashtag and not a direct reference to a drug. The user is crying about not seeing Zendaya's tittes, which is unrelated to drugs. 
+
+Therefore, the only matched phrase is "morphine shot" under "Morphine". The rest of the text doesn't have any drug references. The hashtag #Euphoria is not a drug term, so it's "other" but since it's not a direct drug reference, maybe it's not included. Wait, the task is to detect every word or phrase that refers to an illicit drug. The hashtag is not a drug term. So the only match is "morphine shot" which is "Morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

@@ -1,0 +1,11 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Done thanks for the chance 🙏". I need to check if there are any drug-related references here.
+
+First, I'll look at each word. "Done" is a verb, probably meaning they finished something. "Thanks" is a social gesture. "For the chance" could be a phrase, but I need to check if "chance" is a slang for a drug. 
+
+Looking at the index terms, I don't see "chance" listed. The index terms include things like Codeine, Amphetamine, LSD, etc. "Chance" isn't mentioned there. The example where "snow" was considered "other" because it wasn't a drug. So "chance" here is likely a regular word, not a slang or euphemism for a drug.
+
+The post doesn't have any words that match the index terms. The user might be referring to a chance to do something, but there's no indication of drug use here. So the answer should be an empty array since there are no matches.
+</think>
+
+[]

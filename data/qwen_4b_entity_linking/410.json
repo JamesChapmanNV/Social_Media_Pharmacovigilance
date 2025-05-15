@@ -1,0 +1,15 @@
+<think>
+Okay, let's see. The user provided a post: "I catch people's humor so good I laugh at a lot of shit😂". I need to check if there are any drug-related references here.
+
+First, I'll go through each word and phrase. The post is about laughing at people's humor and finding shit funny. The words "humor", "laugh", "shit" are mentioned. Now, checking the index terms list for any possible matches. 
+
+Looking at the list, "shit" isn't listed as a drug term. The index terms include things like Codeine, Amphetamine, CBD, etc. "Shit" might be a slang term, but in the context of the example given, like in example 4, "snow" and "white lines" were marked as "other" since they aren't on the list. So "shit" here is probably not a drug reference. 
+
+The user's task is to detect any illicit drug references, slang, euphemisms, etc. Since "shit" isn't listed in the index terms and doesn't match any of the provided drug names or their synonyms, it should be categorized as "other". But wait, the example 3 had "xans" which was "other" because it wasn't in the list. Similarly, "shit" here isn't a drug term, so it's "other". 
+
+But wait, is "shit" a slang for a drug? Let me check the index terms again. The list includes terms like "Codeine" with synonyms like "lean", "purple drank", "schoolboy". "Shit" isn't listed. So in this case, the matched phrase "shit" would map to "other". 
+
+So the output should be an array with one object: index_term "other" and matched_phrase "shit".
+</think>
+
+[{"index_term": "other", "matched_phrase": "shit"}]

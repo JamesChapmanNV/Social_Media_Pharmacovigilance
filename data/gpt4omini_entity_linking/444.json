@@ -1,0 +1,5 @@
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "joints"},
+  {"index_term": "other", "matched_phrase": "420"}
+]

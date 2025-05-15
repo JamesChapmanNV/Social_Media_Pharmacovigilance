@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says: "No paracetamol should be banned, a non reversible drug in overdose causing multi organ failure sold OTC". I need to detect any drug references here and link them to the index terms.
+
+First, I'll read through the post carefully. The key words here are "paracetamol" and "OTC". The user is talking about paracetamol, which is also known as acetaminophen. Now, checking the index terms list, I need to see if paracetamol is listed. Let me scan through the list.
+
+Looking at the index terms, I don't see "paracetamol" listed. The closest might be "Acetaminophen" but that's not in the list either. The index terms include drugs like Amphetamine, Codeine, CBD, etc., but not paracetamol. The example given in the task mentions that if the drug isn't in the list, use "other". 
+
+So, "paracetamol" isn't in the index terms. The phrase "OTC" is mentioned, which stands for over-the-counter. However, the index terms don't have an entry for OTC. Wait, the task says to check for drug references, so "OTC" is a descriptor, not a drug name. The actual drug here is paracetamol. Since it's not in the index terms, the index term should be "other".
+
+So the matched phrase is "paracetamol" and the index term is "other". The OTC part is just a descriptor, but the drug itself is paracetamol, which isn't listed. Therefore, the correct JSON should have one entry with index_term "other" and matched_phrase "paracetamol".
+</think>
+
+[{"index_term": "other", "matched_phrase": "paracetamol"}]

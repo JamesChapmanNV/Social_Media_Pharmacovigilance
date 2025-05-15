@@ -1,0 +1,15 @@
+<think>
+Okay, let's see. The user provided a post and wants me to detect any drug-related references. The post is: "And your entire argument hinges on weather or not he died by overdose. But since two separate autopsies said he didn't then that idea falls flat on its face."
+
+First, I need to look for any words or phrases that refer to illicit drugs, slang, euphemisms, etc. The key here is to check against the index terms provided. 
+
+The post mentions "overdose." Now, "overdose" is a term that can relate to drug use, but is it listed in the index terms? Let me check the list. The index terms include things like Codeine, Amphetamine, Fentanyl, etc. But "overdose" itself isn't an index term. However, the term "overdose" is often associated with drug use, so if there's no specific index term for it, I should mark it as "other."
+
+Looking at the example where "snow" and "white lines" were marked as "other" because they weren't drugs, similar logic applies here. The word "overdose" isn't listed in the index terms, so it should be categorized as "other." 
+
+Are there any other phrases? The rest of the post talks about autopsies and arguments, which don't mention any specific drugs. So the only possible match is "overdose," which maps to "other." 
+
+Therefore, the correct JSON array should have one entry with "other" and "overdose" as the matched phrase.
+</think>
+
+[{"index_term": "other", "matched_phrase": "overdose"}]

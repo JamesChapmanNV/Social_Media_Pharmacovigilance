@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a social media post and wants me to detect any drug-related references. The task is to find every word or phrase that refers to an illicit drug or substance, link them to the correct Index Term from the given list, and return a JSON array.
+
+First, I'll read the post carefully: "overdose!! but i focused less on exo since 2019 n started focusing on nct but i still love them as my boys🥺‼️ HAPPY 9 YEARS WITH EXO #9ToEternityWithEXO #9YearswithEXO #EXO #엑소". 
+
+Looking for any mentions of drugs or substances. The word "overdose" is a strong indicator, but I need to check if it's part of a drug reference. However, "overdose" itself isn't listed in the Index Terms. The post also mentions "exo" and "nct", which are K-pop groups. The hashtags are related to EXO's 9th anniversary. There's no mention of any drugs, slang, or euphemisms here. 
+
+I should check if any of the terms like "exo" or "nct" are drug terms. But according to the Index Terms list, none of the terms related to K-pop groups are listed. The example 3 shows "xans" is considered "other" because it's not a drug. Similarly, "snow" in example 4 is "other". 
+
+So, the post doesn't contain any drug-related phrases. The only possible mention is "overdose", but since it's not in the Index Terms, it would be "other". However, the user's task is to detect drug references. "Overdose" could be a result of drug use, but the post doesn't specify which drug. Since the exact terms aren't present in the list, it's safer to mark it as "other". But wait, the example 4 had "snow" and "white lines" as "other" even though they weren't drugs. So, in this case, "overdose" is a consequence, not a direct reference. Therefore, there are no matches here. The JSON array should be empty.
+</think>
+
+[]

@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "2 illegal immigrants smuggling $700K in heroin, authorities say". I need to detect any drug references here.
+
+First, I'll scan the post for any terms that might refer to illicit drugs. The key words here are "heroin". Now, checking the Index Terms list, I see that "Heroin" is listed as an index term. Wait, actually, looking back, the Index Terms include "Morphine" and "Heroin" isn't explicitly listed. Wait, let me check again. The Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but not heroin. However, heroin is a form of opioid, and in the Index Terms, "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". But heroin isn't directly listed. Wait, but in the example given, "Codeine" is mapped to "lean" and "codeine". 
+
+Wait, the user's task is to link each detected phrase to the Index Term. If the drug isn't in the list, use "other". So, the post mentions "heroin". Is heroin listed in the Index Terms? Let me check again. Looking through the list, I don't see "Heroin" explicitly. The closest is "Morphine" and "Codeine". But heroin is a different drug. However, the Index Terms might not have every possible drug, so if the drug isn't listed, we use "other". 
+
+Wait, in the Index Terms, "Morphine" is listed, but heroin is a separate substance. The user's instruction says to use the Index Terms provided. Since heroin isn't in the list, the correct index term would be "other". But wait, let me check again. The Index Terms include "Heroin" as an index term? Let me look again. The list starts with 2,6-Xylidine, then 2-Amino-5-Chloropyridine, then 2-Fluoro-2-Oxo PCE, etc. Scrolling through, I don't see "Heroin" listed. The only opioids listed are Morphine, Codeine, Fentanyl, Oxycodone, etc. But heroin isn't in the list. Therefore, "heroin" would map to "other".
+
+But wait, in the example given in the problem statement, the post mentions "codeine" and "lean", which are both mapped to "Codeine". So if the post mentions "heroin", which isn't in the Index Terms, then the index term should be "other". Therefore, the correct JSON would be an object with index_term "other" and matched_phrase "heroin".
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

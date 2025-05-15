@@ -1,0 +1,28 @@
+<think>
+Okay, let's tackle this query. The user provided a post that needs to be moderated for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I'll read through the post carefully: "Tapping out. Dang take it. Taking my morphine pills so out of hit for a good while. Please no texts unless it's an absolute emergency." 
+
+Looking for drug-related terms. The first part says "Tapping out." That's slang, but I need to check if it's a drug reference. "Tapping out" might mean stopping something, but not sure if it's a drug term. Next, "Dang take it." Not sure about that either. 
+
+Then, "Taking my morphine pills." Morphine is listed in the index terms as "Morphine" with synonyms like MS Contin, Miss Emma, Morph. So "morphine" is a direct match. 
+
+"Out of hit for a good while." "Hit" here is slang for a drug hit, like a dose. So "hit" would be a synonym for drug use. But wait, the index terms don't have "hit" listed. Let me check the list again. The index terms include "Morphine" and other drugs, but "hit" isn't explicitly listed. However, "hit" is a common slang for a drug dose, so if it's not in the index, we should use "other". 
+
+So "hit" would map to "other". 
+
+So the detected phrases are "morphine" and "hit". 
+
+Now, checking the index terms. "Morphine" is in the list. "Hit" is not, so "other". 
+
+So the JSON should have two entries: one for "Morphine" with "morphine", and another for "other" with "hit". 
+
+Wait, the user's example 3 had "xans" which wasn't in the list, so it was "other". Similarly, "hit" isn't in the index terms, so it's "other". 
+
+Therefore, the correct output should be two objects: one for morphine and one for other (hit).
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "hit"}
+]

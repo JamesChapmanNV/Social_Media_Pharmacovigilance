@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post about a book on brewing with cannabis and needs me to detect any drug-related references. First, I'll read through the post carefully.
+
+The post says: "Brewing with Cannabis by Dr. Keith Villa () is the perfect gift for craft beer and cannabis enthusiasts on #420! This book includes recipes and guidance when creating non-alcohol beer or homebrew. Order today!" 
+
+Looking for any terms that might refer to illicit drugs or substances. The main keywords here are "Cannabis" and "non-alcohol beer". The index terms list includes "Marijuana (Cannabis, Weed, Pot)" as a term. So "Cannabis" here is a direct match for the index term "Marijuana". 
+
+But wait, the post mentions "non-alcohol beer", which is a bit confusing. However, the user's task is to detect any references to illicit drugs. Since "Cannabis" is explicitly listed as an index term, and the post is about brewing with cannabis, which is a known illicit drug, I should include that. 
+
+The other part of the post is about a book for enthusiasts, so "non-alcohol beer" doesn't seem to refer to a drug. The hashtag #420 is related to cannabis, but that's just a reference and not a drug term. 
+
+So the only detected phrase is "Cannabis", which maps to the index term "Marijuana". The rest of the text doesn't mention any other drugs or slang terms. Therefore, the JSON array should have one entry with "Marijuana" and "Cannabis".
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "Cannabis"}]

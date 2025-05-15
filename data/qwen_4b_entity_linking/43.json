@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post about San Francisco allowing legal cannabis sales at a 4/20 celebration. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read the post carefully: "San Francisco to allow legal cannabis sales at annual 4/20 celebration for the first time in history." The key words here are "cannabis" and "legal cannabis sales." 
+
+Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is a non-illicit drug since it's legal here. The post mentions legal sales, so it's not about illicit use. The term "cannabis" is listed under the index term "Marijuana," so that's a direct match. 
+
+I need to check if there are any other phrases. The post doesn't mention any slang, euphemisms, or other drugs. The 4/20 reference is a cultural event for cannabis, but "4/20" itself isn't a drug term. The word "cannabis" is the only drug-related term here. 
+
+Since the index term for cannabis is "Marijuana," and the post is about legal sales, the matched phrase is "cannabis." There's no mention of illicit drugs, so no other index terms apply. The answer should only include the "Marijuana" term with "cannabis" as the matched phrase. No other terms are needed here.
+</think>
+
+[{"index_term": "Marijuana", "matched_phrase": "cannabis"}]

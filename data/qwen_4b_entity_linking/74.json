@@ -1,0 +1,25 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate Index Terms, and return a JSON array.
+
+First, I need to read the provided post carefully. The post is: "Such a strange comparison. Clearly you want to normalize intravenous drug use. Coffee, beer, socially acceptable. Heroin use by a kids school, tough to swallow that one as acceptable. But go on. Keep reaching to justify this as normal and acceptable."
+
+Looking for drug references here. The key part is "intravenous drug use" and "heroin use by a kids school." The word "heroin" is definitely a drug. Let me check the Index Terms list. Heroin is listed as "Morphine (MS Contin, Miss Emma, Morph)" but wait, the Index Terms for Morphine are listed as "Morphine (MS Contin, Miss Emma, Morph)" but the user's example shows that "Codeine" is linked to "lean" and "codeine." However, in the Index Terms, "Heroin" isn't directly listed. Wait, looking back, the Index Terms include "Morphine" but not "Heroin." Wait, the Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but the user's example has "Codeine" linked to "lean" and "codeine." So, in the Index Terms, "Heroin" isn't explicitly listed. Wait, the Index Terms list includes "Morphine" but not "Heroin." However, the user's example includes "Codeine" as an index term. So, if the post mentions "heroin," I need to check if it's in the Index Terms. 
+
+Looking through the Index Terms again. The list includes "Heroin" as a term? Wait, no. The Index Terms list includes "Morphine" but not "Heroin." Wait, the Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but "Heroin" isn't listed. However, the user's example in Example #1 has "Codeine" linked to "lean" and "codeine," which are in the Index Terms. So, if the post mentions "heroin," but it's not in the Index Terms, then the index_term would be "other."
+
+Wait, the user's instruction says: if the drug is not in the list, use "other." So, the Index Terms list includes "Morphine" but not "Heroin." Therefore, "heroin" would be "other." However, the user's example for "Codeine" includes "lean" and "codeine," which are in the Index Terms. So, in the post, the phrase "heroin use" would be "heroin," which is not in the Index Terms. Therefore, the index_term would be "other."
+
+But wait, the Index Terms list includes "Morphine," but not "Heroin." However, the user's example includes "Codeine" as an index term. So, the user is expecting that if the drug is in the Index Terms, use that. Otherwise, "other." So, in this case, the post has "heroin," which is not in the Index Terms. Therefore, the matched_phrase would be "heroin" with index_term "other."
+
+But wait, the Index Terms list includes "Heroin" as a term? Let me check again. The Index Terms list includes "Morphine (MS Contin, Miss Emma, Morph)" but not "Heroin." So, "Heroin" is not listed. Therefore, the correct index_term is "other."
+
+So, the post mentions "heroin use by a kids school." The phrase "heroin" is the key term here. Since "heroin" is not in the Index Terms (the Index Terms have "Morphine" but not "Heroin"), the index_term should be "other."
+
+Therefore, the JSON array should have one entry: {"index_term": "other", "matched_phrase": "heroin"}.
+
+Wait, but the user's example for "Codeine" includes "lean" and "codeine." So, in this case, "heroin" is not in the Index Terms, so it's "other." Therefore, the answer is that one entry.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

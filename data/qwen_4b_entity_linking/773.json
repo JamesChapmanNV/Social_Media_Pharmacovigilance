@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post about cannabis regulatory updates in Nevada and Missouri. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to read the post carefully. The post mentions "Cannabis Regulatory Update: Nevada Continues Weed Arrests Despite Legalization, Missouri's Efforts To Legalize." The key words here are "Cannabis," "Weed," and "Legalization." 
+
+Looking at the index terms, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is listed as a non-intoxicating cannabinoid, but wait, actually, the index term says "The most widely used illicit drug, containing psychoactive cannabinoids THC only." Wait, but the index term for Marijuana is listed as an illicit drug. However, the post is talking about regulatory updates and legalizations. 
+
+But the task is to detect any references to illicit drugs or substances. The term "Marijuana" is listed in the index terms as a drug. However, the post is about legalizations, so maybe "Weed" is a slang term for marijuana. But in the index terms, "Marijuana" is listed as an index term. So "Weed" is a synonym for marijuana, which is in the index terms. 
+
+So in the post, "Cannabis" and "Weed" are both synonyms for marijuana. The index term for marijuana is "Marijuana (Cannabis, Weed, Pot)". Therefore, both "Cannabis" and "Weed" would map to "Marijuana" as the index term. 
+
+But wait, the user's instruction says to detect every word or phrase that refers to an illicit drug. The post is about regulatory updates, but the terms "Cannabis" and "Weed" are being used in the context of legalization. However, the index term for marijuana is listed as an illicit drug. But the problem is that in the index terms, "Marijuana" is listed as an illicit drug, but the post is discussing legalizations. However, the task is to detect any references to drugs, regardless of their legal status. So even if it's legal in some places, the term itself is still a reference to the drug. 
+
+So the answer would be that "Cannabis" and "Weed" are matched to "Marijuana" as the index term. The other terms in the post are "Legalization" and "Arrests," but those are not drug terms. Therefore, the JSON array should include the two terms: "Cannabis" and "Weed" both mapped to "Marijuana".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "Cannabis"},
+  {"index_term": "Marijuana", "matched_phrase": "Weed"}
+]

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The content is: "Yeah fat Albert a.k.a. river and Al Sharpton the Coke dealer!!!" 
+
+First, I need to determine if this is illicit or abusive drug-related. The key here is to look for mentions of drugs in contexts of abuse, promotion, or misuse. The names mentioned are "Fat Albert," "River," and "Al Sharpton." Wait, Al Sharpton is a real person, a civil rights activist, so that's probably a reference. But "Coke dealer" is a strong indicator. 
+
+"Coke dealer" directly refers to someone selling cocaine, which is an illicit drug. The use of "a.k.a." (also known as) might be a slang or nickname. The phrase "Coke dealer" is clearly associated with drug trafficking or selling, which is illegal. The context here is pointing out that Al Sharpton is a Coke dealer, which could be a metaphor or a reference to a real-life situation. However, the mention of "Coke dealer" is a clear indicator of drug-related abuse or illegal activity. 
+
+The example given in the task mentions that if someone refers to a drug dealer, that's a sign of illicit content. Even if the context is a joke or a reference, the term "Coke dealer" is enough to classify it as True. The user is using a slang term here, which is part of the definition. So the label should be True because it's referring to someone involved in selling cocaine, which is an illicit drug.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content refers to 'Coke dealer,' a direct mention of illicit drug trafficking, indicating involvement in drug abuse or illegal activity."
+}

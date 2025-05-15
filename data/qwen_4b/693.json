@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "hi yes I just woke up from a codeine nap to this compliment ty Robbie". I need to classify this as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT.
+
+First, I'll check the definitions. True includes mentions of illegal, RX, or OTC drugs in contexts of abuse, misuse, or promoting. Also, slang or euphemisms related to recreational use. False includes medical, educational, or preventative contexts.
+
+Looking at the content, "codeine" is mentioned. Codeine is an opioid, which is a controlled substance. The phrase "codeine nap" might be a slang term for using codeine, possibly in a recreational way. The user says they "woke up from a codeine nap," which could imply that they used codeine, possibly in a way that's not medically supervised. The mention of "compliment" and "ty Robbie" seems like a casual, possibly dismissive comment, but the key part is "codeine nap."
+
+Now, considering the context. If someone is using codeine for non-medical purposes, that's abuse. The term "nap" here might be a euphemism for using the drug. Also, the tone seems casual, not educational or medical. There's no mention of treatment or education, so it's more about personal use. 
+
+The example given in the task where "lean" and "codeine" were considered True because of the context of being hooked. Similarly, here, the mention of codeine in a way that suggests use (nap) and the casual tone might indicate abuse. So the label should be True.
+</think>
+
+{"label": "True", "explanation": "The content mentions 'codeine' in the context of a 'codeine nap,' which implies recreational use or misuse of an opioid drug."}

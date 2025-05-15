@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet that needs classification as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The example given in the prompt is about someone describing a place where they see someone smoking heroin, and they express negative feelings about it.
+
+First, I need to check the definitions. True includes mentions of illegal drugs in contexts of abuse, misuse, or promotion. The content here mentions "heroin," which is definitely an illicit drug. The user is describing a situation where they have to go to a place where someone is smoking heroin, and they express frustration ("Fuck this place. I'm out."). 
+
+The key points here are the explicit mention of heroin (an illegal drug) and the context of someone using it in a public place. The tone is negative, which might indicate disapproval, but the presence of the drug use itself is enough to classify it as illicit. Also, the mention of "smoking heroin" directly points to recreational use, which falls under abuse or misuse. 
+
+The example given in the prompt where someone mentions "lean" and "codeine" was classified as True because of the context of being hooked. Similarly, here, the direct mention of heroin and the situation where it's being used in a public place, even if the user is just witnessing it, still qualifies as illicit. The user's reaction is negative, but the content itself is about drug use, which is the main factor here.
+
+So, the label should be True. The explanation should mention the explicit mention of heroin and the context of its use in a public place, indicating recreational or illicit use.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions 'heroin' and describes witnessing its use in a public setting, indicating illicit drug abuse."
+}

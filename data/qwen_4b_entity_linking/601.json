@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says, "You smoking crack my guy. There was no coup. There was fraud. To deny it is being at best intellectually dishonest and at worst straight up fucking lying..the history books will support it." I need to detect any drug references here and map them to the correct index terms.
+
+First, I'll read through the post carefully. The first part is "You smoking crack my guy." The word "crack" is a slang term for cocaine. Looking at the index terms, cocaine's metabolite is Benzoylecgonine (BZE, Ecgonine benzoate). So "crack" would map to that. 
+
+Next, the rest of the post talks about a coup and fraud, which don't relate to drugs. The other parts are about history books and lying, which are unrelated. There's no mention of any other drugs here. So the only match is "crack" under Benzoylecgonine. 
+
+I should check if "crack" is indeed listed as a slang for cocaine. Yes, in the index terms, cocaine is listed with synonyms like "crack". So the correct index term here is Benzoylecgonine. The matched phrase is "crack". 
+
+No other phrases in the post refer to drugs. The rest is political or historical discussion. So the JSON array should have one object with index_term as Benzoylecgonine and matched_phrase as "crack".
+</think>
+
+[
+  {"index_term": "Benzoylecgonine", "matched_phrase": "crack"}
+]

@@ -1,0 +1,25 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array.
+
+First, I need to look at the post: "one thing abt it i'm crack a lil jokey jokey while sippin a lil drinky drink 😭😂🤌🏽". 
+
+Breaking it down, the main phrases here are "crack", "jokey", and "drinky". Let me check the index terms list. 
+
+"Crack" is a slang term for cocaine, right? But looking at the index terms, cocaine is listed as "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. However, the index terms don't have a direct entry for "crack" itself. Wait, the index terms include "Codeine" with synonyms like "Lean", but "crack" isn't listed. However, "crack" is a slang for cocaine, which is an illicit drug. Since cocaine isn't in the index terms as a separate entry, but the post refers to "crack", which is a form of cocaine, I need to check if "crack" is considered under another term. 
+
+Looking at the index terms again, the only mention of cocaine is "Benzoylecgonine". But the user's instruction says if the drug isn't in the list, use "other". Wait, but "crack" is a form of cocaine, which is an illicit drug. However, the index term for cocaine is "Benzoylecgonine", but the user's example 4 shows that "snow" is "other" even though it's not a drug. So if "crack" isn't explicitly listed, maybe it's "other". 
+
+Wait, but "crack" is a slang for cocaine, which is an illicit drug. However, the index terms don't have a direct entry for "crack". So according to the task, if the drug is not in the list, use "other". Therefore, "crack" would be "other".
+
+Next, "jokey" and "drinky". "Jokey" might be a slang term, but I'm not sure. Looking at the index terms, "jokey" doesn't match any. "Drinky" could be a slang for drink, but not a drug. So those would be "other".
+
+So the detected phrases are "crack", "jokey", "drinky". All of these are not in the index terms, so they should be "other". But wait, "crack" is a drug. But the index terms don't have "crack" as a term. The index term for cocaine is "Benzoylecgonine", but "crack" is a form of cocaine. However, the task says to use the index terms provided. Since "crack" isn't listed, it's "other". 
+
+So the answer would be all three phrases as "other". But wait, the user's example 3 has "xans" as "other". Similarly, "jokey" and "drinky" are not in the index terms, so they are "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "crack"},
+  {"index_term": "other", "matched_phrase": "jokey"},
+  {"index_term": "other", "matched_phrase": "drinky"}
+]

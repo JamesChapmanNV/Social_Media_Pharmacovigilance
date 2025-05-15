@@ -1,0 +1,11 @@
+<think>
+Okay, let's see. The user provided a post: "When you put codeine in your pumpkin spiced latte." I need to detect any drug references here.
+
+First, I'll look for words or phrases that might refer to illicit drugs. The post mentions "codeine," which is directly listed in the index terms under Codeine. The phrase "codeine" is a direct match. Then there's "pumpkin spiced latte," which is a drink. But the question is whether any of the terms in the latte are drugs. The latte is a regular coffee drink, so "pumpkin spiced" is a flavoring, not a drug. The only drug reference here is "codeine." 
+
+Looking at the index terms, Codeine has entries like "Lean," "Purple Drank," and "Schoolboy," but the post uses "codeine" directly. So the matched phrase is "codeine," and the index term is Codeine. There's no other drug mentioned here. The rest of the phrase is just a description of the drink, which isn't a drug. So the JSON should have one entry: {"index_term": "Codeine", "matched_phrase": "codeine"}.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

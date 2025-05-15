@@ -1,0 +1,8 @@
+<think>
+Okay, let's tackle this. The content is "someone buy me cough syrup with codeine and promethazine in it yuuuurt". First, I need to check if this is illicit or abusive drug-related. The mention of codeine and promethazine are both drugs that can be abused. Cough syrup with codeine is a common example of a medication that's often misused. The phrase "buy me" suggests someone is trying to get this substance, which is a sign of potential misuse. The "yuuuurt" is probably a typo or slang, but the key here is the drugs mentioned. Since codeine is an opioid and promethazine is a sedative, their combination in a cough syrup could be used for recreational purposes. The context here is about obtaining the drug, which aligns with abuse or misuse. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions codeine and promethazine, which are drugs associated with abuse, and implies obtaining them for use, indicating potential illicit drug-related activity."
+}

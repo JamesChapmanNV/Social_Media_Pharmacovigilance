@@ -1,0 +1,12 @@
+<think>
+Okay, let's tackle this. The user provided a query that needs classification as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "Dear is double-dealer. My loan repayment has been bounce because PhonePe. show me the right way, I want complain against". 
+
+First, I need to check if there's any mention of drugs, illegal substances, or drug abuse. The content talks about a loan repayment issue with PhonePe, which is a payment app. The mention of "double-dealer" might be a slang term, but in this context, it's likely referring to someone being untrustworthy. There's no mention of drugs, opioids, codeine, or any other substances. The terms "PhonePe" is a payment platform, not related to drugs. The user is complaining about a financial issue, not drug-related activities. 
+
+The definitions say that True includes content about illegal drugs in abuse contexts, slang, or promoting misuse. Here, there's no such mention. The content is about a loan problem, so it falls under False. The explanation should note that there's no drug-related content, just a financial complaint.
+</think>
+
+{
+    "label": "False",
+    "explanation": "The content discusses a financial complaint regarding a loan repayment issue with PhonePe, with no mention of drugs, drug-related terms, or drug abuse."
+}

@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions cannabis and 4/20. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to check if "cannabis" is in the index terms list. Looking through the list, yes, there's an entry for "Marijuana (Cannabis, Weed, Pot)" which is indexed as "Marijuana". The post says "celebrate cannabis", so "cannabis" is a direct match here. 
+
+Next, "4/20" is a reference to April 20th, which is a holiday associated with cannabis use. However, the index terms don't have a specific term for "4/20" itself. The example in the prompt shows that "white lines" in example 4 was marked as "other", so if the term isn't explicitly listed, it should be "other". 
+
+So, "cannabis" maps to "Marijuana", and "4/20" is not in the list, so it's "other". The rest of the post is positive and doesn't mention any other drugs. Therefore, the JSON should have two entries: one for "cannabis" and one for "4/20" as "other".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "cannabis"},
+  {"index_term": "other", "matched_phrase": "4/20"}
+]

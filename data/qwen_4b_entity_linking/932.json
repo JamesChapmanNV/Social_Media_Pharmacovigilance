@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post that mentions Danny Kinahan and heroin. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to check if "heroin" is in the list of index terms. Looking through the list, yes, heroin is listed as an index term. The entry for heroin is under "Morphine" with aliases like MS Contin, Miss Emma, Morph. Wait, actually, looking again, the index terms include "Morphine" but not heroin specifically. Wait, no, let me check again. The index terms list "Morphine (MS Contin, Miss Emma, Morph)" as a separate entry. But heroin isn't explicitly listed. Wait, the index terms include "Heroin" as a separate entry? Let me check again.
+
+Looking at the list: the index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)" etc. But heroin isn't directly listed. Wait, the index terms list "Morphine" as the prototypical opioid, but heroin isn't explicitly mentioned. However, in the example given, "codeine" is linked to "lean" and "codeine". So, in the example, the user mentions "codeine" and "lean" as synonyms. 
+
+But in the current post, the user mentions "heroin". The index terms don't have a direct entry for heroin. However, the index term for morphine is listed, but heroin is a different drug. Wait, looking back at the index terms list, the entry for "Morphine" is the prototypical opioid, but heroin isn't listed. However, the index terms list "Heroin" as a separate entry? Wait, no. Let me check again.
+
+Looking at the list again, the index terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)" etc. But heroin isn't listed. However, in the example given, the user mentions "codeine" and "lean" which are linked to the index term "Codeine". So, if the post mentions "heroin", but it's not in the index terms list, then according to the instructions, we should use "other".
+
+Wait, but the user's post says "flooding Ireland with heroin". So the word "heroin" is the phrase. Now, the index terms list "Morphine" but not heroin. However, heroin is a different drug. Since heroin isn't in the index terms list, the correct index term would be "other".
+
+So the detected phrase is "heroin", which is not in the index terms list, so index_term is "other". The other part is "Danny Kinahan", but that's a person's name, not a drug reference. The post also mentions "money from Danny Kinahan" but that's not a drug reference. So the only drug-related phrase here is "heroin", which maps to "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

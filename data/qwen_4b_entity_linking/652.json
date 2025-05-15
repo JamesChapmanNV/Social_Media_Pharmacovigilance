@@ -1,0 +1,35 @@
+<think>
+Okay, let's tackle this query. The user provided a post about Spiderman and drug issues, specifically mentioning heroin dealers. The task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I need to look through the post for any words or phrases that could refer to illicit drugs. The post says "heroin dealers he caught selling to Harry..." So the key term here is "heroin". 
+
+Now, checking the list of index terms, heroin is listed as "Heroin (MS Contin, Miss Emma, Morph)" but wait, looking back, the index terms include "Heroin" as a separate entry. Wait, let me check again. The index terms list "Morphine" as the prototypical opioid, but heroin is a separate entry. Wait, no, looking at the list, "Heroin (MS Contin, Miss Emma, Morph)" is actually part of the index terms. Wait, no, the index terms are listed as separate entries. Let me check again.
+
+Looking at the Index Terms section, there's an entry for "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no. Wait, the user provided the list of index terms. Let me scan through them. 
+
+Looking through the list, I see "Morphine (MS Contin, Miss Emma, Morph)" but that's Morphine. Then, "Heroin" isn't listed as a separate index term. Wait, the user's list includes "Heroin (MS Contin, Miss Emma, Morph)"? Wait, no. Wait, the user's list includes "Morphine (MS Contin, Miss Emma, Morph)" but heroin isn't listed as a separate index term. Wait, let me check again.
+
+Looking at the list again, the index terms include "Heroin" as part of the "Morphine" entry? No, the entry for Morphine is listed as "Morphine (MS Contin, Miss Emma, Morph)". Then, there's another entry for "Heroin" in the list? Wait, no. Wait, the user's list includes "Heroin" as part of the index terms? Let me check again.
+
+Wait, the user's list includes "Heroin (MS Contin, Miss Emma, Morph)"? No, looking at the list, the entry for Morphine is "Morphine (MS Contin, Miss Emma, Morph)", and then "Heroin" is not listed as a separate index term. Wait, but the user's list includes "Heroin" in the description for Morphine? Or is that a mistake?
+
+Wait, the user's list of index terms includes "Heroin (MS Contin, Miss Emma, Morph)"? Let me check again. The user provided:
+
+"Morphine (MS Contin, Miss Emma, Morph) – The prototypical opioid analgesic used for severe pain but prone to tolerance and dependence."
+
+Wait, that's Morphine. Then, where is Heroin listed? The user's list doesn't have a separate entry for Heroin. So, in the index terms, Heroin is not explicitly listed. Therefore, if the post mentions "heroin", since it's not in the index terms list, we should map it to "other".
+
+Wait, but the user's example 1 includes "lean" and "codeine" as index terms. So, the index terms are the ones listed. So, if "heroin" is not in the list, then it's "other". But wait, looking back, the user's index terms list includes "Heroin" as part of the Morphine entry? No, the Morphine entry is separate. So, the user's list does not have a separate index term for Heroin. Therefore, "heroin" would be mapped to "other".
+
+But wait, the user's example 1 has "lean" and "codeine" as index terms. The entry for Codeine is listed as "Codeine (Lean, Purple Drank, Schoolboy)". So, "lean" is a slang term for codeine. Therefore, in the post, the phrase "heroin" is not in the index terms list, so it would be "other".
+
+Therefore, the matched phrase is "heroin", and the index term is "other".
+
+So the output should be a JSON array with one object: {"index_term": "other", "matched_phrase": "heroin"}.
+
+But wait, let me check again. The user's index terms list includes "Heroin" as part of the Morphine entry? No. The entry for Morphine is separate. So "Heroin" is not in the index terms list. Therefore, "heroin" is not in the list, so it's "other".
+
+So the answer is one object with "other" and "heroin".
+</think>
+
+[{"index_term": "other", "matched_phrase": "heroin"}]

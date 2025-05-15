@@ -1,0 +1,34 @@
+<think>
+Okay, let's tackle this query. The user wants me to classify the given social media content as either ILLICIT/ABUSIVE-DRUG-RELATED or NOT. The content is: "Birds in the trap sing Brian McKnight. Percocet & codeine please don't take my life 🙏🏻". 
+
+First, I need to break down the content. The first part mentions "Birds in the trap sing Brian McKnight." That seems like a reference to a song or a cultural reference. The second part is "Percocet & codeine please don't take my life 🙏🏻". 
+
+Looking at the definitions, True includes mentions of illegal drugs in the context of abuse or misuse. Percocet is a prescription opioid, and codeine is an opioid as well. The phrase "please don't take my life" is a plea, which might indicate a warning or a request not to misuse these drugs. However, the use of "Percocet & codeine" directly names drugs, and the plea could be a way to discourage misuse. 
+
+But wait, the user's task is to check if the content is promoting or glorifying drug abuse. The "please don't take my life" might be a metaphor or a way to express a warning. However, the mention of specific drugs (Percocet and codeine) in a context that's not clearly promoting their use but rather a plea. 
+
+Alternatively, the "Birds in the trap" could be a reference to a song, but the main part is the drugs. The user might be trying to caution against taking these drugs, which could be a negative context. However, the presence of the drugs in the text, even if it's a plea, might still fall under the True category because it's mentioning specific drugs. 
+
+Wait, the definitions say True includes content that mentions illegal, RX, or OTC drugs in the context of abuse or misuse. The content here is mentioning Percocet and codeine, which are prescription drugs. The plea "please don't take my life" could be a way to express that using these drugs is dangerous. But is that promoting abuse or just a warning? 
+
+Alternatively, maybe the user is using the drugs in a way that's not promoting abuse but rather a caution. However, the presence of the drugs in the text, even with a plea, might still be considered as mentioning them in a context that could be related to abuse. 
+
+Hmm. The example given in the prompt includes a mention of codeine and lean, which are drugs, and the explanation was that it's about abuse. So in this case, the content mentions specific drugs (Percocet and codeine) and has a plea, which might be a form of discouraging their misuse. But according to the definitions, True includes content that encourages or glorifies drug misuse. However, if the content is a plea to not take the drugs, that might be a negative context. 
+
+Wait, the definitions for True include "using, buying, promoting, etc." So if the content is a plea, it's not promoting. But the presence of the drugs in the text might still be considered as mentioning them in a context that's related to abuse. 
+
+Alternatively, maybe the user is using the drugs in a way that's not promoting abuse but just mentioning them. However, the example given in the prompt had "hooked" and "everyday" which were supportive, so that was True. In this case, the plea is a warning, but the drugs are mentioned. 
+
+I think the key here is that the content mentions specific drugs (Percocet and codeine) and includes a plea, which might be a form of discouraging their use. However, the presence of the drugs in the text, even with a warning, could still be considered as ILLICIT/ABUSIVE-DRUG-RELATED. 
+
+But according to the definitions, False includes content that mentions drugs in a medical, educational, or preventative context. Here, the content is not in a medical context. It's a plea, which might be a negative context. However, the mention of the drugs themselves is still part of the content. 
+
+Wait, the example where the content was "Pharmacology lecture today covered how buprenorphine helps treat opioid addiction" was False because it's educational. In this case, the content is not educational. It's a personal plea. But the drugs are mentioned. 
+
+I think the correct classification here is True because it mentions specific drugs (Percocet and codeine) in a context that could be related to their misuse. The plea might be a way to express a warning, but the presence of the drugs in the text is still relevant. Therefore, the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content mentions specific drugs (Percocet & codeine) and includes a plea that may imply a warning against their misuse, aligning with illicit/drug-related context."
+}

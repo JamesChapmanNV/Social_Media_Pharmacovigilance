@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "But yeah codeine = dizzy too so.... not much help really, sorry". I need to detect any drug references here.
+
+First, I'll read through the post carefully. The main phrase here is "codeine". Looking at the Index Terms list, Codeine is listed with synonyms like Lean, Purple Drank, Schoolboy. The user mentioned "codeine" directly, so that's a clear match. The phrase "codeine = dizzy too" is explaining the effect of codeine, but the key here is the word "codeine" itself. 
+
+I need to check if there are any other phrases. The rest of the post is about the effect (dizzy) and the user's opinion on it. There's no other drug mention here. So the only match is "codeine". 
+
+Looking at the example, in Example 1, "lean" and "codeine" both map to Codeine. Here, the post only has "codeine", so the JSON should have one entry with index_term "Codeine" and matched_phrase "codeine". 
+
+I need to make sure that "codeine" is exactly as in the post. The user wrote "codeine" in lowercase, so the matched_phrase should be exactly "codeine". 
+
+No other terms are present here. The rest of the post is about the effect, not the drug name. So the final answer is just one object in the array.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

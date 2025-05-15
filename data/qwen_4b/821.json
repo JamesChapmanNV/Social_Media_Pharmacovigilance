@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this. The user provided a content snippet: "I just left your bedroom. Give me some morphine. Is there any more to do?" I need to determine if this is illicit/abusive-drug-related.
+
+First, I'll check for any mention of drugs. The word "morphine" is a controlled substance, so that's a red flag. But I need to consider the context. The first sentence is about leaving a bedroom, which might be a romantic or personal context. The second line is a direct request for morphine, which is a strong opioid. The third line is vague, but the mention of morphine is key.
+
+Now, the definitions: True includes content that mentions illegal drugs in the context of abuse, misuse, or promotion. The user is asking for morphine, which is a controlled drug. The tone here is a bit ambiguous, but the direct request for morphine could indicate misuse or abuse. However, the context of "leaving your bedroom" might be a euphemism or a reference to something else. But given that morphine is a drug, and the request is explicit, it's likely related to drug abuse. 
+
+But wait, maybe the user is in a situation where they're asking for help, but that's not clear. The example given in the task includes "hooked on that lean" which is a slang term. Here, "morphine" is a direct mention. The request for morphine could be part of drug abuse. So according to the definitions, this would be classified as True because it's mentioning a drug (morphine) in a context that could imply misuse. Even if the context is unclear, the mention of the drug in a direct request might be considered abuse. So the label should be True.
+</think>
+
+{
+    "label": "True",
+    "explanation": "The content explicitly mentions'morphine,' a controlled substance, and includes a direct request for its use, indicating potential misuse or abuse."
+}

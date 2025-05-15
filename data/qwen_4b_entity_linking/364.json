@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The task is to detect any words or phrases that refer to illicit drugs or substances, link them to the appropriate index term, and return a JSON array.
+
+First, I need to look at the provided post: "In 1985, a drug smuggler threw 76 pounds of cocaine from his airplane into Georgia's Chattahoochee National Forest. A black bear, later named Pablo EskoBear, found and ate all of the cocaine – He then died of a massive overdose."
+
+Looking for drug-related terms. The first mention is "cocaine". Checking the index terms, there's a list. Let me check if "cocaine" is in the list. Yes, under "Benzoylecgonine (BZE, Ecgonine benzoate) – The primary metabolite of cocaine measured in urine drug testing." Wait, but the index term for cocaine itself isn't listed. Wait, the index terms are specific compounds. Let me check again.
+
+Looking through the index terms, there's "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine. But the actual drug is cocaine. However, in the list, the index terms are for specific substances. The user's task is to detect any reference to an illicit drug or substance. So if the post mentions "cocaine", even if it's not directly in the index terms, but the index term for its metabolite is listed, but the actual drug name is not. Wait, the index terms are for the specific substances. For example, "Codeine" is an index term, and "lean" and "codeine" are matched to it. So if the post mentions "cocaine", but there's no index term for cocaine itself, then according to the instructions, we should use "other".
+
+Wait, let me check the index terms again. The index terms include "Benzoylecgonine (BZE, Ecgonine benzoate)" which is the metabolite of cocaine, but the drug itself is cocaine. However, in the list of index terms, is cocaine listed? Let me scan through the list again. The index terms include "Cocaine (Speed, Bennies, Adderall)"? No, wait, looking back, the index terms for Amphetamine are listed as "Amphetamine (Speed, Bennies, Adderall)". The cocaine is mentioned in the "Benzoylecgonine" entry. So "cocaine" is not an index term. Therefore, the phrase "cocaine" in the post would map to "other" because there's no index term for cocaine itself. However, the user's instruction says to include illegal, RX, OTC, or recreational drugs. So if the post mentions "cocaine", which is an illicit drug, but not in the index terms, then it should be "other".
+
+Wait, but the example in the user's prompt: in example 4, "snow" and "white lines" are not on the list, so they are "other". So in this case, "cocaine" is not in the index terms, so it's "other". But wait, the index term for Benzoylecgonine is listed. But that's the metabolite, not the drug itself. The user's task is to detect any reference to the drug. So if the post says "cocaine", even though it's not in the index terms, it's an illicit drug, so it should be "other".
+
+But wait, the user's instruction says: "If the drug is not in the list, use 'other'". So if "cocaine" is not in the index terms, then it's "other". However, the index term for Benzoylecgonine is the metabolite, not the drug. Therefore, the correct index term for "cocaine" would be "other".
+
+So in the post, the phrase "cocaine" is a reference to an illicit drug. Since "cocaine" is not listed as an index term, it should be "other". Therefore, the JSON array would have one entry: {"index_term": "other", "matched_phrase": "cocaine"}.
+
+Wait, but the user's example 4 has "snow" and "white lines" as "other". So that's similar. Therefore, the answer here is "other" for "cocaine".
+</think>
+
+[{"index_term": "other", "matched_phrase": "cocaine"}]

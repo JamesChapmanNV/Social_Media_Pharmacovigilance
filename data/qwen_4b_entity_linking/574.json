@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Floyd claimed he couldnt breathe while standing up. Fent and meth tend to do that to you when you overdose..." I need to identify any drug references here and map them to the correct index terms.
+
+First, I'll read through the post carefully. The first part mentions "Floyd claimed he couldn't breathe while standing up." That's a symptom of overdose, but the actual drugs mentioned are "Fent" and "meth." 
+
+Looking at the index terms list, "Fentanyl" is listed under the term "Fentanyl (China White, Apache, Duragesic)" and "Methamphetamine (Crystal Meth, Ice, Desoxyn)" is also there. So "Fent" is a slang for fentanyl, and "meth" is slang for methamphetamine. 
+
+I need to check if these are in the index terms. Yes, both are present. So "Fent" maps to Fentanyl and "meth" maps to Methamphetamine. The rest of the post is about symptoms of overdose, which are general and not specific drug names, so they don't need to be included. 
+
+The example given in the problem shows that "addy" is mapped to Amphetamine, so similar logic applies here. The answer should be two entries: one for "Fent" as Fentanyl and "meth" as Methamphetamine. I need to make sure the JSON format is correct, with each entry as an object in an array. No other terms are present here, so that's all.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Fent"},
+  {"index_term": "Methamphetamine", "matched_phrase": "meth"}
+]

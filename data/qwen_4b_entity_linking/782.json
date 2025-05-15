@@ -1,0 +1,16 @@
+<think>
+Okay, let's tackle this query. The user provided a post that says "HAPPY 4️⃣2️⃣0️⃣ TO ALL STONERS" with some hashtags like #420day, #Mmemberville, #StonerFam, etc. My task is to detect any drug-related references and map them to the correct index terms.
+
+First, I need to look for any words or phrases that refer to illicit drugs or substances. The post mentions "stoners" and the hashtag #420day. From the index terms list, I see that "Marijuana" is listed as an index term with synonyms like Cannabis, Weed, Pot. The term "stoner" is a slang term for someone who uses marijuana, so that's a reference to marijuana. The #420day is a reference to 4/20, which is a cultural reference to marijuana use, so that's also related to marijuana.
+
+Now, checking the index terms, "Marijuana" is the correct term here. The phrases "stoners" and "420day" are both related to marijuana. The hashtag #420day is a cultural reference, but the actual term "420" is a slang for marijuana. So both "stoners" and "420day" should be mapped to "Marijuana". 
+
+Wait, but the example given in the problem has "420" as part of the hashtag. The user's example 4 had "snow" and "white lines" mapped to "other" because they weren't on the list. But in this case, "420" is a known reference to marijuana. So the correct index term here is "Marijuana". 
+
+So the matched phrases would be "stoners" and "420day". Both are related to marijuana. The hashtags are part of the post, so they should be included. The JSON array should have two entries: one for "stoners" and one for "420day", both mapped to "Marijuana".
+</think>
+
+[
+  {"index_term": "Marijuana", "matched_phrase": "stoners"},
+  {"index_term": "Marijuana", "matched_phrase": "420day"}
+]

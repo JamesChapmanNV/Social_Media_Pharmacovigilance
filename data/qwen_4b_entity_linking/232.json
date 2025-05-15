@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Me as a Drug dealer 'do my dishes and I'll give you a line' lol NO KAP 😂". I need to detect any drug-related references here.
+
+First, I'll break down the post. The main phrases are "Drug dealer", "do my dishes and I'll give you a line", and "NO KAP". 
+
+Looking at the index terms, "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "give you a line" is a slang for getting a hit of drugs, specifically codeine. Also, "NO KAP" is likely an acronym for "No Cap", which is a slang term sometimes used in drug contexts, but I need to check if it's listed. 
+
+Looking through the index terms, "NO KAP" isn't directly listed. However, "line" is a common slang for a dose of drugs, especially in the context of codeine. The user is referring to themselves as a drug dealer, which is a clear indication of involvement in drug distribution. 
+
+So, "line" would map to "Codeine" as per the index terms. "NO KAP" isn't in the list, so it would be "other". But wait, the example in the prompt had "xans" as "other" even though it's a benzodiazepine. So "NO KAP" isn't a specific term in the list, so it's "other". 
+
+Therefore, the matched phrases are "line" and "NO KAP". But wait, the user is using "line" in the context of a drug deal. The index term for codeine includes "line" as a slang. So "line" is Codeine. "NO KAP" is not in the list, so "other". 
+
+So the JSON should have two entries: one for "line" as Codeine, and "NO KAP" as other. But wait, the example in the prompt for "xans" was "other" even though it's a benzodiazepine. So "NO KAP" is not in the list, so it's "other". 
+
+But the user is a drug dealer, so maybe "Drug dealer" is a term that's not in the list. However, the task is to detect words or phrases that refer to drugs. "Drug dealer" is a person, not a drug itself. So the actual drug terms are "line" and "NO KAP". 
+
+So the correct matches are "line" as Codeine and "NO KAP" as other. Therefore, the JSON array should have those two entries.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "line"},
+  {"index_term": "other", "matched_phrase": "NO KAP"}
+]

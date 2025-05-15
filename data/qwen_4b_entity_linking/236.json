@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post about opioid users and the fentanyl overdose crisis. My task is to detect any drug-related references and link them to the appropriate index terms.
+
+First, I'll read through the post carefully. The post mentions "#opioid users" and "#fentanyl #overdose crisis". The main drugs here are opioids and fentanyl. Looking at the index terms, "Codeine" is listed with synonyms like "Lean" and "Purple Drank". However, the post doesn't use those exact terms. The term "opioid" is a general term, but the index terms don't have a direct match for "opioid" itself. The closest might be "Codeine" if there's a specific mention, but the post doesn't use that. 
+
+Then there's "#fentanyl" which is explicitly listed as an index term. The post mentions "fentanyl" in the hashtag. So "fentanyl" should map to "Fentanyl". The other terms like "overdose" aren't drugs, so they'd be "other". The hashtags #Vancouver is a location, so that's "other" as well. 
+
+Wait, the post says "amateur medics" and "paranedics", but those aren't drugs. The main drug references are "opioid" and "fentanyl". Since "opioid" isn't in the index terms, but "Codeine" is a type of opioid. However, the post doesn't use "codeine" specifically. The term "opioid" is a general category, but the index terms don't have a general term for opioids. The closest is "Codeine", but that's a specific drug. So maybe "opioid" is considered "other" since it's not a specific drug in the list. But the user might have intended "opioid" to be linked to "Codeine" if it's part of the broader category. Wait, the index terms include "Codeine" as a specific drug. The term "opioid" is a broader category, but the index terms don't have a general term for opioids. So "opioid" would be "other".
+
+So the matched phrases are "opioid" and "fentanyl". "Opioid" is not in the list, so "other". "Fentanyl" is in the list, so "Fentanyl". The hashtags #Vancouver is "other". But the user's example 4 shows that "snow" and "white lines" are "other" even if they're not drugs. So in this case, the post has two hashtags: #fentanyl and #overdose. Wait, the post says "#fentanyl #overdose crisis". So "fentanyl" is a drug, so "Fentanyl". "Overdose" is not a drug, so "other". Also, the term "opioid" is used, which is a general term, so "other". 
+
+So the JSON should have two entries: one for "fentanyl" and one for "overdose" (but "overdose" is not a drug, so "other"). Wait, the user's example 3 has "xans" which is "other". So in this case, the post mentions "opioid users" and "fentanyl". The "opioid" is a general term, not a specific drug in the index list. Therefore, "opioid" maps to "other". The hashtag #fentanyl maps to "Fentanyl". The hashtag #Vancouver is "other". But the user's example 4 has "snow" and "white lines" as "other", so even if they're not drugs, they are "other". 
+
+So the final answer should be two entries: "Fentanyl" for the hashtag, and "other" for "opioid" and "Vancouver". Wait, but the user's example 1 has "lean" and "codeine" both mapped to "Codeine". So in this case, the post mentions "opioid users" and "fentanyl". So "opioid" is not in the index terms, so "other". "Fentanyl" is in the list. The hashtag #Vancouver is "other". But the user's example 4 shows that even non-drug terms like "snow" and "white lines" are "other". Therefore, the correct matches are "fentanyl" and "other" for "opioid" and "Vancouver".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "other", "matched_phrase": "opioid"},
+  {"index_term": "other", "matched_phrase": "Vancouver"}
+]

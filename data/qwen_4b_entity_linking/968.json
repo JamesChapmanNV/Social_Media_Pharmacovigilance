@@ -1,0 +1,13 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "Im tryin to ride down ocean drive sippin codeine with the top down". I need to detect any drug references here.
+
+First, I'll look for words that might refer to illicit drugs. The phrase "sippin codeine" stands out. "Codeine" is explicitly listed in the index terms under the Codeine entry. The other part is "ocean drive" which is a location, so that's not a drug reference. "Ride down" is just a verb, and "top down" refers to a car window. 
+
+Wait, the user mentioned "sippin" which is slang for drinking. So "codeine" is the key term here. Checking the index terms, Codeine includes "Lean", "Purple Drank", "Schoolboy" as synonyms. But in the post, the exact phrase is "codeine". So the matched_phrase should be "codeine" and the index_term is Codeine. 
+
+Are there any other possible terms? "Ocean drive" is a place, so no. "Top down" is a car setting. No other drugs mentioned. So the only match is "codeine". The example given in the problem had "lean" and "codeine" both mapped to Codeine. But in this case, the post only mentions "codeine" directly. So the JSON should have one entry with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

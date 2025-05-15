@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post and wants me to detect any drug-related references, link them to the index terms, and return a JSON array. First, I need to read the post carefully.
+
+The post says: "Kneeling between the shoulder blades as already proven in court by video doesn't cause foaming at the mouth. However, opioid overdose does. Chauvin will walk. America will burn. But the left will call it "peaceful" 🤡"
+
+Looking for any mentions of drugs or drug-related terms. The key part here is "opiate overdose". The word "opiate" is a term that could refer to opioids, which are a class of drugs. Checking the index terms, there's an entry for "Codeine" which includes synonyms like "Lean" and "Purple Drank", but "opiate" isn't directly listed. However, the index term for Morphine includes "MS Contin, Miss Emma, Morph", and other opioids like Fentanyl, Buprenorphine, etc. 
+
+Wait, the index terms list "Morphine" as a separate entry. But "opiate" is a broader term. However, in the given index terms, "Codeine" is listed, and "Morphine" is another. But the post specifically mentions "opiate overdose". The problem is whether "opiate" is considered a drug here. Since the index terms don't have an exact match for "opiate", but the term "opiate" is a category that includes opioids like morphine, codeine, fentanyl, etc. However, the user's instructions say to use the exact index terms. 
+
+Looking back at the index terms, "Codeine" is one, and "Morphine" is another. But "opiate" isn't listed. However, the user's example 1 had "lean" and "codeine" both mapped to Codeine. So maybe "opiate" is considered a broader term, but since it's not in the list, we have to check if any of the index terms could cover it. Alternatively, maybe "opiate" is not a direct match. Wait, the index term for "Morphine" is listed, but "opiate" is a general term. However, the user's instruction says to link each detected phrase to its matching index term. If "opiate" isn't in the list, then use "other".
+
+But wait, the post says "opiate overdose". The word "opiate" is a noun, but the index terms don't have "opiate" as an index term. So, according to the instructions, if the drug is not in the list, use "other". Therefore, "opiate" would be "other".
+
+Wait, but maybe "opiate" is a synonym for one of the index terms. For example, codeine is an opiate. However, the index term is "Codeine", not "opiate". So, the phrase "opiate overdose" would be linked to "other" because "opiate" isn't an exact index term. However, maybe the user considers "opiate" as a drug. But according to the given index terms, there's no "opiate" entry. So, the correct approach is to check if "opiate" is in the list. Since it's not, it's "other".
+
+But wait, the user's example 4 had "snow" and "white lines" as "other" because they aren't drugs. So, in this case, "opiate" isn't in the index terms, so it's "other". Therefore, the matched phrase is "opiate", index term "other".
+
+But the post says "opiate overdose". The word "overdose" is not a drug itself, but the context is about overdose. However, the task is to detect drug references. The phrase "opiate overdose" refers to the drug opiate. Since "opiate" isn't in the index terms, it's "other". Therefore, the JSON would have {"index_term": "other", "matched_phrase": "opiate"}.
+
+But wait, maybe "opiate" is a synonym for one of the index terms. For example, codeine is an opiate, but the index term is "Codeine". However, the phrase "opiate" is not a direct synonym in the index terms. The index terms list specific drugs, not broader categories. Therefore, "opiate" is not in the list, so it's "other".
+
+So the final answer is one object: {"index_term": "other", "matched_phrase": "opiate"}.
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "opiate"}
+]

@@ -1,0 +1,24 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "We really gonna keep glorifying mfers that die from an Overdose at 50 years old? Nah! Not me". I need to detect any drug-related references here.
+
+First, I'll go through the post word by word. The key part here is "mfers" and "Overdose". The task is to find phrases that refer to illicit drugs or substances. 
+
+Looking at the Index Terms list, "Mfer" isn't listed. Wait, but maybe "mfers" is a slang term. Let me check the Index Terms again. The term "Codeine" has synonyms like "Lean", "Purple Drank", "Schoolboy". But "mfers" isn't directly listed. However, "mfers" could be a slang for "meth heads" or "meth users", but that's not in the list. Alternatively, "Overdose" is a general term, but the Index Terms don't have an entry for "overdose" specifically. 
+
+Wait, the Index Terms include "Methamphetamine" with synonyms like "Crystal Meth", "Ice", "Desoxyn". But "mfers" isn't listed. However, the user's task is to link each detected phrase to the Index Term. If the phrase isn't directly listed, use "other". 
+
+In the example 3, "xans" was linked to "other" because it wasn't a specific drug. Similarly, "mfers" here isn't a direct term in the Index Terms. The post mentions "Overdose", but "Overdose" isn't an Index Term. So, "Overdose" would be "other". 
+
+But wait, the post is about glorifying people who die from overdose. The actual drug here isn't specified, but the mention of overdose is a consequence of drug use. However, the task is to detect drug references. The phrase "Overdose" is a result of drug use, but the specific drug isn't named. So, "Overdose" might not be a direct reference to a substance. Therefore, "Overdose" would be "other".
+
+But the user might be referring to "mfers" as a slang for meth users. If "mfers" is a slang for meth, then "Methamphetamine" would be the index term. However, "mfers" isn't listed in the Index Terms. The Index Terms have "Methamphetamine" with synonyms like "Crystal Meth", "Ice", but "mfers" isn't listed. So, "mfers" would be "other". 
+
+Alternatively, maybe "mfers" is a typo or a slang term for "meth heads". But since it's not in the list, it's "other". The "Overdose" is a general term, so also "other". 
+
+So the detected phrases are "mfers" and "Overdose". Both would be "other" since they don't match any specific Index Terms. But wait, the user's example 3 had "xans" as "other". So in this case, "mfers" and "Overdose" are both "other".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "mfers"},
+  {"index_term": "other", "matched_phrase": "Overdose"}
+]

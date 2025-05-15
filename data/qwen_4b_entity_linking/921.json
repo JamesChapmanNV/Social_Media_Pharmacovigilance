@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post: "You're a good sport Jack. You're not just pulling it off, you're rocking it!" and wants me to detect any drug-related references.
+
+First, I need to go through each word and phrase in the post. The post is "You're a good sport Jack. You're not just pulling it off, you're rocking it!" 
+
+Looking at the phrases: "sport", "pulling it off", "rocking it". Now, checking the index terms list. The index terms include things like Codeine, Amphetamine, Benzodiazepines, etc. 
+
+"Sport" isn't listed as a drug term. "Pulling it off" is a phrase that might be slang, but I don't see it in the index terms. "Rocking it" is a common slang for doing something well, but again, not in the list. 
+
+The example given in the problem had "xans" as "other" because it wasn't a specific drug. Similarly, "sport" and "rocking it" don't match any of the index terms. So, none of the phrases in this post refer to illicit drugs. 
+
+Therefore, the correct response is to list "other" for each detected phrase, but since there are no actual drug references, the JSON array should be empty. Wait, but the user said to return only the matches. Since there are no matches, the array is empty. But the examples show that even if there's no match, like in example 3, it's listed as "other". But in this case, the post doesn't have any drug terms. So the correct answer is an empty array. Wait, but the user's example 3 had "xans" which was "other". But here, the post doesn't have any drug terms. So the answer is an empty array. But the user's instruction says to return only the valid JSON array. So if there are no matches, the array is empty. So the final answer is an empty array.
+</think>
+
+[]
