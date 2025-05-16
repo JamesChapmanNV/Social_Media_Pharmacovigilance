@@ -1,0 +1,38 @@
+### Detection of illicit drug references
+The following phrases were detected as referring to illicit drugs or substances:
+
+1. lean
+2. codeine
+3. addy (amphetamine)
+4. xans (presumably Xanax, a benzodiazepine)
+5. snow (presumably cocaine)
+6. white lines (presumably cocaine)
+7. opium
+8. codeine
+9. morphine
+
+### Linking detected phrases to Index Terms
+The following Index Terms were matched to the detected phrases:
+
+1. {"index_term": "Codeine", "matched_phrase": "lean"}
+2. {"index_term": "Codeine", "matched_phrase": "codeine"}
+3. {"index_term": "Amphetamine", "matched_phrase": "addy"}
+4. {"index_term": "other", "matched_phrase": "xans"}
+5. {"index_term": "other", "matched_phrase": "snow"}
+6. {"index_term": "other", "matched_phrase": "white lines"}
+7. {"index_term": "other", "matched_phrase": "opium"}
+8. {"index_term": "Morphine", "matched_phrase": "morphine"}
+9. {"index_term": "Codeine", "matched_phrase": "codeine"}
+
+### Output in JSON format
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Amphetamine", "matched_phrase": "addy"},
+  {"index_term": "other", "matched_phrase": "xans"},
+  {"index_term": "other", "matched_phrase": "snow"},
+  {"index_term": "other", "matched_phrase": "white lines"},
+  {"index_term": "other", "matched_phrase": "opium"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

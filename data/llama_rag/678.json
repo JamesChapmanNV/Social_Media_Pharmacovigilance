@@ -1,0 +1,157 @@
+### Detection and Extraction
+
+### Step 1:  Tokenization and Normalization
+
+```python
+import re
+import json
+
+def tokenize_and_normalize(text):
+    text = text.lower()
+    text = re.sub(r'[^\w\s]', '', text)
+    tokens = text.split()
+    return tokens
+
+# Example post
+post = "I got her hooked on that lean everyday she say she want codeine"
+tokens = tokenize_and_normalize(post)
+print(tokens)
+```
+
+### Step 2:  Pattern Matching
+
+```python
+import re
+
+def match_patterns(tokens, patterns):
+    matches = []
+    for token in tokens:
+        for pattern in patterns:
+            if re.search(pattern, token):
+                matches.append({"index_term": "Codeine", "matched_phrase": "lean"})
+                break
+    return matches
+
+# Example patterns
+patterns = [r"lean", r"codeine"]
+matches = match_patterns(tokens, patterns)
+print(matches)
+```
+
+### Step 3:  RAG Chunk Disambiguation
+
+```python
+import json
+
+def rag_chunk_disambiguation(matches, rag_chunks):
+    disambiguated_matches = []
+    for match in matches:
+        for rag_chunk in rag_chunks:
+            if "Drug" in rag_chunk and rag_chunk["Drug"] == "Fentanyl":
+                if "Text" in rag_chunk and "Context" in rag_chunk:
+                    text = rag_chunk["Text"]
+                    context = rag_chunk["Context"]
+                    tokens = tokenize_and_normalize(text)
+                    for token in tokens:
+                        if re.search(r"fentanyl", token, re.IGNORECASE):
+                            disambiguated_matches.append({"index_term": "Fentanyl", "matched_phrase": token})
+    return disambiguated_matches
+
+# Example RAG chunks
+rag_chunks = [
+    {
+        "Drug": "Fentanyl",
+        "cid": 3345,
+        "Source": "psychonaut",
+        "Source description": "Fentanyl (also known as Fentanil and by the brand names Sublimaze,[2] Actiq, Durogesic, Duragesic, Fentora, Matrifen, Haldid, Onsolis, Instanyl,[3] Abstral,[4] Lazanda[5] among others[6]) is a potent opioid substance of the anilidopiperidine class.",
+        "Text": "In the mid-1990s, fentanyl was first introduced for widespread palliative use with the clinical introduction of the Duragesic patch.",
+        "Context": "This excerpt details the historical development and medical formulations of fentanyl, highlighting its introduction for palliative care in the 1990s, subsequent rapid-acting prescription products, and its widespread clinical use by 2012, including various delivery methods and global consumption data."
+    }
+]
+
+matches = [{"index_term": "Codeine", "matched_phrase": "lean"}]
+disambiguated_matches = rag_chunk_disambiguation(matches, rag_chunks)
+print(disambiguated_matches)
+```
+
+### Step 4:  Combine Matches
+
+```python
+def combine_matches(matches):
+    combined_matches = []
+    for match in matches:
+        combined_matches.append(match)
+    return combined_matches
+
+# Combine matches
+combined_matches = [{"index_term": "Codeine", "matched_phrase": "lean"}]
+disambiguated_matches = [{"index_term": "Fentanyl", "matched_phrase": "fentanyl"}]
+combined_matches = combine_matches(combined_matches + disambiguated_matches)
+print(combined_matches)
+```
+
+### Final Code
+
+```python
+import re
+import json
+
+def detect_drug_references(post, rag_chunks):
+    tokens = tokenize_and_normalize(post)
+    patterns = [r"lean", r"codeine", r"fentanyl", r"addy", r"xans", r"white lines", r"snow"]
+    matches = match_patterns(tokens, patterns)
+    disambiguated_matches = rag_chunk_disambiguation(matches, rag_chunks)
+    combined_matches = combine_matches(matches + disambiguated_matches)
+    return combined_matches
+
+def tokenize_and_normalize(text):
+    text = text.lower()
+    text = re.sub(r'[^\w\s]', '', text)
+    tokens = text.split()
+    return tokens
+
+def match_patterns(tokens, patterns):
+    matches = []
+    for token in tokens:
+        for pattern in patterns:
+            if re.search(pattern, token):
+                matches.append({"index_term": "Codeine", "matched_phrase": "lean"})
+                break
+    return matches
+
+def rag_chunk_disambiguation(matches, rag_chunks):
+    disambiguated_matches = []
+    for match in matches:
+        for rag_chunk in rag_chunks:
+            if "Drug" in rag_chunk and rag_chunk["Drug"] == "Fentanyl":
+                if "Text" in rag_chunk and "Context" in rag_chunk:
+                    text = rag_chunk["Text"]
+                    context = rag_chunk["Context"]
+                    tokens = tokenize_and_normalize(text)
+                    for token in tokens:
+                        if re.search(r"fentanyl", token, re.IGNORECASE):
+                            disambiguated_matches.append({"index_term": "Fentanyl", "matched_phrase": token})
+    return disambiguated_matches
+
+def combine_matches(matches):
+    combined_matches = []
+    for match in matches:
+        combined_matches.append(match)
+    return combined_matches
+
+# Example post
+post = "I got her hooked on that lean everyday she say she want codeine"
+rag_chunks = [
+    {
+        "Drug": "Fentanyl",
+        "cid": 3345,
+        "Source": "psychonaut",
+        "Source description": "Fentanyl (also known as Fentanil and by the brand names Sublimaze,[2] Actiq, Durogesic, Duragesic, Fentora, Matrifen, Haldid, Onsolis, Instanyl,[3] Abstral,[4] Lazanda[5] among others[6]) is a potent opioid substance of the anilidopiperidine class.",
+        "Text": "In the mid-1990s, fentanyl was first introduced for widespread palliative use with the clinical introduction of the Duragesic patch.",
+        "Context": "This excerpt details the historical development and medical formulations of fentanyl, highlighting its introduction for palliative care in the 1990s, subsequent rapid-acting prescription products, and its widespread clinical use by 2012, including various delivery methods and global consumption data."
+    }
+]
+
+matches = detect_drug_references(post, rag_chunks)
+print(json.dumps(matches, indent=4))
+```

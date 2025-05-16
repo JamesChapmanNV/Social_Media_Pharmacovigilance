@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks related to drug references. The task is to detect any drug-related phrases in the post and link them to the correct index terms from the given list.
+
+First, I need to look at the post: "codeine help me stop feeling ~ take me away from the pain". The main words here are "codeine" and the phrases "help me stop feeling" and "take me away from the pain". 
+
+Looking at the RAG chunks, there's a lot about codeine. The chunks mention that codeine is a mild opioid painkiller and cough suppressant, widely abused in syrup form for euphoric "lean". The index term for codeine includes "Lean", "Purple Drank", "Schoolboy", and the term itself. 
+
+In the post, the word "codeine" is directly mentioned, so that's a clear match to the index term "Codeine". The phrase "take me away from the pain" is a common expression related to pain relief, which is a known effect of codeine. However, the index terms don't have a specific entry for pain relief, so I need to check if "take me away from the pain" is considered a slang or euphemism for codeine. 
+
+But according to the instructions, I should only use the RAG chunks for disambiguation. The RAG chunks mention that codeine is used for pain relief, but the index term is specifically "Codeine". The phrase "take me away from the pain" is more of a description of the effect rather than a slang term. However, the user's example 1 includes "lean" and "codeine" as matches. Since "codeine" is explicitly in the post, that's a direct match. The other part, "take me away from the pain", might not be a specific slang term in the index list, so it might be classified as "other". Wait, but the index term for codeine includes the drug name itself. The example 1 shows that "lean" is linked to codeine, so "codeine" is directly linked. The other part, "take me away from the pain", is a general statement about the drug's effect, not a slang term. Therefore, it's not a specific phrase that maps to an index term. 
+
+So the only matched phrase here is "codeine", which maps to the index term "Codeine". The rest of the post's phrases are not specific drug references. Therefore, the correct JSON array should have one entry for "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

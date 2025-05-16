@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user wants me to moderate social media content for drug-related references. The specific task is to detect any mentions of illicit drugs or substances in a given post, link them to the appropriate index terms from the provided list, and return a JSON array.
+
+First, I need to look at the post provided. The post is: "There is no #access to #health without access to #essential #medicines, including #morphine and other controlled substances. #PalliativeCare #pain #mentalhealth #equity"
+
+Now, I need to scan this post for any words or phrases that refer to illicit drugs or substances. The key here is to identify terms that are slang, euphemisms, synonyms, or cultural references. The RAG chunks provided are about morphine and its legal status, but the task says not to extract phrases from the chunks. So I have to rely solely on the post text.
+
+Looking at the post, the main terms are "morphine" and "controlled substances". The index terms list includes "Morphine" as an index term. The phrase "morphine" is directly mentioned. The other part is "controlled substances", but that's not a specific drug listed in the index terms. The example in the problem shows that "other" is used when the drug isn't in the list. However, the post mentions "morphine" which is explicitly listed under the index terms. 
+
+So, "morphine" is a direct match for the index term "Morphine". The other part is "controlled substances", which isn't a specific drug in the list, so that would be "other". But wait, the user's instruction says to detect every word or phrase that refers to an illicit drug. However, "controlled substances" is a legal term, not a specific drug. The post is talking about access to essential medicines, including morphine, which is a controlled substance. But in the context of the task, the user is looking for drug references. Since "controlled substances" is a category, not a specific drug, it might not be considered here. 
+
+Looking back at the examples, in Example 3, "xans" was considered "other" because it's not a specific drug. Similarly, "controlled substances" is a category, not a specific drug. So the only direct match here is "morphine", which is in the index terms. The rest of the hashtags are not drug references. 
+
+Therefore, the correct JSON array should have one entry for "morphine" and "morphine" as the matched phrase. The other parts of the post don't refer to specific drugs. The hashtag #controlled substances is a category, not a specific drug. So the answer should only include "morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

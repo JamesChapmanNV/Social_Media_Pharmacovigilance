@@ -1,0 +1,146 @@
+<think>
+Okay, let's tackle this query. The user provided a post and RAG chunks, and I need to detect drug-related references and link them to the correct index terms.
+
+First, the post is: "Opium is the source of heroin, morphine, paregoric, and codeine. Chronic use appears to produce permanent physiological damage #CRJ107 #DrugUseAndDelinquency"
+
+Looking at the post, the main words are "opium," "heroin," "morphine," "paregoric," and "codeine." The RAG chunks are about morphine, mentioning it's a naturally-occurring opioid from the opium poppy, and its derivatives like codeine, heroin, and hydrocodone. 
+
+Now, checking the index terms. The index term for opium isn't listed, but the post mentions "opium" as the source. Since opium isn't in the index terms, I should label it as "other." However, wait, the index terms include "Morphine" and "Codeine." The post mentions "morphine" and "codeine" directly. 
+
+Looking at the index terms, "Codeine" is listed with synonyms like "Lean," "Purple Drank," "Schoolboy." The post uses "codeine" directly, so that's a match. Similarly, "morphine" is in the index terms as the index term "Morphine." The post also mentions "heroin," which is in the index terms as "Fentanyl" (but wait, no—wait, looking back, the index terms include "Heroin" as a separate entry? Wait, no. Let me check the index terms again.
+
+Wait, the index terms list "Morphine" as an index term. Heroin is not listed as an index term. Wait, the index terms include "Heroin" as a separate entry? Let me check again. Wait, the user provided a list of index terms. Let me check again:
+
+Looking through the index terms, "Heroin" is not listed. The index terms include "Fentanyl," "Morphine," "Codeine," etc. But "Heroin" is not in the list. However, the RAG chunks mention that morphine is the basis of derivatives like codeine, diacetylmorphine (heroin), and hydrocodone. But in the index terms, "Heroin" isn't listed. So, if the post mentions "heroin," since it's not in the index terms, it should be "other."
+
+But the post says "opium is the source of heroin, morphine, paregoric, and codeine." So "heroin" is mentioned. Since "heroin" is not in the index terms, that would be "other." However, wait, the index terms include "Heroin" as an index term? Wait, looking back:
+
+Looking at the index terms list, the user provided a long list. Let me check again. The index terms include "Heroin" as a separate entry? Let me check the list:
+
+Looking through the list, the index terms include:
+
+- Amphetamine (Speed, Bennies, Adderall)
+-...
+- Morphine (MS Contin, Miss Emma, Morph)
+- Codeine (Lean, Purple Drank, Schoolboy)
+-...
+- Heroin is not listed. The index terms include "Fentanyl (China White, Apache, Duragesic)" and "Heroin" is not in the list. Wait, no. Wait, the index terms list includes "Heroin" as a separate entry? Let me check again.
+
+Looking through the list again, the index terms are:
+
+- 2,6-Xylidine
+- 2-Amino-5-chloropyridine
+- 2-Fluoro-2-oxo PCE
+- 2-Oxo-3-hydroxy LSD
+- 3-Hydroxy flubromazepam
+- 3-Hydroxy flubromazepam glucuronide
+- 4-ANPP
+- 4-HIAA
+- 6-Acetylmorphine
+- 7-Aminoclonazepam
+- 7-Hydroxymitragynine
+- 7-OH-CBD glucuronide
+- 8-Aminoclonazolam
+- 8R-OH-R-HHC
+- 8S-OH-R-HHC
+- α-Hydroxyalprazolam
+- α-Hydroxybromazolam
+- Amphetamine
+- Benzoylecgonine
+- Bromazolam
+- Buprenorphine
+- Carfentanil
+- CBD
+- Codeine
+- Cyclobenzaprine
+- delta-8-THC-COOH
+- delta-9-THC-COOH
+- Diphenhydramine
+- EDDP
+- Fentanyl
+- Flubromazepam
+- Gabapentin
+- Hydrocodone
+- Hydromorphone
+- Ketamine
+- Lorazepam
+- LSD
+- Marijuana
+- MDA
+- MDMA
+- MDMB-4en-PINACA butanoic acid
+- Meperidine
+- Meprobamate
+- Methadone
+- Methamphetamine
+- Metonitazene
+- Mitragynine
+- Morphine
+- N,N-Dimethylpentylone
+- Naltrexone
+- N-Desethylmetonitazene
+- Norbuprenorphine
+- Norcarfentanil
+- Nordiazepam
+- Norfentanyl
+- Norketamine
+- Normeperidine
+- Noroxycodone
+- N-Pyrrolidinoetonitazene
+- O-Desmethyltramadol
+- ortho-Methylfentanyl
+- Oxazepam
+- Oxycodone
+- Oxymorphone
+- para-Fluorofentanyl
+- para-Fluoronorfentanyl
+- Pentylone
+- Phencyclidine
+- Pregabalin
+- Psilocin
+- Psilocybin
+- R-HHC-COOH
+- S-HHC-COOH
+- Speciociliatine
+- Temazepam
+- Xylazine
+- Zolpidem
+- Zopiclone
+
+So "Heroin" is not listed here. Therefore, if the post mentions "heroin," it's not in the index terms, so it's "other." However, the RAG chunks mention that morphine is the basis of diacetylmorphine (heroin), but the index terms don't have "Heroin" as an index term. Therefore, "heroin" in the post would be "other."
+
+But wait, the post says "opium is the source of heroin, morphine, paregoric, and codeine." So "heroin" is mentioned. Since "heroin" isn't in the index terms, it's "other." However, "morphine" is in the index terms. "Codeine" is also in the index terms. "Paregoric" is a term that's not in the index terms. Let me check the index terms again. The index terms include "Codeine," "Morphine," but not "paregoric" or "heroin." So "paregoric" would be "other."
+
+So the matched phrases would be:
+
+- "heroin" → "other"
+- "morphine" → "Morphine"
+- "codeine" → "Codeine"
+- "opium" → "other"
+- "paregoric" → "other"
+
+But the post is: "Opium is the source of heroin, morphine, paregoric, and codeine." So the phrases are "heroin," "morphine," "paregoric," "codeine," and "opium."
+
+So the JSON array should include each of these. Let's check each:
+
+- "heroin" is not in the index terms → "other"
+- "morphine" is in the index terms → "Morphine"
+- "codeine" is in the index terms → "Codeine"
+- "opium" is not in the index terms → "other"
+- "paregoric" is not in the index terms → "other"
+
+But wait, the RAG chunks mention that morphine is a natural plant alkaloid found in opium. So "opium" is the source, but "opium" isn't in the index terms. So "opium" would be "other."
+
+So the final answer would have entries for "heroin," "morphine," "codeine," "opium," and "paregoric," each mapped to "other," "Morphine," "Codeine," "other," and "other" respectively.
+
+But the user's example shows that if a term is not in the index terms, it's "other." So the correct JSON would be:
+
+[
+  {"index_term": "other", "matched_phrase": "opium"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "other", "matched_phrase": "paregoric"}
+]
+
+Wait, but the post is: "Opium is the source of heroin, morphine, paregoric, and codeine." So the phrases are "heroin," "morphine," "paregoric," "codeine," and "opium." Each of these is a phrase in the post

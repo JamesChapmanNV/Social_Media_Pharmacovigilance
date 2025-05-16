@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks related to drug references. My task is to detect any drug-related phrases in the post and link them to the correct index terms from the given list.
+
+First, the post is: "The doctor prescribed me codeine pills & I never even used them." 
+
+I need to look for any words or phrases that refer to illicit drugs or substances. The word "codeine" is clearly in the post. Now, checking the index terms, there's an entry for Codeine with synonyms like "Lean", "Purple Drank", "Schoolboy". However, in the post, the exact term used is "codeine", which is directly listed as an index term. So "codeine" maps to "Codeine".
+
+Next, I need to check if there are any other phrases. The post mentions "codeine pills", but "pills" is a generic term for medication and not a slang or euphemism for a drug. The RAG chunks mention codeine being prescribed in various countries, but the post doesn't use any slang terms. The phrase "never even used them" refers to the pills, but that's not a drug reference itself. 
+
+So the only matched phrase here is "codeine", which directly maps to the index term "Codeine". There's no mention of other drugs or slang terms. The example given in the problem statement where "lean" was mapped to codeine shows that even if a slang term is used, it's linked. But in this case, the exact term is used, so it's straightforward.
+
+I should make sure not to include any phrases from the RAG chunks themselves. The RAG chunks talk about codeine being in medications like Néocodion, Codoliprane, etc., but the post doesn't mention those specific products. The post only mentions "codeine pills", which is a standard medical term, not a slang. Therefore, the only match is "codeine" under the Codeine index term.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

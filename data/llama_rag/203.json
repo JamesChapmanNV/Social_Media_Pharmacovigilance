@@ -1,0 +1,82 @@
+### Example #1 
+Post: I got her hooked on that lean everyday she say she want codeine
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+### Example #2 
+Post: Pulled an all‑nighter on addy again.
+[
+  {"index_term": "Amphetamine", "matched_phrase": "addy"}
+]
+
+### Example #3
+Post: Popped two xans before class.
+[
+  {"index_term": "other", "matched_phrase": "xans"}
+]
+
+### Example #4 (Cocaine not on the list)
+Post: Picked up fresh snow to ride those white lines tonight ❄️
+[
+  {"index_term": "other", "matched_phrase": "snow"},
+  {"index_term": "other", "matched_phrase": "white lines"}
+]
+
+Post: Well I just found my new favorite drug. Morphine. This shit is amazing
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]
+
+Post: Morphine exerts its effects by binding to and activating three known opioid receptors including: the κ-opioid (KOP), μ-opioid (MOP), and δ-opioid (DOP) receptors as an agonist.
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]
+
+Post: The primary source of morphine is isolation from poppy straw of the opium poppy.
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]
+
+Post: Physical effects
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]
+
+Post: Sedation
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]
+
+Post: Physical euphoria - The physical euphoria experienced on this substance is extremely intense when compared to other opioids such as codeine or tramadol. The sensation itself can be described as feelings of intense physical comfort, warmth, love and bliss.
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]
+
+Post: Cognitive effects
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]
+
+Post: Cognitive euphoria - Morphine produces cognitive euphoria that is substantially stronger compared to other opioids such as codeine or tramadol, but weaker than that of heroin, hydrocodone, and oxycodone. The sensation can be described as powerful and all-encompassing feelings of emotional bliss, contentment, and happiness.
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]
+
+### Output 
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Amphetamine", "matched_phrase": "addy"},
+  {"index_term": "other", "matched_phrase": "xans"},
+  {"index_term": "other", "matched_phrase": "snow"},
+  {"index_term": "other", "matched_phrase": "white lines"},
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]

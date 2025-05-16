@@ -1,0 +1,53 @@
+### Example #5
+Post: I got a syrup addiction, Im in love wit codeine
+
+```json
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+```
+
+### Example #6
+Post: My friend does lean and he's always high.
+
+```json
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"}
+]
+```
+
+### Example #7
+Post: I'm so tired after taking Xanax for my anxiety.
+
+```json
+[
+  {"index_term": "other", "matched_phrase": "Xanax"}
+]
+```
+
+### Example #8
+Post: My friend does Molly and it's so much fun.
+
+```json
+[
+  {"index_term": "MDMA", "matched_phrase": "Molly"}
+]
+```
+
+### Example #9
+Post: I'm so tired after taking Ambien for my insomnia.
+
+```json
+[
+  {"index_term": "other", "matched_phrase": "Ambien"}
+]
+```
+
+### Example #10
+Post: My friend does Ecstasy and it's so much fun.
+
+```json
+[
+  {"index_term": "MDMA", "matched_phrase": "Ecstasy"}
+]
+```

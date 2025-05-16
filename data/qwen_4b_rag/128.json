@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and RAG chunks, and I need to detect drug-related references and link them to the correct index terms.
+
+First, the post is: "When you realize you're the only person in your generation Who uses codeine for what it's actually for."
+
+Looking at the post, the main phrase here is "codeine." The RAG chunks mention that Codeine is listed under the index terms, with synonyms like "Lean," "Purple Drank," "Schoolboy." The post uses "codeine" directly, so that's a clear match. The phrase "what it's actually for" might be a bit ambiguous, but since the context is about using codeine, and the RAG chunk confirms codeine is an opioid used as an analgesic and antitussive, but also mentions it's widely abused. The phrase "for what it's actually for" could imply misuse, but the key here is the direct mention of "codeine," which is explicitly listed in the index terms. 
+
+I need to check if there are any other phrases. The post doesn't mention any other drugs or slang terms. The RAG chunks don't provide any other context that would suggest other terms. So the only match is "codeine" in the post. 
+
+The index term for codeine is "Codeine," so the JSON should have one object with index_term "Codeine" and matched_phrase "codeine." The example 1 shows that "lean" and "codeine" both map to Codeine, but in this case, the post only has "codeine." 
+
+I should make sure not to include any phrases from the RAG chunks themselves. The RAG chunk mentions "lean" as a synonym, but the post doesn't use that term. So the only match is "codeine."
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references. The post is: "I might need a codeine pill but would not take..". 
+
+First, I need to look for any words or phrases that refer to illicit drugs or substances. The post mentions "codeine pill". According to the index terms, Codeine is listed as an index term with synonyms like "Lean", "Purple Drank", "Schoolboy". The phrase "codeine pill" directly matches the index term "Codeine". 
+
+Now, checking the RAG chunks. The chunks mention codeine in various contexts, like extracting it from OTC tablets, legal status in different countries, and its use in medications. But the task says to use the RAG chunks only for disambiguation, not to extract phrases from them. The phrase "codeine pill" isn't in the chunks, so I just rely on the index term list. 
+
+The post also says "would not take", which is a negative statement, but the task is to detect the reference, not the intent. So "codeine pill" is a direct match for Codeine. There's no other phrase here. The example given in the problem has "lean" and "codeine" both matching. So in this case, "codeine pill" is the matched phrase. 
+
+Wait, but the index term for codeine includes "Lean", "Purple Drank", "Schoolboy". The post uses "codeine", which is in the index term list. So the matched phrase is "codeine pill", which is a reference to codeine. The index term is Codeine. So the JSON should have one object with index_term "Codeine" and matched_phrase "codeine pill". 
+
+But wait, the example in the problem has "lean" and "codeine" both as separate entries. However, in the post, "codeine pill" is a single phrase. But the index term is Codeine, so even though it's "pill", it's still referring to codeine. So the correct entry is {"index_term": "Codeine", "matched_phrase": "codeine pill"}.
+
+I don't see any other phrases here. The rest of the post is "but would not take..", which doesn't refer to a drug. So the only match is "codeine pill".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine pill"}
+]

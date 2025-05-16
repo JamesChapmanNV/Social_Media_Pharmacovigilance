@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references in the post, link them to the correct index terms, and return a JSON array.
+
+First, the post is: "Fentanyl Floyd died of overdose. Get over it." 
+
+Looking at the post, the main phrase here is "Fentanyl Floyd died of overdose." The key term here is "Fentanyl," which is explicitly mentioned. Now, I need to check the list of index terms to find the correct match.
+
+Looking through the index terms, there's an entry for "Fentanyl (China White, Apache, Duragesic)" which is listed as an index term. So "Fentanyl" directly maps to that index term. The other part of the sentence is "died of overdose," which is a common reference to opioid overdose, but since the post specifically mentions "Fentanyl," the main term is Fentanyl.
+
+Now, checking if there are any other possible phrases. The post doesn't mention any other drugs or slang terms. The word "Fentanyl" is the only drug-related term here. The rest of the sentence is about the event, not the drug itself. 
+
+So the matched phrase is "Fentanyl," and the index term is "Fentanyl." There's no need to consider other terms here. The example given in the problem statement for "Fentanyl" in the RAG chunks also mentions that it's a potent opioid, which aligns with the index term. 
+
+I should make sure that "Fentanyl" isn't a slang term for something else in the index list. Scanning through the list again, the only entry for Fentanyl is under the index term "Fentanyl (China White, Apache, Duragesic)" so that's correct. 
+
+Therefore, the JSON array should have one object with index_term "Fentanyl" and matched_phrase "Fentanyl".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Fentanyl"}
+]

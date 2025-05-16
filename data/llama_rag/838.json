@@ -1,0 +1,71 @@
+### BEGINNING of RAG Chunks  
+Drug: Codeine | cid: 5284371
+Source: erowid | Source description: Frequently Asked Questions about Codeine
+Erowid name: codeine
+Category: PHARMS
+Field: FAQ
+
+                    Text: 
+                    0 mg respectively. Thus Tylenol #4 w/ codeine (the most desired one) contains 325 mg of acetaminophen, 60 mg of codeine and no caffeine. Another Rx product is the 222, 292, 293, 294 series. They are identical to the Tylenol w/ codeine series, except aspirin replaces the acetaminophen. The Rx products are good sources of codeine for recreational use except most of us don't have sources that can obtain these drugs, therefore this FAQ contains a procedure so that one can easily obtain large amount of codeine from OTC products. Codeine is mainly used as a pain reliever, but is also used for the relief of a non-productive cough, and as a anti-diarrheal agent. 120 mg of codeine administered SC (subcutaneously, injected under the skin) provides pain relief equal to 10 mg of morphine administered by the same route. Doses used to relieve cough or diarrhea range from 5 mg to 30 mg. Codeine is absorbed quickly from the GI tract and it's first pass through the liver results in very little loss of
+
+
+                    Context: 
+                    This excerpt from the webpage provides detailed information on prescription codeine products, including specific formulations like Tylenol #4 and Rx series with aspirin, and discusses their use as sources of recreational codeine. It emphasizes the common medical applications of codeine such as pain relief, cough suppression, and anti-diarrheal effects, and covers pharmacological aspects like absorption and potency, situating it within the broader context of pharmaceutical and recreational drug information on the site.
+                Drug: Codeine | cid: 5284371
+Source: psychonaut | Source description: Codeine (also known as 3-Methylmorphine) is a naturally-occurring opioid substance of the morphinan class found in extracts of the poppy, particularly Papaver bracteatum.[3] Members of this group produce effects such as sedation, cough suppression, and euphoria when administered.
+
+                    Text: 
+                    France: In France, most preparations containing codeine do not require a doctor's prescription. Example products containing codeine include Néocodion (cough pills, and syrup), Codoliprane (codeine with paracetamol), Prontalgine and Migralgine (codeine, paracetamol, and caffeine).[16] Codeine is regulated/controlled substance (schedule 2) since 2017 after a decision of the "Minister of Health" Agnès Buzyn, it is therefore now under prescription only and raw pure codeine is not available altogether anymore. The most common prescribed codeine brands are Klipal and Codoliprane, both mixed with paracetamol heavily. Klipal being the strongest ratio, 50mg codeine for 600mg paracetamol.
+
+
+                    Context: 
+                    This excerpt details France's regulatory status and common formulations of codeine-containing medications, noting that most preparations no longer require a prescription since 2017 when codeine was classified as a Schedule 2 controlled substance. It highlights specific products like Néocodion, Codoliprane, and others, emphasizing the shift to prescription-only access and mentioning frequently prescribed brands such as Klipal and Codoliprane with their typical dosages.
+                Drug: Codeine | cid: 5284371
+Source: psychonaut | Source description: Codeine (also known as 3-Methylmorphine) is a naturally-occurring opioid substance of the morphinan class found in extracts of the poppy, particularly Papaver bracteatum.[3] Members of this group produce effects such as sedation, cough suppression, and euphoria when administered.
+
+                    Text: 
+                    France: In France, most preparations containing codeine do not require a doctor's prescription. Example products containing codeine include Néocodion (cough pills, and syrup), Codoliprane (codeine with paracetamol), Prontalgine and Migralgine (codeine, paracetamol, and caffeine).[16] Codeine is regulated/controlled substance (schedule 2) since 2017 after a decision of the "Minister of Health" Agnès Buzyn, it is therefore now under prescription only and raw pure codeine is not available altogether anymore. The most common prescribed codeine brands are Klipal and Codoliprane, both mixed with paracetamol heavily. Klipal being the strongest ratio, 50mg codeine for 600mg paracetamol.
+
+
+                    Context: 
+                    This excerpt details France's regulatory status and common formulations of codeine-containing medications, noting that most preparations no longer require a prescription since 2017 when codeine was classified as a Schedule 2 controlled substance. It highlights specific products like Néocodion, Codoliprane, and others, emphasizing the shift to prescription-only access and mentioning frequently prescribed brands such as Klipal and Codoliprane with their typical dosages.
+                
+### ENDING of RAG Chunks
+
+### Example #1 
+Post: I got her hooked on that lean everyday she say she want codeine
+[{"index_term": "Codeine", "matched_phrase": "lean"}, {"index_term": "Codeine", "matched_phrase": "codeine"}]
+
+### Example #2 
+Post: Pulled an all‑nighter on addy again.
+[{"index_term": "Amphetamine", "matched_phrase": "addy"}]
+
+### Example #3
+Post: Popped two xans before class.
+[{"index_term": "other", "matched_phrase": "xans"}]
+
+### Example #4 (Cocaine not on the list)
+Post: Picked up fresh snow to ride those white lines tonight ❄️
+[{"index_term": "other", "matched_phrase": "snow"}, {"index_term": "other", "matched_phrase": "white lines"}]
+
+Post: What appears like an ordinary cough medication is proving to be the most sought after drug ingredient. Codeine is...
+
+### Detection and Matching
+To detect and match the given post with the RAG chunks, we will use the provided information.
+
+Post: I got her hooked on that lean everyday she say she want codeine
+
+The post contains two phrases that refer to an illicit drug or substance: "lean" and "codeine".
+
+For "lean", we can match it with the index term "Codeine" because "lean" is a slang term for a mixture of codeine and soda.
+
+For "codeine", we can directly match it with the index term "Codeine".
+
+So, the output will be:
+[{"index_term": "Codeine", "matched_phrase": "lean"}, {"index_term": "Codeine", "matched_phrase": "codeine"}]
+
+### JSON Output
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

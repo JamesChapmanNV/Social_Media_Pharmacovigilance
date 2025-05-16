@@ -1,0 +1,31 @@
+### Example #5 
+Post: REPORTS: Cowboys' Rolando McClain 10-game suspension is for drinking the opiate mix "purple drank" which includes cough syrup & codeine.
+
+[
+  {"index_term": "Codeine", "matched_phrase": "purple drank"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+### Step 1: Identify and extract relevant phrases
+The post contains the following phrases that refer to illicit substances:
+- "purple drank"
+- "cough syrup"
+- "codeine"
+
+### Step 2: Disambiguate and link phrases to Index Terms
+Based on the provided RAG chunks, the following Index Terms match the detected phrases:
+- "purple drank" is a common name for a mixture containing codeine and promethazine, so it should be linked to "Codeine".
+- "cough syrup" is a common preparation method for codeine, so it should be linked to "Codeine".
+
+### Step 3: Format output according to schema
+The output should be a JSON array with one object per match, using the schema:
+`{"index_term": "<Index Term or other>", "matched_phrase": "<exact text>"}`
+
+### Step 4: Generate output
+[
+  {"index_term": "Codeine", "matched_phrase": "purple drank"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+### Step 5: Verify output
+The output matches the expected format and contains the correct Index Terms and matched phrases.

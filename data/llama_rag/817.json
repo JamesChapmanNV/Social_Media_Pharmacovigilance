@@ -1,0 +1,91 @@
+### BEGINNING of RAG Chunks  
+Drug: Hydrocodone | cid: 5284569
+Source: psychonaut | Source description: Hydrocodone (commonly sold as Vicodin or Norco when combined with paracetamol) is a semi-synthetic opioid morphinan synthesized or chemically derived from codeine, one of the opioid alkaloids found in the opium poppy. It is a narcotic analgesic used orally as a cough suppressant, but also commonly taken orally for relief of moderate to severe pain.[2] Those who take hydrocodone for recreational purposes report a sense of relaxation and euphoria, especially at higher doses.
+
+                    Text: 
+                    Hydrocodone also shares the 3-methoxy substitution found in codeine; the two differ only from their R6 substituents. Hydrocodone is analogous to the other morphinans including dihydrocodeine, heroin, ethylmorphine, codeine, and oxycodone.
+
+Pharmacology
+
+The euphoria, anxiety suppression and pain relief effects appear to stem from the way in which opioids mimic endogenous endorphins. Endorphins are responsible for analgesia (reducing pain), causing sleepiness, and feelings of pleasure. They can be released in response to pain, strenuous exercise, orgasm, or excitement. This mimicking of natural endorphins results in the drug's effects. It acts primarily on μ-opioid receptors, with about six times lesser affinity to δ-opioid receptors.
+
+In the liver, hydrocodone is transformed into several metabolites. It has a serum half-life that averages 3.8 hours.[4] The hepatic cytochrome P450 enzyme CYP2D6 converts it into hydromorphone, a more potent opioid.
+
+
+                    Context: 
+                    This excerpt covers the chemical structure and pharmacological mechanisms of hydrocodone, highlighting its similarity to codeine, its action on μ-opioid receptors, and its metabolism into hydromorphone via CYP2D6. It provides critical details on its chemical properties and how it produces effects like euphoria, pain relief, and sedation, making it essential for understanding the drug's composition and biological activity.
+                Drug: Hydrocodone | cid: 5284569
+Source: psychonaut | Source description: Hydrocodone (commonly sold as Vicodin or Norco when combined with paracetamol) is a semi-synthetic opioid morphinan synthesized or chemically derived from codeine, one of the opioid alkaloids found in the opium poppy. It is a narcotic analgesic used orally as a cough suppressant, but also commonly taken orally for relief of moderate to severe pain.[2] Those who take hydrocodone for recreational purposes report a sense of relaxation and euphoria, especially at higher doses.
+
+                    Text: 
+                    Hydrocodone is prescribed predominantly within the United States, with the International Narcotics Control Board reporting that 99% of the worldwide supply in 2007 was consumed in the United States.[3]
+
+Like many opioids, such as dextropropoxyphene, hydrocodone is often combined with acetaminophen (paracetamol) to enhance analgesia and deter abuse. Acetaminophen overdoses and long-term use, often due to recreational use, can cause serious or fatal liver damage. Currently, the only brand of hydrocodone in the United States that does not have acetaminophen is Zohydro ER which comes in doses of up to 50mg.
+
+Contents
+
+1 Chemistry
+
+2 Pharmacology
+
+3 Subjective effects
+
+3.1 Physical effects
+
+3.2 Cognitive effects
+
+3.3 Experience reports
+
+4 Toxicity and harm potential
+
+4.1 Dependence and abuse potential
+
+4.2 Dangerous interactions
+
+5 Legal status
+
+6 See also
+
+7 External links
+
+8 References
+
+Chemistry
+
+
+                    Context: 
+                    This excerpt provides key information on hydrocodone's geographic prescribing patterns, particularly its predominant use in the United States, and details its common combination with acetaminophen to enhance pain relief and prevent abuse, highlighting health risks associated with long-term or overdose use. It also outlines the document's structure, including sections on chemistry, pharmacology, effects, toxicity, legal status, and external resources, serving as an overview of the drug's profile.
+                Drug: Hydrocodone | cid: 5284569
+Source: pubchem | Source description: Hydrocodone | C18H21NO3 | CID 5284569 - structure, chemical names, physical and chemical properties, classification, patents, literature, biological activities, safety/hazards/toxicity information, supplier lists, and more.
+
+                    Text: 
+                    12.1.13 Interactions
+
+Hydrocodone may potentiate the effects of other opiate agonists, general anesthetics, tranquilizers, sedatives and hypnotics, tricyclic antidepressants, monoamine oxidase inhibitors, alcohol, and other CNS depressants.
+
+American Society of Health-System Pharmacists 2015; Drug Information 2015. Bethesda, MD. 2015, p. 2770
+
+Concurrent use of anticholinergic agents with hydrocodone may produce paralytic ileus.
+
+American Society of Health-System Pharmacists 2015; Drug Information 2015. Bethesda, MD. 2015, p. 2770
+
+Some tranquilizers, especially phenothiazines, may antagonize opiate agonist analgesia. /Opiate agonists/
+
+American Society of Health-System Pharmacists 2015; Drug Information 2015. Bethesda, MD. 2015, p. 2113
+
+
+                    Context: 
+                    This section summarizes key drug interactions of hydrocodone, highlighting its potentiation effects when combined with other CNS depressants and opiates, as well as potential antagonism by certain tranquilizers like phenothiazines. It is relevant for understanding hydrocodone’s pharmacological profile and safety considerations, and is situated within the broader discussion of its pharmacodynamics and interactions in the full document.
+                
+### ENDING of RAG Chunks
+
+Post: Hydrocodone. More potent than codeine. Used in combination with anti collinergic homatropine yaaaaaaaas
+
+### Output JSON array
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Hydrocodone", "matched_phrase": "Hydrocodone"},
+  {"index_term": "Hydrocodone", "matched_phrase": "codeine"},
+  {"index_term": "Hydrocodone", "matched_phrase": "homatropine"}
+]

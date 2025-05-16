@@ -1,0 +1,151 @@
+### Code
+
+```python
+import json
+import re
+
+def detect_drug_references(post, rag_chunks):
+    """
+    Detects every word or phrase that refers to an illicit drug or substance.
+    
+    Args:
+    post (str): The social media post to analyze.
+    rag_chunks (list): A list of RAG context chunks.
+    
+    Returns:
+    list: A list of dictionaries containing the matched phrase and its corresponding Index Term.
+    """
+    
+    # Define the list of Index Terms
+    index_terms = {
+        "2,6-Xylidine": "2,6-Xylidine",
+        "2‑Amino‑5‑chloropyridine": "2‑Amino‑5‑chloropyridine",
+        "2‑Fluoro‑2‑oxo PCE": "2‑Fluoro‑2‑oxo PCE",
+        "2‑Oxo‑3‑hydroxy‑LSD": "2‑Oxo‑3‑hydroxy‑LSD",
+        "3‑Hydroxy flubromazepam": "3‑Hydroxy flubromazepam",
+        "3‑Hydroxy flubromazepam glucuronide": "3‑Hydroxy flubromazepam glucuronide",
+        "4‑ANPP": "4‑ANPP",
+        "4‑HIAA": "4‑HIAA",
+        "6‑Acetylmorphine": "6‑Acetylmorphine",
+        "7‑Aminoclonazepam": "7‑Aminoclonazepam",
+        "7‑Hydroxymitragynine": "7‑Hydroxymitragynine",
+        "7‑OH‑CBD glucuronide": "7‑OH‑CBD glucuronide",
+        "8‑Aminoclonazolam": "8‑Aminoclonazolam",
+        "8R‑OH‑R‑HHC": "8R‑OH‑R‑HHC",
+        "8S‑OH‑R‑HHC": "8S‑OH‑R‑HHC",
+        "α‑Hydroxyalprazolam": "α‑Hydroxyalprazolam",
+        "α‑Hydroxybromazolam": "α‑Hydroxybromazolam",
+        "Amphetamine": "Amphetamine",
+        "Benzoylecgonine": "Benzoylecgonine",
+        "Bromazolam": "Bromazolam",
+        "Buprenorphine": "Buprenorphine",
+        "Carfentanil": "Carfentanil",
+        "CBD": "CBD",
+        "Codeine": "Codeine",
+        "Cyclobenzaprine": "Cyclobenzaprine",
+        "delta‑8‑THC‑COOH": "delta‑8‑THC‑COOH",
+        "delta‑9‑THC‑COOH": "delta‑9‑THC‑COOH",
+        "Diphenhydramine": "Diphenhydramine",
+        "EDDP": "EDDP",
+        "Fentanyl": "Fentanyl",
+        "Flubromazepam": "Flubromazepam",
+        "Gabapentin": "Gabapentin",
+        "Hydrocodone": "Hydrocodone",
+        "Hydromorphone": "Hydromorphone",
+        "Ketamine": "Ketamine",
+        "Lorazepam": "Lorazepam",
+        "LSD": "LSD",
+        "Marijuana": "Marijuana",
+        "MDA": "MDA",
+        "MDMA": "MDMA",
+        "MDMB‑4en‑PINACA butanoic acid": "MDMB‑4en‑PINACA butanoic acid",
+        "Meperidine": "Meperidine",
+        "Meprobamate": "Meprobamate",
+        "Methadone": "Methadone",
+        "Methamphetamine": "Methamphetamine",
+        "Metonitazene": "Metonitazene",
+        "Mitragynine": "Mitragynine",
+        "Morphine": "Morphine",
+        "N,N‑Dimethylpentylone": "N,N‑Dimethylpentylone",
+        "Naltrexone": "Naltrexone",
+        "N‑Desethylmetonitazene": "N‑Desethylmetonitazene",
+        "Norbuprenorphine": "Norbuprenorphine",
+        "Norcarfentanil": "Norcarfentanil",
+        "Nordiazepam": "Nordiazepam",
+        "Norfentanyl": "Norfentanyl",
+        "Norketamine": "Norketamine",
+        "Normeperidine": "Normeperidine",
+        "Noroxycodone": "Noroxycodone",
+        "N‑Pyrrolidinoetonitazene": "N‑Pyrrolidinoetonitazene",
+        "O‑Desmethyltramadol": "O‑Desmethyltramadol",
+        "ortho‑Methylfentanyl": "ortho‑Methylfentanyl",
+        "Oxazepam": "Oxazepam",
+        "Oxycodone": "Oxycodone",
+        "Oxymorphone": "Oxymorphone",
+        "para‑Fluorofentanyl": "para‑Fluorofentanyl",
+        "para‑Fluoronorfentanyl": "para‑Fluoronorfentanyl",
+        "Pentylone": "Pentylone",
+        "Phencyclidine": "Phencyclidine",
+        "Pregabalin": "Pregabalin",
+        "Psilocin": "Psilocin",
+        "Psilocybin": "Psilocybin",
+        "R‑HHC‑COOH": "R‑HHC‑COOH",
+        "S‑HHC‑COOH": "S‑HHC‑COOH",
+        "Speciociliatine": "Speciociliatine",
+        "Temazepam": "Temazepam",
+        "Xylazine": "Xylazine",
+        "Zolpidem": "Zolpidem",
+        "Zopiclone": "Zopiclone"
+    }
+    
+    # Initialize an empty list to store the matched phrases and their corresponding Index Terms
+    matched_phrases = []
+    
+    # Define a regular expression pattern to match words and phrases
+    pattern = r"\b\w+\b"
+    
+    # Split the post into words and phrases
+    words_and_phrases = re.findall(pattern, post)
+    
+    # Iterate over each word or phrase
+    for word_or_phrase in words_and_phrases:
+        # Check if the word or phrase is in the list of Index Terms
+        if word_or_phrase in index_terms:
+            # If it is, add a dictionary containing the matched phrase and its corresponding Index Term to the list
+            matched_phrases.append({"index_term": index_terms[word_or_phrase], "matched_phrase": word_or_phrase})
+        else:
+            # If it's not, check if the word or phrase appears in any of the RAG chunks
+            for chunk in rag_chunks:
+                if word_or_phrase in chunk['Text']:
+                    # If it does, add a dictionary containing the matched phrase and its corresponding Index Term to the list
+                    matched_phrases.append({"index_term": "other", "matched_phrase": word_or_phrase})
+    
+    # Return the list of matched phrases and their corresponding Index Terms
+    return matched_phrases
+
+# Example usage
+post = "I got her hooked on that lean everyday she say she want codeine"
+rag_chunks = [
+    {
+        "Drug": "Morphine",
+        "cid": "5288826",
+        "Source": "psychonaut",
+        "Source description": "Morphine is a naturally-occurring opioid substance of the morphinan class.",
+        "Text": "plant, one of these thirty such alkaloids later became codeine. Codeine from the ancient Greek, κώδεια, means cup shaped like a poppyhead.",
+        "Context": "This excerpt covers the historical development and cultural significance of morphine, including its isolation, medical use in war, and the emergence of heroin as a less addictive alternative."
+    },
+    {
+        "Drug": "Morphine",
+        "cid": "5288826",
+        "Source": "psychonaut",
+        "Source description": "Morphine is a naturally-occurring opioid substance of the morphinan class.",
+        "Text": "The primary source of morphine is isolated from the poppy straw of the opium poppy.",
+        "Context": "This excerpt covers the production and usage of morphine, highlighting its source from the opium poppy and global manufacturing estimates, as well as its chemical classification as a benzylisoquinoline alkaloid within the morphinan class, providing vital background on its origins, chemical structure, and industrial relevance."
+    },
+    {
+        "Drug": "Morphine",
+        "cid": "5288826",
+        "Source": "psychonaut",
+        "Source description": "Morphine is a naturally-occurring opioid substance of the morphinan class.",
+        "Text": "It is strongly recommended that one use harm reduction practices when using this substance.",
+        "Context": "This section discusses the potential for dependence and abuse associated with morphine, emphasizing its high addictive potential, the development

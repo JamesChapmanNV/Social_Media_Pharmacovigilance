@@ -1,0 +1,15 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references. The post is "Side effects of Actiq - by Dr Pandula Siribaddana - Helium". First, I need to check if there are any phrases in the post that refer to illicit drugs or substances.
+
+Looking at the post, the main mention is "Actiq". From the RAG chunks, I remember that Actiq is a brand name for fentanyl. The RAG context mentions that fentanyl is a potent opioid, so Actiq is a form of fentanyl. The task is to link any detected phrases to the correct index term. 
+
+In the post, "Actiq" is the only phrase. The index term for fentanyl is listed as "Fentanyl (China White, Apache, Duragesic)". So "Actiq" would map to "Fentanyl". 
+
+Wait, the example given in the problem includes "codeine" and "lean" as synonyms. Here, "Actiq" is a brand name for fentanyl, so it's a direct reference. The index term for fentanyl is "Fentanyl", so the matched phrase is "Actiq" with index term "Fentanyl".
+
+I need to make sure there are no other phrases. The rest of the post is about side effects and authors, which don't mention drugs. So the only match is "Actiq" under Fentanyl.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"}
+]

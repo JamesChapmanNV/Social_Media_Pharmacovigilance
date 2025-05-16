@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references. The post is: "Covidien launches generic version of Actiq- Yahoo/AP  Wed, 03/03/10 - 12:00 pm". 
+
+First, I need to look for any words or phrases that refer to illicit drugs or substances. The RAG chunks are about fentanyl, specifically Actiq and Fentora as brand names. The post mentions "Actiq" which is a brand name for a fentanyl product. 
+
+Looking at the Index Terms, "Fentanyl" is listed with synonyms like China White, Apache, Duragesic. Actiq is a brand name for fentanyl, so "Actiq" would map to Fentanyl. However, the post is talking about a generic version of Actiq. The RAG chunks mention that Actiq is a brand name for fentanyl, so even though it's a generic version, the term "Actiq" is still a reference to fentanyl.
+
+But wait, the task says to use the RAG chunks only as background knowledge. The chunks mention Actiq as a brand name for fentanyl. So "Actiq" is a drug name here. The Index Term for Fentanyl includes "Actiq" as a brand name. Therefore, "Actiq" should be mapped to "Fentanyl".
+
+However, the post is about a company launching a generic version. The key here is whether "Actiq" is considered a drug reference. Since Actiq is a brand name for fentanyl, even in a generic context, it's still referring to the drug. So the matched phrase is "Actiq", and the index term is "Fentanyl".
+
+I need to check if there are any other terms. The rest of the post is about a news article, so no other drug references. Therefore, the only match is "Actiq" under Fentanyl.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"}
+]

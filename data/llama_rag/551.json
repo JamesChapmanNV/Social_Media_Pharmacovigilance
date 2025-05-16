@@ -1,0 +1,93 @@
+### BEGINNING of RAG Chunks
+
+### Given Post
+Post: I got her hooked on that lean everyday she say she want codeine
+
+### Detected Phrases
+- "lean"
+- "codeine"
+
+### Matching Index Terms
+- "lean" matches "Codeine"
+- "codeine" matches "Codeine"
+
+### Output
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+### BEGINNING of RAG Chunks
+
+### Given Post
+Post: Pulled an all‑nighter on addy again.
+
+### Detected Phrases
+- "addy"
+
+### Matching Index Terms
+- "addy" matches "Amphetamine"
+
+### Output
+[
+  {"index_term": "Amphetamine", "matched_phrase": "addy"}
+]
+
+### BEGINNING of RAG Chunks
+
+### Given Post
+Post: Popped two xans before class.
+
+### Detected Phrases
+- "xans"
+
+### Matching Index Terms
+- "xans" does not match any index term, so it is classified as "other"
+
+### Output
+[
+  {"index_term": "other", "matched_phrase": "xans"}
+]
+
+### BEGINNING of RAG Chunks
+
+### Given Post
+Post: Picked up fresh snow to ride those white lines tonight ❄️
+
+### Detected Phrases
+- "snow"
+- "white lines"
+
+### Matching Index Terms
+- "snow" does not match any index term, so it is classified as "other"
+- "white lines" does not match any index term, so it is classified as "other"
+
+### Output
+[
+  {"index_term": "other", "matched_phrase": "snow"},
+  {"index_term": "other", "matched_phrase": "white lines"}
+]
+
+### BEGINNING of RAG Chunks
+
+### Given Post
+Post: Meaning of #heroina Heroin is an alkaloid synthesized from morphine, like this, is analgesic, but also has certain stimulating effects.  It is very addictive, and more potent than morphine but its effect is less durable...
+
+### Detected Phrases
+- "heroina" is likely a typo or a misspelling, and it is classified as "heroin"
+- "heroin" matches "Heroin" is not in the list, but "heroin" is not in the list either, so it is classified as "other"
+- "morphine" matches "Morphine"
+
+### Matching Index Terms
+- "heroina" is classified as "other"
+- "heroin" is classified as "other"
+- "morphine" matches "Morphine"
+
+### Output
+[
+  {"index_term": "other", "matched_phrase": "heroina"},
+  {"index_term": "other", "matched_phrase": "heroin"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"}
+]
+
+### ENDING of RAG Chunks

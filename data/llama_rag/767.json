@@ -1,0 +1,17 @@
+### Detection of Illicit Drug References
+
+Given the provided post and RAG context chunks, the following illicit drug references are detected:
+
+```json
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Amphetamine", "matched_phrase": "addy"},
+  {"index_term": "other", "matched_phrase": "xans"},
+  {"index_term": "other", "matched_phrase": "snow"},
+  {"index_term": "other", "matched_phrase": "white lines"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl lollipop"}
+]
+```
+
+The detected phrases are linked to their corresponding Index Terms based on the provided list. The Index Term "other" is used when the detected phrase does not match any term in the list.

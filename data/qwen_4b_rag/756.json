@@ -1,0 +1,37 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references. The post is: "Opium is collected from the poppy plant and contains several compounds, most notably, codeine and morphine. These are the building blocks of several pharmaceutical opioids, even naloxone."
+
+First, I need to go through the post and identify any phrases that refer to illicit drugs or substances. The RAG chunks mention Morphine and Codeine, which are in the index terms. The post mentions "opium," "codeine," and "morphine." 
+
+Looking at the Index Terms list, Codeine is listed with aliases like Lean and Purple Drank. Morphine is also listed as a separate index term. The post mentions "opium," which is a broader term, but in the context of the RAG chunks, opium is the source of codeine and morphine. However, the index terms don't have "opium" as a direct term. Wait, the Index Terms include "Marijuana (Cannabis, Weed, Pot)" but not opium. The user's instruction says to use the RAG chunks for disambiguation but not to extract phrases from them. 
+
+So, the post mentions "opium," which is a natural source of codeine and morphine. However, opium itself is not listed in the index terms. The index terms for codeine and morphine are separate. The post also mentions "codeine" and "morphine," which are directly in the index terms. 
+
+So, "codeine" and "morphine" are direct matches. "Opium" is not in the index terms, so it would be "other." But wait, the RAG chunks talk about opium as the source, but the task says not to extract phrases from the chunks. The post's "opium" is part of the text, not from the chunks. So, "opium" is a reference to the plant, but the index terms don't have it. Therefore, "opium" would be "other." 
+
+But wait, the post says "opium is collected from the poppy plant and contains several compounds, most notably, codeine and morphine." So, the user is talking about opium as a source, but the index terms don't have "opium" as a term. So "opium" is not in the list, so it's "other." However, the index terms have "Codeine" and "Morphine" as separate entries. So the matched phrases would be "codeine" and "morphine," which are in the index terms. "Opium" is not in the list, so it's "other." 
+
+But wait, the example in the user's examples: in example #4, "snow" and "white lines" are not drugs, so they are "other." Similarly, "opium" here is a plant, but the index terms don't have it. Therefore, the correct matches would be codeine and morphine. The "opium" in the post is not a drug in the index terms, so it's "other." 
+
+But the post is talking about opium as a source, not as a drug. The index terms have "Codeine" and "Morphine." So the matched phrases are "codeine" and "morphine." The "opium" is not in the index terms, so it's "other." 
+
+So the JSON array would have two entries: codeine and morphine, and "opium" as "other." Wait, but the user's example #1 has "lean" and "codeine" both mapped to codeine. So in this case, the post mentions "codeine" and "morphine," which are in the index terms. The "opium" is not in the list, so it's "other." Therefore, the answer should be:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "opium"}
+]
+
+But wait, the user's instruction says that the RAG chunks are only for disambiguation, not to extract phrases from them. The post's "opium" is not from the chunks, so it's a phrase in the post. However, the index terms don't have "opium," so it's "other." 
+
+But the RAG chunks mention that morphine is from the opium poppy. However, the user's instruction says not to extract phrases from the chunks. So the post's "opium" is a reference to the plant, which is a source, but not a drug in the index terms. Therefore, "opium" is "other." 
+
+So the final answer should include "codeine," "morphine," and "opium" as "other." But wait, the post says "opium is collected from the poppy plant and contains several compounds, most notably, codeine and morphine." So the user is talking about opium as a source, but the index terms don't have "opium" as a drug. Therefore, "opium" is "other."
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "opium"}
+]

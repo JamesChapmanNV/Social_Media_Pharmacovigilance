@@ -1,0 +1,29 @@
+### Example #5
+Post: Again..... the doctor admitted that fentanyl, the drug he had in his system can suppress breathing. He also admitted that he didn't know he had foam coming out of his mouth at the scene and complained of respiratory distress before being restrained...both signs of a drug overdose
+
+[{"index_term": "Fentanyl", "matched_phrase": "fentanyl"}]
+
+### Example #6
+Post: Pulled an all-nighter on addy again.
+
+[{"index_term": "Amphetamine", "matched_phrase": "addy"}]
+
+### Example #7
+Post: Popped two xans before class.
+
+[{"index_term": "other", "matched_phrase": "xans"}]
+
+### Example #8 (Cocaine not on the list)
+Post: Picked up fresh snow to ride those white lines tonight ❄️
+
+[{"index_term": "other", "matched_phrase": "snow"}, {"index_term": "other", "matched_phrase": "white lines"}]
+
+### Example #9
+Post: I got her hooked on that lean everyday she say she want codeine
+
+[{"index_term": "Codeine", "matched_phrase": "lean"}, {"index_term": "Codeine", "matched_phrase": "codeine"}]
+
+### Example #10
+Post: My friend is addicted to Fentanyl
+
+[{"index_term": "Fentanyl", "matched_phrase": "Fentanyl"}]

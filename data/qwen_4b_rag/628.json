@@ -1,0 +1,18 @@
+<think>
+Okay, let's tackle this query. The user provided a post and RAG chunks, and I need to detect drug references and link them to the correct index terms.
+
+First, the post is: "Right? Fentanyl has been in the US for decades. It's prescribed a lot, including CHILDREN w/ cancer. It's called Actiq, this moron should know what he's talking about."
+
+Looking at the post, the main mention is "Fentanyl" and "Actiq". The RAG chunks mention Fentanyl's brand names, including Actiq. The index terms list "Fentanyl" as an index term. So "Fentanyl" directly maps to "Fentanyl". Then "Actiq" is a brand name of fentanyl, so that's also under "Fentanyl". 
+
+I need to check if there are any other phrases. The post also mentions "CHILDREN w/ cancer" but that's not a drug reference. The rest is just commentary. So the detected phrases are "Fentanyl" and "Actiq". Both should map to the "Fentanyl" index term. 
+
+Wait, the index term for Fentanyl is listed as "Fentanyl (China White, Apache, Duragesic)" in the list. So the exact term is "Fentanyl". The matched phrases are "Fentanyl" and "Actiq". Since Actiq is a brand name, but the index term is Fentanyl, that's correct. 
+
+No other terms in the post. So the JSON array should have two entries: one for "Fentanyl" with "Fentanyl" and another for "Fentanyl" with "Actiq".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Fentanyl"},
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"}
+]

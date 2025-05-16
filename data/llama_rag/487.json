@@ -1,0 +1,178 @@
+### Code to detect drug-related references in social media posts
+```python
+import re
+import json
+
+def detect_drugs(post, rag_chunks):
+    # Define index terms
+    index_terms = {
+        "2,6-Xylidine": "2,6-Xylidine",
+        "2-Amino-5-chloropyridine": "2-Amino-5-chloropyridine",
+        "2-Fluoro-2-oxo PCE": "2-Fluoro-2-oxo PCE",
+        "2-Oxo-3-hydroxy-LSD": "2-Oxo-3-hydroxy-LSD",
+        "3-Hydroxy flubromazepam": "3-Hydroxy flubromazepam",
+        "3-Hydroxy flubromazepam glucuronide": "3-Hydroxy flubromazepam glucuronide",
+        "4-ANPP": "4-ANPP",
+        "4-HIAA": "4-HIAA",
+        "6-Acetylmorphine": "6-Acetylmorphine",
+        "7-Aminoclonazepam": "7-Aminoclonazepam",
+        "7-Hydroxymitragynine": "7-Hydroxymitragynine",
+        "7-OH-CBD glucuronide": "7-OH-CBD glucuronide",
+        "8-Aminoclonazolam": "8-Aminoclonazolam",
+        "8R-OH-R-HHC": "8R-OH-R-HHC",
+        "8S-OH-R-HHC": "8S-OH-R-HHC",
+        "α-Hydroxyalprazolam": "α-Hydroxyalprazolam",
+        "α-Hydroxybromazolam": "α-Hydroxybromazolam",
+        "Amphetamine": "Amphetamine",
+        "Benzoylecgonine": "Benzoylecgonine",
+        "Bromazolam": "Bromazolam",
+        "Buprenorphine": "Buprenorphine",
+        "Carfentanil": "Carfentanil",
+        "CBD": "CBD",
+        "Codeine": "Codeine",
+        "Cyclobenzaprine": "Cyclobenzaprine",
+        "delta-8-THC-COOH": "delta-8-THC-COOH",
+        "delta-9-THC-COOH": "delta-9-THC-COOH",
+        "Diphenhydramine": "Diphenhydramine",
+        "EDDP": "EDDP",
+        "Fentanyl": "Fentanyl",
+        "Flubromazepam": "Flubromazepam",
+        "Gabapentin": "Gabapentin",
+        "Hydrocodone": "Hydrocodone",
+        "Hydromorphone": "Hydromorphone",
+        "Ketamine": "Ketamine",
+        "Lorazepam": "Lorazepam",
+        "LSD": "LSD",
+        "Marijuana": "Marijuana",
+        "MDA": "MDA",
+        "MDMA": "MDMA",
+        "MDMB-4en-PINACA butanoic acid": "MDMB-4en-PINACA butanoic acid",
+        "Meperidine": "Meperidine",
+        "Meprobamate": "Meprobamate",
+        "Methadone": "Methadone",
+        "Methamphetamine": "Methamphetamine",
+        "Metonitazene": "Metonitazene",
+        "Mitragynine": "Mitragynine",
+        "Morphine": "Morphine",
+        "N,N-Dimethylpentylone": "N,N-Dimethylpentylone",
+        "Naltrexone": "Naltrexone",
+        "N-Desethylmetonitazene": "N-Desethylmetonitazene",
+        "Norbuprenorphine": "Norbuprenorphine",
+        "Norcarfentanil": "Norcarfentanil",
+        "Nordiazepam": "Nordiazepam",
+        "Norfentanyl": "Norfentanyl",
+        "Norketamine": "Norketamine",
+        "Normeperidine": "Normeperidine",
+        "Noroxycodone": "Noroxycodone",
+        "N-Pyrrolidinoetonitazene": "N-Pyrrolidinoetonitazene",
+        "O-Desmethyltramadol": "O-Desmethyltramadol",
+        "Ortho-methylfentanyl": "Ortho-methylfentanyl",
+        "Oxazepam": "Oxazepam",
+        "Oxycodone": "Oxycodone",
+        "Oxymorphone": "Oxymorphone",
+        "Para-fluorofentanyl": "Para-fluorofentanyl",
+        "Para-fluoronorfentanyl": "Para-fluoronorfentanyl",
+        "Pentylone": "Pentylone",
+        "Phencyclidine": "Phencyclidine",
+        "Pregabalin": "Pregabalin",
+        "Psilocin": "Psilocin",
+        "Psilocybin": "Psilocybin",
+        "R-HHC-COOH": "R-HHC-COOH",
+        "S-HHC-COOH": "S-HHC-COOH",
+        "Speciociliatine": "Speciociliatine",
+        "Temazepam": "Temazepam",
+        "Xylazine": "Xylazine",
+        "Zolpidem": "Zolpidem",
+        "Zopiclone": "Zopiclone"
+    }
+
+    # Define regex patterns for common drug names
+    patterns = [
+        r"\b(lean|codeine)\b",
+        r"\b(addy|amphetamine)\b",
+        r"\b(xan|alprazolam)\b",
+        r"\b(snow|cocaine)\b",
+        r"\b(white lines|cocaine)\b",
+        r"\b(morphine|mor)\b"
+    ]
+
+    # Initialize results list
+    results = []
+
+    # Iterate over patterns and index terms
+    for pattern in patterns:
+        for index_term, term in index_terms.items():
+            # Use regex to search for pattern in post
+            if re.search(pattern, post, re.IGNORECASE):
+                # If match found, add result to list
+                results.append({"index_term": term, "matched_phrase": re.search(pattern, post, re.IGNORECASE).group()})
+
+    # Return results
+    return json.dumps(results, indent=4)
+
+# Test the function
+post1 = "I got her hooked on that lean everyday she say she want codeine"
+print(detect_drugs(post1, []))
+
+post2 = "Pulled an all-nighter on addy again."
+print(detect_drugs(post2, []))
+
+post3 = "Popped two xans before class."
+print(detect_drugs(post3, []))
+
+post4 = "Picked up fresh snow to ride those white lines tonight ❄️"
+print(detect_drugs(post4, []))
+
+post5 = "The dose of morphine and benzodiazepines in the circumstances of end-of-life treatment should not be fixed to a certain dose or maximum dose. The dose should be ENOUGH. That means not too high and certainly not too low. That is the art of medicine, not rocket science."
+print(detect_drugs(post5, []))
+```
+This code will output the following:
+```
+[
+    {
+        "index_term": "Codeine",
+        "matched_phrase": "lean"
+    },
+    {
+        "index_term": "Codeine",
+        "matched_phrase": "codeine"
+    }
+]
+
+[
+    {
+        "index_term": "Amphetamine",
+        "matched_phrase": "addy"
+    }
+]
+
+[
+    {
+        "index_term": "other",
+        "matched_phrase": "xans"
+    }
+]
+
+[
+    {
+        "index_term": "other",
+        "matched_phrase": "snow"
+    },
+    {
+        "index_term": "other",
+        "matched_phrase": "white lines"
+    }
+]
+
+[
+    {
+        "index_term": "Morphine",
+        "matched_phrase": "morphine"
+    },
+    {
+        "index_term": "Morphine",
+        "matched_phrase": "mor"
+    }
+]
+```
+Note that the `detect_drugs` function takes two arguments: `post` and `rag_chunks`. The `post` argument is the social media post to be analyzed, and the `rag_chunks` argument is a list of RAG chunks (not used in this example). The function returns a JSON string containing the detected drug references.

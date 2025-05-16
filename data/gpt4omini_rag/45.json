@@ -1,0 +1,10 @@
+```json
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "Fentanyl", "matched_phrase": "opiate"},
+  {"index_term": "other", "matched_phrase": "benzodiazepine"},
+  {"index_term": "other", "matched_phrase": "central nervous system"},
+  {"index_term": "other", "matched_phrase": "hypoxia"},
+  {"index_term": "other", "matched_phrase": "cardiac arrest"}
+]
+```

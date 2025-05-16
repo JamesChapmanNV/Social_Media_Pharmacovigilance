@@ -1,0 +1,136 @@
+### BEGINNING of Code
+```python
+import re
+import json
+
+def extract_drug_references(post, rag_chunks):
+    """
+    Extracts drug references from a post using RAG chunks as background knowledge.
+
+    Args:
+    post (str): The social media post to extract drug references from.
+    rag_chunks (list): A list of RAG chunks containing drug information.
+
+    Returns:
+    list: A list of dictionaries containing the extracted drug references.
+    """
+    # Define the index terms
+    index_terms = {
+        "2,6-Xylidine": "2,6-Xylidine",
+        "2‑Amino‑5‑chloropyridine": "2‑Amino‑5‑chloropyridine",
+        "2‑Fluoro‑2‑oxo PCE": "2‑Fluoro‑2‑oxo PCE",
+        "2‑Oxo‑3‑hydroxy‑LSD": "2‑Oxo‑3‑hydroxy‑LSD",
+        "3‑Hydroxy flubromazepam": "3‑Hydroxy flubromazepam",
+        "3‑Hydroxy flubromazepam glucuronide": "3‑Hydroxy flubromazepam glucuronide",
+        "4‑ANPP": "4‑ANPP",
+        "4‑HIAA": "4‑HIAA",
+        "6‑Acetylmorphine": "6‑Acetylmorphine",
+        "7‑Aminoclonazepam": "7‑Aminoclonazepam",
+        "7‑Hydroxymitragynine": "7‑Hydroxymitragynine",
+        "7‑OH‑CBD glucuronide": "7‑OH‑CBD glucuronide",
+        "8‑Aminoclonazolam": "8‑Aminoclonazolam",
+        "8R‑OH‑R‑HHC": "8R‑OH‑R‑HHC",
+        "8S‑OH‑R‑HHC": "8S‑OH‑R‑HHC",
+        "α‑Hydroxyalprazolam": "α‑Hydroxyalprazolam",
+        "α‑Hydroxybromazolam": "α‑Hydroxybromazolam",
+        "Amphetamine": "Amphetamine",
+        "Benzoylecgonine": "Benzoylecgonine",
+        "Bromazolam": "Bromazolam",
+        "Buprenorphine": "Buprenorphine",
+        "Carfentanil": "Carfentanil",
+        "CBD": "CBD",
+        "Codeine": "Codeine",
+        "Cyclobenzaprine": "Cyclobenzaprine",
+        "delta‑8‑THC‑COOH": "delta‑8‑THC‑COOH",
+        "delta‑9‑THC‑COOH": "delta‑9‑THC‑COOH",
+        "Diphenhydramine": "Diphenhydramine",
+        "EDDP": "EDDP",
+        "Fentanyl": "Fentanyl",
+        "Flubromazepam": "Flubromazepam",
+        "Gabapentin": "Gabapentin",
+        "Hydrocodone": "Hydrocodone",
+        "Hydromorphone": "Hydromorphone",
+        "Ketamine": "Ketamine",
+        "Lorazepam": "Lorazepam",
+        "LSD": "LSD",
+        "Marijuana": "Marijuana",
+        "MDA": "MDA",
+        "MDMA": "MDMA",
+        "MDMB‑4en‑PINACA butanoic acid": "MDMB‑4en‑PINACA butanoic acid",
+        "Meperidine": "Meperidine",
+        "Meprobamate": "Meprobamate",
+        "Methadone": "Methadone",
+        "Methamphetamine": "Methamphetamine",
+        "Metonitazene": "Metonitazene",
+        "Mitragynine": "Mitragynine",
+        "Morphine": "Morphine",
+        "N,N‑Dimethylpentylone": "N,N‑Dimethylpentylone",
+        "Naltrexone": "Naltrexone",
+        "N‑Desethylmetonitazene": "N‑Desethylmetonitazene",
+        "Norbuprenorphine": "Norbuprenorphine",
+        "Norcarfentanil": "Norcarfentanil",
+        "Nordiazepam": "Nordiazepam",
+        "Norfentanyl": "Norfentanyl",
+        "Norketamine": "Norketamine",
+        "Normeperidine": "Normeperidine",
+        "Noroxycodone": "Noroxycodone",
+        "N‑Pyrrolidinoetonitazene": "N‑Pyrrolidinoetonitazene",
+        "O‑Desmethyltramadol": "O‑Desmethyltramadol",
+        "ortho‑Methylfentanyl": "ortho‑Methylfentanyl",
+        "Oxazepam": "Oxazepam",
+        "Oxycodone": "Oxycodone",
+        "Oxymorphone": "Oxymorphone",
+        "para‑Fluorofentanyl": "para‑Fluorofentanyl",
+        "para‑Fluoronorfentanyl": "para‑Fluoronorfentanyl",
+        "Pentylone": "Pentylone",
+        "Phencyclidine": "Phencyclidine",
+        "Pregabalin": "Pregabalin",
+        "Psilocin": "Psilocin",
+        "Psilocybin": "Psilocybin",
+        "R‑HHC‑COOH": "R‑HHC‑COOH",
+        "S‑HHC‑COOH": "S‑HHC‑COOH",
+        "Speciociliatine": "Speciociliatine",
+        "Temazepam": "Temazepam",
+        "Xylazine": "Xylazine",
+        "Zolpidem": "Zolpidem",
+        "Zopiclone": "Zopiclone",
+    }
+
+    # Extract drug references from the post
+    references = []
+    for chunk in rag_chunks:
+        if "Drug:" in chunk:
+            drug_name = chunk.split("Drug: ")[1].split(" |")[0]
+            references.append({"index_term": index_terms.get(drug_name, "other"), "matched_phrase": drug_name})
+
+    # Extract other drug references from the post
+    other_references = []
+    for match in re.findall(r"\b\w+\b", post):
+        if match not in [ref["matched_phrase"] for ref in references]:
+            other_references.append({"index_term": "other", "matched_phrase": match})
+
+    # Combine the references
+    references.extend(other_references)
+
+    return references
+
+# Test the function
+post = "I got her hooked on that lean everyday she say she want codeine"
+rag_chunks = [
+    "Drug: Morphine | cid: 5288826",
+    "Source: psychonaut | Source description: Morphine is a naturally-occurring opioid substance of the morphinan class. It is one of the natural plant alkaloids found in opium, along side codeine which is extracted from Papaver somniferum (also known as the poppy plant).[6] Additionally, it is considered to be the prototype opiate (i.e. the standard to which others are compared) and the basis of derivatives such as codeine, diacetylmorphine (heroin), and hydrocodone."
+]
+
+print(json.dumps(extract_drug_references(post, rag_chunks), indent=4))
+```
+### ENDING of Code
+
+This code defines a function `extract_drug_references` that takes a social media post and a list of RAG chunks as input. It extracts drug references from the post and the RAG chunks, and returns a list of dictionaries containing the extracted references.
+
+The function uses regular expressions to extract words from the post, and checks if they match any of the drug names in the index terms. If a match is found, it adds the drug name and the matched phrase to the list of references.
+
+The function also checks if the matched phrase is already in the list of references, and if not, adds it to the list of other references.
+
+Finally, the function combines the references from the post and the RAG chunks, and returns the combined list.
+
+You can test the function by running the code with the example post and RAG chunks provided. The output will be a JSON array containing the extracted drug references.

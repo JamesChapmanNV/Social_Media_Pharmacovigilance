@@ -1,0 +1,23 @@
+<think>
+Okay, let's tackle this query. The user provided a post and RAG chunks, and I need to detect drug references and link them to the correct index terms.
+
+First, the post is: "When you overdose on fentanyl or any other opiate or benzodiazepine it depresses your central nervous system until you lose consciousness then you stop breathing and eventually go into cardiac arrest... hypoxia is a symptom not the cause"
+
+Looking at the post, the main drug mentioned is fentanyl. The RAG chunks mention fentanyl's toxicity, so I need to check if "fentanyl" is in the index terms. Yes, under the list, "Fentanyl (China White, Apache, Duragesic)" is listed. So "fentanyl" would map to that index term.
+
+Next, the post also mentions "opiate" and "benzodiazepine". The index terms include "Opiate" as part of the description for Fentanyl, but the list doesn't have a standalone "opiate" term. Wait, looking at the index terms, there's "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)", but "opiate" isn't a direct term. However, the index term for Fentanyl is "Fentanyl (China White, Apache, Duragesic)", and the post mentions "opiate" as a general term. But since "opiate" isn't a specific index term, I should check if any of the index terms under opioids are applicable. However, the user's instruction says to use the index terms exactly as listed. Since "opiate" isn't a specific term in the list, it would be "other".
+
+Similarly, "benzodiazepine" is a class of drugs. The index term for benzodiazepines includes "Bromazolam (XLI-268, Fake Xanax)" and "Lorazepam (Ativan)", but "benzodiazepine" as a general term isn't listed. So "benzodiazepine" would also be "other".
+
+So the detected phrases are "fentanyl", "opiate", "benzodiazepine". The first is directly mapped to Fentanyl. The others are not in the index terms, so they are "other".
+
+Wait, but the post says "any other opiate or benzodiazepine". The key here is that "opiate" is a general term. However, the index terms include specific drugs like Morphine, Codeine, etc., but not "opiate" itself. Therefore, "opiate" would be "other". Same with "benzodiazepine".
+
+So the JSON array should have entries for "fentanyl", "opiate", and "benzodiazepine", with the latter two as "other".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "other", "matched_phrase": "opiate"},
+  {"index_term": "other", "matched_phrase": "benzodiazepine"}
+]

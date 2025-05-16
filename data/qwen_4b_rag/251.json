@@ -1,0 +1,20 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references and link them to the correct index terms.
+
+First, the post is: "REPORTS: Cowboys' Rolando McClain 10-game suspension is for drinking the opiate mix "purple drank" which includes cough syrup & codeine."
+
+Looking at the post, the key phrases are "opiate mix 'purple drank'" and "codeine". 
+
+From the RAG chunks, I remember that codeine is listed under the index term "Codeine", and there's mention of "lean" and "purple drank" as slang for codeine. Specifically, in the RAG context, it says that prescription cough syrups with codeine and promethazine are known as "lean" or "purple drank" when used recreationally. 
+
+So "purple drank" is a slang term for codeine, and "codeine" is directly listed. The phrase "opiate mix" might be a bit broader, but since "purple drank" is explicitly linked to codeine in the RAG chunks, I should map "purple drank" to Codeine. The mention of codeine is straightforward. 
+
+I need to check if there are any other terms. The post doesn't mention anything else. The "opiate mix" is a general term, but the specific slang "purple drank" is linked to codeine. So the matched phrases are "purple drank" and "codeine", both under Codeine. 
+
+Wait, the example #1 shows "lean" and "codeine" both mapped to Codeine. Similarly, here "purple drank" is a slang for codeine, so that's another match. The "codeine" is direct. So the JSON should have two entries: one for "purple drank" and one for "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "purple drank"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

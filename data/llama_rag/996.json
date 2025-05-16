@@ -1,0 +1,16 @@
+### Example #5 
+Post: get those tablets with paracetamol and codeine. Will sort you right out
+
+Detected phrases:
+
+- "paracetamol and codeine" 
+
+Matching Index Terms:
+
+- "Codeine" 
+
+Resulting JSON array:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "paracetamol and codeine"}
+]

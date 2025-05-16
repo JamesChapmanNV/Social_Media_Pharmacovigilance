@@ -1,0 +1,132 @@
+### BEGINNING of Code
+```python
+import json
+
+def detect_drugs(post, rag_chunks):
+    # Define the list of index terms
+    index_terms = {
+        "2,6-Xylidine": "2,6-Xylidine",
+        "2‑Amino‑5‑chloropyridine": "2‑Amino‑5‑chloropyridine",
+        "2‑Fluoro‑2‑oxo PCE": "2‑Fluoro‑2‑oxo PCE",
+        "2‑Oxo‑3‑hydroxy‑LSD": "2‑Oxo‑3‑hydroxy‑LSD",
+        "3‑Hydroxy flubromazepam": "3‑Hydroxy flubromazepam",
+        "3‑Hydroxy flubromazepam glucuronide": "3‑Hydroxy flubromazepam glucuronide",
+        "4‑ANPP": "4‑ANPP",
+        "4‑HIAA": "4‑HIAA",
+        "6‑Acetylmorphine": "6‑Acetylmorphine",
+        "7‑Aminoclonazepam": "7‑Aminoclonazepam",
+        "7‑Hydroxymitragynine": "7‑Hydroxymitragynine",
+        "7‑OH‑CBD glucuronide": "7‑OH‑CBD glucuronide",
+        "8‑Aminoclonazolam": "8‑Aminoclonazolam",
+        "8R‑OH‑R‑HHC": "8R‑OH‑R‑HHC",
+        "8S‑OH‑R‑HHC": "8S‑OH‑R‑HHC",
+        "α‑Hydroxyalprazolam": "α‑Hydroxyalprazolam",
+        "α‑Hydroxybromazolam": "α‑Hydroxybromazolam",
+        "Amphetamine": "Amphetamine",
+        "Benzoylecgonine": "Benzoylecgonine",
+        "Bromazolam": "Bromazolam",
+        "Buprenorphine": "Buprenorphine",
+        "Carfentanil": "Carfentanil",
+        "CBD": "CBD",
+        "Codeine": "Codeine",
+        "Cyclobenzaprine": "Cyclobenzaprine",
+        "delta‑8‑THC‑COOH": "delta‑8‑THC‑COOH",
+        "delta‑9‑THC‑COOH": "delta‑9‑THC‑COOH",
+        "Diphenhydramine": "Diphenhydramine",
+        "EDDP": "EDDP",
+        "Fentanyl": "Fentanyl",
+        "Flubromazepam": "Flubromazepam",
+        "Gabapentin": "Gabapentin",
+        "Hydrocodone": "Hydrocodone",
+        "Hydromorphone": "Hydromorphone",
+        "Ketamine": "Ketamine",
+        "Lorazepam": "Lorazepam",
+        "LSD": "LSD",
+        "Marijuana": "Marijuana",
+        "MDA": "MDA",
+        "MDMA": "MDMA",
+        "MDMB‑4en‑PINACA butanoic acid": "MDMB‑4en‑PINACA butanoic acid",
+        "Meperidine": "Meperidine",
+        "Meprobamate": "Meprobamate",
+        "Methadone": "Methadone",
+        "Methamphetamine": "Methamphetamine",
+        "Metonitazene": "Metonitazene",
+        "Mitragynine": "Mitragynine",
+        "Morphine": "Morphine",
+        "N,N‑Dimethylpentylone": "N,N‑Dimethylpentylone",
+        "Naltrexone": "Naltrexone",
+        "N‑Desethylmetonitazene": "N‑Desethylmetonitazene",
+        "Norbuprenorphine": "Norbuprenorphine",
+        "Norcarfentanil": "Norcarfentanil",
+        "Nordiazepam": "Nordiazepam",
+        "Norfentanyl": "Norfentanyl",
+        "Norketamine": "Norketamine",
+        "Normeperidine": "Normeperidine",
+        "Noroxycodone": "Noroxycodone",
+        "N‑Pyrrolidinoetonitazene": "N‑Pyrrolidinoetonitazene",
+        "O‑Desmethyltramadol": "O‑Desmethyltramadol",
+        "ortho‑Methylfentanyl": "ortho‑Methylfentanyl",
+        "Oxazepam": "Oxazepam",
+        "Oxycodone": "Oxycodone",
+        "Oxymorphone": "Oxymorphone",
+        "para‑Fluorofentanyl": "para‑Fluorofentanyl",
+        "para‑Fluoronorfentanyl": "para‑Fluoronorfentanyl",
+        "Pentylone": "Pentylone",
+        "Phencyclidine": "Phencyclidine",
+        "Pregabalin": "Pregabalin",
+        "Psilocin": "Psilocin",
+        "Psilocybin": "Psilocybin",
+        "R‑HHC‑COOH": "R‑HHC‑COOH",
+        "S‑HHC‑COOH": "S‑HHC‑COOH",
+        "Speciociliatine": "Speciociliatine",
+        "Temazepam": "Temazepam",
+        "Xylazine": "Xylazine",
+        "Zolpidem": "Zolpidem",
+        "Zopiclone": "Zopiclone",
+    }
+
+    # Initialize an empty list to store the detected phrases
+    detected_phrases = []
+
+    # Loop through each rag chunk
+    for chunk in rag_chunks:
+        # Extract the text from the chunk
+        text = chunk['text']
+
+        # Loop through each index term
+        for index_term, phrase in index_terms.items():
+            # Check if the phrase is in the text
+            if phrase.lower() in text.lower():
+                # Add the detected phrase to the list
+                detected_phrases.append({
+                    "index_term": phrase,
+                    "matched_phrase": phrase
+                })
+
+    # Loop through each word in the post
+    words = post.split()
+    for word in words:
+        # Check if the word is in the index terms
+        if word.lower() in [index_term.lower() for index_term in index_terms.keys()]:
+            # Add the detected phrase to the list
+            detected_phrases.append({
+                "index_term": [index_term for index_term in index_terms.keys() if index_term.lower() == word.lower()][0],
+                "matched_phrase": word
+            })
+
+    # Return the detected phrases as a JSON array
+    return json.dumps(detected_phrases, indent=4)
+
+# Test the function
+post = "I got her hooked on that lean everyday she say she want codeine"
+rag_chunks = [
+    {
+        "text": "In the mid-1990s, fentanyl was first introduced for widespread palliative use with the clinical introduction of the Duragesic patch. It was followed in the next decade by the introduction of the first quick-acting prescription formulations of fentanyl for personal use, the Actiq lollipop and Fentora buccal through the delivery method of estradiol Mylan transdermal patches. As of 2012, fentanyl was the most widely used synthetic opioid in clinical practice[15] with several new delivery methods now available, including a sublingual spray for cancer patients.[16][17] In 2013, 1700 kilograms were used globally.[18]",
+        "context": "This excerpt details the historical development and medical formulations of fentanyl, highlighting its introduction for palliative care in the 1990s, subsequent rapid-acting prescription products, and its widespread clinical use by 2012, including various delivery methods and global consumption data. It provides essential background on fentanyl's medical history and available administration routes, relevant for understanding its potency, risks, and misuse potential discussed throughout the document."
+    },
+    {
+        "text": "A wide range of pharmaceutical fentanyl preparations are available, including transdermal skin patches, lollipops, buccal tablets or patches, nasal sprays, and inhalers.[9] On the street, it is typically encountered in powder form, where it is often cut into or sold as heroin and other drugs, which has resulted in numerous accidental overdoses and fatalities.[10] In 2016, fentanyl and analogues were the most common cause of overdose deaths in the United States at more than 20,000, about half of all opioid-related deaths.[11][12]",
+        "context": "This excerpt discusses the various pharmaceutical and street forms of fentanyl, highlighting its prevalence and associated overdose risks in the US. It also summarizes fentanyl's subjective effects, comparing its rapid onset, short duration, and relatively lower recreational euphoria to other opioids, which is essential for understanding its dangers and user experience."
+    },
+    {
+        "text": "Fentanyl (also known as Fentanil and by the brand names Sublimaze,[2]

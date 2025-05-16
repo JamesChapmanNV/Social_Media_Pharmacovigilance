@@ -1,0 +1,45 @@
+### Example Post
+Post: I might need a codeine pill but would not take it.
+
+### RAG Chunks
+Drug: Codeine | cid: 5284371
+Source: erowid | Source description: Frequently Asked Questions about Codeine
+Erowid name: codeine
+Category: PHARMS
+Field: FAQ
+
+                    Text: 
+                    of codeine's sedative effects the "jitters" and other adverse effects of large amount of caffeine are not experienced. The Procedure 1. Obtain a quantity of tablets containing codeine, check to see if they contain anything other than codeine, caffeine, acetaminophen or aspirin. If they do, and you don't know whether or not it will be a problem, your best bet is not to use them. Measure out your desired amount of codeine (ex. 64 mg = 8 tablets * 8 mg/tablet). You may want to add 2 extra tablets as it is quite likely you will lose some codeine in the procedure. As you get more experience with the procedure you will be able to get approx. 95% of the codeine extracted. 2. Measure out some nice hot water, use approx. 40 ml / 20 tablets or more if needed. I would suggest you don't go over 50 ml for 20 tablets. I don't know if the use of boiling water would destroy any of the codeine but your best bet is not to use it. Use hot water but not boiling. Make sure the tablets dissolve completely.
+
+
+                    Context: 
+                    This excerpt details a step-by-step procedure for extracting codeine from OTC tablets, emphasizing measuring a desired dose, using hot water (not boiling), and filtering the solution. It is part of a comprehensive guide on obtaining and preparing codeine, situating technical instructions within the larger context of drug effects and legal considerations.
+                Drug: Codeine | cid: 5284371
+Source: psychonaut | Source description: Codeine (also known as 3-Methylmorphine) is a naturally-occurring opioid substance of the morphinan class found in extracts of the poppy, particularly Papaver bracteatum.[3] Members of this group produce effects such as sedation, cough suppression, and euphoria when administered.
+
+                    Text: 
+                    Maldives: The Maldives takes an infamously strict line on medicines, with many common drugs, anything containing codeine is banned unless you have a notarized and authenticated doctor's prescription. Visitors breaking the rules, even inadvertently, have been deported or imprisoned.[citation needed]
+
+Poland: Codeine is listed in "Wykaz środków odurzających i substancji psychotropowych" group " II-N" which means it's legal to use in scientific and medical pruposes, and is available over the counter in doses of 15mg in combination with 500mg paracetamol (Antidol) or 300mg sulfogaiacol (Thiocodin). However a pharmacy worker can refuse to sell it if they believe the client is a minor or wants to use it for drug abuse purposes.[20] [21]
+
+Romania: Codeine is sold OTC (when combined with another active ingredient), the limit being 12.8mg of codeine per pill, which is seen in Nurofen Plus. Any amount above 12.8mg/unit requires a prescription, whether it has another ingredient or not.
+
+
+                    Context: 
+                    This section details the legal status and regulations surrounding codeine in specific countries, including strict bans in the Maldives, over-the-counter availability in Poland for certain dosages and combinations, and OTC sales with limits in Romania. It highlights variations in legal restrictions and permissible doses, emphasizing the importance of understanding local laws related to codeine possession and sale.
+                Drug: Codeine | cid: 5284371
+Source: psychonaut | Source description: Codeine (also known as 3-Methylmorphine) is a naturally-occurring opioid substance of the morphinan class found in extracts of the poppy, particularly Papaver bracteatum.[3] Members of this group produce effects such as sedation, cough suppression, and euphoria when administered.
+
+                    Text: 
+                    France: In France, most preparations containing codeine do not require a doctor's prescription. Example products containing codeine include Néocodion (cough pills, and syrup), Codoliprane (codeine with paracetamol), Prontalgine and Migralgine (codeine, paracetamol, and caffeine).[16] Codeine is regulated/controlled substance (schedule 2) since 2017 after a decision of the "Minister of Health" Agnès Buzyn, it is therefore now under prescription only and raw pure codeine is not available altogether anymore. The most common prescribed codeine brands are Klipal and Codoliprane, both mixed with paracetamol heavily. Klipal being the strongest ratio, 50mg codeine for 600mg paracetamol.
+
+
+                    Context: 
+                    This excerpt details France's regulatory status and common formulations of codeine-containing medications, noting that most preparations no longer require a prescription since 2017 when codeine was classified as a Schedule 2 controlled substance. It highlights specific products like Néocodion, Codoliprane, and others, emphasizing the shift to prescription-only access and mentioning frequently prescribed brands such as Klipal and Codoliprane with their typical dosages.
+                
+### ENDING of RAG Chunks
+
+### Result
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

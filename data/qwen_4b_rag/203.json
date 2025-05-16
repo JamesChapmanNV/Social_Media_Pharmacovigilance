@@ -1,0 +1,21 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references and link them to the correct index terms.
+
+First, the post is: "Well I just found my new favorite drug. Morphine. This shit is amazing". The task is to find any phrases that refer to illicit drugs or substances. Let me look at the post carefully.
+
+The phrase "Morphine" is mentioned. Now, checking the Index Terms list, there's an entry for "Morphine (MS Contin, Miss Emma, Morph)". So "Morphine" directly maps to that index term. The post uses "Morphine" as the drug name, so that's a clear match. 
+
+Next, the phrase "This shit is amazing" is a colloquial expression, but it's not a drug name or slang. The user's instruction says to only detect phrases that refer to the drug. Since "shit" here is just a strong word, not a drug reference, it's not included. 
+
+Looking at the RAG chunks provided, there's information about Morphine's pharmacology, effects, and derivatives. But the task says to use the RAG chunks only for disambiguation, not to extract phrases from them. However, in this case, the phrase "Morphine" is directly in the post, and the RAG chunks confirm that Morphine is an opioid. 
+
+I need to make sure that "Morphine" isn't a slang term for something else not listed. The Index Terms list includes "Morphine" as a direct entry, so it's correct. There's no mention of any other term here. 
+
+The example given in the problem had "lean" mapped to Codeine, so similar logic applies here. The post uses the actual drug name, so it's straightforward. 
+
+No other phrases in the post refer to drugs. The rest is just commentary. Therefore, the only match is "Morphine" under the index term "Morphine".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"}
+]

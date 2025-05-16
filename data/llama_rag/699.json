@@ -1,0 +1,40 @@
+### BEGINNING of RAG Chunks  
+Drug: Codeine | cid: 5284371
+Source: erowid | Source description: Frequently Asked Questions about Codeine
+Erowid name: codeine
+Category: PHARMS
+Field: FAQ
+
+                    Text: 
+                    OTC cough medications, the highest amount of codeine allowed is 3.3 mg/ml. This concentration is _so_ low that this FAQ will not be discussing cough syrups as a source of recreational codeine. The tablet form of OTC codeine products usually also includes 15 mg of caffeine in each standard dose. [In Canada the law dictates that all codeine OTC products must contain at least two other active ingredients. This usually translates into caffeine and acetominophen/APAP.] Prescription codeine containing products are usually not available without another drug included such as acetaminophen. Rx (prescription) products include the Tylenol w/ codeine series (#1,2,3,4) containing respectively 8 mg, 15 mg, 30 mg, 60 mg of codeine. Each tablet also contains caffeine in doses of 15 mg, 30 mg, 30 mg and 0 mg respectively. Thus Tylenol #4 w/ codeine (the most desired one) contains 325 mg of acetaminophen, 60 mg of codeine and no caffeine. Another Rx product is the 222, 292, 293, 294 series. They are
+
+
+                    Context: 
+                    This excerpt details over-the-counter (OTC) and prescription (Rx) codeine products, highlighting legal restrictions and typical formulations. It explains that OTC cough syrups contain too low a concentration of codeine (3.3 mg/ml) to be relevant for recreational use and describes common tablet-based prescription options like Tylenol with codeine series, including dosages and ingredients such as acetaminophen and caffeine. This information is crucial for understanding legal limits, product variations, and extraction considerations discussed elsewhere in the document.
+                Drug: Codeine | cid: 5284371
+Source: erowid | Source description: Frequently Asked Questions about Codeine
+Erowid name: codeine
+Category: PHARMS
+Field: FAQ
+
+                    Text: 
+                    OTC cough medications, the highest amount of codeine allowed is 3.3 mg/ml. This concentration is _so_ low that this FAQ will not be discussing cough syrups as a source of recreational codeine. The tablet form of OTC codeine products usually also includes 15 mg of caffeine in each standard dose. [In Canada the law dictates that all codeine OTC products must contain at least two other active ingredients. This usually translates into caffeine and acetominophen/APAP.] Prescription codeine containing products are usually not available without another drug included such as acetaminophen. Rx (prescription) products include the Tylenol w/ codeine series (#1,2,3,4) containing respectively 8 mg, 15 mg, 30 mg, 60 mg of codeine. Each tablet also contains caffeine in doses of 15 mg, 30 mg, 30 mg and 0 mg respectively. Thus Tylenol #4 w/ codeine (the most desired one) contains 325 mg of acetaminophen, 60 mg of codeine and no caffeine. Another Rx product is the 222, 292, 293, 294 series. They are
+
+
+                    Context: 
+                    This excerpt details over-the-counter (OTC) and prescription (Rx) codeine products, highlighting legal restrictions and typical formulations. It explains that OTC cough syrups contain too low a concentration of codeine (3.3 mg/ml) to be relevant for recreational use and describes common tablet-based prescription options like Tylenol with codeine series, including dosages and ingredients such as acetaminophen and caffeine. This information is crucial for understanding legal limits, product variations, and extraction considerations discussed elsewhere in the document.
+                
+### ENDING of RAG Chunks
+
+### Input Post 
+Post: Moving from cough medicine to tablets with codeine in.  Fingers crossed this blooming cough will soon be gone.
+
+### Output JSON 
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+### Reasoning 
+The phrase "cough medicine" is not a match since it refers to a product category, not a specific substance. However, "codeine" is a specific substance mentioned in the post, and it matches the "Codeine" index term.

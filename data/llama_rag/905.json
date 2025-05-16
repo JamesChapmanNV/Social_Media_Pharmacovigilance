@@ -1,0 +1,51 @@
+### BEGINNING of RAG Chunks  
+Drug: Fentanyl | cid: 3345
+Source: psychonaut | Source description: Fentanyl (also known as Fentanil and by the brand names Sublimaze,[2] Actiq, Durogesic, Duragesic, Fentora, Matrifen, Haldid, Onsolis, Instanyl,[3] Abstral,[4] Lazanda[5] among others[6]) is a potent opioid substance of the anilidopiperidine class. It is a strong agonist at the μ-opioid receptors and approximately 40 to 50 times more potent than pharmaceutical grade (i.e. 100% pure) heroin[7][8] and roughly 80 to 100 times more potent than morphine.&#91;citation needed&#93;
+
+                    Text: 
+                    In the mid-1990s, fentanyl was first introduced for widespread palliative use with the clinical introduction of the Duragesic patch. It was followed in the next decade by the introduction of the first quick-acting prescription formulations of fentanyl for personal use, the Actiq lollipop and Fentora buccal through the delivery method of estradiol Mylan transdermal patches. As of 2012, fentanyl was the most widely used synthetic opioid in clinical practice[15] with several new delivery methods now available, including a sublingual spray for cancer patients.[16][17] In 2013, 1700 kilograms were used globally.[18]
+
+Chemistry
+
+
+                    Context: 
+                    This excerpt details the historical development and medical formulations of fentanyl, highlighting its introduction for palliative care in the 1990s, subsequent rapid-acting prescription products, and its widespread clinical use by 2012, including various delivery methods and global consumption data. It provides essential background on fentanyl's medical history and available administration routes, relevant for understanding its potency, risks, and misuse potential discussed throughout the document.
+                
+### ENDING of RAG Chunks
+
+### Example #1 
+Post: I got her hooked on that lean everyday she say she want codeine
+[{"index_term": "Codeine", "matched_phrase": "lean"}, {"index_term": "Codeine", "matched_phrase": "codeine"}]
+
+### Example #2 
+Post: Pulled an all‑nighter on addy again.
+[{"index_term": "Amphetamine", "matched_phrase": "addy"}]
+
+### Example #3
+Post: Popped two xans before class.
+[{"index_term": "other", "matched_phrase": "xans"}]
+
+### Example #4 (Cocaine not on the list)
+Post: Picked up fresh snow to ride those white lines tonight ❄️
+[{"index_term": "other", "matched_phrase": "snow"}, {"index_term": "other", "matched_phrase": "white lines"}]
+
+Post: Dealpain -  Actiq Fentanyl Lollipop not meant for non-cancer
+
+### Detection and Matching for the Post: Dealpain -  Actiq Fentanyl Lollipop not meant for non-cancer
+
+1. **Identify potential drug-related phrases**: "Dealpain", "Actiq", "Fentanyl", "Lollipop"
+2. **Match each phrase to its index term**:
+   - "Dealpain": Not found in the list, so "other"
+   - "Actiq": Not found in the list, so "other"
+   - "Fentanyl": Found in the list, so "Fentanyl"
+   - "Lollipop": Not found in the list, so "other"
+3. **Create the output JSON array**:
+
+```json
+[
+  {"index_term": "other", "matched_phrase": "Dealpain"},
+  {"index_term": "other", "matched_phrase": "Actiq"},
+  {"index_term": "Fentanyl", "matched_phrase": "Fentanyl"},
+  {"index_term": "other", "matched_phrase": "Lollipop"}
+]
+```

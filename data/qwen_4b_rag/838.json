@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks related to drug references. My task is to detect any mentions of illicit drugs or substances in the post and link them to the appropriate index terms from the given list.
+
+First, I need to look at the post: "What appears like an ordinary cough medication is proving to be the most sought after drug ingredient. Codeine is..." 
+
+Looking at the text, the word "codeine" is explicitly mentioned. Now, checking the Index Terms, Codeine is listed under "Codeine (Lean, Purple Drank, Schoolboy)" which includes synonyms like lean. However, in the post, the phrase "codeine" is directly used. The RAG chunks mention codeine in the context of cough medications and recreational use. The example given in the problem statement shows that "lean" is linked to Codeine, but here the exact term is "codeine". 
+
+Wait, the user's instruction says to use the RAG chunks only as background knowledge for disambiguation but not to extract phrases from them. However, the post itself contains "codeine", which is directly in the Index Terms. So the matched_phrase should be "codeine" and the index_term is Codeine. 
+
+But wait, the example in the problem shows that "lean" is matched to Codeine. However, in this case, the post says "codeine", which is directly listed as an index term. So the correct match is Codeine for "codeine". 
+
+I need to make sure there are no other terms. The post doesn't mention any other drugs or slang. The phrase "ordinary cough medication" might be a hint, but since the RAG chunks mention codeine in cough medications, but the post's actual text is "codeine", which is directly in the index terms. So the answer should be one object with index_term "Codeine" and matched_phrase "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

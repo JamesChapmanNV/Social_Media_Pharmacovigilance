@@ -1,0 +1,27 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references and link them to the correct index terms.
+
+First, the post is: "2) Drug overdose. Opioids affect your breathing. When you take too high a dose, it can slow down your breathing to the point that your body does not take in enough oxygen."
+
+Looking at the post, the main subject here is opioids and their effect on breathing during an overdose. The task is to find any mentions of drugs or drug-related terms. The post mentions "opioids" and "high a dose," but the key here is to check if any specific drug names are mentioned. 
+
+Now, looking at the RAG chunks provided. There are three drugs mentioned: Oxymorphone, Morphine, and an unknown (hydrocodone). The chunks discuss the effects of these drugs, including respiratory depression, which is what the post is talking about. 
+
+The post doesn't use any specific slang or alternative names for the drugs. It just refers to "opioids" in general. The index terms list includes "Codeine" and "Amphetamine" as examples, but "opioids" isn't a direct term in the index. However, looking at the index terms, there's "Morphine" and "Oxymorphone" which are specific opioids. But the post doesn't mention these by name. 
+
+Wait, the post says "opioids" in general. The index terms don't have a general category for opioids. The closest might be "Morphine" or "Oxymorphone," but since the post doesn't specify which opioid, maybe it's "other" because it's not a specific drug name. However, the example given in the problem statement includes "Codeine" for "lean" and "codeine," which are specific terms. 
+
+But in this case, the post is talking about opioids in general, not a specific drug. The RAG chunks mention Oxymorphone and Morphine, but the post doesn't name them. So, the phrase "opioids" is a general term. The index terms don't have a general term for opioids. Therefore, the correct index term would be "other" because the post doesn't specify a particular drug. 
+
+Wait, but the RAG chunks are about Oxymorphone and Morphine, and the post is discussing their effects. However, the post doesn't mention the specific names. So, the matched phrase would be "opioids," but since that's not in the index terms, it's "other." 
+
+But wait, looking at the index terms again, there's "Morphine" and "Oxymorphone," but the post doesn't mention those. So, the phrase "opioids" is a general term, not a specific drug. Therefore, the index term would be "other." 
+
+Alternatively, maybe the post is referring to opioids in general, which are a class of drugs. But the index terms don't have a general category. So, the correct answer is "other" for "opioids." 
+
+But the example in the problem statement includes "Codeine" for "lean," which is a slang term. Here, "opioids" is a general term, not a slang or specific drug. So, the answer would be "other."
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "opioids"}
+]

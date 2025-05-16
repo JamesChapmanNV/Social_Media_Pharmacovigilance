@@ -1,0 +1,131 @@
+### BEGINNING of Code
+```python
+import json
+import re
+
+def detect_drug_references(post, rag_chunks):
+    # Define the list of index terms
+    index_terms = {
+        "2,6-Xylidine": "2,6-Xylidine",
+        "2-Amino-5-chloropyridine": "2-Amino-5-chloropyridine",
+        "2-Fluoro-2-oxo PCE": "2-Fluoro-2-oxo PCE",
+        "2-Oxo-3-hydroxy-LSD": "2-Oxo-3-hydroxy-LSD",
+        "3-Hydroxy flubromazepam": "3-Hydroxy flubromazepam",
+        "3-Hydroxy flubromazepam glucuronide": "3-Hydroxy flubromazepam glucuronide",
+        "4-ANPP": "4-ANPP",
+        "4-HIAA": "4-HIAA",
+        "6-Acetylmorphine": "6-Acetylmorphine",
+        "7-Aminoclonazepam": "7-Aminoclonazepam",
+        "7-Hydroxymitragynine": "7-Hydroxymitragynine",
+        "7-OH-CBD glucuronide": "7-OH-CBD glucuronide",
+        "8-Aminoclonazolam": "8-Aminoclonazolam",
+        "8R-OH-R-HHC": "8R-OH-R-HHC",
+        "8S-OH-R-HHC": "8S-OH-R-HHC",
+        "α-Hydroxyalprazolam": "α-Hydroxyalprazolam",
+        "α-Hydroxybromazolam": "α-Hydroxybromazolam",
+        "Amphetamine": "Amphetamine",
+        "Benzoylecgonine": "Benzoylecgonine",
+        "Bromazolam": "Bromazolam",
+        "Buprenorphine": "Buprenorphine",
+        "Carfentanil": "Carfentanil",
+        "CBD": "CBD",
+        "Codeine": "Codeine",
+        "Cyclobenzaprine": "Cyclobenzaprine",
+        "delta-8-THC-COOH": "delta-8-THC-COOH",
+        "delta-9-THC-COOH": "delta-9-THC-COOH",
+        "Diphenhydramine": "Diphenhydramine",
+        "EDDP": "EDDP",
+        "Fentanyl": "Fentanyl",
+        "Flubromazepam": "Flubromazepam",
+        "Gabapentin": "Gabapentin",
+        "Hydrocodone": "Hydrocodone",
+        "Hydromorphone": "Hydromorphone",
+        "Ketamine": "Ketamine",
+        "Lorazepam": "Lorazepam",
+        "LSD": "LSD",
+        "Marijuana": "Marijuana",
+        "MDA": "MDA",
+        "MDMA": "MDMA",
+        "MDMB-4en-PINACA butanoic acid": "MDMB-4en-PINACA butanoic acid",
+        "Meperidine": "Meperidine",
+        "Meprobamate": "Meprobamate",
+        "Methadone": "Methadone",
+        "Methamphetamine": "Methamphetamine",
+        "Metonitazene": "Metonitazene",
+        "Mitragynine": "Mitragynine",
+        "Morphine": "Morphine",
+        "N,N-Dimethylpentylone": "N,N-Dimethylpentylone",
+        "Naltrexone": "Naltrexone",
+        "N-Desethylmetonitazene": "N-Desethylmetonitazene",
+        "Norbuprenorphine": "Norbuprenorphine",
+        "Norcarfentanil": "Norcarfentanil",
+        "Nordiazepam": "Nordiazepam",
+        "Norfentanyl": "Norfentanyl",
+        "Norketamine": "Norketamine",
+        "Normeperidine": "Normeperidine",
+        "Noroxycodone": "Noroxycodone",
+        "N-Pyrrolidinoetonitazene": "N-Pyrrolidinoetonitazene",
+        "O-Desmethyltramadol": "O-Desmethyltramadol",
+        "ortho-Methylfentanyl": "ortho-Methylfentanyl",
+        "Oxazepam": "Oxazepam",
+        "Oxycodone": "Oxycodone",
+        "Oxymorphone": "Oxymorphone",
+        "para-Fluorofentanyl": "para-Fluorofentanyl",
+        "para-Fluoronorfentanyl": "para-Fluoronorfentanyl",
+        "Pentylone": "Pentylone",
+        "Phencyclidine": "Phencyclidine",
+        "Pregabalin": "Pregabalin",
+        "Psilocin": "Psilocin",
+        "Psilocybin": "Psilocybin",
+        "R-HHC-COOH": "R-HHC-COOH",
+        "S-HHC-COOH": "S-HHC-COOH",
+        "Speciociliatine": "Speciociliatine",
+        "Temazepam": "Temazepam",
+        "Xylazine": "Xylazine",
+        "Zolpidem": "Zolpidem",
+        "Zopiclone": "Zopiclone"
+    }
+
+    # Initialize an empty list to store the detected phrases
+    detected_phrases = []
+
+    # Define the list of RAG chunks
+    rag_chunks = rag_chunks
+
+    # Loop through each chunk
+    for chunk in rag_chunks:
+        # Extract the text from the chunk
+        text = chunk['text']
+
+        # Loop through each index term
+        for term in index_terms:
+            # Use regular expression to search for the term in the text
+            pattern = re.escape(term)
+            if re.search(pattern, text, re.IGNORECASE):
+                # If the term is found, add the matched phrase to the detected phrases list
+                detected_phrases.append({"index_term": index_terms[term], "matched_phrase": term})
+
+    # Loop through each post
+    for post in post:
+        # Extract the text from the post
+        text = post
+
+        # Loop through each index term
+        for term in index_terms:
+            # Use regular expression to search for the term in the text
+            pattern = re.escape(term)
+            if re.search(pattern, text, re.IGNORECASE):
+                # If the term is found, add the matched phrase to the detected phrases list
+                detected_phrases.append({"index_term": index_terms[term], "matched_phrase": term})
+
+    # Return the detected phrases list
+    return detected_phrases
+
+# Example usage:
+post = ["I got her hooked on that lean everyday she say she want codeine", "Pulled an all‑nighter on addy again.", "Popped two xans before class.", "Picked up fresh snow to ride those white lines tonight ❄️"]
+rag_chunks = [{"text": "Drug: Fentanyl | cid: 3345"}, {"text": "Effentora is indicated for the treatment of breakthrough pain (BTP) in adults with cancer who are already receiving maintenance opioid therapy for chronic cancer pain.,, BTP is a transitory exacerbation of pain that occurs on a background of otherwise controlled persistent pain.,, Patients receiving maintenance opioid therapy are those who are taking at least 60 mg of oral morphine daily, at least 25 micrograms of transdermal fentanyl per hour, at least 30 mg of oxycodone daily, at least 8 mg of oral hydromorphone daily or an equianalgesic dose of another opioid for a week or longer.,, 7.2 Drug Classes, Breast Feeding; Lactation; Milk, Human; Analgesics, Opioid; Narcotics; Anesthetics, Intravenous; Opiates, 7.3 Drug Transformations, Fentanyl has known transformation products that include Norfentanyl."}]
+detected_phrases = detect_drug_references(post, rag_chunks)
+print(json.dumps(detected_phrases, indent=4))
+```
+### ENDING of Code
+This code will detect and return the phrases that refer to illicit drugs or substances in the given posts and RAG chunks. The detected phrases are matched with the corresponding index terms from the provided list. The code uses regular expressions to search for the index terms in the text and returns a list of dictionaries containing the matched phrases and their corresponding index terms.

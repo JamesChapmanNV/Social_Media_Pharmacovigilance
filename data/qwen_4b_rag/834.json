@@ -1,0 +1,37 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references in the post, link them to the correct index terms, and return a JSON array.
+
+First, I'll look at the post: "The CDC site says that opiates are specifically natural-origin opioids such as heroin, morphine and codeine, while opioids is all substances that interact with opioid receptors. Her usage is correct." 
+
+Now, I need to check for any drug names or slang in the post. The post mentions "heroin," "morphine," and "codeine." Let me check the Index Terms list to see which ones these map to.
+
+Looking at the Index Terms, "Heroin" is listed under "Heroin (China White, Apache, Duragesic)" as an index term. Wait, no, actually, in the list, "Heroin" is under the entry for "Heroin (China White, Apache, Duragesic)" but the index term is "Heroin" itself. Wait, the Index Terms list has entries like "Heroin (China White, Apache, Duragesic)" but the index term is "Heroin". Wait, no, looking back, the Index Terms are listed as the first part of each entry. For example, "Amphetamine (Speed, Bennies, Adderall)" has the index term "Amphetamine". Similarly, "Heroin (China White, Apache, Duragesic)" would have the index term "Heroin". So in the post, "heroin" is directly listed as an index term.
+
+Then "morphine" is in the list under "Morphine (MS Contin, Miss Emma, Morph)" so index term is "Morphine".
+
+"Codeine" is in the list under "Codeine (Lean, Purple Drank, Schoolboy)" so index term is "Codeine".
+
+So the post mentions "heroin", "morphine", and "codeine". Each of these are in the index terms. So the matched phrases would be "heroin", "morphine", "codeine", each linked to their respective index terms.
+
+But wait, the post says "Her usage is correct." But the actual drug names are "heroin", "morphine", and "codeine". The user's task is to detect every word or phrase that refers to an illicit drug. The post is talking about opiates and opioids, but the specific drugs mentioned are heroin, morphine, codeine. All of these are in the index terms. So each of these words should be matched.
+
+So the JSON array would have three entries: heroin, morphine, codeine. Each with their respective index terms. The example given in the problem has "lean" and "codeine" both mapped to Codeine. Here, the post has the exact terms, so they should be matched directly.
+
+I need to make sure that the phrases are exactly as in the post. The post has "heroin", "morphine", "codeine" as the words. So the matched phrases are those exact words. The index terms are "Heroin", "Morphine", "Codeine".
+
+So the final JSON array would be:
+
+[
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+I need to check if there are any other possible terms. The post also mentions "opiates" and "opioids", but those are not in the index terms. The index terms are specific to the listed drugs. So "opiates" would be "other" since it's a general term not listed. However, the post is talking about the CDC's definition, so "opiates" is a general term, but the specific drugs mentioned are heroin, morphine, codeine. The user's task is to detect the specific drug references. So the answer should only include the three drugs mentioned.
+</think>
+
+[
+  {"index_term": "Heroin", "matched_phrase": "heroin"},
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

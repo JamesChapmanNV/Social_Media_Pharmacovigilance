@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks. The task is to detect drug-related references in the post and link them to the correct index terms.
+
+First, I need to look at the post: "get those tablets with paracetamol and codeine. Will sort you right out". The key words here are "paracetamol" and "codeine". 
+
+Looking at the RAG chunks, there's information about codeine. The chunks mention codeine's sedative effects and a procedure for extracting it from OTC tablets. The index terms list codeine under "Codeine (Lean, Purple Drank, Schoolboy)".
+
+Now, checking the post. "Paracetamol" is another name for acetaminophen, which is an OTC drug. However, the index terms don't have an entry for acetaminophen. The example in the prompt shows that if the drug isn't in the list, use "other". So "paracetamol" would be "other".
+
+"Codeine" is explicitly listed in the index terms under Codeine. So "codeine" is a direct match. Also, "tablets with paracetamol and codeine" refers to a combination drug, but the key here is that codeine is in the list. The phrase "codeine" is directly matched to the index term.
+
+So the matched phrases are "paracetamol" and "codeine". But wait, the user's instruction says to use the RAG chunks only for disambiguation. The chunks don't mention paracetamol, so it's not in the index terms. Therefore, "paracetamol" would be "other". 
+
+But wait, the example in the prompt where "xans" was "other" because it wasn't in the list. So in this case, "paracetamol" is not in the index terms, so it's "other". "Codeine" is in the list, so it's "Codeine".
+
+So the JSON array should have two entries: one for "paracetamol" as "other" and "codeine" as "Codeine".
+</think>
+
+[
+  {"index_term": "other", "matched_phrase": "paracetamol"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

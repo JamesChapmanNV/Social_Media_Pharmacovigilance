@@ -1,0 +1,30 @@
+### Example #1 
+Post: I got her hooked on that lean everyday she say she want codeine
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+### Example #2 
+Post: Pulled an all‑nighter on addy again.
+[
+  {"index_term": "Amphetamine", "matched_phrase": "addy"}
+]
+
+### Example #3
+Post: Popped two xans before class.
+[
+  {"index_term": "other", "matched_phrase": "xans"}
+]
+
+### Example #4 (Cocaine not on the list)
+Post: Picked up fresh snow to ride those white lines tonight ❄️
+[
+  {"index_term": "other", "matched_phrase": "snow"},
+  {"index_term": "other", "matched_phrase": "white lines"}
+]
+
+Post: When you realize you're the only person in your generation Who uses codeine for what it's actually for.
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

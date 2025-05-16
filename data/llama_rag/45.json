@@ -1,0 +1,22 @@
+### BEGINNING of RAG Chunks
+Drug: Fentanyl | cid: 3345
+Source: pubchem | Source description: Fentanyl | C22H28N2O | CID 3345 - structure, chemical names, physical and chemical properties, classification, patents, literature, biological activities, safety/hazards/toxicity information, supplier lists, and more.
+
+                    Text: 
+                    or 9 hours after after ending an IV infusion and may persist for hours. Masseter muscle spasm and laryngospasm may also occur. Acute overdosage produces signs of opioid toxicity: circulatory and CNS depression, lethargy, coma, respiratory depression, and decreased GI motility with ileus. Miosis is a variable finding, depending on the particular opioid, co-ingestants, and secondary effects, such as hypoxia. Apnea, hypotension, bradycardia, non-cardiogenic pulmonary edema, seizures, dysrhythmias, and death may occur with severe poisoning. With continued use, tolerance to the pharmacologic and adverse effects of the drug develop, but the rate of development of tolerance exhibits considerable interindividual variation. ANIMAL STUDIES: Fentanyl was not teratogenic in rats at dosages of 10-500 ug/kg daily when administered on days 7-21 of gestation. At an IV dosage of 10-30 ug/kg daily on days 6-18 of gestation in rats, fentanyl was embryotoxic or fetotoxic and slightly increased mean
+
+
+                    Context: 
+                    This excerpt details fentanyl's acute overdose signs, including respiratory depression, CNS depression, and variable miosis, as well as severe poisoning risks like apnea and death. It also summarizes animal studies showing fentanyl's lack of teratogenicity but potential embryotoxicity at certain doses during pregnancy. This information is essential for understanding fentanyl's toxicity profile, both in clinical overdose management and reproductive safety assessment.
+                
+### ENDING of RAG Chunks
+
+### Detection
+The post mentions "fentanyl" and "opiate" which are in the list, but it also mentions "benzodiazepine" which is not in the list.
+
+### Output
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+  {"index_term": "Opiate", "matched_phrase": "opiate"},
+  {"index_term": "other", "matched_phrase": "benzodiazepine"}
+]

@@ -1,0 +1,45 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug-related references and link them to the correct index terms.
+
+First, the post is: "Codeine crazy, codeine crazy All this motherfucking money got me going codeine crazy". The task is to find any phrases that refer to illicit drugs or substances, using the RAG chunks for disambiguation but not extracting phrases from the chunks themselves.
+
+Looking at the post, the key words are "codeine" and "crazy". The RAG chunks mention that codeine has synonyms like "lean", "purple drank", "schoolboy", etc. But in the post, the user is directly using "codeine". The index term for codeine is listed as "Codeine (Lean, Purple Drank, Schoolboy)".
+
+So, "codeine" is a direct match. The phrase "codeine crazy" is a slang expression, but the RAG chunk lists "codeine" as an index term. The "crazy" here is likely a slang term for the effects of codeine, but since the index term is specifically for codeine, I should check if "crazy" is a recognized term in the list. However, the index terms are specific to the drugs listed. The example given in the problem shows that "lean" is linked to codeine, so "codeine" itself is the index term. 
+
+The phrase "codeine crazy" is a colloquial way of expressing the effects of codeine, but the exact phrase "codeine" is in the post. The user is using "codeine" directly, so that's a clear match. The "crazy" part is more of an adverb describing the effect, but since the index term is for the drug itself, the matched phrase should be "codeine". 
+
+Wait, but the example in the problem has "lean" linked to codeine. So in the post, "codeine" is the exact term, so that's a direct match. The "crazy" part is not a drug name, so it's not included. The user is using "codeine" multiple times, so each occurrence should be matched. 
+
+So the correct JSON array would have two entries: {"index_term": "Codeine", "matched_phrase": "codeine"} and another for the second "codeine". But the user wrote "codeine crazy" twice. Wait, the post is "Codeine crazy, codeine crazy All this motherfucking money got me going codeine crazy". So the exact phrases are "codeine crazy" and "codeine crazy" again, but the index term is for "codeine". However, the instruction says to detect every word or phrase that refers to an illicit drug. The phrase "codeine crazy" is not in the index terms, but "codeine" is. The "crazy" part is an adverb, so the matched phrase should be "codeine". 
+
+Wait, the example given in the problem includes "lean" which is a slang term for codeine. So if the post has "codeine", that's a direct match. The "crazy" is not a drug term, so it's not included. Therefore, the matched phrases are "codeine" each time it appears. The user wrote "codeine" three times in the post, but the exact text is "codeine crazy" twice and then "codeine crazy" again. Wait, the post is: "Codeine crazy, codeine crazy All this motherfucking money got me going codeine crazy". So the exact phrases are "codeine crazy" (twice) and "codeine crazy" again. But the index term is for "codeine", so the matched phrases are "codeine" each time it's used. However, the user wrote "codeine" in the middle of "codeine crazy". So the exact phrases that refer to the drug are "codeine", even though they are part of a longer phrase. 
+
+But according to the task, I need to detect every word or phrase that refers to an illicit drug. So "codeine" is the drug, and "codeine crazy" is a phrase that includes the drug. However, the instruction says to use the RAG chunks only as background knowledge for disambiguation. The RAG chunks mention that "codeine" is an index term, and the synonyms include "lean", "purple drank", etc. But "codeine crazy" is not in the index terms. However, the phrase "codeine" is in the post, so that's a direct match. 
+
+Therefore, the correct answer is two entries: "codeine" and "codeine" again. Wait, but the post has "codeine crazy" three times. Wait, the post is: "Codeine crazy, codeine crazy All this motherfucking money got me going codeine crazy". So the exact text is "codeine crazy" twice, and then "codeine crazy" again. So three instances of "codeine crazy". But the matched phrase should be "codeine" each time. However, the instruction says to detect every word or phrase that refers to an illicit drug. So the word "codeine" is the drug, and the phrase "codeine crazy" is a phrase that includes the drug. But according to the examples, in example 1, "lean" is matched to codeine, even though it's part of a longer phrase. So the matched phrase is the exact term, but the example shows that "lean" is a slang term for codeine. 
+
+In this case, the exact phrase "codeine" is in the post, so each occurrence of "codeine" is a matched phrase. However, in the post, "codeine" is part of the phrase "codeine crazy". But the task says to detect every word or phrase that refers to an illicit drug. So the word "codeine" is a direct reference. The phrase "codeine crazy" is a description of the effect, but the actual drug is "codeine". 
+
+Therefore, the correct JSON array would have three entries of "codeine" each time it appears. But looking at the post, the user wrote "codeine" three times (once in "codeine crazy", twice in the next lines). Wait, the exact text is:
+
+"Codeine crazy, codeine crazy All this motherfucking money got me going codeine crazy"
+
+Breaking it down:
+
+- "Codeine crazy" (first)
+- "codeine crazy" (second)
+- "codeine crazy" (third)
+
+But the exact phrases are "codeine crazy" three times. However, the matched phrase should be "codeine", as that's the drug. So each occurrence of "codeine" in the post is a match. But in the post, the word "codeine" is part of the phrase "codeine crazy". However, the task says to detect every word or phrase that refers to an illicit drug. So "codeine" is the drug, and the phrase "codeine crazy" is not a drug term, but the word "codeine" is. Therefore, the matched phrase is "codeine" each time it appears. 
+
+But the post has "codeine" three times (each in "codeine crazy"), so three entries. However, the example 1 shows that "lean" is matched to codeine even though it's part of a longer phrase. So in that case, "lean" is the matched phrase. But in this case, the exact word "codeine" is the matched phrase. 
+
+Therefore, the correct answer is three entries of "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

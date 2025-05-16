@@ -1,0 +1,44 @@
+### BEGINNING of RAG Chunks  
+Drug: Codeine | cid: 5284371
+Source: psychonaut | Source description: Codeine (also known as 3-Methylmorphine) is a naturally-occurring opioid substance of the morphinan class found in extracts of the poppy, particularly Papaver bracteatum.[3] Members of this group produce effects such as sedation, cough suppression, and euphoria when administered.
+
+                    Text: 
+                    Iceland: Preparations of paracetamol and codeine require a prescription in Iceland.[citation needed]
+
+India: Codeine preparations require a prescription in India. Preparation of paracetamol and codeine is available in India. Codeine is also present in various cough syrups as codeine phosphate.[citation needed]
+
+Iran: Preparations of codeine in Iran normally comes with paracetamol, but can be purchased over-the-counter. Iran's deputy health minister reported that codeine is Iran's best selling OTC medication. The recreational use of codeine has also become widespread throughout Iran but authorities continue to let codeine be purchased without permission from a doctor, although the pharmacist may ask for the identification of the purchaser to verify they are 18 years or older to buy.[citation needed]
+
+
+                    Context: 
+                    This section details the legal status and regulation of codeine preparations in specific countries, highlighting that in Iceland, India, and Iran, codeine-only medications or combinations with paracetamol typically require a prescription or are heavily regulated, with Iran notably allowing widespread OTC access due to high popularity and minimal restrictions.
+                Drug: Codeine | cid: 5284371
+Source: psychonaut | Source description: Codeine (also known as 3-Methylmorphine) is a naturally-occurring opioid substance of the morphinan class found in extracts of the poppy, particularly Papaver bracteatum.[3] Members of this group produce effects such as sedation, cough suppression, and euphoria when administered.
+
+                    Text: 
+                    France: In France, most preparations containing codeine do not require a doctor's prescription. Example products containing codeine include Néocodion (cough pills, and syrup), Codoliprane (codeine with paracetamol), Prontalgine and Migralgine (codeine, paracetamol, and caffeine).[16] Codeine is regulated/controlled substance (schedule 2) since 2017 after a decision of the "Minister of Health" Agnès Buzyn, it is therefore now under prescription only and raw pure codeine is not available altogether anymore. The most common prescribed codeine brands are Klipal and Codoliprane, both mixed with paracetamol heavily. Klipal being the strongest ratio, 50mg codeine for 600mg paracetamol.
+
+
+                    Context: 
+                    This excerpt details France's regulatory status and common formulations of codeine-containing medications, noting that most preparations no longer require a prescription since 2017 when codeine was classified as a Schedule 2 controlled substance. It highlights specific products like Néocodion, Codoliprane, and others, emphasizing the shift to prescription-only access and mentioning frequently prescribed brands such as Klipal and Codoliprane with their typical dosages.
+                
+### ENDING of RAG Chunks
+
+### Given Post
+Post: I think so it's paracetamol based isn't it? With codeine supplement. Dr Google?
+
+### Task
+1. Detect every word or phrase that refers to an illicit drug or substance.
+2. Link each detected phrase to its matching Index Term (if not in the list, use "other").
+3. Return a valid JSON array, one object per match, using the schema  `{"index_term": "<Index Term or other>", "matched_phrase": "<exact text>"}`.
+
+### Detection and Matching
+- Codeine: detected and matched with "Codeine"
+- paracetamol: not detected (not an illicit substance)
+- codeine supplement: detected and matched with "Codeine"
+
+### JSON Output
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Codeine", "matched_phrase": "codeine supplement"}
+]

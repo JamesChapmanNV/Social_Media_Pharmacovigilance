@@ -1,0 +1,26 @@
+### Example #5 
+Post: Over the months of visiting the patient, Robin received increasing doses of Actiq, the fentanyl lollipops.
+
+1. Detected phrases: 
+   - "Actiq"
+   - "fentanyl"
+   - "lollipops"
+
+2. Matching Index Terms: 
+   - "Actiq" is a brand name of fentanyl lozenges, so it should be matched with "Fentanyl".
+   - "fentanyl" is directly mentioned and should be matched with "Fentanyl".
+
+3. JSON Output:
+   [
+     {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+     {"index_term": "Fentanyl", "matched_phrase": "Actiq"},
+     {"index_term": "Fentanyl", "matched_phrase": "lollipops"}
+   ]
+
+4. However, considering the provided instructions, the output should be modified to exclude phrases that appear solely inside the RAG chunks. Since "Actiq" is a brand name mentioned in the RAG chunk, it should not be included in the output.
+
+5. Modified JSON Output:
+   [
+     {"index_term": "Fentanyl", "matched_phrase": "fentanyl"},
+     {"index_term": "Fentanyl", "matched_phrase": "lollipops"}
+   ]

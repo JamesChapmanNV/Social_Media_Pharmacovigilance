@@ -1,0 +1,81 @@
+### BEGINNING of RAG Chunks  
+Drug: Codeine | cid: 5284371
+Source: psychonaut | Source description: Codeine (also known as 3-Methylmorphine) is a naturally-occurring opioid substance of the morphinan class found in extracts of the poppy, particularly Papaver bracteatum.[3] Members of this group produce effects such as sedation, cough suppression, and euphoria when administered.
+
+                    Text: 
+                    Binding affinities (Ki)[9]
+
+Mu opioid agonist - 589 nM
+
+Kappa opioid agonist - 18061 nM
+
+Delta opioid agonist - 11442 nM
+
+Subjective effects
+
+Disclaimer: The effects listed below cite the Subjective Effect Index (SEI), an open research literature based on anecdotal user reports and the personal analyses of PsychonautWiki contributors. As a result, they should be viewed with a healthy degree of skepticism.
+
+It is also worth noting that these effects will not necessarily occur in a predictable or reliable manner, although higher doses are more liable to induce the full spectrum of effects. Likewise, adverse effects become increasingly likely with higher doses and may include addiction, severe injury, or death ☠.
+
+Physical effects
+
+Child.svg
+
+The general head space of codeine is described by many as one of euphoria, relaxation, anxiety suppression, and pain relief.
+
+Pain relief
+
+
+                    Context: 
+                    This section details the pharmacological binding affinities of codeine to various opioid receptors, highlighting its primary action as a mu opioid agonist, and describes its subjective physical effects such as euphoria and pain relief, providing key insights into its bioactivity and experiential profile within the broader overview of the drug.
+                Drug: Codeine | cid: 5284371
+Source: psychonaut | Source description: Codeine (also known as 3-Methylmorphine) is a naturally-occurring opioid substance of the morphinan class found in extracts of the poppy, particularly Papaver bracteatum.[3] Members of this group produce effects such as sedation, cough suppression, and euphoria when administered.
+
+                    Text: 
+                    Physical effects
+
+Child.svg
+
+The general head space of codeine is described by many as one of euphoria, relaxation, anxiety suppression, and pain relief.
+
+Pain relief
+
+Physical euphoria - This particular substance can be considered as less intense in its physical euphoria when compared with that of morphine or diacetylmorphine (heroin) due to the upper limit of how much can be converted into its active form through metabolism. The sensation itself can be described as extreme feelings of intense physical comfort, warmth and bliss which spreads throughout the body.
+
+Itchiness - This compound presents greater amounts of itchiness due to higher amounts of histamine release in comparison to other opioids.
+
+
+                    Context: 
+                    This section details the physical effects of codeine, including its typical head space of euphoria, relaxation, and pain relief, as well as specific effects like physical euphoria and increased itchiness due to histamine release. It provides essential information on how codeine influences the body at different doses, making it vital for understanding its subjective impact and safety considerations within the comprehensive drug profile.
+                Drug: Codeine | cid: 5284371
+Source: psychonaut | Source description: Codeine (also known as 3-Methylmorphine) is a naturally-occurring opioid substance of the morphinan class found in extracts of the poppy, particularly Papaver bracteatum.[3] Members of this group produce effects such as sedation, cough suppression, and euphoria when administered.
+
+                    Text: 
+                    Codeine is the second most predominant alkaloid in opium (up to three percent).[citation needed] Although codeine can be extracted from natural sources, a semi-synthetic process is the primary source of codeine for pharmaceutical use. It is considered the prototype of the weak to midrange opioids (tramadol, dextropropoxyphene, dihydrocodeine and hydrocodone.[citation needed]
+
+Codeine is currently the most widely used opiate in the world,[4][5] and is one of the most commonly used drugs overall according to numerous reports by organizations including the World Health Organization and its League of Nations predecessor agency. It is one of the most effective orally administered opioid analgesics and has a wide safety margin.
+
+Recreationally, it is usually purchased over the counter within painkillers that mix it with other more toxic substances. These can be separated using a cold water extraction technique.
+
+Contents
+
+1 Chemistry
+
+2 Pharmacology
+
+2.1 Binding affinities (Ki)[9]
+
+
+                    Context: 
+                    This section provides an overview of codeine's natural and synthetic origins, its global usage prevalence, and its pharmacological effectiveness as an orally administered opioid analgesic. It also mentions recreational use and basic chemical details, making it relevant for understanding codeine's background within the broader discussion of its effects, risks, and legal status.
+                
+### ENDING of RAG Chunks
+
+### Input Post: 
+Post: codeine help me stop feeling ~ take me away from the pain
+
+### Detection and Output 
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "away from the pain"}
+]

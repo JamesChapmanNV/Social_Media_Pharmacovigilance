@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks related to drug references. My task is to detect any drug-related phrases in the post and link them to the appropriate index terms from the given list.
+
+First, I need to look at the post: "Moving from cough medicine to tablets with codeine in. Fingers crossed this blooming cough will soon be gone." 
+
+Looking at the text, the key phrase here is "codeine in" referring to the tablets. The RAG chunks mention Codeine (Lean, Purple Drank, Schoolboy) as an index term. The post uses "codeine" directly, which is listed under Codeine. The phrase "tablets with codeine in" is a bit more indirect, but since "codeine" is explicitly mentioned, it should be matched to the Codeine index term. 
+
+I should check if there are any other possible drug references. The post mentions "cough medicine," but the RAG chunks don't list cough medicine as a specific index term. The index terms include Codeine, but cough medicine isn't one of them. However, the post is talking about codeine-containing products, so the main match is "codeine." 
+
+The example given in the problem statement for "lean" was linked to Codeine, so "codeine" in the post should be the same. There's no mention of other drugs here. The phrase "tablets with codeine in" is a bit more of a description, but the actual drug term is "codeine," which is in the index. 
+
+So the correct JSON should have one entry with index_term "Codeine" and matched_phrase "codeine". The rest of the post doesn't mention any other drugs, so no other entries are needed.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

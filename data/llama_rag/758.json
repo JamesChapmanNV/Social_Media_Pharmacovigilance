@@ -1,0 +1,187 @@
+### Example #1 
+Post: I got her hooked on that lean everyday she say she want codeine
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+### Example #2 
+Post: Pulled an all-nighter on addy again.
+[
+  {"index_term": "Amphetamine", "matched_phrase": "addy"}
+]
+
+### Example #3
+Post: Popped two xans before class.
+[
+  {"index_term": "other", "matched_phrase": "xans"}
+]
+
+### Example #4 (Cocaine not on the list)
+Post: Picked up fresh snow to ride those white lines tonight ❄️
+[
+  {"index_term": "other", "matched_phrase": "snow"},
+  {"index_term": "other", "matched_phrase": "white lines"}
+]
+
+Post: The doctor prescribed me codeine pills & I never even used them.
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine pills"}
+]
+
+### Example #5 
+Post: My friend got addicted to prescription painkillers like hydrocodone and oxycodone.
+[
+  {"index_term": "Hydrocodone", "matched_phrase": "hydrocodone"},
+  {"index_term": "Oxycodone", "matched_phrase": "oxycodone"}
+]
+
+### Example #6 
+Post: My grandma takes diphenhydramine for her allergies.
+[
+  {"index_term": "Diphenhydramine", "matched_phrase": "diphenhydramine"}
+]
+
+### Example #7 
+Post: I got a prescription for fentanyl patches.
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]
+
+### Example #8 
+Post: I'm on methadone maintenance therapy.
+[
+  {"index_term": "Methadone", "matched_phrase": "methadone"}
+]
+
+### Example #9 
+Post: I tried ketamine at a music festival.
+[
+  {"index_term": "Ketamine", "matched_phrase": "ketamine"}
+]
+
+### Example #10 
+Post: My friend got a DUI after taking gabapentin.
+[
+  {"index_term": "Gabapentin", "matched_phrase": "gabapentin"}
+]
+
+### Example #11 
+Post: I got a prescription for pregabalin.
+[
+  {"index_term": "Pregabalin", "matched_phrase": "pregabalin"}
+]
+
+### Example #12 
+Post: I'm on buprenorphine for opioid addiction.
+[
+  {"index_term": "Buprenorphine", "matched_phrase": "buprenorphine"}
+]
+
+### Example #13 
+Post: I took some kratom to help with withdrawal symptoms.
+[
+  {"index_term": "Mitragynine", "matched_phrase": "kratom"}
+]
+
+### Example #14 
+Post: My friend got a prescription for zolpidem.
+[
+  {"index_term": "Zolpidem", "matched_phrase": "zolpidem"}
+]
+
+### Example #15 
+Post: I tried LSD at a music festival.
+[
+  {"index_term": "LSD", "matched_phrase": "LSD"}
+]
+
+### Example #16 
+Post: My friend got a prescription for temazepam.
+[
+  {"index_term": "Temazepam", "matched_phrase": "temazepam"}
+]
+
+### Example #17 
+Post: I took some CBD oil for anxiety.
+[
+  {"index_term": "CBD", "matched_phrase": "CBD oil"}
+]
+
+### Example #18 
+Post: My friend got a prescription for lorazepam.
+[
+  {"index_term": "Lorazepam", "matched_phrase": "lorazepam"}
+]
+
+### Example #19 
+Post: I tried psilocybin for depression.
+[
+  {"index_term": "Psilocybin", "matched_phrase": "psilocybin"}
+]
+
+### Example #20 
+Post: My friend got a prescription for carfentanil.
+[
+  {"index_term": "Carfentanil", "matched_phrase": "carfentanil"}
+]
+
+### Example #21 
+Post: I took some xanax for anxiety.
+[
+  {"index_term": "other", "matched_phrase": "xanax"}
+]
+
+### Example #22 
+Post: My friend got a prescription for oxazepam.
+[
+  {"index_term": "Oxazepam", "matched_phrase": "oxazepam"}
+]
+
+### Example #23 
+Post: I tried delta-8-THC.
+[
+  {"index_term": "delta-8-THC", "matched_phrase": "delta-8-THC"}
+]
+
+### Example #24 
+Post: My friend got a prescription for norfentanyl.
+[
+  {"index_term": "Norfentanyl", "matched_phrase": "norfentanyl"}
+]
+
+### Example #25 
+Post: I took some kratom for pain.
+[
+  {"index_term": "Mitragynine", "matched_phrase": "kratom"}
+]
+
+### Example #26 
+Post: My friend got a prescription for norbuprenorphine.
+[
+  {"index_term": "Norbuprenorphine", "matched_phrase": "norbuprenorphine"}
+]
+
+### Example #27 
+Post: I tried 2,6-Xylidine.
+[
+  {"index_term": "2,6-Xylidine", "matched_phrase": "2,6-Xylidine"}
+]
+
+### Example #28 
+Post: My friend got a prescription for 7-Aminoclonazepam.
+[
+  {"index_term": "7-Aminoclonazepam", "matched_phrase": "7-Aminoclonazepam"}
+]
+
+### Example #29 
+Post: I took some flubromazepam.
+[
+  {"index_term": "Flubromazepam", "matched_phrase": "flubromazepam"}
+]
+
+### Example #30 
+Post: My friend got a prescription for 3-Hydroxy flubromazepam.
+[
+  {"index_term": "3-Hydroxy flubromazepam", "matched_phrase": "3-Hydroxy flubromazepam"}
+]

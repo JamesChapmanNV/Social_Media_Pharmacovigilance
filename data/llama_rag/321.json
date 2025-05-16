@@ -1,0 +1,282 @@
+### Example #1 
+Post: I got her hooked on that lean everyday she say she want codeine
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+### Example #2 
+Post: Pulled an all‑nighter on addy again.
+[
+  {"index_term": "Amphetamine", "matched_phrase": "addy"}
+]
+
+### Example #3
+Post: Popped two xans before class.
+[
+  {"index_term": "other", "matched_phrase": "xans"}
+]
+
+### Example #4 (Cocaine not on the list)
+Post: Picked up fresh snow to ride those white lines tonight ❄️
+[
+  {"index_term": "other", "matched_phrase": "snow"},
+  {"index_term": "other", "matched_phrase": "white lines"}
+]
+
+Post: Exactly.....pupils go pinpoint with an opioid overdose. They'd know.
+[
+  {"index_term": "other", "matched_phrase": "pupils go pinpoint with an opioid overdose"},
+  {"index_term": "other", "matched_phrase": "They'd know"}
+]
+
+### Example #5 
+Post: The doctor prescribed me oxycodone for my pain.
+[
+  {"index_term": "Oxycodone", "matched_phrase": "oxycodone"}
+]
+
+### Example #6 
+Post: My friend is taking oxymorphone for his chronic pain.
+[
+  {"index_term": "Oxymorphone", "matched_phrase": "oxymorphone"}
+]
+
+### Example #7 
+Post: The pharmacist warned me about the dangers of fentanyl.
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]
+
+### Example #8 
+Post: I'm trying to quit taking benzos, but it's hard.
+[
+  {"index_term": "other", "matched_phrase": "benzos"}
+]
+
+### Example #9 
+Post: The emergency room doctor said that the patient had overdosed on heroin.
+[
+  {"index_term": "other", "matched_phrase": "heroin"}
+]
+
+### Example #10 
+Post: The toxicology report showed that the patient had metabolites of MDA.
+[
+  {"index_term": "MDA", "matched_phrase": "MDA"}
+]
+
+### Example #11 
+Post: The patient was taking kratom for its opioid-like effects.
+[
+  {"index_term": "Mitragynine", "matched_phrase": "kratom"}
+]
+
+### Example #12 
+Post: The patient's pupils were constricted due to opioid overdose.
+[
+  {"index_term": "other", "matched_phrase": "pupils were constricted"}
+]
+
+### Example #13 
+Post: The patient was taking Xanax for anxiety.
+[
+  {"index_term": "other", "matched_phrase": "Xanax"}
+]
+
+### Example #14 
+Post: The patient had taken LSD before the accident.
+[
+  {"index_term": "LSD", "matched_phrase": "LSD"}
+]
+
+### Example #15 
+Post: The patient was taking Adderall for ADHD.
+[
+  {"index_term": "Amphetamine", "matched_phrase": "Adderall"}
+]
+
+### Example #16 
+Post: The patient had taken ketamine for recreational purposes.
+[
+  {"index_term": "Ketamine", "matched_phrase": "ketamine"}
+]
+
+### Example #17 
+Post: The patient was taking oxycodone for chronic pain.
+[
+  {"index_term": "Oxycodone", "matched_phrase": "oxycodone"}
+]
+
+### Example #18 
+Post: The patient had taken psilocybin for therapeutic purposes.
+[
+  {"index_term": "Psilocybin", "matched_phrase": "psilocybin"}
+]
+
+### Example #19 
+Post: The patient was taking buprenorphine for opioid addiction.
+[
+  {"index_term": "Buprenorphine", "matched_phrase": "buprenorphine"}
+]
+
+### Example #20 
+Post: The patient had taken delta-8-THC for recreational purposes.
+[
+  {"index_term": "delta-8-THC", "matched_phrase": "delta-8-THC"}
+]
+
+### Example #21 
+Post: The patient was taking diphenhydramine for insomnia.
+[
+  {"index_term": "Diphenhydramine", "matched_phrase": "diphenhydramine"}
+]
+
+### Example #22 
+Post: The patient had taken meprobamate for anxiety.
+[
+  {"index_term": "Meprobamate", "matched_phrase": "meprobamate"}
+]
+
+### Example #23 
+Post: The patient was taking gabapentin for neuropathic pain.
+[
+  {"index_term": "Gabapentin", "matched_phrase": "gabapentin"}
+]
+
+### Example #24 
+Post: The patient had taken hydrocodone for pain relief.
+[
+  {"index_term": "Hydrocodone", "matched_phrase": "hydrocodone"}
+]
+
+### Example #25 
+Post: The patient was taking lorazepam for anxiety.
+[
+  {"index_term": "Lorazepam", "matched_phrase": "lorazepam"}
+]
+
+### Example #26 
+Post: The patient had taken LSD for recreational purposes.
+[
+  {"index_term": "LSD", "matched_phrase": "LSD"}
+]
+
+### Example #27 
+Post: The patient was taking oxymorphone for chronic pain.
+[
+  {"index_term": "Oxymorphone", "matched_phrase": "oxymorphone"}
+]
+
+### Example #28 
+Post: The patient had taken psilocybin for therapeutic purposes.
+[
+  {"index_term": "Psilocybin", "matched_phrase": "psilocybin"}
+]
+
+### Example #29 
+Post: The patient was taking zolpidem for insomnia.
+[
+  {"index_term": "Zolpidem", "matched_phrase": "zolpidem"}
+]
+
+### Example #30 
+Post: The patient had taken 3-Hydroxy flubromazepam.
+[
+  {"index_term": "3-Hydroxy flubromazepam", "matched_phrase": "3-Hydroxy flubromazepam"}
+]
+
+### Example #31 
+Post: The patient was taking 7-Aminoclonazepam.
+[
+  {"index_term": "7-Aminoclonazepam", "matched_phrase": "7-Aminoclonazepam"}
+]
+
+### Example #32 
+Post: The patient had taken 8-Aminoclonazolam.
+[
+  {"index_term": "8-Aminoclonazolam", "matched_phrase": "8-Aminoclonazolam"}
+]
+
+### Example #33 
+Post: The patient was taking 8R-OH-R-HHC.
+[
+  {"index_term": "8R-OH-R-HHC", "matched_phrase": "8R-OH-R-HHC"}
+]
+
+### Example #34 
+Post: The patient had taken α-Hydroxyalprazolam.
+[
+  {"index_term": "α-Hydroxyalprazolam", "matched_phrase": "α-Hydroxyalprazolam"}
+]
+
+### Example #35 
+Post: The patient was taking α-Hydroxybromazolam.
+[
+  {"index_term": "α-Hydroxybromazolam", "matched_phrase": "α-Hydroxybromazolam"}
+]
+
+### Example #36 
+Post: The patient had taken N,N-Dimethylpentylone.
+[
+  {"index_term": "N,N-Dimethylpentylone", "matched_phrase": "N,N-Dimethylpentylone"}
+]
+
+### Example #37 
+Post: The patient was taking Naltrexone.
+[
+  {"index_term": "Naltrexone", "matched_phrase": "Naltrexone"}
+]
+
+### Example #38 
+Post: The patient had taken N-Desethylmetonitazene.
+[
+  {"index_term": "N-Desethylmetonitazene", "matched_phrase": "N-Desethylmetonitazene"}
+]
+
+### Example #39 
+Post: The patient was taking Norbuprenorphine.
+[
+  {"index_term": "Norbuprenorphine", "matched_phrase": "Norbuprenorphine"}
+]
+
+### Example #40 
+Post: The patient had taken Norcarfentanil.
+[
+  {"index_term": "Norcarfentanil", "matched_phrase": "Norcarfentanil"}
+]
+
+### Example #41 
+Post: The patient was taking Nordiazepam.
+[
+  {"index_term": "Nordiazepam", "matched_phrase": "Nordiazepam"}
+]
+
+### Example #42 
+Post: The patient had taken Norfentanyl.
+[
+  {"index_term": "Norfentanyl", "matched_phrase": "Norfentanyl"}
+]
+
+### Example #43 
+Post: The patient was taking Norketamine.
+[
+  {"index_term": "Norketamine", "matched_phrase": "Norketamine"}
+]
+
+### Example #44 
+Post: The patient had taken Normeperidine.
+[
+  {"index_term": "Normeperidine", "matched_phrase": "Normeperidine"}
+]
+
+### Example #45 
+Post: The patient was taking Noroxycodone.
+[
+  {"index_term": "Noroxycodone", "matched_phrase": "Noroxycodone"}
+]
+
+### Example #46 
+Post: The patient had taken N-Pyrrolidinoetonitazene.
+[
+  {"index_term": "N-Pyrrolidinoetonitazene", "matched_phrase

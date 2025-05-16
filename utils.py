@@ -8,6 +8,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from pathlib import Path
 from collections import OrderedDict
 from typing import List, Set
 from ast import literal_eval
@@ -159,6 +160,52 @@ def extract_drug_labels(tweets: pd.DataFrame, directory: str) -> List[str]:
             drug_labels.append("Error3")
     return drug_labels
 
+def extract_RAG_drug_labels(tweets: pd.DataFrame, directory: str) -> List[str]:
+    # Regex to capture a JSON array block (including nested objects)
+    ARRAY_BLOCK = re.compile(r"\[\s*(?:\{[\s\S]*?\}\s*,?\s*)+\]", re.DOTALL)
+    THINK_RE   = re.compile(r"<think>(.*?)</think>", re.I | re.S)
+    drug_labels = []
+    for i, row in tqdm(tweets.iterrows()):
+        unique_terms: Set[str] = set()
+        path = Path(f"data/{directory}/{i}.json")
+        if not path.exists():
+            drug_labels.append("NO_RAG_CHUNKS")
+            continue
+        with open(path, "r", encoding="utf-8-sig") as f:
+            raw = f.read().strip()
+        # remove <think> block
+        m_think = THINK_RE.search(raw)
+        if m_think:
+            cleaned = raw[:m_think.start()] + raw[m_think.end():].strip()
+        else:
+            cleaned = raw.strip()
+        # Find JSON block
+        m = ARRAY_BLOCK.search(cleaned)
+        if not m:
+            if cleaned == "[]" or cleaned == "```json\n[]\n```":
+                drug_labels.append('')
+                continue
+            else:
+                print(f"Error: No JSON found in '{directory}/{i}   {raw}'")
+                drug_labels.append('')
+                continue
+        try:
+            entries = json.loads(m.group(0))
+        except json.JSONDecodeError as e:
+            print(f"Error2: No JSON found in '{directory}/{i}   {raw}'")
+            drug_labels.append("Error2")
+            continue
+        if isinstance(entries, list):
+            for obj in entries:
+                term = obj.get("index_term")
+                if isinstance(term, str):
+                    unique_terms.add(term)
+            drug_labels.append(list(unique_terms))
+        else:
+            print(f"Error3: in '{directory}/{i}   {raw}'")
+            drug_labels.append("Error3")
+    print(f"processed'{len(drug_labels)}'")
+    return drug_labels
 
 def clean_term(term: str) -> str:
     term = term.strip()

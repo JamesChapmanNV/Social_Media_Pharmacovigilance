@@ -1,0 +1,43 @@
+<think>
+Okay, let's tackle this query. The user provided a post and RAG chunks, and I need to detect drug-related references. The post is: "someone buy me cough syrup with codeine and promethazine in it yuuuurt". 
+
+First, I'll look through the post for any terms that might refer to illicit drugs or substances. The key words here are "codeine" and "promethazine". 
+
+Looking at the RAG chunks, there's a section about codeine being in prescription cough syrups mixed with promethazine, which are known as "lean" or "purple drank" when used recreationally. The chunks also mention that Co-codamol and Nurofen Plus contain codeine and promethazine, and that these are available over-the-counter in the UK. 
+
+The task is to match the detected phrases to the correct index terms. From the Index Terms list, "Codeine" is listed with synonyms like "Lean", "Purple Drank", and "Schoolboy". The phrase "codeine" directly matches the index term "Codeine". The term "promethazine" is mentioned in the context of being in cough syrups with codeine, but looking at the Index Terms, promethazine isn't listed as a specific term. However, the example in the problem shows that "xans" was categorized as "other" when not matching any term. 
+
+Wait, the Index Terms include "Codeine" with synonyms, but promethazine isn't listed. The RAG chunks mention that codeine is in cough syrups with promethazine, but the problem says to use the RAG chunks only for disambiguation. However, the instruction says not to extract phrases from the chunks. The post has "codeine and promethazine", but "promethazine" isn't in the Index Terms. So "promethazine" would fall under "other". 
+
+But wait, the example in the problem where "xans" was "other" because it wasn't in the list. So in this case, "promethazine" isn't listed under any index term, so it should be "other". However, the user's post mentions "codeine and promethazine", but the index term for codeine is already covered. The question is whether "promethazine" is a drug. But according to the Index Terms, promethazine isn't listed. However, the RAG chunks mention that promethazine is in cough syrups with codeine. But the instruction says to use the RAG chunks only for disambiguation, but not to extract phrases from them. So "promethazine" is a drug, but not in the index terms. Therefore, it should be "other". 
+
+Wait, but the RAG chunks mention that promethazine is in cough syrups with codeine. However, the problem says that the RAG chunks are only for background knowledge. So the actual phrases in the post are "codeine" and "promethazine". The index term for codeine is "Codeine", so that's one. "Promethazine" is not in the list, so it's "other". 
+
+But wait, looking back at the Index Terms, there's "Diphenhydramine (Benadryl, Nytol)" which is an antihistamine. Promethazine is a different drug, but the Index Terms don't list it. Therefore, "promethazine" would be "other". 
+
+So the matched phrases are "codeine" and "promethazine". The first is "Codeine", the second is "other". But the example in the problem shows that "xans" was "other" when not in the list. So in this case, the answer would be two entries: codeine and promethazine. But wait, the post says "cough syrup with codeine and promethazine in it". So the phrases are "codeine" and "promethazine". 
+
+But the user's example 1 has "lean" and "codeine" both mapped to Codeine. So "codeine" is one, and "promethazine" is another. But since "promethazine" is not in the index terms, it's "other". 
+
+Therefore, the JSON array should have two entries: one for "Codeine" with "codeine", and another for "other" with "promethazine". 
+
+Wait, but the user's example 3 has "xans" as "other". So "promethazine" is not in the index terms, so it's "other". So the correct answer would be two entries. However, the user's post is "codeine and promethazine", so both are in the post. 
+
+But the problem says that the RAG chunks are only for disambiguation. The chunks mention that codeine is in cough syrups with promethazine, but the user is not supposed to extract phrases from the chunks. So the actual phrases in the post are "codeine" and "promethazine". 
+
+So the answer should be:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "promethazine"}
+]
+
+But wait, the user's example 1 has "lean" and "codeine" both mapped to Codeine. So "lean" is a slang for codeine. In the post, "codeine" is directly in the phrase, so that's a direct match. "Promethazine" is not in the index terms, so it's "other". 
+
+Therefore, the correct JSON is as above.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "promethazine"}
+]

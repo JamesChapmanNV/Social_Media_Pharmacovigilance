@@ -1,0 +1,47 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks about morphine. The task is to detect drug-related references in the post and link them to the appropriate index terms.
+
+First, I need to look at the post: "Meaning of #heroina Heroin is an alkaloid synthesized from morphine, like this, is analgesic, but also has certain stimulating effects. It is very addictive, and more potent than morphine but its effect is less durable..."
+
+Now, I need to check if any words in the post refer to illicit drugs or substances. The key terms here are "heroin" and "morphine". 
+
+Looking at the Index Terms list, "Heroin" is listed under the index term "Heroin" (though in the provided list, heroin isn't explicitly listed, but looking back, the Index Terms include "Morphine (MS Contin, Miss Emma, Morph)" and "Codeine (Lean, Purple Drank, Schoolboy)". Wait, the user's Index Terms list includes "Heroin" as an index term? Let me check again.
+
+Wait, the Index Terms provided don't have "Heroin" as a separate entry. Let me scan through the list again. The Index Terms include "Morphine" and "Codeine", but "Heroin" isn't listed. However, the RAG chunks mention morphine and heroin. The user's instruction says that if the drug isn't in the list, use "other". But the post is talking about heroin, which is a drug. However, in the provided Index Terms, "Heroin" isn't listed. Wait, looking again, the Index Terms list includes "Heroin" as part of the description for morphine? No, the Index Terms list has "Morphine" and "Codeine" as separate entries. The user's example shows that "Codeine" is linked to "lean" and "codeine". 
+
+But in the post, the user is talking about heroin. However, in the provided Index Terms, "Heroin" isn't listed. Wait, looking back, the Index Terms list includes "Heroin" as part of the description for morphine? No, the Index Terms list includes "Heroin" as a separate entry? Let me check again.
+
+Looking at the Index Terms list provided by the user, the entry for "Heroin" isn't there. The Index Terms list includes entries like "Morphine", "Codeine", "Amphetamine", etc., but not "Heroin". So, in this case, the post mentions "heroin", which is a drug, but since it's not in the Index Terms list, we should use "other".
+
+Wait, but in the RAG chunks, there's a mention of heroin. The first RAG chunk says: "Morphine is one of the natural plant alkaloids found in opium, along side codeine which is extracted from Papaver somniferum... Additionally, it is considered to be the prototype opiate... and the basis of derivatives such as codeine, diacetylmorphine (heroin), and hydrocodone." So, heroin is a derivative of morphine. However, in the Index Terms list, "Heroin" isn't listed. Therefore, the term "heroin" in the post would not be in the Index Terms, so it should be categorized as "other".
+
+But wait, the user's example 1 has "lean" and "codeine" linked to "Codeine". The post here mentions "heroin", which is a drug. But in the Index Terms, "Heroin" isn't listed. Therefore, the correct index term would be "other".
+
+But wait, maybe I'm missing something. Let me check the Index Terms again. The Index Terms list includes "Heroin" as a possible entry? No, the Index Terms list provided by the user doesn't have "Heroin" as an index term. The Index Terms list includes "Morphine", "Codeine", "Amphetamine", "Cocaine" (but in the list, cocaine is not listed as an index term. Wait, looking at the Index Terms list, the entry for "Benzoylecgonine (BZE, Ecgonine benzoate)" is under cocaine. But the Index Terms list doesn't have "Heroin" as a separate entry. Therefore, "heroin" in the post would not be in the Index Terms list, so it's "other".
+
+So the post mentions "heroin" and "morphine". But "morphine" is in the Index Terms list as "Morphine". So "morphine" in the post would be linked to "Morphine", and "heroin" would be "other".
+
+But wait, in the RAG chunks, the text mentions that heroin is a derivative of morphine. However, the Index Terms list includes "Morphine" as an index term. The post is talking about heroin, which is a drug, but since it's not in the Index Terms list, it's "other".
+
+So the matched phrases would be "heroin" and "morphine". But in the post, the user says "Heroin is an alkaloid synthesized from morphine". So "heroin" is the drug, and "morphine" is also a drug. However, in the Index Terms, "Morphine" is listed. Therefore, "morphine" in the post would be linked to "Morphine", and "heroin" would be "other".
+
+But wait, the user's example 1 has "lean" and "codeine" linked to "Codeine", which is correct. So in this case, the post has "heroin" and "morphine". The "morphine" is in the Index Terms, so that's a match. "Heroin" is not in the Index Terms, so it's "other".
+
+So the JSON array would be:
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]
+
+But wait, the post says "Heroin is an alkaloid synthesized from morphine". The word "heroin" is in the post. So the matched_phrase is "heroin", and since it's not in the Index Terms list, it's "other".
+
+But the RAG chunks mention that heroin is a derivative of morphine. However, the Index Terms list includes "Morphine" as an index term. Therefore, the post's mention of "heroin" is not in the list, so it's "other".
+
+Therefore, the correct answer is two entries: one for "morphine" and one for "heroin" as "other".
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "morphine"},
+  {"index_term": "other", "matched_phrase": "heroin"}
+]

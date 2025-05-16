@@ -1,0 +1,17 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks related to drug content moderation. The task is to detect drug-related references in the post and link them to the appropriate index terms from the given list.
+
+First, I need to carefully read the post: "Again..... the doctor admitted that fentanyl, the drug he had in his system can suppress breathing. He also admitted that he didn't know he had foam coming out of his mouth at the scene and complained of respiratory distress before being restrained...both signs of a drug overdose."
+
+Looking for any words or phrases that refer to illicit drugs or substances. The first mention is "fentanyl," which is explicitly listed in the index terms under "Fentanyl (China White, Apache, Duragesic)" as a synthetic opioid 50–100 times stronger than morphine. So "fentanyl" is a direct match here.
+
+Next, the post mentions "suppress breathing," which is a symptom of opioid overdose, but the question is about detecting the drug itself. The phrase "foam coming out of his mouth" and "respiratory distress" are signs of overdose, but they don't directly refer to a drug name. However, the context is about fentanyl, so the key term here is "fentanyl."
+
+The RAG chunks provided are about fentanyl's toxicity, including respiratory depression and overdose signs. But the task is to detect the drug references in the post, not the symptoms. The post explicitly mentions "fentanyl," which is in the index terms. The other parts are symptoms, not drug names, so they don't need to be matched.
+
+So the only matched phrase here is "fentanyl," which maps to the index term "Fentanyl." The rest of the post talks about symptoms, which are not drug names, so they are categorized as "other" unless there's a specific term. But in this case, "fentanyl" is the only drug reference. The other parts are signs of overdose, not drug names. Therefore, the JSON should have one entry for "fentanyl."
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]

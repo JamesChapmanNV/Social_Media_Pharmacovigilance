@@ -1,0 +1,69 @@
+### Example #5 
+Post:  I got her hooked on that lean everyday she say she want codeine
+[{"index_term": "Codeine", "matched_phrase": "lean"}, {"index_term": "Codeine", "matched_phrase": "codeine"}]
+
+### Example #6 
+Post: Pulled an all‑nighter on addy again.
+[{"index_term": "Amphetamine", "matched_phrase": "addy"}]
+
+### Example #7
+Post: Popped two xans before class.
+[{"index_term": "other", "matched_phrase": "xans"}]
+
+### Example #8 (Cocaine not on the list)
+Post: Picked up fresh snow to ride those white lines tonight ❄️
+[{"index_term": "other", "matched_phrase": "snow"}, {"index_term": "other", "matched_phrase": "white lines"}]
+
+Post: 2) Drug overdose. Opioids affect your breathing. When you take too high a dose, it can slow down your breathing to the point that your body does not take in enough oxygen.
+
+### Input 
+Post: Heavy dosages of oxymorphone can result in respiratory depression, leading onto fatal or dangerous levels of anoxia (oxygen deprivation). This occurs because the breathing reflex is suppressed by agonism of µ-opioid receptors proportional to the dosage consumed.
+Oxymorphone can also cause nausea and vomiting; a significant number of deaths attributed to opioid overdose are caused by aspiration of vomit by an unconscious victim. This is when an unconscious or semi-conscious user who is lying on their back vomits into their mouth and unknowingly suffocates. It can be prevented by ensuring that one is lying on their side with their head tilted downwards so that the airways cannot be blocked in the event of vomiting while unconscious (also known as the recovery position).
+
+It is strongly recommended that one use harm reduction practices when using this drug.
+
+### RAG Chunks
+Drug: Oxymorphone | cid: 5284604
+Source: psychonaut | Source description: Oxymorphone (also known by the brand name Opana) is a semi-synthetic opioid analgesic used in the management of moderate to severe pain, and is similar in structure to other opioids such as morphine and heroin. Oxymorphone was first developed in Germany in 1914[2]and introduced to the American market in 1959.[3] Unlike many other opioids, oxymorphone is almost devoid of antitussive properties.[4]Oxymorphone is an important precursor to other opioids and opioid antagonists such as naloxone.
+
+                    Text: 
+                    Heavy dosages of oxymorphone can result in respiratory depression, leading onto fatal or dangerous levels of anoxia (oxygen deprivation). This occurs because the breathing reflex is suppressed by agonism of µ-opioid receptors proportional to the dosage consumed.
+
+Oxymorphone can also cause nausea and vomiting; a significant number of deaths attributed to opioid overdose are caused by aspiration of vomit by an unconscious victim. This is when an unconscious or semi-conscious user who is lying on their back vomits into their mouth and unknowingly suffocates. It can be prevented by ensuring that one is lying on their side with their head tilted downwards so that the airways cannot be blocked in the event of vomiting while unconscious (also known as the recovery position).
+
+Opioid overdoses can be treated by calling the local emergency number and administering an opioid antagonist such as naloxone.
+
+It is strongly recommended that one use harm reduction practices when using this drug.
+
+
+                    Context: 
+                    This excerpt discusses the risks of overdose from oxymorphone, highlighting respiratory depression, danger of aspiration leading to suffocation, and the importance of harm reduction practices such as positioning and naloxone treatment, within the broader context of toxicity and safe usage of the drug.
+                Drug: Morphine | cid: 5288826
+Source: psychonaut | Source description: Morphine is a naturally-occurring opioid substance of the morphinan class. It is one of the natural plant alkaloids found in opium, along side codeine which is extracted from Papaver somniferum (also known as the poppy plant).[6] Additionally, it is considered to be the prototype opiate (i.e. the standard to which others are compared) and the basis of derivatives such as codeine, diacetylmorphine (heroin), and hydrocodone.
+
+                    Text: 
+                    Heavy dosages of morphine can result in respiratory depression, leading onto fatal or dangerous levels of anoxia (oxygen deprivation). This occurs because the breathing reflex is suppressed by agonism of µ-opioid receptors proportional to the dosage consumed.
+
+Morphine can also cause nausea and vomiting; a significant number of deaths attributed to opioid overdose are caused by aspiration of vomit by an unconscious victim. This is when an unconscious or semi-conscious user who is lying on their back vomits into their mouth and unknowingly suffocates. It can be prevented by ensuring that one is lying on their side with their head tilted downwards so that the airways cannot be blocked in the event of vomiting while unconscious (also known as the recovery position).
+
+It is strongly recommended that one use harm reduction practices when using this substance.
+
+Dependence and abuse potential
+
+
+                    Context: 
+                    This excerpt discusses the serious risks of overdose with morphine, including respiratory depression and death, and highlights the importance of harm reduction practices such as preventing aspiration by lying in the recovery position. It also introduces the drug's dependence and abuse potential, emphasizing safety considerations within the broader context of morphine's effects and toxicity.
+                Drug: Unknown | cid: N/A
+Source: psychonaut_CSV | Source description:?
+
+                    Text: 
+                    impairment. At high doses and overdoses, opioid-induced respiratory depression can result in a shortness of breath, abnormal breathing patterns, semi-consciousness, or unconsciousness. Severe overdoses can result in a coma or death without immediate medical attention. Appetite suppression Constipation Cough suppression Decreased libido Decreased heart rate Difficulty urinating Nausea Stomach cramps Pupil constriction Orgasm suppression
+
+
+                    Context: 
+                    This chunk details the physical side effects and toxicity risks associated with hydrocodone use, including respiratory depression at high doses and various adverse effects such as constipation, nausea, and pupil constriction. It is part of the broader discussion on the compound's physical effects and harm potential outlined in the document.
+                
+### ENDING of RAG Chunks
+
+### Output 
+[{"index_term": "Oxymorphone", "matched_phrase": "oxymorphone"}, {"index_term": "Oxymorphone", "matched_phrase": "oxymorphone"}, {"index_term": "Morphine", "matched_phrase": "morphine"}, {"index_term": "Morphine", "matched_phrase": "morphine"}]

@@ -1,0 +1,70 @@
+### BEGINNING of RAG Chunks
+
+### Text
+I got her hooked on that lean everyday she say she want codeine
+### Context: 
+### ENDING of RAG Chunks
+
+### BEGINNING of RAG Chunks
+
+### Text: 
+### Context: 
+Pulled an all-nighter on addy again.
+### ENDING of RAG Chunks
+
+### BEGINNING of RAG Chunks
+
+### Text: 
+### Context: 
+Popped two xans before class.
+### ENDING of RAG Chunks
+
+### BEGINNING of RAG Chunks
+
+### Text: 
+### Context: 
+Picked up fresh snow to ride those white lines tonight 
+### ENDING of RAG Chunks
+
+### BEGINNING of RAG Chunks
+
+### Text: 
+Covidien launches generic version of Actiq- Yahoo/AP  Wed, 03/03/10 - 12:00 pm
+### Context: 
+### ENDING of RAG Chunks
+
+### Detection and Extraction
+
+1. **Example #1**: 
+   * "lean" refers to **Codeine**.
+   * "codeine" refers to **Codeine**.
+   * Output: `[{"index_term": "Codeine", "matched_phrase": "lean"}, {"index_term": "Codeine", "matched_phrase": "codeine"}]`
+
+2. **Example #2**: 
+   * "addy" refers to **Amphetamine**.
+   * Output: `[{"index_term": "Amphetamine", "matched_phrase": "addy"}]`
+
+3. **Example #3**: 
+   * "xans" does not directly refer to any listed drug, but it might be a slang term for **Alprazolam** (Xanax). However, based on the instructions, we should return "other" for unknown terms.
+   * Output: `[{"index_term": "other", "matched_phrase": "xans"}]`
+
+4. **Example #4**: 
+   * "snow" and "white lines" are slang terms for **Cocaine**, but since Cocaine is not in the list, we return "other".
+   * Output: `[{"index_term": "other", "matched_phrase": "snow"}, {"index_term": "other", "matched_phrase": "white lines"}]`
+
+5. **Example #5**: 
+   * "Actiq" refers to **Fentanyl**.
+   * Output: `[{"index_term": "Fentanyl", "matched_phrase": "Actiq"}]`
+
+### Combined Output
+```
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "Amphetamine", "matched_phrase": "addy"},
+  {"index_term": "other", "matched_phrase": "xans"},
+  {"index_term": "other", "matched_phrase": "snow"},
+  {"index_term": "other", "matched_phrase": "white lines"},
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"}
+]
+```

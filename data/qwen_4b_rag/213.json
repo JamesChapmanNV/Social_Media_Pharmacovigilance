@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks, and I need to detect drug references and link them to the correct index terms.
+
+First, the post is: "Over the months of visiting the patient, Robin received increasing doses of Actiq, the fentanyl lollipops."
+
+Looking at the post, the key words here are "Actiq" and "fentanyl lollipops." 
+
+Now, checking the RAG chunks. The first chunk mentions Fentanyl with sources and contexts. The second chunk details Actiq as a brand name for fentanyl. The context says Actiq is a buccal lozenge form of fentanyl. 
+
+So, "Actiq" is a brand name for fentanyl, which is listed in the index terms under "Fentanyl" with synonyms like China White, Apache, Duragesic. Also, the post mentions "fentanyl lollipops," which refers to the Actiq lozenges. 
+
+The index term for Fentanyl is listed as "Fentanyl (China White, Apache, Duragesic)" in the index terms. So "Actiq" is a brand name, but the index term is Fentanyl. 
+
+Therefore, the matched phrases are "Actiq" and "fentanyl lollipops." Both should map to the index term "Fentanyl." 
+
+I need to make sure that "Actiq" is not considered another term. Since the index term includes "Actiq" as a brand name in the context of Fentanyl, even though it's not listed explicitly in the index terms, the RAG chunks confirm that Actiq is a fentanyl product. So the correct index term is Fentanyl for both instances.
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Actiq"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl lollipops"}
+]

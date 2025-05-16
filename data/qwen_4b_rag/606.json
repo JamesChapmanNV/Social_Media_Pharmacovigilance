@@ -1,0 +1,39 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks. The task is to detect drug-related references in the post and link them to the correct index terms.
+
+First, the post is: "I got a syrup addiction, Im in love wit codeine". I need to look for any words or phrases that refer to illicit drugs or substances. The RAG chunks mention codeine, specifically noting that it's known as "lean" or "purple drank" and is found in cough syrups. 
+
+Looking at the post, "syrup" is part of the phrase "syrup addiction". The RAG context says that prescription-strength cough syrups contain codeine. So "syrup" here is likely referring to codeine-based syrup, which is a form of codeine. However, the index terms list "Codeine" as an index term, and the examples show that "lean" and "codeine" are both mapped to codeine. 
+
+But wait, the instruction says to use the RAG chunks only for disambiguation and not to extract phrases from the chunks. The post's "syrup" is not in the chunks, but the chunks mention that codeine is in cough syrups. So "syrup" here is a synonym for codeine syrup. However, the index term for codeine is already covered by "codeine" and "lean". But the post has "syrup" and "codeine". 
+
+The user's example 1 includes "lean" and "codeine" as matches. In this case, "syrup" is part of the phrase "syrup addiction", which is a slang term for codeine. But the index term is "Codeine". So "syrup" here is a reference to codeine. However, the problem is whether "syrup" alone is a drug reference. The RAG chunk says that codeine is in cough syrups, so "syrup" in the context of addiction would imply codeine. But the instruction says to use the RAG chunks for disambiguation. 
+
+Wait, the user's instruction says: "Use the RAG chunks only as background knowledge for disambiguation; do NOT extract or return phrases that appear solely inside the chunks." So "syrup" is not in the chunks, but the chunks mention that codeine is in cough syrups. So "syrup" in the post is a reference to codeine. However, the index term for codeine is already covered by "codeine" and "lean". But "syrup" is a term that's part of the codeine's common names. 
+
+But the example given in the user's example 1 has "lean" and "codeine" both mapped to codeine. So in this case, "syrup" would be a synonym for codeine. However, the index term is "Codeine", so "syrup" would be a phrase that refers to codeine. But the user's example 3 shows that "xans" is mapped to "other" because it's not in the list. So if "syrup" is a term that's part of codeine's common names, then it should be mapped to codeine. 
+
+But wait, the RAG chunk says that codeine is in cough syrups, so "syrup" is a part of the drug's common use. Therefore, "syrup" in the post is a reference to codeine. Therefore, the matched phrase would be "syrup", and the index term is "Codeine". But the example 1 shows that "lean" is mapped to codeine. So "syrup" here is a different phrase but still refers to codeine. 
+
+But the user's instruction says that the index term is determined by the list. So if "syrup" is not in the list, but the chunks say that codeine is in syrup, then "syrup" is a reference to codeine. However, the index term for codeine is already covered by "codeine" and "lean". But the user's example 1 includes "lean" and "codeine" as separate entries. 
+
+So in the post, "syrup" is a reference to codeine, so it should be mapped to "Codeine". Also, "codeine" is explicitly mentioned, so that's another match. 
+
+So the two phrases are "syrup" and "codeine". Both map to "Codeine". 
+
+But wait, the example 3 shows that "xans" is mapped to "other" because it's not in the list. However, in the RAG chunk, "codeine" is in cough syrups. So "syrup" is part of the codeine's context. Therefore, "syrup" is a reference to codeine. 
+
+Therefore, the correct JSON would be:
+
+[
+  {"index_term": "Codeine", "matched_phrase": "syrup"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]
+
+But the user's example 1 has "lean" and "codeine" both mapped to codeine. So "syrup" is a different phrase but still refers to codeine. Therefore, the answer should include both "syrup" and "codeine".
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "syrup"},
+  {"index_term": "Codeine", "matched_phrase": "codeine"}
+]

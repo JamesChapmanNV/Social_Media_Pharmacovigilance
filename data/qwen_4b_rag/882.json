@@ -1,0 +1,19 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks related to drug references. My task is to detect any drug-related phrases in the post, link them to the correct index terms from the given list, and return a JSON array.
+
+First, I need to look at the post: "#Fentanyl #Pain #Relief : DURAGESIC AND #ACTIQ #TREATMENT ->>>". The main words here are "Fentanyl", "DURAGESIC", "ACTIQ", and the hashtags. 
+
+Looking at the RAG chunks, there's information about Fentanyl, including its brand names like Duragesic and Actiq. The index terms list "Fentanyl" as one of the terms, and the post mentions both the drug name and the brand names. 
+
+So, "Fentanyl" directly maps to the index term "Fentanyl". Then, "DURAGESIC" and "ACTIQ" are brand names of fentanyl products. The index term for Fentanyl includes the drug name, so the brand names would also be under "Fentanyl" since they're associated with the drug. 
+
+I need to check if there are any other possible terms. The post doesn't mention any other drugs or slang. The hashtags #Pain and #Relief are just topics, not drug references. 
+
+Therefore, the matched phrases are "Fentanyl", "DURAGESIC", and "ACTIQ", all linked to the index term "Fentanyl".
+</think>
+
+[
+  {"index_term": "Fentanyl", "matched_phrase": "Fentanyl"},
+  {"index_term": "Fentanyl", "matched_phrase": "DURAGESIC"},
+  {"index_term": "Fentanyl", "matched_phrase": "ACTIQ"}
+]

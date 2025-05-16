@@ -1,0 +1,22 @@
+<think>
+Okay, let's tackle this query. The user provided a post and some RAG chunks related to drug references. My task is to detect any drug-related terms in the post and link them to the appropriate index terms from the given list.
+
+First, I need to look at the post: "I think so it's paracetamol based isn't it? With codeine supplement. Dr Google?" 
+
+Breaking it down, the user is talking about a substance that's paracetamol-based with a codeine supplement. The key terms here are "paracetamol" and "codeine". 
+
+Looking at the Index Terms list, "Codeine" is listed with synonyms like Lean, Purple Drank, Schoolboy. The post mentions "codeine supplement", so "codeine" is directly a match. 
+
+Now, "paracetamol" is not listed in the Index Terms as a drug. The closest might be "Benzoylecgonine" (BZE) which is a metabolite of cocaine, but that's not relevant here. Alternatively, "paracetamol" is an OTC drug, but it's not in the index terms. The index terms for OTC drugs include things like "Codeine" but not paracetamol. 
+
+The RAG chunks mention codeine's legal status in various countries, but the post is about a combination of paracetamol and codeine. Since "paracetamol" isn't in the index terms, it should be categorized as "other". 
+
+So, the matched phrases are "codeine" which maps to "Codeine", and "paracetamol" which is "other". The user also mentions "Dr Google" which is a reference to online searches, but that's not a drug term. 
+
+Therefore, the JSON array should have two entries: one for codeine and one for paracetamol as other.
+</think>
+
+[
+  {"index_term": "Codeine", "matched_phrase": "codeine"},
+  {"index_term": "other", "matched_phrase": "paracetamol"}
+]

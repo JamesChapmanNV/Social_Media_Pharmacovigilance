@@ -1,0 +1,14 @@
+<think>
+Okay, let's tackle this query. The user provided a post and RAG chunks, and I need to detect drug-related references. The post is: "Would you recommend a patient with signs of Morphine and Gabapentin toxicity for CT and MRI?" 
+
+First, I'll check the post for any mentions of drugs or substances. The words "Morphine" and "Gabapentin" are clearly in there. Now, looking at the Index Terms list. Morphine is listed under "Morphine (MS Contin, Miss Emma, Morph)" so that's a direct match. Gabapentin is listed as "Gabapentin (Neurontin, Gralise, Gabbies)" so that's another match.
+
+Next, I need to make sure these phrases are not just in the RAG chunks. The RAG chunks are about Gabapentin's toxicity and interactions, but the post mentions "Morphine and Gabapentin toxicity" directly. The phrases "Morphine" and "Gabapentin" are in the post, not just in the chunks. So they are valid matches.
+
+No other terms in the post. The question is about toxicity, but the actual drug names are Morphine and Gabapentin. The answer should be two entries: one for Morphine and one for Gabapentin. The Index Terms are correct as per the list. So the JSON array should have both with their exact phrases.
+</think>
+
+[
+  {"index_term": "Morphine", "matched_phrase": "Morphine"},
+  {"index_term": "Gabapentin", "matched_phrase": "Gabapentin"}
+]

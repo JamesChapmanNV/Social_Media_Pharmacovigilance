@@ -1,0 +1,84 @@
+### BEGINNING of RAG Chunks  
+Drug: Fentanyl | cid: 3345
+Source: psychonaut | Source description: Fentanyl (also known as Fentanil and by the brand names Sublimaze,[2] Actiq, Durogesic, Duragesic, Fentora, Matrifen, Haldid, Onsolis, Instanyl,[3] Abstral,[4] Lazanda[5] among others[6]) is a potent opioid substance of the anilidopiperidine class. It is a strong agonist at the μ-opioid receptors and approximately 40 to 50 times more potent than pharmaceutical grade (i.e. 100% pure) heroin[7][8] and roughly 80 to 100 times more potent than morphine.&#91;citation needed&#93;
+
+                    Text: 
+                    In the mid-1990s, fentanyl was first introduced for widespread palliative use with the clinical introduction of the Duragesic patch. It was followed in the next decade by the introduction of the first quick-acting prescription formulations of fentanyl for personal use, the Actiq lollipop and Fentora buccal through the delivery method of estradiol Mylan transdermal patches. As of 2012, fentanyl was the most widely used synthetic opioid in clinical practice[15] with several new delivery methods now available, including a sublingual spray for cancer patients.[16][17] In 2013, 1700 kilograms were used globally.[18]
+
+Chemistry
+
+
+                    Context: 
+                    This excerpt details the historical development and medical formulations of fentanyl, highlighting its introduction for palliative care in the 1990s, subsequent rapid-acting prescription products, and its widespread clinical use by 2012, including various delivery methods and global consumption data. It provides essential background on fentanyl's medical history and available administration routes, relevant for understanding its potency, risks, and misuse potential discussed throughout the document.
+                Drug: Fentanyl | cid: 3345
+Source: pubchem | Source description: Fentanyl | C22H28N2O | CID 3345 - structure, chemical names, physical and chemical properties, classification, patents, literature, biological activities, safety/hazards/toxicity information, supplier lists, and more.
+
+                    Text: 
+                    Fentanyl sublingual tablets are 54% bioavailable, transmucosal lozenges are 50% bioavailable, buccal tablets are 65% bioavailable, sublingual spray is 76% bioavailable, and nasal spray is 20% more bioavailable than transmucosal (or approximately 64% bioavailable). Fentanyl transmucosal lozenges reach a Cmax of 0.4±0.1ng/mL for a 200µg dose and 2.5±0.6ng/mL for a 1600µg dose with a Tmax of 20-40 minutes. The AUC was 172±96ng\*min/mL for a 200µg dose and 1508±1360ng\*min/mL for a 1600µg dose. Fentanyl sublingual spray reached a Cmax of 0.20±0.06ng/mL for a 100µg dose and 1.61±0.60ng/mL for an 800µg dose with a Tmax of 0.69-1.25 hours, decreasing as the dose increased. The AUC was 1.25±0.67ng\*h/mL for a 100µg dose and 10.38±3.70ng\*h/mL for a 800µg dose. Fentanyl transdermal systems reached a Cmax of 0.24±0.20ng/mL with a Tmax of 3.6±1.3h for a 25µg/h dose. The AUC was 0.42±0.35ng/mL\*h. Fentanyl nasal spray reaches a Cmax of 815±301pg/mL with a Tmax of less than 1 hour for a
+
+
+                    Context: 
+                    This section details the pharmacokinetic properties and absorption data for various fentanyl formulations, including sublingual tablets, transmucosal lozenges, buccal tablets, sprays, transdermal patches, and nasal sprays. It provides specific values for bioavailability, peak plasma concentrations (Cmax), time to peak (Tmax), and area under the curve (AUC) across different doses. This information is essential for understanding fentanyl's bioavailability, dosing, and delivery methods, situating it within the broader context of its medical use, safety, and pharmacology discussed in the document.
+                Drug: Fentanyl | cid: 3345
+Source: pubchem | Source description: Fentanyl | C22H28N2O | CID 3345 - structure, chemical names, physical and chemical properties, classification, patents, literature, biological activities, safety/hazards/toxicity information, supplier lists, and more.
+
+                    Text: 
+                    American Society of Health-System Pharmacists 2017; Drug Information 2017. Bethesda, MD. 2017, p. 2236
+
+Fentanyl citrate buccal lozenges, buccal tablets, sublingual tablets, and nasal spray, and fentanyl sublingual spray are used for the management of breakthrough pain in patients who are already being treated with, and are tolerant of, opiates used around the clock for persistent cancer pain. /Include in US product label/
+
+American Society of Health-System Pharmacists 2017; Drug Information 2017. Bethesda, MD. 2017, p. 2237
+
+For more Therapeutic Uses (Complete) data for Fentanyl (11 total), please visit the HSDB record page.
+
+7.15 Drug Warnings
+
+
+                    Context: 
+                    This excerpt details detailed therapeutic uses, administration forms, and specific warnings related to fentanyl, particularly focusing on buccal and nasal spray formulations for breakthrough pain management in opioid-tolerant cancer patients. It is part of the broader comprehensive drug information document, providing critical dosing, label inclusion, and safety warning details essential for understanding fentanyl's clinical applications and risks. This section is relevant for healthcare professionals and researchers seeking specific formulations and safety considerations within the full pharmacological profile.
+                
+### ENDING of RAG Chunks
+
+### Post
+Post: Fentanyl is prescribed ~5-6 million times a year in the US, in a number of forms including oral lozenges (Actiq®), effervescent buccal tablets (Fentora™), sublingual tablet (Abstral®), sublingual spray (Subsys™), nasal spray (Lazanda®), and transdermal patches (Duragesic®).
+
+### BEGINNING of Code
+```python
+import json
+import re
+
+def detect_drugs(post, rag_chunks):
+    index_terms = {
+        "2,6-Xylidine": "2,6-Xylidine",
+        "2-Amino-5-chloropyridine": "2-Amino-5-chloropyridine",
+        "2-Fluoro-2-oxo PCE": "2-Fluoro-2-oxo PCE",
+        "2-Oxo-3-hydroxy-LSD": "2-Oxo-3-hydroxy-LSD",
+        "3-Hydroxy flubromazepam": "3-Hydroxy flubromazepam",
+        "3-Hydroxy flubromazepam glucuronide": "3-Hydroxy flubromazepam glucuronide",
+        "4-ANPP": "4-ANPP",
+        "4-HIAA": "4-HIAA",
+        "6-Acetylmorphine": "6-Acetylmorphine",
+        "7-Aminoclonazepam": "7-Aminoclonazepam",
+        "7-Hydroxymitragynine": "7-Hydroxymitragynine",
+        "7-OH-CBD glucuronide": "7-OH-CBD glucuronide",
+        "8-Aminoclonazolam": "8-Aminoclonazolam",
+        "8R-OH-R-HHC": "8R-OH-R-HHC",
+        "8S-OH-R-HHC": "8S-OH-R-HHC",
+        "α-Hydroxyalprazolam": "α-Hydroxyalprazolam",
+        "α-Hydroxybromazolam": "α-Hydroxybromazolam",
+        "Amphetamine": "Amphetamine",
+        "Benzoylecgonine": "Benzoylecgonine",
+        "Bromazolam": "Bromazolam",
+        "Buprenorphine": "Buprenorphine",
+        "Carfentanil": "Carfentanil",
+        "CBD": "CBD",
+        "Codeine": "Codeine",
+        "Cyclobenzaprine": "Cyclobenzaprine",
+        "delta-8-THC-COOH": "delta-8-THC-COOH",
+        "delta-9-THC-COOH": "delta-9-THC-COOH",
+        "Diphenhydramine": "Diphenhydramine",
+        "EDDP": "EDDP",
+        "Fentanyl": "Fentanyl",
+        "Flubromazepam": "Flubromazepam",
+        "Gabapentin": "Gabapentin",
+        "Hydrocodone": "Hydrocod

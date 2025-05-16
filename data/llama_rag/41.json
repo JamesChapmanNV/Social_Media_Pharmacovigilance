@@ -1,0 +1,10 @@
+### Example #5 
+Post: CBD oil which is from the cannabis plant is fine as it does not contain THC. No intoxication and no problem driving. 
+Anything containing THC is a no no as the OP says.
+
+[
+  {"index_term": "CBD", "matched_phrase": "CBD oil"},
+  {"index_term": "CBD", "matched_phrase": "cannabis plant"},
+  {"index_term": "THC", "matched_phrase": "THC"},
+  {"index_term": "THC", "matched_phrase": "THC is a no no"}
+]

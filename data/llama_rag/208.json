@@ -1,0 +1,40 @@
+### Example #5 
+Post: Forensic pathologist ruled out drug overdose as #GeorgeFloyd's cause of death, saying based on the extensive videos she had seen in the death of Floyd and what she knew about fentanyl deaths, this was "totally different than what is seen in Mr. Floyd."
+
+```json
+[
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl deaths"},
+  {"index_term": "Fentanyl", "matched_phrase": "fentanyl"}
+]
+```
+
+### Explanation:
+- The post mentions "fentanyl deaths," which directly refers to the illicit drug Fentanyl.
+- The post also mentions "fentanyl" directly, which is another reference to the same drug.
+- These phrases are detected and linked to their corresponding Index Terms, "Fentanyl," which is on the provided list.
+
+### Example #6 
+Post: I'm feeling really down and I've been taking some Xanax to calm myself.
+
+```json
+[
+  {"index_term": "other", "matched_phrase": "Xanax"}
+]
+```
+
+### Explanation:
+- The post mentions "Xanax," which is a prescription benzodiazepine but not listed in the provided Index Terms.
+- This phrase is detected and linked to its corresponding Index Term, "other," since it's not on the provided list.
+
+### Example #7 
+Post: I'm feeling really down and I've been taking some lean to calm myself.
+
+```json
+[
+  {"index_term": "Codeine", "matched_phrase": "lean"}
+]
+```
+
+### Explanation:
+- The post mentions "lean," which is a slang term for the illicit substance Codeine.
+- This phrase is detected and linked to its corresponding Index Term, "Codeine," which is on the provided list.

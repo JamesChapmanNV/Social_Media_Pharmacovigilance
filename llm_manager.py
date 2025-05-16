@@ -60,6 +60,13 @@ def get_openai_o4mini_response(prompt):
     )
     return response.output_text
 
+def get_openai_o3_response(prompt):
+    response = client_openai.responses.create(
+        model="o3", 
+        input=prompt,
+    )
+    return response.output_text
+
 ###############################################################################################
 # LOCAL MODELS
 ###############################################################################################
