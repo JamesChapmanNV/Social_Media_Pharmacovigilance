@@ -1,5 +1,16 @@
 old/
 .env
 tweets_results.csv
+tweets_with_synonyms_matching.csv
+tweets_with_short_prompt_results.csv
+tweets_with_long_prompt_results.csv
+tweets_with_dates.csv
+tweets_with_all_synonyms.csv
+tweets.csv
+rare_tweets.csv
+labels.csv
+disagreeing_tweets_short.csv
+disagreeing_tweets.csv
+
 
 
